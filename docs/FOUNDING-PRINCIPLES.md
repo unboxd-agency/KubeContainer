@@ -564,7 +564,35 @@ substrate), tangible only when a mind carries it across the surface as
 action. The two laws together close the loop the epilogue opened: what is
 real is tangible at the surface; what is intangible is mind at work; and
 the platform is the disciplined passage between them — intent crossing
-one way to become fact, evidence crossing back to become understanding;
+one way to become fact, evidence crossing back to become understanding.
+And truth is real: truth is not a third realm but the *agreement* of the
+two — a representation is true exactly insofar as the surface would bear
+it out, and that correspondence is itself real, checkable, recorded
+(evidence is truth in custody). This is why the record outranks the model
+(24), why claims must become evidence (2), why the twin is tested against
+telemetry and not against confidence — on this platform truth is not
+opinion that won, it is representation that touched the surface and came
+back confirmed; the intangible may be infinite, but the true is exactly
+as large as the real. And truth is temporal: every truth is true *as of
+when* — stamped with the moment the surface bore it out, decaying as the
+world moves on (the edge being a theory of the past), eternal only in the
+record's bitemporal memory of *what was true, and when it was known*. The
+platform never asks "is it true?" without asking "as of when?", never
+serves a truth without its timestamp, and never mistakes the durability
+of the record for the immortality of the fact: facts age, the record
+does not — which is why freshness is a quality dimension, why JIT
+delivery includes temporal fitness, and why the only timeless truth on
+the fabric is the record of when each truth was true. And there is only a
+single version of truth: for any fact, at any moment, one authoritative
+answer — the system of record's — however many models, twins, caches,
+and contexts project it (projections are many, provenance is one: every
+view traces to the same committed fact it projects). Disagreement between
+copies is never a debate, it is staleness with a direction — the record
+wins, the copy reconverges — and federation does not fracture this:
+each sovereign member is the single source for what it owns (one field,
+one writer, fabric-scale), so the fabric's truth is a quilt of single
+sources, never a contest of rivals. Many minds, many models, many
+worlds — one truth per fact, one custodian per truth;
 
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
