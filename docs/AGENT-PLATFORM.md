@@ -629,6 +629,23 @@ that redefines a word privately has already drifted.
   fails — and on this fabric the word may not be used where the triple
   test is not met, which is precisely the kind of drift the lexicon
   exists to stop.
+- **Free** — the second great drifted word, and contextual by nature:
+  *free* never means anything until you ask "free as in what, for
+  whom, paid by whom?" The classic split — free as in freedom (libre:
+  the triple test of open) versus free as in price (gratis: zero on
+  the invoice) — is only the beginning, because gratis is itself
+  contextual: free to the user is paid by someone (the sponsor, the
+  advertiser, the data harvest, the lock-in waiting downstream), and a
+  price of zero with an unnamed payer is the most expensive contract
+  in software. The rule here: *free* may be used only with its context
+  attached — free-as-freedom claims cite the triple test; free-as-price
+  claims name who pays instead (the open core is free because it is
+  the sales force; the assessment is not free because the judgment is
+  the work). What this fabric never sells is the third, counterfeit
+  sense: "free" as the absence of a visible price concealing the
+  presence of an invisible one. On the fabric every cost is metered
+  and every payer is named — so free, here, is never a mystery;
+  it is a disclosed subsidy with a reason.
 - **unboxd Cloud Platform** — the service the agency sells (never the
   agency itself): the Fabric, operated. Concretely, one offering in
   four layers — substrate (CloudStack or OpenStack where self-hosted or
