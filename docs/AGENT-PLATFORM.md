@@ -612,6 +612,24 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
+- **Here** — the indexical of place, made resolvable: *here* is the one
+  kube at which the current work resolves — not a location on a map but
+  a position in the fabric: the bounded ownership the speaker stands in,
+  the gate it keeps, the face that answers at this point of the surface.
+  Since the fabric resolves every point to exactly one kube, *here* is
+  never ambiguous once the speaker is identified: here = this kube, its
+  contract, its record. (Today, for this project, *here* resolves to
+  this repository — the fabric's one load-bearing kube.)
+- **This moment (now)** — the indexical of time, made resolvable: *now*
+  is the latest committed revision plus the current beat of the running
+  loop — transaction-time at HEAD. Every "now" is stamped (truth is
+  temporal), every claim about the present is implicitly *as of* the
+  most recent verdict, and the present cannot be retroactively edited —
+  only succeeded by the next commit. Indexicals are the most drift-prone
+  words in language because they silently re-bind; on the fabric they
+  bind to the record: *here* resolves to one kube, *now* resolves to one
+  revision — so any two agents saying "here, now" can check they mean
+  the same place in the same world.
 
 ### Anti-drift protocols
 

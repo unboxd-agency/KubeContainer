@@ -54,6 +54,7 @@ guardrail
 hallucination
 handoff
 hardening roadmap:
+here
 human-in-the-loop
 intent
 internal memory holds the mental model of the real world
@@ -109,6 +110,7 @@ the mission statement
 the platform
 the platform is the foundation
 the solution is the service contract
+this moment (now)
 through an internet of agents
 through an open partner network
 tool
