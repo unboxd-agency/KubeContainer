@@ -40,12 +40,14 @@ era
 eval
 event-triggered, outcome-focused, value-driven
 every boundary speaks a published contract
+everything is contextual
 evidence
 excellent working tools
 external storage is in cloud
 federated by design
 federation is a framework of work
 five-dimension addressing
+free
 golden corpus
 governed by choice
 governed by design
@@ -77,6 +79,7 @@ no substreams, subgraphs, or sidecars
 nothing rides alongside the declared path
 on time, every time
 one field, one writer
+open
 open location code (olc)
 open location code standard
 open standards only

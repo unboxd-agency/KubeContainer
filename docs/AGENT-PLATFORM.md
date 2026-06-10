@@ -612,7 +612,66 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
-- **unboxd Cloud Platform** — the service the agency sells (never the
+- **Open** — the industry's most drifted word, defined here at last
+  (the irony is acknowledged: the vocabulary system existed for a day
+  before its most load-bearing term got an entry). The senses it
+  carries elsewhere: open source (a license), open core (a gating
+  strategy wearing the word), open standards (an interface), open
+  governance (a process), and "open" the marketing adjective (nothing
+  at all). The normative sense here is a triple test, and a thing is
+  open only if all three hold: *inspectable* (anyone may read it —
+  the code, the spec, the record, the bar), *implementable* (anyone
+  may build to it without permission or fee), and *leavable* (anyone
+  may exit with everything theirs, provenance included). Inspectable
+  without implementable is a museum; implementable without leavable is
+  a trap with documentation; leavable without inspectable is an exit
+  from a black box. Openwashing is the use of the word where any leg
+  fails — and on this fabric the word may not be used where the triple
+  test is not met, which is precisely the kind of drift the lexicon
+  exists to stop.
+- **Free** — the second great drifted word, and contextual by nature:
+  *free* never means anything until you ask "free as in what, for
+  whom, paid by whom?" The classic split — free as in freedom (libre:
+  the triple test of open) versus free as in price (gratis: zero on
+  the invoice) — is only the beginning, because gratis is itself
+  contextual: free to the user is paid by someone (the sponsor, the
+  advertiser, the data harvest, the lock-in waiting downstream), and a
+  price of zero with an unnamed payer is the most expensive contract
+  in software. The rule here: *free* may be used only with its context
+  attached — free-as-freedom claims cite the triple test; free-as-price
+  claims name who pays instead (the open core is free because it is
+  the sales force; the assessment is not free because the judgment is
+  the work). What this fabric never sells is the third, counterfeit
+  sense: "free" as the absence of a visible price concealing the
+  presence of an invisible one. On the fabric every cost is metered
+  and every payer is named — so free, here, is never a mystery;
+  it is a disclosed subsidy with a reason. And the disclosure is a
+  scope: free is always *free for X, Y, Z — not for W, T, V* — every
+  gratis grant names its beneficiaries and its boundary (free for the
+  student, the evaluator, the open project; not for the enterprise
+  estate, the reseller, the production fleet — whatever the grant
+  declares). The scope is part of the contract, recorded like
+  everything else, and consuming outside the scope is not a bargain
+  found but a seal broken: the same breach, the same evidence, the
+  same consequences. Free without a scope is marketing; free with a
+  scope is a priced gift — and only the second exists here.
+- **Everything is contextual** — the law the last two entries
+  instantiate, stated once for all: no word, price, truth, claim, or
+  identity means anything bare — *open* needs its test, *free* needs
+  its payer and scope, *here* needs its kube, *now* needs its
+  revision, truth needs its as-of-when, intelligence needs its
+  assembled context, even the firm needs its profile-per-audience.
+  But the fabric's answer to universal contextuality is not relativism
+  — it is *recorded* context: every claim ships with its context
+  attached (the five dimensions, the scope, the timestamp, the
+  provenance), so contextual stops meaning ambiguous and starts
+  meaning precise. Drift is context lost; precision is context kept;
+  and the whole apparatus — lexicon, axiom, registry, projections —
+  is one machine for keeping it. Nothing means anything alone;
+  everything means exactly one thing in its recorded context;
+  and that is why the graph resolves.
+- **unboxd Cloud Platform** — by name, the Context Cloud Platform:
+  the service the agency sells (never the
   agency itself): the Fabric, operated. Concretely, one offering in
   four layers — substrate (CloudStack or OpenStack where self-hosted or
   hybrid; any conformant cluster anywhere else; hyperscale to micro
