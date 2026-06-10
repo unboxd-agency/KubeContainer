@@ -84,6 +84,16 @@ The Grafana/MinIO position, exactly. Flying under the radar is the
 distribution; SaaS is the monetization; the license is the moat
 around the second, funded by the credibility of the first.
 
+## The founder's last word on all of it
+
+*I deliver my contract. That's what matters.* — and the entire
+decision tree folds into that sentence: licenses, foundations, radar,
+models — all of it is scaffolding around the one act the motto always
+named. The license protects the delivering; the SaaS prices the
+delivering; the registry proves the delivering; the oath is about
+nothing else. Whoever asks what this company does gets the two-word
+answer with receipts behind it.
+
 ## Recommendation (counsel, not decree)
 
 Operate now under *AGPL-3.0 with a commercial dual-license* — it is
