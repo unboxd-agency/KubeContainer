@@ -407,6 +407,19 @@ so an auditor (human or agent) can enter at any altitude and find the same
 answer: nothing running that was not permitted, nothing permitted that is
 not recorded;
 
+**a multi-layer substrate with a single real-world surface** — beneath any
+work stand many layers — silicon, cloud, cluster, fabric, contract, model,
+mind — and every layer may be virtualized, replicated, staged, simulated,
+or swapped; but the stack has exactly one surface where it touches what
+cannot be forked: the real world, where actions have consequences,
+deliveries reach principals, settlements move value, and no rollback
+reaches. Every layer below the surface may hold many possible worlds
+(sandboxes, dry-runs, projections, the licensed multiverse of the mind);
+the surface admits one. That asymmetry is the platform's deepest safety
+rule: be liberal in the layers, conservative at the surface — anything may
+be rehearsed, only the confirmed crosses — and know at every moment, by
+design and not by hope, which side of the surface you are on;
+
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
 everything it needs to serve — tools, model, memory, contract, identity —
