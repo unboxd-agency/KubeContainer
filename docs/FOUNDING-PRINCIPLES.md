@@ -450,7 +450,16 @@ is visible mid-flight (not only at delivery), partial completion is a
 recorded fact rather than a dispute, every step is resumable from the
 record (crash between steps and lose nothing but the step), and
 accountability has the granularity that delegation chains need — who
-performed *this* step, against *this* measure, leaving *this* evidence;
+performed *this* step, against *this* measure, leaving *this* evidence —
+and **without any jumps, one step at a time**: no step is skipped because
+confidence ran ahead of evidence, no state is reached that the recorded
+path cannot explain, every transition is adjacent (from a state the record
+holds to a state the contract names — continuity as a property of work,
+not just of functions), and the discipline holds especially when it
+tempts least: the emergency takes the emergency *procedure's* steps, the
+shortcut is a declared smaller plan, and speed comes from making steps
+fast, never from leaving them out. The fabric walks; it does not leap —
+and because every step lands recorded, it can walk forever;
 
 **taking pride in their work** — excellence is not compliance: each agent
 signs its outcomes with its evidence, builds its reputation on its record,
