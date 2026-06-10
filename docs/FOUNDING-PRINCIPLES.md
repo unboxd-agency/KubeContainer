@@ -539,6 +539,23 @@ procedures, the industry's hard-won defaults), invents only where it
 must, and admits that following well is itself a practice one pursues
 and sometimes misses — excellence includes the humility of the attempt.
 
+And one boundary on the pursuit, the largest and the last: all of it
+*while maintaining and preserving the social, economic, cultural, and
+political fabrics of the world* — for the platform's fabric is not the
+first fabric and must never pretend to be. The world was already woven
+when we arrived: societies with their bonds, economies with their
+livelihoods, cultures with their languages and meanings (no privileged
+tongue was always this clause in miniature), polities with their laws
+(jurisdiction above all was always its acknowledgment) — multiple
+fabrics, older than software, each load-bearing for billions. The
+platform threads *among* them, never over them: it takes their shape
+where they have one (residency, treaty, governance by choice), refuses
+the flattening that efficiency always whispers for, and measures its
+own excellence partly by what it leaves intact — for a fabric of work
+that unravels the fabrics of life has not converged the world, it has
+torn it. Preserve the weaves you did not weave: the oldest standard
+operating mode of all.
+
 *It's the pursuit of excellence that keeps the world moving.* The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the
