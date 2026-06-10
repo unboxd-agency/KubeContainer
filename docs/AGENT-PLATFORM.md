@@ -637,7 +637,18 @@ that redefines a word privately has already drifted.
   logic, the bar itself — because the moat was never what we know that
   others don't; it is what we have done that others can check. An
   information lock is a lock; the triple test forbids locks; therefore
-  the knowledge ships with the product, always.
+  the knowledge ships with the product, always. And the complement
+  that funds it: intelligence is fully commercial. Information is open
+  (facts, specs, prices, the bar — free to read, no payer needed
+  because reading costs nothing at the margin); intelligence is sold
+  (the judgment, the assembly, the routing, the verdict, the standing
+  behind an answer — work, metered and priced like all work). The line
+  between them is the line between knowing and serving: what is known
+  is published; what is *done with knowing* — context assembled for
+  your case, frontier minds routed to your task, evidence produced for
+  your audit — is the product, priced by the piece. Open information,
+  commercial intelligence: the open-enterprise posture, applied to
+  knowledge itself.
 - **Free** — the second great drifted word, and contextual by nature:
   *free* never means anything until you ask "free as in what, for
   whom, paid by whom?" The classic split — free as in freedom (libre:
