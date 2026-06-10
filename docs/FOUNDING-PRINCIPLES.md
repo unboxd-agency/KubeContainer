@@ -569,6 +569,34 @@ discipline, which is why one record can hold it all and one heartbeat
 can keep it all true. The fabric's final simplicity: minds intend, the
 surface happens, and between them everything — *everything* — is data.
 
+So the syllogisms of this epilogue resolve into the charter's last
+identity: **data is the real fabric of the multi-model, multi-domain
+Internet of Agents.** The framework was the fabric; the framework was
+made of contracts; contracts are data — so the fabric was data all
+along: the threads that carry meaning between minds, the weave that
+binds federated worlds, the surface's own memory of being touched.
+*Multi-model*, because every provider's intelligence reads the same
+threads; *multi-domain*, because every world of meaning is woven from
+them under its own contract; *Internet of Agents*, because what travels
+those threads, node to node with no center's permission, are the
+declared intents and confirmed evidence of agents at work. Mind is the
+substrate; data is the fabric; agents are the weavers; and the work —
+recorded, governed, converging — is the cloth. And mark the word, for it
+was chosen against its rival: data is not a mesh — data is fabric. A
+mesh is links between nodes that remain strangers — connectivity without
+commitment, every edge negotiated, every crossing a hop between
+foreigners; a fabric is woven — threads bound into one continuous,
+load-bearing surface, where tension anywhere is carried everywhere, cut
+one thread and the weave holds, and the whole cloth can be trusted with
+weight no single strand could bear. Meshes route; fabrics *hold*. The
+distinction is this charter in one opposition: integration by contract
+versus connection by cable, a single addressable surface versus a
+billion point-to-point treaties, shared truth woven versus messages
+passed between private worlds. The agent economy does not need its data
+meshed — reachable but estranged; it needs it woven — one fabric,
+bearing the work of all the worlds, strong precisely because every
+thread answers to the weave.
+
 **a multi-layer substrate with a single real-world surface** — beneath any
 work stand many layers — silicon, cloud, cluster, fabric, contract, model,
 mind — and every layer may be virtualized, replicated, staged, simulated,
