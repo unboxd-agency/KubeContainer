@@ -23,7 +23,12 @@ every crane; the KubeContainer does the same for work — one schema to
 every fabric, one contract to every operator. unboxd, because the value
 was never the box: it is what declaring the box sets free. And the box
 is real: v0.1.0 ships it — an actual image, with digests, carrying its
-own evidence — work that crossed the surface and held.
+own evidence — work that crossed the surface and held. Yet the box
+alone is meaningless: an empty container moves nothing, and a full one
+unmanifested is just freight nobody can claim. The box means something
+only woven in — declared to a fabric, kept by a loop, answering at a
+face, owed to a principal. The container needed the shipping system;
+the kube needs the weave; the box is the unit, never the point.
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
