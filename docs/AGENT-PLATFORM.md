@@ -219,6 +219,30 @@ standards:
   intelligence governance — provenance, consent, and tenancy isolation on
   data are upstream controls on what any agent can know or leak.
 
+  Two properties make this trustworthy:
+  - *Data is real* — data is the platform's anchor to reality: models
+    generate claims, data carries evidence. Anything asserted without a
+    data lineage behind it is opinion, and the confirmation machinery only
+    accepts evidence. Provenance is therefore not metadata garnish; it is
+    what makes a datum admissible.
+  - *Data is temporal* — every datum carries its time: when the event
+    happened, when it was recorded, and how long it remains valid
+    (bitemporality: what was true vs. what was known). Intelligence decays —
+    yesterday's cluster state answers no question about now — so freshness
+    is a first-class quality dimension, JIT delivery includes *temporal*
+    fitness, and the system of record is an immutable event log from which
+    current state is a derived view (the watch/reconcile pattern again:
+    status is always a projection of events, never a hand-edited fact).
+  - *Data is geospatial* — every datum also carries its *where*: the
+    location it describes, where it was produced, and where it may reside.
+    Three obligations follow: location as a queryable dimension (geo-indexed
+    retrieval, OGC/GeoJSON-class standards, not free-text place names);
+    place-aware delivery (route work to the data and the nearest capacity —
+    locality is the spatial half of JIT, latency its measure); and
+    residency as governance (sovereignty and jurisdiction are *where*
+    constraints — tenancy isolation has a geography, and policy must be
+    able to say "this data does not leave this region").
+
 ## The Mission Statement
 
 > **The platform is the control plane where agent engineering, intelligence,
