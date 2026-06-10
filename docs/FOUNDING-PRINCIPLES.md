@@ -134,5 +134,33 @@ the charter.
     command but a lattice of contracted capability, where coordination
     costs are paid in contracts rather than in meetings.
 
+21. **The framework is the fabric.** The fabric everything runs on is not
+    metal, wire, or any vendor's cloud — it is the framework of work
+    itself: contracts are the threads, federated members the fibers,
+    certification the tension that holds the weave, and assurance the
+    inspection that keeps it sound. Infrastructure underneath may be
+    swapped strand by strand (no lock-in) without tearing the cloth,
+    because what makes it *a* fabric — one continuous, addressable
+    surface — is the published contracts, not the substrate. And the work
+    itself arrives as whole, indivisible units packed into the weave's
+    gaps — no negatives, no parts — each unit filling the empty space
+    nearest to it until the surface is load-bearing everywhere: the
+    fabric is woven from agreements and made useful by what it carries.
+
+22. **The fabric is the intelligent operating system of work.** What an
+    operating system did for one machine, the fabric does for work itself:
+    it schedules (JIT routing of tasks to the best provider, tool, and
+    member), manages memory (data as intelligence — real, temporal,
+    geospatial, multi-domain, contextual), isolates processes (tenancy and
+    sovereignty), runs its device drivers (certified tools and protocols),
+    enforces its kernel boundary (governed by design — the syscall is a
+    contract), and exposes its system calls to every language and every
+    speaker pair. *Intelligent* because the scheduler reasons: frontier
+    models in the routing path, evals as the performance counters, the
+    confirmation flywheel as the OS learning its own workload. Programs
+    are declared outcomes; processes are agents; the shell is natural
+    language. Work no longer runs *on* a computer — it runs on the
+    fabric, and the fabric runs it well.
+
 These principles are normative for this project (see `CLAUDE.md`); changes
 to them are constitutional changes and reviewed as such.
