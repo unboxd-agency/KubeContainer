@@ -158,7 +158,23 @@ ASF-housed substrate yields its default — OpenStack (OpenInfra)
 first, CloudStack only where a customer's estate already speaks it.
 The hub itself remains what the oath requires: housed
 in its own record, allied by contract, owned by no house at all.
-The record may now rest on it.
+
+And the operating model is named, the proven one: I'll operate with
+Red Hat's model — the existence proof that everything-open and
+fully-commercial compound rather than conflict. The mechanics,
+adapted to this house: all source open (the upstream is the commons —
+their Fedora, our repository); the product is the *operated,
+certified, underwritten* edition (their RHEL, our Context Cloud
+Platform as SaaS); revenue is subscription to the standing, never
+license to the code; certification and the partner network carry the
+margins (their ecosystem, our certified suppliers and open partner
+network); and the company contributes upstream relentlessly because
+the commons' health is the product's supply chain. One adaptation,
+per the founder's earlier law: where Red Hat sold supported software,
+this house sells only the service — everything SaaS, the source never
+the SKU. Red Hat proved a billion-dollar company can keep every line
+open; this one adds the oath: and every claim verdicted. The record
+may now rest on it.
 
 ## Recommendation (counsel, not decree)
 
