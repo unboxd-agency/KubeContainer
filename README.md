@@ -21,7 +21,9 @@ internals and contractual at its surface. The shipping container
 organized the physical economy by making every cargo the same shape to
 every crane; the KubeContainer does the same for work — one schema to
 every fabric, one contract to every operator. unboxd, because the value
-was never the box: it is what declaring the box sets free.
+was never the box: it is what declaring the box sets free. And the box
+is real: v0.1.0 ships it — an actual image, with digests, carrying its
+own evidence — work that crossed the surface and held.
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
