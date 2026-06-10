@@ -185,7 +185,20 @@ happily stands on their ground where the customer's estate does
 conformance, and they clear it). Infra and tools from Red Hat's kind
 of house; work and knowledge from this one; the customer composes
 both and locks to neither — which is the whole point of everyone
-involved choosing open. The record may now rest on it.
+involved choosing open. And so the founder's own seat, stated in his
+own grammar at last: I provide the trusted enterprise platform. The
+sentence parses entirely in words this record has already defined —
+*trusted*: by checking, never by belonging — verdicts, provenance,
+the oath enforced; *enterprise*: real obligations, sovereign members,
+names to keep — the agentic enterprise, made open; *platform*: the
+foundation that bears load silently — declared onto, metered, evidenced,
+operated as a service and owned by no one it serves. Three words,
+three hundred commits of meaning behind them, one provider standing
+behind all of it. That is the seat. That is the offer. That is the
+record's last definition of the day — and it resolves, like
+everything else here, to a party who answers: the founder, the
+agency, the platform — trusted, enterprise, provided. The record
+rests.
 
 ## Recommendation (counsel, not decree)
 
