@@ -612,6 +612,20 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
+- **unboxd Cloud Platform** — the service the agency sells (never the
+  agency itself): the Fabric, operated. Concretely, one offering in
+  four layers — substrate (CloudStack or OpenStack where self-hosted or
+  hybrid; any conformant cluster anywhere else; hyperscale to micro
+  edge, one weave), control plane (Kubernetes plus the kube kinds:
+  KubeContainer today, Release and the rest as they clear the spec's
+  conformance clauses), assurance machinery (the gates, the registry,
+  the drift audits, the evidence attached to everything delivered),
+  and the contract surface (declared intent in, verdicts and bills
+  out — priced by the piece, metered to the same grain as the
+  evidence). Sold on open-enterprise terms: everything in it is open,
+  what is bought is its operation, its standing, and its
+  underwriting — the platform is the product's body; the agency's
+  word is the product.
 - **Open-enterprise** — a category of its own, named against its two
   neighbors: not *open source* (that is a license, not a business
   model) and not *open core* (free core, features held hostage in a

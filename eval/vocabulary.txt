@@ -124,6 +124,7 @@ through an open partner network
 tool
 trusted frontier intelligence, from all providers
 trusted insights
+unboxd cloud platform
 verdict
 wake on events, steer by outcomes, prioritize by value
 where code is configuration
