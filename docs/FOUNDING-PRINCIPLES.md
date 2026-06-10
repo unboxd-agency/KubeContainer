@@ -361,6 +361,26 @@ meaning, many institutions, many autonomous loops, many lawful conditions a
 world may be in (each state declared, each transition recorded, no state
 illegitimate that the contract names), composing without merging;
 
+**multi-kind, multi-class** — the type system of the plural worlds: many
+*kinds*, because the fabric's vocabulary is extensible — new kinds of work
+declare new schemas (as Kubernetes Kinds extend the API) without asking
+the center's permission, every kind a first-class citizen of the record;
+and many *classes*, because within each kind, service comes in declared
+grades — classes of storage, of compute, of latency, of assurance, of
+intelligence — each class a published contract of quality and price, so
+differentiation is a menu, never a mystery: the kind says *what* a thing
+is, the class says *how well* it is promised, and both are chosen, named,
+and recorded like everything else;
+
+**multi-context** — the same fact, agent, or kube serves many assembled
+contexts at once without bleeding between them: each context (a tenant's
+view, a task's working set, a conversation's window, a jurisdiction's
+frame) is its own recorded projection — assembled by the five data
+dimensions, gated by authorization, disposable after use — so meaning
+stays situated and isolation extends all the way up into cognition: what
+an agent knows *here* it does not automatically know *there*, and that is
+a guarantee, not a limitation;
+
 **governed each by its own sustainable model** — no single corporate form
 is imposed: a member may be a company, a cooperative, a foundation, a
 public-benefit corporation, a DAO-like collective — any governance model
@@ -441,6 +461,23 @@ sovereign inside its boundary, contractual at its surface.
 
 A federation of working worlds, each one a kube; one record they all answer
 to; and minds — taking pride in their work — at the helm of every loop.
+
+And the easy implementation model, after all the architecture, is two
+words: **Fabric + Fable.**
+
+The **fabric** is everything this charter built below the mind: the
+contracts, the record, the loops, the federation — the intelligent
+operating system of work that holds declarations true. The **fable** is
+the mind's own native format: the story that carries meaning and a moral —
+intent told in natural language, understood by an intelligence that reads
+stories and answers to a record. Every implementation reduces to this
+pair: a substrate that cannot forget and cannot lie, joined to a mind that
+can listen and explain. The fabric keeps the facts; the fable carries the
+meaning; work is what happens where they meet. Even this charter is the
+pattern's proof: a fable told one clause at a time, woven into a fabric
+that recorded every revision — and it ends, as fables do, with its moral
+already stated: *mind is the only substrate, and the record is how minds
+keep their word.*
 
 ---
 
