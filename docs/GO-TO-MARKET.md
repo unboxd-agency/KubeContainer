@@ -1,5 +1,10 @@
 # Go-To-Market: Selling to Enterprises
 
+The thesis in four words: *provenance is the product* (defined in
+`AGENT-PLATFORM.md`). v0.1.0 is its first proof — the release shipped with
+its evidence report attached, because the record of how an artifact earned
+its way out is the one thing a customer cannot get anywhere else.
+
 The paradox to resolve: everything here is open — standards-based, no
 lock-in, exit always real, the operator Apache-licensed. So what is sold?
 The charter's answer: **openness is not what we give away; it is what we

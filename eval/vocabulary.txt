@@ -88,6 +88,7 @@ platform capabilities
 policy & authorization, out of the box
 policy-as-code surface
 principal
+provenance is the product
 provenance-native
 real-time
 real-time, not instantaneous — acid, stable substance
