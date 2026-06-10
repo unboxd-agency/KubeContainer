@@ -120,5 +120,19 @@ the charter.
     not when violations are punished but when the design makes them
     unexpressible.
 
+20. **Federation is a framework of work.** Federation organizes labor, not
+    just data: it is the division of work for the agent economy. Work flows
+    by subsidiarity — every task executes at the lowest, nearest member
+    capable of it (the tenant's agent, the partner's fabric, the local
+    jurisdiction), under that member's sovereignty and policy; what crosses
+    the federation boundary is the *work contract* inbound (declared
+    outcome, constraints, price) and the *evidence of completion* outbound
+    (status, audit, settlement) — never the labor's internals. Delegation
+    chains stay legible end to end (who asked, who subcontracted, who
+    performed, who attested), so accountability travels with the work. The
+    federation is thus the org chart of the platform: not a hierarchy of
+    command but a lattice of contracted capability, where coordination
+    costs are paid in contracts rather than in meetings.
+
 These principles are normative for this project (see `CLAUDE.md`); changes
 to them are constitutional changes and reviewed as such.
