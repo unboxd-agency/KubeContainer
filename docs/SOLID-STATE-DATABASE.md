@@ -1,10 +1,14 @@
 # SolidStateDatabase — Product Brief
 
-**Working names:** SolidStateDatabase (SSDB) or **SolidBaseData** — the
-first emphasizes the phase (data in its solid state, the SSD echo
-intended); the second emphasizes the role (the solid *base* every other
-layer builds on — the foundation principle as a product name). Naming
-decision deferred to the trademark/brand pass; this brief uses
+**Working names:** SolidStateDatabase (SSDB), **SolidBaseData**, or
+**StructuredSchemas** — the first emphasizes the phase (data in its solid
+state, the SSD echo intended); the second the role (the solid *base*
+every other layer builds on — the foundation principle as a product
+name); the third the contract (schema-first truth: structure declared
+before data crystallizes, the code-is-configuration principle applied to
+the record itself — and honest about what the store really sells, since
+an immutable fact is only as trustworthy as the schema that shaped it).
+Naming decision deferred to the trademark/brand pass; this brief uses
 SolidStateDatabase throughout.
 
 **Status:** concept approved for definition; first product named by the
