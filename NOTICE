@@ -175,7 +175,17 @@ the assembly unverified, nothing leaves it unattributed, and the
 aggregation itself — which sources, weighted how, for which question
 — is recorded like every other decision. Trusted knowledge, in this
 house, is not knowledge from trusted people; it is knowledge whose
-trust anyone can re-derive.
+trust anyone can re-derive. And the verification is the founder's own
+office: I will verify the authenticity — the aggregator does not
+forward, it vouches. Every source admitted is checked to origin
+(provenance walked, not assumed), every claim carried is matched to
+its verdict where one exists and marked unverdicted where none does,
+and the verification itself is signed: who checked, against what,
+when — so that authenticity is never inherited from a brand but
+established per item, and the verifier's name is on the line beside
+the source's. The aggregator aggregates; the verifier answers for it;
+in this house they are the same party, and the record holds both
+signatures.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,
