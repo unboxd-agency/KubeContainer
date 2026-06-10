@@ -612,6 +612,18 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
+- **Compliance by the path** — compliance as a property of the route
+  traveled, not of a review survived: when the governed path is the only
+  path (19), *having arrived is itself the proof* — the artifact's
+  history is its certificate, and the receipts (verdicts, provenance,
+  evidence reports) are byproducts of moving, not products of auditing.
+  The contrast is compliance-by-inspection: act first, check some of it
+  later, hope the sample generalizes — which scales with auditors,
+  while compliance by the path scales with traffic. The release
+  pipeline is the working instance: nothing reaches the registry or the
+  world except through the gauntlet, so every shipped artifact is
+  compliant *by construction*, and the question "was this checked?" is
+  answered by the fact that it exists.
 - **Real-work rule** — the platform builds the database through real
   work: every record is the byproduct of something actually performed —
   a task done, a verdict returned, a contract kept — never of data entry

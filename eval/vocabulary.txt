@@ -23,6 +23,7 @@ claim
 claims become evidence
 cncf-graduated standards only
 code is configuration
+compliance by the path
 context
 contract
 data as intelligence
