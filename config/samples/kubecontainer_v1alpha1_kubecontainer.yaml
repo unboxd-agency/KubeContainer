@@ -1,0 +1,9 @@
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  labels:
+    app.kubernetes.io/name: kubecontainer
+    app.kubernetes.io/managed-by: kustomize
+  name: kubecontainer-sample
+spec:
+  # TODO(user): Add fields here

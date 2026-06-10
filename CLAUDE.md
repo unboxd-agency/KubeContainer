@@ -11,10 +11,31 @@ Deployment, Service/Ingress, and HPA resources. The full architecture, CRD schem
 reconcile-loop design, and roadmap live in `docs/DESIGN.md` — read it before making
 changes.
 
-## Repository Status
+## Commands
 
-No source code has been scaffolded yet — only the design doc exists. The first
-implementation step is the Kubebuilder scaffold described in the roadmap
-(`docs/DESIGN.md`). Once code lands, update this file with build/test/lint commands
-(`make build`, `make test`, envtest usage) and any deviations from the standard
-Kubebuilder layout.
+- `make build` — generate manifests/deepcopy, fmt, vet, and compile the manager.
+- `make test` — run unit/integration tests under envtest (downloads control-plane
+  binaries to `bin/k8s/` on first run). Note: in some environments the
+  `-coverprofile` step errors with `no such tool "covdata"` on packages without
+  tests; the test results above that error are still valid. To run without
+  coverage: `KUBEBUILDER_ASSETS="$(bin/setup-envtest use 1.35.0 -p path)" go test ./...`
+- Single test: add `FIt`/`FDescribe` (Ginkgo focus), or
+  `KUBEBUILDER_ASSETS=... go test ./internal/controller/ -v --ginkgo.focus="<It name>"`
+- `make manifests generate` — regenerate CRDs and deepcopy after editing
+  `api/v1alpha1/kubecontainer_types.go`. Always run before committing type changes.
+- `make lint` / `make lint-fix` — golangci-lint.
+- `make test-e2e` — kind-based e2e suite (requires a running Docker daemon).
+
+## Layout & conventions
+
+Standard Kubebuilder v4 layout: types in `api/v1alpha1/`, reconciler in
+`internal/controller/kubecontainer_controller.go`, Kustomize manifests in `config/`.
+
+- The reconciler is level-triggered and idempotent; children are managed with
+  `controllerutil.CreateOrUpdate` and cleaned up via owner references (no finalizers).
+- When `spec.scaling.autoscale` is set, the HPA owns the Deployment's replica
+  count — the reconciler must not write `spec.replicas` (see the HPA test).
+- Spec invariants (replicas/autoscale exclusivity, Ingress host requirement) are
+  enforced with CEL `XValidation` markers on the types, not webhooks.
+- envtest runs no Deployment controller or garbage collector: tests assert
+  `Ready=False/Progressing=True` and delete children explicitly in `AfterEach`.

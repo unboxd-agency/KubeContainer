@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- kubecontainer_v1alpha1_kubecontainer.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
