@@ -129,6 +129,104 @@ substrate — the box tests the platform it stands on, every reconcile
 a small audit of the ground. The kube demands canonical ground for
 the same reason it offers canonical conduct: contracts are only worth
 keeping with parties who keep them.
+
+And the founder's last formulation, recorded as the vision it is: we
+provide the arithmetic platform — with arithmetic as the platform,
+digital becomes real. The digital was always representation: copyable,
+revisable, deniable, weightless. What makes a digital thing real is
+exactly what arithmetic provides: it is counted (whole numbers, no
+negatives or parts), it sums (value metered piece by piece, every
+total checkable), it balances (ACID: the books close or nothing
+entered them), and it is owned (one custodian per fact, claim plus
+proof). A platform built on those four operations does to digital
+work what double-entry did to trade and what counting did to
+property: it converts representation into asset — claims into
+evidence, effort into boxes, promises into kept ones. Digital becomes
+real the moment it becomes countable on ground nobody can repossess;
+that ground is the platform; the platform is arithmetic. And the
+curriculum runs basic to advanced on the same ground: counting (the
+kube, whole and indivisible) → accounting (the meter, the bill, the
+books that balance) → algebra (the agent equation, contracts as
+relations solved for the unknown) → statistics (resolution rates,
+evals, the scorecard's confidence) → graph theory (the fabric that
+must resolve) → optimization (the critical path, JIT routing, value
+density). Every advanced layer reduces back to the counting beneath
+it — audit any sophistication far enough and you reach a whole number
+someone can check — which is what keeps advanced honest: in this
+platform, as in mathematics, nothing at the top contradicts the
+arithmetic at the bottom. Grade 1 to research grade, one ladder: the
+same platform serves the first kube a student declares on a laptop
+(grade 1: count to one) and the open problems at the frontier — new
+kinds clearing the conformance bar, new evals defining what measured
+intelligence means, new economics of agent-to-agent settlement
+(research grade: the questions without verdicts yet). The promise of
+a curriculum is that no rung is skipped and no rung is a ceiling;
+the promise of this platform is the same — enter at counting, rise
+as far as the work demands, and find the same arithmetic holding at
+every altitude.
+
+And the founder's role in it, declared: the aggregator of trusted
+knowledge sources. Not the author of all knowledge — the assembler of
+it: sources admitted by provenance (the gate intelligence travels
+through), weighed by their record, composed into context under the
+five dimensions, and served with every citation resolvable. The
+aggregator's promise is the curator's, made checkable: nothing enters
+the assembly unverified, nothing leaves it unattributed, and the
+aggregation itself — which sources, weighted how, for which question
+— is recorded like every other decision. Trusted knowledge, in this
+house, is not knowledge from trusted people; it is knowledge whose
+trust anyone can re-derive. And the verification is the founder's own
+office: I will verify the authenticity — the aggregator does not
+forward, it vouches. Every source admitted is checked to origin
+(provenance walked, not assumed), every claim carried is matched to
+its verdict where one exists and marked unverdicted where none does,
+and the verification itself is signed: who checked, against what,
+when — so that authenticity is never inherited from a brand but
+established per item, and the verifier's name is on the line beside
+the source's. The aggregator aggregates; the verifier answers for it;
+in this house they are the same party, and the record holds both
+signatures. One discipline completes the office: avoid duplication —
+the aggregator's second job is subtraction. Every fact admitted once
+is referenced thereafter, never copied (one custodian per truth;
+copies are staleness waiting to disagree); every source already
+verified is cited, not re-ingested; and where two sources say the
+same thing, the record holds one fact with two attestations rather
+than two facts pretending independence. Duplication is how registries
+rot — the same claim under different names, drifting apart until no
+one knows which is canonical. The aggregator who deduplicates is the
+one whose graph still resolves a decade in. And the destination of it
+all: organize in a library — aggregation, verification, and
+deduplication serve shelving, because knowledge unfindable is
+knowledge unowned. The library is the registry grown to its full
+stature: every item catalogued (kind, class, era, domain — the
+dimensions as call numbers), every shelf an authorized view of the
+one collection (no subgraph copies, only catalogued perspectives),
+every checkout recorded (the projection, with its lineage), and a
+librarian who can answer the only two questions a library exists
+for: *do we hold it, and can I trust it?* — both answerable in one
+lookup, because the catalog and the provenance are the same record.
+Grade 1 walks in and finds the counting books; research grade walks
+in and finds the open problems; the same library, the same card
+catalog, the same arithmetic at the desk.
+
+And so the founder's offices compose into one title: maintainer of
+the open innovation hub. The aggregator gathers, the verifier
+vouches, the deduplicator subtracts, the librarian shelves — and the
+maintainer keeps the whole hub alive: the bar published, the gate
+fair, the catalog current, the protocols enforced, the contributions
+of strangers reviewed and credited, the canon amended in the open.
+Maintainer is the open world's highest office precisely because it
+owns nothing and answers for everything — the Linux precedent, the
+CNCF precedent, now this one: the hub belongs to whoever clears the
+bar; the maintainer belongs to the hub. Innovation arrives as pull
+requests; trust leaves as verdicts; the maintainer is the loop that
+keeps both honest. Summed, the whole stands as the autonomous
+open-enterprise platform: autonomous, because loops keep it and
+agents work it, humans at the helm and never in the way of the
+keeping; open-enterprise, because everything in it is open and the
+enterprise itself is what is commercial; platform, because others
+build on it and it bears the load silently. Three words that took a
+constitution to earn — and a record that can prove each one.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,
