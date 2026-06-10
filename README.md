@@ -124,7 +124,15 @@ declaration implies), which is exactly the expertise the operator
 packages and the reason it exists. Three offices, cleanly split: the
 principal declares, the operator defines, the loop converges — intent
 is yours, its rendering is the operator's craft, and its keeping is
-the loop's job. That is the product. The
+the loop's job. And the word "operator" carries two offices that must
+never be confused: the software operator (the kube's keeper, defining
+and converging desired state) and the human operator — and the human
+operator is the end user. The box is the agent; the person at the helm
+is who it serves: the addressee who answers the box's first question
+rightly, the one the seal protects, the one the promise educates,
+enables, and empowers, the only one entitled to the unboxing. The
+software works for the human; the agent answers to the end user; the
+box exists for the moment its owner opens it. That is the product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.
