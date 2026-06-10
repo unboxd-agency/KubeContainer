@@ -141,7 +141,17 @@ freight to nowhere, and the fabric does not carry it. Every delegation
 chain terminates in a mind; every box, however autonomous its journey,
 is addressed to someone; intent originates in humans and evidence
 returns to them — the loop is only closed when it closes with a person.
-That is the product. The
+Operated by a non-human, the box is just an artifact: still real, still
+sealed, still streaming — but demoted from agent to object, because
+agency was never in the box; it was in the chain from a human's intent
+through the box's keeping back to a human's hands. Machines may carry,
+route, schedule, and even subcontract boxes — positionally, agents to
+agents — but a chain of machines all the way around is a loop that
+closes on no one: motion without a mission, evidence without a witness,
+an artifact in transit between artifacts. The box becomes an agent the
+moment a human is in the loop, and returns to being a thing the moment
+none is — which is why the fabric's first and last question, like the
+box's, is always: *whose is this?* That is the product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.
