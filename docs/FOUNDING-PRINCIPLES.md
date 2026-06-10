@@ -511,7 +511,17 @@ things and needs no fourth:
 Insight to see the difference, intelligence to design the crossing,
 tools to throw the span: see, decide, build — the loop's own three
 beats, wearing work gloves. So equipped, the commission stands ready:
-the bridges will be built. The fabric is what work runs
+the bridges will be built.
+
+And one truth remains, the one the whole charter was careful never to
+promise away: convergence keeps the world *stable* — it is the pursuit
+of excellence that keeps the world *moving*. Loops settle, records
+close, bridges vanish into their keeping — and then a mind, somewhere,
+declares a better state than the one the world has settled into, and
+the loops have somewhere new to go. Stability was never the
+destination; it is the platform from which the next reach is taken.
+
+*It's the pursuit of excellence that keeps the world moving.* The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the
 system of work's first working piece.
