@@ -51,6 +51,21 @@ that.
    pay to clear the published bar; partners deliver through the network;
    we are the trust fabric, not the inventory.
 
+## The platform-as-a-service stack (what the agency operates)
+
+When the agency sells the cloud platform as a service, the stack is
+open at every layer — no hyperscaler required, every substrate
+swappable: Apache CloudStack (ASF, Apache 2.0) as the
+infrastructure-orchestration layer where the customer wants
+self-hosted or hybrid IaaS — datacenters, sovereign regions, edge —
+with Kubernetes (CNCF) above it and kubes above that. CloudStack is
+the agency's operating choice for the territory hyperscalers do not
+serve, not a required dependency: per the supply-chain policy, users
+need nothing but a conformant Kubernetes cluster, wherever it runs —
+the hybrid reach is the offer (any cloud, any premises, one fabric),
+and an all-Apache, all-open stack is what makes "everything open, but
+commercial" true from the silicon contract up.
+
 ## Why openness closes enterprise deals (not despite — because)
 
 - *Procurement:* no lock-in clears vendor-risk review; exit-with-
