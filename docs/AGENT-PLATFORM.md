@@ -166,6 +166,25 @@ standards:
   required) for relationship-based authorization and delegation chains. See
   the corresponding sections in `docs/DESIGN.md` for the concrete
   KubeContainer implementation.
+- **All languages, all speaker pairs** — the platform carries meaning across
+  every combination of participants, each with its appropriate language
+  class:
+  - *Human ↔ Human* — natural languages: full internationalization and
+    localization; no privileged human language.
+  - *Human ↔ Machine* — intent languages: natural-language goals in, legible
+    status out; declarative specs (YAML/CRDs) as the precise dialect.
+  - *Machine ↔ Machine* — agent and service protocols: MCP, A2A-class
+    protocols, gRPC/REST with typed contracts.
+  - *System ↔ System* — interoperability standards: OCI, OpenAPI/JSON
+    Schema, CloudEvents — the schemas that let platforms compose.
+  - *System ↔ Information* — data languages: query (SQL/GraphQL),
+    serialization (JSON/Protobuf), and semantics (RDF-class) layers.
+
+  One rule binds them all: every boundary speaks a *published contract*
+  (grammar + schema + semantics), so translation between any two parties is
+  a platform service, not a per-integration negotiation. Tooling-wise this
+  is the Language Server Protocol insight generalized: define the language
+  once, get every editor/consumer for free.
 
 ## The Mission Statement
 
