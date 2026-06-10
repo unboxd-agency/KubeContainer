@@ -263,6 +263,30 @@ standards:
   meaning smuggled in side headers), every hop is attributable to a
   principal, and "direct" never means "off the record" — point-to-point is
   a topology, not an exemption from governance.
+- **Event-triggered, outcome-focused, value-driven** — the design principle
+  governing when the platform acts, what it aims at, and why:
+  - *Event-triggered* — work begins because something happened (an intent
+    changed, a child drifted, a verdict landed), never because a clock
+    fired. Polling is the absence of design. One refinement, learned the
+    hard way by Kubernetes: **edge-triggered wake-up, level-based logic** —
+    the event is only the alarm; the action is computed from full current
+    state, so missed or duplicate events change nothing (this repo's
+    reconciler is the reference implementation).
+  - *Outcome-focused* — the unit of success is a converged end-state, not
+    activity performed: "the workload is available at this endpoint", not
+    "the deploy script ran". Declared outcomes are what specs state, what
+    status reports, what SLOs measure, and what the confirmation machinery
+    certifies; effort that moves no outcome is indistinguishable from
+    failure.
+  - *Value-driven* — among possible outcomes, pursue the one worth the
+    most to the principal per unit cost: metering ties every action to its
+    cost, outcomes tie cost to delivered value, and the routing/priority
+    decisions (JIT, arbitrage across providers) optimize value density —
+    excellence mark #4 (economy) elevated from virtue to scheduler input.
+
+  Read as one sentence: *wake on events, steer by outcomes, prioritize by
+  value* — the cadence, the compass, and the currency of every control
+  loop on the platform.
 - **Standard operating procedures** — operational knowledge is a platform
   artifact, not tribal memory: every recurring situation (deploy, upgrade,
   scale, incident, rollback, key rotation, certification renewal) has a
