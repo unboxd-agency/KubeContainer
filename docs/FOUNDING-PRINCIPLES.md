@@ -587,7 +587,17 @@ sustained only on its way to consonance through the reconciliatory
 flows — tension is permitted, *unresolvable* tension is not. A graph
 that resolves in both senses is the charter's whole soundness in one
 line: every reference lands, every difference settles — nothing
-dangling, nothing discordant, the weave ringing true.
+dangling, nothing discordant, the weave ringing true — and it holds
+**at all touch points, real and digital alike**: wherever anything
+touches anything — agent touches tool, context touches model, fact
+touches store, workload touches silicon, package touches doorstep,
+payment touches account, answer touches the principal's own hand — the
+same law stands with no seam between the worlds: the digital touch
+points resolve to the record, the real touch points resolve to the
+surface, and every touch, on either side, lands identified, contracted,
+checked, and recorded — for a fabric is only as true as its touches,
+and the charter's writ runs exactly as far as touching does: everywhere,
+both worlds, every time.
 
 *It's the pursuit of excellence that keeps the world moving.* The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
