@@ -78,7 +78,15 @@ gates all the others — what is inside, what it cost, what it promises —
 and it is answered the only way this system answers anything: identity
 resolved, authorization checked, the relation verified against the one
 graph. Answer it rightly and the box opens to its owner; answer it
-wrongly and the box stays sealed and remembers being asked. The
+wrongly and the box stays sealed and remembers being asked. For the box
+streams events — sealed about its contents, talkative about its
+conduct: admitted, converging, ready, serving, scaled, touched, asked,
+breached, exited — every transition emitted as it happens, in the open
+standard for the purpose (CloudEvents, CNCF graduated), so any
+authorized listener can follow the box's journey in real time without
+ever seeing inside it. The manifest is the history; the stream is the
+present tense; and both speak a wire anyone can subscribe to and no one
+had to invent. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.
