@@ -670,9 +670,22 @@ that redefines a word privately has already drifted.
   is one machine for keeping it. Nothing means anything alone;
   everything means exactly one thing in its recorded context;
   and that is why the graph resolves.
-- **unboxd Cloud Platform** — by name, the Context Cloud Platform:
-  the service the agency sells (never the
-  agency itself): the Fabric, operated. Concretely, one offering in
+- **unboxd Cloud Platform** — by name, the Context Cloud Platform; by
+  position, the open context cloud: CNCF-mature, AI-native, Kubernetes-
+  native — and every qualifier is a recorded claim, not an adjective:
+  *CNCF-mature* (required dependencies and interfaces are graduated
+  standards only — the supply-chain policy as positioning), *AI-native*
+  (frontier intelligence in the routing path, agents as first-class
+  workloads, evals as the performance counters — the fabric was
+  designed for minds, not retrofitted with them), *Kubernetes-native*
+  (the operator pattern is the kernel, CRDs are the kinds, the cluster
+  is the OS booting — not an abstraction over Kubernetes but an
+  extension of it), *open* (the triple test: inspectable,
+  implementable, leavable). Four qualifiers, four sections of this
+  document, one checkable position — delivered as platform-as-a-service: the
+  agency runs it, the customer declares onto it, the meter reads it,
+  and the evidence ships with it. It is the service the agency sells
+  (never the agency itself): the Fabric, operated. Concretely, one offering in
   four layers — substrate (CloudStack or OpenStack where self-hosted or
   hybrid; any conformant cluster anywhere else; hyperscale to micro
   edge, one weave), control plane (Kubernetes plus the kube kinds:
