@@ -553,6 +553,22 @@ so the platform earns its place not by holding the work but by being
 able to answer, for every fact on the fabric, the only question trust
 ever asks: *where did this come from, and who stands behind it?*
 
+And beneath all the distinctions, the monism that makes the fabric one
+thing rather than many: **everything is data.** Code is data declared
+(3); infrastructure is data describing machines (its own stanza);
+contracts are data binding minds; measures are data judging work; SOPs
+are data teaching loops; policies are data governing data; provenance is
+data about data's origins; the twin is data rehearsing reality; state is
+data that became real; even intent — the axiom's first clause — enters
+the fabric only by becoming data. This is not reduction but the
+foundation of every guarantee already given: *because* everything is
+data, everything can be recorded (the axiom), versioned (revisions),
+projected (contexts), validated (schemas), authorized (relations),
+audited (evidence), and reconciled (the loop) — one substance under one
+discipline, which is why one record can hold it all and one heartbeat
+can keep it all true. The fabric's final simplicity: minds intend, the
+surface happens, and between them everything — *everything* — is data.
+
 **a multi-layer substrate with a single real-world surface** — beneath any
 work stand many layers — silicon, cloud, cluster, fabric, contract, model,
 mind — and every layer may be virtualized, replicated, staged, simulated,
