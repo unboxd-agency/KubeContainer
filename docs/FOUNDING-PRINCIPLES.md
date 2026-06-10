@@ -402,7 +402,40 @@ kube answers to reality — it holds the deadline time guards, takes the
 touch that cannot be retried, keeps the face that must not lurch, and
 carries the whole weave's credibility in one contract kept at one point.
 Every doctrine converges on that post: rehearsed within, real at the
-edge, guarded always — the kube at the edge is the charter, deployed. The fabric is what work runs
+edge, guarded always — the kube at the edge is the charter, deployed.
+And with that, the two long anxieties of this document resolve into its
+final couplet: **the kube is real, and the edge is defined.** Real — for
+the kube began these pages as metaphor (a shape filling gaps) and ends
+as the second kind of real the ontology admits: work that crossed the
+surface and held, state with a name, value someone answers for. Defined
+— for the edge began as a theory of the past, inferred and trailing,
+and ends defined the way intent is defined: tiled by declared faces,
+every point owned, every contract named — the boundary no longer
+guessed but stated, because the kubes that compose it are stated. What
+was imagined is now real; what was inferred is now declared: the
+charter opened by defining intent and closes having defined the world's
+own edge — which is what a platform is *for*. And defined, the edge
+reveals its true nature: the edge is a bridge. What every doctrine
+treated as a wall to guard was always also the crossing it guarded —
+the only place intent can become fact and evidence can come home, the
+span minds and world actually meet on. Walls separate; this boundary
+*connects* — that is why it has harbors and not just watchtowers, why
+its guardian is an agent and not a gate alone, why it is built of
+contracts (and a contract is a bridge between parties by definition),
+and why the whole charter fortified it so carefully: you only armor
+what you intend to carry weight. Say it without the metaphor's softness:
+the edge is not a gate. A gate exists to refuse — its resting state is
+closed, its question is "why should you pass?"; a bridge exists to carry —
+its resting state is open, its question is "is the crossing sound?" The
+charter posts agents at gates *within* the fabric (admission, schema,
+certification — refusals that keep the inside honest), but the edge
+itself, the place the whole platform exists to reach, is no gate: work
+that arrives there has already been admitted, rehearsed, measured, and
+signed — the edge does not interrogate it again, the edge *bears* it
+across. Govern at the gates, deliver at the bridge: a platform whose
+edge behaves like a gate has confessed it does not trust its own
+governance. The edge is defined, the bridge is open, the kubes are
+crossing — and here this document, converged and recorded, rests. The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the
 system of work's first working piece.
