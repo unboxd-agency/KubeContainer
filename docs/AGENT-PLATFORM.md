@@ -185,6 +185,20 @@ standards:
   a platform service, not a per-integration negotiation. Tooling-wise this
   is the Language Server Protocol insight generalized: define the language
   once, get every editor/consumer for free.
+- **Where code is configuration** — the inversion of "configuration as
+  code", and the platform's deepest operating principle: generic, certified
+  engines execute; *what they do* is entirely declared. Users do not program
+  the platform — they parameterize it with versioned, diffable, reviewable
+  declarations, and control loops make the declarations true. Consequences:
+  every change is a data change (auditable by construction, evaluable by
+  OPA, reversible by `git revert`); behavior is inspectable without reading
+  source; and the blast radius of change is bounded by schema validation
+  before anything executes. Where logic must live in the declaration, it is
+  embedded as constrained expression languages (CEL, Rego) — code admitted
+  into configuration on configuration's terms: sandboxed, terminating,
+  side-effect-free. KubeContainer is the working example: a running,
+  scaled, exposed workload is produced by twelve lines of YAML and zero
+  lines of user code.
 
 ## The Mission Statement
 
