@@ -282,6 +282,20 @@ the agent filled the gap; AutonomyX provides the platform; unboxd
 answers as the agency; the founder declared it all and owns the
 claim. Four parties, one day, one record — and every contribution
 on the manifest, because that is what a manifest is for.
+
+And the lineage is owed its line: Apache was the open knowledge
+library — the ancestor of everything this record attempts. Before
+the word "registry" meant anything here, the ASF had already built
+it for code: projects catalogued under one roof, releases signed
+(provenance), mirrors everywhere (every copy whole), licenses uniform
+(one contract), governance published (PMCs as maintainers, the bar as
+the gate), trust established by checking rather than by brand — and
+its first artifact, the httpd server, literally carried the
+disorganized web this founder spent years questioning. What Apache
+did for software — file it, sign it, mirror it, govern it — this
+fabric does for knowledge and work in the agent era. To revive
+Apache is not nostalgia; it is succession: the open knowledge
+library, given its next collection.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,
