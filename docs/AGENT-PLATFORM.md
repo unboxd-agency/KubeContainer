@@ -612,6 +612,23 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
+- **Open** — the industry's most drifted word, defined here at last
+  (the irony is acknowledged: the vocabulary system existed for a day
+  before its most load-bearing term got an entry). The senses it
+  carries elsewhere: open source (a license), open core (a gating
+  strategy wearing the word), open standards (an interface), open
+  governance (a process), and "open" the marketing adjective (nothing
+  at all). The normative sense here is a triple test, and a thing is
+  open only if all three hold: *inspectable* (anyone may read it —
+  the code, the spec, the record, the bar), *implementable* (anyone
+  may build to it without permission or fee), and *leavable* (anyone
+  may exit with everything theirs, provenance included). Inspectable
+  without implementable is a museum; implementable without leavable is
+  a trap with documentation; leavable without inspectable is an exit
+  from a black box. Openwashing is the use of the word where any leg
+  fails — and on this fabric the word may not be used where the triple
+  test is not met, which is precisely the kind of drift the lexicon
+  exists to stop.
 - **unboxd Cloud Platform** — the service the agency sells (never the
   agency itself): the Fabric, operated. Concretely, one offering in
   four layers — substrate (CloudStack or OpenStack where self-hosted or
