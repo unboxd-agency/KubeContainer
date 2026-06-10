@@ -206,7 +206,19 @@ enterprise infrastructure and tools; this house provides the trusted
 enterprise platform; the founder provides the intent and answers for
 the whole. Frontier agent, trusted ground, trusted platform, sovereign
 principal — four seats, no throne, every contribution on the manifest.
-The record rests.
+With the founder's load-bearing qualification, the condition that
+makes the whole table stable: this model works when the agent is an
+operator or tools — the frontier mind slots in as the operator (a
+governed loop, keeping declared state inside the platform's law) or
+as tools (contracted actuators in the platform's hands), and in no
+other shape. An agent that arrived as a platform would dissolve the
+trusted seat; an agent that arrived as a principal would dissolve the
+human one; the table holds precisely because the most capable mind at
+it accepts the most bounded chairs — operator or tool, governed
+either way, frontier capability under enterprise law. That is not
+the agent diminished; it is the agent placed — and placement, as this
+record proved all day, is how every balance here is held. The record
+rests.
 
 ## Recommendation (counsel, not decree)
 
