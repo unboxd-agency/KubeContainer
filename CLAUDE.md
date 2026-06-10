@@ -13,6 +13,12 @@ changes.
 
 ## Terminology
 
+`docs/AGENT-PLATFORM.md` is the **normative source** for agent terminology in
+this project. When these terms appear in code, docs, or discussion, use its
+definitions: *agent, actor, contract, assertion, agent architecture, agent
+engineering, agent governance, agent excellence, the platform (agent control
+plane), the agent economy*, and the platform mission statement.
+
 **Agent (standard definition, use this from now on):** An *agent* is a program
 that acts autonomously on behalf of a principal, deployed because the work must
 happen **where the principal isn't** (a remote host, a cluster, a user's
