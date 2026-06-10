@@ -200,6 +200,25 @@ standards:
   scaled, exposed workload is produced by twelve lines of YAML and zero
   lines of user code.
 
+- **Data as intelligence** — the companion inversion to "code is
+  configuration": data on this platform is not inert record but the active
+  substance intelligence is made of, in both directions:
+  - *Data → intelligence (grounding):* models are frontier-capable but
+    context-blind; the platform's data — documents, state, telemetry —
+    delivered just-in-time (retrieval, context assembly) is what turns
+    general capability into situated intelligence. The same JIT discipline
+    applies: the right data, at the moment of need, under authorization
+    (OpenFGA relations gate what each principal's context may contain).
+  - *Exhaust → intelligence (the flywheel):* every confirmation artifact the
+    platform produces — eval scores, traces, metering, reliability history,
+    reputation — is itself data that drives the platform's own decisions:
+    routing, certification, pricing. The platform is its own first
+    decision-intelligence customer.
+
+  Governance corollary: if data is intelligence, then data governance *is*
+  intelligence governance — provenance, consent, and tenancy isolation on
+  data are upstream controls on what any agent can know or leak.
+
 ## The Mission Statement
 
 > **The platform is the control plane where agent engineering, intelligence,
