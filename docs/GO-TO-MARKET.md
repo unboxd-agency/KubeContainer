@@ -5,6 +5,15 @@ The thesis in four words: *provenance is the product* (defined in
 its evidence report attached, because the record of how an artifact earned
 its way out is the one thing a customer cannot get anywhere else.
 
+The posture in four words: *everything open, but commercial.* Open is
+not a tier and commercial is not a fence — the same artifact is both:
+free to take (Apache 2.0, no lock-in, exit real) and sold as a
+business, because what is monetized was never the artifact — it is the
+standing behind it: the verdicts, the underwriting, the certification,
+the provenance. Open wins the adoption; commercial sells the trust;
+neither subsidizes the other — they are the same motion seen from the
+two sides of the contract.
+
 The paradox to resolve: everything here is open — standards-based, no
 lock-in, exit always real, the operator Apache-licensed. So what is sold?
 The charter's answer: **openness is not what we give away; it is what we
