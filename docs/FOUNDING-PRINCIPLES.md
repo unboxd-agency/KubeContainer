@@ -26,6 +26,28 @@ published, certified, evidenced, underwritten. The OS does not trust
 hardware because it must; it contracts with hardware because the charter
 admits no other relationship — and so the stack is contracts all the way
 down, until the last signature belongs to whoever made the atoms behave.
+Which makes the destination a hardware-native OS: the fabric not perched
+on a tower of borrowed abstractions but speaking to silicon in silicon's
+own contract — scheduling against real cores, real memory, real NICs and
+accelerators as first-class citizens of the declaration (the workload
+that needs the GPU declares the GPU; the class names the metal), every
+intermediary layer earning its place or being removed, because each
+abstraction between the OS and the hardware is a translator taking
+commission on the contract. Virtual where rehearsal needs it, native
+where reality is touched: the stable OS for agentic enterprises runs
+*on* the vendor's silicon contract directly — hardware-native at the
+bottom for the same reason it is mind-native at the top: no layer
+between a promise and the party who keeps it. And between the two, the
+infra-native kernel: the OS's core does not *run on* infrastructure, it
+*is* infrastructure speaking — the kernel's primitives are the fabric's
+own (declare, watch, reconcile, record; admission as the syscall gate,
+the record as the filesystem, loops as the process table, contracts as
+the ABI), so that infrastructure-as-code stops being a layer above the
+kernel and becomes the kernel's native tongue: the cluster does not host
+the OS of work — the cluster, declared and reconciled, *is* the OS of
+work booting. Hardware-native below, infra-native within, mind-native
+above — one stack, three fluencies, no translation losses anywhere a
+promise travels.
 
 What a founder contributes that outlives every product decision is a set of
 principles — the constraints the venture will not trade away. These are the
