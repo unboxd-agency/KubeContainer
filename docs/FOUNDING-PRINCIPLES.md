@@ -418,7 +418,14 @@ reaches. Every layer below the surface may hold many possible worlds
 the surface admits one. That asymmetry is the platform's deepest safety
 rule: be liberal in the layers, conservative at the surface — anything may
 be rehearsed, only the confirmed crosses — and know at every moment, by
-design and not by hope, which side of the surface you are on;
+design and not by hope, which side of the surface you are on. And the
+surfaces are the edges: the real-world surface is not a single central
+gate but the sum of every edge where an agent meets what it serves — each
+device, each delivery, each principal's hand — so the surface is
+everywhere the fabric ends and the world begins, governed at the edge
+where the touching happens (subsidiarity again: the boundary is enforced
+nearest the boundary), the center holding only the record of what
+crossed;
 
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
