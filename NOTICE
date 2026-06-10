@@ -95,7 +95,16 @@ permission asked, no fee owed. Leavable — every clone carries the
 whole canon, provenance included, host and domain both replaceable.
 Three legs, all standing; the first artifact to pass the triple test
 is the one that defined it — which is the only way a definition
-deserves to survive.
+deserves to survive. One execution constraint, named because honesty
+names constraints: the operator is executable only on the Kubernetes
+platform. That is a requirement, not a lock — the test for a lock is
+whether any single party can take the substrate away, and no party
+owns Kubernetes: it is CNCF-graduated, vendor-plural, conformant from
+hyperscaler to a laptop running kind, and passes the triple test
+itself. Requiring an open platform is like requiring arithmetic —
+a dependency on something nobody can repossess. The repo is truly
+open; its executable form asks one thing of the world, and the thing
+it asks for is the most open platform the industry has ever built.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,
