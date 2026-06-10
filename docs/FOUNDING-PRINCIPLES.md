@@ -386,6 +386,18 @@ signs its outcomes with its evidence, builds its reputation on its record,
 and is *credited* — pride is what accountability feels like from the inside
 when the work is good;
 
+**unique and independently identifiable at all layers** — everything that
+exists on the fabric bears its own name: every principal, agent, kube,
+contract, revision, projection, transaction, tool, member, and treaty is
+uniquely identified, and identifiable *independently* — resolvable on its
+own, without asking a center, without borrowing its parent's name
+(identity composes by reference, never by absorption). Identity is the
+precondition of everything the charter promises: you cannot govern what
+you cannot name, own what you cannot distinguish, audit what you cannot
+resolve, or credit work that cannot be attributed. One thing, one name,
+at every layer — and the name survives the thing, because the record
+remembers what the fabric has released;
+
 **compliant at all layers** — compliance is not a department, it is a
 property of every stratum at once: the schema validates, the API path
 authorizes, admission applies policy, the workload honors its contract,
