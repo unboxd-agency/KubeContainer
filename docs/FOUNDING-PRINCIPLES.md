@@ -162,5 +162,27 @@ the charter.
     language. Work no longer runs *on* a computer — it runs on the
     fabric, and the fabric runs it well.
 
+## The Purpose
+
+All twenty-two principles serve one end, and it is the charter's last word:
+
+> **Enabling organized work, governable at scale.**
+
+Organized — not mere activity, but work under contract: declared outcomes,
+bounded ownership, legible delegation, evidence of completion. Governable —
+not merely governed today, but *capable of being governed* as it grows: every
+mechanism above (consent, sovereignty, federation, design-time enforcement,
+assurance) is chosen because it still works at the scale where meetings,
+manual audit, and trust-by-acquaintance fail. At scale — across fabrics,
+providers, jurisdictions, and the agent economy's full value chain, where the
+units of work outnumber the humans by orders of magnitude and governance must
+therefore be a property of the system, not an effort of its operators.
+
+A platform succeeds at exactly this: when more work can be organized than any
+organization could organize, and governed better than any governor could
+govern it.
+
+---
+
 These principles are normative for this project (see `CLAUDE.md`); changes
 to them are constitutional changes and reviewed as such.
