@@ -615,7 +615,15 @@ policies, its governance model, its declared operating modes — custom
 built from uniform blocks, the kube-of-kubes trick played one last
 time. Uniform in its promises, personalized in its presence, custom in
 its composition: the same everywhere, different for everyone, owned by
-each — which is the only experience worthy of the word *platform*.
+each — which is the only experience worthy of the word *platform*. The
+three compress to two, and the two were never opposites: **uniform but
+unique** — uniform in the law, unique in the instance, which is how
+everything on the fabric already lives (every kube the same shape, no
+two the same name; every contract the same grammar, no two the same
+terms; every loop the same heartbeat, no two the same work) — sameness
+where sameness builds trust, uniqueness where uniqueness *is* the value,
+and never the one traded for the other: that is the experience, the
+architecture, and the ethic in four words.
 
 *It's the pursuit of excellence that keeps the world moving.* The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
