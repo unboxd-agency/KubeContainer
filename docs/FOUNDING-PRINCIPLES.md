@@ -253,6 +253,35 @@ recorded, transactions ACID — declaration before, evidence during, memory
 after, the witness preserved, and every entry whole: where all work on the
 fabric begins, runs, remains, and can always be explained.
 
+## The Promise
+
+What the charter owes the people and agents who operate on it:
+
+> **All operators — educated, enabled, empowered — with native-language
+> intelligence, on time, every time, through an Internet of Agents.**
+
+- **Educated** — the platform teaches what it knows: every SOP, contract,
+  and definition is living documentation; operational knowledge transfers
+  by artifact (10), not apprenticeship by accident.
+- **Enabled** — best-in-class tools from certified suppliers in every
+  operator's hands (12); the paved road is the default road.
+- **Empowered** — authority delegated to the edge with the work
+  (subsidiarity, 20): operators hold real, scoped power — not tickets into
+  someone else's queue — and the design keeps their actions safe to take
+  (19).
+- **With native-language intelligence** — frontier intelligence arrives in
+  each operator's own language, human or machine (5): no privileged tongue,
+  no translation tax on understanding.
+- **On time, every time** — just-in-time and always-on, jointly: delivery
+  at the moment of need (12), from a substrate that has no closed sign (9);
+  punctuality as an SLO, not an aspiration.
+- **Through an Internet of Agents** — the delivery network is the fabric at
+  internet shape: open standard protocols, federated authority, any agent
+  reachable by any agent under contract and policy, owned by no one,
+  joinable by anyone who clears the published bar. What the internet did
+  for information — any node to any node, no permission from a center —
+  the Internet of Agents does for work.
+
 ---
 
 These principles are normative for this project (see `CLAUDE.md`); changes
