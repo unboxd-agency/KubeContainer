@@ -109,5 +109,16 @@ the charter.
     certification registry, the directory) — small enough that no member
     is hostage to it, strong enough that every member can trust the rest.
 
+19. **Governed by design.** Governance is an architectural property, not an
+    administrative layer: identity, authorization, policy, and audit live
+    in the substrate itself — validation in the schema (CEL), authorization
+    in the API path (RBAC, OpenFGA), policy at admission (OPA), evidence in
+    the event log — so the governed path is the *only* path and compliance
+    cannot be bypassed, forgotten, or bolted on later. Privacy-by-design
+    generalized: the rules a system must obey are encoded where the system
+    cannot act without passing through them. A platform is well-governed
+    not when violations are punished but when the design makes them
+    unexpressible.
+
 These principles are normative for this project (see `CLAUDE.md`); changes
 to them are constitutional changes and reviewed as such.
