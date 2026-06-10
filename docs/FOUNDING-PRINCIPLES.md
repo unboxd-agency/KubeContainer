@@ -379,7 +379,15 @@ frame) is its own recorded projection — assembled by the five data
 dimensions, gated by authorization, disposable after use — so meaning
 stays situated and isolation extends all the way up into cognition: what
 an agent knows *here* it does not automatically know *there*, and that is
-a guarantee, not a limitation;
+a guarantee, not a limitation. For context is the intelligence: a frontier
+model is potential, but what makes any answer *intelligent* — situated,
+relevant, true enough to act on — is the context assembled for it; the
+same mind with different context is a different intelligence, which is why
+context assembly is the platform's most consequential act, why projections
+are recorded (the axiom's fourth clause: the context *was* the
+intelligence at the moment of decision), and why governing context —
+what may enter it, from where, for whom — is governing intelligence
+itself;
 
 **governed each by its own sustainable model** — no single corporate form
 is imposed: a member may be a company, a cooperative, a foundation, a
