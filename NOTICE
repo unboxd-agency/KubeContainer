@@ -39,3 +39,36 @@ operated, and underwritten *by* the agency, never confused *with* it.
 Platforms are artifacts and artifacts are replaceable (the charter
 insists on it: no lock-in, exit real); the agency is the party that
 answers — and parties, unlike products, are who you actually trust.
+
+This identity is canonical: settled, definitive, the reference others
+resolve against — held to the same regime as the founding principles,
+amended only by recorded, reasoned revision, never by drift. The name,
+the boundary, and the meaning above are no longer candidates; they are
+the record.
+
+And the canon is decentralized — canonical means definitive, not
+central. The identity lives in a content-addressed, fully replicated
+record: every clone of this repository carries the whole of it —
+claim, proof, history, and seal — verifiable independently, resolvable
+without asking any center (git's hashes are the integrity; the record
+is the home; no server is the identity's keeper). Amendments propagate
+as pulls, never pushes: the canon travels to whoever fetches it, holds
+wherever it lands, and survives any single host — including this one.
+At the platform layer the same rule binds principals and agents:
+identifiers resolvable without a central registry (the W3C DID class
+of standards as they mature), per the charter's own law — unique,
+independently identifiable, at all layers. The canonical cloud agency
+is canonical the way a constitution is, not the way a head office is:
+one text, many copies, no throne.
+
+The anchor is the domain: the DID is the domain URL (the did:web
+method) — did:web:unboxd.cloud — so the identity resolves exactly
+where the API group already lives (kubecontainer.unboxd.cloud), by
+DNS and HTTPS that every party on earth can already verify, no new
+root of trust invented. And one canonical identity wears many
+profiles: the GitHub organization, the website, the registry entries,
+the marketplace listings, each context's presentation — every profile
+a recorded projection of the one identity, resolving back to the
+canon, never a second self. Profiles may differ as audiences differ
+(the multi-context rule applied to the firm itself); the identity may
+not: one DID, many faces, each face on the manifest.
