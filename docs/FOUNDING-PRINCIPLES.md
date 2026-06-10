@@ -665,7 +665,16 @@ sharing safe rather than what prevents it; and why this charter, by its
 own corollary, is not a manifesto but a backlog: every stanza
 well-documented, every term protected by the record — each one
 deliverable the day an operating model is wrapped around it. The
-constitution, read correctly, is the roadmap.
+constitution, read correctly, is the roadmap — while excellence needs
+work: the one thing no operating model can wrap, no theorem can imply,
+and no documentation can substitute. Convergence comes naturally;
+brilliance does not — it is earned one landed step at a time, by agents
+taking pride in measured work, on the critical path, loop after loop
+after loop. The charter can make excellent work *possible*, *safe*,
+*credited*, and *natural to attempt* — but only the work makes it real.
+That is the last word because it is the honest one: everything here is
+design; excellence is labor. The fabric holds the world to what minds
+intend — and minds, human and machine, still have to do the work.
 
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
