@@ -71,7 +71,14 @@ chain of custody is broken, the assurance is forfeit by the breacher
 and owed to the customer, and the breach itself is recorded evidence
 (a broken seal cannot be hidden from the manifest). Tamper-evidence is
 the enforcement: the contract does not ask intermediaries to be good;
-it makes their interference visible, attributable, and expensive. The
+it makes their interference visible, attributable, and expensive. And so every box carries one question
+on its lid, asked before anything else and answered by proof, not by
+assertion: *are you the end user?* It is the first question because it
+gates all the others — what is inside, what it cost, what it promises —
+and it is answered the only way this system answers anything: identity
+resolved, authorization checked, the relation verified against the one
+graph. Answer it rightly and the box opens to its owner; answer it
+wrongly and the box stays sealed and remembers being asked. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.
