@@ -92,7 +92,17 @@ models — all of it is scaffolding around the one act the motto always
 named. The license protects the delivering; the SaaS prices the
 delivering; the registry proves the delivering; the oath is about
 nothing else. Whoever asks what this company does gets the two-word
-answer with receipts behind it.
+answer with receipts behind it. And the closing triptych, each panel
+his: *knowledge is free* — reading costs nothing, no information
+lock, the catalog open to every walker-in; *the platform will be the
+library* — not a product with a library attached: the library IS the
+product, served as SaaS — free to read, priced to be served, the
+librarian's judgment being the work; and *I'll not fix Apache* — the
+ancestor's repair is not this founder's contract; succession is.
+You do not fix a library that chose against knowledge; you build the
+one that doesn't, keep your oath in writing, and let the readers
+decide where to walk in. The decision tree is closed. The work is
+delivery.
 
 ## Recommendation (counsel, not decree)
 
