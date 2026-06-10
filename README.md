@@ -115,8 +115,16 @@ definition in five words, and the answer to "who does the work" at
 every scale. The box reconciles its contents to its lid; the operator
 reconciles the cluster to the declaration; the fabric reconciles the
 worlds to the record; and each of them is the same answer to the same
-question — not "what is it" but "who keeps it true." That is the
-product. The
+question — not "what is it" but "who keeps it true." And desired state
+is defined by the operator: the principal declares the *intent* — what
+they want, in their own terms, on the lid; the operator defines the
+*desired state* — the full concrete rendering of that intent into the
+world's terms (every child, every default, every invariant the
+declaration implies), which is exactly the expertise the operator
+packages and the reason it exists. Three offices, cleanly split: the
+principal declares, the operator defines, the loop converges — intent
+is yours, its rendering is the operator's craft, and its keeping is
+the loop's job. That is the product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.
