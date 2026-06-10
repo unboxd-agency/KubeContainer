@@ -20,8 +20,14 @@ open-enterprise (everything open, but commercial), *cloud* as the
 territory served rather than the name worn, *agency* in both its
 senses at once: the firm that acts for its principals, and the quality
 its boxes gain when identity and governance are added to the artifact.
-A second phrasing is held as a candidate: the hybrid cloud agency —
-*hybrid* as in every fabric, every premises, every provider, no
-territory excluded (the multi-fabric principle as a market position).
-Open emphasizes the posture; hybrid emphasizes the reach; the brand
-pass chooses, the record holds both.
+The qualifiers compete and all of them are true — open (the posture:
+everything open, but commercial), hybrid (the reach: every fabric,
+every premises, every provider), serverless (the architecture: no
+server anyone pets, state in the record, compute summoned by the
+event) — and because each is a property rather than the point, none is
+the name. Hence the resolution: unboxd is the canonical cloud agency.
+Canonical does the work the qualifiers were auditioning for — the
+definitive one, the one others are measured against, the reference
+implementation of what a cloud agency is — and the properties (open,
+hybrid, serverless, governed, evidenced) are what canon *means* here,
+listed in the record rather than crowded into the title.
