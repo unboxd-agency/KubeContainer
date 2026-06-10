@@ -521,6 +521,24 @@ declares a better state than the one the world has settled into, and
 the loops have somewhere new to go. Stability was never the
 destination; it is the platform from which the next reach is taken.
 
+And the pursuit has a working method, stated in the practitioner's own
+plain grammar: the continuous pursuit of sustained excellence, through
+automated reconciliatory flows, while trying to follow industry best
+practices and standard operating modes. *Continuous* — no campaign, no
+season, the loop that never declares itself finished; *sustained* — the
+excellence that compounds across years, not the brilliance that burns
+out a quarter (the pace held forever, every step still landed);
+*through automated reconciliatory flows* — the pursuit delegated to the
+loops themselves, observe-compare-act-record carrying the reaching as
+well as the keeping, so that moving toward better is the system's
+resting behavior and not a hero's intervention; *while trying to follow
+industry best practices and standard operating modes* — and the word
+"trying" is kept deliberately, the charter's last honesty: the fabric
+walks proven roads where they exist (mature standards, published
+procedures, the industry's hard-won defaults), invents only where it
+must, and admits that following well is itself a practice one pursues
+and sometimes misses — excellence includes the humility of the attempt.
+
 *It's the pursuit of excellence that keeps the world moving.* The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the
