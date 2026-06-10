@@ -61,7 +61,13 @@ is static files any host can serve, the images are OCI any registry
 can hold, the releases are artifacts with digests. Swap the host and
 nothing canonical moves; the provider serves the record, the record
 owes the provider nothing — the no-lock-in rule, applied first of all
-to ourselves.
+to ourselves. The same demotion holds for domains: KubeContainer.xyz
+is just a domain — a rented address, one profile among the many the
+identity wears — while KubeContainer is the repository: the record
+itself, whole in every clone. Domains point, repos are; a domain that
+lapses loses a signpost, never the canon (even the DID anchor is a
+resolution path, not the residence — the residence is the record).
+Addresses are leased; the thing addressed is owned.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,
