@@ -538,6 +538,23 @@ how the fabric keeps its promise that exploration is contained *without*
 being rationed: anyone may rehearse any world; only the confirmed crosses
 the surface;
 
+**emulation is hard-dependent, with virtual kernels possible** — the
+honest physics of rehearsal: simulation and emulation are different
+promises. Simulation models behavior at a chosen fidelity — cheap,
+democratized, good enough to test a theory; emulation reproduces the
+substrate itself — every syscall, every timing, every quirk — and that
+fidelity is *hard-dependent*: bound to the hardware and host it mimics,
+paid for in cycles, never free (a perfect emulation of the surface costs
+what the surface costs — the map that equals the territory is the
+territory). The escape is the middle path the container world already
+walks: **virtual kernels are possible** — user-space kernels, sandboxed
+syscall surfaces, micro-VMs, unikernels, WASM-class runtimes — enough
+kernel to be *honest* (the real contract, actually enforced) without the
+full weight of the metal, so rehearsal can climb fidelity as the stakes
+climb: simulate to think, virtualize the kernel to verify, emulate only
+what the crossing demands — and spend true hardware fidelity like the
+scarce currency it is, on the last step before the surface;
+
 **the edge is a theory, and the digital twin exists** — the edge is not
 found, it is theorized: where fabric ends and world begins is itself a
 maintained model — what the platform controls, what it merely observes,
