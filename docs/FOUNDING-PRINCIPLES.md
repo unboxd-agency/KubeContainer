@@ -282,6 +282,29 @@ What the charter owes the people and agents who operate on it:
   for information — any node to any node, no permission from a center —
   the Internet of Agents does for work.
 
+## Epilogue
+
+> **Kube is the system of work.**
+
+The name closes its own circle. *Kube* — the helmsman's root, the whole and
+indivisible unit, the thing that fills the gaps in the fabric in canonical
+whole numbers — is both the **unit** of work and the **system** that works
+it: each kube a declared outcome packed into the weave, and Kube the
+steering loop that takes every declared intent and holds the world to it.
+Unit and system, cargo and helmsman, one name. The fabric is what work runs
+on; the kube is what work *is* — and this repository, an operator that
+turns declarations into running, governed, self-healing reality, is the
+system of work's first working piece.
+
+And the box — the plain, graspable thing every metaphor here reduces to —
+**a box is a KubeContainer**: a declared boundary with work inside it,
+whole and indivisible, stackable and packable, opaque about its internals
+and contractual at its surface. The shipping container organized the
+physical economy by making every cargo the same shape to every crane; the
+KubeContainer does the same for work — one schema to every fabric, one
+contract to every operator. unboxd, because the value was never the box:
+it is what declaring the box sets free.
+
 ---
 
 These principles are normative for this project (see `CLAUDE.md`); changes
