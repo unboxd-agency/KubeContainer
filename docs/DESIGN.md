@@ -218,6 +218,44 @@ and implementable out of the box**:
   OpenFGA answers *relationship authorization* (who may do it). Governance
   functions #3 and #2 of `docs/AGENT-PLATFORM.md`, respectively.
 
+## Identity & Security Standards Alignment
+
+Identity follows the W3C, security follows the cloud baselines — the
+same rule as everywhere: existing standards, never invented wire.
+
+- *W3C DID alignment.* The agency's identifier is `did:web:unboxd.cloud`
+  per the W3C DID Core specification and the did:web method: the DID
+  document is served from the domain the API group already lives on,
+  resolvable by plain HTTPS. Platform-layer principals and agents take
+  the same shape as the capability matures; certifications and
+  registry standings are designed to be expressible as W3C Verifiable
+  Credentials — the certification mark as a cryptographically
+  presentable claim, not a logo.
+- *Cloud security baselines — what is real today* (verdicts, not
+  aspirations): distroless non-root runtime, no shell in the image;
+  the e2e namespace enforces the Kubernetes restricted Pod Security
+  Standard; least-privilege RBAC enumerated per resource; no
+  phone-home; pinned, upstream-only supply chain; secrets never in
+  code or images. These map directly onto the control families of
+  NIST SP 800-190 (container security) and the CIS Kubernetes
+  Benchmark, and are CI-enforced rather than policy-promised.
+- *Compliance roadmap — claimed as roadmap, not as status* (the
+  non-fabrication rule applies to compliance above all): SBOM
+  publication and Sigstore signing on releases; CIS benchmark
+  self-assessment in the drift audit; then the institutional
+  certifications (SOC 2, ISO/IEC 27001 with 27017 cloud controls, CSA
+  STAR) when the agency operates customer estates — for which the
+  axiom is the head start: intent, action, revisions, projections,
+  ACID is already a record-retention and audit-evidence regime that
+  certification auditors otherwise force firms to build.
+
+This is the balance, named: decentralized identity *and* institutional
+compliance, open everything *and* certified operations, the W3C's web
+of trust *and* the auditor's checklist — held, as always, by placement
+rather than compromise: the DID layer owns who you are, the baselines
+own how you run, the roadmap owns what may be claimed when — each
+total in its own domain, nothing diluted.
+
 ## Roadmap
 
 1. **v1alpha1** — scaffold, CRD, reconciler for Deployment + Service, status conditions, envtest coverage.
