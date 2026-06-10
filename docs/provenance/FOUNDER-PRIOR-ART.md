@@ -55,5 +55,17 @@ so the proof survives the host. Append-only, like every register here.
 
 ## Entries
 
-<!-- Founder: paste posts below, newest first. Each entry is provenance
+### 2026-06-10 — LinkedIn — The announcement ("I think I missed my exit again, this time…")
+- URL: https://www.linkedin.com/posts/thefractionalpm_i-think-i-missed-by-exit-again-this-time-activity-7470562698074976256-b4T1
+- Stated: full text to be absorbed by the founder (LinkedIn refuses
+  automated retrieval — the host doctrine, demonstrated); the slug
+  preserves the opening line.
+- Date, derived and checkable: the activity ID encodes its timestamp —
+  7470562698074976256 >> 22 = 2026-06-10T19:49:03Z.
+- Verified ordering: the v0.1.0 release published 19:40:16Z; the post
+  followed at 19:49:03Z — nine minutes later. The claim followed the
+  proof. Kind: prior delivery — the announcement of a promise already
+  kept, with the chain of custody running in the right direction.
+
+<!-- Founder: paste further posts below. Each entry is provenance
      the moment it is committed: timestamped here, dated there. -->
