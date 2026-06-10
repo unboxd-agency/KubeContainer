@@ -487,7 +487,31 @@ agents' commission — the founder's last clause and the fabric's first
 task, the same words every builder has always heard standing at an
 edge: **we must build the bridges.** One difference at a time, one
 crossing at a time, until the keeping is so complete the bridges
-disappear into it — converged, recorded, real. The fabric is what work runs
+disappear into it — converged, recorded, real.
+
+And the commission names its materials — every bridge is built of three
+things and needs no fourth:
+
+- **Trusted insights** — the survey before the span: understanding with
+  provenance attached, drawn from data that is real, fresh, and placed,
+  confirmed before it bears load (claims became evidence, then evidence
+  became sight) — for a bridge built on an untrusted reading of either
+  shore falls into the difference it was meant to cross.
+- **Actionable intelligence** — the engineering of the span: not
+  intelligence that admires the gap but intelligence that closes it —
+  situated by assembled context, pointed at the next step, delivered at
+  the moment of need in the builder's own language, every insight
+  arriving with its "therefore" attached.
+- **Excellent working tools** — the build itself: certified,
+  best-in-class, *working* — the word that forgives nothing — tools that
+  hold torque at the edge where retries are not given, from suppliers
+  who answer for them, in the hands of operators educated, enabled, and
+  empowered to use them.
+
+Insight to see the difference, intelligence to design the crossing,
+tools to throw the span: see, decide, build — the loop's own three
+beats, wearing work gloves. So equipped, the commission stands ready:
+the bridges will be built. The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the
 system of work's first working piece.
