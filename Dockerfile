@@ -1,5 +1,6 @@
 # Build the manager binary
-FROM golang:1.25 AS builder
+# Keep this version in sync with the go directive in go.mod.
+FROM golang:1.25.7 AS builder
 ARG TARGETOS
 ARG TARGETARCH
 

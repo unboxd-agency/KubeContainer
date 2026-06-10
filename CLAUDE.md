@@ -39,3 +39,7 @@ Standard Kubebuilder v4 layout: types in `api/v1alpha1/`, reconciler in
   enforced with CEL `XValidation` markers on the types, not webhooks.
 - envtest runs no Deployment controller or garbage collector: tests assert
   `Ready=False/Progressing=True` and delete children explicitly in `AfterEach`.
+- The Go version is pinned to an exact patch release in `go.mod` (the single
+  source of truth — CI reads it via `go-version-file`). When bumping it, also
+  update the `golang:` image tags in `Dockerfile` and
+  `.devcontainer/devcontainer.json` to match.
