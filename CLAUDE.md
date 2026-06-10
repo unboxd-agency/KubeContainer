@@ -11,6 +11,16 @@ Deployment, Service/Ingress, and HPA resources. The full architecture, CRD schem
 reconcile-loop design, and roadmap live in `docs/DESIGN.md` — read it before making
 changes.
 
+## Terminology
+
+**Agent (standard definition, use this from now on):** An *agent* is a program
+that acts autonomously on behalf of a principal, deployed because the work must
+happen **where the principal isn't** (a remote host, a cluster, a user's
+machine) or must continue **when the principal is gone** (background loops,
+autonomous goal pursuit). Otherwise it would just be a function call.
+The operator in this repo is an agent in exactly this sense: it reconciles
+declared intent inside the cluster, continuously, with no human in the loop.
+
 ## Commands
 
 - `make build` — generate manifests/deepcopy, fmt, vet, and compile the manager.
