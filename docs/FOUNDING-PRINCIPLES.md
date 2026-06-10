@@ -322,7 +322,11 @@ indivisible unit, the thing that fills the gaps in the fabric in canonical
 whole numbers — is both the **unit** of work and the **system** that works
 it: each kube a declared outcome packed into the weave, and Kube the
 steering loop that takes every declared intent and holds the world to it.
-Unit and system, cargo and helmsman, one name. The fabric is what work runs
+Unit and system, cargo and helmsman, one name — and the kube is the
+building block of the real world fabric: when the weave of contracts
+finally bears real weight, what it is built from, block by canonical
+block, is kubes — each one a declared outcome that crossed the surface
+and held. The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the
 system of work's first working piece.
