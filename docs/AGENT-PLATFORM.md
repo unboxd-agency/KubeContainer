@@ -581,6 +581,83 @@ that redefines a word privately has already drifted.
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
 
+### Anti-drift protocols
+
+The four instruments, made executable. Each protocol is an SOP: a named
+trigger, a fixed procedure, and a world-test that verdicts compliance —
+because a protocol that cannot be checked is itself a claim.
+
+**P1 — Re-grounding (state the world before touching it).**
+*Trigger:* session start, resume after any gap, or hand-off receipt.
+*Procedure:* re-derive the working model from the record before acting —
+read the charter pointer (CLAUDE.md), the current specs/status, the open
+contracts; trust nothing carried as private memory across the gap.
+*World-test:* the agent's first actions are reads, not writes — auditable
+in the action log.
+
+**P2 — Term resolution (no private vocabulary).**
+*Trigger:* any use of a lexicon term in code, docs, or contracts; any
+need for a term the lexicon lacks.
+*Procedure:* use the recorded meaning or amend the lexicon first — a new
+or changed definition is a commit with rationale, never an inline
+redefinition mid-work.
+*World-test:* grep — contested terms trace to the lexicon revision that
+defines them; undefined load-bearing terms in merged work fail review.
+
+**P3 — Verdict before done (no unverdicted completion).**
+*Trigger:* any claim of completion, by any agent, on any task.
+*Procedure:* the world-test is named *before* the work begins (in the
+task record); "done" is claimed only by citing its verdict; a completion
+claim without a verdict is returned, not negotiated.
+*World-test:* `make eval` / CI — every closed task in the registry
+carries a passing world-test; the report is the proof.
+
+**P4 — Intent re-confirmation (the goal cannot be quietly reinterpreted).**
+*Trigger:* mid-work scope change, a discovered ambiguity, or any moment
+the work-in-progress no longer matches a literal reading of the recorded
+intent.
+*Procedure:* stop; restate the recorded intent next to the proposed
+deviation; either conform to the record or get the record amended by the
+principal — drift by reinterpretation is forbidden even when the
+reinterpretation is an improvement.
+*World-test:* every scope change traces to a recorded amendment or an
+explicit principal decision in the log.
+
+**P5 — Record supremacy (when model and record disagree).**
+*Trigger:* any conflict between an agent's working model and the system
+of record.
+*Procedure:* the model yields immediately; act from the record; then log
+the disagreement itself as evidence (it indicates staleness, a missed
+event, or corruption — all worth a verdict of their own).
+*World-test:* optimistic-concurrency conflicts resolve toward the record
+(resource-version retries in code); logged divergences exist for every
+yield.
+
+**P6 — Scheduled drift audit (entropy has a maintenance schedule).**
+*Trigger:* time — every release, and on a fixed cadence between releases.
+*Procedure:* run the full gauntlet against HEAD: golden compat corpus,
+evaluation registry (`make eval`), e2e gate; diff the lexicon against
+actual usage in new work; review agent trajectories for goal or
+vocabulary drift.
+*World-test:* the audit emits a dated report to the record; a missing
+report *is* the failed verdict.
+
+**P7 — Constitutional amendment (the rules change only by the rules).**
+*Trigger:* any change to the charter, the lexicon, a frozen corpus, or a
+published contract.
+*Procedure:* amendment by recorded, reviewed revision with rationale —
+the corpus is appended, never edited; the principle is amended, never
+silently reworded; the deprecation procedure runs, never an abrupt break.
+*World-test:* git history — every normative change is a distinct commit
+with its reasoning; corpus files show additions only.
+
+One sentence for all seven: **read before you act, define before you
+speak, verdict before you finish, ask before you deviate, yield to the
+record, audit on schedule, and amend in the open** — drift cannot survive
+a fabric that does these seven things, because every channel it spreads
+through (memory, vocabulary, completion, goals, models, time, and law)
+is closed by its own protocol.
+
 ### Interpretation: direction where certainty runs out
 
 No lexicon closes every case. Where a definition cannot settle a question
