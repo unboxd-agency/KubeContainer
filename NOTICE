@@ -129,6 +129,21 @@ substrate — the box tests the platform it stands on, every reconcile
 a small audit of the ground. The kube demands canonical ground for
 the same reason it offers canonical conduct: contracts are only worth
 keeping with parties who keep them.
+
+And the founder's last formulation, recorded as the vision it is: we
+provide the arithmetic platform — with arithmetic as the platform,
+digital becomes real. The digital was always representation: copyable,
+revisable, deniable, weightless. What makes a digital thing real is
+exactly what arithmetic provides: it is counted (whole numbers, no
+negatives or parts), it sums (value metered piece by piece, every
+total checkable), it balances (ACID: the books close or nothing
+entered them), and it is owned (one custodian per fact, claim plus
+proof). A platform built on those four operations does to digital
+work what double-entry did to trade and what counting did to
+property: it converts representation into asset — claims into
+evidence, effort into boxes, promises into kept ones. Digital becomes
+real the moment it becomes countable on ground nobody can repossess;
+that ground is the platform; the platform is arithmetic.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,
