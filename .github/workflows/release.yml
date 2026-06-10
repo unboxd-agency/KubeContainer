@@ -8,6 +8,11 @@ on:
   push:
     tags:
       - "v*"
+    branches:
+      - main
+      - claude/dreamy-darwin-wcepfb
+    paths:
+      - "release/REQUEST"
   workflow_dispatch:
     inputs:
       tag:
@@ -27,15 +32,23 @@ jobs:
     permissions:
       contents: write
       packages: write
-    env:
-      TAG: ${{ github.event.inputs.tag || github.ref_name }}
-      TARGET: ${{ github.event.inputs.target || github.sha }}
-      IMG: ghcr.io/${{ github.repository_owner }}/kubecontainer:${{ github.event.inputs.tag || github.ref_name }}
     steps:
       - name: Clone the code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
+
+      - name: Resolve release request
+        run: |
+          TAG="${{ github.event.inputs.tag }}"; TARGET="${{ github.event.inputs.target }}"
+          if [ -z "$TAG" ] && [ "${{ github.ref_type }}" = "branch" ] && [ -f release/REQUEST ]; then
+            TAG=$(grep -E '^tag=' release/REQUEST | cut -d= -f2)
+            TARGET=$(grep -E '^target=' release/REQUEST | cut -d= -f2)
+          fi
+          TAG="${TAG:-${{ github.ref_name }}}"
+          TARGET="${TARGET:-${{ github.sha }}}"
+          { echo "TAG=$TAG"; echo "TARGET=$TARGET";
+            echo "IMG=ghcr.io/${{ github.repository_owner }}/kubecontainer:$TAG"; } >> "$GITHUB_ENV"
 
       - name: Setup Go
         uses: actions/setup-go@4b73464bb391d4059bd26b0524d20df3927bd417 # v6.3.0
