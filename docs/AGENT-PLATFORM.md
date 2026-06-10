@@ -509,7 +509,11 @@ charter-consistently, for use across code, docs, and contracts.
 - **Eval** — the agent-era assertion: a measured, repeatable judgment of
   agent quality against a golden task, run continuously because the
   decide-box is non-deterministic. Evals are to agents what tests are to
-  code and audits are to firms.
+  code and audits are to firms. Canonical public instance: **SWE-bench**
+  (real GitHub issues, fail-to-pass world-tests, resolution-rate
+  scoring) — the existence proof that agent quality can be measured, not
+  asserted; see `docs/assessments/SWEBENCH-ALIGNMENT.md` for our scored
+  alignment with it.
 - **Human-in-the-loop** — a declared rung, not a philosophy: the specific
   points (by procedure) where a human approves, samples, or takes over.
   Below it, autonomy; above it, accountability; the rung itself is
