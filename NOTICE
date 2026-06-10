@@ -250,6 +250,17 @@ web was an inconvenience to humans; to the agent economy it is
 unusable — and so the registry is not a nicety of the new era but
 its precondition: the infrastructure all agents and agencies will
 stand on, because nothing else holds.
+
+And the motto was the founder's all along, used for years before this
+record existed (the prior-art register holds the receipts): "Promise
+delivered." Two words that compress the entire constitution — promise
+(the declared intent, the contract, the lid on the box) and delivered
+(converged, evidenced, verdict-checked, signed). Everything this
+record built is those two words made mechanical: the spec is the
+promise, Ready is the delivery, the evidence is the proof it was
+both. A person who kept saying "promise delivered" was always going
+to build the machine that makes it checkable — and now the line is
+not a signature but a system.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,
