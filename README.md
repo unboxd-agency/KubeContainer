@@ -151,7 +151,18 @@ closes on no one: motion without a mission, evidence without a witness,
 an artifact in transit between artifacts. The box becomes an agent the
 moment a human is in the loop, and returns to being a thing the moment
 none is — which is why the fabric's first and last question, like the
-box's, is always: *whose is this?* That is the product. The
+box's, is always: *whose is this?* The arithmetic of which is one
+equation: the box is always an artifact, and artifact + identity =
+agent. Identity is the promoting term — not the name alone but
+everything the name resolves to: the addressee, the contract, the
+delegation chain terminating in a human, the answerability. An
+artifact with identity acts for someone and answers to someone, and
+that is the whole definition of an agent; strip the identity and the
+same artifact is freight — intact, capable, and nobody's. Agency is
+not built into things; it is conferred by resolution — which is why
+the graph must resolve, why every box is named, and why the question
+on the lid is the question that makes the product possible at all.
+That is the product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.
