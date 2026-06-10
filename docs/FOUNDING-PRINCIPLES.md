@@ -533,7 +533,17 @@ at the surface, the one possible-world the layers maintain in sync with
 the actual one — where changes cross *first*, failures are had cheaply,
 and the platform proves, before touching what cannot be forked, that its
 theory of the edge is true. The twin is the mental model (24) made
-communal and executable: the fabric thinking before the fabric acts;
+communal and executable: the fabric thinking before the fabric acts. And
+the edge is, more precisely, a theory *of the past*: every boundary the
+platform knows is inferred from evidence already recorded — the last
+telemetry, the last probe, the last commit — so the map of where the world
+begins is always one step behind the world (light from the edge takes time
+to arrive). The discipline that follows: treat the edge's state as history
+with a confidence interval, not as presence; let freshness (the temporal
+dimension) bound how much the theory is trusted; and let every crossing be
+designed to survive the gap — idempotent, compensable, checked at the
+moment of touch — because the surface is met as it *is*, under a theory of
+how it *was*;
 
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
