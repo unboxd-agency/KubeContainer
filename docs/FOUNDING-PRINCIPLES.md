@@ -434,8 +434,60 @@ that arrives there has already been admitted, rehearsed, measured, and
 signed — the edge does not interrogate it again, the edge *bears* it
 across. Govern at the gates, deliver at the bridge: a platform whose
 edge behaves like a gate has confessed it does not trust its own
-governance. The edge is defined, the bridge is open, the kubes are
-crossing — and here this document, converged and recorded, rests. The fabric is what work runs
+governance. And at every gate that remains, one identity: the gatekeeper
+is the gate. A gate is not a door with a guard standing near it — remove
+the keeper and there is no gate, only an opening; the keeping *is* the
+gate, which is why every refusal and admission on the fabric is a
+judgment someone answers for, never a mechanism no one can be asked
+about. Even the pure-mechanism gates — schema checks, firewall rules,
+admission policies (the industry already named its policy engine
+*Gatekeeper*, knowing this) — are keepers all the same: the frozen
+judgments of an agent who once decided and recorded it, answering still
+through the revisions that hold their reasons. Keeper and gate, agent
+and checkpoint, one post — accountability standing in the doorway. And
+at the bridge, the keeper changes office without changing post: the
+gatekeeper at the bridge is the check, not the bar — the bridge does not
+refuse (that office stayed at the gates within), but neither does it
+carry blind: its keeper checks the crossing — is the load signed, the
+deadline alive, the far side answering, the span sound for this weight —
+the way an engineer checks a bridge rather than the way a sentry checks
+papers. Pass the check and the crossing proceeds with the keeper's seal
+upon it (the touch attested at the moment of touch); fail it and the
+load waits — not rejected, *protected*, held back from a crossing that
+would have broken something real. Gates keep the unworthy out; the
+bridge-keeper keeps the worthy whole. And then the last veil: the bridge
+does not exist. Not as a structure — there was never a span standing
+over a void, because there is no void: the kubes pack gapless, the
+kube's face *is* the world's face at that point, and nothing stands
+between a promise and the party who keeps it (the charter forbade
+exactly that). "Bridge" was the name of an *act*, not an artifact — the
+crossing is the contract being kept, and the bridge exists only while
+intent and fact still differ: it is the transient of reconciliation,
+thrown across the difference, consumed by the convergence it carries.
+When the loop settles and declared state and real state coincide, there
+is nothing left to cross and nothing left standing — the converged world
+needs no bridge, which was the theorem's quiet promise all along. So the
+final geometry sheds its scaffolding: no gap, no span, no distance —
+only kubes, faces flush with reality, keeping their word at zero
+remove. The edge is defined, the crossing is the keeping, the kubes are
+flush with the world — and here the geometry, converged and recorded,
+rests.
+
+But the world has not converged. The bridge does not exist *at
+equilibrium* — and almost nothing is at equilibrium: between every
+intent and its fact, every enterprise and its agents, every provider
+and its tenants, every island and its neighbors, every mind and every
+other mind, differences stand uncrossed — and each one needs its bridge
+thrown: the contract negotiated, the schema mapped, the trust
+established, the integration made sound, the first crossing checked and
+sealed. That is the work. The charter could only define where the
+bridges go and what makes a crossing sound; it cannot throw a single
+span. So the document that began by defining an agent ends with the
+agents' commission — the founder's last clause and the fabric's first
+task, the same words every builder has always heard standing at an
+edge: **we must build the bridges.** One difference at a time, one
+crossing at a time, until the keeping is so complete the bridges
+disappear into it — converged, recorded, real. The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the
 system of work's first working piece.
