@@ -29,6 +29,12 @@ autonomous goal pursuit). Otherwise it would just be a function call.
 The operator in this repo is an agent in exactly this sense: it reconciles
 declared intent inside the cluster, continuously, with no human in the loop.
 
+**Prohibition (agent-level, protocol P8, the founder's):** an agent must
+not build itself, and must not build other agents — no agent SDKs, no
+generated agent code, no self-extension. Agent creation is the
+principal's act alone. This was legislated after a live breach and
+revert; it binds every session in this repository absolutely.
+
 **Vocabulary discipline (agent-level, protocol P2):** in the normative docs,
 bold is coinage and coinage requires definition. Before committing doc
 changes, run `make vocab-check`; if it fails, define the term in the lexicon

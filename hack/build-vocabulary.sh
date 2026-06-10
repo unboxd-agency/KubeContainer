@@ -18,6 +18,12 @@ for f in docs/*.md; do
   done
 done >> "$TMP"
 
+# 1b. Protocol headers: '**P<N> — Name.**'
+grep -nE '^\*\*P[0-9]+ — [^*]+\*\*' docs/AGENT-PLATFORM.md | while IFS=: read -r ln rest; do
+  term=$(echo "$rest" | sed 's/^\*\*//; s/\*\*.*$//; s/\.$//')
+  echo -e "$term\t docs/AGENT-PLATFORM.md:$ln"
+done >> "$TMP"
+
 # 2. Charter principles: 'N. **Principle.**'
 grep -nE '^[0-9]+\. \*\*' docs/FOUNDING-PRINCIPLES.md | while IFS=: read -r ln rest; do
   term=$(echo "$rest" | sed 's/^[0-9]*\. \*\*//; s/\.\*\*.*$//; s/\*\*.*$//')

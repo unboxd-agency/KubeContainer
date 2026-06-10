@@ -87,6 +87,14 @@ open-enterprise
 operational knowledge is an artifact
 orchestrator / subagent
 outcome
+p1 — re-grounding (state the world before touching it)
+p2 — term resolution (no private vocabulary)
+p3 — verdict before done (no unverdicted completion)
+p4 — intent re-confirmation (the goal cannot be quietly reinterpreted)
+p5 — record supremacy (when model and record disagree)
+p6 — scheduled drift audit (entropy has a maintenance schedule)
+p7 — constitutional amendment (the rules change only by the rules)
+p8 — no self-building (the founder's prohibition)
 peer communication over existing standard protocols
 platform capabilities
 policy & authorization, out of the box
