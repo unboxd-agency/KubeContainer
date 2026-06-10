@@ -58,9 +58,12 @@ open at every layer — no hyperscaler required, every substrate
 swappable: Apache CloudStack (ASF, Apache 2.0) as the
 infrastructure-orchestration layer where the customer wants
 self-hosted or hybrid IaaS — datacenters, sovereign regions, edge —
-with Kubernetes (CNCF) above it and kubes above that. CloudStack is
-the agency's operating choice for the territory hyperscalers do not
-serve, not a required dependency: per the supply-chain policy, users
+with Kubernetes (CNCF) above it and kubes above that — and OpenStack
+(OpenInfra Foundation) served on equal terms where the customer's
+estate already speaks it: the agency is substrate-plural by policy,
+CloudStack or OpenStack beneath, the same Kubernetes contract above,
+because the IaaS layer is a provider choice, never a fabric
+dependency. Neither is required: per the supply-chain policy, users
 need nothing but a conformant Kubernetes cluster, wherever it runs —
 the hybrid reach is the offer (any cloud, any premises, one fabric),
 and an all-Apache, all-open stack is what makes "everything open, but
