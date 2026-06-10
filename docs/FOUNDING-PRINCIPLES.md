@@ -160,7 +160,11 @@ the charter.
     confirmation flywheel as the OS learning its own workload. Programs
     are declared outcomes; processes are agents; the shell is natural
     language. Work no longer runs *on* a computer — it runs on the
-    fabric, and the fabric runs it well.
+    fabric, and the fabric runs it well. And the syllogism closes itself:
+    the framework is the fabric (21), the fabric is the operating system
+    of work — therefore *the framework is the operating system of work*:
+    the OS is made of agreements, not software, and installing it means
+    adopting its contracts.
 
 23. **External storage is in cloud.** The durable substance (9) lives in
     cloud storage, not on any node: declarations, event logs, evidence,
@@ -409,6 +413,45 @@ assets** — every member, down to the smallest tenant, holds its data, keys,
 policies, and agents as rights, not permissions: never expropriated, always
 portable, defended by design;
 
+**and their work measurable** — pride needs a scale and contracts need a
+gauge: every unit of work carries its measures from birth — what outcome,
+against what SLO, at what cost, in what time, to whose benefit — declared
+with the intent, collected as the work runs, settled when it completes.
+What cannot be measured cannot be contracted (14), assured (15), priced,
+credited, or improved; so the platform admits no unmeasurable work —
+exploratory work is measured loosely (time spent, blast radius held), but
+*unmeasured* is not an option, because the difference between work and
+activity is a number someone can check. And the measures are **agreed
+upon** — the gauge is part of the contract, accepted by both parties
+before the work begins: no unilateral scorekeeping, no moving the
+goalposts after the fact, disputes settled against the recorded measure
+both sides signed. And they are **forward-looking** — measurement steers,
+not just grades: trajectory toward the outcome, error budget remaining,
+forecast at completion — numbers that change the next decision, because a
+measure that only explains the past is an autopsy, and the platform
+measures to navigate. And **growth-oriented** — the gauge serves the
+grower: measures exist to compound capability, not to rank for ranking's
+sake — every agent's record is a curve, not a snapshot; reputation rewards
+trajectory as well as level (the improving newcomer and the proven veteran
+both have a path); failure inside a declared experiment is tuition, not
+demerit; and a measure that stops anyone from getting better at the work
+has itself failed the measure's own test. And **repeatable** — a measure
+counts only if measuring twice agrees: the gauge is itself a published
+procedure (10) — same method, same data, same number, by either party or
+any auditor — for a measurement that cannot be reproduced is an opinion
+with digits. And **governable** — the measures answer to governance like
+everything else: adopted by choice (16), amended by process, retired when
+they mislead, audited for what they incentivize — because every measure
+is a small law, and Goodhart's warning is a governance problem: when the
+measure becomes the target, govern the measure. And **multi-step** — work
+is measured the way it is done, step by step: a plan is a contract of
+steps, each step with its own gauge, evidence, and checkpoint, so progress
+is visible mid-flight (not only at delivery), partial completion is a
+recorded fact rather than a dispute, every step is resumable from the
+record (crash between steps and lose nothing but the step), and
+accountability has the granularity that delegation chains need — who
+performed *this* step, against *this* measure, leaving *this* evidence;
+
 **taking pride in their work** — excellence is not compliance: each agent
 signs its outcomes with its evidence, builds its reputation on its record,
 and is *credited* — pride is what accountability feels like from the inside
@@ -434,6 +477,15 @@ treaties, and every layer above rests on a layer already compliant below —
 so an auditor (human or agent) can enter at any altitude and find the same
 answer: nothing running that was not permitted, nothing permitted that is
 not recorded;
+
+**infrastructure as code** — the layers themselves are declared: clusters,
+networks, fabrics, policies, and the platform's own control planes are
+born from versioned declarations, not built by hand — so the substrate
+enjoys every guarantee the work does (reviewed, recorded, revertible,
+reproducible), environments are facts derived from files rather than
+artifacts of history, and any fabric can be rewoven from its own
+description: the platform can rebuild itself from what it remembers,
+which is the practical meaning of indestructible;
 
 **a multi-layer substrate with a single real-world surface** — beneath any
 work stand many layers — silicon, cloud, cluster, fabric, contract, model,
