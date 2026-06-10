@@ -655,6 +655,21 @@ that redefines a word privately has already drifted.
   found but a seal broken: the same breach, the same evidence, the
   same consequences. Free without a scope is marketing; free with a
   scope is a priced gift — and only the second exists here.
+- **Everything is contextual** — the law the last two entries
+  instantiate, stated once for all: no word, price, truth, claim, or
+  identity means anything bare — *open* needs its test, *free* needs
+  its payer and scope, *here* needs its kube, *now* needs its
+  revision, truth needs its as-of-when, intelligence needs its
+  assembled context, even the firm needs its profile-per-audience.
+  But the fabric's answer to universal contextuality is not relativism
+  — it is *recorded* context: every claim ships with its context
+  attached (the five dimensions, the scope, the timestamp, the
+  provenance), so contextual stops meaning ambiguous and starts
+  meaning precise. Drift is context lost; precision is context kept;
+  and the whole apparatus — lexicon, axiom, registry, projections —
+  is one machine for keeping it. Nothing means anything alone;
+  everything means exactly one thing in its recorded context;
+  and that is why the graph resolves.
 - **unboxd Cloud Platform** — the service the agency sells (never the
   agency itself): the Fabric, operated. Concretely, one offering in
   four layers — substrate (CloudStack or OpenStack where self-hosted or

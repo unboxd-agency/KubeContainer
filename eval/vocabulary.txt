@@ -40,6 +40,7 @@ era
 eval
 event-triggered, outcome-focused, value-driven
 every boundary speaks a published contract
+everything is contextual
 evidence
 excellent working tools
 external storage is in cloud
