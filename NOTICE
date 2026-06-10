@@ -53,7 +53,15 @@ claim, proof, history, and seal — verifiable independently, resolvable
 without asking any center (git's hashes are the integrity; the record
 is the home; no server is the identity's keeper). Amendments propagate
 as pulls, never pushes: the canon travels to whoever fetches it, holds
-wherever it lands, and survives any single host — including this one.
+wherever it lands, and survives any single host — including this one:
+GitHub is just the hosting platform provider — the current, convenient
+mirror of a record that does not live there. The repository is git
+(every clone whole), the workflows are YAML any CI can run, the site
+is static files any host can serve, the images are OCI any registry
+can hold, the releases are artifacts with digests. Swap the host and
+nothing canonical moves; the provider serves the record, the record
+owes the provider nothing — the no-lock-in rule, applied first of all
+to ourselves.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,
