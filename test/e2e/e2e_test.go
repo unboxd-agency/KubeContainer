@@ -25,6 +25,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"strings"
 	"time"
 
 	. "github.com/onsi/ginkgo/v2"
@@ -270,15 +271,80 @@ var _ = Describe("Manager", Ordered, func() {
 
 		// +kubebuilder:scaffold:e2e-webhooks-checks
 
-		// TODO: Customize the e2e test suite with scenarios specific to your project.
-		// Consider applying sample/CR(s) and check their status and/or verifying
-		// the reconciliation by using the metrics, i.e.:
-		// metricsOutput, err := getMetricsOutput()
-		// Expect(err).NotTo(HaveOccurred(), "Failed to retrieve logs from curl pod")
-		// Expect(metricsOutput).To(ContainSubstring(
-		//    fmt.Sprintf(`controller_runtime_reconcile_total{controller="%s",result="success"} 1`,
-		//    strings.ToLower(<Kind>),
-		// ))
+		// The real-world gate: a declared workload must converge to Ready in a
+		// live cluster — real Deployment controller, real pods, real image
+		// pull, real traffic — before any change is considered proven.
+		It("should reconcile a declared workload to Ready and serve traffic", func() {
+			workload := "e2e-workload"
+
+			By("declaring a KubeContainer workload")
+			manifest := fmt.Sprintf(`
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: %s
+  namespace: default
+spec:
+  image: nginx:1.27
+  port: 80
+  scaling:
+    replicas: 1
+  healthCheck:
+    path: /
+`, workload)
+			cmd := exec.Command("kubectl", "apply", "-f", "-")
+			cmd.Stdin = strings.NewReader(manifest)
+			_, err := utils.Run(cmd)
+			Expect(err).NotTo(HaveOccurred(), "Failed to apply KubeContainer manifest")
+			DeferCleanup(func() {
+				cmd := exec.Command("kubectl", "delete", "kubecontainer", workload,
+					"-n", "default", "--ignore-not-found")
+				_, _ = utils.Run(cmd)
+				cmd = exec.Command("kubectl", "delete", "pod", "curl-workload",
+					"-n", "default", "--ignore-not-found")
+				_, _ = utils.Run(cmd)
+			})
+
+			By("waiting for the KubeContainer to report Ready=True")
+			verifyReady := func(g Gomega) {
+				cmd := exec.Command("kubectl", "get", "kubecontainer", workload,
+					"-n", "default",
+					"-o", "jsonpath={.status.conditions[?(@.type=='Ready')].status}")
+				output, err := utils.Run(cmd)
+				g.Expect(err).NotTo(HaveOccurred())
+				g.Expect(output).To(Equal("True"), "workload should converge to Ready")
+			}
+			Eventually(verifyReady, 5*time.Minute).Should(Succeed())
+
+			By("verifying the reported endpoint serves real traffic")
+			cmd = exec.Command("kubectl", "get", "kubecontainer", workload,
+				"-n", "default", "-o", "jsonpath={.status.endpoint}")
+			endpoint, err := utils.Run(cmd)
+			Expect(err).NotTo(HaveOccurred())
+			Expect(endpoint).NotTo(BeEmpty(), "status.endpoint should be populated")
+
+			cmd = exec.Command("kubectl", "run", "curl-workload",
+				"--restart=Never", "-n", "default",
+				"--image=curlimages/curl:latest", "--",
+				"curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
+				fmt.Sprintf("http://%s/", endpoint))
+			_, err = utils.Run(cmd)
+			Expect(err).NotTo(HaveOccurred(), "Failed to create curl-workload pod")
+
+			verifyServing := func(g Gomega) {
+				cmd := exec.Command("kubectl", "get", "pod", "curl-workload",
+					"-n", "default", "-o", "jsonpath={.status.phase}")
+				output, err := utils.Run(cmd)
+				g.Expect(err).NotTo(HaveOccurred())
+				g.Expect(output).To(Equal("Succeeded"))
+
+				cmd = exec.Command("kubectl", "logs", "curl-workload", "-n", "default")
+				logs, err := utils.Run(cmd)
+				g.Expect(err).NotTo(HaveOccurred())
+				g.Expect(logs).To(Equal("200"), "endpoint should answer HTTP 200")
+			}
+			Eventually(verifyServing, 3*time.Minute).Should(Succeed())
+		})
 	})
 })
 
