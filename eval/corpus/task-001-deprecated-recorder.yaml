@@ -1,0 +1,15 @@
+# Eval corpus task — frozen provenance record. Append-only directory.
+id: task-001
+era: v0.1.0
+title: Lint failure: deprecated event recorder API
+issue: |
+  CI lint fails with staticcheck SA1019: mgr.GetEventRecorderFor is
+  deprecated (old events API). Migrate the operator to the supported
+  events API without changing behavior; lint must pass and the full
+  test suite must stay green.
+base_commit: 51da630
+resolution_commit: 1295e47
+world_test: make lint
+provenance:
+  performed_by: claude-code session
+  evidence: CI runs 27295814761+ green after fix; lint 0 issues

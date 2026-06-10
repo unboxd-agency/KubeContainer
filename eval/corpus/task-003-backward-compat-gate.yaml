@@ -1,0 +1,18 @@
+# Eval corpus task — frozen provenance record. Append-only directory.
+id: task-003
+era: v0.1.0
+title: Backward compatibility must be tested, not promised
+issue: |
+  The platform requires that upgrades never break a kept promise.
+  Add an enforced guarantee: manifests valid in a released era must
+  remain valid and convergent forever, with a frozen append-only
+  golden corpus and tests that fail on any breaking schema change.
+base_commit: 3d6a936
+resolution_commit: 001c10d
+world_test: >-
+  bash -c "KUBEBUILDER_ASSETS=\"$(bin/setup-envtest use 1.35.0 -p path
+  2>/dev/null || echo $PWD/bin/k8s/1.35.0-linux-amd64)\" go test
+  ./internal/controller/ --ginkgo.focus='Backward'"
+provenance:
+  performed_by: claude-code session
+  evidence: 3 golden specs passing; corpus rule recorded in CLAUDE.md

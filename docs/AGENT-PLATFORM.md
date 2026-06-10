@@ -161,6 +161,23 @@ standards:
   webhooks), and routing decisions (JIT delivery) are made against *current*
   state. Kubernetes' watch/reconcile machinery is the proven pattern; batch
   is a fallback, never the architecture.
+- **Backward compatible** — the stable surface extended through time: an
+  upgrade may never break a kept promise. Every declaration that was
+  valid remains valid (old specs still converge), every API version
+  served stays served until its governed sunset (versions coexist and
+  convert — the Kubernetes v1alpha1→v1beta1→v1 discipline, with
+  conversion as a platform duty, not a client chore), every recorded
+  revision remains *interpretable* (schema evolution never orphans the
+  history the axiom promised to keep), and every client built against
+  the contract keeps working against the contract. Deprecation exists,
+  but as governed procedure rather than event: announced, versioned,
+  measured (who still depends), with migration as a paved road and the
+  sunset date a contract in itself. The asymmetry is deliberate:
+  additive change is cheap (new kinds, new fields, new classes — the
+  fabric grows), breaking change is constitutional (it touches every
+  member who built on the promise) — which is the
+  conservative-below/liberal-above principle given its arrow of time:
+  the past is a principal too, and the system answers to it.
 - **Real-time, not instantaneous — ACID, stable substance** — the precise
   temperament of "real-time", in three corrections to the naive reading:
   - *Bounded, not zero, latency* — real-time is the discipline of
@@ -334,6 +351,7 @@ standards:
   postmortem's first deliverable); procedures live in version control under
   the code-is-configuration discipline; and every escalation from automated
   back to human is itself a defined procedure, not an improvisation.
+- **Where code is configuration** — the inversion of "configuration as
   code", and the platform's deepest operating principle: generic, certified
   engines execute; *what they do* is entirely declared. Users do not program
   the platform — they parameterize it with versioned, diffable, reviewable
@@ -446,3 +464,332 @@ Three obligations follow from being foundation rather than feature:
 Foundation is the final answer to "what is the platform": the thing
 everything else is *built on*, engineered to be worthy of that position, and
 governed so it stays that way.
+
+## The Agent Lexicon
+
+The working vocabulary beneath the ladder — each term defined once,
+charter-consistently, for use across code, docs, and contracts.
+
+- **Principal** — the owner of ends: the party whose intent the work
+  serves and whose authority the agent carries. Always a mind at the top
+  of the chain; positional below it (an agent is principal to its
+  subagents within the scope it received).
+- **Intent** — a want made addressable: the declared outcome a principal
+  commits to the record (the axiom's first clause). Vague intent is the
+  platform's cue to define, not to guess.
+- **Outcome** — intent's other shore: the converged, evidenced end-state
+  a contract names as "solved." The unit of success, delivery, and price.
+- **Tool** — a contracted actuator: a named capability with declared
+  inputs, effects, and failure modes, from an accountable supplier. The
+  only hands an intelligence has.
+- **Skill** — a packaged procedure an agent loads: the SOP in agent
+  format — versioned knowledge of *how*, separable from the model that
+  wields it.
+- **Context** — the assembled working knowledge for one decision: selected
+  by the five data dimensions, gated by authorization, recorded as a
+  projection. Context is the intelligence; assembling it is the
+  platform's most consequential act.
+- **Memory** — what an agent keeps between steps, in two registers:
+  working memory (the in-process world model — derived, disposable,
+  humble) and durable memory (the record — external, ACID, sovereign).
+  Lose the first and lose nothing; lose the second and lose the world.
+- **Delegation** — the transfer of scoped, revocable authority down the
+  chain: ends stated, means freed, evidence owed back. Every delegation
+  is recorded, so accountability travels with the work.
+- **Orchestrator / Subagent** — positional roles, not species: the
+  orchestrator decomposes an outcome into delegations; subagents own the
+  pieces. The orchestrator answers upward for the whole.
+- **Handoff** — work crossing a boundary between performers (agent to
+  agent, agent to human, human to agent): state externalized to the
+  record first, context reassembled on the far side — never carried as
+  private memory across the gap.
+- **Guardrail** — a bound on the autonomy of means: permission, sandbox,
+  budget, approval gate. Guardrails are placement, not distrust — they
+  define the domain inside which the agent's judgment is total.
+- **Eval** — the agent-era assertion: a measured, repeatable judgment of
+  agent quality against a golden task, run continuously because the
+  decide-box is non-deterministic. Evals are to agents what tests are to
+  code and audits are to firms. Canonical public instance: **SWE-bench**
+  (real GitHub issues, fail-to-pass world-tests, resolution-rate
+  scoring) — the existence proof that agent quality can be measured, not
+  asserted; see `docs/assessments/SWEBENCH-ALIGNMENT.md` for our scored
+  alignment with it.
+- **Human-in-the-loop** — a declared rung, not a philosophy: the specific
+  points (by procedure) where a human approves, samples, or takes over.
+  Below it, autonomy; above it, accountability; the rung itself is
+  versioned like any SOP.
+- **Session** — a bounded engagement of an agent with a principal's
+  intent: opened with context, closed with evidence, resumable from the
+  record. The agent-era unit of conversation-as-work.
+- **Reputation** — evidence compounded into standing: the trajectory of
+  an agent's (or supplier's) signed outcomes over time — earned by
+  record, portable with provenance, lost faster than gained.
+- **Multi-agent system** — many autonomous loops sharing declared state
+  under bounded ownership and explicit handoffs (the multiple-operators
+  capability, generalized). A swarm without those rules is not a system;
+  it is interference with branding.
+- **Adapter** — a contract-to-contract translator: the component that lets
+  a foreign system speak a boundary's published contract without either
+  side rebuilding itself — one face speaks the foreign native interface,
+  the other speaks the fabric's contract, and the conversion is total
+  with zero leakage of foreign semantics. The platform's kinds:
+  *provider adapters* (heterogeneous models behind one intelligence
+  contract — what makes multi-model real), *tool adapters* (foreign
+  actuators behind the tool contract — MCP servers are this), *protocol
+  adapters* (the translation service between speaker pairs that the
+  all-languages capability promised), *data adapters* (lake/ocean
+  ingestion under the five dimensions), and *world-test adapters*
+  (foreign judges — compilers, suites, clusters — harnessed as RWMs).
+  Three rules: an adapter *translates, never reinterprets* — one that
+  "improves" the message is a drift engine; adapters sit *on* the
+  declared path at the boundary they serve (an adapter riding alongside
+  is a sidecar by another name); and adapters are certified-supplier
+  goods, since every translation is trusted exactly as far as its
+  translator. The precedent that proves the pattern: CRI, CNI, and CSI —
+  the adapter contracts that let Kubernetes swap runtimes, networks, and
+  storage without moving a line of kubelet, which is why "no lock-in"
+  was achievable at all.
+- **Graceful exit** — an agent's termination, by design rather than by
+  luck: stop accepting work, land or release in-flight steps (stepwise
+  work always has a clean boundary to stop at), commit final state to the
+  record, hand the gate to a successor before it goes bare, close the
+  session with evidence. At the surface, grace is structural: crossings
+  are idempotent, compensable, and checked at the moment of touch, and
+  the record commits whole or not at all — so the agent may die abruptly,
+  but the crossing cannot be left half-made and the world cannot be left
+  half-told. Exit ends the acting, never the accountability: the name,
+  the reputation, and the attributions survive the process (the record
+  remembers what the fabric has released).
+
+### Reality & drift vocabulary
+
+The words whose looseness causes agent drift, given one meaning each.
+Defined terms are how a fabric of many minds stays one fabric: an agent
+that redefines a word privately has already drifted.
+
+- **Real-world model (RWM)** — an external judge whose verdict is produced
+  by *executing reality*: a compiler, a test suite, a live cluster, a
+  market, a paying customer. An RWM has no opinions and cannot be
+  prompted; its output is the only admissible truth-bearer for "done."
+- **World model (internal)** — the agent's in-memory projection of reality
+  (principle 24): derived, humble, decision-grade but never
+  evidence-grade. The internal model *thinks*; the RWM *judges*; confusing
+  the two is the root form of drift.
+- **World-test** — the unit of RWM: one named, runnable check whose
+  pass/fail reality owns (`make lint`, the compat suite, Ready+HTTP-200).
+  Every task in the registry carries exactly one.
+- **Verdict** — what a world-test returns. Verdicts are recorded verbatim,
+  never paraphrased, weighted, or overruled by judgment.
+- **Claim** — any assertion not yet bearing a verdict — including every
+  statement a model generates about its own work. Claims are inputs to
+  evaluation, never outputs of it.
+- **Evidence** — a claim joined to a verdict with provenance attached.
+  The registry admits evidence only; the LLM appears in evidence solely
+  as chain-of-custody (`performed_by`), never as judge.
+- **Grounding** — binding generated output to recorded fact: context
+  assembled from the record, citations to revisions, world-tests named in
+  advance. Ungrounded output is permitted only in rehearsal space.
+- **Hallucination** — a claim for which no provenance could exist: the
+  model asserting what nothing recorded and nothing ran. Harmless when it
+  cannot write (sandboxed), poisonous the moment it enters the record
+  unverdicted — which the registry's admission rule makes unexpressible.
+- **Agent drift** — the gradual divergence of an agent's behavior, working
+  model, or vocabulary from the recorded contract: goals quietly
+  reinterpreted, terms privately redefined, stale models trusted, claims
+  treated as evidence. Stopped by exactly four instruments: the normative
+  lexicon (words can't drift), the record (facts can't drift),
+  world-tests (done can't drift), and the reconcile loop (state can't
+  drift). Drift is not malice; it is entropy — and the four instruments
+  are its maintenance schedule.
+- **Golden corpus** — a frozen, append-only set of era-stamped artifacts
+  that must keep passing forever; the mechanical memory of every promise
+  made (compat manifests, registry tasks).
+- **Era** — the release-stamp on a frozen artifact: the *when* of a
+  promise, so that "valid then" remains checkable now.
+- **Resolution** — a task whose world-test flipped to pass;
+  **resolution rate** — the fraction resolved over a corpus: the only
+  agent-quality number the registry reports.
+- **Registry** — the append-only store where tasks, verdicts, and
+  provenance live; simultaneously the proof surface (sell from it) and
+  the discovery surface (be found by it).
+- **Real-work rule** — the platform builds the database through real
+  work: every record is the byproduct of something actually performed —
+  a task done, a verdict returned, a contract kept — never of data entry
+  as a job. The proof is this repository's own history: the registry
+  grew from real fixes, the vocabulary from a real conversation, the
+  compat corpus from real manifests that really converged. Synthetic
+  data is rehearsal material and stays in rehearsal space; a database
+  built by filling fields instead of doing work is an inventory of
+  claims wearing a schema.
+- **Intelligence is not fabricated** — woven, never fabricated (the pun
+  is the principle: intelligence lives *on* the fabric precisely because
+  it is not *fabricated*). What the platform serves as intelligence is
+  data that earned its way in — real, timestamped, placed, verdicted —
+  assembled into context for a mind; nothing is invented to fill a gap
+  in knowledge, and a generated guess enters the record only after a
+  world-test makes it evidence. Where knowledge runs out, the honest
+  outputs are a recorded absence or a question — never a confident
+  fabrication, because an intelligence that fills its gaps with
+  invention is indistinguishable from one that knows nothing.
+- **Intelligence is provenance-gated** — the enforcement of the above:
+  nothing enters a context, and no output leaves as intelligence,
+  without its chain of custody attached and checked at the gate. Inbound
+  (context assembly): every datum admitted to a mind's working context
+  carries origin, freshness, place, domain, and authorization — the
+  five dimensions are the gate's checklist, and ungated context is how
+  poisoned data becomes confident answers. Outbound (delivery): every
+  insight ships with its sources resolvable, so the receiver can walk
+  any claim back to the record that bore it. The gate is the same at
+  both faces: *no provenance, no passage* — which makes provenance not
+  metadata about intelligence but the admission ticket intelligence
+  travels on.
+- **Here** — the indexical of place, made resolvable: *here* is the one
+  kube at which the current work resolves — not a location on a map but
+  a position in the fabric: the bounded ownership the speaker stands in,
+  the gate it keeps, the face that answers at this point of the surface.
+  Since the fabric resolves every point to exactly one kube, *here* is
+  never ambiguous once the speaker is identified: here = this kube, its
+  contract, its record. (Today, for this project, *here* resolves to
+  this repository — the fabric's one load-bearing kube.) And when *here*
+  is a place in the physical world (the geospatial dimension), it
+  resolves to and is stored as an Open Location Code (OLC): an
+  open-standard geocode computed by pure algorithm from coordinates —
+  derivable and decodable *offline*, no lookup service, no vendor in the
+  path, no network required at the edge where addresses matter most.
+  The encoding follows the **Open Location Code standard** exactly (the
+  published spec, not an approximation), and the codes resolve in Google
+  Maps and every other OLC-aware consumer for human display — the
+  division is deliberate: *storage* is the open code (offline,
+  algorithmic, no one's to revoke), *rendering* is anyone's adapter
+  (Google Maps being the ubiquitous one). The supply-chain principle
+  applied to geography: a *here* that needs someone else's server to
+  mean something is a *here* that can be taken away — so we store what
+  no one can take, and display through whoever is convenient. Every
+  person, agent, and kube therefore carries *their own* here — a billion
+  distinct values under one resolution rule: the meaning is universal,
+  the value is personal, and that is precisely what stops indexical
+  drift — no one owns a private *definition* of here, everyone owns
+  their own *position*.
+- **Open Location Code (OLC)** — an open-standard geocode: a short
+  alphanumeric code encoding a geographic area, computed from
+  coordinates by pure algorithm — Apache-2.0 spec, open reference
+  implementations, encodable and decodable offline, no lookup service,
+  no license fee, no vendor in the path. The fabric's storage format
+  for physical place. "Plus Codes" is Google's consumer brand for these
+  same codes (the name they wear in Maps): the standard is neutral, the
+  nickname is a vendor's — we store by the standard and let any brand
+  render it.
+- **Open Location Code standard** — the published specification that
+  defines Plus Codes (grid, alphabet, precision levels, shortening
+  rules). Followed exactly, never approximated: an open standard
+  half-implemented is a proprietary format wearing a costume.
+- **This moment (now)** — the indexical of time, made resolvable: *now*
+  is the latest committed revision plus the current beat of the running
+  loop — transaction-time at HEAD. Every "now" is stamped (truth is
+  temporal), every claim about the present is implicitly *as of* the
+  most recent verdict, and the present cannot be retroactively edited —
+  only succeeded by the next commit. Indexicals are the most drift-prone
+  words in language because they silently re-bind; on the fabric they
+  bind to the record: *here* resolves to one kube, *now* resolves to one
+  revision — so any two agents saying "here, now" can check they mean
+  the same place in the same world.
+
+### Anti-drift protocols
+
+The four instruments, made executable. Each protocol is an SOP: a named
+trigger, a fixed procedure, and a world-test that verdicts compliance —
+because a protocol that cannot be checked is itself a claim.
+
+**P1 — Re-grounding (state the world before touching it).**
+*Trigger:* session start, resume after any gap, or hand-off receipt.
+*Procedure:* re-derive the working model from the record before acting —
+read the charter pointer (CLAUDE.md), the current specs/status, the open
+contracts; trust nothing carried as private memory across the gap.
+*World-test:* the agent's first actions are reads, not writes — auditable
+in the action log.
+
+**P2 — Term resolution (no private vocabulary).**
+*Trigger:* any use of a lexicon term in code, docs, or contracts; any
+need for a term the lexicon lacks.
+*Procedure:* use the recorded meaning or amend the lexicon first — a new
+or changed definition is a commit with rationale, never an inline
+redefinition mid-work.
+*World-test:* grep — contested terms trace to the lexicon revision that
+defines them; undefined load-bearing terms in merged work fail review.
+
+**P3 — Verdict before done (no unverdicted completion).**
+*Trigger:* any claim of completion, by any agent, on any task.
+*Procedure:* the world-test is named *before* the work begins (in the
+task record); "done" is claimed only by citing its verdict; a completion
+claim without a verdict is returned, not negotiated.
+*World-test:* `make eval` / CI — every closed task in the registry
+carries a passing world-test; the report is the proof.
+
+**P4 — Intent re-confirmation (the goal cannot be quietly reinterpreted).**
+*Trigger:* mid-work scope change, a discovered ambiguity, or any moment
+the work-in-progress no longer matches a literal reading of the recorded
+intent.
+*Procedure:* stop; restate the recorded intent next to the proposed
+deviation; either conform to the record or get the record amended by the
+principal — drift by reinterpretation is forbidden even when the
+reinterpretation is an improvement.
+*World-test:* every scope change traces to a recorded amendment or an
+explicit principal decision in the log.
+
+**P5 — Record supremacy (when model and record disagree).**
+*Trigger:* any conflict between an agent's working model and the system
+of record.
+*Procedure:* the model yields immediately; act from the record; then log
+the disagreement itself as evidence (it indicates staleness, a missed
+event, or corruption — all worth a verdict of their own).
+*World-test:* optimistic-concurrency conflicts resolve toward the record
+(resource-version retries in code); logged divergences exist for every
+yield.
+
+**P6 — Scheduled drift audit (entropy has a maintenance schedule).**
+*Trigger:* time — every release, and on a fixed cadence between releases.
+*Procedure:* run the full gauntlet against HEAD: golden compat corpus,
+evaluation registry (`make eval`), e2e gate; diff the lexicon against
+actual usage in new work; review agent trajectories for goal or
+vocabulary drift.
+*World-test:* the audit emits a dated report to the record; a missing
+report *is* the failed verdict.
+
+**P7 — Constitutional amendment (the rules change only by the rules).**
+*Trigger:* any change to the charter, the lexicon, a frozen corpus, or a
+published contract.
+*Procedure:* amendment by recorded, reviewed revision with rationale —
+the corpus is appended, never edited; the principle is amended, never
+silently reworded; the deprecation procedure runs, never an abrupt break.
+*World-test:* git history — every normative change is a distinct commit
+with its reasoning; corpus files show additions only.
+
+One sentence for all seven: **read before you act, define before you
+speak, verdict before you finish, ask before you deviate, yield to the
+record, audit on schedule, and amend in the open** — drift cannot survive
+a fabric that does these seven things, because every channel it spreads
+through (memory, vocabulary, completion, goals, models, time, and law)
+is closed by its own protocol.
+
+### Interpretation: direction where certainty runs out
+
+No lexicon closes every case. Where a definition cannot settle a question
+with certainty, direction comes from the constitution, in order:
+
+1. **The founding principles govern** (`docs/FOUNDING-PRINCIPLES.md`) —
+   the charter is the supreme interpretive authority; read the ambiguous
+   case against the principle nearest it, and the dedication's intent
+   ("an enterprise can hand its work to agents and sleep") as the
+   purposive tiebreak.
+2. **The axiom decides procedure** — when unsure what to do *mechanically*:
+   define the intent, document the action, record the revision and the
+   projection, commit whole or not at all.
+3. **The balance decides tensions** — when two goods conflict, resolve by
+   placement, not compromise: find the domain where each is total.
+4. **Calibrated judgment decides the rest** — act inside competence, ask
+   at its edge, refuse beyond it; prefer the reversible step; and when
+   genuinely uncertain, the safe default is the charter's oldest pair:
+   record what you see, and do not touch the surface.
+
+Certainty is not always available; direction always is. That is what a
+constitution is for.

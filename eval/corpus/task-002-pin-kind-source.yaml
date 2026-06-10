@@ -1,0 +1,18 @@
+# Eval corpus task — frozen provenance record. Append-only directory.
+id: task-002
+era: v0.1.0
+title: e2e CI fails: kind install source unreachable and unpinned
+issue: |
+  The e2e workflow downloads kind from kind.sigs.k8s.io with tag
+  'latest'; the host is unreachable from CI runners and the unpinned
+  version violates the supply-chain policy. Fix the install to be
+  pinned and upstream-sourced; the workflow must succeed.
+base_commit: a0964b8
+resolution_commit: 6d06ecc
+world_test: >-
+  bash -c "grep -q 'releases/download' .github/workflows/test-e2e.yml
+  && grep -Eq 'KIND_VERSION. v[0-9]+\.[0-9]+\.[0-9]+'
+  .github/workflows/test-e2e.yml"
+provenance:
+  performed_by: claude-code session
+  evidence: e2e check run 80646402698 success after two prior timeouts

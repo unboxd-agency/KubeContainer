@@ -1,0 +1,16 @@
+# Golden compatibility manifest — frozen at v0.1.0. DO NOT EDIT.
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: compat-v010-autoscale
+spec:
+  image: ghcr.io/acme/web:2.3.4
+  port: 3000
+  scaling:
+    autoscale:
+      minReplicas: 2
+      maxReplicas: 8
+      targetCPUUtilization: 70
+  expose:
+    type: Ingress
+    host: web.example.com
