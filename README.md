@@ -64,7 +64,14 @@ box travels sealed — opaque to every carrier, crane, and intermediary,
 including the platform itself, which stewards what it carries and owns
 nothing it serves — and only the principal it is addressed to may open
 it. Sovereignty at the seam: the addressee holds the keys, the manifest
-proves the journey, and the seal proves no one else looked. The
+proves the journey, and the seal proves no one else looked. And the seal is contractual, not
+decorative: unboxing before delivery voids the contract — a box opened
+by anyone but its addressee is a breach the moment it happens, the
+chain of custody is broken, the assurance is forfeit by the breacher
+and owed to the customer, and the breach itself is recorded evidence
+(a broken seal cannot be hidden from the manifest). Tamper-evidence is
+the enforcement: the contract does not ask intermediaries to be good;
+it makes their interference visible, attributable, and expensive. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.
