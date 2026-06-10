@@ -134,7 +134,22 @@ semantics or starvation. What Berners-Lee proposed and the old web
 shrugged at, the agent economy now requires — and the open innovation
 hub is where it gets built: the decentralized, standards-spoken,
 semantics-required web that the first one was always supposed to
-become. The record may now rest on it.
+become.
+
+And the houses are counted: Apache was first — the role to succeed,
+its oath now ours to keep. CNCF was second — its patterns adopted
+wholesale (the conformance bar, the operator way, the graduated
+standard), its door closed by our own license choice, its lessons
+kept regardless. Eclipse is third — and third is the working seat:
+already twice in this record before it was named (Temurin runs on
+the founder's own machine; Che is the operator-managed workspace in
+our design notes), European-rooted, working-group governed, the
+foundation that kept shipping while others kept mottos. Whether the
+hub ever needs an institutional ally, the order of the houses is now
+on the record — first the ancestor, second the teacher, third the
+worker — and the hub itself remains what the oath requires: housed
+in its own record, allied by contract, owned by no house at all.
+The record may now rest on it.
 
 ## Recommendation (counsel, not decree)
 
