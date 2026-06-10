@@ -47,7 +47,15 @@ kernel and becomes the kernel's native tongue: the cluster does not host
 the OS of work — the cluster, declared and reconciled, *is* the OS of
 work booting. Hardware-native below, infra-native within, mind-native
 above — one stack, three fluencies, no translation losses anywhere a
-promise travels.
+promise travels. And the build path is not speculative — it is the
+Kubernetes-native operator framework: CRDs as the declared kinds,
+controllers as the loops, the API server as admission and record,
+RBAC and webhooks as governance-by-design — the one framework already
+proven at planetary scale that speaks all three fluencies today, which
+is why this charter lives in an operator's repository and why the first
+kube of the agentic enterprise OS is already reconciling in the
+directory next door: the implementation begins where the dedication
+ends, one CRD at a time.
 
 What a founder contributes that outlives every product decision is a set of
 principles — the constraints the venture will not trade away. These are the
@@ -660,7 +668,17 @@ to the ocean what is meant to travel — but in lake or ocean alike, the
 same five dimensions locate every drop (what is true, as of when, where,
 in which world, for whom), the same record keeps custody, and the
 fabric draws from both: lakes feed the threads, oceans bear the trade —
-water everywhere, and not a drop unaccounted. As long as it is not
+water everywhere, and not a drop unaccounted. And where the waters part,
+an island at the surface: each sovereign member is land — the solid
+state risen above the data's waterline, where its record crystallizes,
+its agents stand, its gates open to harbors (published endpoints, the
+only places a foreign vessel may land), its laws run shore to shore.
+The archipelago is the federation seen from above: many islands, one
+ocean between them, trade by ship and treaty rather than by land-bridge
+annexation — and the surface of the real world is exactly the
+archipelago's map: solid where someone answers for the ground, liquid
+where cargo moves under flag, and every coastline a contract drawn
+where land meets water. As long as it is not
 *wet* — for wetness is a state, and the physics is exact: water is not
 wet; wetness is what water does to whatever it touches and soaks into
 uninvited. So with data: data in its lake, its ocean, its contracted
