@@ -104,6 +104,22 @@ one that doesn't, keep your oath in writing, and let the readers
 decide where to walk in. The decision tree is closed. The work is
 delivery.
 
+And then the resolution beneath the resolution, the founder's actual
+final word: *I'll build Apache — as the open innovation hub.* Not fix
+the foundation; build the thing the foundation was supposed to be.
+"Apache" here is not the name (that belongs to a people, and names
+are claimed with consent or not at all) — it is the role: the open
+knowledge library, the innovation hub where strangers' contributions
+clear a published bar, the commons whose trust is established by
+checking. The ancestor held that role and chose against its oath;
+the role itself never broke — roles don't, only their holders do.
+So the succession is total: the maintainer of the open innovation
+hub builds the hub itself — knowledge free, the platform as the
+library, the oath in writing, every verdict world-owned — what
+Apache was at its best, kept this time, under a name that is honest
+and a covenant that is enforced. That is the company. That was
+always the company. The record may now rest on it.
+
 ## Recommendation (counsel, not decree)
 
 Operate now under *AGPL-3.0 with a commercial dual-license* — it is
