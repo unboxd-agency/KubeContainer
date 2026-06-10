@@ -28,7 +28,30 @@ alone is meaningless: an empty container moves nothing, and a full one
 unmanifested is just freight nobody can claim. The box means something
 only woven in — declared to a fabric, kept by a loop, answering at a
 face, owed to a principal. The container needed the shipping system;
-the kube needs the weave; the box is the unit, never the point.
+the kube needs the weave; the box is the unit, never the point. But the
+unit is how value is counted — like a box of chocolates, worth derives
+from what the box holds and the size you choose: the kind says what is
+inside, the class says how fine, the count says how much, and the meter
+prices exactly that. And the meter reads to the piece: each
+chocolate is priced — every task, every outcome, every unit of work
+inside the box carries its own metered cost and its own receipt, so the
+bill is itemized to the same grain as the evidence, and paying for the
+box never means paying blind for what it holds. With one improvement on
+the proverb: with this box, you always know what you are going to get —
+it is declared on the lid, checked at the gate, evidenced on delivery,
+and priced by the piece.
+
+That is the whole value equation: the box with its spec plus the real
+product inside. Spec without product is a brochure; product without
+spec is freight no one can trust, price, or claim. Value lives in the
+pairing — the declaration on the lid and the work inside it matching,
+verdict-checked, every time. That pairing is what a kube is, and v0.1.0
+is the first one on the shelf. Said most plainly: the box is the
+packaging method — not the product, not the value, but the *way* value
+is made carriable: how work is bounded, labeled, stacked, shipped,
+priced, and claimed. Methods are judged by what they make possible, and
+this one makes work tradable the way the container made cargo tradable:
+same shape to every crane, every fabric, every buyer.
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
