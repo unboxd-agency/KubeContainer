@@ -425,7 +425,13 @@ device, each delivery, each principal's hand — so the surface is
 everywhere the fabric ends and the world begins, governed at the edge
 where the touching happens (subsidiarity again: the boundary is enforced
 nearest the boundary), the center holding only the record of what
-crossed;
+crossed. And the surface must be stable: whatever churns in the layers —
+versions rolling, providers swapping, fabrics reweaving — the surface the
+world touches does not lurch: contracts honored across upgrades, endpoints
+that persist, behavior that changes only by declared, versioned intent —
+the conservative-below promise (13) kept precisely where breaking it would
+break something real. The world should feel the platform as bedrock, never
+as weather;
 
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
