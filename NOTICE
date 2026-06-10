@@ -60,3 +60,15 @@ of standards as they mature), per the charter's own law — unique,
 independently identifiable, at all layers. The canonical cloud agency
 is canonical the way a constitution is, not the way a head office is:
 one text, many copies, no throne.
+
+The anchor is the domain: the DID is the domain URL (the did:web
+method) — did:web:unboxd.cloud — so the identity resolves exactly
+where the API group already lives (kubecontainer.unboxd.cloud), by
+DNS and HTTPS that every party on earth can already verify, no new
+root of trust invented. And one canonical identity wears many
+profiles: the GitHub organization, the website, the registry entries,
+the marketplace listings, each context's presentation — every profile
+a recorded projection of the one identity, resolving back to the
+canon, never a second self. Profiles may differ as audiences differ
+(the multi-context rule applied to the firm itself); the identity may
+not: one DID, many faces, each face on the manifest.
