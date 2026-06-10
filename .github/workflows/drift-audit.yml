@@ -1,0 +1,44 @@
+name: Drift Audit
+
+# Protocol P6 (docs/AGENT-PLATFORM.md): entropy has a maintenance
+# schedule. Runs the gauntlet on cadence with no human trigger; the
+# emitted report is the verdict, and a missing report is a failure.
+on:
+  schedule:
+    - cron: "17 5 * * 1" # weekly, Monday 05:17 UTC
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  drift-audit:
+    permissions:
+      contents: read
+    name: Run on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Setup Go
+        uses: actions/setup-go@4b73464bb391d4059bd26b0524d20df3927bd417 # v6.3.0
+        with:
+          go-version-file: go.mod
+
+      - name: Golden corpus and full test suite
+        run: make test
+
+      - name: Lint
+        run: make lint
+
+      - name: Evaluation registry
+        run: make eval
+
+      - name: Publish audit report
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: drift-audit-report
+          path: dist/eval-report.json
+          retention-days: 90
