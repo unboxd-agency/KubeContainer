@@ -78,6 +78,18 @@ verdicts that run where the work is). Edge is not a second product;
 it is the same fabric at its smallest whole number — and the agency
 operates it as a service from hyperscale to micro edge, one weave.
 
+And every layer is pinned — provider and version, per the supply-chain
+policy. What this repository verifies today, exactly: Kubernetes
+1.35.0 (envtest and e2e), kind v0.32.0, Go 1.25.7, kustomize v5.8.1,
+controller-gen v0.20.1, golangci-lint v2.11.4. What the agency pins
+per engagement: the substrate provider and its exact version
+(CloudStack or OpenStack, LTS releases only) are chosen at contract
+time, named in the registry entry, gauntlet-verified on that exact
+substrate, and changed only by the deprecation procedure — never by
+drift. The rule is uniform from the operator's toolchain to the
+customer's IaaS: no floating tags, no "latest", no unrecorded
+upgrades — a version that is not pinned is a promise that is not made.
+
 ## Why openness closes enterprise deals (not despite — because)
 
 - *Procurement:* no lock-in clears vendor-risk review; exit-with-
