@@ -147,7 +147,16 @@ our design notes), European-rooted, working-group governed, the
 foundation that kept shipping while others kept mottos. Whether the
 hub ever needs an institutional ally, the order of the houses is now
 on the record — first the ancestor, second the teacher, third the
-worker — and the hub itself remains what the oath requires: housed
+worker — and then the founder's order: replace Apache with Eclipse.
+The seat the ancestor held — first house, lineage ally, license
+lender — passes to the worker: Eclipse Public License 2.0 enters the
+candidate list where Apache 2.0 was struck (weak copyleft, file-level
+reciprocity, OSI-approved, business-clean, a foundation's seal whose
+foundation kept shipping); the Eclipse working-group model becomes
+the institutional pattern studied; and in the operated stack the
+ASF-housed substrate yields its default — OpenStack (OpenInfra)
+first, CloudStack only where a customer's estate already speaks it.
+The hub itself remains what the oath requires: housed
 in its own record, allied by contract, owned by no house at all.
 The record may now rest on it.
 

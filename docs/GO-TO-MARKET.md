@@ -55,15 +55,16 @@ that.
 
 When the agency sells the cloud platform as a service, the stack is
 open at every layer — no hyperscaler required, every substrate
-swappable: Apache CloudStack (ASF, Apache 2.0) as the
+swappable: OpenStack (OpenInfra Foundation) as the default
 infrastructure-orchestration layer where the customer wants
 self-hosted or hybrid IaaS — datacenters, sovereign regions, edge —
-with Kubernetes (CNCF) above it and kubes above that — and OpenStack
-(OpenInfra Foundation) served on equal terms where the customer's
-estate already speaks it: the agency is substrate-plural by policy,
-CloudStack or OpenStack beneath, the same Kubernetes contract above,
-because the IaaS layer is a provider choice, never a fabric
-dependency. Neither is required: per the supply-chain policy, users
+with Kubernetes (CNCF) above it and kubes above that; Apache
+CloudStack served where a customer's estate already speaks it (the
+founder's house judgment reordered the default — see
+LICENSING-DECISION.md — without breaking substrate plurality): the
+agency is substrate-plural by policy, the same Kubernetes contract
+above either, because the IaaS layer is a provider choice, never a
+fabric dependency. Neither is required: per the supply-chain policy, users
 need nothing but a conformant Kubernetes cluster, wherever it runs —
 the hybrid reach is the offer (any cloud, any premises, one fabric),
 and an all-Apache, all-open stack is what makes "everything open, but
