@@ -573,7 +573,37 @@ apologized to. The platform's geometry is therefore honest about its
 proportions: infinite interior, one-atom-thick rim — think as much as
 you like in the middle, but remember the middle exists *for* the rim:
 every layer, loop, theorem, and treaty in this charter is in service of
-getting one irreversible touch at the edge exactly right;
+getting one irreversible touch at the edge exactly right. The whole
+rehearsal doctrine seals to four words — **virtual within, real at the
+edge** — and they are load-bearing in both directions: nothing inside is
+real (so think freely, fail cheaply, rehearse everything), and nothing
+at the edge is virtual (so arrive prepared, touch once, touch true);
+
+**time as the guardian of our real world** — what ultimately defends the
+edge is not a wall but a clock: time is the one resource no layer can
+virtualize, rehearse, refund, or fork — the rehearsal worlds can copy
+everything about reality except its irreversibility, and irreversibility
+*is* time. That is why every guard the charter posts is temporal at its
+root: deadlines bound what real-time may promise, freshness bounds what
+theories of the edge may claim, timestamps bound what truth may assert,
+bitemporal records remember what no one can revisit, and the arrow that
+makes the surface unforkable is the same arrow that makes the record
+final — commit and the moment has happened. Time guards the real world
+by making it the only world where everything counts and nothing repeats;
+the platform does not fight this guardian, it deputizes him: every
+contract wears his deadlines, every truth his stamp, every touch at the
+edge his seal — one direction, no returns, which is exactly why the
+middle rehearses and the rim is approached with respect. Time is the
+totem: in the film that named the test, the dreamer's totem is the small
+object that tells you which world you are in — and on a fabric of
+rehearsal worlds, virtual kernels, and twins of twins, the totem is
+time. Does it cost? Does it age? Does it refuse to run backwards? Then
+you are at the surface. Does it pause, fork, rewind, replay? Then you
+are still inside, and may dream on. Every layer can counterfeit every
+texture of the real except this one — so when any agent, human or
+machine, needs to know which side of the edge it stands on, it checks
+the totem: the clock that only spins forward is the real world
+introducing itself;
 
 **the edge is a theory, and the digital twin exists** — the edge is not
 found, it is theorized: where fabric ends and world begins is itself a
