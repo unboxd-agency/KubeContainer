@@ -14,8 +14,8 @@ the reference implementation of the
 want; the kube makes it true, keeps it true, proves it was true, and
 answers for it.
 
-And the box — the plain, graspable thing every metaphor here reduces
-to: a box is a KubeContainer. A declared boundary with work inside it,
+And KubeContainer is the box — the plain, graspable thing every
+metaphor here reduces to. A declared boundary with work inside it,
 whole and indivisible, stackable and packable, opaque about its
 internals and contractual at its surface. The shipping container
 organized the physical economy by making every cargo the same shape to
