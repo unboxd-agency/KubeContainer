@@ -51,6 +51,45 @@ that.
    pay to clear the published bar; partners deliver through the network;
    we are the trust fabric, not the inventory.
 
+## The platform-as-a-service stack (what the agency operates)
+
+When the agency sells the cloud platform as a service, the stack is
+open at every layer — no hyperscaler required, every substrate
+swappable: Apache CloudStack (ASF, Apache 2.0) as the
+infrastructure-orchestration layer where the customer wants
+self-hosted or hybrid IaaS — datacenters, sovereign regions, edge —
+with Kubernetes (CNCF) above it and kubes above that — and OpenStack
+(OpenInfra Foundation) served on equal terms where the customer's
+estate already speaks it: the agency is substrate-plural by policy,
+CloudStack or OpenStack beneath, the same Kubernetes contract above,
+because the IaaS layer is a provider choice, never a fabric
+dependency. Neither is required: per the supply-chain policy, users
+need nothing but a conformant Kubernetes cluster, wherever it runs —
+the hybrid reach is the offer (any cloud, any premises, one fabric),
+and an all-Apache, all-open stack is what makes "everything open, but
+commercial" true from the silicon contract up. The same stack scales
+down as deliberately as it scales out: the micro edge cloud,
+platform-as-a-service at the smallest viable footprint — a shop floor,
+a branch, a vehicle, a village — one small cluster, the same kubes,
+the same contracts, the same evidence, synced to the record when
+connectivity allows (the box was always designed to travel sealed and
+answer locally: offline-resolvable identity, OLC-grade addressing,
+verdicts that run where the work is). Edge is not a second product;
+it is the same fabric at its smallest whole number — and the agency
+operates it as a service from hyperscale to micro edge, one weave.
+
+And every layer is pinned — provider and version, per the supply-chain
+policy. What this repository verifies today, exactly: Kubernetes
+1.35.0 (envtest and e2e), kind v0.32.0, Go 1.25.7, kustomize v5.8.1,
+controller-gen v0.20.1, golangci-lint v2.11.4. What the agency pins
+per engagement: the substrate provider and its exact version
+(CloudStack or OpenStack, LTS releases only) are chosen at contract
+time, named in the registry entry, gauntlet-verified on that exact
+substrate, and changed only by the deprecation procedure — never by
+drift. The rule is uniform from the operator's toolchain to the
+customer's IaaS: no floating tags, no "latest", no unrecorded
+upgrades — a version that is not pinned is a promise that is not made.
+
 ## Why openness closes enterprise deals (not despite — because)
 
 - *Procurement:* no lock-in clears vendor-risk review; exit-with-
