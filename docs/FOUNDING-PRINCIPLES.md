@@ -60,5 +60,12 @@ the charter.
     conservative below so others can be liberal above, and is stewarded like
     an institution — never owned like a landlord.
 
+14. **The solution is the service contract.** What is sold, bought, and
+    delivered is never software or effort but a contracted outcome: the
+    declared spec is the order, the converged state is the delivery, the
+    SLO is the warranty, status and evidence are the receipt, and the
+    metered price is tied to the outcome — a solution exists only where a
+    contract says what "solved" means and confirmation shows it holds.
+
 These principles are normative for this project (see `CLAUDE.md`); changes
 to them are constitutional changes and reviewed as such.
