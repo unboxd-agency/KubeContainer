@@ -1,5 +1,12 @@
 # SolidStateDatabase — Product Brief
 
+**Working names:** SolidStateDatabase (SSDB) or **SolidBaseData** — the
+first emphasizes the phase (data in its solid state, the SSD echo
+intended); the second emphasizes the role (the solid *base* every other
+layer builds on — the foundation principle as a product name). Naming
+decision deferred to the trademark/brand pass; this brief uses
+SolidStateDatabase throughout.
+
 **Status:** concept approved for definition; first product named by the
 charter. Per the theory-to-delivery corollary
 ([FOUNDING-PRINCIPLES.md](FOUNDING-PRINCIPLES.md)): the theory is documented
