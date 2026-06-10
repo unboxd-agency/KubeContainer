@@ -652,7 +652,7 @@ that redefines a word privately has already drifted.
   contract, its record. (Today, for this project, *here* resolves to
   this repository — the fabric's one load-bearing kube.) And when *here*
   is a place in the physical world (the geospatial dimension), it
-  resolves to and is stored as a Plus Code (Open Location Code): an
+  resolves to and is stored as an Open Location Code (OLC): an
   open-standard geocode computed by pure algorithm from coordinates —
   derivable and decodable *offline*, no lookup service, no vendor in the
   path, no network required at the edge where addresses matter most.
@@ -670,12 +670,15 @@ that redefines a word privately has already drifted.
   the value is personal, and that is precisely what stops indexical
   drift — no one owns a private *definition* of here, everyone owns
   their own *position*.
-- **Plus Code (Open Location Code)** — an open-standard geocode: a short
+- **Open Location Code (OLC)** — an open-standard geocode: a short
   alphanumeric code encoding a geographic area, computed from
-  coordinates by pure algorithm — encodable and decodable offline, no
-  lookup service, no license, no vendor in the path. The fabric's
-  storage format for physical place; renders in Google Maps and any
-  OLC-aware consumer.
+  coordinates by pure algorithm — Apache-2.0 spec, open reference
+  implementations, encodable and decodable offline, no lookup service,
+  no license fee, no vendor in the path. The fabric's storage format
+  for physical place. "Plus Codes" is Google's consumer brand for these
+  same codes (the name they wear in Maps): the standard is neutral, the
+  nickname is a vendor's — we store by the standard and let any brand
+  render it.
 - **Open Location Code standard** — the published specification that
   defines Plus Codes (grid, alphabet, precision levels, shortening
   rules). Followed exactly, never approximated: an open standard
