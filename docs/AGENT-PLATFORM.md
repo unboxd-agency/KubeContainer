@@ -192,7 +192,23 @@ standards:
   required) for relationship-based authorization and delegation chains. See
   the corresponding sections in `docs/DESIGN.md` for the concrete
   KubeContainer implementation.
-- **All languages, all speaker pairs** — the platform carries meaning across
+- **Multi-fabric (multi-thread, scaled out)** — each era's unit of
+  concurrency gave way to the next: threads sharing memory in one process →
+  processes sharing a kernel → containers sharing a node → operators sharing
+  a cluster — and now **fabrics sharing a platform**. A fabric (per the
+  earlier definition: many resources abstracted into one uniform surface —
+  a cluster, a data fabric, a network mesh, a provider's region) becomes the
+  schedulable unit, and the platform runs *across several at once*:
+  multi-cluster, multi-cloud, multi-region, multi-mesh. What changes at each
+  step up is the coordination medium — locks and shared memory gave way to
+  IPC, then to APIs, then to declared state — and at fabric scale it is
+  **contracts plus reconciliation**: fabrics are too far apart (in latency,
+  ownership, and failure domain) to lock, so they converge on declared
+  intent independently, each fabric an availability and sovereignty
+  boundary (the geospatial residency rule lands here: *which fabric* is a
+  policy decision). Multi-thread asked "how do I keep my threads from
+  corrupting shared memory"; multi-fabric asks "how do I keep my fabrics
+  honest against a shared declaration" — same problem, five layers up.
   every combination of participants, each with its appropriate language
   class:
   - *Human ↔ Human* — natural languages: full internationalization and
