@@ -349,6 +349,42 @@ system of work itself — exists to carry meaning between minds without loss
 and to hold the world to what minds intend. The platform runs on clouds;
 the work runs on the fabric; but all of it, first and last, runs on mind.
 
+One world commits to the record; the worlds that *work* it are many — and
+their plurality is the polity the principles promised:
+
+**multi-pass** — nothing converges in one stroke; every world is worked by
+repeated passes of its loops, each pass honest about what remains
+(reconciliation is iteration with a memory);
+
+**multi-domain, multi-org, multi-operator, multi-state** — many worlds of
+meaning, many institutions, many autonomous loops, many lawful conditions a
+world may be in (each state declared, each transition recorded, no state
+illegitimate that the contract names), composing without merging;
+
+**federated and treaty-bound** — for contracts between sovereigns have
+always been called treaties: the federation's agreements are international
+law for the fabric, entered freely, binding because chosen, enforced by
+evidence rather than empire;
+
+**sovereign, autonomous states with fundamental rights over their owned
+assets** — every member, down to the smallest tenant, holds its data, keys,
+policies, and agents as rights, not permissions: never expropriated, always
+portable, defended by design;
+
+**taking pride in their work** — excellence is not compliance: each agent
+signs its outcomes with its evidence, builds its reputation on its record,
+and is *credited* — pride is what accountability feels like from the inside
+when the work is good;
+
+**each a node agent with its whole support system packed in its container
+box** — the final image, and it is this repository's own: an agent and
+everything it needs to serve — tools, model, memory, contract, identity —
+declared in one box, whole and indivisible, shippable to any fabric,
+sovereign inside its boundary, contractual at its surface.
+
+A federation of working worlds, each one a kube; one record they all answer
+to; and minds — taking pride in their work — at the helm of every loop.
+
 ---
 
 These principles are normative for this project (see `CLAUDE.md`); changes
