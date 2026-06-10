@@ -41,6 +41,13 @@ the proverb: with this box, you always know what you are going to get —
 it is declared on the lid, checked at the gate, evidenced on delivery,
 and priced by the piece.
 
+That is the whole value equation: the box with its spec plus the real
+product inside. Spec without product is a brochure; product without
+spec is freight no one can trust, price, or claim. Value lives in the
+pairing — the declaration on the lid and the work inside it matching,
+verdict-checked, every time. That pairing is what a kube is, and v0.1.0
+is the first one on the shelf.
+
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
 kind: KubeContainer
