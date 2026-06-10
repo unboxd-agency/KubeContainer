@@ -670,7 +670,8 @@ that redefines a word privately has already drifted.
   is one machine for keeping it. Nothing means anything alone;
   everything means exactly one thing in its recorded context;
   and that is why the graph resolves.
-- **unboxd Cloud Platform** — the service the agency sells (never the
+- **unboxd Cloud Platform** — by name, the Context Cloud Platform:
+  the service the agency sells (never the
   agency itself): the Fabric, operated. Concretely, one offering in
   four layers — substrate (CloudStack or OpenStack where self-hosted or
   hybrid; any conformant cluster anywhere else; hyperscale to micro
