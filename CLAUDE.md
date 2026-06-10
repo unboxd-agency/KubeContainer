@@ -61,6 +61,12 @@ Standard Kubebuilder v4 layout: types in `api/v1alpha1/`, reconciler in
   source of truth — CI reads it via `go-version-file`). When bumping it, also
   update the `golang:` image tags in `Dockerfile` and
   `.devcontainer/devcontainer.json` to match.
+- **Backward compatibility is tested, not promised**:
+  `internal/controller/testdata/compat/` is a frozen, append-only golden
+  corpus — manifests valid in a released era must remain valid and
+  convergent forever. Never edit existing corpus files; new releases add
+  new era-stamped files. A failing compat test means a breaking change to
+  the published contract.
 - **Vendor neutrality is policy** (see "Distribution & Supply-Chain Policy" in
   `docs/DESIGN.md`): required dependencies and interfaces must be
   CNCF-graduated standards; plain `kubectl apply` must always work; no

@@ -1,0 +1,21 @@
+# Golden compatibility manifest — frozen at v0.1.0. DO NOT EDIT.
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: compat-v010-full
+spec:
+  image: ghcr.io/acme/app:1.0.0
+  port: 8080
+  env:
+    - name: LOG_LEVEL
+      value: info
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+  scaling:
+    replicas: 2
+  expose:
+    type: LoadBalancer
+  healthCheck:
+    path: /healthz

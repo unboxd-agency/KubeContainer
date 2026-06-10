@@ -1,0 +1,9 @@
+# Golden compatibility manifest — frozen at v0.1.0. DO NOT EDIT.
+# Files in this directory are append-only: new eras add new files.
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: compat-v010-minimal
+spec:
+  image: nginx:1.27
+  port: 80

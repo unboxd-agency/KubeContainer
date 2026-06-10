@@ -161,6 +161,23 @@ standards:
   webhooks), and routing decisions (JIT delivery) are made against *current*
   state. Kubernetes' watch/reconcile machinery is the proven pattern; batch
   is a fallback, never the architecture.
+- **Backward compatible** — the stable surface extended through time: an
+  upgrade may never break a kept promise. Every declaration that was
+  valid remains valid (old specs still converge), every API version
+  served stays served until its governed sunset (versions coexist and
+  convert — the Kubernetes v1alpha1→v1beta1→v1 discipline, with
+  conversion as a platform duty, not a client chore), every recorded
+  revision remains *interpretable* (schema evolution never orphans the
+  history the axiom promised to keep), and every client built against
+  the contract keeps working against the contract. Deprecation exists,
+  but as governed procedure rather than event: announced, versioned,
+  measured (who still depends), with migration as a paved road and the
+  sunset date a contract in itself. The asymmetry is deliberate:
+  additive change is cheap (new kinds, new fields, new classes — the
+  fabric grows), breaking change is constitutional (it touches every
+  member who built on the promise) — which is the
+  conservative-below/liberal-above principle given its arrow of time:
+  the past is a principal too, and the system answers to it.
 - **Real-time, not instantaneous — ACID, stable substance** — the precise
   temperament of "real-time", in three corrections to the naive reading:
   - *Bounded, not zero, latency* — real-time is the discipline of
