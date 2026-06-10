@@ -146,6 +146,16 @@ chain it must support, end to end:
 Cross-cutting requirements the platform must satisfy, with their governing
 standards:
 
+- **Always on** — the platform has no closed sign: continuous operation with
+  no maintenance windows, rolling everything (upgrades, certificate
+  rotation, policy changes) under live traffic, surviving zone and provider
+  failure by redundancy rather than recovery heroics. This is the platform
+  keeping the agent definition's second promise — *work that continues when
+  the principal is gone* requires a substrate that never leaves either.
+  Mechanically: replicated control planes, leader election, level-triggered
+  reconciliation (a restarted component re-derives everything from declared
+  state — crash and resume with nothing lost), and SLOs with error budgets
+  as the governing arithmetic.
 - **Real-time** — event-driven, not poll-driven: intent changes, telemetry,
   and confirmation verdicts propagate as they happen (watches, streams,
   webhooks), and routing decisions (JIT delivery) are made against *current*
@@ -242,6 +252,23 @@ standards:
     residency as governance (sovereignty and jurisdiction are *where*
     constraints — tenancy isolation has a geography, and policy must be
     able to say "this data does not leave this region").
+  - *Data is multi-domain* — meaning lives inside a domain (medicine,
+    logistics, finance, code), each with its own vocabulary, ontology, and
+    rules — the domain-driven-design insight: a "claim" in insurance and a
+    "claim" in an argument are different objects. The platform therefore
+    keeps **bounded contexts** explicit: each domain's data is interpreted
+    under its own published contract (its language, per the all-languages
+    capability), cross-domain value comes from *deliberate, mapped joins*
+    rather than naive merging, and no single global schema is pretended.
+  - *Data is contextual* — the capstone property: a datum's meaning and
+    relevance depend on who is asking, for what task, under which domain,
+    when, and where. Context is therefore a first-class, *assembled* object
+    — the platform's JIT grounding is precisely context assembly: select by
+    realness (provenance), temporal fitness, spatial fitness, domain fit,
+    and authorization, then deliver. The five properties compose into one
+    question the platform must answer for every delivery: **what is true
+    (real), as of when (temporal), where (geospatial), in which world of
+    meaning (domain), for whom and for what (context)?**
 
 ## The Mission Statement
 
