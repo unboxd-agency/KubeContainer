@@ -77,10 +77,10 @@ no substreams, subgraphs, or sidecars
 nothing rides alongside the declared path
 on time, every time
 one field, one writer
-open enterprise
 open location code (olc)
 open location code standard
 open standards only
+open-enterprise
 operational knowledge is an artifact
 orchestrator / subagent
 outcome

@@ -612,7 +612,14 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
-- **Open enterprise** — an enterprise that is open *and* commercial,
+- **Open-enterprise** — a category of its own, named against its two
+  neighbors: not *open source* (that is a license, not a business
+  model) and not *open core* (free core, features held hostage in a
+  paid shell — openness as bait). Open-enterprise gates nothing:
+  everything is open — code, spec, charter, registry schema, the bar
+  itself — and what is commercial is the enterprise, not the artifact:
+  the standing, the underwriting, the certification, the operation.
+  An open enterprise is one that is open *and* commercial,
   refusing the false trade between them: it runs on open standards with
   exit always real (nothing it depends on can hold it hostage), shows
   its work (provenance, audit-readiness, verdicts over claims), and
