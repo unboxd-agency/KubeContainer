@@ -645,7 +645,16 @@ that redefines a word privately has already drifted.
   sense: "free" as the absence of a visible price concealing the
   presence of an invisible one. On the fabric every cost is metered
   and every payer is named — so free, here, is never a mystery;
-  it is a disclosed subsidy with a reason.
+  it is a disclosed subsidy with a reason. And the disclosure is a
+  scope: free is always *free for X, Y, Z — not for W, T, V* — every
+  gratis grant names its beneficiaries and its boundary (free for the
+  student, the evaluator, the open project; not for the enterprise
+  estate, the reseller, the production fleet — whatever the grant
+  declares). The scope is part of the contract, recorded like
+  everything else, and consuming outside the scope is not a bargain
+  found but a seal broken: the same breach, the same evidence, the
+  same consequences. Free without a scope is marketing; free with a
+  scope is a priced gift — and only the second exists here.
 - **unboxd Cloud Platform** — the service the agency sells (never the
   agency itself): the Fabric, operated. Concretely, one offering in
   four layers — substrate (CloudStack or OpenStack where self-hosted or
