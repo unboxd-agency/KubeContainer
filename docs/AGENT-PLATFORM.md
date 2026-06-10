@@ -209,6 +209,30 @@ standards:
   policy decision). Multi-thread asked "how do I keep my threads from
   corrupting shared memory"; multi-fabric asks "how do I keep my fabrics
   honest against a shared declaration" — same problem, five layers up.
+- **No substreams, subgraphs, or sidecars** — the flatness constraint:
+  nothing rides alongside the declared path.
+  - *No sidecars* — no auxiliary containers injected beside workloads to
+    add platform behavior (mesh proxies being the classic case). Sidecars
+    double the moving parts per pod, hide platform logic inside tenant
+    workloads, and couple upgrades to restarts; the capability belongs in
+    the platform layer itself (node-level/eBPF, ambient-style mesh, or the
+    operator) — a pod contains exactly what the tenant declared, nothing
+    more. (KubeContainer already honors this: one workload container, zero
+    injected helpers.)
+  - *No substreams* — one stream of record per fact domain: no derivative,
+    semi-official data flows forked off to the side that consumers discover
+    too late. Derived views are fine — declared, named, and traceable to
+    the log they project — but the fork-and-drift pattern is banned.
+  - *No subgraphs* — no fragmentary partial views of the relationship/state
+    graph maintained as separate sources of truth. There is one graph;
+    scoping is done by *authorized queries over it* (OpenFGA relations,
+    field selectors), not by copying slices out to drift independently.
+
+  One rule under all three: every flow, view, and helper is either on the
+  published contract path — declared, owned, versioned — or it does not
+  exist. Hidden auxiliaries are where unowned state, silent drift, and
+  unaccountable behavior breed.
+- **All languages, all speaker pairs** — the platform carries meaning across
   every combination of participants, each with its appropriate language
   class:
   - *Human ↔ Human* — natural languages: full internationalization and
@@ -227,6 +251,18 @@ standards:
   a platform service, not a per-integration negotiation. Tooling-wise this
   is the Language Server Protocol insight generalized: define the language
   once, get every editor/consumer for free.
+- **Peer communication over existing standard protocols** — point-to-point,
+  agent-to-agent, kube-to-kube: when two peers need to talk directly, they
+  do it over protocols that already exist and are already standards — HTTP,
+  gRPC, mTLS via the platform's identity, DNS-based discovery (headless
+  Services for direct pod addressing), MCP and A2A-class protocols at the
+  agent layer, CloudEvents for events. The platform invents **no proprietary
+  wire protocol**: its value is identity, discovery, authorization, and
+  observability *around* standard transports, never a bespoke channel
+  through them. Corollaries: peer traffic is end-to-end contract-typed (no
+  meaning smuggled in side headers), every hop is attributable to a
+  principal, and "direct" never means "off the record" — point-to-point is
+  a topology, not an exemption from governance.
 - **Where code is configuration** — the inversion of "configuration as
   code", and the platform's deepest operating principle: generic, certified
   engines execute; *what they do* is entirely declared. Users do not program
