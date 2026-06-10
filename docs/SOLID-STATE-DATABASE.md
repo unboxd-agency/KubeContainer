@@ -1,15 +1,26 @@
 # SolidStateDatabase — Product Brief
 
-**Working names:** SolidStateDatabase (SSDB), **SolidBaseData**, or
-**StructuredSchemas** — the first emphasizes the phase (data in its solid
-state, the SSD echo intended); the second the role (the solid *base*
-every other layer builds on — the foundation principle as a product
-name); the third the contract (schema-first truth: structure declared
-before data crystallizes, the code-is-configuration principle applied to
-the record itself — and honest about what the store really sells, since
-an immutable fact is only as trustworthy as the schema that shaped it).
-Naming decision deferred to the trademark/brand pass; this brief uses
-SolidStateDatabase throughout.
+**Working names:** SolidStateDatabase (SSDB), **SolidBaseData**,
+**StructuredSchemas**, or **Fabric of Graphs** — the first emphasizes the
+phase (data in its solid state, the SSD echo intended); the second the
+role (the solid *base* every other layer builds on — the foundation
+principle as a product name); the third the contract (schema-first truth:
+structure declared before data crystallizes, the code-is-configuration
+principle applied to the record itself — an immutable fact is only as
+trustworthy as the schema that shaped it); the fourth the shape (what the
+store actually holds: every fact is an edge — entity, field, value, time,
+provenance all relations — so each sovereign's record is a graph, and
+federation weaves the graphs into fabric without merging them: one weave,
+many graphs, queryable along the threads — the "no subgraphs" rule made
+architecture, since scoping is authorized traversal of the one weave,
+never a copied fragment); or **Kubes of Kubes** — the recursion (the
+charter's own geometry as the name: each fact a kube — whole,
+indivisible, canonically countable; facts packed into entities, entities
+into domains, domains into sovereign stores, stores into the federation —
+kubes of kubes all the way up, the same shape at every scale, so the
+store is not a container *for* the record but the record built from the
+unit the whole platform already speaks). Naming decision deferred to the
+trademark/brand pass; this brief uses SolidStateDatabase throughout.
 
 **Status:** concept approved for definition; first product named by the
 charter. Per the theory-to-delivery corollary
