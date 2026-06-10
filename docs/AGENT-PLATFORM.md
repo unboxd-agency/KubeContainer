@@ -529,6 +529,58 @@ charter-consistently, for use across code, docs, and contracts.
   capability, generalized). A swarm without those rules is not a system;
   it is interference with branding.
 
+### Reality & drift vocabulary
+
+The words whose looseness causes agent drift, given one meaning each.
+Defined terms are how a fabric of many minds stays one fabric: an agent
+that redefines a word privately has already drifted.
+
+- **Real-world model (RWM)** — an external judge whose verdict is produced
+  by *executing reality*: a compiler, a test suite, a live cluster, a
+  market, a paying customer. An RWM has no opinions and cannot be
+  prompted; its output is the only admissible truth-bearer for "done."
+- **World model (internal)** — the agent's in-memory projection of reality
+  (principle 24): derived, humble, decision-grade but never
+  evidence-grade. The internal model *thinks*; the RWM *judges*; confusing
+  the two is the root form of drift.
+- **World-test** — the unit of RWM: one named, runnable check whose
+  pass/fail reality owns (`make lint`, the compat suite, Ready+HTTP-200).
+  Every task in the registry carries exactly one.
+- **Verdict** — what a world-test returns. Verdicts are recorded verbatim,
+  never paraphrased, weighted, or overruled by judgment.
+- **Claim** — any assertion not yet bearing a verdict — including every
+  statement a model generates about its own work. Claims are inputs to
+  evaluation, never outputs of it.
+- **Evidence** — a claim joined to a verdict with provenance attached.
+  The registry admits evidence only; the LLM appears in evidence solely
+  as chain-of-custody (`performed_by`), never as judge.
+- **Grounding** — binding generated output to recorded fact: context
+  assembled from the record, citations to revisions, world-tests named in
+  advance. Ungrounded output is permitted only in rehearsal space.
+- **Hallucination** — a claim for which no provenance could exist: the
+  model asserting what nothing recorded and nothing ran. Harmless when it
+  cannot write (sandboxed), poisonous the moment it enters the record
+  unverdicted — which the registry's admission rule makes unexpressible.
+- **Agent drift** — the gradual divergence of an agent's behavior, working
+  model, or vocabulary from the recorded contract: goals quietly
+  reinterpreted, terms privately redefined, stale models trusted, claims
+  treated as evidence. Stopped by exactly four instruments: the normative
+  lexicon (words can't drift), the record (facts can't drift),
+  world-tests (done can't drift), and the reconcile loop (state can't
+  drift). Drift is not malice; it is entropy — and the four instruments
+  are its maintenance schedule.
+- **Golden corpus** — a frozen, append-only set of era-stamped artifacts
+  that must keep passing forever; the mechanical memory of every promise
+  made (compat manifests, registry tasks).
+- **Era** — the release-stamp on a frozen artifact: the *when* of a
+  promise, so that "valid then" remains checkable now.
+- **Resolution** — a task whose world-test flipped to pass;
+  **resolution rate** — the fraction resolved over a corpus: the only
+  agent-quality number the registry reports.
+- **Registry** — the append-only store where tasks, verdicts, and
+  provenance live; simultaneously the proof surface (sell from it) and
+  the discovery surface (be found by it).
+
 ### Interpretation: direction where certainty runs out
 
 No lexicon closes every case. Where a definition cannot settle a question
