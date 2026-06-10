@@ -94,6 +94,14 @@ test-e2e: setup-test-e2e manifests generate fmt vet ## Run the e2e tests. Expect
 cleanup-test-e2e: ## Tear down the Kind cluster used for e2e tests
 	@$(KIND) delete cluster --name $(KIND_CLUSTER)
 
+.PHONY: vocab
+vocab: ## Rebuild the generated vocabulary index from the normative docs.
+	./hack/build-vocabulary.sh
+
+.PHONY: vocab-check
+vocab-check: ## Verify every coined term is defined or baselined (protocol P2).
+	./hack/check-vocabulary.sh
+
 .PHONY: eval
 eval: ## Run the evaluation registry harness and emit an evidence report.
 	./eval/harness.sh

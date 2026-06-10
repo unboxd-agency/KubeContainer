@@ -33,6 +33,9 @@ jobs:
       - name: Lint
         run: make lint
 
+      - name: Vocabulary check (protocol P2)
+        run: make vocab-check
+
       - name: Evaluation registry
         run: make eval
 

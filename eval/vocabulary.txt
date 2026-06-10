@@ -1,0 +1,123 @@
+actionable intelligence
+actor
+agent (the standard definition)
+agent architecture
+agent drift
+agent engineering
+agent excellence
+agent governance
+all languages, all speaker pairs
+always on
+an agent acts for a principal, where the principal isn't, or after the
+anti-drift protocols
+assertion
+assurance as a policy
+backward compatible
+be conservative below, liberal above
+be stewarded like a foundation
+bear load silently
+best-in-class tools, from certified suppliers
+build stage
+claim
+claims become evidence
+cncf-graduated standards only
+code is configuration
+context
+contract
+data as intelligence
+data is intelligence — and data is real, temporal, geospatial,
+delegation
+deliver just-in-time, from everyone qualified
+delivery
+division of labor
+educated
+empowered
+enabled
+enforcement point
+era
+eval
+event-triggered, outcome-focused, value-driven
+every boundary speaks a published contract
+evidence
+excellent working tools
+external storage is in cloud
+federated by design
+federation is a framework of work
+five-dimension addressing
+golden corpus
+governed by choice
+governed by design
+graceful exit
+grounding
+guardrail
+hallucination
+handoff
+hardening roadmap:
+human-in-the-loop
+intent
+internal memory holds the mental model of the real world
+interpretation: direction where certainty runs out
+just-in-time
+memory
+minimal, pinned, upstream-only dependencies.
+model
+multi-agent system
+multi-arch
+multi-fabric (multi-thread, scaled out)
+multi-tenant
+multiple operators
+no ecosystem coupling for installation.
+no lock-in, no supply-chain risk
+no substreams, subgraphs, or sidecars
+nothing rides alongside the declared path
+on time, every time
+one field, one writer
+open standards only
+operational knowledge is an artifact
+orchestrator / subagent
+outcome
+peer communication over existing standard protocols
+platform capabilities
+policy & authorization, out of the box
+policy-as-code surface
+principal
+provenance-native
+real-time
+real-time, not instantaneous — acid, stable substance
+real-world model (rwm)
+reality & drift vocabulary
+registry
+reputation
+resolution
+runtime stage
+serverless, not stateless
+session
+shipped policies
+skill
+sovereign
+sovereign & federated
+stable substance, stable state
+standard operating procedures
+status
+tagging
+the agent economy
+the agent lexicon
+the fabric is the intelligent operating system of work
+the framework is the fabric
+the mission statement
+the platform
+the platform is the foundation
+the solution is the service contract
+through an internet of agents
+through an open partner network
+tool
+trusted frontier intelligence, from all providers
+trusted insights
+verdict
+wake on events, steer by outcomes, prioritize by value
+where code is configuration
+where the platform is the foundation
+why rebac here
+with native-language intelligence
+world model (internal)
+world-test

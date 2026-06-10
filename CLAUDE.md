@@ -29,6 +29,17 @@ autonomous goal pursuit). Otherwise it would just be a function call.
 The operator in this repo is an agent in exactly this sense: it reconciles
 declared intent inside the cluster, continuously, with no human in the loop.
 
+**Vocabulary discipline (agent-level, protocol P2):** in the normative docs,
+bold is coinage and coinage requires definition. Before committing doc
+changes, run `make vocab-check`; if it fails, define the term in the lexicon
+(`docs/AGENT-PLATFORM.md`) and run `make vocab` to rebuild the generated
+index (`docs/VOCABULARY.md`, `eval/vocabulary.txt`). The baseline
+(`eval/vocabulary-baseline.txt`) is shrink-only. Division of labor: **the
+LLM optimizes creativity, the agent optimizes outcome** — coin freely in
+conversation and rehearsal, write vividly in prose, but a term that becomes
+load-bearing gets defined before it gets used, because definition is how a
+coinage survives its author.
+
 ## Commands
 
 - `make build` — generate manifests/deepcopy, fmt, vet, and compile the manager.

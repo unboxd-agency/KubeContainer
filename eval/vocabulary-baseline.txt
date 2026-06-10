@@ -1,0 +1,174 @@
+# Rhetorical bold emphasis predating the vocabulary check (ratchet baseline).
+# Shrink-only: new coinages go to the lexicon, never here without review.
+0.31
+0.42
+22/100
+25/100
+64/100
+78/100
+80/100
+86/100
+a box is a kubecontainer
+a declared xdm bridge
+a harness target
+a multi-layer substrate with a single real-world surface
+a resolution metric
+a schema registry surface
+a task corpus
+accountability
+action is documented
+acts
+adobe experience data model (xdm)
+agent
+agent as the guardian
+agent control plane
+agentic
+alignment score: 64 conformant / 80 converging / 25 drifting / 0.42 distant
+alignment score: 78 conformant / 86 converging / 22 drifting / 0.31 distant
+all projections recorded
+all revisions recorded
+all transactions acid
+and their work measurable
+assurance as a policy.
+at all touch points, real and digital alike
+audit
+authorization
+bounded contexts
+calibrated judgment
+calibrated judgment decides the rest
+certification
+claims become evidence.
+code is configuration.
+compliant at all layers
+confirmed
+conformance
+conformance total
+consume
+contains
+contracts plus reconciliation
+converged equilibrium
+convergence
+convergence, not just correctness
+create
+crystallizes into truth
+deadlines honored
+decides
+definition
+deliver just-in-time, from everyone qualified.
+distance
+distribute
+drift
+economy
+edge-triggered wake-up, level-based logic
+emulation is hard-dependent, with virtual kernels possible
+enterprises
+evaluation & observability
+every boundary speaks a published contract.
+everything is data.
+external storage is in cloud.
+fable
+fabric
+fabric + fable.
+fabric of graphs
+fabrics sharing a platform
+federated and treaty-bound
+federated by design.
+federation is a framework of work.
+field-level usage labels
+forward-looking
+foundation
+goal & contract design
+governable
+governed by choice.
+governed by design.
+governed each by its own sustainable model
+graceful degradation
+graduated
+growth-oriented
+guardrails & permissions
+identity
+identitymap-style namespaced identity
+infrastructure as code
+intent is defined
+internal memory holds the mental model of the real world.
+kube is the system of work.
+kubes of kubes
+legibility
+lifecycle
+loop & orchestration
+memory & context engineering
+method & honesty note:
+mind is the only substrate.
+multi-context
+multi-domain, multi-org, multi-operator, multi-state
+multi-kind, multi-class
+multi-pass
+multi-step
+multi-step, single-store, stable-surface platform.
+natural convergence theorem
+no lock-in, no supply-chain risk.
+nothing rides alongside the declared path.
+one field, one writer.
+only one critical path to fastest sustainable brilliance
+openfga-aligned and supports it out of the box
+operate
+operational knowledge is an artifact.
+operator/controller architecture
+os
+p1 — re-grounding (state the world before touching it).
+p2 — term resolution (no private vocabulary).
+p3 — verdict before done (no unverdicted completion).
+p4 — intent re-confirmation (the goal cannot be quietly reinterpreted).
+p5 — record supremacy (when model and record disagree).
+p6 — scheduled drift audit (entropy has a maintenance schedule).
+p7 — constitutional amendment (the rules change only by the rules).
+perceives
+placement
+policy
+real is at surface level — everything tangible
+remembers
+repeatable
+resolution rate
+settle & account
+simulation is democratized
+solid
+solid substance is the real twin of solid-state data.
+solidbasedata
+sovereign.
+spirit over letter
+stable
+stable substance, stable state.
+standings over time
+status:
+structuredschemas
+subject:
+swe-bench
+system
+taking pride in their work
+the axiom decides procedure
+the balance decides tensions
+the edge is a theory, and the digital twin exists
+the fabric is the intelligent operating system of work.
+the founding principles govern
+the framework is the fabric.
+the kube is real, and the edge is defined.
+the platform is the foundation.
+the solution is the service contract.
+time as the guardian of our real world
+tool/actuator design
+transact
+unique and independently identifiable at all layers
+unit
+v1alpha1
+v1alpha2
+v1beta1
+v1beta2
+vendor-neutral by policy
+virtual kernels are possible
+wake on events, steer by outcomes, prioritize by value.
+we must build the bridges.
+where the principal isn't
+without
+without any jumps, one step at a time
+working names:
+world model
