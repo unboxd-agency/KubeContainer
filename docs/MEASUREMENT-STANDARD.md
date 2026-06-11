@@ -190,6 +190,105 @@ the actual problem instead of a fiction. Success is not a secret; it is
 a critical path, and the critical path is computable the moment the
 ground stops lying.
 
+And the computable critical path yields three outcomes the old opaque
+chain could only claim:
+
+- *Key efficiency* — efficiency stops being a slogan and becomes a
+  measured ratio: value delivered over cost and time along the chosen
+  path, re-derivable at every stop. You cannot improve what you cannot
+  measure; the fabric measures it, so efficiency becomes a number that
+  goes up on purpose, not a virtue asserted in a deck. The shortest
+  sound path is the efficient one by construction, and the arithmetic
+  names it.
+- *Price maturity* — a market matures when prices stop hiding. With
+  every line itemized to a named standard and every stop's charge
+  visible, price discovery becomes real: buyers compare true totals,
+  sellers compete on genuine value-add instead of obscured markup, and
+  the price converges to what the work is actually worth. Immature
+  markets price by opacity and leverage; a mature market prices by
+  visible, standard-denominated truth — which is exactly what the
+  measurement standard manufactures.
+- *Sustainability* — the same legible arithmetic carries the costs
+  that opacity always externalized. Carbon, energy, water, waste, labor
+  conditions — each a measurable quantity on its own named standard (the
+  units exist; ISO 14064-class for carbon, and the rest), each addable
+  as a line to the same transparent total. A chain whose full cost is
+  visible can be optimized for more than money: the critical path can be
+  computed for lowest carbon as readily as lowest price, because both
+  are just edge weights on the same resolvable graph. Sustainability
+  fails when its costs are invisible and someone else's problem; the
+  fabric makes them visible and priced, which is the only condition
+  under which a market chooses the sustainable path on purpose. Measure
+  it, itemize it, and the optimum can include it.
+
+And the generalization that makes this a platform and not a shipping
+calculator: every key concept has one or multiple paths. A supply chain
+is only the most literal instance. Any declared outcome — a hire, a
+diagnosis, a build, a settlement, a proof, an answer — is reached by a
+path through players and stops, each with measurable cost, time, and
+quality; and most outcomes have *many* candidate paths, not one. The
+fabric treats them uniformly: every concept is a graph (the players are
+nodes, the steps are edges, the constraints are the topology), every
+edge carries true weights (the measurement standard), every route is
+verdictable, and the optimum is computed the same way whether the cargo
+is chocolate or a contract or a cure. One path or many, the method is
+identical — make the weights honest, resolve the graph, find the
+critical path. This is why the platform is general: it does not solve
+supply chains; it solves *paths*, and everything of value is reached by
+one.
+
+Who finds the perfect balance among the competing weights — cheapest
+versus fastest, lowest-carbon versus highest-quality, fewest stops
+versus most resilient? Not a broker, not a guru, not a black box: the
+balance is the framework. There is no oracle who divines the right
+trade-off; there is a framework that makes every weight honest and
+every route computable, and the optimum falls out of the constraints
+declared. The principal sets the objective (minimize cost, or carbon,
+or time, or a weighted blend they choose and record); the measurement
+standard supplies true weights; the graph resolves; and the balance is
+not a person's judgment but the framework's output — re-derivable,
+contestable, and the same for everyone who runs it. This is the
+charter's own balance-by-placement principle, made quantitative: the
+fabric does not pick the winner between competing goods, it gives each
+good its true weight and lets the declared objective place them. The
+perfect balance is found the way every truth here is found — not
+pronounced, but computed on honest ground, and checkable by anyone who
+doubts it.
+
+And the balance is not a one-time calculation but a continuous one: the
+balance is what maintains the fabric's stable state. Weights move — a
+price shifts, a player drops, a route congests, a carbon cost rises, a
+new stop appears — and a fabric that balanced once and walked away
+would drift out of optimum the moment the world changed. So balancing is
+a loop, not an event: the framework re-derives the critical path as the
+weights move, and the system re-converges to the new optimum the same
+way the reconciler re-converges a workload to its declared state. The
+charter's stable state was never stasis; it was *equilibrium
+continuously restored* — and here that equilibrium is the balance across
+all the live weights, recomputed as they change, holding the whole
+fabric at its optimum the way a body holds homeostasis: not by freezing,
+but by never stopping the correction. The balance maintains the stable
+state; the stable state is the balance, kept.
+
+And the priority among the three is fixed, because they are not equals:
+you must find the most balanced framework — it may not be the most
+efficient, but it must resolve. Resolution is the hard constraint, not a
+preference: a framework that does not resolve (a graph with dangling
+edges, books that do not close, a difference left uncrossed) is not a
+worse optimum — it is no optimum at all, a fiction with a number on it.
+So the ordering is absolute: first it must *resolve* (every reference
+lands, every difference settles — feasibility before everything);
+then among resolving frameworks, choose the most *balanced* (the one
+that holds all the live weights in equilibrium and keeps the stable
+state); and only then, among balanced resolving frameworks, prefer the
+more *efficient*. Efficiency chased ahead of resolution is the classic
+ruin — the optimal route that cannot actually be walked, the cheapest
+chain that breaks under load, the fastest path that strands a player and
+leaves the graph unresolved. The fabric refuses that trade: a balanced
+framework that resolves beats an efficient one that does not, every
+time, because a thing that does not resolve has not been built — it has
+only been drawn. Resolve first, balance always, optimize last.
+
 ## Why this is constitutional
 
 Measurement is where value becomes checkable, and value is what the
