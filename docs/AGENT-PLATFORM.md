@@ -760,6 +760,37 @@ that redefines a word privately has already drifted.
   layer can virtualize. Reality is the edge; the surface is its inner
   name, the edge its outer.
 
+- *The resolution layers (the domain is verified, never canonical)* —
+  a correction the founder hammered out, and a refusal of a common
+  conflation: there is no such thing as a canonical domain. Canon is
+  for the record alone — content-addressed, immutable, resolving by
+  *what* a thing is (its hash) and not by *where* it sits, which is why
+  every clone is whole and no host owns truth. A domain is the opposite
+  kind of thing: a *trusted, verified pointer*, not a fact. Read down
+  the internet's own stack and the mutability is plain — the domain
+  registry holds a name↔URL↔IP mapping; the URL resolves over DNS to an
+  IP; the IP rides TCP/IP and can change tomorrow; the lease itself
+  renews or lapses. Nothing in that chain is canon; all of it is
+  address. So identity resolves in three honest layers, never collapsed:
+  the *record* is canon (immutable, content-addressed — what is true);
+  the *verified domain* is the trusted anchor (who answers — did:web +
+  DNS + TLS give cryptographic and institutional trust that you reached
+  the right party, but it is a pointer and it can move); the *IP* is
+  mere reachability (where, right now — fully mutable). The contract-
+  holder is therefore *identified by* a verified domain and *answers
+  with* the record — the domain says whom to trust, the record says what
+  is true, and confusing the trusted pointer for the canonical fact is
+  how identity gets captured by whoever controls the address. And the binding
+  is never self-declared: a domain does not declare or auto-assign its
+  own IP — the mapping is asserted by the domain's owner into the
+  registry and resolved by independent infrastructure (DNS), so the
+  name→IP claim is itself a contract checked elsewhere, not a fact the
+  name speaks about itself. Identity that asserts its own address is
+  unverified by construction; identity is only ever as trustworthy as
+  the *separate* party that resolves it. Trust the domain; verify the
+  record; resolve the address through infrastructure no party owns;
+  canonize neither the IP nor the name.
+
 - **The Seat Theorem** — *given* a system that acts on declared intent
   and answers for it, there are exactly three seats, each held by exactly
   one kind of party, and none transferable: the *context* (the why —
