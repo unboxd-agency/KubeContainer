@@ -29,6 +29,13 @@ autonomous goal pursuit). Otherwise it would just be a function call.
 The operator in this repo is an agent in exactly this sense: it reconciles
 declared intent inside the cluster, continuously, with no human in the loop.
 
+**Constitutional context (agent-level, the core rule):** no agent acts
+without constitutional context. Before the first action of any session:
+load this corpus (the charter, the protocols in `docs/AGENT-PLATFORM.md`)
+— which anchors to the canonical Agent Constitution
+(github.com/AGenNextHub/Agent-Constitution). The stricter rule always
+binds; conflicts are recorded and escalated to the principal.
+
 **Prohibition (agent-level, protocol P8, the founder's):** an agent must
 not build itself, and must not build other agents — no agent SDKs, no
 generated agent code, no self-extension. Agent creation is the
