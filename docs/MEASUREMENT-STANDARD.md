@@ -158,6 +158,26 @@ that adds a stop must justify its charge in the open, at the point it
 levies it — and a stop that adds cost without adding value is now
 visible to the one party with reason to remove it.
 
+So the fabric does not dictate the chain; it lets the people find it.
+With every stop's cost itemized and every route's total re-derivable,
+participants discover the optimum supply chain themselves — the ideal
+number of players and the points of stops between source and
+destination — by reading the arithmetic, not by trusting a broker.
+The platform's job is to make the costs legible; the market's job is to
+choose the path; and because the costs are true and visible, the path
+the people converge on is the genuinely optimal one, not the one a
+hidden intermediary preferred. This is finding the critical path, and
+finding it is a real-world optimization problem — minimize total cost
+and total latency across the graph of possible routes, subject to the
+real constraints (which players can actually do the work, which
+stops are required by law or geography, which edges the contracts
+permit). The fabric supplies what the optimization needs: a graph that
+resolves (every player and route a node and edge), true edge weights
+(the itemized costs and times, no hidden tolls), and verdicts (each
+route's claims checkable). Optimization over a graph of true weights is
+a solved class of problem the moment the weights stop lying — and making
+the weights stop lying is exactly what the measurement standard does.
+
 ## Why this is constitutional
 
 Measurement is where value becomes checkable, and value is what the
