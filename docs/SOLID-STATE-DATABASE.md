@@ -126,6 +126,36 @@ Solid-state data and solid substance, each vouching for the other across
 the surface — the record keeping reality honest, reality keeping the
 record true.
 
+## The build plan: the toolchain now exists
+
+Every instrument the build requires is already forged, proven, and on
+main — the first kube was the toolchain's commissioning run:
+
+| SSDB need | Toolchain piece, already proven |
+|---|---|
+| Declared store, reconciled | The operator pattern: Kubebuilder scaffold, CRD + controller — a `SolidStateDatabase` kind clearing KUBE-SPEC §7 |
+| Append-only, era-stamped facts | The golden-corpus discipline (frozen, append-only, CI-enforced) — generalized from manifests to facts |
+| Verdicts on every guarantee | The eval registry: world-tests named in advance, `make eval`, evidence reports |
+| ACID-or-nothing commits | The axiom as test plan: the compat suite pattern asserting whole-or-absent writes |
+| Provenance-native rows | The LLM/provenance schema from eval/README — already the column set |
+| Release with evidence attached | The declared-request release pipeline (release/REQUEST → gauntlet → GHCR → assets) |
+| Semantics that cannot drift | The vocabulary system: terms defined before used, checked in CI |
+| Eligibility of the artifact | The kube conformance clauses (§7) and the vendor bar (E1–E10) applied to our own second kube |
+
+Build order (each step one PR, each gated, per the protocols):
+1. Scaffold the `SolidStateDatabase` CRD + controller in this repo
+   (same module, second kind — the kube-of-kubes packing rule).
+2. Facts engine v0: append-only log on a PVC, bitemporal keys,
+   single-writer-per-partition; world-tests before code (P5 of the
+   spec: a guarantee without a verdict is a roadmap item).
+3. The `AS OF` read surface; recorded projections.
+4. Era-stamp v0 schema into the golden corpus; wire `make eval` tasks.
+5. Release as v0.2.0 by declared request — evidence attached, like
+   everything else.
+
+The naming decision (five candidates) gates the API group's kind name
+only at step 1; the founder rules, the record holds the runner-ups.
+
 ## Relationship to KubeContainer
 
 Same charter, different layer: KubeContainer crystallizes *workload intent*
