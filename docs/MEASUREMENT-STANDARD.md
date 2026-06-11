@@ -106,6 +106,58 @@ to a total anyone can re-derive. (And per the supply-chain rule: the
 chocolates' value begins at the customer's touch point — the wholesale
 dealings that put them in the box are not the customer's BOM.)
 
+## The transaction formula (canonical)
+
+At every transaction the value is computed fresh, never accumulated:
+
+```
+transaction value
+  = quantity × unit value           # the contents: qty x value, to standard
+  + service charge (current platform)  # levied by the platform operating THIS transaction
+  + taxes                           # at the current jurisdiction's published rate
+```
+
+The load-bearing word is *current*. The service charge is the one
+levied by the platform operating *this* transaction — not a sum of every
+platform that ever touched the goods upstream — and the tax is the
+current touch point's jurisdiction at its current rate. This is the
+clean-BOM rule expressed as arithmetic: each transaction begins fresh at
+`quantity × unit value` and adds only what *this* touch legitimately
+adds (the current operator's service, the current jurisdiction's tax).
+No prior transaction's charges or taxes ride forward; value is not a
+sediment of every hand it passed through but a clean computation at each
+touch. The chocolate box is the special case (quantity = the chocolates,
+service = the boxing, taxes = the jurisdiction); the formula is the
+general law, and it holds at every transfer on the fabric — buy, resell,
+sublease, settle — each a fresh, itemized, standard-denominated total
+anyone can re-derive from its three named lines.
+
+And the entire calculation is available at every point of the supply
+chain — transparency is not the buyer's privilege alone but the chain's
+property. At any transfer, any participant can see the full breakdown of
+the value at their point: the quantity and unit value, the service
+charge the current platform levied and why, the tax and its
+jurisdiction — and the running composition up to (but never before) the
+clean origin of their own touch. No black-box totals, no "trust the
+price"; the arithmetic that produced the number is inspectable wherever
+the number travels, the same way provenance travels with the kube. A
+price whose computation cannot be seen at the point it is charged is a
+claim, not a measure — and the fabric carries measures.
+
+And the visible arithmetic carries a visible incentive: more stops, more
+cost. Every transfer that adds a platform adds that platform's service
+charge and its jurisdiction's tax — so a chain with more intermediaries
+costs more, transparently, line by line, and the buyer sees exactly how
+many hands took a cut and what each took. This is not a defect to hide
+but a signal to expose: where the old supply chain buried its markups so
+no one could count the middlemen, the fabric itemizes every stop, which
+makes disintermediation a measurable choice rather than a marketing
+claim. Fewer stops is cheaper and the bill proves it; a direct touch
+beats a brokered one and the arithmetic shows by how much. The platform
+that adds a stop must justify its charge in the open, at the point it
+levies it — and a stop that adds cost without adding value is now
+visible to the one party with reason to remove it.
+
 ## Why this is constitutional
 
 Measurement is where value becomes checkable, and value is what the
