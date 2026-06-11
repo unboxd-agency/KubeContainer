@@ -237,6 +237,24 @@ critical path. This is why the platform is general: it does not solve
 supply chains; it solves *paths*, and everything of value is reached by
 one.
 
+Who finds the perfect balance among the competing weights — cheapest
+versus fastest, lowest-carbon versus highest-quality, fewest stops
+versus most resilient? Not a broker, not a guru, not a black box: the
+balance is the framework. There is no oracle who divines the right
+trade-off; there is a framework that makes every weight honest and
+every route computable, and the optimum falls out of the constraints
+declared. The principal sets the objective (minimize cost, or carbon,
+or time, or a weighted blend they choose and record); the measurement
+standard supplies true weights; the graph resolves; and the balance is
+not a person's judgment but the framework's output — re-derivable,
+contestable, and the same for everyone who runs it. This is the
+charter's own balance-by-placement principle, made quantitative: the
+fabric does not pick the winner between competing goods, it gives each
+good its true weight and lets the declared objective place them. The
+perfect balance is found the way every truth here is found — not
+pronounced, but computed on honest ground, and checkable by anyone who
+doubts it.
+
 ## Why this is constitutional
 
 Measurement is where value becomes checkable, and value is what the
