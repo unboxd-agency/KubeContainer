@@ -71,7 +71,7 @@ do not edit; define terms in their source documents.
 | Intelligence is provenance-gated | `docs/AGENT-PLATFORM.md:783` |
 | Intent | `docs/AGENT-PLATFORM.md:477` |
 | Internal memory holds the mental model of the real world | `docs/FOUNDING-PRINCIPLES.md:238` |
-| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:941` |
+| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:967` |
 | Just-in-time | `docs/AGENT-PLATFORM.md:126` |
 | Memory | `docs/AGENT-PLATFORM.md:492` |
 | Minimal, pinned, upstream-only dependencies. | `docs/DESIGN.md:157` |
@@ -95,14 +95,14 @@ do not edit; define terms in their source documents.
 | Operational knowledge is an artifact | `docs/FOUNDING-PRINCIPLES.md:103` |
 | Orchestrator / Subagent | `docs/AGENT-PLATFORM.md:499` |
 | Outcome | `docs/AGENT-PLATFORM.md:480` |
-| P1 — Re-grounding (state the world before touching it) | `docs/AGENT-PLATFORM.md:852` |
-| P2 — Term resolution (no private vocabulary) | `docs/AGENT-PLATFORM.md:860` |
-| P3 — Verdict before done (no unverdicted completion) | `docs/AGENT-PLATFORM.md:869` |
-| P4 — Intent re-confirmation (the goal cannot be quietly reinterpreted) | `docs/AGENT-PLATFORM.md:877` |
-| P5 — Record supremacy (when model and record disagree) | `docs/AGENT-PLATFORM.md:888` |
-| P6 — Scheduled drift audit (entropy has a maintenance schedule) | `docs/AGENT-PLATFORM.md:898` |
-| P7 — Constitutional amendment (the rules change only by the rules) | `docs/AGENT-PLATFORM.md:907` |
-| P8 — No self-building (the founder's prohibition) | `docs/AGENT-PLATFORM.md:916` |
+| P1 — Re-grounding (state the world before touching it) | `docs/AGENT-PLATFORM.md:878` |
+| P2 — Term resolution (no private vocabulary) | `docs/AGENT-PLATFORM.md:886` |
+| P3 — Verdict before done (no unverdicted completion) | `docs/AGENT-PLATFORM.md:895` |
+| P4 — Intent re-confirmation (the goal cannot be quietly reinterpreted) | `docs/AGENT-PLATFORM.md:903` |
+| P5 — Record supremacy (when model and record disagree) | `docs/AGENT-PLATFORM.md:914` |
+| P6 — Scheduled drift audit (entropy has a maintenance schedule) | `docs/AGENT-PLATFORM.md:924` |
+| P7 — Constitutional amendment (the rules change only by the rules) | `docs/AGENT-PLATFORM.md:933` |
+| P8 — No self-building (the founder's prohibition) | `docs/AGENT-PLATFORM.md:942` |
 | Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:301` |
 | Platform Capabilities | `docs/AGENT-PLATFORM.md:144` |
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |
