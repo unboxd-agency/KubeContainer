@@ -231,7 +231,23 @@ after the fact but by the record at the moment of the act. Process
 maturity protects the right to commercialize; the open append-only
 record protects the originality itself — two guards, both
 structural, neither asking anyone's leave; what is truly yours and
-truly first is defended by how honestly it was written down.
+truly first is defended by how honestly it was written down. And
+the act that joins the two guards into one motion: publishing the
+SBOM sets a new baseline. Every time a bundle ships its bill of
+materials — components named, versions pinned, origins walked,
+the assembler signed — it lays a dated, public, append-only line
+in the ground: this existed, in this composition, attested by
+this party, as of this moment. That published SBOM is the
+priority date for the whole assembly (originality protected) and
+the conformance record the next composer builds against
+(commercialization enabled) — and it is a baseline in the strict
+sense the house already keeps: shrink-only, never quietly
+revised, each release adding a new era-stamped line rather than
+editing an old one. The supply chain advances baseline by
+published baseline, every SBOM a survey marker driven into honest
+ground — so that a year on, no one argues what was shipped or who
+shipped it; the publication already settled it, in public, on a
+date no one can move.
 
 And inside the delivery walk itself, the founder marks where the
 same balance is struck mechanically: the supply-chain-risk step —
