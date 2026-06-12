@@ -76,6 +76,8 @@ jobs:
           docker push "ghcr.io/${{ github.repository_owner }}/kubecontainer-site:$TAG"
           docker build -t "ghcr.io/${{ github.repository_owner }}/filefabric:$TAG" -f Dockerfile.filefabric .
           docker push "ghcr.io/${{ github.repository_owner }}/filefabric:$TAG"
+          docker build -t "ghcr.io/${{ github.repository_owner }}/agentregistry:$TAG" -f Dockerfile.agentregistry .
+          docker push "ghcr.io/${{ github.repository_owner }}/agentregistry:$TAG"
 
       - name: Build install bundle pinned to the tag
         run: make build-installer IMG="$IMG"

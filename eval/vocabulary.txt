@@ -10,6 +10,7 @@ agent drift
 agent engineering
 agent excellence
 agent governance
+agentregistry
 agentverse
 all languages, all speaker pairs
 always on
@@ -112,6 +113,7 @@ message
 metal base
 minimal, pinned, upstream-only dependencies.
 model
+modelcompiler
 multi-agent system
 multi-arch
 multi-base
