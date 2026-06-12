@@ -90,6 +90,19 @@ type HealthCheck struct {
 	Path string `json:"path"`
 }
 
+// Storage declares what the workload keeps: a PersistentVolumeClaim
+// owned by the KubeContainer, mounted at path. Omitted, the kube is
+// stateless by contract — everything written dies with the pod.
+type Storage struct {
+	// size is the requested capacity, a Kubernetes quantity (e.g. "1Gi").
+	// +kubebuilder:validation:Pattern=`^[0-9]+(\.[0-9]+)?(Ki|Mi|Gi|Ti|Pi|Ei|m|k|M|G|T|P|E)?$`
+	Size string `json:"size"`
+
+	// path is where the volume is mounted in the container.
+	// +kubebuilder:validation:Pattern=`^/.+`
+	Path string `json:"path"`
+}
+
 // KubeContainerSpec defines the desired state of KubeContainer
 type KubeContainerSpec struct {
 	// image is the container image reference to run.
@@ -120,6 +133,10 @@ type KubeContainerSpec struct {
 	// healthCheck wires HTTP liveness and readiness probes to the container.
 	// +optional
 	HealthCheck *HealthCheck `json:"healthCheck,omitempty"`
+
+	// storage declares what the workload keeps. Omitted, the kube is stateless.
+	// +optional
+	Storage *Storage `json:"storage,omitempty"`
 }
 
 // KubeContainerStatus defines the observed state of KubeContainer.

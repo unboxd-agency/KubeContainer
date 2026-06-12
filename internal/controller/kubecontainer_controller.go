@@ -27,6 +27,7 @@ import (
 	networkingv1 "k8s.io/api/networking/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/api/meta"
+	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
@@ -53,6 +54,7 @@ type KubeContainerReconciler struct {
 // +kubebuilder:rbac:groups=kubecontainer.unboxd.cloud,resources=kubecontainers/finalizers,verbs=update
 // +kubebuilder:rbac:groups=apps,resources=deployments,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups="",resources=services,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups="",resources=persistentvolumeclaims,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups=networking.k8s.io,resources=ingresses,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups=autoscaling,resources=horizontalpodautoscalers,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups="",resources=events,verbs=create;patch
@@ -106,6 +108,32 @@ func (r *KubeContainerReconciler) reconcileChildren(ctx context.Context, kc *kub
 		return fmt.Errorf("deployment: %w", err)
 	}
 	logChildOp(log, r.Recorder, kc, "Deployment", op)
+
+	if st := kc.Spec.Storage; st != nil {
+		size, err := resource.ParseQuantity(st.Size)
+		if err != nil {
+			return fmt.Errorf("storage size: %w", err)
+		}
+		pvc := &corev1.PersistentVolumeClaim{ObjectMeta: metav1.ObjectMeta{Name: kc.Name, Namespace: kc.Namespace}}
+		op, err = controllerutil.CreateOrUpdate(ctx, r.Client, pvc, func() error {
+			// PVC spec is immutable after creation (only expansion is
+			// allowed); set it when new, leave it alone when it exists.
+			if pvc.CreationTimestamp.IsZero() {
+				pvc.Spec.AccessModes = []corev1.PersistentVolumeAccessMode{corev1.ReadWriteOnce}
+				pvc.Spec.Resources = corev1.VolumeResourceRequirements{
+					Requests: corev1.ResourceList{corev1.ResourceStorage: size},
+				}
+			}
+			return controllerutil.SetControllerReference(kc, pvc, r.Scheme)
+		})
+		if err != nil {
+			return fmt.Errorf("pvc: %w", err)
+		}
+		logChildOp(log, r.Recorder, kc, "PersistentVolumeClaim", op)
+	}
+	// A PVC is never deleted on spec change: dropping the storage clause
+	// unmounts the volume but keeps the data. The claim leaves with the
+	// KubeContainer itself, via its owner reference.
 
 	svc := &corev1.Service{ObjectMeta: metav1.ObjectMeta{Name: kc.Name, Namespace: kc.Namespace}}
 	op, err = controllerutil.CreateOrUpdate(ctx, r.Client, svc, func() error {
@@ -232,6 +260,17 @@ func (r *KubeContainerReconciler) buildDeployment(kc *kubecontainerv1alpha1.Kube
 		container.ReadinessProbe = probe.DeepCopy()
 	}
 	deploy.Spec.Template.Labels = labels
+	if st := kc.Spec.Storage; st != nil {
+		container.VolumeMounts = []corev1.VolumeMount{{Name: "storage", MountPath: st.Path}}
+		deploy.Spec.Template.Spec.Volumes = []corev1.Volume{{
+			Name: "storage",
+			VolumeSource: corev1.VolumeSource{
+				PersistentVolumeClaim: &corev1.PersistentVolumeClaimVolumeSource{ClaimName: kc.Name},
+			},
+		}}
+	} else {
+		deploy.Spec.Template.Spec.Volumes = nil
+	}
 	deploy.Spec.Template.Spec.Containers = []corev1.Container{container}
 }
 
@@ -350,6 +389,7 @@ func (r *KubeContainerReconciler) SetupWithManager(mgr ctrl.Manager) error {
 		For(&kubecontainerv1alpha1.KubeContainer{}).
 		Owns(&appsv1.Deployment{}).
 		Owns(&corev1.Service{}).
+		Owns(&corev1.PersistentVolumeClaim{}).
 		Owns(&networkingv1.Ingress{}).
 		Owns(&autoscalingv2.HorizontalPodAutoscaler{}).
 		Named("kubecontainer").

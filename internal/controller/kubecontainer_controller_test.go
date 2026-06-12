@@ -86,7 +86,8 @@ var _ = Describe("KubeContainer Controller", func() {
 		Expect(k8sClient.Delete(ctx, resource)).To(Succeed())
 		// envtest runs no garbage collector, so remove children explicitly.
 		for _, obj := range []client.Object{
-			&appsv1.Deployment{}, &corev1.Service{}, &networkingv1.Ingress{}, &autoscalingv2.HorizontalPodAutoscaler{},
+			&appsv1.Deployment{}, &corev1.Service{}, &networkingv1.Ingress{},
+			&autoscalingv2.HorizontalPodAutoscaler{}, &corev1.PersistentVolumeClaim{},
 		} {
 			obj.SetName(resourceName)
 			obj.SetNamespace("default")
@@ -196,6 +197,36 @@ var _ = Describe("KubeContainer Controller", func() {
 		Expect(apierrors.IsNotFound(err)).To(BeTrue())
 		Expect(k8sClient.Get(ctx, typeNamespacedName, deploy)).To(Succeed())
 		Expect(deploy.Spec.Replicas).To(HaveValue(BeEquivalentTo(3)))
+	})
+
+	It("creates an owned PVC and mounts it when storage is declared, keeps it when dropped", func() {
+		kc := &kubecontainerv1alpha1.KubeContainer{}
+		Expect(k8sClient.Get(ctx, typeNamespacedName, kc)).To(Succeed())
+		kc.Spec.Storage = &kubecontainerv1alpha1.Storage{Size: "1Gi", Path: "/var/www/html"}
+		Expect(k8sClient.Update(ctx, kc)).To(Succeed())
+		doReconcile()
+
+		pvc := &corev1.PersistentVolumeClaim{}
+		Expect(k8sClient.Get(ctx, typeNamespacedName, pvc)).To(Succeed())
+		Expect(pvc.OwnerReferences).To(HaveLen(1))
+		Expect(pvc.Spec.Resources.Requests.Storage().String()).To(Equal("1Gi"))
+
+		deploy := &appsv1.Deployment{}
+		Expect(k8sClient.Get(ctx, typeNamespacedName, deploy)).To(Succeed())
+		container := deploy.Spec.Template.Spec.Containers[0]
+		Expect(container.VolumeMounts).To(HaveLen(1))
+		Expect(container.VolumeMounts[0].MountPath).To(Equal("/var/www/html"))
+		Expect(deploy.Spec.Template.Spec.Volumes[0].PersistentVolumeClaim.ClaimName).To(Equal(resourceName))
+
+		// Dropping the clause unmounts the volume but never deletes the claim.
+		Expect(k8sClient.Get(ctx, typeNamespacedName, kc)).To(Succeed())
+		kc.Spec.Storage = nil
+		Expect(k8sClient.Update(ctx, kc)).To(Succeed())
+		doReconcile()
+
+		Expect(k8sClient.Get(ctx, typeNamespacedName, deploy)).To(Succeed())
+		Expect(deploy.Spec.Template.Spec.Containers[0].VolumeMounts).To(BeEmpty())
+		Expect(k8sClient.Get(ctx, typeNamespacedName, pvc)).To(Succeed())
 	})
 
 	It("rejects a spec with both replicas and autoscale", func() {

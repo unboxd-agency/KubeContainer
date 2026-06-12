@@ -351,6 +351,23 @@ spec:
                 x-kubernetes-validations:
                 - message: replicas and autoscale are mutually exclusive
                   rule: '!(has(self.replicas) && has(self.autoscale))'
+              storage:
+                description: storage declares what the workload keeps. Omitted, the
+                  kube is stateless.
+                properties:
+                  path:
+                    description: path is where the volume is mounted in the container.
+                    pattern: ^/.+
+                    type: string
+                  size:
+                    description: size is the requested capacity, a Kubernetes quantity
+                      (e.g. "1Gi").
+                    pattern: ^[0-9]+(\.[0-9]+)?(Ki|Mi|Gi|Ti|Pi|Ei|m|k|M|G|T|P|E)?$
+                    type: string
+                required:
+                - path
+                - size
+                type: object
             required:
             - image
             - port
