@@ -500,7 +500,19 @@ fabric — five lines, given in one breath:
    both and it is viable — buildable now, from things that are,
    by a design that holds. You need not have built it to prove it
    viable; you need only show it coheres and that nothing it
-   requires is missing from the world.
+   requires is missing from the world. And this is the
+   eligibility — the bare minimum, nothing grander: if you know
+   the components, you can use them to build the solution, and
+   knowing they exist and cohere is the whole entry fee. It is the
+   floor beneath the next line: no one else's approval is needed to
+   start, but *this* much is — because to pursue a goal without
+   even this validation is the real hallucination. The agent
+   hallucinates when it asserts what no provenance could support;
+   the founder hallucinates the same way when he chases what no
+   available, coherent components could build — a goal with no
+   sourceable parts is a claim with no custodian, pursued. The two
+   tests are not a bureaucracy but a sanity: the line between
+   daring and dreaming, between a framework and a wish.
 4. *External validation is not required to start work.* The
    founder needs no one's approval — the title is conferred by the
    building — so the work begins on the strength of the framework
