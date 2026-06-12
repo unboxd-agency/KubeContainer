@@ -1,0 +1,45 @@
+# The gauntlet, in GitLab's tongue — the same gates, the same make
+# targets, the same verdicts as .github/workflows/. NOTICE claimed the
+# workflows are YAML any CI can run; this file is that claim, kept.
+# Image pinned to the repo's own Go patch (go.mod is the source of truth).
+
+image: golang:1.25.7
+
+stages:
+  - gauntlet
+  - promise
+
+variables:
+  GOPATH: $CI_PROJECT_DIR/.go
+  GOFLAGS: -mod=mod
+
+cache:
+  key: go-modules
+  paths:
+    - .go/pkg/mod/
+
+gauntlet:
+  stage: gauntlet
+  script:
+    - make test
+    - make test-report
+    - make lint
+    - make vocab-check
+    - make eval
+    - make security-report
+  artifacts:
+    when: always
+    paths:
+      - dist/test-report.json
+      - dist/security-report.json
+      - dist/eval-report.json
+    expire_in: 90 days
+
+promise:
+  stage: promise
+  script:
+    - ./hack/check-promise.sh || true
+    - test -f dist/install.yaml || echo "install bundle is built by the release walk"
+    - ./hack/check-promise.sh
+  needs: ["gauntlet"]
+  dependencies: ["gauntlet"]
