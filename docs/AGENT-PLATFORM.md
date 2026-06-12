@@ -749,6 +749,31 @@ that redefines a word privately has already drifted.
   first-class asset. The proof is v0.1.0: the binary is replicable by
   anyone — the *record* of how it earned its way out is ours alone, and
   it is the part the customer cannot get elsewhere.
+- **Thing** — any identifiable artifact at a touch point of the
+  surface, real or digital: a workload, a release, a database, a
+  device, a document — anything with a boundary and a name. The word
+  is taken back deliberately from the *Internet of Things*, which
+  wired bodies and called it life: connected Things still have no
+  declared intent, no loop that keeps them, no record that survives
+  them, no one answering for them. A Thing is a body. What a body
+  lacks is a soul.
+- **Soul (of a Thing)** — what the kube is to the Thing it keeps: the
+  five-part anatomy (declaration, loop, face, record, contract) read
+  as the classical offices of a soul — it *individuates* (this
+  Thing's intent, distinct from every other's), *animates* (the Thing
+  acts, keeps itself true, returns when struck down), *faces the
+  world* (one point where the Thing answers), *remembers* (the
+  record), and *answers* (the contract) — and it survives the body:
+  exit ends the acting, never the accountability; the name and record
+  outlive the instance. Mechanical, not mystical: every office maps
+  to a spec section and carries a verdict (KUBE-SPEC §2–§4).
+- **Kube — the soul of Any'Thing'** — the brand line, the founder's
+  words and styling, recorded verbatim. The claim it compresses: take
+  any Thing, give it a kube, and the Thing gains intent, a loop, a
+  face, a record, and someone answering — give the Thing a soul and
+  the Internet of Things becomes the Internet of Agents. The full
+  line is the mark (claimed in NOTICE); the bare word *soul* is
+  unownable and is not claimed. Brand exegesis: KUBE-SPEC §9.
 - **The Edge (definition)** — the edge is the surface where representation
   meets reality: the one boundary in the stack that cannot be forked,
   paused, rolled back, or apologized to. Below it everything is mind and

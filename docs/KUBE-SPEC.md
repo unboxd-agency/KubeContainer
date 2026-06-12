@@ -120,3 +120,47 @@ The kube is the unit; products are counts and kinds of kubes:
 
 Scaling is packing, not rebuilding: the difference between MVP and
 platform is count, not kind.
+
+## 9. The brand
+
+The brand line is the founder's, recorded verbatim with his styling:
+**Kube — the soul of Any'Thing'**.
+
+The claim is mechanical, not mystical, and every word of it is already
+load-bearing in this spec:
+
+- A *Thing* is any identifiable artifact at a touch point of the
+  surface, real or digital (lexicon: *Thing*). A Thing without a kube
+  is a body — present, connected perhaps, and inert: no declared
+  intent, no loop keeping it, no record surviving it, no one
+  answering for it. The box as mere artifact.
+- The *soul* is what the kube adds, and it is exactly the five-part
+  anatomy of §2 read as the offices a soul has always been asked to
+  hold: it *individuates* (the Declaration — this Thing's intent,
+  distinct from every other's), it *animates* (the Loop — the Thing
+  acts, keeps itself true, returns when struck down), it *faces the
+  world* (the Face — one point where the Thing answers), it
+  *remembers* (the Record), and it *answers* (the Contract). And it
+  survives the body: exit ends the acting, never the accountability —
+  the name and record outlive the instance (§3, step 6), which is the
+  one property everything ever called a soul has been required to
+  have.
+- *Any* is the conformance clause (§7) read as the market: whatever
+  clears the five clauses — workload, release, database, agent
+  workload — gets a soul, and the product line (§8) is counts and
+  kinds of ensouled Things.
+
+The lineage is deliberate. The industry gave Things connectivity and
+called it the Internet of Things — wired bodies, still soulless. The
+kube supplies what the wiring never did, and the brand names the
+consequence: give the Thing a soul and the Internet of Things becomes
+the Internet of Agents. The phrase also honors its ancestor — *The
+Soul of a New Machine* (Kidder, 1981) named the moment a built thing
+first seemed to carry something of its makers; this brand makes that
+metaphor checkable: the soul is five parts, listed in §2, each with a
+verdict in §4.
+
+Brand discipline: the protectable mark is the full line, never the
+bare word — *soul* alone is unownable and is not claimed. The line is
+claimed in NOTICE alongside the marks it extends, and defined in the
+lexicon before use, per protocol P2.
