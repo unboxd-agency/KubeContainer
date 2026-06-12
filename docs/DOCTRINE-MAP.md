@@ -95,6 +95,13 @@ Each body is named with its tier(s); the document stays where it is.
 | `internal/controller/testdata/compat/` | Harness + Constraints | The frozen golden corpus; the backward-compatibility constraint, mechanically enforced. |
 | `eval/corpus/`, `eval/harness.sh` | Harness | The world-tests and the runner. |
 | `docs/DOCTRINE-MAP.md` (this file) | Constitution + Harness | Constitution: it governs how the whole record is read, amendable only by process. Harness: it is the classifier itself — the index that catches orphans, including, now, its own. |
+| `docs/TOOLS.md` | Constitution + Constraints | The tool law, casing rule, command words, and reference doctrine bind; the registry rows are constraints (built/declared, owned or out). |
+| `docs/PERSONAL.md` | Theory + Constraints | The personal doctrine is theory; the agent's contract terms 1–10 and the flow's gate order are constraints. |
+| `deploy/` (STACK, VPS, REFERENCES, the declaration) | Constraints + Best practice | The pins, seams, and decision record are constraints; the runbooks are practice. |
+| `registry/` (SKELETON, blueprints, agents) | Harness + Constraints | The skeleton is the admission constraint; the registry is the machine that holds it; append-only, duplicates refused. |
+| `cmd/codecompiler`, `cmd/structuredinstructions`, `hack/deployrehearsal` | Harness | Tools and rehearsal: they do not argue, they check. |
+| `site/` (the front door, the arithmetic function) | Best practice | The face; it presents the record and computes its own experience — nothing here binds. |
+| `docs/manual/` (CONTRACTS, LICENSES) | Constraints + Best practice | The instruction manual (KUBE-SPEC §10): the terms bind as written in their sources; the manual presents them and names the contacts. |
 
 Where a row carries two tiers, the stricter binds the passage in
 question: a Theory paragraph inside a Constitution document is still
@@ -116,3 +123,40 @@ still binds as law. The reader resolves by clause, not by cover.
 The map protects the ecosystem by labeling it where it stands; the
 first principle is kept because nothing the map does could break a
 single reference in the record it indexes.
+
+## The question rule
+
+The founder's law for the whole corpus: if anyone is asking a
+question, we have lacked detailing it clearly — a question asked is
+an indication that the record is not clear enough. Questions are not
+interruptions; they are defect reports against the documentation,
+and they are handled the way every defect is handled here: the asker
+gets the answer, and the record gets the amendment, at the exact
+place the question arose — so the same question can never need
+asking twice. The proof this law already runs: "what is critical
+path," "why Cinder and not Ceph," "does minikube fit," "where should
+I put Keystone" — each was answered in conversation and landed in
+the corpus the same hour, which is the loop this rule makes
+mandatory: question in, answer out, record amended, clarity
+converged. A corpus that keeps receiving the same question has a
+failing world-test it refuses to write down; a corpus that treats
+every question as a patch grows clearer with every reader — and the
+destination is the record this house has aimed at from the first
+line: one where the questions run out not because askers gave up,
+but because the answers were already standing where the questions
+would have stood.
+
+And the bar the question rule aims at, set by the founder: make it
+so obvious that the gatekeeper reads, agrees, and opens the gate.
+That is the clarity standard in one scene — not "defensible under
+questioning" but *never questioned*: the reviewer who needs no
+clarifying round, the auditor who finds the evidence already laid in
+their path, the compiler that admits on first pass, the buyer who
+sees the label and the seal and signs. A gate that opens after
+debate was opened by persuasion; a gate that opens on reading was
+opened by clarity — and only the second scales, because persuasion
+spends a person and clarity spends nothing. Every artifact of this
+house is written for that scene: the gatekeeper reads, agrees, and
+opens — and if any gatekeeper anywhere hesitates, the question rule
+already says what that hesitation is: a defect, ours, to fix where
+it stood.

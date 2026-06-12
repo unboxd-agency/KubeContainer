@@ -32,3 +32,4 @@ go.work
 # Evaluation reports are per-run evidence; custody is CI artifacts, not git
 dist/eval-report.json
 /codecompiler
+/structuredinstructions

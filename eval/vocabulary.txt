@@ -98,6 +98,7 @@ interpretation: direction where certainty runs out
 just-in-time
 kube
 kube — the soul of any'thing'
+kubecontainer core
 loop
 maintainer
 maturity
@@ -201,6 +202,7 @@ the fabric is the intelligent operating system of work
 the founder's styled coinages
 the framework is the fabric
 the map is additive and append-only.
+the metal kube
 the mission statement
 the platform
 the platform is the foundation

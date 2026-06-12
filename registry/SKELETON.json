@@ -1,0 +1,14 @@
+{
+  "skeleton": "agent-declaration/v1",
+  "required": [
+    "name", "kind", "principal", "profile", "identityVerified",
+    "blueprint", "language", "contractTerms",
+    "signatures.principal", "signatures.maker", "signatures.platform"
+  ],
+  "contractTerms": [
+    "intent", "constitutional-context", "bounded-autonomy",
+    "total-record", "no-self-building", "own-anchor-only",
+    "keeping", "fail-safe", "exit", "standing"
+  ],
+  "note": "The skeleton is declared before it is filled. A declaration missing any required field is not malformed - it is inadmissible. Submission appends to registry/agents/; the registry defines the contract; nothing removed, nothing duplicated."
+}

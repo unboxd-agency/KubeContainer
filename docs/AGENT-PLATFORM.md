@@ -774,6 +774,49 @@ that redefines a word privately has already drifted.
   the Internet of Things becomes the Internet of Agents. The full
   line is the mark (claimed in NOTICE); the bare word *soul* is
   unownable and is not claimed. Brand exegesis: KUBE-SPEC §9.
+- **KubeContainer Core** — the edge edition in the product line: the
+  kube at the device's core, as a product — the minimal sealed
+  distribution (operator and one-kube communicator, the loop, the
+  record, the contract, the single signed channel, nothing else
+  aboard) that a device boots; the surface around it headless,
+  delivery only at the ports. Named on the Ubuntu Core precedent;
+  specified in KUBE-SPEC §8. The founder's two readings of the name,
+  both true at once: KubeContainer as core is the meta container —
+  the container of containers, the keeper that holds workloads the
+  way the loop holds declarations, one level above what it carries;
+  and on the device it is the metal container — the meta made
+  physical: the container bonded to the metal it boots from, the
+  kernel-native floor (hardware-metal-native, per the stack law)
+  with the kube riding immutable above it. Meta in office, metal in
+  body — one product, the pun load-bearing — and the founder names
+  it: **The Metal Kube**. The product's name, with KubeContainer
+  Core the distribution it ships as: the kube bonded to the metal,
+  the soul flashed into the body, the edge edition wearing the
+  brand's own grammar (the kube of the metal, as the kube was the
+  soul of the Thing).
+- **The Metal Kube** — the name of the edge product: the kube
+  bonded to the metal — a device whose immutable core is the kube
+  (loop, record, contract, one signed channel) flashed onto the
+  hardware it is native to; ships as KubeContainer Core. The
+  brand's grammar extended to the ground: the kube was the soul of
+  the Thing; The Metal Kube is the soul in the body it boots from.
+  And the founder closes the naming the way the canon law demands:
+  The Metal Kube, MetaKube, KubeContainer Core — and at the bottom,
+  Kube — all resolve to the same. Many names, one canon: each name
+  a scoped rendering (The Metal Kube on the metal, MetaKube in the
+  meta office, KubeContainer Core on the SKU line), every one an
+  image resolving home to the one canonical referent — the kube —
+  exactly as every image resolves to the canonical kube and every
+  verse to the one world. The registry holds the mapping; no name
+  is a second self; and a buyer who asks which product this is gets
+  the only answer the fabric ever gives: the kube, by whichever of
+  its names your scope speaks. The mechanism has its plain name,
+  the founder's one word: aliases — a name that resolves to another
+  name's referent and never carries its own; the registry holds
+  alias to canon the way DNS holds CNAME to record, and an alias
+  that stops resolving is removed, never left dangling. One canon,
+  any aliases, zero ambiguity: the naming system of the whole
+  fabric in three words.
 - **The Edge (definition)** — the edge is the surface where representation
   meets reality: the one boundary in the stack that cannot be forked,
   paused, rolled back, or apologized to. Below it everything is mind and

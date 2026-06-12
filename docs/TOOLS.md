@@ -404,9 +404,7 @@ record the few genuine forks rather than maintaining two full
 vocabularies. Common ground before compromise, compromise before
 conflict — the negotiation rule (win-win) applied to spelling, and
 the reason a single word usually serves the whole fabric without
-ever needing to change its coat at all. Or — and this is where the founder's three
-options resolve, the win-win found — we find the common ground,
-and it tur
+ever needing to change its coat at all.
 
 ## The registry
 
@@ -420,10 +418,18 @@ name their intent; nothing removed, nothing duplicated.
   invoked. Source: `cmd/codecompiler/main.go`; build:
   `go build ./cmd/codecompiler`; run from the repo root:
   `./codecompiler`.
-- **StructuredInstructions** — declared, not yet built. One binary
-  for the proto-first law of the wire: declare a skeleton, validate
-  a block against its skeleton, and refuse the undeclared shape —
-  the edge's admission gate as a tool in the hand.
+- **StructuredInstructions** — built. One binary for the proto-first
+  law of the wire: declare a skeleton, validate a declaration
+  against it, refuse the undeclared shape, and submit what passes to
+  the registry — the edge's admission gate as a tool in the hand,
+  and the gate of the personal flow (login, profile, identity,
+  agent). Source: `cmd/structuredinstructions/main.go`; build:
+  `go build ./cmd/structuredinstructions`; run:
+  `./structuredinstructions <declaration.json> [-submit]`. The
+  skeleton lives at `registry/SKELETON.json`; the blueprints at
+  `registry/blueprints/` (code-maintainer, issue-resolver — the two
+  offices, language as config); submissions land in
+  `registry/agents/`, one entry per agent, duplicates refused.
 - **SourceGround** — working, as scripts to be fused into one
   binary. The tool of the founder's law that you define a term
   before using it and bind the meaning from the source, with source

@@ -1,0 +1,31 @@
+# The first kube of the personal fabric — the founder's declared stack,
+# each pick on the record (pick your base and device, you pick your tool):
+#
+#   surface:            edge browser  (the function rendered browser-native:
+#                                      site/arithmetic.html — the service
+#                                      built native on the surface)
+#   runtime:            FabricDB      (declared, not yet built — the
+#                                      SolidStateDatabase seat; this pick is
+#                                      a declaration awaiting its build, and
+#                                      the record says so honestly)
+#   container runtime:  KubeContainer (built, v0.1.0 — this repository)
+#   workload:           the arithmetic formula as a function — FaaS:
+#                       value = qty x unit value + service charge + taxes
+#
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: arithmetic
+  annotations:
+    fabric.unboxd.cloud/surface: edge-browser
+    fabric.unboxd.cloud/runtime: fabricdb-declared
+    fabric.unboxd.cloud/function: transaction-formula
+spec:
+  # Any static-file server image serving site/ delivers the function to
+  # the browser surface; pinned upstream image, vendor-neutral.
+  image: nginx:1.27
+  port: 80
+  scaling:
+    replicas: 1
+  expose:
+    type: ClusterIP

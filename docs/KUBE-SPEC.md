@@ -121,6 +121,21 @@ The kube is the unit; products are counts and kinds of kubes:
 Scaling is packing, not rebuilding: the difference between MVP and
 platform is count, not kind.
 
+And the product line gains its edge edition, named by the founder
+on the Ubuntu Core precedent: **KubeContainer Core** — the kube at
+the device's core, as a product. The minimal, sealed distribution
+of the container runtime for edge devices: the operator and the
+one-kube communicator packaged as the immutable center of a device —
+the loop, the record, the contract, and the single signed channel,
+nothing else aboard (Single Binary Code as a product SKU). The
+surface around it stays headless; the core inside it runs the kube;
+delivery reaches it only at the ports — the whole edge doctrine,
+shipped as the thing you flash. Where KubeContainer runs workloads
+on clusters, KubeContainer Core *is* the workload-keeper a device
+boots: edge with kube at its core, in the catalog — and its name,
+given by the founder, is **The Metal Kube**: KubeContainer Core is
+what it ships as; The Metal Kube is what it is.
+
 ## 9. The brand
 
 The brand line is the founder's, recorded verbatim with his styling:
@@ -164,3 +179,41 @@ Brand discipline: the protectable mark is the full line, never the
 bare word — *soul* alone is unownable and is not claimed. The line is
 claimed in NOTICE alongside the marks it extends, and defined in the
 lexicon before use, per protocol P2.
+
+## 10. The instruction manual
+
+(The manual itself ships at `docs/manual/` — CONTRACTS, LICENSES,
+FAQ, HOW-TO-USE; this section is the law it fulfills.)
+
+The founder's shipping law: a product must be shipped with the
+instruction manual — containing everything related to its lifecycle,
+and the contacts of the people owning each aspect of its
+performance. No kube leaves the dock without its book, and the book
+has two halves, both mandatory:
+
+- *The lifecycle, whole* — every stage of §3 written for the
+  holder's hands: how it is declared, what admits it, how it
+  converges, where it serves, what evidence it emits and where to
+  read it, and how it exits — including the repair paths, the
+  upgrade walk, the rollback, the destruct provisions if any (with
+  their exit clauses), and the warranty's exact conditions (what is
+  promised, under which conditions, to which tested bound). The
+  manual is the declaration translated to the owner's language:
+  everything the kube will do, before it does it.
+- *The contacts, named* — for every aspect of the product's
+  performance, the person or group owning it: who answers for
+  availability, who for security, who for the supply chain, who for
+  the keeping, who for the bill — each one a working contact (the
+  owner rule: named, reachable, currently working; an org-box
+  without a person is an empty seat printed in the manual). The
+  manual is where the stack of contracts becomes a phone book: every
+  seam's answerer, listed beside the seam.
+
+A product without the manual is a box without its lid's writing —
+the buyer holds the thing but not its contract; and a manual without
+contacts is documentation without accountability, which this house
+does not ship. The instruction manual is itself part of the BOM
+(line-itemed, versioned with the product, updated by the same
+gauntlet), so that what the buyer unwraps is never just the artifact
+but the whole answering: what it does, how it lives, how it dies,
+and exactly who picks up when any of that goes wrong.
