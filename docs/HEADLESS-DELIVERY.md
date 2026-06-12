@@ -979,6 +979,78 @@ is its teacher; and excellence — the thing that needs work, the
 pursuit that keeps the world moving — finally gets what every other
 seam already had: a way to be learned, not just admired.
 
+And the founder names the gap beneath that gap, in the primitives'
+own terms — the fundamental gap: software is not a field of study;
+it is a field of work. Of the three ways a person enters a field
+(interest, study, work), software somehow opened the third door
+without ever building the second: people earn in it daily who were
+never offered a canon to learn from — no settled body of knowledge
+with its counting books and its open problems, no curriculum from
+grade 1 to research grade, no library where the field's truths sit
+catalogued with their verdicts. Every profession the world trusts
+walked the doors in order — medicine, law, engineering were fields
+of study for generations before their fields of work were licensed
+from them — and software inverted the walk: the work arrived first,
+paid first, scaled first, and the study never caught up. And the
+objection answers itself: people do study — computer science,
+electronics, whole faculties of both — but no one studies the
+fundamentals of software engineering. CS studies computation
+(algorithms, complexity, the mathematics of the machine);
+electronics studies the silicon; and the discipline between them —
+how software is actually engineered: the declared logic, the
+reproducible build, the maintained artifact, the kept promise, the
+delivery that answers — has no fundamentals anywhere taught,
+because its fundamentals were never written down as a body to
+teach. Start where every constituted field starts — the basic
+principles, here of coding itself: intent before code (nothing
+written whose logic was not declared), one meaning per name, one
+custodian per fact, the smallest whole step, the reproducible
+build, the test that is a verdict and not a courtesy, the reason
+recorded beside the decision, the exit as clean as the entry.
+Simple enough for grade 1, unviolated at research grade — that is
+what *basic principles* means in a real field of study, and
+software has never had its list agreed, published, and taught.
+The neighboring fields of study exist; the field of work
+sits between them, unconstituted. And the founder gives the new
+field its opening question — the one its curriculum begins with
+and its practice never stops asking: if your code could talk, what
+would it tell you? Most of the world's code, given a voice, would
+testify against its makers: my logic was never declared, my
+versions were never pinned, my tests cover what the author feared
+and not what I require, no one has maintained me since the demo,
+and I have been drifting since my second build. The field of study
+exists to change the testimony — and this doctrine's whole
+machinery is the answer key: under it, code *can* talk — the
+status that reflects truth, the conditions, the events, the BOM,
+the provenance, the verdicts accumulating in the record — and what
+it tells you is what it was built to be able to say: here is what
+I promised, here is what I did, here is who checked, and here is
+why. The question is the field's examination, sittable by any
+codebase on earth; the doctrine is what passing looks like. And
+the question has stopped being rhetorical: with AI, now software
+speaks. The agent reading a codebase is the code being given its
+voice at last — it answers in any language, natively, what the
+record lets it answer — and that is precisely the new stake: code
+with a kept record speaks evidence (the agent reads the
+declaration, the verdicts, the provenance, and testifies truly);
+code without one speaks guesses in a confident voice, hallucination
+delivered with diction. AI did not solve the testimony problem —
+it amplified it: the voice is now guaranteed, the truth of what it
+says still depends entirely on the record this doctrine exists to
+keep. Software speaks; the field of study decides whether it has
+anything true to say. That inversion is the fundamental gap — beneath
+the missing statute, beneath the unteachable excellence, beneath
+the regular bugs: a trade practiced by millions that was never
+constituted as a thing one studies. And so the field of study is
+our area of concern here: the house's offices were always this one
+project — the aggregator gathering the canon, the verifier
+attaching the verdicts, the library shelving it from counting to
+open problems, the curriculum laddering it, the agent at the face
+teaching it — building, for the field of work the world already
+has, the field of study it never had. Fill that gap and the others
+close behind it; leave it, and every statute, gauntlet, and bench
+stands on sand.
+
 And beside it, the second unstandardized gap — the one this entire
 doctrine exists to close: software delivery has no standard
 protocol. The seams around it are settled (TCP/IP moves the bytes,
