@@ -110,6 +110,10 @@ here, whole in one line.
   contracted to keep it still.
 - **Gap** — a place where work must cross and nothing stands to
   carry it.
+- **Scope** — a declared, bounded space within which every word
+  must mean exactly one thing: one word, one meaning, unique and
+  unambiguous inside the boundary — the same word may mean
+  otherwise outside, but never twice within.
 - **Field** — a bounded ground where one kind of work belongs:
   entered by interest, study, or work; white before it is drawn,
   green before it is built; open when its boundary admits by its own
