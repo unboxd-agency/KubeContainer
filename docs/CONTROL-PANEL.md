@@ -134,3 +134,27 @@ append-only history). The panel shows all three at once — the
 declared flow, the reconciling kube, the watcher's verdict that it
 completed — so a human reads, in one nav, what was wanted, what is
 being kept, and whether it landed.
+
+## The flow builder — Orkes/Conductor
+
+The flow must be built before it is walked, and the founder names the
+builder's seat: Orkes (Conductor) — the workflow orchestration
+platform (Netflix Conductor's lineage, open core) as the candidate
+flow builder: the visual/declarative authoring of the gate-path
+itself, the place a flow is composed (which gates, in what order,
+with what branches) before the kube reconciles it and the watcher
+confirms it. The full seating of the flow's lifecycle, candidates
+named:
+
+| Office | What it does | Candidate (recorded, measured against the house's loop-and-record law) |
+|---|---|---|
+| Flow builder | compose the gate-path | Orkes / Conductor |
+| Flow engine | execute it durably | Temporal |
+| Reconciler | keep it to declaration | the kube (this house) |
+| Watcher | witness completion | Cortex |
+
+Built (Orkes), executed (Temporal), kept (the kube), witnessed
+(Cortex) — four offices, the panel showing the one flow across all of
+them. Each candidate enters by conformance and is swappable; the kube
+is the only seat this house fills itself, because reconciliation is
+its founding craft.
