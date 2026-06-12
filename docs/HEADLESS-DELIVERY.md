@@ -1038,7 +1038,21 @@ delivered with diction. AI did not solve the testimony problem —
 it amplified it: the voice is now guaranteed, the truth of what it
 says still depends entirely on the record this doctrine exists to
 keep. Software speaks; the field of study decides whether it has
-anything true to say. That inversion is the fundamental gap — beneath
+anything true to say. So the duty flips to our side of the table:
+we must listen now — with our codebase as the RAG and chat as the
+UI. The codebase as RAG: the repository itself — code, record,
+declarations, verdicts, reasons — is the retrieval ground, so that
+every answer the voice gives is fetched from the record and cited
+to it, grounded by construction rather than by hope; nothing
+answered that the corpus cannot witness. And chat as the UI: the
+face the human already knows how to use — ask in your own
+language, hear the code answer in it (the multi-language,
+single-meaning law at the conversation layer), the skill-profile
+conversion of §7 applied to the dialogue itself. Listening is the
+practice the new field begins with: the code was made able to
+speak by the record, given a voice by the agent, and heard at
+last through the simplest face there is — a conversation with
+your own system, grounded in everything it ever did. That inversion is the fundamental gap — beneath
 the missing statute, beneath the unteachable excellence, beneath
 the regular bugs: a trade practiced by millions that was never
 constituted as a thing one studies. And so the field of study is
