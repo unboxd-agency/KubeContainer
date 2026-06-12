@@ -536,6 +536,21 @@ fabric — five lines, given in one breath:
    what a declared sequence produced and a verdict passed. Feel the
    work; command the code — the journey vibed, the artifact driven
    by steps that anyone, including a machine, can run and check.
+   And the entry has never been cheaper, which removes the last
+   excuse: build with the tools available for free. The compiler,
+   the version control, the container runtime, the conformant
+   cluster on a laptop, the open standards, the graduated
+   commons — the whole gauntlet of this house runs on tools that
+   cost nothing to hold and ask no permission to use (free as in
+   the lexicon: free for the builder who builds, by the contract
+   of the commons that grew them). The components are available
+   from at least one supplier and that supplier is often the
+   commons itself — so the viability check passes for the founder
+   with no budget at all, and the only scarce input left is the
+   daring. Free tools mean the gap between a framework and a
+   built thing is now skill and will, not capital; the world
+   handed the builder its instruments and kept only the building
+   for him to do.
 4. *External validation is not required to start work.* The
    founder needs no one's approval — the title is conferred by the
    building — so the work begins on the strength of the framework
