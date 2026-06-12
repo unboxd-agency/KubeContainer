@@ -45,3 +45,13 @@ demonstrated first (this stack, running), defined second (this
 file), copied third (the registry's blueprint, free to take). The
 house that wrote the laws ships the worked example, and the worked
 example is the product.
+
+## What this home is: the complete agent-engineering stack, lightweight
+
+The founder names the composition. One 8GB VPS now carries every seat
+agent engineering needs — declare, gate, build, store, run, keep,
+record, evidence — and almost every resident is a single binary:
+
+| Need | Resident | Weight |
+|---|---|---|
+| The record + the gauntlet | GitLab CE (git.unboxd.cloud) + runner | the one heavy tenant —
