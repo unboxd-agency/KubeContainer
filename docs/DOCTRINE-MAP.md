@@ -101,6 +101,7 @@ Each body is named with its tier(s); the document stays where it is.
 | `registry/` (SKELETON, blueprints, agents) | Harness + Constraints | The skeleton is the admission constraint; the registry is the machine that holds it; append-only, duplicates refused. |
 | `cmd/codecompiler`, `cmd/structuredinstructions`, `hack/deployrehearsal` | Harness | Tools and rehearsal: they do not argue, they check. |
 | `site/` (the front door, the arithmetic function) | Best practice | The face; it presents the record and computes its own experience — nothing here binds. |
+| `docs/manual/` (CONTRACTS, LICENSES) | Constraints + Best practice | The instruction manual (KUBE-SPEC §10): the terms bind as written in their sources; the manual presents them and names the contacts. |
 
 Where a row carries two tiers, the stricter binds the passage in
 question: a Theory paragraph inside a Constitution document is still

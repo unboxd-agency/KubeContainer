@@ -188,7 +188,7 @@ and the contacts of the people owning each aspect of its
 performance. No kube leaves the dock without its book, and the book
 has two halves, both mandatory:
 
-- **The lifecycle, whole** — every stage of §3 written for the
+- *The lifecycle, whole* — every stage of §3 written for the
   holder's hands: how it is declared, what admits it, how it
   converges, where it serves, what evidence it emits and where to
   read it, and how it exits — including the repair paths, the
@@ -197,7 +197,7 @@ has two halves, both mandatory:
   promised, under which conditions, to which tested bound). The
   manual is the declaration translated to the owner's language:
   everything the kube will do, before it does it.
-- **The contacts, named** — for every aspect of the product's
+- *The contacts, named* — for every aspect of the product's
   performance, the person or group owning it: who answers for
   availability, who for security, who for the supply chain, who for
   the keeping, who for the bill — each one a working contact (the
