@@ -121,7 +121,47 @@ empty seat wearing a citation, and a definition anchored to the
 unmaintained is drifting with no one to notice). Real, resolvable,
 and tended: the three tests every anchor must keep passing, not
 just pass once — because meaning pinned to a dead source is only
-embalmed, and this house anchors to the living.
+embalmed, and this house anchors to the living. And the founder
+gives the test its public instrument and its strategy in one line:
+follow the leaders to be safe. The Linux Foundation's Insights
+platform publishes the measured health of the top open-source
+projects — contributor activity, maintenance cadence, the
+liveness of the keeping — at a neutral foundation's own telemetry
+(point of reference:
+https://insights.linuxfoundation.org/collection/details/top-open-source-projects
+— founder-supplied; the page sits behind the site's access
+controls from this environment, so it is cited as given and
+verified on click). The strategy is the safety: when choosing a
+source, a dependency, or an anchor, prefer the demonstrated
+leaders — projects whose maintenance is measured and published by
+a party that does not profit from the grade — because leadership
+in keeping is the one leadership that cannot be marketed, only
+logged. And because the instrument is itself a living feed rather
+than a frozen list, this makes the anchor always current: the
+leaders' board re-renders as the keeping ebbs and flows, so a
+reference resolved through it is resolved against today's health,
+not last year's reputation — the living-anchor test, automated by
+the same telemetry the whole open world already trusts — with
+Linux leading the open index of popularity and maintenance: the
+foundation that stewards the world's most load-bearing open code
+also keeping the public board of which code is most used and best
+kept, the two measures that matter (popularity says how many stand
+on it; maintenance says whether it will hold) published together,
+in one neutral place. That the foundation holds the index rather
+than any vendor is the whole reason it can serve as a point of
+reference: the scorekeeper profits from neither the score nor the
+players, the only seat from which a leaderboard stays honest. And
+the practice that follows, the founder's, plain as a pin: just pin
+to a ref before you code. Before a line is written, fix the
+reference — the leader chosen, the version named, the URL
+recorded — so the code is anchored from its first character, not
+retro-fitted with citations at review. Pin first, then code; the
+ref precedes the line it grounds, because a dependency chosen
+after the code is written is a dependency the code was bent to
+fit, and a ref pinned before is a decision the code was built to
+honor.
+
+## Kubernetes-native casing
 
 Or — the founder's alternative, resolved as a both rather than an
 or — we go Kubernetes-native: where the machine reads, the casing
