@@ -543,7 +543,37 @@ and into the registry with its verdict attached. The agent
 maintained this codebase while this codebase was being written —
 the existence proof shipped before the thesis did. Agent as code
 maintainer is therefore offered the only way this house offers
-anything: demonstrated first, defined second, sold third. The marketplace that does not exist is the missing peace
+anything: demonstrated first, defined second, sold third.
+
+And the maintainer's twin office, same loop pointed at the queue:
+the agent as issue resolver. An issue is a declared gap between
+what is and what was promised — which makes it agent-shaped work by
+definition: reproduce it (the world-test written first, failing),
+fix it through the gauntlet, watch the test flip, attach the
+verdict, close with the evidence linked. The registry already
+speaks this language — *resolution* is its word for a task whose
+world-test flipped to pass, and the resolution rate is its score —
+so the issue resolver is not a new machine but the registry's
+discipline pointed at the tracker: every issue a task, every task a
+world-test, every close a verdict, no issue closed by conversation.
+Triage, reproduction, fix, proof, record — the unglamorous siblings
+of building, staffed at last by the worker the loop was made of.
+
+And the two offices come with a residence rule: both agents in a
+device must have shared context and a stable OS. Shared context,
+because a maintainer and a resolver with private memories are two
+more apps — the same fact at two freshnesses, the §8 disease
+reinfecting its own cure; instead, one record between them (the
+issue the resolver closes is the drift the maintainer logged; the
+dependency the maintainer bumps is the reproduction the resolver
+needs), each reading and writing the same context the way every
+face draws from one record (§12). And a stable OS, because loops
+that run forever need ground that does not move under them — the
+charter's dedication was written for exactly this tenancy: a stable
+OS for agentic enterprises, the OS-as-kube of §3 on its metal base,
+hardware vendor holding its contract. Two agents, one context, one
+stable floor — the device becomes what the enterprise becomes:
+many workers, one record, ground that holds. The marketplace that does not exist is the missing peace
 treaty: with contracts, registries, and a standard interoperable
 layer, a world could *buy* its neighbor's strength instead of
 besieging it — specialization returns, plates stay owned, and the
