@@ -1,0 +1,43 @@
+name: Mirror
+
+# The mirror is a clone, not a sidecar: its own workflow, riding no
+# gauntlet, owing no gate. Every push to main and every tag is handed
+# off to GitLab whole — history preserved, so either home can carry
+# the record alone (the graceful handoff).
+#
+# Requires one secret, set by the principal: GITLAB_MIRROR_TOKEN — a
+# GitLab project access token (role Maintainer, scope write_repository)
+# for gitlab.com/kubecontainer/v1.
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  mirror:
+    name: Hand off to GitLab
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the whole record
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Push to the clone
+        env:
+          TOKEN: ${{ secrets.GITLAB_MIRROR_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "GITLAB_MIRROR_TOKEN is not set - the handoff needs the principal's token"
+            exit 1
+          fi
+          git remote add gitlab "https://oauth2:${TOKEN}@gitlab.com/kubecontainer/v1.git"
+          git push gitlab "HEAD:refs/heads/${GITHUB_REF_NAME}" --force-with-lease 2>/dev/null \
+            || git push gitlab "HEAD:refs/heads/${GITHUB_REF_NAME}"
+          git push gitlab --tags
