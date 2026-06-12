@@ -720,7 +720,24 @@ richer text elaborates a primitive, the primitive governs.
   nowhere at the edge; you act at the edge and are mirrored
   everywhere in the digital; and the gap between, never closed,
   never crossed except by declared signal, is exactly what lets the
-  twin protect a reality it can never touch.
+  twin protect a reality it can never touch. And the gate between
+  real and virtual has a guardian no system can corrupt: time
+  protects it. The digital can be copied, paused, rewound, forked,
+  replayed at will — but it cannot be made *now*; only the real
+  edge happens in the present, and the one thing the projection can
+  never counterfeit is the present moment, because time moves only
+  forward and only once and for no one's convenience. Time is the
+  gatekeeper at the bridge between the planes: a virtual thing
+  claiming to be real is caught the instant it is asked to happen
+  *now, once, irreversibly* — the test the digital always fails and
+  the real always passes. This is why time was named the totem and
+  the guardian of the real: not metaphor but mechanism — the one
+  resource no layer can virtualize stands at the gate the twin
+  doctrine draws, and stamps every real event with a *when* that
+  cannot be backdated, replayed, or faked. Forge anything in the
+  digital except the present; cross from virtual to real and time
+  will ask you for a now you cannot manufacture; that question,
+  unanswerable by any projection, is the gate's whole guard.
 
 ## The counsel
 
