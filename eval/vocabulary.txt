@@ -36,6 +36,7 @@ claims become evidence
 cncf-graduated standards only
 code
 code is configuration
+codecompiler
 compliance by the path
 constitution
 constraints
@@ -176,16 +177,19 @@ skeleton
 skill
 soul
 soul (of a thing)
+sourceground
 sovereign
 sovereign & federated
 stable substance, stable state
 standard operating procedures
 status
 step
+structuredinstructions
 surface
 tagging
 the agent economy
 the agent lexicon
+the any' family
 the edge (definition)
 the fabric is the intelligent operating system of work
 the framework is the fabric
@@ -196,6 +200,7 @@ the platform is the foundation
 the reversed loop
 the seat theorem
 the solution is the service contract
+the tool equation
 theory
 thing
 this moment (now)
@@ -207,6 +212,7 @@ trusted frontier intelligence, from all providers
 trusted insights
 trusted platform
 truth
+two-word composite, one binary
 unboxd cloud platform
 unit
 verdict

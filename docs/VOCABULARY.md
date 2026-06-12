@@ -44,6 +44,7 @@ do not edit; define terms in their source documents.
 | Claims become evidence | `docs/FOUNDING-PRINCIPLES.md:70` |
 | Code | `docs/PRIMITIVES.md:77` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
+| CodeCompiler | `docs/TOOLS.md:38` |
 | Compliance by the path | `docs/AGENT-PLATFORM.md:864` |
 | Constitution | `docs/DOCTRINE-MAP.md:50` |
 | Constraints | `docs/DOCTRINE-MAP.md:60` |
@@ -184,16 +185,19 @@ do not edit; define terms in their source documents.
 | Skill | `docs/AGENT-PLATFORM.md:485` |
 | Soul | `docs/PRIMITIVES.md:93` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:760` |
+| SourceGround | `docs/TOOLS.md:49` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
 | Standard operating procedures | `docs/AGENT-PLATFORM.md:337` |
 | Status | `docs/DESIGN.md:197` |
 | Step | `docs/PRIMITIVES.md:63` |
+| StructuredInstructions | `docs/TOOLS.md:45` |
 | Surface | `docs/PRIMITIVES.md:99` |
 | Tagging | `docs/DESIGN.md:133` |
 | The Agent Economy | `docs/AGENT-PLATFORM.md:108` |
 | The Agent Lexicon | `docs/AGENT-PLATFORM.md:468` |
+| The Any' family | `docs/TOOLS.md:23` |
 | The Edge (definition) | `docs/AGENT-PLATFORM.md:777` |
 | The Mission Statement | `docs/AGENT-PLATFORM.md:429` |
 | The Platform | `docs/AGENT-PLATFORM.md:91` |
@@ -204,6 +208,7 @@ do not edit; define terms in their source documents.
 | The platform is the foundation | `docs/FOUNDING-PRINCIPLES.md:116` |
 | The reversed loop | `docs/HEADLESS-DELIVERY.md:2240` |
 | The solution is the service contract | `docs/FOUNDING-PRINCIPLES.md:120` |
+| The tool equation | `docs/TOOLS.md:18` |
 | Theory | `docs/DOCTRINE-MAP.md:55` |
 | Thing | `docs/AGENT-PLATFORM.md:752` |
 | This moment (now) | `docs/AGENT-PLATFORM.md:947` |
@@ -215,6 +220,7 @@ do not edit; define terms in their source documents.
 | Trusted insights | `docs/FOUNDING-PRINCIPLES.md:1144` |
 | Trusted platform | `docs/PRIMITIVES.md:162` |
 | Truth | `docs/PRIMITIVES.md:44` |
+| Two-word composite, one binary | `docs/TOOLS.md:10` |
 | Unit | `docs/PRIMITIVES.md:135` |
 | Verdict | `docs/AGENT-PLATFORM.md:581` |
 | Verse | `docs/PRIMITIVES.md:168` |
