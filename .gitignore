@@ -37,3 +37,6 @@ dist/test-report.json
 dist/security-report.json
 /homesetup
 /operatorpoc
+/filefabric
+/codecompiler
+/structuredinstructions
