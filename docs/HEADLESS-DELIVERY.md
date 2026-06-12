@@ -294,6 +294,30 @@ that cannot assemble can only grow by heroics, and heroics are the
 one input that never scales. Software industrializes the day its
 assembly does — and not a day before.
 
+And the precedent even solves the geography: assembly-line
+production, where motor vehicles have been assembled at the
+delivery zone. The auto industry learned long ago not to ship the
+finished whole across the world — it ships the kit: parts made
+where making is best, attested and packed, then assembled close to
+where the vehicle is delivered — the knock-down kit, the local
+line, the final assembly in the destination's own zone, under the
+destination's own inspections, by the destination's own hands.
+Received in parts through the supply chain — each part attested at
+its origin, traveling its own lawful leg, the manifest whole even
+while the crates are many — and made one thing only at the end.
+That is this doctrine's delivery map, drawn by carmakers decades
+early: components certified in the cloud (made where making is
+best), the bundle traveling as an attested kit through the typed
+channels — received in parts, with the complete skeleton (§12) —
+and the final assembly at the delivery zone — the
+activation in right context (§4), the skeleton building the body
+on the receiving ground (§12), the venv-to-device walk — assembly
+finishing where the thing will live, because the last mile of
+assembly is the first mile of use. The industry that industrialized
+first already proved the pattern at planetary scale; software's
+delivery zones — the ports, the bases, the contexts — were waiting
+for their assembly line all along.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the
