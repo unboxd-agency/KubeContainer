@@ -67,10 +67,19 @@ richer text elaborates a primitive, the primitive governs.
   the founder — and the seat holds one or many alike (the
   maintainer's own rule), a single master or a guild of them,
   so long as the skill is real and the names are in the record.
-  The brand's pair completes itself: the kube is the soul of
-  Any'Thing', and behind every Thing's working stands Any'One' —
-  or Many — things ensouled without exception, people qualified
-  without permission, and no thing left with no one.
+  But open is not vague: it must resolve — at a working individual
+  or group. Any'One' names the eligibility; the reference still
+  resolves to somebody: a named, reachable, currently working
+  person or group — working, not honorary: practicing the skill
+  now, answering now, in the record now. A name that no longer
+  works the thing is an empty seat wearing a label, and a
+  reference that resolves to it has already failed the resolution
+  test every reference must pass. The brand's pair completes
+  itself: the kube is the soul of Any'Thing', and behind every
+  Thing's working stands Any'One' — or Many — things ensouled
+  without exception, people qualified without permission, every
+  seat resolving to someone at work, and no thing left with no
+  one.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.
