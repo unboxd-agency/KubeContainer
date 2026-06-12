@@ -180,3 +180,26 @@ run. So the seating is sequential, no overlap: OpenTofu for day-0
 (the ground reconciled from inside the cluster, drift reverted like
 any kube child). Bootstrap by tofu, keep by Crossplane, both
 declared, the exit real at each.
+
+## Three more references, seated
+
+- Ubuntu Landscape — the fleet-management reference (Canonical's
+  panel for estates of Ubuntu machines: enrollment, patching,
+  audit, one console for thousands of boxes). What the panel takes
+  from it: machines enroll into the estate and are kept on cadence —
+  the fleet view our panel needs for many Metal Kubes, with the
+  difference that Landscape manages hosts imperatively while ours
+  declares and reconciles them. Reference: https://ubuntu.com/landscape
+- Operator Framework — the operator-pattern toolchain proper
+  (Operator SDK, OLM lineage): the reference for how operators are
+  built, packaged, and lifecycled at scale. This house already
+  builds on Kubebuilder (the same family); the framework is the
+  reference for the panel's "every resident is an operator-kept
+  app" rule. Reference: https://operatorframework.io/
+- Multi/hybrid-cloud frameworks — the estate spans clouds, and the
+  panel must read them as one: the reference class is the
+  multi-cluster/multi-cloud control planes (Crossplane already
+  seated for resources; the fleet/cluster layer candidates: Open
+  Cluster Management, Karmada — both CNCF) — one nav, many clouds,
+  each env labeled clearly, the same trick at cloud scale: the app
+  constant, the ground variable.
