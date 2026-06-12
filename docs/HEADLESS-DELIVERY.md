@@ -1015,7 +1015,18 @@ custodian, dead weight that still gets read, still gets trusted,
 still ships in the BOM; the cluster already lives this law
 (children without owners are collected, not tolerated), and the
 code gets the same law: everything in the tree belongs to
-something, or it goes. Simple enough for grade 1, unviolated at
+something, or it goes. And the admission rule that pairs with it:
+code must compile only when every variable is declared, defined,
+and explained beyond doubt — declared (the name exists before it
+is used), defined (it holds a stated value of a stated kind, never
+an accident of memory or mood), and explained beyond doubt (what
+it is for is knowable from the record, not guessed from the
+spelling). Compilation is the code's admission gate, and a gate
+that admits the undeclared admits everything: the languages that
+let names spring into being mid-sentence shipped half a century of
+typos as production state. In the field of study, the compiler is
+the first examiner — and nothing sits the later exams that did not
+pass the first. Simple enough for grade 1, unviolated at
 research grade — that is
 what *basic principles* means in a real field of study, and
 software has never had its list agreed, published, and taught.
