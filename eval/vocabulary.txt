@@ -18,7 +18,9 @@ be conservative below, liberal above
 be stewarded like a foundation
 bear load silently
 best-in-class tools, from certified suppliers
+browser as server
 build stage
+capable guard
 claim
 claims become evidence
 cncf-graduated standards only
@@ -32,6 +34,7 @@ delegation
 deliver just-in-time, from everyone qualified
 delivery
 division of labor
+edge is ingress
 educated
 empowered
 enabled
@@ -57,6 +60,7 @@ guardrail
 hallucination
 handoff
 hardening roadmap:
+headless delivery
 here
 human-in-the-loop
 intelligence is not fabricated
@@ -67,11 +71,14 @@ interpretation: direction where certainty runs out
 just-in-time
 kube — the soul of any'thing'
 memory
+metal base
 minimal, pinned, upstream-only dependencies.
 model
 multi-agent system
 multi-arch
+multi-base
 multi-fabric (multi-thread, scaled out)
+multi-face machine
 multi-tenant
 multiple operators
 no ecosystem coupling for installation.
@@ -115,6 +122,7 @@ runtime stage
 serverless, not stateless
 session
 shipped policies
+single binary code
 skill
 soul (of a thing)
 sovereign
@@ -131,6 +139,7 @@ the framework is the fabric
 the mission statement
 the platform
 the platform is the foundation
+the reversed loop
 the seat theorem
 the solution is the service contract
 thing
