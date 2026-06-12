@@ -40,3 +40,40 @@ tested as one.
 One stack, nine layers, every seat named — and the only vacant seat
 is declared vacant, which is the difference between a gap in the
 record and a gap in the honesty.
+
+## The OpenStack deconstruction
+
+The founder deconstructs the substrate itself, placing each piece —
+and the placements answer his questions on the record:
+
+- **Fabric as substrate, written in Go** — where the fabric itself
+  is the substrate implementation, its language is picked by the
+  common-ground rule: Go — the tongue Kubernetes, containerd, and
+  this house's own operator already speak; one language down the
+  whole control plane, no translation seam between the fabric and
+  the ground it runs.
+- **Keystone (identity) — outside of core.** That's Stack, not
+  Core: identity is a platform service, never a device resident.
+  It seats at the flow's own gate — login, profile, *verify
+  identity* — serving the whole estate from the substrate layer
+  (layer 1), while the device core (KubeContainer Core) carries
+  only its own contract and channel, asking identity questions of
+  the platform and storing no identity authority itself. Identity
+  at the core would be the §12 wound by design: a face authority
+  riding inside every device. Outside of core — exactly where the
+  founder put it.
+- **Block storage (Cinder) — layer 1's storage arm**, surfacing
+  upward only through the conformant seam: Cinder serves volumes at
+  the substrate; Kubernetes consumes them at layer 3 through CSI;
+  the kube above never names Cinder, only its declared claim — so
+  storage stays swappable (any CSI ground) and the substrate stays
+  exitable.
+- **Minikube — does it fit?** Yes — in the venv seat, and only
+  there. Minikube is conformant Kubernetes on a laptop: the
+  rehearsal ground (compile and simulate in the venv), the branch's
+  own cluster, the grade-1 classroom — it fits the desk perfectly
+  and the estate not at all. The ladder reads: minikube at the
+  desk, the rehearsal chamber in CI, k3s on the single VPS,
+  OpenStack under the estate — one conformant contract at every
+  rung, which is why the same declaration walks all four without
+  changing a line.

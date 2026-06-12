@@ -774,6 +774,21 @@ that redefines a word privately has already drifted.
   the Internet of Things becomes the Internet of Agents. The full
   line is the mark (claimed in NOTICE); the bare word *soul* is
   unownable and is not claimed. Brand exegesis: KUBE-SPEC §9.
+- **KubeContainer Core** — the edge edition in the product line: the
+  kube at the device's core, as a product — the minimal sealed
+  distribution (operator and one-kube communicator, the loop, the
+  record, the contract, the single signed channel, nothing else
+  aboard) that a device boots; the surface around it headless,
+  delivery only at the ports. Named on the Ubuntu Core precedent;
+  specified in KUBE-SPEC §8. The founder's two readings of the name,
+  both true at once: KubeContainer as core is the meta container —
+  the container of containers, the keeper that holds workloads the
+  way the loop holds declarations, one level above what it carries;
+  and on the device it is the metal container — the meta made
+  physical: the container bonded to the metal it boots from, the
+  kernel-native floor (hardware-metal-native, per the stack law)
+  with the kube riding immutable above it. Meta in office, metal in
+  body — one product, the pun load-bearing.
 - **The Edge (definition)** — the edge is the surface where representation
   meets reality: the one boundary in the stack that cannot be forked,
   paused, rolled back, or apologized to. Below it everything is mind and
