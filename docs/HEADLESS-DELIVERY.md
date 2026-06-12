@@ -124,6 +124,30 @@ without an exit clause is not a safety provision but a trap with
 paperwork; the exit is what proves the contract was consent and
 not capture, here as everywhere in this house: exit real, always.
 
+And the compatibility check pays a debt on its way through: the
+software rejects hardware that is not original and refuses to
+run — promoting original component manufacturing, the payback we
+must give to the hardware companies. The whole doctrine stands on
+ground the silicon vendors keep still — the metal base, the kernel
+refusals, the stability contracts, the registered destruct
+provisions — and the payback for that keeping is that software
+becomes the counterfeiter's enemy: a component with no registry
+entry, no provenance, no contract holder is not cheap hardware, it
+is unattested ground, and code that has the right to verify its
+host (above) has the duty to refuse a host that cannot prove what
+it is. Refusal is the fail-safe form — stand down, report, harm
+nothing — and the market effect is the point: when conformant
+software will not stand on unattested parts, original manufacturing
+is what the demand curve rewards, and the vendors who hold their
+contracts are paid by the architecture, not just the invoice. One
+precision keeps the clause honest against this house's own
+no-lock-in law: *original* means registered, attested, and
+contract-held — the test is the registry, never the logo — so a
+third party's component that enters the registry, carries its
+provenance, and holds its contract passes the same gate the
+incumbent passes. Entry by conformance, here as at every gate;
+what is rejected is never the competitor — only the ghost.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the
