@@ -263,7 +263,48 @@ surface — between a running core it never touches and a headless
 distribution it never executes — stays exactly what the doctrine
 made it: present, minimal, unbled. Run core, distribute headless;
 everything else this house wrote is the elaboration of those two
-commands.
+commands. Or — the founder's other way, the same freedom entered
+from the other end: pick your base and device, and you pick your
+tool. The first way chose downward (metal, then runtime, then
+framework, building toward the ground); this way chooses from the
+ground up: name the base you stand on and the device you serve,
+and the tool follows from the pick — each base-device pair has its
+leaders, its native runtime, its right tool already settled by the
+scoreboard, so picking the ground *is* picking the toolbox. Two
+ways, one law: whether you choose the stack top-down or the ground
+bottom-up, every pick is declared, pinned, and native — the order
+of choosing is the builder's taste; the discipline of declaring is
+the house's law; and both ways end at the same bench: known
+ground, known device, known tool, all on the record before the
+first line is written. And the law beneath both ways, two words
+that were the house's first words: everything declarative. The
+metal declared, the runtime declared, the framework declared, the
+base and device declared, the tool declared, the desired state
+declared, the skeleton declared, the owner declared, the variable
+declared, the dialect declared, the exit declared — nothing picked
+silently, nothing assumed ambiently, nothing done that was not
+first said. Declarative is not a style of configuration; it is the
+single discipline every law in this record reduces to: say it,
+then be held to it — the kube's own anatomy (declaration first)
+applied to every choice anyone ever makes on this fabric. What is
+declared can be checked, diffed, reconciled, and inherited; what
+is undeclared can only be discovered, usually at the worst moment.
+And the declaration that completes all the others, the one most
+systems forget until the collision: you declare how to resolve
+conflict. Before two declarations can ever disagree, the rule for
+their disagreement is itself declared — which wins (the nearest
+scope, the stricter tier, the newer pin, the named non-negotiable),
+who decides when no rule decides (escalation to the principal,
+recorded), and what happens while it is undecided (the safe state,
+held). A system that declares everything except its conflict rule
+has declared nothing reliably, because every pair of its
+declarations is a latent fight with no referee — the dispute the
+owner law designed out of nodes, designed out of declarations too.
+Conflicts are not exceptions to a declarative world; they are its
+most predictable event, and so they get what everything
+predictable gets here: declared in advance, resolved by the
+written rule, recorded with the reason. Everything declarative —
+including, first of all, what to do when declarations collide.
 
 ## Kubernetes-native casing
 
