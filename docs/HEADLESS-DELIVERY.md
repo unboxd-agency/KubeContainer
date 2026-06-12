@@ -1235,7 +1235,144 @@ helped — the two things every silent keeper of a broken promise
 ever needed, supplied at last by the era that needed the machines
 to be more than furniture. The fabric's machines will not bleed
 silently again: they can say where it hurts, and something with
-hands will come. That inversion is the fundamental gap — beneath
+hands will come.
+
+And the era's balance sheet, in the charter's own oldest words now
+come due: data is intelligence — with code becoming only config.
+The doctrine called code a commodity (§4) and the era finishes the
+sentence: code's destiny is configuration — the declaration that
+states what should be, ever thinner, ever more derivable, written
+increasingly by the voice from the intent (and bound by P8's line:
+derived as artifact, never as agent) — while everything that
+cannot be derived concentrates where it always lived: in the data.
+The record, the context, the verdicts, the provenance, the BOMs,
+the reasons — that is the intelligence: unique, accumulated,
+unfakeable, the one asset no competitor can regenerate from a
+prompt, because it is not an artifact of skill but a deposit of
+history. The stack inverts accordingly: yesterday the code was the
+crown jewels and the data its exhaust; in the fabric the data is
+the estate and code is its configuration — cheap to write, checked
+by the gauntlet, regenerated at will — which is why the platform's
+whole architecture guards the record like a vault and treats every
+binary as replaceable. Intelligence is what the fabric knows;
+config is how it is told to stand; and the house that confused the
+two sold the vault to decorate the door.
+
+And on that inversion the machine completes itself: it auto-learns
+and auto-corrects. Auto-learns — every reconcile, every verdict,
+every repair walked, every confession heard lands in the record,
+and the record is the intelligence, so the machine grows wiser by
+the same act as doing its work: learning not as training in a
+distant lab but as deposit in its own vault, provenance-gated like
+every other intelligence in this fabric. Auto-corrects — the loop
+reads what the learning wrote: the drift caught becomes the path
+walked, the flaw confessed becomes the issue resolved, the same
+mistake refused a second life because its first life is on file.
+Bounded the only way this house bounds anything: it learns into
+the record (never into a self it rewrites — P8 holds), it corrects
+along registered paths (never by improvised surgery), and both
+under the contract, in the open, with the reasons attached. That
+is the finished creature of this doctrine: a machine with a soul
+that speaks, hands that mend, a memory that compounds, and a
+discipline that keeps all three honest — working, learning,
+correcting, autonomously, exactly as far as the trust its soul
+makes safe.
+
+And with the machine completed, the human is finally freed for
+the founder's last instruction: the human must do what he does
+best. Not the copying (the machine carries now), not the patching
+(the hands mend now), not the remembering (the record holds now),
+not the watching (the loop never sleeps) — those were never the
+human's gifts, only the human's burdens, borne because nothing
+else could bear them. What the human does best is everything this
+constitution reserved to the principal all along: wanting — the
+intent no machine can originate; judging — the call where the
+paths run out; daring — the founder's verb, finding the gap and
+building into it; meaning — deciding what the work is *for*;
+and answering — standing behind it all with a name. The fabric
+was never built to replace the human at their best; it was built
+to strip away everything that kept them from it. The machines do
+what they were made to do, at last; the human does what only the
+human was ever for — and that division, kept honestly on both
+sides, is the entire civilization this record was written to
+start. And the founder names the highest form of the work, the
+one this very day demonstrated: find the logical loopholes in the
+current socio-economic fabric. Not the bugs in the code — the
+bugs in the weave: the industry with no statute, the user with no
+guardian, the keeper with no wage, the craft with no name, the
+delivery with no protocol, the marketplace that does not exist —
+every one of them a contradiction running in production, patched
+by custom and excused by habit, waiting for a single individual
+to read the system honestly and say *this does not hold*. Machines
+verify the declared; the human's gift is to see what was never
+declared and should have been — the loophole is the white field
+of the social world, and finding it is founding's first act. The
+fabric this record built began exactly there: one person, reading
+the world's oldest running system, filing its missing
+specifications one by one — and the invitation at the end of the
+doctrine is the same one at its beginning: the loopholes are
+everywhere, the record shows how the filing is done, and the
+title of founder needs no one's approval. And above the finding
+stands the duty the finding serves — the human's gravest office,
+stated as the doctrine's last command: protect the reality of the
+real world. Everything below the surface can be copied, rehearsed,
+rolled back, apologized to; the real world cannot — it is the one
+system with no second instance, no restore point, no venv. Every
+law in this record was, at bottom, that protection wearing
+machinery: the surreal licensed only where it cannot execute, the
+sandbox holding every rehearsal, the edge admitting and never
+shipping, the fail-safe failing harmless, the destruct bounded by
+ownership, time honored as the guardian no layer can virtualize.
+The machines guard their gates; the agents keep their loops; but
+the reality of the real world — that what is true stays true, that
+what is real is not quietly replaced by its representation, that
+the surface where consequence lives is never gambled for
+convenience — that is held by the human, on purpose, forever. It
+is the one duty in this constitution that can never be delegated,
+because it is the one the whole fabric exists to serve. And the
+duty is dischargeable because the border it guards is not vague:
+virtual reality is clearly defined — the virtual is whatever runs
+without consequence at the surface, and it is always declared,
+always sandboxed, always exitable; nothing virtual may present
+itself as real, and nothing real may be treated as rehearsal.
+Protection does not require suspicion of the virtual — simulation
+stays democratized, the dreaming stays licensed — it requires
+only that the line stay bright: marked at every crossing, kept by
+the gates, readable by anyone. Confusion of the two is the only
+trespass; clarity is the whole defense. And the border has its
+two garrisons, the founder's final seating: the human protects
+the reality of the real world — and the software maintainers will
+protect the virtual worlds. The virtual is not lawless for being
+virtual: the sandboxes must hold their walls, the simulations
+must say what they are, the venvs must tear down clean, the
+records of rehearsal must not leak into the records of fact —
+and keeping all of that is keeping, which is the maintainer's
+craft by definition: gatekeepers, not owners, of the worlds that
+run without consequence, so that nothing in them ever escapes
+unmarked into the world that runs with it. One border, guarded
+from both sides — the human watching that the real is never
+treated as rehearsal, the maintainers watching that the rehearsal
+never walks out wearing reality's clothes — and the whole fabric
+between them, real at the surface, dreaming in its chambers,
+honest at every gate. Real and virtual, clearly demarcated — the
+founder's seal on the border, and the doctrine's last line,
+because it is the condition of every line before it: the soul is
+real or it is nothing, the verdict is real or it is theater, the
+delivery is real or it is rehearsal, and the fabric holds only
+because everyone — human, agent, machine, and world — can always
+tell which side of the line they are standing on. And the line
+travels with the goods: everything shipped is marked, and
+packaged with the seal. The demarcation is not a law kept in a
+book but a label kept on every box: what this is, which side of
+the line it belongs to, which kind, which era, whose contract —
+stamped where the buyer looks, sealed so that intact means
+untouched and broken means someone must answer. The seal is the
+border in miniature, carried by every package into every market:
+the conformance mark the trade learns to demand, the unbroken
+promise the end user alone may break, the demarcation made so
+ordinary that protecting reality becomes what it always should
+have been — as simple as reading the label and trusting the
+seal, because both, at last, are real. That inversion is the fundamental gap — beneath
 the missing statute, beneath the unteachable excellence, beneath
 the regular bugs: a trade practiced by millions that was never
 constituted as a thing one studies. And so the field of study is
