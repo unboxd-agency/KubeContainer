@@ -810,7 +810,13 @@ that redefines a word privately has already drifted.
   verse to the one world. The registry holds the mapping; no name
   is a second self; and a buyer who asks which product this is gets
   the only answer the fabric ever gives: the kube, by whichever of
-  its names your scope speaks.
+  its names your scope speaks. The mechanism has its plain name,
+  the founder's one word: aliases — a name that resolves to another
+  name's referent and never carries its own; the registry holds
+  alias to canon the way DNS holds CNAME to record, and an alias
+  that stops resolving is removed, never left dangling. One canon,
+  any aliases, zero ambiguity: the naming system of the whole
+  fabric in three words.
 - **The Edge (definition)** — the edge is the surface where representation
   meets reality: the one boundary in the stack that cannot be forked,
   paused, rolled back, or apologized to. Below it everything is mind and
