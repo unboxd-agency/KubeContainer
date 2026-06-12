@@ -144,3 +144,18 @@ destination is the record this house has aimed at from the first
 line: one where the questions run out not because askers gave up,
 but because the answers were already standing where the questions
 would have stood.
+
+And the bar the question rule aims at, set by the founder: make it
+so obvious that the gatekeeper reads, agrees, and opens the gate.
+That is the clarity standard in one scene — not "defensible under
+questioning" but *never questioned*: the reviewer who needs no
+clarifying round, the auditor who finds the evidence already laid in
+their path, the compiler that admits on first pass, the buyer who
+sees the label and the seal and signs. A gate that opens after
+debate was opened by persuasion; a gate that opens on reading was
+opened by clarity — and only the second scales, because persuasion
+spends a person and clarity spends nothing. Every artifact of this
+house is written for that scene: the gatekeeper reads, agrees, and
+opens — and if any gatekeeper anywhere hesitates, the question rule
+already says what that hesitation is: a defect, ours, to fix where
+it stood.
