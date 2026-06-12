@@ -223,6 +223,24 @@ Compliance by the path, at the repair bench: the path is the
 authorization, knowing it is the license, and an agent without
 either is just a stranger holding a scalpel.
 
+And the duties divide upward exactly once more: the platform must
+have the path, catch the drift, and reconcile. Have the path — the
+platform is the keeper of the path registry itself: every SOP
+certified, versioned, era-stamped, and resolvable, so that no agent
+ever faces a wound with the cure existing but unfindable (the
+library's two questions, asked of procedures: do we hold it, and
+can I trust it). Catch drift — the platform watches what no single
+agent can see from inside one device: the fleet-wide divergence,
+the base that moved, the path that stopped matching its world, the
+audit running on schedule and on suspicion alike. And reconcile —
+the platform is itself the outermost loop: what drift it catches it
+drives back to declared state through the same machinery it
+demands of everyone else, recovery in a loop, reconciliation in a
+loop, the fabric's stable state not hoped for but kept. Agent
+walks the path; platform owns the paths, sees the drift, closes
+the loop — the keeper's keeper, and the last loop that has no one
+above it but the principal and the record.
+
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 
