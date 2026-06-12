@@ -410,7 +410,55 @@ epilogue's law was written for exactly this map: bridges do not
 exist, and we must build the bridges — the agent in the app-to-app
 gap, the one channel, the shared skeleton, the single record — so
 that the user and the agent stop being the infrastructure and the
-infrastructure starts being the infrastructure. Every other assembled product
+infrastructure starts being the infrastructure.
+
+And the economics of the silent map complete it: everybody builds
+their own world, the worlds overlap, and each builds similar
+features while trying to eat from another's plate. Because no
+bridge exists, no world can rely on a neighbor for anything — so
+the chat app grows a payments arm, the payments app grows a chat,
+the office suite grows both, every world re-implementing every
+adjacent world's features at its own version and its own quality —
+duplication at the feature level, the same waste as the bundled
+libraries, now with a sales team. The overlap is not ambition; it
+is the structural consequence of bridgelessness: where you cannot
+contract for a capability, you must clone it, and where everyone
+clones, everyone competes on everything and excels at less and
+less. And the war is fought through annoying marketing: the cloned
+feature must be discovered, so the face the user trusted becomes a
+billboard — notifications that are not signals, banners across the
+work, upsells in the path of the task, every nag a border raid on
+the neighbor's plate conducted on the user's screen and the user's
+time. The §12 law named this precisely: a face sending signals its
+user did not stand behind is the problem — and marketing through
+the work surface is exactly that, monetized. In this doctrine the
+experience channel carries experience (§10), the face belongs to
+the user, and discovery happens where discovery lawfully lives: in
+the registry, by lookup, where a capability earns its standing by
+contributions and verdicts — not by shouting at the person trying
+to work.
+
+And the last finding closes the case: apps are not intelligent, and
+they are not empathetic — toward the user or toward each other. An
+app cannot know that its user is overwhelmed, that its notification
+arrived at the worst moment, that the neighboring world already
+answered this question, that the human at the face has a skill
+profile, a context, a day. It executes its programming and spends
+the trust (§8); it cannot do otherwise, because intelligence and
+empathy were never in it — they were in the people it intermediates,
+lost in transit. The doctrine does not ask apps to become what they
+are not. It places intelligence and empathy where they can actually
+live: in the agent at the face — the one party built to hold
+complete context (§10), convert to the human's skill (§7), feel for
+the moment because it knows the moment, and speak for every world
+without belonging to any. Apps stay what they are: containers,
+faces, worlds. The understanding between them — and of the human
+among them — is the agent's office, and was the gap all along. The marketplace that does not exist is the missing peace
+treaty: with contracts, registries, and a standard interoperable
+layer, a world could *buy* its neighbor's strength instead of
+besieging it — specialization returns, plates stay owned, and the
+fabric's worlds trade like economies instead of feeding like
+rivals. Every other assembled product
 has a final assembly: someone who receives all the parts, checks
 them against each other, and answers for the whole. The pushed
 device has none — integration happens in production, on the user,
