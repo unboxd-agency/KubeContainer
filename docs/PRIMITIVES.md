@@ -39,6 +39,13 @@ richer text elaborates a primitive, the primitive governs.
   accountability, not an entitlement: to own is to owe the
   answering, not to hold the spoils — the title grants nothing,
   charges everything, and ends on its date with the books open.
+  The owner is responsible for resolving all concerns that
+  converge at the node — resolved by him or through him, but never
+  past him: he is where the maintenance accountability stops. The
+  keeper tends and escalates; the owner is the escalation's last
+  stop — there is no party behind him to hand the concern to, and
+  a concern that dies unresolved at the node is his by name in
+  the record.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.
