@@ -44,6 +44,11 @@ richer text elaborates a primitive, the primitive governs.
   it, how, and when.
 - **Truth** — what the record and the world agree on; there is one
   version of it at a time.
+- **Reason** — the why of a decision, recorded beside the decision
+  itself, never separated from it; it is always written down because
+  everyone has a right to reason — the right to be given the why,
+  and the right to think it through for themselves, and the second
+  is impossible without the first.
 
 ## The bindings
 
