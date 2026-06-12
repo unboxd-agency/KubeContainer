@@ -358,8 +358,21 @@ then, the defined word doing its work, the same meaning every
 time, everywhere this house writes. Three lines a child can
 follow and a fabric can run on: the kube as the body, the
 definition as the law, the use as the work — declare, then act;
-define, then speak; one unit, one meaning, one record. Everything
-else in this house is commentary on these three commands.
+define, then speak; one unit, one meaning, one record. Or, the
+founder's even tighter form:
+
+    pin kube
+    pin source
+    use single words
+
+Pin kube — the unit fixed to its canonical one, image resolving to
+canon. Pin source — every meaning fixed to its living point of
+reference. Use single words — one word, one meaning, within scope,
+nothing composite where a single will do. The two forms are the
+same loop, spoken at two depths — define-then-use is the method,
+pin-then-use is the mechanism — and either one, followed
+faithfully, rebuilds everything else in this record. Everything
+else in this house is commentary on these commands.
 
 ## Kubernetes-native casing
 
