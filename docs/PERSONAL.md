@@ -164,3 +164,47 @@ meaning, now at the level of the agent's own body. Config As Code
 holds here too: the language choice is declared, versioned, and
 gated like every other line of the declaration — one more variable,
 one more freedom, one more entry on the record.
+
+And two laws of the creation form, dictated as the flow was being
+built. First: your instruction set is limited by the platform you
+select as runtime. The agent's possible actions are not unlimited
+ambition but the runtime's offered surface — select the platform
+and you have selected what can be said to it; the bound is not a
+cage but the contract made executable (the platform signed for
+this ground, and the ground's instruction set is what the
+signature covers). Choose wide ground for wide work, narrow ground
+for narrow work — but know that the choosing of the runtime *is*
+the choosing of the vocabulary of acts. Second, the concrete pick,
+the founder's own example of the whole pick-your-stack law in one
+line: if hardware is the surface — and you chose metal core — then
+go Rust. The surface picked (hardware), the depth picked (the
+metal core, no runtime cushion), and the language follows from the
+pick the way the tool follows from the base: the leaders' choice
+for memory-safe metal-native work, picked from the scoreboard, not
+from taste. One example, fully walked: surface, core, language —
+each choice forcing the next, all three declared, and the
+instruction set of the result exactly what the metal offers,
+nothing pretended above it.
+
+## The first deployment
+
+The founder declares the personal fabric's first deployment, every
+pick on the record: deploy the kube with the edge browser as the
+surface, FabricDB as the runtime, and KubeContainer as the
+container runtime — and the workload is the arithmetic formula as
+the function: functions as a service, beginning with the one
+function this house has called canonical since the chocolate box —
+value = qty × unit value + the current platform's service charge +
+the current jurisdiction's taxes. Grade 1 of the arithmetic
+platform, deployed: count to one, then bill it honestly. The
+surface pick forces the rendering (browser-native, the service
+built native on the surface — site/arithmetic.html, the function
+computed where it is read, quantity refused unless whole); the
+container runtime is the house's own, built and released; and the
+runtime pick is recorded with the record's honesty — FabricDB is
+declared, not yet built, the SolidStateDatabase seat awaiting the
+founder's build order, so the declaration (deploy/arithmetic-kube.yaml)
+names it as declared and stands ready for the day the seat fills.
+One kube, four picks, one function — the whole pick-your-stack law
+walked once at quantity one, which is how every fabric this house
+ever builds will have begun.

@@ -1,0 +1,16 @@
+{
+  "skeleton": "agent-declaration/v1",
+  "name": "first-code-maintainer",
+  "kind": "Agent",
+  "principal": "the founder",
+  "profile": "founder@unboxd — one canonical identity, this its newest projection",
+  "identityVerified": "verified — claim joined to its verdict",
+  "blueprint": "code-maintainer",
+  "language": "go1.25.7",
+  "contractTerms": ["intent","constitutional-context","bounded-autonomy","total-record","no-self-building","own-anchor-only","keeping","fail-safe","exit","standing"],
+  "signatures": {
+    "principal": "the founder — the intent",
+    "maker": "blueprint code-maintainer @ registry/blueprints — the artifact",
+    "platform": "the fabric — ground stable, paths offered, drift caught, loop closed"
+  }
+}

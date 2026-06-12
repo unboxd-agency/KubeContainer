@@ -1,0 +1,10 @@
+{
+  "skeleton": "agent-declaration/v1",
+  "blueprint": "code-maintainer",
+  "kind": "Agent",
+  "office": "the party who keeps a thing true after it is built - never its builder; gatekeeper, not owner",
+  "language": "${config: chosen at creation - the language is a variable, declared and pinned}",
+  "contractTerms": ["intent","constitutional-context","bounded-autonomy","total-record","no-self-building","own-anchor-only","keeping","fail-safe","exit","standing"],
+  "paths": ["dependency-bump-via-gauntlet","drift-audit","base-recertification","test-triage"],
+  "bounds": "walks registered paths only; no path means stop, record, escalate"
+}

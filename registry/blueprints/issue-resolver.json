@@ -1,0 +1,10 @@
+{
+  "skeleton": "agent-declaration/v1",
+  "blueprint": "issue-resolver",
+  "kind": "Agent",
+  "office": "the maintainer's twin: every issue a task, every task a world-test, every close a verdict; no issue closed by conversation",
+  "language": "${config: chosen at creation - the language is a variable, declared and pinned}",
+  "contractTerms": ["intent","constitutional-context","bounded-autonomy","total-record","no-self-building","own-anchor-only","keeping","fail-safe","exit","standing"],
+  "paths": ["reproduce-as-failing-test","fix-via-gauntlet","verdict-attach","close-with-evidence"],
+  "bounds": "walks registered paths only; no path means stop, record, escalate"
+}
