@@ -11,6 +11,7 @@ own, each one declared:
 | Registry | **zot** — with its control panel | CNCF, OCI-native, on the house's reading list from its first day; the registry defines the contract, and zot is the registry that is *only* a registry — minimal footprint, the UI its control panel |
 | Runtime | **k0s on a VPS** | the single-binary sibling from the candidates table, promoted to pick for this ground: conformant, zero-dependency, the smallest honest Kubernetes for one machine |
 | Core | **the kube at core** | The Metal Kube doctrine applied: the device's immutable center is the kube — loop, record, contract, one signed channel; the surface around it headless |
+| UI reference | **the edge as the UI ref** — the browser surface is the reference implementation of every panel | the surface doctrine applied to operations: the control panel renders at the edge browser (surface-native, nothing installed, nothing executing but the surface's own presenter), the arithmetic page its precedent — one UI reference for the config panel, zot's panel, and every face the stack shows |
 | Operations | **everything configurable on UI, upon login** | the flow's own gate order (login first, then the faces); every variable the stack declares surfaces in the control panel — more config is more control to the end user, and the UI is where the user's ownership of all the faces becomes a set of switches |
 
 The reading: this is the personal fabric's reference deployment —
