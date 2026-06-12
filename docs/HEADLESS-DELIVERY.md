@@ -204,7 +204,14 @@ program belongs to the program: function to function is a call,
 inside the one binary of §2, and the standard definition already
 ruled it — work an agent would do between two functions is work
 that should have been a function call. An agent there is not
-governance; it is overhead wearing a contract. An
+governance; it is overhead wearing a contract. One exception, and
+only one: when the format of one function is not compatible with
+the other's — two shapes that cannot call each other — a gap really
+exists, and what fills it is the adapter (the lexicon's
+contract-to-contract translator), the smallest lawful resident of a
+seam. Compatible formats get a call; incompatible formats get an
+adapter; neither gets an agent — agents are for gaps between
+parties, not gaps between signatures. An
 agent inserting itself vertically would be a shim in someone else's
 contract — exactly the riding-alongside this doctrine buried in §2.
 The agent works the horizontal: between peers, between boxes,
