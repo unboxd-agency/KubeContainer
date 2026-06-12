@@ -63,10 +63,67 @@ func main() {
 			}
 		}
 	}
+	checked, tFailed := taxonomies()
+	failed += tFailed
 	if failed > 0 {
 		fmt.Printf("verdict: %d schema violation(s) — the graph does not keep its schema\n", failed)
 		os.Exit(1)
 	}
-	fmt.Printf("schema kept: %d nodes, context %s, all types pinned, every citation resolves\n",
-		len(d.Graph), pinnedContext)
+	fmt.Printf("schema kept: %d nodes, context %s, all types pinned, every citation resolves, "+
+		"%d declaration(s) within taxonomy\n", len(d.Graph), pinnedContext, checked)
+}
+
+// taxonomies validates every host blueprint against the skeleton's
+// declared acceptable values: a value outside the taxonomy is not a
+// variant but a violation. Returns declarations checked and failures.
+func taxonomies() (int, int) {
+	var skel struct {
+		Taxonomies map[string][]string `json:"taxonomies"`
+	}
+	raw, err := os.ReadFile("registry/SKELETON-HOST.json")
+	if err != nil || json.Unmarshal(raw, &skel) != nil {
+		fmt.Println("[fail] registry/SKELETON-HOST.json unreadable")
+		return 0, 1
+	}
+	allowed := map[string]map[string]bool{}
+	for field, vals := range skel.Taxonomies {
+		allowed[field] = map[string]bool{}
+		for _, v := range vals {
+			allowed[field][v] = true
+		}
+	}
+	entries, _ := os.ReadDir("registry/blueprints")
+	checked, failed := 0, 0
+	for _, e := range entries {
+		path := "registry/blueprints/" + e.Name()
+		var bp struct {
+			Skeleton string   `json:"skeleton"`
+			Kind     string   `json:"kind"`
+			Traits   []string `json:"traits"`
+			Paths    []string `json:"paths"`
+		}
+		raw, err := os.ReadFile(path)
+		if err != nil || json.Unmarshal(raw, &bp) != nil || bp.Skeleton != "host-declaration/v1" {
+			continue
+		}
+		checked++
+		report := func(field, v string) {
+			fmt.Printf("[fail] %s: %s %q is outside the skeleton's taxonomy\n", path, field, v)
+			failed++
+		}
+		if !allowed["kind"][bp.Kind] {
+			report("kind", bp.Kind)
+		}
+		for _, t := range bp.Traits {
+			if !allowed["traits"][t] {
+				report("trait", t)
+			}
+		}
+		for _, p := range bp.Paths {
+			if !allowed["paths"][p] {
+				report("path", p)
+			}
+		}
+	}
+	return checked, failed
 }

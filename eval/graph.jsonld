@@ -337,6 +337,12 @@
       "citation": [
         {
           "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "registry/SKELETON-HOST.json"
+        },
+        {
+          "@id": "registry/blueprints"
         }
       ],
       "name": "cmd/schemakeeper/main.go"

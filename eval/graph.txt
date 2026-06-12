@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=146 edges=164
+# nodes=146 edges=166
 .github/workflows/drift-audit.yml -> docs/AGENT-PLATFORM.md
 .github/workflows/release.yml -> release/REQUEST
 .gitlab-ci.yml -> .github/workflows/.
@@ -42,6 +42,8 @@ cmd/recordgraph/main.go -> eval/graph-planned.txt
 cmd/recordgraph/main.go -> eval/graph.jsonld
 cmd/recordgraph/main.go -> eval/graph.txt
 cmd/schemakeeper/main.go -> eval/graph.jsonld
+cmd/schemakeeper/main.go -> registry/SKELETON-HOST.json
+cmd/schemakeeper/main.go -> registry/blueprints
 cmd/structuredinstructions/main.go -> registry/SKELETON.json
 config/crd/kustomization.yaml -> config/crd/kustomizeconfig.yaml
 config/crd/kustomization.yaml -> config/default

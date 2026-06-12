@@ -4,5 +4,15 @@
     "blueprint", "kind", "office", "release", "source",
     "traits", "paths", "bounds"
   ],
+  "taxonomies": {
+    "kind": ["Host"],
+    "traits": [
+      "transactional-update", "read-only-root", "atomic-rollback",
+      "selinux-enforcing", "container-host", "rolling"
+    ],
+    "paths": [
+      "selinux-layer-then-reboot", "one-command-deploy", "verdict-print"
+    ]
+  },
   "note": "A host is not an agent: it acts for no principal and signs nothing. This skeleton admits the layer the kube stands on. A fixed release is pinned; a rolling base is named rolling and bounded accordingly. Submission appends to registry/blueprints/; nothing removed, nothing duplicated."
 }
