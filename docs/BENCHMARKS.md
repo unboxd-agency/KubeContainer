@@ -144,7 +144,26 @@ desired state it designed — the operator of operators, declaring
 for the whole what each kube declares for itself. Manufacturing
 set its desired state at one in a million and built the discipline
 to reconcile there; the cloud's job is to design software's, in
-world-units, and run the fabric until the gap closes.
+world-units, and run the fabric until the gap closes. And the
+division of labor that keeps the target from becoming a tyranny:
+the platform will provide the best foundation for anyone to achieve
+that state — it sets the target and supplies the means, but the
+achieving stays the builder's. The platform does not reach the
+desired state *for* you; it gives you the highest floor anyone has
+ever stood on to reach it yourself: the gauntlet that catches your
+defects before they ship, the registry that hands you attested
+parts, the paths that repair along known routes, the
+auto-maintenance that holds the gains, the world-units already
+defined so you measure honestly. Target from the cloud, foundation
+from the platform, achievement from the builder — three seats, and
+the bench is honest precisely because the platform is graded on the
+foundation it provides (best available to anyone) while each
+builder is graded on the state they actually reach. A platform that
+promised to hit the target *for* you would be selling the one thing
+that cannot be bought; what it sells is the best ground to hit it
+from — and on this fabric, that ground is the same for the founder
+with no budget as for the enterprise with every resource, because
+the foundation is open and the achieving is earned.
 
 ## Methodology
 
