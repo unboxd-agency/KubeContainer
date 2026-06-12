@@ -7,6 +7,16 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.8] - 2026-06-12
+### Added
+- AgentRegistry: the registry's read-only internet face, shipped as
+  an image (`ghcr.io/<owner>/agentregistry`) with the release's
+  declarations baked in — the first running piece of the
+  Internet-of-Agents seat.
+- The space contract (`SKELETON-SPACE`), the first space
+  (agennext-team), ModelCompiler declared (Eclipse Aidge pinned),
+  and the AGenNextHub estate mapped in the stack.
+
 ## [0.2.7] - 2026-06-12
 ### Added
 - FileFabric ships as an image (`ghcr.io/<owner>/filefabric`): the

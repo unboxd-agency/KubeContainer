@@ -475,6 +475,27 @@ name their intent; nothing removed, nothing duplicated.
   Source: `cmd/filefabric/main.go`; build:
   `go build ./cmd/filefabric`; image: `Dockerfile.filefabric`,
   published as `ghcr.io/unboxd-cloud/filefabric` per release.
+- **AgentRegistry** — built, v0. The registry's internet face: the
+  append-only declarations (skeletons, blueprints, agents, spaces)
+  served read-only over HTTP, every declaration addressable by URL,
+  the index at `/index.json`. The first running piece of the
+  founder's Internet-of-Agents seat (point of reference:
+  https://github.com/AGenNextHub/Internet-of-Agents — the named
+  placeholder). Admission never happens here — writes stay in the
+  record, through the gates; the image bakes the declarations in, so
+  the published registry is exactly the release's. Source:
+  `cmd/agentregistry/main.go`; image: `Dockerfile.agentregistry`,
+  published as `ghcr.io/unboxd-cloud/agentregistry` per release.
+- **ModelCompiler** — declared. The edge-AI seat, the founder's order:
+  a trained model enters, a surface-native artifact leaves — the
+  go-native law applied to neural networks (quantize, prune,
+  compress, export to the target's own code). Framework pinned per
+  the pin-before-code rule: Eclipse Aidge (point of reference:
+  https://eclipse.dev/aidge/ — CEA LIST's edge-AI framework,
+  Eclipse-governed, active 2026; design, simulate, optimize, and
+  export DNNs native to embedded targets). The first walk: a small
+  model exported to C and run on the founder's metal — built the day
+  that walk passes.
 - **SourceGround** — working, as scripts to be fused into one
   binary. The tool of the founder's law that you define a term
   before using it and bind the meaning from the source, with source

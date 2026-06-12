@@ -404,6 +404,11 @@
       "name": "api/v1alpha1/zz_generated.deepcopy.go"
     },
     {
+      "@id": "cmd/agentregistry/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/agentregistry/main.go"
+    },
+    {
       "@id": "cmd/codecompiler",
       "@type": "CreativeWork",
       "name": "cmd/codecompiler"
@@ -1418,6 +1423,9 @@
       "@type": "CreativeWork",
       "citation": [
         {
+          "@id": "cmd/agentregistry/main.go"
+        },
+        {
           "@id": "cmd/codecompiler/main.go"
         },
         {
@@ -1451,7 +1459,13 @@
           "@id": "hack/check-vocabulary.sh"
         },
         {
+          "@id": "https://eclipse.dev/aidge/"
+        },
+        {
           "@id": "https://github.com/AGenNextHub/Agent-Space"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Internet-of-Agents"
         },
         {
           "@id": "https://insights.linuxfoundation.org/collection/details/top-open-source-projects"
@@ -1991,6 +2005,11 @@
       "name": "https://docs.openstack.org/keystone/latest/"
     },
     {
+      "@id": "https://eclipse.dev/aidge/",
+      "@type": "CreativeWork",
+      "name": "https://eclipse.dev/aidge/"
+    },
+    {
       "@id": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters",
       "@type": "CreativeWork",
       "name": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters"
@@ -2034,6 +2053,11 @@
       "@id": "https://github.com/AGenNextHub/Agent-Space",
       "@type": "CreativeWork",
       "name": "https://github.com/AGenNextHub/Agent-Space"
+    },
+    {
+      "@id": "https://github.com/AGenNextHub/Internet-of-Agents",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Internet-of-Agents"
     },
     {
       "@id": "https://github.com/GoogleContainerTools/distroless",

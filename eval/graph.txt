@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=153 edges=349
+# nodes=153 edges=352
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -254,6 +254,7 @@ docs/DOCTRINE-MAP.md -> registry/SKELETON-SPACE.json
 docs/DOCTRINE-MAP.md -> registry/spaces
 docs/GO-TO-MARKET.md -> docs/AGENT-PLATFORM.md
 docs/KUBE-SPEC.md -> docs/manual
+docs/TOOLS.md -> cmd/agentregistry/main.go
 docs/TOOLS.md -> cmd/codecompiler/main.go
 docs/TOOLS.md -> cmd/filefabric/main.go
 docs/TOOLS.md -> cmd/recordgraph/main.go
@@ -265,7 +266,9 @@ docs/TOOLS.md -> eval/graph.jsonld
 docs/TOOLS.md -> eval/graph.txt
 docs/TOOLS.md -> hack/build-vocabulary.sh
 docs/TOOLS.md -> hack/check-vocabulary.sh
+docs/TOOLS.md -> https://eclipse.dev/aidge/
 docs/TOOLS.md -> https://github.com/AGenNextHub/Agent-Space
+docs/TOOLS.md -> https://github.com/AGenNextHub/Internet-of-Agents
 docs/TOOLS.md -> https://insights.linuxfoundation.org/collection/details/top-open-source-projects
 docs/TOOLS.md -> https://insights.linuxfoundation.org/project/k8s
 docs/TOOLS.md -> https://schema.org/

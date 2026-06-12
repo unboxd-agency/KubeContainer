@@ -18,6 +18,7 @@ do not edit; define terms in their source documents.
 | Agent Excellence | `docs/AGENT-PLATFORM.md:82` |
 | Agent Governance | `docs/AGENT-PLATFORM.md:70` |
 | Agent drift | `docs/AGENT-PLATFORM.md:603` |
+| AgentRegistry | `docs/TOOLS.md:478` |
 | AgentVerse | `docs/PRIMITIVES.md:169` |
 | All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:289` |
 | Always on | `docs/AGENT-PLATFORM.md:156` |
@@ -119,6 +120,7 @@ do not edit; define terms in their source documents.
 | Metal base | `docs/HEADLESS-DELIVERY.md:49` |
 | Minimal, pinned, upstream-only dependencies. | `docs/DESIGN.md:157` |
 | Model | `docs/DESIGN.md:183` |
+| ModelCompiler | `docs/TOOLS.md:489` |
 | Multi-agent system | `docs/AGENT-PLATFORM.md:534` |
 | Multi-arch | `docs/DESIGN.md:131` |
 | Multi-base | `docs/HEADLESS-DELIVERY.md:499` |
@@ -194,7 +196,7 @@ do not edit; define terms in their source documents.
 | Skill | `docs/AGENT-PLATFORM.md:492` |
 | Soul | `docs/PRIMITIVES.md:93` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:767` |
-| SourceGround | `docs/TOOLS.md:478` |
+| SourceGround | `docs/TOOLS.md:499` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
@@ -246,7 +248,7 @@ do not edit; define terms in their source documents.
 | World | `docs/PRIMITIVES.md:107` |
 | World model (internal) | `docs/AGENT-PLATFORM.md:581` |
 | World-test | `docs/AGENT-PLATFORM.md:585` |
-| merge | `docs/TOOLS.md:554` |
-| push | `docs/TOOLS.md:550` |
-| release | `docs/TOOLS.md:557` |
+| merge | `docs/TOOLS.md:575` |
+| push | `docs/TOOLS.md:571` |
+| release | `docs/TOOLS.md:578` |
 | unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:700` |
