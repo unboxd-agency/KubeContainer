@@ -110,7 +110,15 @@ richer text elaborates a primitive, the primitive governs.
   the table. Declare, demonstrate, and wait to be trusted: there
   is no third act, and everyone who has tried to perform one was
   manufacturing a verdict — the one thing in this fabric that can
-  never be manufactured.
+  never be manufactured. And the ledger closes the loop in plain
+  sight: your earnings will reflect what people think about you.
+  Not what you think of yourself, not what you declared, not even
+  what you delivered in your own accounting — what *they* hold to
+  be true of your intent and your delivery, compounded into the
+  price they will pay and the seat they will grant. Reputation is
+  the balance of that account, earnings are its statement, and
+  there is exactly one honest way to move the number: be worth
+  trusting, where they can see it, for as long as it takes.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.
