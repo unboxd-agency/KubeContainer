@@ -1052,7 +1052,19 @@ conversion of §7 applied to the dialogue itself. Listening is the
 practice the new field begins with: the code was made able to
 speak by the record, given a voice by the agent, and heard at
 last through the simplest face there is — a conversation with
-your own system, grounded in everything it ever did. That inversion is the fundamental gap — beneath
+your own system, grounded in everything it ever did. The founder
+gives the practice its plain name, seats included: talk to your
+codebase — with AI as the enabler. Three words of seating in one
+line: the codebase is the counterpart (the party you are actually
+talking to — the knowledge is its), you are the principal (the
+asker, the decider), and AI is the enabler — not the oracle, not
+the author, not the authority: the thing that made the
+conversation possible, exactly as the wire enables the call
+without being the person on the other end. Products will come and
+go on this pattern; the seating is what must not drift — the day
+the enabler is mistaken for the counterpart, you are no longer
+talking to your codebase, you are talking to a model about it,
+and the record has left the room. That inversion is the fundamental gap — beneath
 the missing statute, beneath the unteachable excellence, beneath
 the regular bugs: a trade practiced by millions that was never
 constituted as a thing one studies. And so the field of study is
