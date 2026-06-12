@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=148 edges=335
+# nodes=149 edges=340
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -25,6 +25,7 @@ AGENTS.md -> https://kind.sigs.k8s.io/
 AGENTS.md -> https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
 AGENTS.md -> https://raw.githubusercontent.com/<org
 CHANGELOG.md -> deploy/LEAPMICRO.md
+CHANGELOG.md -> deploy/certmanager-issuer.yaml
 CHANGELOG.md -> docs/AGENT-PLATFORM.md
 CHANGELOG.md -> docs/DESIGN.md
 CHANGELOG.md -> docs/FOUNDING-PRINCIPLES.md
@@ -68,6 +69,7 @@ README.md -> https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0
 api/v1alpha1/groupversion_info.go -> http://www.apache.org/licenses/LICENSE-2.0
 api/v1alpha1/kubecontainer_types.go -> http://www.apache.org/licenses/LICENSE-2.0
 api/v1alpha1/zz_generated.deepcopy.go -> http://www.apache.org/licenses/LICENSE-2.0
+cmd/filefabric/main.go -> https://schema.org
 cmd/homesetup/main.go -> https://get.k0s.sh
 cmd/homesetup/main.go -> https://github.com/unboxd-cloud/KubeContainer/releases/download/v0.2.0/install.yaml
 cmd/homesetup/main.go -> https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh
@@ -320,6 +322,7 @@ registry/blueprints/microos.json -> https://get.opensuse.org/microos/
 release/PROMISE -> hack/check-promise.sh
 site/arithmetic.html -> deploy/arithmetic-kube.yaml
 site/index.html -> docs/BENCHMARKS.md
+site/index.html -> https://arithmetic.agennext.com
 site/index.html -> https://github.com/unboxd-agency/KubeContainer
 site/index.html -> https://github.com/unboxd-agency/KubeContainer/blob/main/docs/AGENT-PLATFORM.md
 site/index.html -> https://github.com/unboxd-agency/KubeContainer/blob/main/docs/BENCHMARKS.md
@@ -327,6 +330,8 @@ site/index.html -> https://github.com/unboxd-agency/KubeContainer/blob/main/docs
 site/index.html -> https://github.com/unboxd-agency/KubeContainer/releases/download/v0.1.0/install.yaml
 site/index.html -> https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0
 site/index.html -> https://github.com/unboxd-agency/KubeContainer/tree/main/docs
+site/index.html -> https://github.com/unboxd-cloud/KubeContainer/releases
+site/index.html -> https://next.unboxd.cloud
 site/index.html -> site/panel.html
 site/panel.html -> registry/blueprints
 test/e2e/e2e_suite_test.go -> http://www.apache.org/licenses/LICENSE-2.0

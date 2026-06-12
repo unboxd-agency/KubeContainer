@@ -184,6 +184,9 @@
           "@id": "deploy/LEAPMICRO.md"
         },
         {
+          "@id": "deploy/certmanager-issuer.yaml"
+        },
+        {
           "@id": "docs/AGENT-PLATFORM.md"
         },
         {
@@ -413,6 +416,11 @@
     {
       "@id": "cmd/filefabric/main.go",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://schema.org"
+        }
+      ],
       "name": "cmd/filefabric/main.go"
     },
     {
@@ -1066,6 +1074,11 @@
         }
       ],
       "name": "deploy/arithmetic-kube.yaml"
+    },
+    {
+      "@id": "deploy/certmanager-issuer.yaml",
+      "@type": "CreativeWork",
+      "name": "deploy/certmanager-issuer.yaml"
     },
     {
       "@id": "deploy/deploy.sh",
@@ -1793,6 +1806,11 @@
       "name": "https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest"
     },
     {
+      "@id": "https://arithmetic.agennext.com",
+      "@type": "CreativeWork",
+      "name": "https://arithmetic.agennext.com"
+    },
+    {
       "@id": "https://book.kubebuilder.io",
       "@type": "CreativeWork",
       "name": "https://book.kubebuilder.io"
@@ -2158,6 +2176,11 @@
       "name": "https://github.com/unboxd-agency/KubeContainer/tree/main/docs"
     },
     {
+      "@id": "https://github.com/unboxd-cloud/KubeContainer/releases",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-cloud/KubeContainer/releases"
+    },
+    {
       "@id": "https://github.com/unboxd-cloud/KubeContainer/releases/download/$TAG/install.yaml",
       "@type": "CreativeWork",
       "name": "https://github.com/unboxd-cloud/KubeContainer/releases/download/$TAG/install.yaml"
@@ -2276,6 +2299,11 @@
       "@id": "https://minikube.sigs.k8s.io/docs/start/",
       "@type": "CreativeWork",
       "name": "https://minikube.sigs.k8s.io/docs/start/"
+    },
+    {
+      "@id": "https://next.unboxd.cloud",
+      "@type": "CreativeWork",
+      "name": "https://next.unboxd.cloud"
     },
     {
       "@id": "https://oauth2:${TOKEN}@gitlab.com/kubecontainer/v1.git",
@@ -2624,6 +2652,9 @@
           "@id": "docs/BENCHMARKS.md"
         },
         {
+          "@id": "https://arithmetic.agennext.com"
+        },
+        {
           "@id": "https://github.com/unboxd-agency/KubeContainer"
         },
         {
@@ -2643,6 +2674,12 @@
         },
         {
           "@id": "https://github.com/unboxd-agency/KubeContainer/tree/main/docs"
+        },
+        {
+          "@id": "https://github.com/unboxd-cloud/KubeContainer/releases"
+        },
+        {
+          "@id": "https://next.unboxd.cloud"
         },
         {
           "@id": "site/panel.html"

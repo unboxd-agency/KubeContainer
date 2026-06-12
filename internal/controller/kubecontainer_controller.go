@@ -291,6 +291,19 @@ func buildService(kc *kubecontainerv1alpha1.KubeContainer, svc *corev1.Service) 
 
 func buildIngress(kc *kubecontainerv1alpha1.KubeContainer, ing *networkingv1.Ingress) {
 	ing.Labels = selectorLabels(kc)
+	if kc.Spec.Expose.TLS {
+		if ing.Annotations == nil {
+			ing.Annotations = map[string]string{}
+		}
+		ing.Annotations["cert-manager.io/cluster-issuer"] = "letsencrypt"
+		ing.Spec.TLS = []networkingv1.IngressTLS{{
+			Hosts:      []string{kc.Spec.Expose.Host},
+			SecretName: kc.Name + "-tls",
+		}}
+	} else {
+		delete(ing.Annotations, "cert-manager.io/cluster-issuer")
+		ing.Spec.TLS = nil
+	}
 	pathType := networkingv1.PathTypePrefix
 	ing.Spec.Rules = []networkingv1.IngressRule{{
 		Host: kc.Spec.Expose.Host,

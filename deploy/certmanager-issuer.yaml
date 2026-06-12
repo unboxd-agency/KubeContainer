@@ -1,0 +1,21 @@
+# The cluster's certificate issuer: Let's Encrypt, HTTP-01 over the
+# ingress. cert-manager (pinned v1.19.5) watches every kube ingress
+# that declares expose.tls and keeps its certificate renewed forever.
+# Install order, on the box:
+#   sudo k3s kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.19.5/cert-manager.yaml
+#   sleep 60
+#   sudo k3s kubectl apply -f https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/certmanager-issuer.yaml
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: thefractionalpm@gmail.com
+    privateKeySecretRef:
+      name: letsencrypt-account
+    solvers:
+      - http01:
+          ingress:
+            class: traefik

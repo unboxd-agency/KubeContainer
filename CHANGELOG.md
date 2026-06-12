@@ -7,6 +7,15 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.6] - 2026-06-12
+### Added
+- `spec.expose.tls`: the kube declares its certificate — cert-manager
+  (pinned v1.19.5) issues and renews via the "letsencrypt"
+  ClusterIssuer (`deploy/certmanager-issuer.yaml`); CEL refuses tls
+  without Ingress.
+- The site homepage carries the live links (the cloud, the
+  arithmetic face, the releases).
+
 ## [0.2.5] - 2026-06-12
 ### Added
 - `spec.storage`: the kube declares what it keeps — size and path,

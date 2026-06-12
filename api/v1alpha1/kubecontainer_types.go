@@ -72,6 +72,7 @@ type Scaling struct {
 
 // Expose configures how the workload is reachable.
 // +kubebuilder:validation:XValidation:rule="self.type != 'Ingress' || has(self.host)",message="host is required when type is Ingress"
+// +kubebuilder:validation:XValidation:rule="!(has(self.tls) && self.tls) || self.type == 'Ingress'",message="tls requires type Ingress"
 type Expose struct {
 	// type selects the exposure mechanism.
 	// +kubebuilder:default=ClusterIP
@@ -81,6 +82,11 @@ type Expose struct {
 	// host is the DNS name routed to the workload. Required when type is Ingress.
 	// +optional
 	Host string `json:"host,omitempty"`
+
+	// tls requests a certificate for host from the cluster's certificate
+	// manager (the "letsencrypt" ClusterIssuer). Only valid with Ingress.
+	// +optional
+	TLS bool `json:"tls,omitempty"`
 }
 
 // HealthCheck wires HTTP liveness and readiness probes to the container.

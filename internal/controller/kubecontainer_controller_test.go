@@ -157,6 +157,29 @@ var _ = Describe("KubeContainer Controller", func() {
 		Expect(apierrors.IsNotFound(err)).To(BeTrue())
 	})
 
+	It("declares TLS on the Ingress when expose.tls is set and rejects tls without Ingress", func() {
+		kc := &kubecontainerv1alpha1.KubeContainer{}
+		Expect(k8sClient.Get(ctx, typeNamespacedName, kc)).To(Succeed())
+		kc.Spec.Expose = kubecontainerv1alpha1.Expose{
+			Type: kubecontainerv1alpha1.ExposeIngress,
+			Host: "my-app.example.com",
+			TLS:  true,
+		}
+		Expect(k8sClient.Update(ctx, kc)).To(Succeed())
+		doReconcile()
+
+		ing := &networkingv1.Ingress{}
+		Expect(k8sClient.Get(ctx, typeNamespacedName, ing)).To(Succeed())
+		Expect(ing.Annotations).To(HaveKeyWithValue("cert-manager.io/cluster-issuer", "letsencrypt"))
+		Expect(ing.Spec.TLS).To(HaveLen(1))
+		Expect(ing.Spec.TLS[0].Hosts).To(ConsistOf("my-app.example.com"))
+		Expect(ing.Spec.TLS[0].SecretName).To(Equal(resourceName + "-tls"))
+
+		Expect(k8sClient.Get(ctx, typeNamespacedName, kc)).To(Succeed())
+		kc.Spec.Expose = kubecontainerv1alpha1.Expose{Type: kubecontainerv1alpha1.ExposeClusterIP, TLS: true}
+		Expect(k8sClient.Update(ctx, kc)).NotTo(Succeed(), "tls without Ingress must be refused by CEL")
+	})
+
 	It("creates an HPA when autoscaling and leaves the replica count to it", func() {
 		kc := &kubecontainerv1alpha1.KubeContainer{}
 		Expect(k8sClient.Get(ctx, typeNamespacedName, kc)).To(Succeed())
