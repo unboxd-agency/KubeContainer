@@ -170,6 +170,27 @@ contract invalid. Content is consumed, code is activated, packages
 are unboxed; three deliveries, three verbs, three channels, and the
 box doctrine riding the wire it was always destined for.
 
+And all of it lands on one machine: everything operates with one
+device, but at different ports. The split is never hardware — no
+second box for code, no appliance for packages — one device, one
+surface, one edge, and the separation done entirely by ports: each
+delivery type at its own right port, each face turned by its own
+user, the whole doctrine running on the single body it protects.
+Ports are cheap and recorded; devices are expensive and bleed — so
+multiply ports, never devices. And the port rule is absolute: no two
+services can run on the same port. One port, one service, one
+contract — the one-writer-per-field law made physical. A shared port
+is a shared face, and a shared face is the §12 problem reborn:
+ambiguous signals, leaking neighbors, nobody answerable. The port is
+the smallest face there is, and like every face it has exactly one
+owner. And the enforcement costs nothing to build, because the
+device OS checks that already: a second bind to a bound port is
+refused by the kernel itself, natively, before any policy of ours is
+consulted — the rare gate the old world already built exactly where
+this doctrine needs it. We adopt the kernel's refusal as our verdict
+and add only the record: which service, which port, whose contract —
+so that what the OS enforces, the registry can answer for.
+
 ## 11. Browser as server
 
 - **Browser as server** — the service built native on the surface:
