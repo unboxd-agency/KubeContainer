@@ -425,6 +425,25 @@ N agents one workforce). What the cluster did for the machine,
 the kube does for the code that runs on it — stability and scale,
 not as virtues of the diligent but as properties of the path.
 
+Now, then, the platforms must evolve. The ground generation did its
+work and is done growing: the floor is rented (the hyperscalers),
+the keeping is solved (Kubernetes), and a platform that still
+defines itself as ground-plus-keeping is finished evolving and
+beginning to fossilize. The next form is the one this doctrine has
+been describing all along: the platform that offers the paths,
+catches the drift, reconciles as the outermost loop, holds the
+durable indexed replicated meta-modeled memory, runs the gauntlet,
+schedules the typed channels, hosts the agents with their shared
+context, fills the contract seats, and answers. Evolution in the
+strict sense — not a pivot but the next stable form under new
+selection pressure, where the pressure is everything this document
+recorded: code demanding its Kubernetes, users demanding their
+guardian, enterprises demanding a counterparty, agents demanding
+ground they can know. Platforms that evolve take the empty seat;
+platforms that do not become the floor someone else's evolution
+stands on — both outcomes serve the fabric, and only one of them
+gets to sign its name.
+
 Two clauses sharpen the settlement. First, holding is not enough:
 the platform must *offer* the path — not a registry the agent must
 think to search, but the path presented at the moment of need, on
