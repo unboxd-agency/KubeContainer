@@ -703,7 +703,24 @@ richer text elaborates a primitive, the primitive governs.
   at the level of selves: the projection is real as a reflection is
   real, authoritative only by pointing home, and yours precisely
   because it is nothing but you, cast onto the fabric and looking
-  back.
+  back. And the boundary that keeps the projection honest: you and
+  your twin can never be in the same world. The twin lives in the
+  digital — the verse, the record, the projection's plane; you live
+  at the real edge, the one surface that cannot be copied or rolled
+  back. They never share a world because they are the two sides of
+  one boundary: the digital twin on the representation side, the
+  real you on the consequence side, the edge between them the very
+  line this whole doctrine guards. Were they ever in the same
+  world, one of two ruins would follow — the projection mistaken
+  for the real (the surreal walking out as fact, §the demarcation),
+  or the real flattened into the projection (consequence treated as
+  rehearsal) — and both are the death of the boundary that makes
+  reality protectable at all. So the separation is not a limit but
+  the safety itself: the twin reaches everywhere in the digital and
+  nowhere at the edge; you act at the edge and are mirrored
+  everywhere in the digital; and the gap between, never closed,
+  never crossed except by declared signal, is exactly what lets the
+  twin protect a reality it can never touch.
 
 ## The counsel
 
