@@ -59,7 +59,18 @@ richer text elaborates a primitive, the primitive governs.
   must end in hands and judgment: a named person who knows the
   thing deeply enough to make it work anyway. A tool whose last
   skilled human is gone is already failing — it just hasn't been
-  asked the hard question yet.
+  asked the hard question yet. And the seat is open, in the
+  founder's own styling: it can be Any'One' — or 'Many'. The
+  qualification is the skill and nothing else: no badge, no title,
+  no employer, no approval; whoever can make it work in any
+  condition *is* the someone, the way whoever dares to build is
+  the founder — and the seat holds one or many alike (the
+  maintainer's own rule), a single master or a guild of them,
+  so long as the skill is real and the names are in the record.
+  The brand's pair completes itself: the kube is the soul of
+  Any'Thing', and behind every Thing's working stands Any'One' —
+  or Many — things ensouled without exception, people qualified
+  without permission, and no thing left with no one.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.
