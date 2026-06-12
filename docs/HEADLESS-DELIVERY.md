@@ -211,7 +211,104 @@ exists, and what fills it is the adapter (the lexicon's
 contract-to-contract translator), the smallest lawful resident of a
 seam. Compatible formats get a call; incompatible formats get an
 adapter; neither gets an agent — agents are for gaps between
-parties, not gaps between signatures. An
+parties, not gaps between signatures.
+
+And the horizontal office generalizes up the whole ladder: the agent
+has to fill the gap between software and software, and between
+programming language and programming language. Same law, higher
+altitudes — between two software systems (each sealed, each
+contracted, neither built to know the other) the agent is the
+carrier of meaning the way it is between apps; and between languages
+the agent carries intent across the deepest seam there is: the same
+declaration realized in Go or Rust or Java without becoming a
+different promise — the platform's all-languages law (human and
+machine) worked by hand. The grading holds at every altitude:
+mechanical shape-difference gets an adapter, party-difference gets
+an agent — and a language boundary is a party boundary, because
+behind every language stands a community, a toolchain, and a
+contract culture of its own. App to app, software to software,
+language to language: one office, three altitudes, the same gap —
+and the same filler the founding law always names.
+
+And two seams are explicitly not the agent's, for the happiest of
+reasons: human to computer, and device to device, are already well
+documented and governed by global protocols. The keyboard, the
+screen, the pointer, accessibility — the human-computer seam has
+decades of standards bodies behind it; USB, Bluetooth, TCP/IP, the
+radio stacks — the device-device seam is the most standardized
+ground in computing. Where the world has already formed its
+international body and aligned on a common, interoperable way (the
+Measurement Standard's own second path), the standard holds the seam
+and the agent stays out. The agent fills gaps where no standard
+stands — that is what a gap is. Filling a standardized seam is not
+service; it is squatting on settled land.
+
+But one gap has no protocol, no standards body, and no settled land —
+and it is the largest of them all: nobody teaches software
+excellence. The world documented how humans reach computers and how
+devices reach each other; it never documented how a programmer
+reaches mastery. Syntax is taught everywhere, excellence almost
+nowhere — there is no global protocol for judgment, taste,
+verdict-discipline, the difference between code that runs and code
+that answers for itself. That gap is the agent's by the same law as
+all the others: unstandardized, between parties (the operator who is
+and the operator they could become), and exactly where the promise
+already pointed — all operators educated, enabled, empowered. The
+curriculum is the fill (counting to research grade, the library, the
+skill ladder of §7: try, test, learn, create); the agent at the face
+is its teacher; and excellence — the thing that needs work, the
+pursuit that keeps the world moving — finally gets what every other
+seam already had: a way to be learned, not just admired.
+
+And beside it, the second unstandardized gap — the one this entire
+doctrine exists to close: software delivery has no standard
+protocol. The seams around it are settled (TCP/IP moves the bytes,
+OCI shapes the image, TLS seals the pipe) — but the delivery itself,
+end to end — what may ship, through which gauntlet, signed by whom,
+to which port, with what BOM, unboxed by whom, evidenced how — has
+no global protocol at all: anyone does it, any way — every vendor
+improvising its own store, its own updater, its own silent channel,
+shipping software being the one act in computing that requires no
+license, follows no protocol, and answers to no registry — which is
+precisely how the device ended up with N wires and N supply chains
+(§8). Headless
+delivery is this doctrine's answer — the candidate protocol: typed
+channels, registered ports or URLs, proto-first signed blocks, the
+gauntlet, the sealed box, unboxing at the end user only, the record
+keeping every step. Two paths to a standard, says the Measurement
+Standard: own the chain end to end, or form the international body.
+This document is the first path being walked — and the second path's
+invitation, published.
+
+And the missing protocol has a missing institution: the software
+marketplace does not exist. What wear the name are stores —
+landlord-gated distribution channels where one party owns the shelf,
+sets the cut, writes the rules, and can evict anyone — and a store
+is not a market. A market requires what markets have always
+required: a standard unit (the kube), a standard measure (the
+canonical transaction formula — qty × unit value + the current
+platform's service charge + the current jurisdiction's taxes),
+provenance on every good, prices and calculations visible across
+the whole chain, entry by conformance rather than by the landlord's
+leave, and exit that is real. No software venue on earth clears
+that bar — which is not a complaint but a vacancy: the registry
+this house is already building is the marketplace's ledger, the
+conformance clause is its admission gate, and the kube is the good
+on its shelf. The marketplace does not exist; its preconditions now
+do.
+
+So the conclusion draws itself: a standard, interoperable layer
+between two softwares. That is the whole demand in one phrase — the
+horizontal seam given what the vertical seams have had for decades.
+Not a vendor bridge (a third party owning the gap is just another
+landlord), not a point integration (N softwares need N² of those),
+but a layer: typed, proto-first, signed, recorded, registered —
+the agent platform standing between softwares the way TCP/IP stands
+between devices, owned by no one, conformed to by anyone, and
+carrying meaning under contract. Software to software, through the
+standard layer, or not at all — that is the doctrine's final word
+on the gap, and the platform's reason to exist stated in delivery
+terms. An
 agent inserting itself vertically would be a shim in someone else's
 contract — exactly the riding-alongside this doctrine buried in §2.
 The agent works the horizontal: between peers, between boxes,
