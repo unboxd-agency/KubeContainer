@@ -44,37 +44,3 @@ promise:
   needs: ["gauntlet"]
   dependencies: ["gauntlet"]
 
-# Deploy on GitLab itself: the site to Pages, the images to GitLab's registry.
-pages:
-  stage: gauntlet
-  image: alpine:3.21
-  script:
-    - mkdir -p public && cp -r site/* public/
-  artifacts:
-    paths: [public]
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"
-
-site-image:
-  stage: gauntlet
-  image:
-    name: gcr.io/kaniko-project/executor:v1.23.2-debug
-    entrypoint: [""]
-  script:
-    - /kaniko/executor --context "$CI_PROJECT_DIR" --dockerfile Dockerfile.site
-      --destination "$CI_REGISTRY_IMAGE/site:$CI_COMMIT_SHORT_SHA"
-      --destination "$CI_REGISTRY_IMAGE/site:latest"
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"
-
-operator-image:
-  stage: gauntlet
-  image:
-    name: gcr.io/kaniko-project/executor:v1.23.2-debug
-    entrypoint: [""]
-  script:
-    - /kaniko/executor --context "$CI_PROJECT_DIR" --dockerfile Dockerfile
-      --destination "$CI_REGISTRY_IMAGE/operator:$CI_COMMIT_SHORT_SHA"
-      --destination "$CI_REGISTRY_IMAGE/operator:latest"
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"
