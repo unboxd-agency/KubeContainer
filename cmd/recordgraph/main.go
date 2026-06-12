@@ -74,7 +74,7 @@ func main() {
 		}
 	}
 
-	var lines []string
+	lines := make([]string, 0, len(edges))
 	for e := range edges {
 		lines = append(lines, e)
 	}
@@ -130,7 +130,7 @@ func tokens(content string, raw bool) []string {
 			// A span may list several files, comma-separated; later
 			// bare names inherit the directory of the first.
 			dir := ""
-			for _, part := range strings.Split(m[1], ",") {
+			for part := range strings.SplitSeq(m[1], ",") {
 				part = strings.TrimSpace(part)
 				if !strings.Contains(part, "/") && dir != "" {
 					part = dir + part
@@ -187,7 +187,7 @@ func trackedFiles() []string {
 		os.Exit(1)
 	}
 	var out []string
-	for _, l := range strings.Split(strings.TrimSpace(string(raw)), "\n") {
+	for l := range strings.SplitSeq(strings.TrimSpace(string(raw)), "\n") {
 		if l != "" {
 			out = append(out, l)
 		}
@@ -210,7 +210,7 @@ func writeJSONLD(nodes, edges []string) error {
 		cites[parts[0]] = append(cites[parts[0]], map[string]string{"@id": parts[1]})
 		all[parts[1]] = true
 	}
-	var ids []string
+	ids := make([]string, 0, len(all))
 	for id := range all {
 		ids = append(ids, id)
 	}
@@ -240,7 +240,7 @@ func plannedRefs() map[string]bool {
 	if err != nil {
 		return out
 	}
-	for _, l := range strings.Split(string(raw), "\n") {
+	for l := range strings.SplitSeq(string(raw), "\n") {
 		l = strings.TrimSpace(l)
 		if l != "" && !strings.HasPrefix(l, "#") {
 			out[l] = true

@@ -71,6 +71,16 @@
       "name": ".github/workflows/lint.yml"
     },
     {
+      "@id": ".github/workflows/mirror.yml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://oauth2:${TOKEN}@gitlab.com/kubecontainer/v1.git"
+        }
+      ],
+      "name": ".github/workflows/mirror.yml"
+    },
+    {
       "@id": ".github/workflows/pages.yml",
       "@type": "CreativeWork",
       "name": ".github/workflows/pages.yml"
@@ -2247,6 +2257,11 @@
       "@id": "https://minikube.sigs.k8s.io/docs/start/",
       "@type": "CreativeWork",
       "name": "https://minikube.sigs.k8s.io/docs/start/"
+    },
+    {
+      "@id": "https://oauth2:${TOKEN}@gitlab.com/kubecontainer/v1.git",
+      "@type": "CreativeWork",
+      "name": "https://oauth2:${TOKEN}@gitlab.com/kubecontainer/v1.git"
     },
     {
       "@id": "https://opentofu.org/",
