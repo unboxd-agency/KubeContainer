@@ -174,7 +174,16 @@ richer text elaborates a primitive, the primitive governs.
   wrong door, only your speed and your story; what decides arrival
   was never the route but the walking: declared, stepped whole,
   kept to the end. Choose any Way and carry it — the goal was
-  waiting on all of them.
+  waiting on all of them. And the reason the arrival is certain is
+  the ground itself: the path may be different, but you will reach
+  the destination — because the fabric connects the dots
+  automatically. No walker routes alone: every step declared lands
+  in the record, every record joins the graph, and the graph must
+  resolve — so the fabric finds the joins your path implies, closes
+  the spans between your steps and the goal, and meets you with
+  the bridge you did not know was already built. The dots are
+  yours to place; the connecting is the fabric's law; walk your
+  Way and the weave does the rest.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.
