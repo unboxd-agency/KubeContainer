@@ -185,3 +185,17 @@ because everyone has a right to reason; self-justifying because the
 reason travels with the choice — decision intelligence 101, kept the
 only way this house keeps anything: in the record, beside the thing
 it explains.
+
+And the founder adds the property that makes the record safe to
+re-run: a decision should be idempotent. Decide twice on the same
+evidence and the second deciding changes nothing — no drift from
+repetition, no decision that mutates by being revisited; the
+decision is a pure function of its evidence, which is exactly what
+evidence-attachment buys. Re-open it with unchanged evidence and
+you get a no-op; re-open it with new evidence and it converges to
+the new conclusion — the level-triggered reconciler's own property,
+applied to governance: the loop can run the decision as often as it
+likes (the drift audit re-asking every pick on every pass) and the
+stack only ever moves when the world does. A decision that gives a
+different answer on a quiet Tuesday was never a decision; it was a
+mood with a date on it.
