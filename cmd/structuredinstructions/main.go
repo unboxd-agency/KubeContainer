@@ -22,7 +22,7 @@ type skeleton struct {
 
 func lookup(doc map[string]any, dotted string) (any, bool) {
 	cur := any(doc)
-	for _, part := range strings.Split(dotted, ".") {
+	for part := range strings.SplitSeq(dotted, ".") {
 		m, ok := cur.(map[string]any)
 		if !ok {
 			return nil, false

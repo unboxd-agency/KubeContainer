@@ -38,7 +38,7 @@ func main() {
 		fmt.Println("[fail] control plane:", err)
 		os.Exit(1)
 	}
-	defer env.Stop()
+	defer func() { _ = env.Stop() }()
 	fmt.Println("[pass] control plane up (rehearsal chamber: real kube-apiserver + etcd)")
 
 	mgr, err := ctrl.NewManager(cfg, ctrl.Options{Scheme: scheme,
@@ -85,7 +85,7 @@ func main() {
 	var svc corev1.Service
 	deadline := time.Now().Add(30 * time.Second)
 	haveDep, haveSvc := false, false
-	for time.Now().Before(deadline) && !(haveDep && haveSvc) {
+	for time.Now().Before(deadline) && (!haveDep || !haveSvc) {
 		if !haveDep && mgr.GetClient().Get(ctx, key, &dep) == nil {
 			haveDep = true
 			fmt.Printf("[pass] child converged: Deployment/%s (image %s)\n",
@@ -108,5 +108,7 @@ func main() {
 		fmt.Printf("[info] condition %s=%s (%s)\n", c.Type, c.Status, c.Reason)
 	}
 	fmt.Println("verdict: the kube is deployed in the rehearsal chamber — declared, admitted, converged, recorded")
-	fmt.Println("note: Ready follows real pods; envtest runs no kubelet — the real-traffic verdict belongs to the e2e gate and any conformant cluster (kubectl apply -f deploy/arithmetic-kube.yaml)")
+	fmt.Println("note: Ready follows real pods; envtest runs no kubelet — the real-traffic")
+	fmt.Println("verdict belongs to the e2e gate and any conformant cluster:")
+	fmt.Println("kubectl apply -f deploy/arithmetic-kube.yaml")
 }
