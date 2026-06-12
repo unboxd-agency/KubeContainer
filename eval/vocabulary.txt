@@ -122,6 +122,7 @@ operator
 orchestrator / subagent
 os-bound operation
 outcome
+owner
 p1 — re-grounding (state the world before touching it)
 p2 — term resolution (no private vocabulary)
 p3 — verdict before done (no unverdicted completion)

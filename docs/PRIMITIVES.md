@@ -30,6 +30,15 @@ richer text elaborates a primitive, the primitive governs.
   working.
 - **Builder** — the party who makes a thing that was not there
   before.
+- **Owner** — a temporal, time-bound nodal point of concern: the
+  party at whom, for a stated time, all concern for a thing
+  converges and from whom the answering is owed. Ownership is a
+  node, not a possession — it is held for a term, passed whole,
+  and never confused with keeping: the owner answers when it
+  breaks; the keeper tends so it doesn't. And it is an
+  accountability, not an entitlement: to own is to owe the
+  answering, not to hold the spoils — the title grants nothing,
+  charges everything, and ends on its date with the books open.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.
