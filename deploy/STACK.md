@@ -62,12 +62,30 @@ and the placements answer his questions on the record:
   at the core would be the §12 wound by design: a face authority
   riding inside every device. Outside of core — exactly where the
   founder put it.
-- **Block storage (Cinder) — layer 1's storage arm**, surfacing
-  upward only through the conformant seam: Cinder serves volumes at
-  the substrate; Kubernetes consumes them at layer 3 through CSI;
-  the kube above never names Cinder, only its declared claim — so
-  storage stays swappable (any CSI ground) and the substrate stays
-  exitable.
+- **Block storage — Cinder is the contract, Ceph is the body, LXD
+  is a different seat entirely.** The founder asks why Cinder and
+  not Ceph or LXD, and the answer is the seating: they are not
+  three candidates for one chair. Cinder is OpenStack's block
+  storage *API* — the declared seam, the contract the substrate
+  ruling already brought with it; it stores nothing, it answers for
+  volumes. Ceph is the storage *body* — the distributed store that
+  actually keeps the bytes — and it is the natural keeper *behind*
+  Cinder, not instead of it: Cinder the contract, Ceph the bytes,
+  the leaders' pick for open distributed storage on both axes of
+  the scoreboard (and on the cluster side the same body arrives
+  through Rook, CNCF-graduated, over the same CSI seam). LXD sits
+  at a different seat altogether — a machine-and-container manager,
+  competing for layer 1's instance seat (where Nova already sits in
+  an OpenStack stack) and layer 4's runtime seat (where containerd
+  already sits, CNCF-graduated) — and its recent history is the
+  keeper-risk the follow-the-leaders rule screens for: relicensed
+  under one vendor's sole control, its community forked away to
+  Incus — a live lesson in what happens when a commons' contract
+  seat is taken by a single party. So the stack reads: Cinder the
+  declared interface, Ceph the body behind it, CSI the seam upward,
+  Rook the cluster-side keeper — and the kube above names none of
+  them, only its claim, which is what keeps every one of them
+  swappable and the substrate exitable.
 - **Minikube — does it fit?** Yes — in the venv seat, and only
   there. Minikube is conformant Kubernetes on a laptop: the
   rehearsal ground (compile and simulate in the venv), the branch's
