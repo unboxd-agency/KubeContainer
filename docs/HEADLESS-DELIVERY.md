@@ -453,7 +453,33 @@ complete context (§10), convert to the human's skill (§7), feel for
 the moment because it knows the moment, and speak for every world
 without belonging to any. Apps stay what they are: containers,
 faces, worlds. The understanding between them — and of the human
-among them — is the agent's office, and was the gap all along. The marketplace that does not exist is the missing peace
+among them — is the agent's office, and was the gap all along.
+
+## The kube fills two gaps
+
+The whole diagnosis resolves to two vacancies, and the founding law
+(the kube fills the empty space in the fabric) fills both with the
+same block:
+
+1. *The gap between softwares* — the horizontal emptiness this
+   document mapped: app to app, world to world, no bridge, no
+   common layer, the user and agent as couriers. The kube fills it
+   as the communicator — the agent in the gap, the resident of the
+   standard interoperable layer, carrying meaning under contract
+   between sovereignties that stay sovereign.
+2. *The gap in delivery* — the vertical emptiness: no standard
+   protocol, no code statute, no marketplace, anyone shipping any
+   way. The kube fills it as the unit of delivery — the sealed,
+   contracted, BOM-carrying, gauntlet-checked box whose lifecycle
+   (declare, admit, converge, serve, evidence, exit) *is* the
+   protocol that was missing.
+
+One block, two vacancies, no second product: the same five-part
+anatomy (declaration, loop, face, record, contract) works the
+horizontal as the agent and the vertical as the box. That is why
+the kube is the building block of the real-world fabric — a brick
+that is also a bridge — and why filling either gap well has always
+meant building the other one too. The marketplace that does not exist is the missing peace
 treaty: with contracts, registries, and a standard interoperable
 layer, a world could *buy* its neighbor's strength instead of
 besieging it — specialization returns, plates stay owned, and the
