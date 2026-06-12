@@ -23,3 +23,23 @@ The enactment is the founder's hand (org creation, domain binding,
 VPS); the declarations stand ready in this repository, and the
 session's honest note holds: this environment reaches GitHub's proxy
 only — the GitLab walk is paste-ready, not remotely executed.
+
+And the user's walk through it, the founder's two closing lines.
+First: the user configures, and downloads the package — upon login,
+every declared variable surfaces on the UI; the user sets their
+picks (the language, the base, the faces, the bounds); the picks
+become the declaration (the dual-signed build spec, the form being
+the skeleton); and the package assembles sealed — BOM attached,
+signatures on, seal intact — and downloads to the user's own ground.
+Composition is shipping, at quantity one: configure, sign, download,
+unbox — the marketplace's whole mechanics served to a single person
+through a login and a form. Second: we will be the standard
+blueprint — this home stack is not one deployment among many but
+the reference walk, registered as a blueprint in the registry the
+way the agent offices are: Any'One' building an individual's home
+copies this declaration and re-pins their own picks, and the
+standard earns its name the only way standards earn anything here —
+demonstrated first (this stack, running), defined second (this
+file), copied third (the registry's blueprint, free to take). The
+house that wrote the laws ships the worked example, and the worked
+example is the product.
