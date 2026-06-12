@@ -63,6 +63,18 @@ vet: ## Run go vet against code.
 test: manifests generate fmt vet setup-envtest ## Run tests.
 	KUBEBUILDER_ASSETS="$(shell "$(ENVTEST)" use $(ENVTEST_K8S_VERSION) --bin-dir "$(LOCALBIN)" -p path)" go test $$(go list ./... | grep -v /e2e) -coverprofile cover.out
 
+.PHONY: test-report
+test-report: setup-envtest ## Run tests emitting a structured report to dist/test-report.json (go test -json, stdlib-native).
+	mkdir -p dist
+	KUBEBUILDER_ASSETS="$(shell "$(ENVTEST)" use $(ENVTEST_K8S_VERSION) --bin-dir "$(LOCALBIN)" -p path)" go test $$(go list ./... | grep -v /e2e) -json > dist/test-report.json
+	@echo "test report: dist/test-report.json ($$(grep -c '"Action":"pass"' dist/test-report.json) passes, $$(grep -c '"Action":"fail"' dist/test-report.json) failures)"
+
+.PHONY: security-report
+security-report: ## Run the official Go vulnerability scanner, report to dist/security-report.json; findings fail the build (frontloaded security).
+	mkdir -p dist
+	go run golang.org/x/vuln/cmd/govulncheck@latest -json ./... > dist/security-report.json.tmp && mv dist/security-report.json.tmp dist/security-report.json || { rm -f dist/security-report.json.tmp; echo "security scan failed or found vulnerabilities — no report written, the gate is red"; exit 1; }
+	@echo "security report: dist/security-report.json (govulncheck — the Go project's own scanner)"
+
 # TODO(user): To use a different vendor for e2e tests, modify the setup under 'tests/e2e'.
 # The default setup assumes Kind is pre-installed and builds/loads the Manager Docker image locally.
 # kubectl kuberc is disabled by default for test isolation; enable with:

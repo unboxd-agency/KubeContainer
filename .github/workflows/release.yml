@@ -58,6 +58,9 @@ jobs:
       - name: Gauntlet
         run: |
           make test
+          make test-report
+          make security-report
+          ./hack/check-promise.sh
           make lint
           make vocab-check
           make eval
@@ -77,7 +80,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "$TAG" dist/install.yaml dist/eval-report.json \
+          gh release create "$TAG" dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json \
             --target "$TARGET" \
             --title "$TAG" \
             --notes "See CHANGELOG.md for this release. Install: kubectl apply -f install.yaml — image: $IMG. The eval report is the release's evidence record."

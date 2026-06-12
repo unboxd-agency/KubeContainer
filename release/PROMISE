@@ -1,0 +1,19 @@
+# The Promise — declared before any release, checked at every one.
+#
+# "Promise delivered" is the founder's motto, used for years before
+# this record existed. It is never decoration: it may be written of a
+# release only when every clause below carries its green verdict, and
+# the check is mechanical (hack/check-promise.sh, run by the release
+# pipeline before anything publishes). A clause without its verdict
+# blocks the release; a release without this file makes no promise
+# and may not claim to have delivered one.
+#
+# clause: what is promised               -> verdict: the artifact that proves it
+install_one_apply                        -> dist/install.yaml present, sha256-digested on the release
+workload_converges_and_serves            -> the e2e gate: declared workload reaches Ready and answers HTTP 200 in a live cluster
+tests_pass                               -> dist/test-report.json: zero failures (go test -json, structured)
+no_known_vulnerabilities                 -> dist/security-report.json: govulncheck (the Go project's own scanner) ran and found no calls to known-vulnerable code; findings fail the build
+every_word_defined                       -> make vocab-check green (bold is coinage, coinage requires definition)
+registry_resolves                        -> dist/eval-report.json: resolution 100%
+eras_stay_valid                          -> the golden compat corpus: era manifests remain valid and convergent, CI-enforced
+evidence_attached                        -> the verdicts above ship as release assets, digested, beside the artifact they grade
