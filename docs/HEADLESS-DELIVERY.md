@@ -193,12 +193,18 @@ and delivers; the faces it delivers to are owned, turned, and
 separated by their human alone.
 
 And one prohibition closes the loop: the surface does not send build
-packs. What leaves a surface through the edge is intent and signal —
-declarations, branches, telemetry on the recorded channel — never
-built artifacts. Build packs exist only cloud-side, born in the
-sandbox, certified by the guard, delivered at the ports. A surface
-that emits build packs has reversed the reversed loop — it is the
-old world's wound reopened.
+packs — and neither does any face. The prohibition holds at face
+granularity: not even the build face ships a built artifact. And no face sends on its own
+wire: the sending happens via the edge — every outbound signal from
+every face routes through the one ingress point, the single recorded,
+packet-protected channel of §6, so there is exactly one place where
+leaving is possible and that place keeps the record. What leaves
+through the edge is intent and signal — declarations, branches,
+telemetry — never built artifacts.
+Build packs exist only cloud-side, born in the sandbox, certified by
+the guard, delivered at the ports. A surface or a face that emits
+build packs has reversed the reversed loop — it is the old world's
+wound reopened.
 
 ## The doctrine in one breath
 
