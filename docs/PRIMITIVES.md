@@ -432,6 +432,31 @@ richer text elaborates a primitive, the primitive governs.
   everything that arrived plus everything still held.
 - **Resolution** — a difference driven to zero and recorded as
   closed.
+- **Real time** — work done at the pace the world needs it, on a
+  stream that does not stall — and real time is not real: it is
+  not instantaneous and never claims to be. There is delay at every
+  hub and time to transfer between them: signal moves, hops cost,
+  each stop adds its lag, and the books of latency always sum to
+  more than zero. So every "real-time" reading is already a theory
+  of the past — the edge inferred from the last evidence that had
+  time to arrive — and real time means *timely, within a named
+  bound, honest about the lag*, never *zero delay*. The lie lives
+  in the word; this primitive removes it: the fabric promises the
+  current, records the latency, and names the hubs the delay was
+  spent at, because the guardian against pretending the instant
+  exists is time itself, which no layer can virtualize.
+- **Honest words** — we are honest about the words and their
+  meanings: a word in this house means what it can be checked to
+  mean, never what it is wished to mean. Where the world's words
+  drift to flatter — *real time* into *instant*, *open* into
+  *free*, *trusted* into *self-declared*, *perfect* into *real*,
+  *infinite* into *promised* — this record stops the drift by
+  definition, naming the honest meaning and the lie it replaces.
+  Honesty about words is the first honesty, because every other
+  claim is made of them; a fabric that lies in its vocabulary
+  cannot tell the truth in its verdicts, and the whole lexicon is
+  the discipline of refusing the flattering meaning for the
+  checkable one.
 - **Maturity** — when you look beyond your own clan to learn, and
   grow in an autonomous manner: lessons taken from outside the
   walls, growth driven from inside them — needing neither a rival's

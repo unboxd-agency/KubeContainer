@@ -82,6 +82,7 @@ handoff
 hardening roadmap:
 headless delivery
 here
+honest words
 human-in-the-loop
 intelligence is not fabricated
 intelligence is provenance-gated
@@ -147,6 +148,7 @@ proto-first
 provenance
 provenance is the product
 provenance-native
+real time
 real-time
 real-time, not instantaneous — acid, stable substance
 real-work rule
