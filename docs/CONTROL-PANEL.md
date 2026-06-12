@@ -232,3 +232,21 @@ adopt the pre-built where it conforms, adapt where it nearly does,
 build only what no one has — which for us remains exactly one thing:
 the pod-native panel above the cluster line. Everything below it may
 arrive pre-built from CloudStack's decade of production.
+
+Juju also — Canonical's model-driven operator framework (charms:
+applications deployed and related across clouds by declared models,
+the operator pattern before Kubernetes wore it; reference:
+https://juju.is/). It joins the reference shelf for what it proved:
+one model, many clouds, relations declared between apps — the
+panel's multi-cloud trick, shipped for a decade.
+
+And the founder's rule over the whole shelf: these should be
+configurable per cloud environment. The substrate machinery —
+CloudStack here, OpenStack there, Juju-modeled on one estate, a bare
+hyperscaler on another — is a per-env variable in the panel, not a
+global pick: each environment declares which ground-framework it
+stands on, the panel renders each env with its own, and the app
+walks all of them unchanged (the app constant, the ground variable —
+now per env, declared, on the record). Configurable at all levels,
+the nearest declaration winning: the same law that governs every
+variable governs the ground itself.
