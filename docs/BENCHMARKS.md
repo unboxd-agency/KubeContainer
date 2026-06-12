@@ -111,6 +111,41 @@ kept by parties who do not profit from the grade. The industries
 that grew up have already drawn the curriculum; software's only
 original contribution would be refusing to enroll.
 
+And manufacturing already named the bar software must aim at: Six
+Sigma pins the defect rate at roughly one in a million (3.4 defects
+per million opportunities, to be exact) — and that is the *desired
+state* they have set, the declared target a mature industry
+reconciles toward, not a happy accident. The discipline is the
+fabric's own, arrived at from the factory floor: a defined desired
+state expressed in a checkable world-unit (defects per million), a
+measurement everyone accepts before counting, and a continuous
+reconciliation toward it. Software ships defect rates no other
+industry would survive (regular bugs as cadence, §the diagnosis)
+precisely because it never declared a desired state to converge on —
+no Six Sigma, no defined target, no books that must balance. The
+bench this house keeps adopts the manufacturing posture wholesale:
+declare the desired state in world-units, measure against it
+continuously, and let the gap drive the loop. One in a million is
+not this fabric's boast — it is the neighbor's settled standard,
+named here as the altitude software's bench must rise to before it
+may call itself mature. And the founder names who should set the
+target, completing the loop's first step: the cloud should design
+our desired state. The desired state is a declaration, and
+declaration is the cloud's office — the platform that holds the
+paths, the registry, the records, and the contract is the party
+positioned to set the target the whole fleet reconciles toward:
+the cloud reads the estate, knows the world-units, sees the drift
+across every system, and so the cloud declares the desired state
+(the defect rate to clear, the latency bound to hold, the
+conformance to keep) and the loops converge on it. This is the
+reconciliation pattern raised one level: a kube reconciles its
+workload to a declared state; the cloud reconciles the fleet to a
+desired state it designed — the operator of operators, declaring
+for the whole what each kube declares for itself. Manufacturing
+set its desired state at one in a million and built the discipline
+to reconcile there; the cloud's job is to design software's, in
+world-units, and run the fabric until the gap closes.
+
 ## Methodology
 
 Numbers are reproduced, not trusted: every row names the command;
