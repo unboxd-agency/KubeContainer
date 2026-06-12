@@ -1,0 +1,17 @@
+# Golden compatibility manifest — frozen at v0.2.5. DO NOT EDIT.
+# The storage era: a kube that declares what it keeps. The claim is
+# environment-neutral; the cluster's storage class supplies the backing.
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: compat-v025-storage
+spec:
+  image: nextcloud:31-apache
+  port: 80
+  scaling:
+    replicas: 1
+  expose:
+    type: LoadBalancer
+  storage:
+    size: 2Gi
+    path: /var/www/html

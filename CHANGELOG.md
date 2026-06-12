@@ -7,6 +7,15 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.5] - 2026-06-12
+### Added
+- `spec.storage`: the kube declares what it keeps — size and path,
+  reconciled into an owned PersistentVolumeClaim and mount. The claim
+  is environment-neutral (the cluster's storage class supplies the
+  backing: cloud disk in cloud, local path on metal). Dropping the
+  clause unmounts but never deletes the claim — data is never blown.
+- Compat corpus gains the storage era (`v0_2_5_storage.yaml`).
+
 ## [0.2.4] - 2026-06-12
 ### Added
 - RecordGraph: the record extracted as a graph (146 nodes, internal
