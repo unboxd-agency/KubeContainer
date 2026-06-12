@@ -11,7 +11,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
-	"path/filepath"
+	"os/exec"
 	"regexp"
 	"sort"
 	"strings"
@@ -32,25 +32,7 @@ var jsonRe = regexp.MustCompile(`[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)+`)
 
 func main() {
 	planned := plannedRefs()
-	var nodes []string
-	_ = filepath.WalkDir(".", func(path string, d os.DirEntry, err error) error {
-		if err != nil {
-			return nil
-		}
-		if d.IsDir() {
-			name := d.Name()
-			if name == ".git" || name == "bin" || name == "dist" || name == "node_modules" {
-				return filepath.SkipDir
-			}
-			return nil
-		}
-		if strings.HasSuffix(path, ".md") ||
-			(strings.HasPrefix(path, "registry/") && strings.HasSuffix(path, ".json")) {
-			nodes = append(nodes, path)
-		}
-		return nil
-	})
-	sort.Strings(nodes)
+	nodes := trackedFiles()
 
 	edges := map[string]bool{}
 	var broken []string
@@ -59,7 +41,7 @@ func main() {
 		if err != nil {
 			continue
 		}
-		for _, t := range tokens(string(raw), strings.HasSuffix(n, ".json")) {
+		for _, t := range tokens(string(raw), !strings.HasSuffix(n, ".md")) {
 			if t == n {
 				continue
 			}
@@ -104,15 +86,22 @@ func main() {
 }
 
 // tokens extracts path-like references. In markdown only backticked
-// spans count (prose mentions a path by quoting it); in JSON any
-// path-shaped string counts.
-func tokens(content string, isJSON bool) []string {
+// spans count (prose mentions a path by quoting it); everywhere else
+// (code, manifests, scripts) any path-shaped string counts.
+func tokens(content string, raw bool) []string {
 	var spans []string
-	if isJSON {
-		spans = jsonRe.FindAllString(content, -1)
+	if raw {
+		// A match preceded by '/' is a tail of an absolute or URL path
+		// (Kubernetes REST paths like /api/v1/...), not a file reference.
+		for _, idx := range jsonRe.FindAllStringIndex(content, -1) {
+			if idx[0] > 0 && content[idx[0]-1] == '/' {
+				continue
+			}
+			spans = append(spans, content[idx[0]:idx[1]])
+		}
 	} else {
 		for _, m := range spanRe.FindAllStringSubmatch(content, -1) {
-			// A span may list several files: `docs/a.md, b.md` — later
+			// A span may list several files, comma-separated; later
 			// bare names inherit the directory of the first.
 			dir := ""
 			for _, part := range strings.Split(m[1], ",") {
@@ -140,6 +129,24 @@ func tokens(content string, isJSON bool) []string {
 		}
 		out = append(out, s)
 	}
+	return out
+}
+
+// trackedFiles lists every file of the record: the tree as git keeps
+// it — every file a node, nothing generated, nothing untracked.
+func trackedFiles() []string {
+	raw, err := exec.Command("git", "ls-files").Output()
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+	var out []string
+	for _, l := range strings.Split(strings.TrimSpace(string(raw)), "\n") {
+		if l != "" {
+			out = append(out, l)
+		}
+	}
+	sort.Strings(out)
 	return out
 }
 

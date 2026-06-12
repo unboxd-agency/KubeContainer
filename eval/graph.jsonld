@@ -2,14 +2,94 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@id": ".custom-gcl.yml",
+      "@type": "CreativeWork",
+      "name": ".custom-gcl.yml"
+    },
+    {
+      "@id": ".devcontainer/devcontainer.json",
+      "@type": "CreativeWork",
+      "name": ".devcontainer/devcontainer.json"
+    },
+    {
+      "@id": ".devcontainer/post-install.sh",
+      "@type": "CreativeWork",
+      "name": ".devcontainer/post-install.sh"
+    },
+    {
+      "@id": ".dockerignore",
+      "@type": "CreativeWork",
+      "name": ".dockerignore"
+    },
+    {
+      "@id": ".githooks/pre-push",
+      "@type": "CreativeWork",
+      "name": ".githooks/pre-push"
+    },
+    {
+      "@id": ".github/workflows/.",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/."
+    },
+    {
       "@id": ".github/workflows/drift-audit.yml",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        }
+      ],
       "name": ".github/workflows/drift-audit.yml"
+    },
+    {
+      "@id": ".github/workflows/lint.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/lint.yml"
+    },
+    {
+      "@id": ".github/workflows/pages.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/pages.yml"
     },
     {
       "@id": ".github/workflows/release.yml",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "release/REQUEST"
+        }
+      ],
       "name": ".github/workflows/release.yml"
+    },
+    {
+      "@id": ".github/workflows/test-e2e.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/test-e2e.yml"
+    },
+    {
+      "@id": ".github/workflows/test.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/test.yml"
+    },
+    {
+      "@id": ".gitignore",
+      "@type": "CreativeWork",
+      "name": ".gitignore"
+    },
+    {
+      "@id": ".gitlab-ci.yml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": ".github/workflows/."
+        }
+      ],
+      "name": ".gitlab-ci.yml"
+    },
+    {
+      "@id": ".golangci.yml",
+      "@type": "CreativeWork",
+      "name": ".golangci.yml"
     },
     {
       "@id": "AGENTS.md",
@@ -99,6 +179,72 @@
       "name": "CLAUDE.md"
     },
     {
+      "@id": "Dockerfile",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "cmd/main.go"
+        }
+      ],
+      "name": "Dockerfile"
+    },
+    {
+      "@id": "Dockerfile.site",
+      "@type": "CreativeWork",
+      "name": "Dockerfile.site"
+    },
+    {
+      "@id": "LICENSE",
+      "@type": "CreativeWork",
+      "name": "LICENSE"
+    },
+    {
+      "@id": "Makefile",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "cmd/main.go"
+        },
+        {
+          "@id": "config/crd"
+        },
+        {
+          "@id": "config/crd/bases"
+        },
+        {
+          "@id": "config/default"
+        },
+        {
+          "@id": "config/manager"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/graph.txt"
+        },
+        {
+          "@id": "hack/boilerplate.go.txt"
+        }
+      ],
+      "name": "Makefile"
+    },
+    {
+      "@id": "NOTICE",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        }
+      ],
+      "name": "NOTICE"
+    },
+    {
+      "@id": "PROJECT",
+      "@type": "CreativeWork",
+      "name": "PROJECT"
+    },
+    {
       "@id": "README.md",
       "@type": "CreativeWork",
       "name": "README.md"
@@ -109,9 +255,19 @@
       "name": "api/v1alpha1"
     },
     {
+      "@id": "api/v1alpha1/groupversion_info.go",
+      "@type": "CreativeWork",
+      "name": "api/v1alpha1/groupversion_info.go"
+    },
+    {
       "@id": "api/v1alpha1/kubecontainer_types.go",
       "@type": "CreativeWork",
       "name": "api/v1alpha1/kubecontainer_types.go"
+    },
+    {
+      "@id": "api/v1alpha1/zz_generated.deepcopy.go",
+      "@type": "CreativeWork",
+      "name": "api/v1alpha1/zz_generated.deepcopy.go"
     },
     {
       "@id": "cmd/codecompiler",
@@ -129,6 +285,27 @@
       "name": "cmd/homesetup"
     },
     {
+      "@id": "cmd/homesetup/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/homesetup/main.go"
+    },
+    {
+      "@id": "cmd/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/default/kustomization.yaml"
+        },
+        {
+          "@id": "config/prometheus/kustomization.yaml"
+        },
+        {
+          "@id": "config/rbac/kustomization.yaml"
+        }
+      ],
+      "name": "cmd/main.go"
+    },
+    {
       "@id": "cmd/recordgraph",
       "@type": "CreativeWork",
       "name": "cmd/recordgraph"
@@ -136,6 +313,17 @@
     {
       "@id": "cmd/recordgraph/main.go",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/graph-planned.txt"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/graph.txt"
+        }
+      ],
       "name": "cmd/recordgraph/main.go"
     },
     {
@@ -146,6 +334,11 @@
     {
       "@id": "cmd/schemakeeper/main.go",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/graph.jsonld"
+        }
+      ],
       "name": "cmd/schemakeeper/main.go"
     },
     {
@@ -156,7 +349,67 @@
     {
       "@id": "cmd/structuredinstructions/main.go",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/SKELETON.json"
+        }
+      ],
       "name": "cmd/structuredinstructions/main.go"
+    },
+    {
+      "@id": "config/crd",
+      "@type": "CreativeWork",
+      "name": "config/crd"
+    },
+    {
+      "@id": "config/crd/bases",
+      "@type": "CreativeWork",
+      "name": "config/crd/bases"
+    },
+    {
+      "@id": "config/crd/bases/kubecontainer.unboxd.cloud_kubecontainers.yaml",
+      "@type": "CreativeWork",
+      "name": "config/crd/bases/kubecontainer.unboxd.cloud_kubecontainers.yaml"
+    },
+    {
+      "@id": "config/crd/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/default"
+        }
+      ],
+      "name": "config/crd/kustomization.yaml"
+    },
+    {
+      "@id": "config/crd/kustomizeconfig.yaml",
+      "@type": "CreativeWork",
+      "name": "config/crd/kustomizeconfig.yaml"
+    },
+    {
+      "@id": "config/default",
+      "@type": "CreativeWork",
+      "name": "config/default"
+    },
+    {
+      "@id": "config/default/cert_metrics_manager_patch.yaml",
+      "@type": "CreativeWork",
+      "name": "config/default/cert_metrics_manager_patch.yaml"
+    },
+    {
+      "@id": "config/default/kustomization.yaml",
+      "@type": "CreativeWork",
+      "name": "config/default/kustomization.yaml"
+    },
+    {
+      "@id": "config/default/manager_metrics_patch.yaml",
+      "@type": "CreativeWork",
+      "name": "config/default/manager_metrics_patch.yaml"
+    },
+    {
+      "@id": "config/default/metrics_service.yaml",
+      "@type": "CreativeWork",
+      "name": "config/default/metrics_service.yaml"
     },
     {
       "@id": "config/manager",
@@ -164,9 +417,119 @@
       "name": "config/manager"
     },
     {
+      "@id": "config/manager/kustomization.yaml",
+      "@type": "CreativeWork",
+      "name": "config/manager/kustomization.yaml"
+    },
+    {
+      "@id": "config/manager/manager.yaml",
+      "@type": "CreativeWork",
+      "name": "config/manager/manager.yaml"
+    },
+    {
+      "@id": "config/network-policy/allow-metrics-traffic.yaml",
+      "@type": "CreativeWork",
+      "name": "config/network-policy/allow-metrics-traffic.yaml"
+    },
+    {
+      "@id": "config/network-policy/kustomization.yaml",
+      "@type": "CreativeWork",
+      "name": "config/network-policy/kustomization.yaml"
+    },
+    {
+      "@id": "config/prometheus/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/default/kustomization.yaml"
+        }
+      ],
+      "name": "config/prometheus/kustomization.yaml"
+    },
+    {
+      "@id": "config/prometheus/monitor.yaml",
+      "@type": "CreativeWork",
+      "name": "config/prometheus/monitor.yaml"
+    },
+    {
+      "@id": "config/prometheus/monitor_tls_patch.yaml",
+      "@type": "CreativeWork",
+      "name": "config/prometheus/monitor_tls_patch.yaml"
+    },
+    {
+      "@id": "config/rbac/kubecontainer_admin_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/kubecontainer_admin_role.yaml"
+    },
+    {
+      "@id": "config/rbac/kubecontainer_editor_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/kubecontainer_editor_role.yaml"
+    },
+    {
+      "@id": "config/rbac/kubecontainer_viewer_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/kubecontainer_viewer_role.yaml"
+    },
+    {
+      "@id": "config/rbac/kustomization.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/kustomization.yaml"
+    },
+    {
+      "@id": "config/rbac/leader_election_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/leader_election_role.yaml"
+    },
+    {
+      "@id": "config/rbac/leader_election_role_binding.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/leader_election_role_binding.yaml"
+    },
+    {
+      "@id": "config/rbac/metrics_auth_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/metrics_auth_role.yaml"
+    },
+    {
+      "@id": "config/rbac/metrics_auth_role_binding.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/metrics_auth_role_binding.yaml"
+    },
+    {
+      "@id": "config/rbac/metrics_reader_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/metrics_reader_role.yaml"
+    },
+    {
       "@id": "config/rbac/role.yaml",
       "@type": "CreativeWork",
       "name": "config/rbac/role.yaml"
+    },
+    {
+      "@id": "config/rbac/role_binding.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/role_binding.yaml"
+    },
+    {
+      "@id": "config/rbac/service_account.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/service_account.yaml"
+    },
+    {
+      "@id": "config/samples/kubecontainer_v1alpha1_kubecontainer.yaml",
+      "@type": "CreativeWork",
+      "name": "config/samples/kubecontainer_v1alpha1_kubecontainer.yaml"
+    },
+    {
+      "@id": "config/samples/kustomization.yaml",
+      "@type": "CreativeWork",
+      "name": "config/samples/kustomization.yaml"
+    },
+    {
+      "@id": "deploy/.",
+      "@type": "CreativeWork",
+      "name": "deploy/."
     },
     {
       "@id": "deploy/AGENT-STACK.md",
@@ -219,9 +582,39 @@
       "name": "deploy/VPS.md"
     },
     {
+      "@id": "deploy/arithmetic-kube.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "site/arithmetic.html"
+        }
+      ],
+      "name": "deploy/arithmetic-kube.yaml"
+    },
+    {
       "@id": "deploy/deploy.sh",
       "@type": "CreativeWork",
       "name": "deploy/deploy.sh"
+    },
+    {
+      "@id": "deploy/site-kube.yaml",
+      "@type": "CreativeWork",
+      "name": "deploy/site-kube.yaml"
+    },
+    {
+      "@id": "deploy/tofu/main.tf",
+      "@type": "CreativeWork",
+      "name": "deploy/tofu/main.tf"
+    },
+    {
+      "@id": "deploy/zot.yaml",
+      "@type": "CreativeWork",
+      "name": "deploy/zot.yaml"
+    },
+    {
+      "@id": "dist/install.yaml",
+      "@type": "CreativeWork",
+      "name": "dist/install.yaml"
     },
     {
       "@id": "docs/AGENT-PLATFORM.md",
@@ -605,6 +998,26 @@
       "name": "eval/corpus"
     },
     {
+      "@id": "eval/corpus/task-001-deprecated-recorder.yaml",
+      "@type": "CreativeWork",
+      "name": "eval/corpus/task-001-deprecated-recorder.yaml"
+    },
+    {
+      "@id": "eval/corpus/task-002-pin-kind-source.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": ".github/workflows/test-e2e.yml"
+        }
+      ],
+      "name": "eval/corpus/task-002-pin-kind-source.yaml"
+    },
+    {
+      "@id": "eval/corpus/task-003-backward-compat-gate.yaml",
+      "@type": "CreativeWork",
+      "name": "eval/corpus/task-003-backward-compat-gate.yaml"
+    },
+    {
       "@id": "eval/graph-planned.txt",
       "@type": "CreativeWork",
       "name": "eval/graph-planned.txt"
@@ -612,16 +1025,757 @@
     {
       "@id": "eval/graph.jsonld",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": ".githooks/pre-push"
+        },
+        {
+          "@id": ".github/workflows/."
+        },
+        {
+          "@id": ".github/workflows/drift-audit.yml"
+        },
+        {
+          "@id": ".github/workflows/lint.yml"
+        },
+        {
+          "@id": ".github/workflows/pages.yml"
+        },
+        {
+          "@id": ".github/workflows/release.yml"
+        },
+        {
+          "@id": ".github/workflows/test-e2e.yml"
+        },
+        {
+          "@id": ".github/workflows/test.yml"
+        },
+        {
+          "@id": "api/v1alpha1"
+        },
+        {
+          "@id": "api/v1alpha1/groupversion_info.go"
+        },
+        {
+          "@id": "api/v1alpha1/kubecontainer_types.go"
+        },
+        {
+          "@id": "api/v1alpha1/zz_generated.deepcopy.go"
+        },
+        {
+          "@id": "cmd/codecompiler"
+        },
+        {
+          "@id": "cmd/codecompiler/main.go"
+        },
+        {
+          "@id": "cmd/homesetup"
+        },
+        {
+          "@id": "cmd/homesetup/main.go"
+        },
+        {
+          "@id": "cmd/main.go"
+        },
+        {
+          "@id": "cmd/recordgraph"
+        },
+        {
+          "@id": "cmd/recordgraph/main.go"
+        },
+        {
+          "@id": "cmd/schemakeeper"
+        },
+        {
+          "@id": "cmd/schemakeeper/main.go"
+        },
+        {
+          "@id": "cmd/structuredinstructions"
+        },
+        {
+          "@id": "cmd/structuredinstructions/main.go"
+        },
+        {
+          "@id": "config/crd"
+        },
+        {
+          "@id": "config/crd/bases"
+        },
+        {
+          "@id": "config/crd/bases/kubecontainer.unboxd.cloud_kubecontainers.yaml"
+        },
+        {
+          "@id": "config/crd/kustomization.yaml"
+        },
+        {
+          "@id": "config/crd/kustomizeconfig.yaml"
+        },
+        {
+          "@id": "config/default"
+        },
+        {
+          "@id": "config/default/cert_metrics_manager_patch.yaml"
+        },
+        {
+          "@id": "config/default/kustomization.yaml"
+        },
+        {
+          "@id": "config/default/manager_metrics_patch.yaml"
+        },
+        {
+          "@id": "config/default/metrics_service.yaml"
+        },
+        {
+          "@id": "config/manager"
+        },
+        {
+          "@id": "config/manager/kustomization.yaml"
+        },
+        {
+          "@id": "config/manager/manager.yaml"
+        },
+        {
+          "@id": "config/network-policy/allow-metrics-traffic.yaml"
+        },
+        {
+          "@id": "config/network-policy/kustomization.yaml"
+        },
+        {
+          "@id": "config/prometheus/kustomization.yaml"
+        },
+        {
+          "@id": "config/prometheus/monitor.yaml"
+        },
+        {
+          "@id": "config/prometheus/monitor_tls_patch.yaml"
+        },
+        {
+          "@id": "config/rbac/kubecontainer_admin_role.yaml"
+        },
+        {
+          "@id": "config/rbac/kubecontainer_editor_role.yaml"
+        },
+        {
+          "@id": "config/rbac/kubecontainer_viewer_role.yaml"
+        },
+        {
+          "@id": "config/rbac/kustomization.yaml"
+        },
+        {
+          "@id": "config/rbac/leader_election_role.yaml"
+        },
+        {
+          "@id": "config/rbac/leader_election_role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_auth_role.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_auth_role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_reader_role.yaml"
+        },
+        {
+          "@id": "config/rbac/role.yaml"
+        },
+        {
+          "@id": "config/rbac/role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/service_account.yaml"
+        },
+        {
+          "@id": "config/samples/kubecontainer_v1alpha1_kubecontainer.yaml"
+        },
+        {
+          "@id": "config/samples/kustomization.yaml"
+        },
+        {
+          "@id": "deploy/."
+        },
+        {
+          "@id": "deploy/AGENT-STACK.md"
+        },
+        {
+          "@id": "deploy/GITLAB.md"
+        },
+        {
+          "@id": "deploy/KUBECONTAINER-HOME.md"
+        },
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
+          "@id": "deploy/ORG-NAME.md"
+        },
+        {
+          "@id": "deploy/REFERENCES.md"
+        },
+        {
+          "@id": "deploy/STACK.md"
+        },
+        {
+          "@id": "deploy/TOOLCHAIN.md"
+        },
+        {
+          "@id": "deploy/VPS.md"
+        },
+        {
+          "@id": "deploy/arithmetic-kube.yaml"
+        },
+        {
+          "@id": "deploy/deploy.sh"
+        },
+        {
+          "@id": "deploy/site-kube.yaml"
+        },
+        {
+          "@id": "deploy/tofu/main.tf"
+        },
+        {
+          "@id": "deploy/zot.yaml"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/BENCHMARKS.md"
+        },
+        {
+          "@id": "docs/CONTROL-PANEL.md"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/DOCTRINE-MAP.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/GO-TO-MARKET.md"
+        },
+        {
+          "@id": "docs/HEADLESS-DELIVERY.md"
+        },
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        },
+        {
+          "@id": "docs/LICENSING-DECISION.md"
+        },
+        {
+          "@id": "docs/MEASUREMENT-STANDARD.md"
+        },
+        {
+          "@id": "docs/PERSONAL.md"
+        },
+        {
+          "@id": "docs/PRIMITIVES.md"
+        },
+        {
+          "@id": "docs/RELEASE-SOP.md"
+        },
+        {
+          "@id": "docs/SOLID-STATE-DATABASE.md"
+        },
+        {
+          "@id": "docs/TOOLS.md"
+        },
+        {
+          "@id": "docs/VENDOR-ELIGIBILITY.md"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "docs/assessments"
+        },
+        {
+          "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md"
+        },
+        {
+          "@id": "docs/assessments/XDM-ALIGNMENT.md"
+        },
+        {
+          "@id": "docs/manual"
+        },
+        {
+          "@id": "docs/manual/CONTRACTS.md"
+        },
+        {
+          "@id": "docs/manual/FAQ.md"
+        },
+        {
+          "@id": "docs/manual/HOW-TO-USE.md"
+        },
+        {
+          "@id": "docs/manual/LICENSES.md"
+        },
+        {
+          "@id": "docs/provenance/FOUNDER-PRIOR-ART.md"
+        },
+        {
+          "@id": "docs/provenance/PROMPTS-2026-06-12-session2.md"
+        },
+        {
+          "@id": "eval/README.md"
+        },
+        {
+          "@id": "eval/corpus"
+        },
+        {
+          "@id": "eval/corpus/task-001-deprecated-recorder.yaml"
+        },
+        {
+          "@id": "eval/corpus/task-002-pin-kind-source.yaml"
+        },
+        {
+          "@id": "eval/corpus/task-003-backward-compat-gate.yaml"
+        },
+        {
+          "@id": "eval/graph-planned.txt"
+        },
+        {
+          "@id": "eval/graph.txt"
+        },
+        {
+          "@id": "eval/harness.sh"
+        },
+        {
+          "@id": "eval/vocabulary-baseline.txt"
+        },
+        {
+          "@id": "eval/vocabulary.txt"
+        },
+        {
+          "@id": "hack/boilerplate.go.txt"
+        },
+        {
+          "@id": "hack/build-vocabulary.sh"
+        },
+        {
+          "@id": "hack/check-promise.sh"
+        },
+        {
+          "@id": "hack/check-vocabulary.sh"
+        },
+        {
+          "@id": "hack/deployrehearsal"
+        },
+        {
+          "@id": "hack/deployrehearsal/main.go"
+        },
+        {
+          "@id": "hack/operatorpoc"
+        },
+        {
+          "@id": "hack/operatorpoc/main.go"
+        },
+        {
+          "@id": "internal/controller/backward_compat_test.go"
+        },
+        {
+          "@id": "internal/controller/kubecontainer_controller.go"
+        },
+        {
+          "@id": "internal/controller/kubecontainer_controller_test.go"
+        },
+        {
+          "@id": "internal/controller/suite_test.go"
+        },
+        {
+          "@id": "internal/controller/testdata/compat"
+        },
+        {
+          "@id": "internal/controller/testdata/compat/v0_1_0_autoscale_ingress.yaml"
+        },
+        {
+          "@id": "internal/controller/testdata/compat/v0_1_0_full.yaml"
+        },
+        {
+          "@id": "internal/controller/testdata/compat/v0_1_0_minimal.yaml"
+        },
+        {
+          "@id": "internal/controller/testdata/compat/v0_2_0_arithmetic.yaml"
+        },
+        {
+          "@id": "internal/controller/testdata/compat/v0_2_1_annotated_replicas.yaml"
+        },
+        {
+          "@id": "registry/SKELETON-HOST.json"
+        },
+        {
+          "@id": "registry/SKELETON.json"
+        },
+        {
+          "@id": "registry/agents"
+        },
+        {
+          "@id": "registry/agents/first-code-maintainer.json"
+        },
+        {
+          "@id": "registry/blueprints"
+        },
+        {
+          "@id": "registry/blueprints/code-maintainer.json"
+        },
+        {
+          "@id": "registry/blueprints/issue-resolver.json"
+        },
+        {
+          "@id": "registry/blueprints/leap-micro.json"
+        },
+        {
+          "@id": "registry/blueprints/microos.json"
+        },
+        {
+          "@id": "release/PROMISE"
+        },
+        {
+          "@id": "release/REQUEST"
+        },
+        {
+          "@id": "site/CNAME.example"
+        },
+        {
+          "@id": "site/arithmetic.html"
+        },
+        {
+          "@id": "site/index.html"
+        },
+        {
+          "@id": "site/panel.html"
+        },
+        {
+          "@id": "test/e2e"
+        },
+        {
+          "@id": "test/e2e/e2e_suite_test.go"
+        },
+        {
+          "@id": "test/e2e/e2e_test.go"
+        },
+        {
+          "@id": "test/utils/utils.go"
+        }
+      ],
       "name": "eval/graph.jsonld"
     },
     {
       "@id": "eval/graph.txt",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": ".github/workflows/."
+        },
+        {
+          "@id": ".github/workflows/drift-audit.yml"
+        },
+        {
+          "@id": ".github/workflows/release.yml"
+        },
+        {
+          "@id": ".github/workflows/test-e2e.yml"
+        },
+        {
+          "@id": "api/v1alpha1"
+        },
+        {
+          "@id": "api/v1alpha1/kubecontainer_types.go"
+        },
+        {
+          "@id": "cmd/codecompiler"
+        },
+        {
+          "@id": "cmd/codecompiler/main.go"
+        },
+        {
+          "@id": "cmd/homesetup"
+        },
+        {
+          "@id": "cmd/main.go"
+        },
+        {
+          "@id": "cmd/recordgraph"
+        },
+        {
+          "@id": "cmd/recordgraph/main.go"
+        },
+        {
+          "@id": "cmd/schemakeeper"
+        },
+        {
+          "@id": "cmd/schemakeeper/main.go"
+        },
+        {
+          "@id": "cmd/structuredinstructions"
+        },
+        {
+          "@id": "cmd/structuredinstructions/main.go"
+        },
+        {
+          "@id": "config/crd"
+        },
+        {
+          "@id": "config/crd/bases"
+        },
+        {
+          "@id": "config/crd/kustomization.yaml"
+        },
+        {
+          "@id": "config/default"
+        },
+        {
+          "@id": "config/default/kustomization.yaml"
+        },
+        {
+          "@id": "config/manager"
+        },
+        {
+          "@id": "config/prometheus/kustomization.yaml"
+        },
+        {
+          "@id": "config/rbac/kustomization.yaml"
+        },
+        {
+          "@id": "config/rbac/role.yaml"
+        },
+        {
+          "@id": "deploy/."
+        },
+        {
+          "@id": "deploy/AGENT-STACK.md"
+        },
+        {
+          "@id": "deploy/GITLAB.md"
+        },
+        {
+          "@id": "deploy/KUBECONTAINER-HOME.md"
+        },
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
+          "@id": "deploy/ORG-NAME.md"
+        },
+        {
+          "@id": "deploy/REFERENCES.md"
+        },
+        {
+          "@id": "deploy/STACK.md"
+        },
+        {
+          "@id": "deploy/TOOLCHAIN.md"
+        },
+        {
+          "@id": "deploy/VPS.md"
+        },
+        {
+          "@id": "deploy/arithmetic-kube.yaml"
+        },
+        {
+          "@id": "deploy/deploy.sh"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/BENCHMARKS.md"
+        },
+        {
+          "@id": "docs/CONTROL-PANEL.md"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/DOCTRINE-MAP.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/GO-TO-MARKET.md"
+        },
+        {
+          "@id": "docs/HEADLESS-DELIVERY.md"
+        },
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        },
+        {
+          "@id": "docs/LICENSING-DECISION.md"
+        },
+        {
+          "@id": "docs/MEASUREMENT-STANDARD.md"
+        },
+        {
+          "@id": "docs/PERSONAL.md"
+        },
+        {
+          "@id": "docs/PRIMITIVES.md"
+        },
+        {
+          "@id": "docs/RELEASE-SOP.md"
+        },
+        {
+          "@id": "docs/SOLID-STATE-DATABASE.md"
+        },
+        {
+          "@id": "docs/TOOLS.md"
+        },
+        {
+          "@id": "docs/VENDOR-ELIGIBILITY.md"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "docs/assessments"
+        },
+        {
+          "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md"
+        },
+        {
+          "@id": "docs/assessments/XDM-ALIGNMENT.md"
+        },
+        {
+          "@id": "docs/manual"
+        },
+        {
+          "@id": "docs/manual/CONTRACTS.md"
+        },
+        {
+          "@id": "docs/manual/FAQ.md"
+        },
+        {
+          "@id": "docs/manual/HOW-TO-USE.md"
+        },
+        {
+          "@id": "docs/manual/LICENSES.md"
+        },
+        {
+          "@id": "docs/provenance/FOUNDER-PRIOR-ART.md"
+        },
+        {
+          "@id": "docs/provenance/PROMPTS-2026-06-12-session2.md"
+        },
+        {
+          "@id": "eval/README.md"
+        },
+        {
+          "@id": "eval/corpus"
+        },
+        {
+          "@id": "eval/corpus/task-002-pin-kind-source.yaml"
+        },
+        {
+          "@id": "eval/graph-planned.txt"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/harness.sh"
+        },
+        {
+          "@id": "eval/vocabulary-baseline.txt"
+        },
+        {
+          "@id": "eval/vocabulary.txt"
+        },
+        {
+          "@id": "hack/boilerplate.go.txt"
+        },
+        {
+          "@id": "hack/build-vocabulary.sh"
+        },
+        {
+          "@id": "hack/check-promise.sh"
+        },
+        {
+          "@id": "hack/check-vocabulary.sh"
+        },
+        {
+          "@id": "hack/deployrehearsal"
+        },
+        {
+          "@id": "hack/deployrehearsal/main.go"
+        },
+        {
+          "@id": "hack/operatorpoc"
+        },
+        {
+          "@id": "hack/operatorpoc/main.go"
+        },
+        {
+          "@id": "internal/controller/kubecontainer_controller.go"
+        },
+        {
+          "@id": "internal/controller/testdata/compat"
+        },
+        {
+          "@id": "registry/SKELETON-HOST.json"
+        },
+        {
+          "@id": "registry/SKELETON.json"
+        },
+        {
+          "@id": "registry/agents"
+        },
+        {
+          "@id": "registry/agents/first-code-maintainer.json"
+        },
+        {
+          "@id": "registry/blueprints"
+        },
+        {
+          "@id": "registry/blueprints/code-maintainer.json"
+        },
+        {
+          "@id": "registry/blueprints/issue-resolver.json"
+        },
+        {
+          "@id": "registry/blueprints/leap-micro.json"
+        },
+        {
+          "@id": "registry/blueprints/microos.json"
+        },
+        {
+          "@id": "release/PROMISE"
+        },
+        {
+          "@id": "release/REQUEST"
+        },
+        {
+          "@id": "site/arithmetic.html"
+        },
+        {
+          "@id": "site/index.html"
+        },
+        {
+          "@id": "site/panel.html"
+        },
+        {
+          "@id": "test/e2e"
+        },
+        {
+          "@id": "test/utils/utils.go"
+        }
+      ],
       "name": "eval/graph.txt"
     },
     {
       "@id": "eval/harness.sh",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/corpus"
+        }
+      ],
       "name": "eval/harness.sh"
     },
     {
@@ -635,13 +1789,63 @@
       "name": "eval/vocabulary.txt"
     },
     {
+      "@id": "go.mod",
+      "@type": "CreativeWork",
+      "name": "go.mod"
+    },
+    {
+      "@id": "go.sum",
+      "@type": "CreativeWork",
+      "name": "go.sum"
+    },
+    {
+      "@id": "hack/boilerplate.go.txt",
+      "@type": "CreativeWork",
+      "name": "hack/boilerplate.go.txt"
+    },
+    {
       "@id": "hack/build-vocabulary.sh",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "eval/vocabulary.txt"
+        }
+      ],
       "name": "hack/build-vocabulary.sh"
+    },
+    {
+      "@id": "hack/check-promise.sh",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "release/PROMISE"
+        }
+      ],
+      "name": "hack/check-promise.sh"
     },
     {
       "@id": "hack/check-vocabulary.sh",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/assessments"
+        },
+        {
+          "@id": "eval/vocabulary-baseline.txt"
+        },
+        {
+          "@id": "eval/vocabulary.txt"
+        }
+      ],
       "name": "hack/check-vocabulary.sh"
     },
     {
@@ -650,9 +1854,40 @@
       "name": "hack/deployrehearsal"
     },
     {
+      "@id": "hack/deployrehearsal/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/crd/bases"
+        },
+        {
+          "@id": "deploy/."
+        },
+        {
+          "@id": "deploy/arithmetic-kube.yaml"
+        }
+      ],
+      "name": "hack/deployrehearsal/main.go"
+    },
+    {
       "@id": "hack/operatorpoc",
       "@type": "CreativeWork",
       "name": "hack/operatorpoc"
+    },
+    {
+      "@id": "hack/operatorpoc/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/crd/bases"
+        }
+      ],
+      "name": "hack/operatorpoc/main.go"
+    },
+    {
+      "@id": "internal/controller/backward_compat_test.go",
+      "@type": "CreativeWork",
+      "name": "internal/controller/backward_compat_test.go"
     },
     {
       "@id": "internal/controller/kubecontainer_controller.go",
@@ -660,9 +1895,49 @@
       "name": "internal/controller/kubecontainer_controller.go"
     },
     {
+      "@id": "internal/controller/kubecontainer_controller_test.go",
+      "@type": "CreativeWork",
+      "name": "internal/controller/kubecontainer_controller_test.go"
+    },
+    {
+      "@id": "internal/controller/suite_test.go",
+      "@type": "CreativeWork",
+      "name": "internal/controller/suite_test.go"
+    },
+    {
       "@id": "internal/controller/testdata/compat",
       "@type": "CreativeWork",
       "name": "internal/controller/testdata/compat"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_1_0_autoscale_ingress.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_1_0_autoscale_ingress.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_1_0_full.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_1_0_full.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_1_0_minimal.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_1_0_minimal.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_2_0_arithmetic.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_2_0_arithmetic.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_2_1_annotated_replicas.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_2_1_annotated_replicas.yaml"
+    },
+    {
+      "@id": "project.toml",
+      "@type": "CreativeWork",
+      "name": "project.toml"
     },
     {
       "@id": "registry/SKELETON-HOST.json",
@@ -735,9 +2010,74 @@
       "name": "registry/blueprints/microos.json"
     },
     {
+      "@id": "release/PROMISE",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "hack/check-promise.sh"
+        }
+      ],
+      "name": "release/PROMISE"
+    },
+    {
       "@id": "release/REQUEST",
       "@type": "CreativeWork",
       "name": "release/REQUEST"
+    },
+    {
+      "@id": "site/CNAME.example",
+      "@type": "CreativeWork",
+      "name": "site/CNAME.example"
+    },
+    {
+      "@id": "site/arithmetic.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/arithmetic-kube.yaml"
+        }
+      ],
+      "name": "site/arithmetic.html"
+    },
+    {
+      "@id": "site/index.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/BENCHMARKS.md"
+        }
+      ],
+      "name": "site/index.html"
+    },
+    {
+      "@id": "site/panel.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "site/panel.html"
+    },
+    {
+      "@id": "test/e2e",
+      "@type": "CreativeWork",
+      "name": "test/e2e"
+    },
+    {
+      "@id": "test/e2e/e2e_suite_test.go",
+      "@type": "CreativeWork",
+      "name": "test/e2e/e2e_suite_test.go"
+    },
+    {
+      "@id": "test/e2e/e2e_test.go",
+      "@type": "CreativeWork",
+      "name": "test/e2e/e2e_test.go"
+    },
+    {
+      "@id": "test/utils/utils.go",
+      "@type": "CreativeWork",
+      "name": "test/utils/utils.go"
     }
   ]
 }
