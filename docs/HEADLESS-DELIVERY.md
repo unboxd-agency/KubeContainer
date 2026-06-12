@@ -387,6 +387,25 @@ ground; the agency sells answering; and confusing the two is how
 enterprises came to believe they had bought a counterparty when
 they had rented a floor.
 
+Which Kubernetes solved — at its layer, and the founder's point is
+that it really is solved: the keeping problem, mechanical at last.
+Declared state, a loop that reconciles toward it forever, drift
+reverted without a meeting, the workload restarted without a
+ticket, self-healing as a property of the system rather than a
+heroic act of its operators — everything this doctrine demands of
+keeping, Kubernetes proved possible and shipped as commons, which
+is exactly why this house is Kubernetes-native and why the
+eligibility bar demands canonical ground. The boundary of the
+solution is the boundary of the layer: Kubernetes keeps workloads
+on clusters; it does not offer your paths, walk your BOM, hold
+your contract, or answer your escalation — it solved the keeping,
+not the answering. So the stack's honest ledger reads: the
+hyperscalers sell the floor, Kubernetes solved the keeping above
+it, and the seat still vacant is the one this doctrine staffs —
+the answering. The kube kinds extend the solved keeping up the
+stack; the agency holds what was never anyone's to solve with
+code: the contract.
+
 Two clauses sharpen the settlement. First, holding is not enough:
 the platform must *offer* the path — not a registry the agent must
 think to search, but the path presented at the moment of need, on
