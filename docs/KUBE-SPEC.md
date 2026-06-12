@@ -179,3 +179,38 @@ Brand discipline: the protectable mark is the full line, never the
 bare word — *soul* alone is unownable and is not claimed. The line is
 claimed in NOTICE alongside the marks it extends, and defined in the
 lexicon before use, per protocol P2.
+
+## 10. The instruction manual
+
+The founder's shipping law: a product must be shipped with the
+instruction manual — containing everything related to its lifecycle,
+and the contacts of the people owning each aspect of its
+performance. No kube leaves the dock without its book, and the book
+has two halves, both mandatory:
+
+- **The lifecycle, whole** — every stage of §3 written for the
+  holder's hands: how it is declared, what admits it, how it
+  converges, where it serves, what evidence it emits and where to
+  read it, and how it exits — including the repair paths, the
+  upgrade walk, the rollback, the destruct provisions if any (with
+  their exit clauses), and the warranty's exact conditions (what is
+  promised, under which conditions, to which tested bound). The
+  manual is the declaration translated to the owner's language:
+  everything the kube will do, before it does it.
+- **The contacts, named** — for every aspect of the product's
+  performance, the person or group owning it: who answers for
+  availability, who for security, who for the supply chain, who for
+  the keeping, who for the bill — each one a working contact (the
+  owner rule: named, reachable, currently working; an org-box
+  without a person is an empty seat printed in the manual). The
+  manual is where the stack of contracts becomes a phone book: every
+  seam's answerer, listed beside the seam.
+
+A product without the manual is a box without its lid's writing —
+the buyer holds the thing but not its contract; and a manual without
+contacts is documentation without accountability, which this house
+does not ship. The instruction manual is itself part of the BOM
+(line-itemed, versioned with the product, updated by the same
+gauntlet), so that what the buyer unwraps is never just the artifact
+but the whole answering: what it does, how it lives, how it dies,
+and exactly who picks up when any of that goes wrong.
