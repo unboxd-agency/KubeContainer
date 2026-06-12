@@ -550,7 +550,19 @@ fabric — five lines, given in one breath:
    daring. Free tools mean the gap between a framework and a
    built thing is now skill and will, not capital; the world
    handed the builder its instruments and kept only the building
-   for him to do.
+   for him to do. And the loop that closes every command: verify
+   always — does the code compile, and does it conform? Two
+   questions asked after every step, never assumed: compile (the
+   admission gate — it is well-formed, its names resolve, it can
+   run at all) and conform (it does what it declared, against the
+   spec, the era, the contract — the gauntlet's verdict, not the
+   author's hope). No step counted done until both answer yes; no
+   "it should work" ever standing in for "it compiled and it
+   conformed." Verification is not the last phase but the
+   punctuation of every command — feel the work, command the code,
+   and verify always, because a step unverified is a vibe that
+   sneaked past the gate, and the whole discipline is just refusing
+   to let it.
 4. *External validation is not required to start work.* The
    founder needs no one's approval — the title is conferred by the
    building — so the work begins on the strength of the framework
