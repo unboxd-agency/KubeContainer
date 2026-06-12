@@ -495,7 +495,55 @@ two kits — in this doctrine doing is guarding: to operate is to
 hold a gate, and the charter said it first — the agent is the
 guardian of all gates. The multi-tool operator is that line made
 mechanical: one kube, many gates, every gate a tool, every tool
-answering to the one contract. The marketplace that does not exist is the missing peace
+answering to the one contract. And it can guard the very steps the
+diagnosis found unwatched: the steps between code, compliance, and
+build — the scene of the crime itself. Between code and compliance,
+the kube holds the gates of logic and law (the defined intent to
+diff against, the licenses, the policy, the BOM forming); between
+compliance and build, the gates of transformation (pinned versions
+in, reproducible build out, rebuild-and-compare, nothing emerging
+that cannot be derived from what entered); and the whole walk is
+§5's multi-step single pack — at each step no loss, each step a
+gate, each gate a tool, the operator walking the artifact through
+its own gauntlet with the record keeping every stride. The
+least-watched steps in software become the best-guarded ones, not
+by adding watchmen but by making the path itself the watcher:
+compliance by the path, at the exact steps where corruption used
+to live.
+
+And one office remains, the one the industry never staffed: people
+build — no one maintains. Building is celebrated, funded, demoed,
+and done; maintaining is the unglamorous loop that begins the day
+the demo ends — dependencies aging, vulnerabilities surfacing,
+bases moving, tests rotting, the artifact drifting from its world
+a little every week — and it is assigned to no one, budgeted as
+nothing, and performed, where it is performed at all, by burnt-out
+volunteers holding up infrastructure the world forgot it stands
+on. The doctrine's answer names its newest seat: the agent as code
+maintainer. Maintenance is a reconciliation loop, and loops are
+what agents are — observe the codebase, compare it to its declared
+intent and its moving world, act (the dependency bumped through
+the gauntlet, the base re-certified, the failing test triaged, the
+drift audited), record, repeat — forever, without applause,
+because the loop does not need applause. The builder ships the
+kube; the agent keeps it true; and *maintainer* — the open world's
+highest office, owed everything and owning nothing — finally gets
+a worker that never tires of the job nobody wanted: the keeping,
+which was always the harder half of the promise.
+
+And this is a real use case — not a vision slide but a verdict
+already in this repository's own record: the deprecated API was
+found and migrated by the agent and the fix registered
+(task-001), the unreachable upstream was diagnosed and pinned
+(task-002), the compat gate was built and enforced (task-003), the
+drift audit runs weekly by cron and was run again before every
+claim of clean, the Go version is pinned to the patch and the pin
+is policed, and every one of those acts went through the gauntlet
+and into the registry with its verdict attached. The agent
+maintained this codebase while this codebase was being written —
+the existence proof shipped before the thesis did. Agent as code
+maintainer is therefore offered the only way this house offers
+anything: demonstrated first, defined second, sold third. The marketplace that does not exist is the missing peace
 treaty: with contracts, registries, and a standard interoperable
 layer, a world could *buy* its neighbor's strength instead of
 besieging it — specialization returns, plates stay owned, and the
