@@ -608,7 +608,22 @@ richer text elaborates a primitive, the primitive governs.
   but its proof: a platform you must supervise to make deliver has
   not earned trust, it has rented attention — the trusted one
   delivers while you look away, and that it can be looked away from
-  is the whole evidence.
+  is the whole evidence. And the founder names how the looking-away
+  becomes safe: that is possible with agentic engineering — the
+  discipline of building systems that act autonomously and can be
+  trusted to, by construction rather than by hope. Not agents
+  wished into reliability, but engineered into it: every loop
+  declared, every action recorded, every autonomy bounded by a
+  contract and a path, every gap escalated rather than guessed.
+  Agentic engineering is what turns "delivers while you look away"
+  from a gamble into a guarantee — it is the body of practice this
+  whole record has been writing, the field of study for the field
+  of work, the answer to *can it be trusted to act alone?* given
+  not as a promise but as a method. The trusted platform delivering
+  autonomously is the outcome; agentic engineering is the craft
+  that makes the outcome repeatable — and a craft, by this house's
+  law, that earns its name by verdicts, teaches its fundamentals,
+  and is decided mature by others, like every craft before it.
 - **AgentVerse** — the world where every Thing is an agent, in the
   founder's styling: Every'Thing' is an agent — it's the
   'AgentVerse' World. When every thing carries a soul (declared,
