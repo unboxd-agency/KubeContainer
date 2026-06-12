@@ -148,12 +148,22 @@ func tokens(content string, isJSON bool) []string {
 // data, the DBpedia family's interchange format.
 func writeJSONLD(nodes, edges []string) error {
 	cites := map[string][]map[string]string{}
+	all := map[string]bool{}
+	for _, n := range nodes {
+		all[n] = true
+	}
 	for _, e := range edges {
 		parts := strings.SplitN(e, " -> ", 2)
 		cites[parts[0]] = append(cites[parts[0]], map[string]string{"@id": parts[1]})
+		all[parts[1]] = true
 	}
-	graph := make([]map[string]any, 0, len(nodes))
-	for _, n := range nodes {
+	var ids []string
+	for id := range all {
+		ids = append(ids, id)
+	}
+	sort.Strings(ids)
+	graph := make([]map[string]any, 0, len(ids))
+	for _, n := range ids {
 		entry := map[string]any{"@id": n, "@type": "CreativeWork", "name": n}
 		if c := cites[n]; len(c) > 0 {
 			entry["citation"] = c

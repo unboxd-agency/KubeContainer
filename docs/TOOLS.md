@@ -443,6 +443,15 @@ name their intent; nothing removed, nothing duplicated.
   https://www.dbpedia.org/ — founder-supplied, the extracted-graph
   pattern; https://schema.org/ — the vocabulary the JSON-LD face
   speaks).
+- **SchemaKeeper** — built. The schema as a tool of the house, the
+  founder's order: one binary that keeps the record's machine face
+  true to its pinned schema. It validates `eval/graph.jsonld` against
+  schema.org (the pinned context), the pinned type set, and the rule
+  DBpedia tolerates breaking at scale and this record refuses at the
+  desk: every citation must resolve to a node present in the graph —
+  no dangling nodes. Source: `cmd/schemakeeper/main.go`; run:
+  `make schema-check` (point of reference: https://schema.org/ —
+  the pinned vocabulary).
 - **SourceGround** — working, as scripts to be fused into one
   binary. The tool of the founder's law that you define a term
   before using it and bind the meaning from the source, with source

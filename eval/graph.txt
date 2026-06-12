@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=47 edges=97
+# nodes=47 edges=99
 AGENTS.md -> config/rbac/role.yaml
 CHANGELOG.md -> docs/AGENT-PLATFORM.md
 CHANGELOG.md -> docs/DESIGN.md
@@ -35,6 +35,7 @@ docs/DESIGN.md -> release/REQUEST
 docs/DOCTRINE-MAP.md -> cmd/codecompiler
 docs/DOCTRINE-MAP.md -> cmd/homesetup
 docs/DOCTRINE-MAP.md -> cmd/recordgraph
+docs/DOCTRINE-MAP.md -> cmd/schemakeeper
 docs/DOCTRINE-MAP.md -> cmd/structuredinstructions
 docs/DOCTRINE-MAP.md -> deploy/AGENT-STACK.md
 docs/DOCTRINE-MAP.md -> deploy/GITLAB.md
@@ -69,6 +70,7 @@ docs/DOCTRINE-MAP.md -> internal/controller/testdata/compat
 docs/KUBE-SPEC.md -> docs/manual
 docs/TOOLS.md -> cmd/codecompiler/main.go
 docs/TOOLS.md -> cmd/recordgraph/main.go
+docs/TOOLS.md -> cmd/schemakeeper/main.go
 docs/TOOLS.md -> cmd/structuredinstructions/main.go
 docs/TOOLS.md -> docs/VOCABULARY.md
 docs/TOOLS.md -> eval/graph-planned.txt

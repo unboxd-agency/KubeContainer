@@ -2,6 +2,16 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@id": ".github/workflows/drift-audit.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/drift-audit.yml"
+    },
+    {
+      "@id": ".github/workflows/release.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/release.yml"
+    },
+    {
       "@id": "AGENTS.md",
       "@type": "CreativeWork",
       "citation": [
@@ -94,6 +104,71 @@
       "name": "README.md"
     },
     {
+      "@id": "api/v1alpha1",
+      "@type": "CreativeWork",
+      "name": "api/v1alpha1"
+    },
+    {
+      "@id": "api/v1alpha1/kubecontainer_types.go",
+      "@type": "CreativeWork",
+      "name": "api/v1alpha1/kubecontainer_types.go"
+    },
+    {
+      "@id": "cmd/codecompiler",
+      "@type": "CreativeWork",
+      "name": "cmd/codecompiler"
+    },
+    {
+      "@id": "cmd/codecompiler/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/codecompiler/main.go"
+    },
+    {
+      "@id": "cmd/homesetup",
+      "@type": "CreativeWork",
+      "name": "cmd/homesetup"
+    },
+    {
+      "@id": "cmd/recordgraph",
+      "@type": "CreativeWork",
+      "name": "cmd/recordgraph"
+    },
+    {
+      "@id": "cmd/recordgraph/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/recordgraph/main.go"
+    },
+    {
+      "@id": "cmd/schemakeeper",
+      "@type": "CreativeWork",
+      "name": "cmd/schemakeeper"
+    },
+    {
+      "@id": "cmd/schemakeeper/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/schemakeeper/main.go"
+    },
+    {
+      "@id": "cmd/structuredinstructions",
+      "@type": "CreativeWork",
+      "name": "cmd/structuredinstructions"
+    },
+    {
+      "@id": "cmd/structuredinstructions/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/structuredinstructions/main.go"
+    },
+    {
+      "@id": "config/manager",
+      "@type": "CreativeWork",
+      "name": "config/manager"
+    },
+    {
+      "@id": "config/rbac/role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/role.yaml"
+    },
+    {
       "@id": "deploy/AGENT-STACK.md",
       "@type": "CreativeWork",
       "name": "deploy/AGENT-STACK.md"
@@ -142,6 +217,11 @@
       "@id": "deploy/VPS.md",
       "@type": "CreativeWork",
       "name": "deploy/VPS.md"
+    },
+    {
+      "@id": "deploy/deploy.sh",
+      "@type": "CreativeWork",
+      "name": "deploy/deploy.sh"
     },
     {
       "@id": "docs/AGENT-PLATFORM.md",
@@ -208,6 +288,9 @@
         },
         {
           "@id": "cmd/recordgraph"
+        },
+        {
+          "@id": "cmd/schemakeeper"
         },
         {
           "@id": "cmd/structuredinstructions"
@@ -371,6 +454,9 @@
           "@id": "cmd/recordgraph/main.go"
         },
         {
+          "@id": "cmd/schemakeeper/main.go"
+        },
+        {
           "@id": "cmd/structuredinstructions/main.go"
         },
         {
@@ -443,6 +529,11 @@
       "name": "docs/VOCABULARY.md"
     },
     {
+      "@id": "docs/assessments",
+      "@type": "CreativeWork",
+      "name": "docs/assessments"
+    },
+    {
       "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md",
       "@type": "CreativeWork",
       "citation": [
@@ -467,6 +558,11 @@
         }
       ],
       "name": "docs/assessments/XDM-ALIGNMENT.md"
+    },
+    {
+      "@id": "docs/manual",
+      "@type": "CreativeWork",
+      "name": "docs/manual"
     },
     {
       "@id": "docs/manual/CONTRACTS.md",
@@ -504,6 +600,71 @@
       "name": "eval/README.md"
     },
     {
+      "@id": "eval/corpus",
+      "@type": "CreativeWork",
+      "name": "eval/corpus"
+    },
+    {
+      "@id": "eval/graph-planned.txt",
+      "@type": "CreativeWork",
+      "name": "eval/graph-planned.txt"
+    },
+    {
+      "@id": "eval/graph.jsonld",
+      "@type": "CreativeWork",
+      "name": "eval/graph.jsonld"
+    },
+    {
+      "@id": "eval/graph.txt",
+      "@type": "CreativeWork",
+      "name": "eval/graph.txt"
+    },
+    {
+      "@id": "eval/harness.sh",
+      "@type": "CreativeWork",
+      "name": "eval/harness.sh"
+    },
+    {
+      "@id": "eval/vocabulary-baseline.txt",
+      "@type": "CreativeWork",
+      "name": "eval/vocabulary-baseline.txt"
+    },
+    {
+      "@id": "eval/vocabulary.txt",
+      "@type": "CreativeWork",
+      "name": "eval/vocabulary.txt"
+    },
+    {
+      "@id": "hack/build-vocabulary.sh",
+      "@type": "CreativeWork",
+      "name": "hack/build-vocabulary.sh"
+    },
+    {
+      "@id": "hack/check-vocabulary.sh",
+      "@type": "CreativeWork",
+      "name": "hack/check-vocabulary.sh"
+    },
+    {
+      "@id": "hack/deployrehearsal",
+      "@type": "CreativeWork",
+      "name": "hack/deployrehearsal"
+    },
+    {
+      "@id": "hack/operatorpoc",
+      "@type": "CreativeWork",
+      "name": "hack/operatorpoc"
+    },
+    {
+      "@id": "internal/controller/kubecontainer_controller.go",
+      "@type": "CreativeWork",
+      "name": "internal/controller/kubecontainer_controller.go"
+    },
+    {
+      "@id": "internal/controller/testdata/compat",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat"
+    },
+    {
       "@id": "registry/SKELETON-HOST.json",
       "@type": "CreativeWork",
       "citation": [
@@ -524,6 +685,11 @@
       "name": "registry/SKELETON.json"
     },
     {
+      "@id": "registry/agents",
+      "@type": "CreativeWork",
+      "name": "registry/agents"
+    },
+    {
       "@id": "registry/agents/first-code-maintainer.json",
       "@type": "CreativeWork",
       "citation": [
@@ -532,6 +698,11 @@
         }
       ],
       "name": "registry/agents/first-code-maintainer.json"
+    },
+    {
+      "@id": "registry/blueprints",
+      "@type": "CreativeWork",
+      "name": "registry/blueprints"
     },
     {
       "@id": "registry/blueprints/code-maintainer.json",
@@ -562,6 +733,11 @@
         }
       ],
       "name": "registry/blueprints/microos.json"
+    },
+    {
+      "@id": "release/REQUEST",
+      "@type": "CreativeWork",
+      "name": "release/REQUEST"
     }
   ]
 }

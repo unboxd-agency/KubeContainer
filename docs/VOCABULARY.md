@@ -182,6 +182,7 @@ do not edit; define terms in their source documents.
 | Reputation | `docs/AGENT-PLATFORM.md:531` |
 | Resolution | `docs/AGENT-PLATFORM.md:616` |
 | Runtime stage | `docs/DESIGN.md:129` |
+| SchemaKeeper | `docs/TOOLS.md:446` |
 | Scope | `docs/PRIMITIVES.md:113` |
 | Serverless, not stateless | `docs/SOLID-STATE-DATABASE.md:79` |
 | Session | `docs/AGENT-PLATFORM.md:528` |
@@ -192,7 +193,7 @@ do not edit; define terms in their source documents.
 | Skill | `docs/AGENT-PLATFORM.md:492` |
 | Soul | `docs/PRIMITIVES.md:93` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:767` |
-| SourceGround | `docs/TOOLS.md:446` |
+| SourceGround | `docs/TOOLS.md:455` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
@@ -244,7 +245,7 @@ do not edit; define terms in their source documents.
 | World | `docs/PRIMITIVES.md:107` |
 | World model (internal) | `docs/AGENT-PLATFORM.md:581` |
 | World-test | `docs/AGENT-PLATFORM.md:585` |
-| merge | `docs/TOOLS.md:522` |
-| push | `docs/TOOLS.md:518` |
-| release | `docs/TOOLS.md:525` |
+| merge | `docs/TOOLS.md:531` |
+| push | `docs/TOOLS.md:527` |
+| release | `docs/TOOLS.md:534` |
 | unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:700` |

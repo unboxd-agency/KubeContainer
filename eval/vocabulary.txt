@@ -177,6 +177,7 @@ repair
 reputation
 resolution
 runtime stage
+schemakeeper
 scope
 serverless, not stateless
 session

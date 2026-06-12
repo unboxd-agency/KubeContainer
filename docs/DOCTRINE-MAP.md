@@ -107,6 +107,7 @@ Each body is named with its tier(s); the document stays where it is.
 | `docs/manual/CONTRACTS.md, LICENSES.md, FAQ.md, HOW-TO-USE.md` | Constraints + Best practice | The instruction manual (KUBE-SPEC §10): the terms bind as written in their sources; the manual presents them and names the contacts. |
 | `deploy/LEAPMICRO.md` | Constraints + Best practice | The host decision binds (Leap Micro, fixed release, never rolling for a verdict host); the walk advises. |
 | `cmd/recordgraph`, `eval/graph.txt`, `eval/graph.jsonld`, `eval/graph-planned.txt` | Harness | The record as a graph, extracted never hand-written; a broken reference fails the gate; the planned file is shrink-only. |
+| `cmd/schemakeeper` | Harness | The schema kept as a tool: the graph's JSON-LD validated against the pinned schema.org vocabulary; a dangling node fails the gate. |
 
 Where a row carries two tiers, the stricter binds the passage in
 question: a Theory paragraph inside a Constitution document is still
