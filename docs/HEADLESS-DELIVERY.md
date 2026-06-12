@@ -132,6 +132,22 @@ loses nothing but the rehearsal. Compile and simulate in the venv;
 certify in the cloud; deliver at the ports; live at the surface —
 each act in its own chamber, no chamber doing another's job.
 
+And what the venv emits is bound by two more words of law: the
+build has to be one component, and it must auto-update. One
+component — the Single Binary Code of §2 arriving as exactly one
+deliverable: not an installer plus a runtime plus three helpers
+and a tray icon (each of those is another app with another wire),
+but one sealed unit with one contract, the whole promise in one
+piece. And auto-update — the keeping is not the user's chore: the
+updated component flows down the same typed channel, through the
+same gauntlet, activating in its right context (§4) with no human
+performing the vendor's maintenance for them. The user who must
+update by hand has been conscripted again (the §8 copying machine,
+now in operations); the component that updates itself through the
+recorded channel is the maintainer's loop (above) reaching all the
+way to the device: built once, delivered whole, kept true forever,
+nobody's homework.
+
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 
