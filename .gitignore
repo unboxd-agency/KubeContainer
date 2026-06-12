@@ -35,3 +35,4 @@ dist/eval-report.json
 /structuredinstructions
 dist/test-report.json
 dist/security-report.json
+/homesetup

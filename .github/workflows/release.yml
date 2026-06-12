@@ -80,7 +80,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "$TAG" dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json \
+          GOOS=linux GOARCH=amd64 go build -o dist/homesetup-linux-amd64 ./cmd/homesetup
+          gh release create "$TAG" dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
             --target "$TARGET" \
             --title "$TAG" \
             --notes "See CHANGELOG.md for this release. Install: kubectl apply -f install.yaml — image: $IMG. The eval report is the release's evidence record."
