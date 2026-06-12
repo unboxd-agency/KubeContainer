@@ -364,7 +364,63 @@ In software the test is a courtesy. The gauntlet exists to end the
 courtesy: versions pinned and recorded, tests run by the path and
 not by the author's conscience, the verdict attached to the
 artifact — testing not guaranteed by anyone's promise, but by the
-gate that will not open without it. The discipline is the same one the protocols
+gate that will not open without it.
+
+And then, in the pushing process, apps do not talk to each other —
+the one place their silence is a defect rather than a law. At
+runtime, sideways silence is the rule (§8); at push time it becomes
+the wound: N vendors push to one device with no coordination at
+all — shared libraries colliding, versions leapfrogging, one app's
+update breaking another's assumption, the device left to integrate
+N blind pushes with no integrator. And because none of them talk,
+each app carries its own version of the same thing: the same
+library bundled ten times at ten versions, the same runtime
+embedded again and again, the same fix present in three copies and
+absent in four — the device a museum of one dependency's history,
+every floor of it load-bearing. It is the deduplication law broken
+at the binary (one custodian per fact; copies are staleness waiting
+to disagree — and here they disagree in production): storage spent
+on sameness, patches that fix one copy and miss its siblings, and a
+vulnerability surface multiplied by exactly the number of apps that
+refused to share. And the bill lands on the only party with no say
+in any of it: the user gets confused. Ten apps showing the same
+fact at ten freshnesses, the same document newer here than there,
+one face saying done and another saying pending — the multi-face
+problem (§12) inflicted on the human as daily life: the machine's
+faces disagree, and the user is left to adjudicate truth between
+vendors who never met. Confusion is not a UX bug; it is the
+surface symptom of undeduplicated fact and uncoordinated push —
+and the single version of truth the charter demands is, at the
+device, exactly this doctrine: one custodian, one channel, one
+integrated delivery, faces that cannot disagree because they draw
+from one record.
+
+And the summation of the whole diagnosis, in the founder's frame:
+apps are the worlds — for the user and for the agent both. The app
+is where the work actually happens: the human's day is lived inside
+them, and now the agent's session is too — each app a sovereign
+state with its own laws, its own records, its own borders. And apps
+don't talk. So the two parties who do the world's work — the user
+and the agent — spend their working lives as couriers between
+silent sovereignties: copying, re-typing, re-feeding, re-explaining,
+carrying context across borders that have no bridges, losing a
+little of it at every crossing. The worlds are real and may stay
+sovereign — the doctrine never asks the boxes to merge. But the
+epilogue's law was written for exactly this map: bridges do not
+exist, and we must build the bridges — the agent in the app-to-app
+gap, the one channel, the shared skeleton, the single record — so
+that the user and the agent stop being the infrastructure and the
+infrastructure starts being the infrastructure. Every other assembled product
+has a final assembly: someone who receives all the parts, checks
+them against each other, and answers for the whole. The pushed
+device has none — integration happens in production, on the user,
+by accident. The doctrine's answer is already on the table: the
+coordination apps cannot do for each other is done above them — in
+the cloud, by the capable guard (§9), where the multi-base checks
+run and the typed channels are scheduled — so that what arrives at
+the ports is not N pushes but one integrated delivery, assembled
+where assembly belongs and tested as the whole the device will
+actually run. The discipline is the same one the protocols
 already prescribe for minds: pin everything, record everything,
 rebuild and compare — drift caught at the diff, every build a
 world-test of the build before it.
