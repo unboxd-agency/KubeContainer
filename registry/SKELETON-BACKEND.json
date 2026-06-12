@@ -1,0 +1,16 @@
+{
+  "skeleton": "backend-declaration/v1",
+  "required": [
+    "blueprint", "kind", "office", "image", "port",
+    "traits", "paths", "bounds"
+  ],
+  "taxonomies": {
+    "kind": ["Backend"],
+    "traits": [
+      "single-container", "embedded-db", "external-db", "rest-api",
+      "graphql-api", "realtime", "auth", "admin-ui", "headless"
+    ],
+    "paths": ["serve-headless", "declare-collections", "issue-tokens"]
+  },
+  "note": "The platform-backend contract: a backend serves headless (API only - the face stays surface-native at the edge), declares its collections, and issues tokens; the engine behind it is the blueprint's business. A backend that demands a database pod declares external-db and waits for the principal's ruling. Submission appends to registry/blueprints/; nothing removed, nothing duplicated."
+}

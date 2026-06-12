@@ -1,0 +1,11 @@
+{
+  "skeleton": "backend-declaration/v1",
+  "blueprint": "pocketbase",
+  "kind": "Backend",
+  "office": "the lightweight pick: one Go binary, embedded SQLite (the one-engine law kept), auth, collections, REST and realtime - the whole backend in the kube's own storage",
+  "image": "${config: pinned at deployment from the leaders' registry}",
+  "port": 8090,
+  "traits": ["single-container", "embedded-db", "rest-api", "realtime", "auth", "admin-ui", "headless"],
+  "paths": ["serve-headless", "declare-collections", "issue-tokens"],
+  "bounds": "data lives on the kube's claim; no DB pod ever; production scale-out is a new ruling, not a quiet upgrade"
+}

@@ -1,0 +1,11 @@
+{
+  "skeleton": "backend-declaration/v1",
+  "blueprint": "liferay",
+  "kind": "Backend",
+  "office": "the enterprise pick: portal-grade users, roles, content, and forms behind the Headless Delivery API (REST and GraphQL) - the panel capabilities pre-built",
+  "image": "liferay/portal:7.4.3.132-ga132",
+  "port": 8080,
+  "traits": ["single-container", "embedded-db", "external-db", "rest-api", "graphql-api", "auth", "admin-ui", "headless"],
+  "paths": ["serve-headless", "declare-collections", "issue-tokens"],
+  "bounds": "embedded db for evaluation only; production demands an external database - that declaration waits on the principal's ruling (the no-extra-db law); wants 4Gi memory and a slow first boot"
+}

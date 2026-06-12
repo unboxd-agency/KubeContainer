@@ -100,6 +100,8 @@ machinery is the principal's act alone):
 | The agent internet | AGenNextHub/Internet-of-Agents | named placeholder; AgentRegistry (this house) is its first running piece |
 | The knowledge base | AGenNextHub/Agents-Wiki | named placeholder; the record's graph and vocabulary machinery is its natural feed |
 | Edge AI compiler | Eclipse Aidge (pinned) | the ModelCompiler seat: model in, surface-native artifact out; first walk owed on the founder's metal |
+| Platform backend | the backend contract (registry/SKELETON-BACKEND.json) | founder's ruling: the language is Java - the Apache ecosystem is the toolbox; liferay is the first Java blueprint, pocketbase the lightweight alternative on the same contract |
+| The Attic rule | https://attic.apache.org/ | retired Apache projects are a legitimate mine - explicitly forkable; one enters only pinned at its last release and with a keeper named (the ownership doctrine: an empty seat is taken, never squatted) |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house

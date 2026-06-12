@@ -276,6 +276,11 @@
       "name": "Dockerfile"
     },
     {
+      "@id": "Dockerfile.agentregistry",
+      "@type": "CreativeWork",
+      "name": "Dockerfile.agentregistry"
+    },
+    {
       "@id": "Dockerfile.filefabric",
       "@type": "CreativeWork",
       "name": "Dockerfile.filefabric"
@@ -828,6 +833,9 @@
       "@id": "deploy/AGENT-STACK.md",
       "@type": "CreativeWork",
       "citation": [
+        {
+          "@id": "https://attic.apache.org/"
+        },
         {
           "@id": "registry/SKELETON-SPACE.json"
         }
@@ -1858,6 +1866,11 @@
       "@id": "https://arithmetic.agennext.com",
       "@type": "CreativeWork",
       "name": "https://arithmetic.agennext.com"
+    },
+    {
+      "@id": "https://attic.apache.org/",
+      "@type": "CreativeWork",
+      "name": "https://attic.apache.org/"
     },
     {
       "@id": "https://book.kubebuilder.io",

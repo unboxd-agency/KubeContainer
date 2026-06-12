@@ -12,3 +12,6 @@
 
 # Re-include the site (Dockerfile.site builds from the same context)
 !site/**
+
+# Re-include the registry (Dockerfile.agentregistry bakes it in)
+!registry/**
