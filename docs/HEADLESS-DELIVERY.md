@@ -271,7 +271,36 @@ improvising its own store, its own updater, its own silent channel,
 shipping software being the one act in computing that requires no
 license, follows no protocol, and answers to no registry — which is
 precisely how the device ended up with N wires and N supply chains
-(§8). Headless
+(§8). Set it beside any other industry and the anomaly glares: the
+rest all have their regulations and their statutory bodies — banking
+answers to central banks (the RBI class of institution: licensed
+entry, audited conduct, recorded settlement, real consequences),
+medicine to its councils, food to its safety authorities, aviation
+to its regulators, even the radio spectrum to its allocation
+bodies — every chain that can hurt its end user grew an institution
+that answers for it. Software, which now runs all of the above,
+ships with none: no licensed entry, no audited conduct, no
+settlement record, no body to answer to. The industry that delivers
+every other industry's compliance is itself the last unregulated
+delivery on earth.
+
+And the question that ends every argument for the status quo: who
+guards user rights? The bank's customer has the central bank; the
+patient has the medical council; the passenger has the aviation
+authority — the software user has a click-through EULA written by
+the counterparty, a privacy policy that changes on a server they
+do not control, and no body to appeal to when the friendly face
+spends their trust (§8). The answer, stated as the founder states
+it: no one guards user rights in the software industry. That is the
+vacancy — and the doctrine fills it by construction rather than by
+petition: the user controls all the faces (§12), the user
+signs every block that leaves, separation of duty is the user's own
+act at the edge, unboxing belongs to the end user alone, and every
+one of those rights is enforced by the machinery — keys, kernels,
+gauntlets, records — not granted by a policy that can be re-written
+upstream. Until the statutory body exists, the protocol is the
+guardian: rights that are architecture cannot be amended by the
+counterparty. Headless
 delivery is this doctrine's answer — the candidate protocol: typed
 channels, registered ports or URLs, proto-first signed blocks, the
 gauntlet, the sealed box, unboxing at the end user only, the record
