@@ -512,7 +512,18 @@ fabric — five lines, given in one breath:
    available, coherent components could build — a goal with no
    sourceable parts is a claim with no custodian, pursued. The two
    tests are not a bureaucracy but a sanity: the line between
-   daring and dreaming, between a framework and a wish.
+   daring and dreaming, between a framework and a wish. So the rule
+   for how the work is felt and how it is fixed: vibe at work, but
+   not at code. Vibe at work — bring the joy, the intuition, the
+   leaps, the surreal; the conversation, the rehearsal, the
+   pursuit of the gap is where feeling belongs and where the LLM
+   optimizes creativity. But not at code — the artifact that ships
+   is checked, not felt: declared, pinned, verdicted, owned, no
+   line trusted because it seemed right, no build accepted because
+   it ran once. The division of the whole house in five words:
+   dream at the bench, prove at the gate. Vibe is the fuel of the
+   journey and the poison of the commit — welcome at every surface
+   where nothing yet executes, barred at every port where it does.
 4. *External validation is not required to start work.* The
    founder needs no one's approval — the title is conferred by the
    building — so the work begins on the strength of the framework
