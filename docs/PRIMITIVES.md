@@ -10,13 +10,18 @@ richer text elaborates a primitive, the primitive governs.
 
 ## The parties
 
-- **Founder** — the single individual who dares to build; the title
-  belongs to the daring and the building themselves, not to any
-  company, stage, or share, and it needs no one's approval — no
-  party grants it, no party can revoke it, the building itself
-  confers it. You find a bug and start fixing it on your own — that
-  is founding, at its smallest and already whole. (This displaces,
-  deliberately, what the word has come to mean.)
+- **Founder** — the single individual who finds a gap and dares to
+  build what fills it; the title belongs to the finding, the daring,
+  and the building themselves, not to any company, stage, or share,
+  and it needs no one's approval — no party grants it, no party can
+  revoke it, the building itself confers it. You find a bug and
+  start fixing it on your own — that is founding, at its smallest
+  and already whole. (This displaces, deliberately, what the word
+  has come to mean. And the one who finds is named *founder*, not
+  *finder*, on purpose: "Finder" is already worn by a file browser,
+  and a primitive never shares its name — and *founder* is the
+  apter word besides: the finder of gaps is the founder of what
+  fills them, the find completed only by the founding.)
 - **Principal** — the one who wants something and answers for
   wanting it.
 - **Party** — anyone, human or machine, who can make a promise and
