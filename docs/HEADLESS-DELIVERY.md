@@ -93,6 +93,28 @@ destruction beyond the self is breaching everyone else's — the
 first is the safety standard, the second is what the safety
 standard exists to prevent.
 
+And the founder rules the one lawful extension, closing the
+escalated conflict with the seating it always needed: destruction
+that reaches the hardware exists only as the hardware's own
+provision — the hardware must be registered, and the contract must
+be there with a trusted provider honoring the clause. Where a
+device is built by its vendor to destroy its own secrets or
+disable its own silicon on tamper — the key that zeroes, the drive
+that crypto-erases, the module that bricks itself shut — that act
+is lawful precisely because every seat is filled: the hardware is
+in the registry (known, named, owned), the destruct clause is
+written in the device's own contract, the provider is trusted and
+identified, and the party honoring the clause is the party who
+built the thing and holds its silicon contract. Software may
+*invoke* what the hardware's contract provides, through the
+registered interface, under the recorded authorization — it may
+never improvise what no contract holds. The difference is the
+whole of the law: a tamper-zeroing module is a kept promise; the
+same destruction without the registration, the contract, and the
+trusted provider is sabotage with a safety standard's vocabulary.
+Registered, contracted, honored — three conditions, all required,
+none waivable; that is what non-negotiable means.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the
