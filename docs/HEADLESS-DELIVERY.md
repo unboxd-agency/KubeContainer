@@ -368,6 +368,22 @@ so nothing is hunted: the two properties that turn a device's
 storage into a system's memory — and the exact pair the
 SolidStateDatabase was declared to deliver.
 
+Two more properties complete the memory's law. Replicated across
+all worlds — every sovereign world carries the whole record, the
+decentralized-canon rule applied to system memory: no world reads
+another's copy through a straw, no center holds what the edges
+merely cache; amendments propagate as pulls, the replica is whole
+wherever it lands, and a world cut off loses freshness, never
+memory. And governed by a meta model — the schema of schemas: every
+skeleton in the memory is itself an instance of one declared
+meta-skeleton, so the memory can admit a kind it has never seen by
+checking it against the structure all structures share. The meta
+model is what lets one memory serve all worlds without becoming
+the union of their guesses — new worlds arrive, declare their
+skeletons in the meta model's terms, and are indexable on arrival;
+nothing ad hoc, nothing special-cased, the registry's deepest
+floor: even structure has a structure, and it is on the record.
+
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 
