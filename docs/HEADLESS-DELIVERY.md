@@ -194,11 +194,17 @@ keep their walls; the agent is the bridge built the lawful way
 tools); and the gap, once the attack surface, becomes the product.
 
 And the boundary of the office is drawn as sharply as the office:
-the agent's gap is app to app — not between device and app, and not
-between driver and hub. The vertical seams belong to the parties who
-hold their contracts: device to app is the OS's seam (the kernel,
-the ports, the native checks of §10), driver to hub is the hardware
-partnership's seam (the manufacturer with the right BOM, §5). An
+the agent's gap is app to app — not between device and app, not
+between driver and hub, and not between function and function. The
+vertical seams belong to the parties who hold their contracts:
+device to app is the OS's seam (the kernel, the ports, the native
+checks of §10), driver to hub is the hardware partnership's seam
+(the manufacturer with the right BOM, §5). And the seam inside the
+program belongs to the program: function to function is a call,
+inside the one binary of §2, and the standard definition already
+ruled it — work an agent would do between two functions is work
+that should have been a function call. An agent there is not
+governance; it is overhead wearing a contract. An
 agent inserting itself vertically would be a shim in someone else's
 contract — exactly the riding-alongside this doctrine buried in §2.
 The agent works the horizontal: between peers, between boxes,
