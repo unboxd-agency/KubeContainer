@@ -452,6 +452,19 @@ name their intent; nothing removed, nothing duplicated.
   no dangling nodes. Source: `cmd/schemakeeper/main.go`; run:
   `make schema-check` (point of reference: https://schema.org/ —
   the pinned vocabulary).
+- **FileFabric** — built, v0. The VDFS seat, taken fresh: one virtual
+  file fabric across every device of a principal, every file known by
+  its content (SHA-256), the catalog one schema.org JSON-LD document
+  that devices merge into — the same file on two devices is one
+  object with two locations. `filefabric index -dir -device` walks
+  and merges; `filefabric serve` is the web face (the list, the
+  catalog, the file by content hash). Founder's decision 2026-06-12:
+  the capability rebuilt in this house, not the code adopted — prior
+  art is Spacedrive's VDFS (point of reference:
+  https://spacedrive.com/blog/spacedrive-v3-launch — upstream's v3
+  deliberately cut cross-device sync and dedup, leaving this seat
+  empty; their code is AGPL-3.0 and stays theirs). Source:
+  `cmd/filefabric/main.go`; build: `go build ./cmd/filefabric`.
 - **SourceGround** — working, as scripts to be fused into one
   binary. The tool of the founder's law that you define a term
   before using it and bind the meaning from the source, with source

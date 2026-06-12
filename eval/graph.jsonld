@@ -406,6 +406,16 @@
       "name": "cmd/codecompiler/main.go"
     },
     {
+      "@id": "cmd/filefabric",
+      "@type": "CreativeWork",
+      "name": "cmd/filefabric"
+    },
+    {
+      "@id": "cmd/filefabric/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/filefabric/main.go"
+    },
+    {
       "@id": "cmd/homesetup",
       "@type": "CreativeWork",
       "name": "cmd/homesetup"
@@ -1196,6 +1206,9 @@
           "@id": "cmd/codecompiler"
         },
         {
+          "@id": "cmd/filefabric"
+        },
+        {
           "@id": "cmd/homesetup"
         },
         {
@@ -1368,6 +1381,9 @@
           "@id": "cmd/codecompiler/main.go"
         },
         {
+          "@id": "cmd/filefabric/main.go"
+        },
+        {
           "@id": "cmd/recordgraph/main.go"
         },
         {
@@ -1402,6 +1418,9 @@
         },
         {
           "@id": "https://schema.org/"
+        },
+        {
+          "@id": "https://spacedrive.com/blog/spacedrive-v3-launch"
         },
         {
           "@id": "https://www.dbpedia.org/"
@@ -2344,6 +2363,11 @@
       "name": "https://schema.org/"
     },
     {
+      "@id": "https://spacedrive.com/blog/spacedrive-v3-launch",
+      "@type": "CreativeWork",
+      "name": "https://spacedrive.com/blog/spacedrive-v3-launch"
+    },
+    {
       "@id": "https://systemd.io/",
       "@type": "CreativeWork",
       "name": "https://systemd.io/"
@@ -2475,6 +2499,11 @@
       "@id": "internal/controller/testdata/compat/v0_2_1_annotated_replicas.yaml",
       "@type": "CreativeWork",
       "name": "internal/controller/testdata/compat/v0_2_1_annotated_replicas.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_2_5_storage.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_2_5_storage.yaml"
     },
     {
       "@id": "project.toml",

@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=147 edges=332
+# nodes=148 edges=335
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -209,6 +209,7 @@ docs/DESIGN.md -> config/manager
 docs/DESIGN.md -> docs/AGENT-PLATFORM.md
 docs/DESIGN.md -> release/REQUEST
 docs/DOCTRINE-MAP.md -> cmd/codecompiler
+docs/DOCTRINE-MAP.md -> cmd/filefabric
 docs/DOCTRINE-MAP.md -> cmd/homesetup
 docs/DOCTRINE-MAP.md -> cmd/recordgraph
 docs/DOCTRINE-MAP.md -> cmd/schemakeeper
@@ -246,6 +247,7 @@ docs/DOCTRINE-MAP.md -> internal/controller/testdata/compat
 docs/GO-TO-MARKET.md -> docs/AGENT-PLATFORM.md
 docs/KUBE-SPEC.md -> docs/manual
 docs/TOOLS.md -> cmd/codecompiler/main.go
+docs/TOOLS.md -> cmd/filefabric/main.go
 docs/TOOLS.md -> cmd/recordgraph/main.go
 docs/TOOLS.md -> cmd/schemakeeper/main.go
 docs/TOOLS.md -> cmd/structuredinstructions/main.go
@@ -258,6 +260,7 @@ docs/TOOLS.md -> hack/check-vocabulary.sh
 docs/TOOLS.md -> https://insights.linuxfoundation.org/collection/details/top-open-source-projects
 docs/TOOLS.md -> https://insights.linuxfoundation.org/project/k8s
 docs/TOOLS.md -> https://schema.org/
+docs/TOOLS.md -> https://spacedrive.com/blog/spacedrive-v3-launch
 docs/TOOLS.md -> https://www.dbpedia.org/
 docs/TOOLS.md -> registry/SKELETON.json
 docs/TOOLS.md -> registry/agents
