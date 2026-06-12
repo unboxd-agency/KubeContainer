@@ -65,6 +65,7 @@ intent
 internal memory holds the mental model of the real world
 interpretation: direction where certainty runs out
 just-in-time
+kube — the soul of any'thing'
 memory
 minimal, pinned, upstream-only dependencies.
 model
@@ -115,6 +116,7 @@ serverless, not stateless
 session
 shipped policies
 skill
+soul (of a thing)
 sovereign
 sovereign & federated
 stable substance, stable state
@@ -131,6 +133,7 @@ the platform
 the platform is the foundation
 the seat theorem
 the solution is the service contract
+thing
 this moment (now)
 through an internet of agents
 through an open partner network
