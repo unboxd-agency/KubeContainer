@@ -136,8 +136,76 @@ silicon) — and they have security gaps: every app-owned wire is its
 own TLS posture, its own token store, its own update cadence, its
 own forgotten endpoint, so the device's real security is the floor
 of its worst-maintained app. Inefficiency and insecurity from the
-same root: many unrecorded channels where there should be one. And
-the root is fed by misplaced faith: the user trusts apps. The human
+same root: many unrecorded channels where there should be one.
+
+And the stakes are named: because the app actually is the container
+of real enterprise data. Behind the friendly face sits the firm's
+ledger, the customer list, the contract pipeline — the app is a box
+holding real value, but a box without the box doctrine: no declared
+contract, no provenance, no registry entry, unboxed by whoever
+reaches it, its wires bleeding the most expensive thing on the
+device. And individual apps contain dependency chains — each one
+embeds its own supply chain of frameworks, SDKs, and transitive
+packages, each with a BOM nobody asked for and nobody audits, so a
+device with N apps runs N unverified supply chains in parallel,
+against the clean-BOM law. And they contain the reporting hierarchy:
+who reports to whom, who approves what, who may see which number —
+the organization's own skeleton, encoded inside vendor software the
+organization neither inspects nor holds the contract for. Data,
+dependencies, and the org chart itself: the three crown jewels, all
+inside containers that answer to someone else's cloud.
+
+And that is what the AI companies are doing now — the same pattern
+at higher stakes: each assistant its own app, each app its own wire
+to its own respective cloud, and what flows up that wire is no
+longer one app's records but everything the assistant was shown —
+the enterprise data, the dependency chains, the reporting hierarchy,
+the complete context this doctrine says experiences must be built
+from (§10), exported wholesale to whichever vendor's cloud the
+friendly face answers to. And the absurdity that gives the pattern away: they are asking the
+user to feed the same data again. The enterprise's facts already
+live in its systems — entered once, paid for once, owned — and the
+assistant's first request is that the human re-type, re-upload,
+re-explain what the record already holds: the same data, fed again,
+into a second custodian, by hand. It is the deduplication law
+broken at the keyboard (one custodian per truth; copies are
+staleness waiting to disagree), the user conscripted as the copying
+machine, and the copy landing in a cloud the enterprise does not
+hold the contract for. A platform that needs the context re-fed
+never had lookup — it has ingestion wearing a chat window. The app
+problem was a leak; the AI repeat
+of it is a transfer of the enterprise's mind. The doctrine's verdict
+does not change, it only grows urgent: intelligence comes to the
+context through the one recorded channel — the context does not
+emigrate to the intelligence.
+
+And the positive office falls out of the indictment: the gap between
+app and app is exactly the gap the agent has to fill. Apps do not
+talk to each other; their data does not re-feed by human hand; their
+clouds do not interconnect in the dark — so the space between them
+is empty, and the founding law says what fills empty space in the
+fabric: the kube. The agent stands in the app-to-app gap as the one
+contracted carrier — reading from one container by right, writing to
+the next by contract, deduplicating instead of re-feeding, recording
+instead of leaking — turning the device's archipelago of sealed
+boxes into one navigable estate without ever merging them. The apps
+keep their walls; the agent is the bridge built the lawful way
+(trusted insights, actionable intelligence, excellent working
+tools); and the gap, once the attack surface, becomes the product.
+
+And the boundary of the office is drawn as sharply as the office:
+the agent's gap is app to app — not between device and app, and not
+between driver and hub. The vertical seams belong to the parties who
+hold their contracts: device to app is the OS's seam (the kernel,
+the ports, the native checks of §10), driver to hub is the hardware
+partnership's seam (the manufacturer with the right BOM, §5). An
+agent inserting itself vertically would be a shim in someone else's
+contract — exactly the riding-alongside this doctrine buried in §2.
+The agent works the horizontal: between peers, between boxes,
+between containers of value — where there is no contract yet, which
+is precisely why an agent with one is needed.
+
+And the root is fed by misplaced faith: the user trusts apps. The human
 at the surface extends trust to the friendly face on the screen —
 and the app spends that trust on wires the user never sees, signals
 the user never signed, clouds the user never chose. The doctrine
