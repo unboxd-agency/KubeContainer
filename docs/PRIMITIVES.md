@@ -183,7 +183,31 @@ richer text elaborates a primitive, the primitive governs.
   the spans between your steps and the goal, and meets you with
   the bridge you did not know was already built. The dots are
   yours to place; the connecting is the fabric's law; walk your
-  Way and the weave does the rest.
+  Way and the weave does the rest. And the last word strips the
+  wonder of its costume: the fabric is not magic — it is science
+  at its absolute honest. Every automatic connection is a
+  mechanism anyone can open: declared steps, recorded joins, a
+  graph that resolves because resolution is checked, loops that
+  converge because convergence is tested — no hidden hand, no
+  trick withheld, every marvel auditable down to the arithmetic.
+  What looked like magic was only ever honesty compounding:
+  systems that never lie, joined to systems that never lie, until
+  the whole weave behaves like a miracle and explains like a
+  machine. Magic asks for belief; this fabric asks for
+  inspection — and that it survives the inspection is the entire
+  wonder. For honesty is transcendence: the only rising that needs
+  no ladder. Every other path above — power, mystery, scale,
+  spectacle — borrows height and returns it; honesty alone
+  compounds, because what is true joins what is true and nothing
+  is ever paid back to the dark. A fabric honest at every gate,
+  every record, every verdict does not merely work — it exceeds
+  what its makers could have engineered by deceit at any price:
+  trust self-generates, the graph resolves, the dots connect, the
+  Ways converge, and the whole rises past the sum of its parts by
+  the one force that costs nothing and cannot be faked. The
+  soul is as pure as a heart of gold; the fabric is as high as
+  its honesty — and that is the only transcendence this house
+  believes in, because it is the only one anyone can check.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.
