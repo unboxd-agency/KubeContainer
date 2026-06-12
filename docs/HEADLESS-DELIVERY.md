@@ -332,6 +332,25 @@ agents are two guessers diverging; on stable ground with one
 record, N agents are one workforce. Multi-operator was the
 charter's word for it; this is the floor it always required.
 
+And mobility on that floor is not travel: single node, multi
+port — so the agent must teleport itself, to reach quickly. An
+agent summoned from one port to another does not crawl a wire
+dragging its state behind it — it has no state to drag: the agent
+is its contract plus its context (the Seat Theorem), the contract
+is registered, the context is shared, and both are already present
+everywhere the record is. So reaching a port is not a journey but
+a re-projection: the agent stands down here and stands up there,
+regenerated at the point of need the way a kube regenerates on
+stable ground — same declaration, same record, new face, zero
+transit. Teleportation is regeneration aimed at a destination; it
+is instant because nothing moves except where the standing
+happens; and it is safe because what appears at the new port is
+not a copy that drifted in the corridor but the one agent,
+re-derived from the one record, answering at the port the moment
+the port needs answering. Quickly was never about speed of travel —
+it is the abolition of travel: presence by lookup, the messenger
+already wherever the message must go.
+
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 
