@@ -1109,7 +1109,26 @@ operators *enabled*, where the operators now number in the
 millions and most of them are loops. The frontier is crossed by
 the auto; the floor it stands on is the enabling — and a platform
 that cannot enable at scale has not fallen short of the frontier;
-it has not yet reached the starting line. And over all the principles stands the structural
+it has not yet reached the starting line. And the stakes of the
+floor are a race against a clock the founder reads out plainly: if
+enablement is not happening at the scale of growth, you will run
+out of maintainers before auto-maintenance is achieved. The
+transition has a window: today the keeping is human, tomorrow the
+keeping ships inside the kept — and between the two, growth keeps
+compounding while the maintainer pool does not. Every year the
+estate doubles and the enablement lags, the same hands hold twice
+the ground with the same tools — burning out the exact people
+whose knowledge the auto-maintenance must be built from, the
+keepers leaving precisely when their paths most need writing
+down. Lose the race and the frontier recedes as you approach it:
+no maintainers left to teach the loops their craft, no paths
+registered because the path-walkers quit unrecorded, the
+open-source wells already running dry on schedule. So the order
+of works is not optional: enablement first, at growth's own rate —
+the paths captured while their walkers still walk, the tools
+multiplied while the hands still hold — because auto-maintenance
+is built *by* maintainers, and a fabric that exhausts them has
+eaten its seed corn and called it scale. And over all the principles stands the structural
 law, four words and absolute: if it overlaps anywhere — it will
 never scale. Two owners of one fact, two writers of one field, two
 services on one port, two loops keeping one declaration, two
