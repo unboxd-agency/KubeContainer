@@ -376,6 +376,9 @@
       "@type": "CreativeWork",
       "citation": [
         {
+          "@id": "config/crd/kustomizeconfig.yaml"
+        },
+        {
           "@id": "config/default"
         }
       ],
@@ -399,6 +402,17 @@
     {
       "@id": "config/default/kustomization.yaml",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/default/cert_metrics_manager_patch.yaml"
+        },
+        {
+          "@id": "config/default/manager_metrics_patch.yaml"
+        },
+        {
+          "@id": "config/default/metrics_service.yaml"
+        }
+      ],
       "name": "config/default/kustomization.yaml"
     },
     {
@@ -419,6 +433,11 @@
     {
       "@id": "config/manager/kustomization.yaml",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/manager/manager.yaml"
+        }
+      ],
       "name": "config/manager/kustomization.yaml"
     },
     {
@@ -434,6 +453,11 @@
     {
       "@id": "config/network-policy/kustomization.yaml",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/network-policy/allow-metrics-traffic.yaml"
+        }
+      ],
       "name": "config/network-policy/kustomization.yaml"
     },
     {
@@ -442,6 +466,12 @@
       "citation": [
         {
           "@id": "config/default/kustomization.yaml"
+        },
+        {
+          "@id": "config/prometheus/monitor.yaml"
+        },
+        {
+          "@id": "config/prometheus/monitor_tls_patch.yaml"
         }
       ],
       "name": "config/prometheus/kustomization.yaml"
@@ -474,6 +504,41 @@
     {
       "@id": "config/rbac/kustomization.yaml",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/rbac/kubecontainer_admin_role.yaml"
+        },
+        {
+          "@id": "config/rbac/kubecontainer_editor_role.yaml"
+        },
+        {
+          "@id": "config/rbac/kubecontainer_viewer_role.yaml"
+        },
+        {
+          "@id": "config/rbac/leader_election_role.yaml"
+        },
+        {
+          "@id": "config/rbac/leader_election_role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_auth_role.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_auth_role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_reader_role.yaml"
+        },
+        {
+          "@id": "config/rbac/role.yaml"
+        },
+        {
+          "@id": "config/rbac/role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/service_account.yaml"
+        }
+      ],
       "name": "config/rbac/kustomization.yaml"
     },
     {
@@ -524,6 +589,11 @@
     {
       "@id": "config/samples/kustomization.yaml",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/samples/kubecontainer_v1alpha1_kubecontainer.yaml"
+        }
+      ],
       "name": "config/samples/kustomization.yaml"
     },
     {
@@ -789,6 +859,11 @@
     {
       "@id": "docs/GO-TO-MARKET.md",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        }
+      ],
       "name": "docs/GO-TO-MARKET.md"
     },
     {
@@ -932,6 +1007,9 @@
       "citation": [
         {
           "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/assessments/XDM-ALIGNMENT.md"
         }
       ],
       "name": "docs/assessments/SWEBENCH-ALIGNMENT.md"
@@ -1025,747 +1103,11 @@
     {
       "@id": "eval/graph.jsonld",
       "@type": "CreativeWork",
-      "citation": [
-        {
-          "@id": ".githooks/pre-push"
-        },
-        {
-          "@id": ".github/workflows/."
-        },
-        {
-          "@id": ".github/workflows/drift-audit.yml"
-        },
-        {
-          "@id": ".github/workflows/lint.yml"
-        },
-        {
-          "@id": ".github/workflows/pages.yml"
-        },
-        {
-          "@id": ".github/workflows/release.yml"
-        },
-        {
-          "@id": ".github/workflows/test-e2e.yml"
-        },
-        {
-          "@id": ".github/workflows/test.yml"
-        },
-        {
-          "@id": "api/v1alpha1"
-        },
-        {
-          "@id": "api/v1alpha1/groupversion_info.go"
-        },
-        {
-          "@id": "api/v1alpha1/kubecontainer_types.go"
-        },
-        {
-          "@id": "api/v1alpha1/zz_generated.deepcopy.go"
-        },
-        {
-          "@id": "cmd/codecompiler"
-        },
-        {
-          "@id": "cmd/codecompiler/main.go"
-        },
-        {
-          "@id": "cmd/homesetup"
-        },
-        {
-          "@id": "cmd/homesetup/main.go"
-        },
-        {
-          "@id": "cmd/main.go"
-        },
-        {
-          "@id": "cmd/recordgraph"
-        },
-        {
-          "@id": "cmd/recordgraph/main.go"
-        },
-        {
-          "@id": "cmd/schemakeeper"
-        },
-        {
-          "@id": "cmd/schemakeeper/main.go"
-        },
-        {
-          "@id": "cmd/structuredinstructions"
-        },
-        {
-          "@id": "cmd/structuredinstructions/main.go"
-        },
-        {
-          "@id": "config/crd"
-        },
-        {
-          "@id": "config/crd/bases"
-        },
-        {
-          "@id": "config/crd/bases/kubecontainer.unboxd.cloud_kubecontainers.yaml"
-        },
-        {
-          "@id": "config/crd/kustomization.yaml"
-        },
-        {
-          "@id": "config/crd/kustomizeconfig.yaml"
-        },
-        {
-          "@id": "config/default"
-        },
-        {
-          "@id": "config/default/cert_metrics_manager_patch.yaml"
-        },
-        {
-          "@id": "config/default/kustomization.yaml"
-        },
-        {
-          "@id": "config/default/manager_metrics_patch.yaml"
-        },
-        {
-          "@id": "config/default/metrics_service.yaml"
-        },
-        {
-          "@id": "config/manager"
-        },
-        {
-          "@id": "config/manager/kustomization.yaml"
-        },
-        {
-          "@id": "config/manager/manager.yaml"
-        },
-        {
-          "@id": "config/network-policy/allow-metrics-traffic.yaml"
-        },
-        {
-          "@id": "config/network-policy/kustomization.yaml"
-        },
-        {
-          "@id": "config/prometheus/kustomization.yaml"
-        },
-        {
-          "@id": "config/prometheus/monitor.yaml"
-        },
-        {
-          "@id": "config/prometheus/monitor_tls_patch.yaml"
-        },
-        {
-          "@id": "config/rbac/kubecontainer_admin_role.yaml"
-        },
-        {
-          "@id": "config/rbac/kubecontainer_editor_role.yaml"
-        },
-        {
-          "@id": "config/rbac/kubecontainer_viewer_role.yaml"
-        },
-        {
-          "@id": "config/rbac/kustomization.yaml"
-        },
-        {
-          "@id": "config/rbac/leader_election_role.yaml"
-        },
-        {
-          "@id": "config/rbac/leader_election_role_binding.yaml"
-        },
-        {
-          "@id": "config/rbac/metrics_auth_role.yaml"
-        },
-        {
-          "@id": "config/rbac/metrics_auth_role_binding.yaml"
-        },
-        {
-          "@id": "config/rbac/metrics_reader_role.yaml"
-        },
-        {
-          "@id": "config/rbac/role.yaml"
-        },
-        {
-          "@id": "config/rbac/role_binding.yaml"
-        },
-        {
-          "@id": "config/rbac/service_account.yaml"
-        },
-        {
-          "@id": "config/samples/kubecontainer_v1alpha1_kubecontainer.yaml"
-        },
-        {
-          "@id": "config/samples/kustomization.yaml"
-        },
-        {
-          "@id": "deploy/."
-        },
-        {
-          "@id": "deploy/AGENT-STACK.md"
-        },
-        {
-          "@id": "deploy/GITLAB.md"
-        },
-        {
-          "@id": "deploy/KUBECONTAINER-HOME.md"
-        },
-        {
-          "@id": "deploy/LEAPMICRO.md"
-        },
-        {
-          "@id": "deploy/ORG-NAME.md"
-        },
-        {
-          "@id": "deploy/REFERENCES.md"
-        },
-        {
-          "@id": "deploy/STACK.md"
-        },
-        {
-          "@id": "deploy/TOOLCHAIN.md"
-        },
-        {
-          "@id": "deploy/VPS.md"
-        },
-        {
-          "@id": "deploy/arithmetic-kube.yaml"
-        },
-        {
-          "@id": "deploy/deploy.sh"
-        },
-        {
-          "@id": "deploy/site-kube.yaml"
-        },
-        {
-          "@id": "deploy/tofu/main.tf"
-        },
-        {
-          "@id": "deploy/zot.yaml"
-        },
-        {
-          "@id": "docs/AGENT-PLATFORM.md"
-        },
-        {
-          "@id": "docs/BENCHMARKS.md"
-        },
-        {
-          "@id": "docs/CONTROL-PANEL.md"
-        },
-        {
-          "@id": "docs/DESIGN.md"
-        },
-        {
-          "@id": "docs/DOCTRINE-MAP.md"
-        },
-        {
-          "@id": "docs/FOUNDING-PRINCIPLES.md"
-        },
-        {
-          "@id": "docs/GO-TO-MARKET.md"
-        },
-        {
-          "@id": "docs/HEADLESS-DELIVERY.md"
-        },
-        {
-          "@id": "docs/KUBE-SPEC.md"
-        },
-        {
-          "@id": "docs/LICENSING-DECISION.md"
-        },
-        {
-          "@id": "docs/MEASUREMENT-STANDARD.md"
-        },
-        {
-          "@id": "docs/PERSONAL.md"
-        },
-        {
-          "@id": "docs/PRIMITIVES.md"
-        },
-        {
-          "@id": "docs/RELEASE-SOP.md"
-        },
-        {
-          "@id": "docs/SOLID-STATE-DATABASE.md"
-        },
-        {
-          "@id": "docs/TOOLS.md"
-        },
-        {
-          "@id": "docs/VENDOR-ELIGIBILITY.md"
-        },
-        {
-          "@id": "docs/VOCABULARY.md"
-        },
-        {
-          "@id": "docs/assessments"
-        },
-        {
-          "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md"
-        },
-        {
-          "@id": "docs/assessments/XDM-ALIGNMENT.md"
-        },
-        {
-          "@id": "docs/manual"
-        },
-        {
-          "@id": "docs/manual/CONTRACTS.md"
-        },
-        {
-          "@id": "docs/manual/FAQ.md"
-        },
-        {
-          "@id": "docs/manual/HOW-TO-USE.md"
-        },
-        {
-          "@id": "docs/manual/LICENSES.md"
-        },
-        {
-          "@id": "docs/provenance/FOUNDER-PRIOR-ART.md"
-        },
-        {
-          "@id": "docs/provenance/PROMPTS-2026-06-12-session2.md"
-        },
-        {
-          "@id": "eval/README.md"
-        },
-        {
-          "@id": "eval/corpus"
-        },
-        {
-          "@id": "eval/corpus/task-001-deprecated-recorder.yaml"
-        },
-        {
-          "@id": "eval/corpus/task-002-pin-kind-source.yaml"
-        },
-        {
-          "@id": "eval/corpus/task-003-backward-compat-gate.yaml"
-        },
-        {
-          "@id": "eval/graph-planned.txt"
-        },
-        {
-          "@id": "eval/graph.txt"
-        },
-        {
-          "@id": "eval/harness.sh"
-        },
-        {
-          "@id": "eval/vocabulary-baseline.txt"
-        },
-        {
-          "@id": "eval/vocabulary.txt"
-        },
-        {
-          "@id": "hack/boilerplate.go.txt"
-        },
-        {
-          "@id": "hack/build-vocabulary.sh"
-        },
-        {
-          "@id": "hack/check-promise.sh"
-        },
-        {
-          "@id": "hack/check-vocabulary.sh"
-        },
-        {
-          "@id": "hack/deployrehearsal"
-        },
-        {
-          "@id": "hack/deployrehearsal/main.go"
-        },
-        {
-          "@id": "hack/operatorpoc"
-        },
-        {
-          "@id": "hack/operatorpoc/main.go"
-        },
-        {
-          "@id": "internal/controller/backward_compat_test.go"
-        },
-        {
-          "@id": "internal/controller/kubecontainer_controller.go"
-        },
-        {
-          "@id": "internal/controller/kubecontainer_controller_test.go"
-        },
-        {
-          "@id": "internal/controller/suite_test.go"
-        },
-        {
-          "@id": "internal/controller/testdata/compat"
-        },
-        {
-          "@id": "internal/controller/testdata/compat/v0_1_0_autoscale_ingress.yaml"
-        },
-        {
-          "@id": "internal/controller/testdata/compat/v0_1_0_full.yaml"
-        },
-        {
-          "@id": "internal/controller/testdata/compat/v0_1_0_minimal.yaml"
-        },
-        {
-          "@id": "internal/controller/testdata/compat/v0_2_0_arithmetic.yaml"
-        },
-        {
-          "@id": "internal/controller/testdata/compat/v0_2_1_annotated_replicas.yaml"
-        },
-        {
-          "@id": "registry/SKELETON-HOST.json"
-        },
-        {
-          "@id": "registry/SKELETON.json"
-        },
-        {
-          "@id": "registry/agents"
-        },
-        {
-          "@id": "registry/agents/first-code-maintainer.json"
-        },
-        {
-          "@id": "registry/blueprints"
-        },
-        {
-          "@id": "registry/blueprints/code-maintainer.json"
-        },
-        {
-          "@id": "registry/blueprints/issue-resolver.json"
-        },
-        {
-          "@id": "registry/blueprints/leap-micro.json"
-        },
-        {
-          "@id": "registry/blueprints/microos.json"
-        },
-        {
-          "@id": "release/PROMISE"
-        },
-        {
-          "@id": "release/REQUEST"
-        },
-        {
-          "@id": "site/CNAME.example"
-        },
-        {
-          "@id": "site/arithmetic.html"
-        },
-        {
-          "@id": "site/index.html"
-        },
-        {
-          "@id": "site/panel.html"
-        },
-        {
-          "@id": "test/e2e"
-        },
-        {
-          "@id": "test/e2e/e2e_suite_test.go"
-        },
-        {
-          "@id": "test/e2e/e2e_test.go"
-        },
-        {
-          "@id": "test/utils/utils.go"
-        }
-      ],
       "name": "eval/graph.jsonld"
     },
     {
       "@id": "eval/graph.txt",
       "@type": "CreativeWork",
-      "citation": [
-        {
-          "@id": ".github/workflows/."
-        },
-        {
-          "@id": ".github/workflows/drift-audit.yml"
-        },
-        {
-          "@id": ".github/workflows/release.yml"
-        },
-        {
-          "@id": ".github/workflows/test-e2e.yml"
-        },
-        {
-          "@id": "api/v1alpha1"
-        },
-        {
-          "@id": "api/v1alpha1/kubecontainer_types.go"
-        },
-        {
-          "@id": "cmd/codecompiler"
-        },
-        {
-          "@id": "cmd/codecompiler/main.go"
-        },
-        {
-          "@id": "cmd/homesetup"
-        },
-        {
-          "@id": "cmd/main.go"
-        },
-        {
-          "@id": "cmd/recordgraph"
-        },
-        {
-          "@id": "cmd/recordgraph/main.go"
-        },
-        {
-          "@id": "cmd/schemakeeper"
-        },
-        {
-          "@id": "cmd/schemakeeper/main.go"
-        },
-        {
-          "@id": "cmd/structuredinstructions"
-        },
-        {
-          "@id": "cmd/structuredinstructions/main.go"
-        },
-        {
-          "@id": "config/crd"
-        },
-        {
-          "@id": "config/crd/bases"
-        },
-        {
-          "@id": "config/crd/kustomization.yaml"
-        },
-        {
-          "@id": "config/default"
-        },
-        {
-          "@id": "config/default/kustomization.yaml"
-        },
-        {
-          "@id": "config/manager"
-        },
-        {
-          "@id": "config/prometheus/kustomization.yaml"
-        },
-        {
-          "@id": "config/rbac/kustomization.yaml"
-        },
-        {
-          "@id": "config/rbac/role.yaml"
-        },
-        {
-          "@id": "deploy/."
-        },
-        {
-          "@id": "deploy/AGENT-STACK.md"
-        },
-        {
-          "@id": "deploy/GITLAB.md"
-        },
-        {
-          "@id": "deploy/KUBECONTAINER-HOME.md"
-        },
-        {
-          "@id": "deploy/LEAPMICRO.md"
-        },
-        {
-          "@id": "deploy/ORG-NAME.md"
-        },
-        {
-          "@id": "deploy/REFERENCES.md"
-        },
-        {
-          "@id": "deploy/STACK.md"
-        },
-        {
-          "@id": "deploy/TOOLCHAIN.md"
-        },
-        {
-          "@id": "deploy/VPS.md"
-        },
-        {
-          "@id": "deploy/arithmetic-kube.yaml"
-        },
-        {
-          "@id": "deploy/deploy.sh"
-        },
-        {
-          "@id": "docs/AGENT-PLATFORM.md"
-        },
-        {
-          "@id": "docs/BENCHMARKS.md"
-        },
-        {
-          "@id": "docs/CONTROL-PANEL.md"
-        },
-        {
-          "@id": "docs/DESIGN.md"
-        },
-        {
-          "@id": "docs/DOCTRINE-MAP.md"
-        },
-        {
-          "@id": "docs/FOUNDING-PRINCIPLES.md"
-        },
-        {
-          "@id": "docs/GO-TO-MARKET.md"
-        },
-        {
-          "@id": "docs/HEADLESS-DELIVERY.md"
-        },
-        {
-          "@id": "docs/KUBE-SPEC.md"
-        },
-        {
-          "@id": "docs/LICENSING-DECISION.md"
-        },
-        {
-          "@id": "docs/MEASUREMENT-STANDARD.md"
-        },
-        {
-          "@id": "docs/PERSONAL.md"
-        },
-        {
-          "@id": "docs/PRIMITIVES.md"
-        },
-        {
-          "@id": "docs/RELEASE-SOP.md"
-        },
-        {
-          "@id": "docs/SOLID-STATE-DATABASE.md"
-        },
-        {
-          "@id": "docs/TOOLS.md"
-        },
-        {
-          "@id": "docs/VENDOR-ELIGIBILITY.md"
-        },
-        {
-          "@id": "docs/VOCABULARY.md"
-        },
-        {
-          "@id": "docs/assessments"
-        },
-        {
-          "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md"
-        },
-        {
-          "@id": "docs/assessments/XDM-ALIGNMENT.md"
-        },
-        {
-          "@id": "docs/manual"
-        },
-        {
-          "@id": "docs/manual/CONTRACTS.md"
-        },
-        {
-          "@id": "docs/manual/FAQ.md"
-        },
-        {
-          "@id": "docs/manual/HOW-TO-USE.md"
-        },
-        {
-          "@id": "docs/manual/LICENSES.md"
-        },
-        {
-          "@id": "docs/provenance/FOUNDER-PRIOR-ART.md"
-        },
-        {
-          "@id": "docs/provenance/PROMPTS-2026-06-12-session2.md"
-        },
-        {
-          "@id": "eval/README.md"
-        },
-        {
-          "@id": "eval/corpus"
-        },
-        {
-          "@id": "eval/corpus/task-002-pin-kind-source.yaml"
-        },
-        {
-          "@id": "eval/graph-planned.txt"
-        },
-        {
-          "@id": "eval/graph.jsonld"
-        },
-        {
-          "@id": "eval/harness.sh"
-        },
-        {
-          "@id": "eval/vocabulary-baseline.txt"
-        },
-        {
-          "@id": "eval/vocabulary.txt"
-        },
-        {
-          "@id": "hack/boilerplate.go.txt"
-        },
-        {
-          "@id": "hack/build-vocabulary.sh"
-        },
-        {
-          "@id": "hack/check-promise.sh"
-        },
-        {
-          "@id": "hack/check-vocabulary.sh"
-        },
-        {
-          "@id": "hack/deployrehearsal"
-        },
-        {
-          "@id": "hack/deployrehearsal/main.go"
-        },
-        {
-          "@id": "hack/operatorpoc"
-        },
-        {
-          "@id": "hack/operatorpoc/main.go"
-        },
-        {
-          "@id": "internal/controller/kubecontainer_controller.go"
-        },
-        {
-          "@id": "internal/controller/testdata/compat"
-        },
-        {
-          "@id": "registry/SKELETON-HOST.json"
-        },
-        {
-          "@id": "registry/SKELETON.json"
-        },
-        {
-          "@id": "registry/agents"
-        },
-        {
-          "@id": "registry/agents/first-code-maintainer.json"
-        },
-        {
-          "@id": "registry/blueprints"
-        },
-        {
-          "@id": "registry/blueprints/code-maintainer.json"
-        },
-        {
-          "@id": "registry/blueprints/issue-resolver.json"
-        },
-        {
-          "@id": "registry/blueprints/leap-micro.json"
-        },
-        {
-          "@id": "registry/blueprints/microos.json"
-        },
-        {
-          "@id": "release/PROMISE"
-        },
-        {
-          "@id": "release/REQUEST"
-        },
-        {
-          "@id": "site/arithmetic.html"
-        },
-        {
-          "@id": "site/index.html"
-        },
-        {
-          "@id": "site/panel.html"
-        },
-        {
-          "@id": "test/e2e"
-        },
-        {
-          "@id": "test/utils/utils.go"
-        }
-      ],
       "name": "eval/graph.txt"
     },
     {
@@ -2045,6 +1387,9 @@
       "citation": [
         {
           "@id": "docs/BENCHMARKS.md"
+        },
+        {
+          "@id": "site/panel.html"
         }
       ],
       "name": "site/index.html"
@@ -2058,11 +1403,6 @@
         }
       ],
       "name": "site/panel.html"
-    },
-    {
-      "@id": "test/e2e",
-      "@type": "CreativeWork",
-      "name": "test/e2e"
     },
     {
       "@id": "test/e2e/e2e_suite_test.go",

@@ -29,6 +29,8 @@ var generated = []string{"dist/", "bin/"}
 
 var spanRe = regexp.MustCompile("`([^`\n]+)`")
 var jsonRe = regexp.MustCompile(`[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)+`)
+var bareRe = regexp.MustCompile(`[A-Za-z0-9_-]+\.[A-Za-z0-9]+`)
+var lineRef = regexp.MustCompile(`:\d+$`)
 
 func main() {
 	planned := plannedRefs()
@@ -37,12 +39,18 @@ func main() {
 	edges := map[string]bool{}
 	var broken []string
 	for _, n := range nodes {
+		// The generated graph artifacts cite every node by construction;
+		// as sources they would only re-state the whole edge set.
+		if n == "eval/graph.txt" || n == "eval/graph.jsonld" {
+			continue
+		}
 		raw, err := os.ReadFile(n)
 		if err != nil {
 			continue
 		}
 		for _, t := range tokens(string(raw), !strings.HasSuffix(n, ".md")) {
-			if t == n {
+			t = relative(n, t)
+			if t == n || !keep(t) {
 				continue
 			}
 			if isGenerated(t) || planned[t] {
@@ -99,6 +107,14 @@ func tokens(content string, raw bool) []string {
 			}
 			spans = append(spans, content[idx[0]:idx[1]])
 		}
+		// Bare names (monitor.yaml) are candidates too: they resolve
+		// against the source's own directory, or not at all.
+		for _, idx := range bareRe.FindAllStringIndex(content, -1) {
+			if idx[0] > 0 && strings.ContainsRune("/.-_", rune(content[idx[0]-1])) {
+				continue
+			}
+			spans = append(spans, content[idx[0]:idx[1]])
+		}
 	} else {
 		for _, m := range spanRe.FindAllStringSubmatch(content, -1) {
 			// A span may list several files, comma-separated; later
@@ -117,19 +133,39 @@ func tokens(content string, raw bool) []string {
 		}
 	}
 	var out []string
-	lineRef := regexp.MustCompile(`:\d+$`)
 	for _, s := range spans {
 		s = lineRef.ReplaceAllString(s, "")
 		s = strings.TrimSuffix(s, "/")
-		if s == "" || strings.ContainsAny(s, " *${}()§\"'") || !strings.Contains(s, "/") {
-			continue
-		}
-		if !topDirs[strings.SplitN(s, "/", 2)[0]] {
+		if s == "" || strings.ContainsAny(s, " *${}()§\"'") {
 			continue
 		}
 		out = append(out, s)
 	}
 	return out
+}
+
+// keep admits only resolved path references: rooted in a directory of
+// the record. Bare names that found no neighbor are dropped silently —
+// a word with a dot in it is not a claim about a file.
+func keep(t string) bool {
+	return strings.Contains(t, "/") && topDirs[strings.SplitN(t, "/", 2)[0]]
+}
+
+// relative resolves a bare-name reference (no slash) against the
+// referencing file's own directory — the way kustomization resources
+// name their neighbors. Only an existing neighbor counts; anything
+// else passes through unchanged.
+func relative(src, t string) string {
+	if strings.Contains(t, "/") || !strings.Contains(t, ".") {
+		return t
+	}
+	if i := strings.LastIndex(src, "/"); i >= 0 {
+		neighbor := src[:i+1] + t
+		if _, err := os.Stat(neighbor); err == nil {
+			return neighbor
+		}
+	}
+	return t
 }
 
 // trackedFiles lists every file of the record: the tree as git keeps
