@@ -121,6 +121,19 @@ The kube is the unit; products are counts and kinds of kubes:
 Scaling is packing, not rebuilding: the difference between MVP and
 platform is count, not kind.
 
+And the product line gains its edge edition, named by the founder
+on the Ubuntu Core precedent: **KubeContainer Core** — the kube at
+the device's core, as a product. The minimal, sealed distribution
+of the container runtime for edge devices: the operator and the
+one-kube communicator packaged as the immutable center of a device —
+the loop, the record, the contract, and the single signed channel,
+nothing else aboard (Single Binary Code as a product SKU). The
+surface around it stays headless; the core inside it runs the kube;
+delivery reaches it only at the ports — the whole edge doctrine,
+shipped as the thing you flash. Where KubeContainer runs workloads
+on clusters, KubeContainer Core *is* the workload-keeper a device
+boots: edge with kube at its core, in the catalog.
+
 ## 9. The brand
 
 The brand line is the founder's, recorded verbatim with his styling:
