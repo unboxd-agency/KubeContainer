@@ -318,6 +318,25 @@ first already proved the pattern at planetary scale; software's
 delivery zones — the ports, the bases, the contexts — were waiting
 for their assembly line all along.
 
+So the rule completes itself at the last station: software also
+must be built at the surface — the final assembly, in the
+delivery zone's own sense: not compilation (that stays in the
+venv, rehearsal in its chamber) but the making-whole on the
+receiving ground — the skeleton building the body, the kit
+becoming the thing where the thing will live. And no surface
+build proceeds without passing a spec: the build declaration,
+carrying in detail the source (origin and provenance of every
+part), the target environment (the base, the OS, the ports it
+will lawfully own), and the programming language version, exact
+to the patch — with a signed contract from both parties: the
+shipper signing what was sent and what it requires, the receiving
+ground signing what it provides and what it permits. This is the
+unrecorded spec of the whole diagnosis, finally written and
+witnessed twice: the build that drifted because no one declared
+it now cannot begin until both signatures sit on the declaration —
+the assembly line's final station, with the inspector's stamp
+from both ends of the chain.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the
