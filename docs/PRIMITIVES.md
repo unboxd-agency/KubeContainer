@@ -655,7 +655,25 @@ richer text elaborates a primitive, the primitive governs.
   its anchor, share one world underneath — uniform but unique,
   perceived from everywhere, real in only one place. Name the
   anchor and you name the verse; lose the anchor and the verse was
-  never a world, only a daydream with no one home.
+  never a world, only a daydream with no one home. And one rule
+  guards the whole construction, a safety standard: you can only
+  anchor against your own twin. An actor perceives and acts through
+  the verse anchored at *itself* — never anchored at another's
+  twin, never acting from inside someone else's perception. To
+  anchor against another's twin is to act as them without being
+  them: impersonation, possession, the face that sends signals its
+  owner never stood behind (the §12 wound at the level of selves).
+  The safety standard draws the line absolutely: your verse is
+  yours to act from, another's verse is theirs, and the only
+  lawful crossing between two verses is a message between two
+  anchors — actor to actor, twin to twin, on the recorded channel,
+  each signing from its own standpoint. A system that lets one
+  actor anchor against another's twin has built the deepest leak
+  there is — not data crossing a boundary but identity crossing
+  it — and no fabric that permits it can be trusted with a single
+  self. Anchor only against your twin; speak to every other across
+  the gap; that is how many verses share one world without any
+  actor ever becoming another.
 
 ## The counsel
 
