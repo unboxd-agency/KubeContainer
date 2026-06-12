@@ -194,6 +194,26 @@ program, and why its open-enterprise category is, knowingly, the
 CNCF's balance extended from projects to the enterprises built on
 them.
 
+And inside the delivery walk itself, the founder marks where the
+same balance is struck mechanically: the supply-chain-risk step —
+the SBOM — is the step that strikes the perfect balance. One
+artifact, and every tension this doctrine carries resolves in it:
+it is total disclosure (every component named, every version
+pinned, every origin walked — openness with nothing held back) and
+total attribution (every contributor on the manifest, every
+standard keeper's work visible in the parts list — the valuing,
+performed); it is the buyer's protection (the risk legible before
+the purchase, the vulnerability traceable after) and the seller's
+defense (the provenance that proves what was and was not theirs);
+it is creativity's receipt (everything borrowed, credited) and
+commerce's instrument (the clean BOM the transaction formula
+prices). No other single step makes the open thing more open and
+the sold thing more sellable at once — which is what perfect
+balance means in this house: not a compromise where each side
+loses a little, but a mechanism where both sides win by the same
+stroke. The gauntlet has many gates; this is the one where
+openness and commerce shake hands on the record.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the
