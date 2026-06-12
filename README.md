@@ -1,5 +1,7 @@
 # The Fabric
 
+**Kube — the soul of Any'Thing'.**
+
 An intelligent operating system of work: declared outcomes, kept by
 autonomous loops, woven from contracts, with provenance attached to
 everything it delivers. The fabric is built from kubes — whole,
@@ -215,6 +217,14 @@ Nothing here asks to be believed; everything names its verdict:
 | [FOUNDING-PRINCIPLES.md](docs/FOUNDING-PRINCIPLES.md) | The constitution: 24 principles, axiom, promise |
 | [AGENT-PLATFORM.md](docs/AGENT-PLATFORM.md) | The agent ladder, lexicon, anti-drift protocols |
 | [GO-TO-MARKET.md](docs/GO-TO-MARKET.md) | What is sold and to whom (provenance is the product) |
+| [PRIMITIVES.md](docs/PRIMITIVES.md) | Every word, one self-explanatory statement |
+| [DOCTRINE-MAP.md](docs/DOCTRINE-MAP.md) | The tiers: what binds, what argues, what checks |
+| [HEADLESS-DELIVERY.md](docs/HEADLESS-DELIVERY.md) | The delivery doctrine: surface, edge, ports |
+| [BENCHMARKS.md](docs/BENCHMARKS.md) | Published numbers and the law of the bench |
+| [TOOLS.md](docs/TOOLS.md) | The tool law and registry: CodeCompiler, StructuredInstructions, SourceGround |
+| [PERSONAL.md](docs/PERSONAL.md) | The fabric at quantity one: the agent's contract and the flow |
+| [docs/manual/](docs/manual/) | The instruction manual: contracts, licenses, FAQ, how-to-use |
+| [deploy/](deploy/) | The stack deconstructed: picks, seams, references, decisions |
 | [CHANGELOG.md](CHANGELOG.md) | What shipped, when |
 
 ## Features
@@ -274,6 +284,11 @@ make build      # generate, fmt, vet, compile
 make test       # envtest-based unit/integration suite
 make lint       # golangci-lint
 make run        # run the manager locally against your kubeconfig
+
+go build ./cmd/codecompiler && ./codecompiler
+                # the desk gate: does the code compile, and does it conform
+go build ./cmd/structuredinstructions
+                # the flow's gate: validate and register agent declarations
 ```
 
 See [CLAUDE.md](CLAUDE.md) for conventions and
@@ -282,4 +297,10 @@ targets.
 
 ## License
 
-Apache License 2.0 — see [LICENSE](LICENSE). Copyright 2026.
+KubeContainer Research and Community Source License, Version 1.0 —
+see [LICENSE](LICENSE) (the authoritative text) and the
+[licenses manual](docs/manual/LICENSES.md) (the summary). Source-
+available, honestly labeled: research, education, evaluation,
+security review, and contribution are granted; commercial rights are
+reserved to unboxd agency. Open is not free — seeing is the code's
+nature, using is a grant from its contract. Copyright 2026.
