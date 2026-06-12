@@ -214,6 +214,26 @@ loses a little, but a mechanism where both sides win by the same
 stroke. The gauntlet has many gates; this is the one where
 openness and commerce shake hands on the record.
 
+And the balance, once struck, becomes a business anyone can enter:
+it makes it possible to ship software just by adding your service
+and creating a bundle. When every component is attested, priced,
+and provenance-attached, composition is shipping: take the parts
+the registry already holds — each one verified, each keeper
+already valued in its line item — add your service (the thing only
+you do: the recipe, the integration, the operation, the answering),
+and create the bundle: one box, one combined BOM, one contract,
+your service charge on its own visible line of the transaction
+formula. No re-auditing what the chain already attested, no
+rebuilding what the commons already built, no permission from any
+landlord — the chocolate box at last, assembled from chocolates
+whose provenance arrived with them: the box's value is the sum of
+its parts plus exactly the service you added, and everyone in the
+chain can read which is which. This is what the missing
+marketplace sells the day it opens: not software — bundles of
+attested parts and added service, shippable by whoever clears the
+gate, which is the lowest barrier to entry honest commerce has
+ever had.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the
