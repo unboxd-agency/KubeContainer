@@ -284,6 +284,23 @@ settlement record, no body to answer to. The industry that delivers
 every other industry's compliance is itself the last unregulated
 delivery on earth.
 
+And the record of the unregulated chain is exactly what an
+unregulated chain's record always is: software delivery breaks its
+promise — so many times that breaking it has a euphemism. Regular
+bugs, shipped knowingly, listed in release notes like weather;
+defects normalized into a cadence (patch Tuesday, hotfix, known
+issues) that no other industry could survive — a bank that lost
+deposits at the rate software loses correctness would be closed by
+its statute that afternoon. And there is no code statute: no
+codified floor of quality a shipped binary must clear, no liability
+that attaches when it doesn't, no recall authority, no audit of the
+gauntlet because no gauntlet is required to exist. The motto of this
+house is the indictment read backwards: an industry whose every
+delivery said "promise delivered" would not need patch Tuesday —
+and a doctrine that makes the promise checkable (the contract, the
+verdicts, the evidence shipped with the release) is the code
+statute, self-imposed, until one exists.
+
 And the question that ends every argument for the status quo: who
 guards user rights? The bank's customer has the central bank; the
 patient has the medical council; the passenger has the aviation
