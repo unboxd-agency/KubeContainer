@@ -7,7 +7,7 @@ own, each one declared:
 | Slot | The pick | The reason on the record |
 |---|---|---|
 | Host of the record | **GitLab** (its own org there) | the host doctrine proven: GitHub is just hosting, the canon travels whole to any host — and the individual's home need not share its parent's landlord; held to **CNCF standard** (the supply-chain policy: graduated standards, conformance posture, version-pinned upstream) |
-| Website | **kubecontainer.xyz** | the individual's own door — the domain is the org, rendered per host; the domain already in the record as the pointer, the repo the residence |
+| Website | **agennext.space** (founders reassignment, 2026-06-12; kubecontainer.xyz was the prior pick) | the individual's own door — the domain is the org, rendered per host; the domain already in the record as the pointer, the repo the residence |
 | Registry | **zot** — with its control panel | CNCF, OCI-native, on the house's reading list from its first day; the registry defines the contract, and zot is the registry that is *only* a registry — minimal footprint, the UI its control panel |
 | Runtime | **k0s on a VPS** | the single-binary sibling from the candidates table, promoted to pick for this ground: conformant, zero-dependency, the smallest honest Kubernetes for one machine |
 | Core | **the kube at core** | The Metal Kube doctrine applied: the device's immutable center is the kube — loop, record, contract, one signed channel; the surface around it headless |
@@ -16,7 +16,7 @@ own, each one declared:
 | Operations | **everything configurable on UI, upon login** | the flow's own gate order (login first, then the faces); every variable the stack declares surfaces in the control panel — more config is more control to the end user, and the UI is where the user's ownership of all the faces becomes a set of switches |
 
 The reading: this is the personal fabric's reference deployment —
-one individual (KubeContainer), one home (kubecontainer.xyz), one
+one individual (KubeContainer), one home (agennext.space), one
 host (GitLab, CNCF-standard), one registry (zot with its panel), one
 runtime (k0s), the kube at the core, and every declared variable
 reachable through the UI after login. The parent (unboxd.cloud)

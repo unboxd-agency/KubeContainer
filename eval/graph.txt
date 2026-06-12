@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=149 edges=340
+# nodes=150 edges=343
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -186,6 +186,9 @@ deploy/VPS.md -> https://get.k3s.io
 deploy/VPS.md -> https://github.com/unboxd-agency/KubeContainer/releases/download/v0.1.0/install.yaml
 deploy/VPS.md -> https://raw.githubusercontent.com/unboxd-agency/KubeContainer/main/deploy/arithmetic-kube.yaml
 deploy/arithmetic-kube.yaml -> site/arithmetic.html
+deploy/certmanager-issuer.yaml -> https://acme-v02.api.letsencrypt.org/directory
+deploy/certmanager-issuer.yaml -> https://github.com/cert-manager/cert-manager/releases/download/v1.19.5/cert-manager.yaml
+deploy/certmanager-issuer.yaml -> https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/certmanager-issuer.yaml
 deploy/deploy.sh -> https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest
 deploy/deploy.sh -> https://get.k3s.io
 deploy/deploy.sh -> https://github.com/unboxd-cloud/KubeContainer/releases/download/$TAG/install.yaml

@@ -1078,6 +1078,17 @@
     {
       "@id": "deploy/certmanager-issuer.yaml",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://acme-v02.api.letsencrypt.org/directory"
+        },
+        {
+          "@id": "https://github.com/cert-manager/cert-manager/releases/download/v1.19.5/cert-manager.yaml"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/certmanager-issuer.yaml"
+        }
+      ],
       "name": "deploy/certmanager-issuer.yaml"
     },
     {
@@ -1801,6 +1812,11 @@
       "name": "https://%s.%s.svc.cluster.local:8443/metrics"
     },
     {
+      "@id": "https://acme-v02.api.letsencrypt.org/directory",
+      "@type": "CreativeWork",
+      "name": "https://acme-v02.api.letsencrypt.org/directory"
+    },
+    {
       "@id": "https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest",
       "@type": "CreativeWork",
       "name": "https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest"
@@ -2019,6 +2035,11 @@
       "@id": "https://github.com/cert-manager/cert-manager/releases/download/%s/cert-manager.yaml",
       "@type": "CreativeWork",
       "name": "https://github.com/cert-manager/cert-manager/releases/download/%s/cert-manager.yaml"
+    },
+    {
+      "@id": "https://github.com/cert-manager/cert-manager/releases/download/v1.19.5/cert-manager.yaml",
+      "@type": "CreativeWork",
+      "name": "https://github.com/cert-manager/cert-manager/releases/download/v1.19.5/cert-manager.yaml"
     },
     {
       "@id": "https://github.com/cloudevents/spec",
@@ -2354,6 +2375,11 @@
       "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/arithmetic-kube.yaml",
       "@type": "CreativeWork",
       "name": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/arithmetic-kube.yaml"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/certmanager-issuer.yaml",
+      "@type": "CreativeWork",
+      "name": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/certmanager-issuer.yaml"
     },
     {
       "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/deploy.sh",
