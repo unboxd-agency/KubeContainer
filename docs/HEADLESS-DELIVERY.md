@@ -318,6 +318,20 @@ everything — not a gap to fill but a floor to be reborn on; the
 kube fills the empty spaces *between* the stable grounds, and is
 immortal only because the grounds are stable.
 
+And the same floor licenses the same plurality: there, multiple
+agents can exist. Many loops on one device is a safe arrangement
+only when the ground holds and the context is shared — the
+residence rule's two conditions, now revealed as the *preconditions
+of multiplicity itself*: on stable ground, each agent's world-tests
+mean the same thing tomorrow, the paths walk identically for every
+walker, and the shared context arbitrates who holds what (one
+writer per field, agents included) — so maintainer, resolver,
+keeper, and messenger can work the same machine without becoming
+the app chaos they were hired to end. On unstable ground, two
+agents are two guessers diverging; on stable ground with one
+record, N agents are one workforce. Multi-operator was the
+charter's word for it; this is the floor it always required.
+
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 
