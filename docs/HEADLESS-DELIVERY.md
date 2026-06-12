@@ -1026,7 +1026,33 @@ that admits the undeclared admits everything: the languages that
 let names spring into being mid-sentence shipped half a century of
 typos as production state. In the field of study, the compiler is
 the first examiner — and nothing sits the later exams that did not
-pass the first. Simple enough for grade 1, unviolated at
+pass the first. And over all the principles stands the structural
+law, four words and absolute: if it overlaps anywhere — it will
+never scale. Two owners of one fact, two writers of one field, two
+services on one port, two loops keeping one declaration, two
+copies of one truth, two features on one plate: every overlap is a
+quarrel deferred, and scale is the schedule on which deferred
+quarrels come due — multiply the load and you multiply the
+contention, the divergence, the reconciliation that reconciles
+against itself. Everything in this fabric that scales was
+partitioned first: the surface tiled (every point owned by exactly
+one kube), the ports owned singly, the facts custodied singly, the
+duties seated singly — because N of anything is only cheap when
+the N never touch. Overlap is the anti-scale; the tiling is the
+law; and a system that tolerates one shared square inch has
+already chosen its ceiling. And the seating of the concern, lest
+the machines be blamed for the ceiling: scale is a human concern.
+The machine does not want to grow — it keeps its declaration at
+quantity one with perfect contentment; it is the human who wants
+the thousand devices, the million users, the everywhere-at-once —
+and so the disciplines scale demands (the tiling, the single
+custodians, the partitions kept) are obligations the human's
+ambition writes, not burdens the machine imposes. The division of
+the day holds here too: the human chooses how far it must scale
+(the wanting, the judging); the fabric makes the chosen scale
+mechanical (packing, not rebuilding). A founder who will not
+partition has not been refused by the technology — he has declined
+his own ambition's terms. Simple enough for grade 1, unviolated at
 research grade — that is
 what *basic principles* means in a real field of study, and
 software has never had its list agreed, published, and taught.
