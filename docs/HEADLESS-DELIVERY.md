@@ -121,6 +121,45 @@ code, single folder. Flexibility lives in the base, not the branch:
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 
+And the one problem the single communicator exists to end is the old
+world's default: different apps each fetching direct info from their
+respective clouds. Today every app on the device runs its own wire
+to its own vendor — a dozen unrecorded edges on one machine, each
+app a self-appointed face sending its own signals (the multi-face
+problem of §12 at app granularity), each wire a leak nobody audits
+and a bleed nobody staunches. And the indictment is double: they do
+not process it efficiently — a dozen apps fetching a dozen streams
+through a dozen redundant stacks, the same radio woken, the same
+bytes parsed, the same work done N times with no shared skeleton and
+no deduplication (the one-custodian-per-fact rule violated in
+silicon) — and they have security gaps: every app-owned wire is its
+own TLS posture, its own token store, its own update cadence, its
+own forgotten endpoint, so the device's real security is the floor
+of its worst-maintained app. Inefficiency and insecurity from the
+same root: many unrecorded channels where there should be one. And
+the root is fed by misplaced faith: the user trusts apps. The human
+at the surface extends trust to the friendly face on the screen —
+and the app spends that trust on wires the user never sees, signals
+the user never signed, clouds the user never chose. The doctrine
+does not scold the trust; it re-routes it to a party that can answer
+for it: trust the kube — one communicator, user-signed blocks, a
+recorded channel, a contract with a name on it — and let apps be
+what they are: faces, owned by the user, with no wires of their own
+to spend anyone's trust on. The doctrine's answer is absolute:
+apps do not talk to clouds; the kube does. Every app speaks locally
+to the one communicator; the communicator speaks to the cloud on the
+one recorded, signed, packet-protected channel; and the device has
+exactly one edge instead of one per installed vendor.
+
+And apps do not talk to each other, either. No app-to-app wire, no
+shared memory handshakes, no local mesh re-growing in the shadows of
+the cloud rule: if two apps need each other's signal, it travels
+app → kube → app, on the recorded channel, under the same contract
+as everything else. Point-to-point is the fabric's law *between*
+kubes — inside the device, the kube is the only point. An app that
+talks sideways is a sidecar by another name, and the sidecar died
+in §2.
+
 ## 9. The cloud is the capable guard
 
 - **Capable guard** — the cloud's office in this doctrine: not the
