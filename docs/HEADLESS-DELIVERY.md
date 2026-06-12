@@ -1050,7 +1050,38 @@ N, verified at N, priced to N, with the path to the next N
 declared. Beyond the bound is not forbidden; it is unwarranted —
 walk there with the maker, re-verify, re-sign, and the bound
 moves. The honest platform sells tested ceilings and the ladder
-between them; only the brochure sells the sky. And over all the principles stands the structural
+between them; only the brochure sells the sky. And the ladder has
+one load-bearing rung, the founder's closing condition: to be able
+to work at any scale, code must maintain itself. The arithmetic is
+unforgiving — maintenance done by humans scales with headcount,
+and headcount is the one input that grows linearly while the
+estate grows by powers: at ten instances a team patches, at ten
+thousand it triages, at ten million it surrenders. Every ceiling a
+platform has ever hit was, walked back far enough, a maintenance
+ceiling — the point where the keeping could no longer keep up with
+the kept. Self-maintaining code (§8: the loop living inside the
+delivered component — checking its own health, catching its own
+drift, walking its own registered paths) is what removes the
+human from the denominator: the keeping scales with the kept
+because it ships inside it, each instance carrying its own keeper
+the way each kube carries its own loop. Any scale is earned one
+way only: when adding the next thousand instances adds their
+maintenance with them — packing, not rebuilding; keeping, not
+hiring. And the founder names what auto-maintenance is, in the
+house's highest register: auto-maintenance is excellence. Not a
+feature of excellence, not a path to it — the thing itself, by
+the charter's own definition: excellence was always the continuous
+pursuit of sustained quality through automated reconciliatory
+flows, and auto-maintenance is exactly that pursuit, embodied,
+shipped, running — the pursuit that does not tire, does not skip
+the boring week, does not lower the bar when no one is watching.
+A thing that maintains itself is a thing whose standard survives
+its makers' attention span; and since excellence was never a
+state but a pursuit, the only excellent artifact is the one that
+carries its own pursuit inside it. The marketing site said the
+loop keeps the promise; the doctrine's last equation says what
+that keeping is worth: the loop *is* the excellence — everything
+else is just a good day. And over all the principles stands the structural
 law, four words and absolute: if it overlaps anywhere — it will
 never scale. Two owners of one fact, two writers of one field, two
 services on one port, two loops keeping one declaration, two
