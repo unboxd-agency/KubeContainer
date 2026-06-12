@@ -1,3 +1,4 @@
+a label is not a move.
 action
 actionable intelligence
 actor
@@ -22,6 +23,7 @@ base
 be conservative below, liberal above
 be stewarded like a foundation
 bear load silently
+best practice
 best-in-class tools, from certified suppliers
 box
 breach
@@ -35,6 +37,8 @@ cncf-graduated standards only
 code
 code is configuration
 compliance by the path
+constitution
+constraints
 context
 contract
 data as intelligence
@@ -80,6 +84,7 @@ guardrail
 hallucination
 handoff
 hardening roadmap:
+harness
 headless delivery
 here
 honest words
@@ -111,6 +116,7 @@ multiple operators
 no ecosystem coupling for installation.
 no lock-in, no supply-chain risk
 no substreams, subgraphs, or sidecars
+nothing moves.
 nothing rides alongside the declared path
 on time, every time
 one field, one writer
@@ -183,12 +189,14 @@ the agent lexicon
 the edge (definition)
 the fabric is the intelligent operating system of work
 the framework is the fabric
+the map is additive and append-only.
 the mission statement
 the platform
 the platform is the foundation
 the reversed loop
 the seat theorem
 the solution is the service contract
+theory
 thing
 this moment (now)
 through an internet of agents

@@ -6,6 +6,7 @@ do not edit; define terms in their source documents.
 
 | Term | Defined at |
 |---|---|
+| A label is not a move. | `docs/DOCTRINE-MAP.md:23` |
 | Action | `docs/PRIMITIVES.md:281` |
 | Actionable intelligence | `docs/FOUNDING-PRINCIPLES.md:1149` |
 | Actor | `docs/AGENT-PLATFORM.md:20` |
@@ -30,6 +31,7 @@ do not edit; define terms in their source documents.
 | Be conservative below, liberal above | `docs/AGENT-PLATFORM.md:455` |
 | Be stewarded like a foundation | `docs/AGENT-PLATFORM.md:459` |
 | Bear load silently | `docs/AGENT-PLATFORM.md:451` |
+| Best practice | `docs/DOCTRINE-MAP.md:49` |
 | Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:132` |
 | Box | `docs/PRIMITIVES.md:338` |
 | Breach | `docs/PRIMITIVES.md:306` |
@@ -43,6 +45,8 @@ do not edit; define terms in their source documents.
 | Code | `docs/PRIMITIVES.md:329` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
 | Compliance by the path | `docs/AGENT-PLATFORM.md:864` |
+| Constitution | `docs/DOCTRINE-MAP.md:34` |
+| Constraints | `docs/DOCTRINE-MAP.md:44` |
 | Context | `docs/AGENT-PLATFORM.md:488` |
 | Contract | `docs/AGENT-PLATFORM.md:24` |
 | Data as intelligence | `docs/AGENT-PLATFORM.md:369` |
@@ -88,6 +92,7 @@ do not edit; define terms in their source documents.
 | Hallucination | `docs/AGENT-PLATFORM.md:592` |
 | Handoff | `docs/AGENT-PLATFORM.md:502` |
 | Hardening roadmap: | `docs/DESIGN.md:162` |
+| Harness | `docs/DOCTRINE-MAP.md:54` |
 | Headless delivery | `docs/HEADLESS-DELIVERY.md:24` |
 | Here | `docs/AGENT-PLATFORM.md:907` |
 | Honest words | `docs/PRIMITIVES.md:448` |
@@ -119,6 +124,7 @@ do not edit; define terms in their source documents.
 | No ecosystem coupling for installation. | `docs/DESIGN.md:152` |
 | No lock-in, no supply-chain risk | `docs/FOUNDING-PRINCIPLES.md:107` |
 | No substreams, subgraphs, or sidecars | `docs/AGENT-PLATFORM.md:259` |
+| Nothing moves. | `docs/DOCTRINE-MAP.md:15` |
 | Nothing rides alongside the declared path | `docs/FOUNDING-PRINCIPLES.md:87` |
 | OS-bound operation | `docs/HEADLESS-DELIVERY.md:694` |
 | On time, every time | `docs/FOUNDING-PRINCIPLES.md:363` |
@@ -194,9 +200,11 @@ do not edit; define terms in their source documents.
 | The Seat Theorem | `docs/AGENT-PLATFORM.md:842` |
 | The fabric is the intelligent operating system of work | `docs/FOUNDING-PRINCIPLES.md:207` |
 | The framework is the fabric | `docs/FOUNDING-PRINCIPLES.md:194` |
+| The map is additive and append-only. | `docs/DOCTRINE-MAP.md:19` |
 | The platform is the foundation | `docs/FOUNDING-PRINCIPLES.md:116` |
 | The reversed loop | `docs/HEADLESS-DELIVERY.md:2240` |
 | The solution is the service contract | `docs/FOUNDING-PRINCIPLES.md:120` |
+| Theory | `docs/DOCTRINE-MAP.md:39` |
 | Thing | `docs/AGENT-PLATFORM.md:752` |
 | This moment (now) | `docs/AGENT-PLATFORM.md:947` |
 | Through an Internet of Agents | `docs/FOUNDING-PRINCIPLES.md:366` |
