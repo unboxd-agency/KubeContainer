@@ -61,12 +61,22 @@ open-core risk is contained to a layer we can leave in an afternoon.
   artifacts, the promise check before anything ships. The portability
   claim, no longer a claim.
 
+## The name
+
+git.unboxd.cloud — the founder's ruling, and the seating says why:
+the agency holds the hosting contract, so the host wears the
+agency's name — a function subdomain under the org's domain (the
+domain is the org; the function is the prefix). The individuals keep
+their own homes (kubecontainer.xyz points at its repo within), but
+the serving layer is the agency's seat and carries the agency's
+name.
+
 ## The walk (the founder's hand, paste-ready)
 
     # on the declared Ubuntu ground, per the official docs:
     sudo apt update && sudo apt install -y curl ca-certificates
     curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
-    sudo EXTERNAL_URL="https://gitlab.kubecontainer.xyz" apt install gitlab-ce=<PINNED-VERSION>
+    sudo EXTERNAL_URL="https://git.unboxd.cloud" apt install gitlab-ce=<PINNED-VERSION>
     # register a runner for the gauntlet (official: https://docs.gitlab.com/runner/install/)
     # mirror the canon: GitLab is the home, GitHub remains a mirror —
     # push both remotes; every clone is whole either way.
