@@ -264,7 +264,27 @@ dependency, and in return you get the one dependency in your stack
 whose risk is fully disclosed by construction. Adopt nothing
 blind — including this; run the same SBOM gate on the fabric that
 the fabric runs on everything else, because a fabric that asked to
-be exempt from its own law would have failed it.
+be exempt from its own law would have failed it. And the founder
+closes the honesty all the way down: none of these actually make
+you a platform of trust. Not the SBOM, not the gauntlet, not the
+graduated dependencies, not the published baselines — every
+mechanism in this record is necessary and none of it is
+sufficient; they make you *checkable*, not *trusted*. Trust is not
+a property you build into a platform; it is a verdict others
+render on you over time (the maturity primitive, the accountability
+primitive, both said it: decided by others, never self-declared) —
+so a platform cannot install trust the way it installs a feature.
+What the mechanisms do is earn the *right to be trusted*: they make
+the platform worth trusting and make the trusting safe to extend —
+but the extending is still someone else's act, given slowly, on
+evidence, and revocable the day the evidence turns. The fabric's
+honest claim is therefore the narrow one: not "we are a platform of
+trust" (no one may say that of themselves) but "we are a platform
+built to be checked, by anyone, continuously — and we will earn
+your trust or lose it in public, on the record, like everyone
+else." A platform that called itself trusted would have broken,
+in its first sentence, the very law that makes trust mean
+anything.
 
 And inside the delivery walk itself, the founder marks where the
 same balance is struck mechanically: the supply-chain-risk step —
