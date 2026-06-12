@@ -136,6 +136,40 @@ richer text elaborates a primitive, the primitive governs.
   contracted to keep it still.
 - **Gap** — a place where work must cross and nothing stands to
   carry it.
+- **Field** — a bounded ground where work of one kind is done; it
+  is the word that cuts across worlds — the farmer's field, the
+  physicist's, the player's, the form's, the field of study, the
+  field of work — and in every world it keeps the same two
+  promises: it has a boundary, and one kind of work belongs inside
+  it. The greatest of its senses are the three it offers every
+  person: a field of interest (where one is drawn, unforced), a
+  field of study (where one learns), and a field of work (where one
+  earns) — the same ground entered three ways, and the fortunate
+  walk all three on one ground. And a field has its ages, told by
+  color: the green field — bounded but unbuilt, grass and no
+  structure, where building starts clean with nothing to demolish;
+  and before it the white field — not yet even drawn: the blank
+  ground where no boundary has been sketched and no kind of work
+  yet belongs, the page on which a new field is first declared.
+  White is founded into green, green is built into worked — the
+  founder's ladder for ground, from blank to bounded to bearing.
+  And at every age a field may be open: an open field is one whose
+  boundary admits rather than excludes — anyone may enter and work
+  it who respects the kind of work it holds, entry by the field's
+  own rules and never by a landlord's leave; open describes the
+  gate, not the absence of the boundary — a field with no boundary
+  at all is not open, it is just not yet a field. And the word
+  works as a verb, and cricket teaches it best: fielding is the
+  craft of covering the ground — every player placed where a gap
+  would otherwise be, the whole field held by assignment so that
+  whatever comes is caught, stopped, or returned, and nothing
+  crosses unanswered. To field is to stand ready on assigned ground
+  and answer what arrives — which is also what it means to field a
+  question, a team, or a candidate: to put something on the ground
+  prepared to answer. The batting side builds the score; the
+  fielding side keeps the ground — the builder and the keeper,
+  playing the same match. That is why field can bound anything that
+  must be bounded, in any world it is spoken.
 
 ## The flows
 

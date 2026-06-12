@@ -24,7 +24,7 @@ do not edit; define terms in their source documents.
 | Assertion | `docs/AGENT-PLATFORM.md:26` |
 | Assurance as a policy | `docs/FOUNDING-PRINCIPLES.md:127` |
 | Backward compatible | `docs/AGENT-PLATFORM.md:164` |
-| Balance | `docs/PRIMITIVES.md:158` |
+| Balance | `docs/PRIMITIVES.md:192` |
 | Base | `docs/PRIMITIVES.md:135` |
 | Be conservative below, liberal above | `docs/AGENT-PLATFORM.md:455` |
 | Be stewarded like a foundation | `docs/AGENT-PLATFORM.md:459` |
@@ -49,7 +49,7 @@ do not edit; define terms in their source documents.
 | Declaration | `docs/PRIMITIVES.md:52` |
 | Delegation | `docs/AGENT-PLATFORM.md:496` |
 | Deliver just-in-time, from everyone qualified | `docs/FOUNDING-PRINCIPLES.md:111` |
-| Delivery | `docs/PRIMITIVES.md:144` |
+| Delivery | `docs/PRIMITIVES.md:178` |
 | Division of labor | `docs/DESIGN.md:215` |
 | Drift | `docs/PRIMITIVES.md:93` |
 | Duty | `docs/PRIMITIVES.md:78` |
@@ -67,16 +67,17 @@ do not edit; define terms in their source documents.
 | Evidence | `docs/AGENT-PLATFORM.md:586` |
 | Excellent working tools | `docs/FOUNDING-PRINCIPLES.md:1154` |
 | External storage is in cloud | `docs/FOUNDING-PRINCIPLES.md:226` |
-| Fabric | `docs/PRIMITIVES.md:192` |
+| Fabric | `docs/PRIMITIVES.md:231` |
 | Face | `docs/PRIMITIVES.md:127` |
 | Federated by design | `docs/FOUNDING-PRINCIPLES.md:158` |
 | Federation is a framework of work | `docs/FOUNDING-PRINCIPLES.md:180` |
+| Field | `docs/PRIMITIVES.md:139` |
 | Five-dimension addressing | `docs/SOLID-STATE-DATABASE.md:72` |
 | Founder | `docs/PRIMITIVES.md:13` |
 | Free | `docs/AGENT-PLATFORM.md:652` |
 | Gap | `docs/PRIMITIVES.md:137` |
 | Gate | `docs/PRIMITIVES.md:92` |
-| Gold standard | `docs/PRIMITIVES.md:180` |
+| Gold standard | `docs/PRIMITIVES.md:214` |
 | Golden corpus | `docs/AGENT-PLATFORM.md:604` |
 | Governed by choice | `docs/FOUNDING-PRINCIPLES.md:137` |
 | Governed by design | `docs/FOUNDING-PRINCIPLES.md:169` |
@@ -99,10 +100,10 @@ do not edit; define terms in their source documents.
 | Kube — the soul of Any'Thing' | `docs/AGENT-PLATFORM.md:770` |
 | Loop | `docs/PRIMITIVES.md:85` |
 | Maintainer | `docs/PRIMITIVES.md:33` |
-| Maturity | `docs/PRIMITIVES.md:162` |
-| Measurement | `docs/PRIMITIVES.md:154` |
+| Maturity | `docs/PRIMITIVES.md:196` |
+| Measurement | `docs/PRIMITIVES.md:188` |
 | Memory | `docs/AGENT-PLATFORM.md:492` |
-| Message | `docs/PRIMITIVES.md:142` |
+| Message | `docs/PRIMITIVES.md:176` |
 | Metal base | `docs/HEADLESS-DELIVERY.md:49` |
 | Minimal, pinned, upstream-only dependencies. | `docs/DESIGN.md:157` |
 | Model | `docs/DESIGN.md:183` |
@@ -140,7 +141,7 @@ do not edit; define terms in their source documents.
 | Party | `docs/PRIMITIVES.md:27` |
 | Path | `docs/PRIMITIVES.md:90` |
 | Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:301` |
-| Platform | `docs/PRIMITIVES.md:194` |
+| Platform | `docs/PRIMITIVES.md:233` |
 | Platform Capabilities | `docs/AGENT-PLATFORM.md:144` |
 | Platform-bound orchestrator | `docs/HEADLESS-DELIVERY.md:574` |
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |
@@ -149,7 +150,7 @@ do not edit; define terms in their source documents.
 | Principal | `docs/AGENT-PLATFORM.md:473` |
 | Promise | `docs/PRIMITIVES.md:75` |
 | Proto-first | `docs/HEADLESS-DELIVERY.md:1597` |
-| Provenance | `docs/PRIMITIVES.md:149` |
+| Provenance | `docs/PRIMITIVES.md:183` |
 | Provenance is the product | `docs/AGENT-PLATFORM.md:739` |
 | Provenance-native | `docs/SOLID-STATE-DATABASE.md:69` |
 | Real-time | `docs/AGENT-PLATFORM.md:159` |
@@ -200,7 +201,7 @@ do not edit; define terms in their source documents.
 | Trusted frontier intelligence, from all providers | `docs/AGENT-PLATFORM.md:129` |
 | Trusted insights | `docs/FOUNDING-PRINCIPLES.md:1144` |
 | Truth | `docs/PRIMITIVES.md:62` |
-| Unit | `docs/PRIMITIVES.md:156` |
+| Unit | `docs/PRIMITIVES.md:190` |
 | Verdict | `docs/AGENT-PLATFORM.md:581` |
 | Wake on events, steer by outcomes, prioritize by value | `docs/FOUNDING-PRINCIPLES.md:91` |
 | Where code is configuration | `docs/AGENT-PLATFORM.md:354` |
