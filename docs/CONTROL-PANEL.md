@@ -219,3 +219,16 @@ above the cluster line (envs, gates, flows, the operator trick). The
 seating: CloudStack as substrate candidate-to-pick (the founder's
 word flips it in deploy/STACK.md), our panel keeping the seat above —
 which remains the open market.
+
+And the founder's sharper point: CloudStack might have something
+pre-built — mine it before building. What it ships that maps to our
+seats, all Apache-2.0 and reusable: a modern UI (Vue-based — adoptable
+as code or as design reference for our panel), a multi-tenant model
+(domains, accounts, projects — the estate's tenancy, pre-solved),
+a usage/metering server (the bill itemized to the piece — the meter
+our doctrine demands, already running in production for years), event
+streams, and CKS (conformant cluster provisioning). The reuse rule:
+adopt the pre-built where it conforms, adapt where it nearly does,
+build only what no one has — which for us remains exactly one thing:
+the pod-native panel above the cluster line. Everything below it may
+arrive pre-built from CloudStack's decade of production.
