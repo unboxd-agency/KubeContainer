@@ -263,6 +263,22 @@ The industry kept trying to build agents as little emperors; the
 fabric needs them as perfect messengers — and the whole dignity of
 the seat is that nothing true is lost in the carrying.
 
+And the messenger works with its hands: the agent as operator of
+tools and panels. The world the agent serves is full of instruments
+built for human hands — the CLI, the console, the admin panel, the
+dashboard, the form with its twelve tabs — and the agent operates
+them all as the human's deputy: tools wielded natively (the
+spec's own ruling that consoles and tools are adapters means the
+agent needs no special door — it walks through the same ones),
+panels driven so the human reads outcomes instead of operating
+machinery. The existence proof is already in this house's record —
+an agent operating as the operator built this repository through
+the same tools any engineer would hold — and the office has its
+bound like every office here: the agent operates the panel; it
+does not *become* the panel's authority. Every act through a tool
+is the principal's act, signed, recorded, on the path — hands at
+machine speed, authority exactly where the Seat Theorem left it.
+
 Two clauses sharpen the settlement. First, holding is not enough:
 the platform must *offer* the path — not a registry the agent must
 think to search, but the path presented at the moment of need, on
