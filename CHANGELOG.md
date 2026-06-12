@@ -7,6 +7,12 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.7] - 2026-06-12
+### Added
+- FileFabric ships as an image (`ghcr.io/<owner>/filefabric`): the
+  space drive served as a kube — catalog on the storage claim,
+  distroless, pinned Go.
+
 ## [0.2.6] - 2026-06-12
 ### Added
 - `spec.expose.tls`: the kube declares its certificate — cert-manager

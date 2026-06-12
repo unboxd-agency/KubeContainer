@@ -463,8 +463,16 @@ name their intent; nothing removed, nothing duplicated.
   art is Spacedrive's VDFS (point of reference:
   https://spacedrive.com/blog/spacedrive-v3-launch — upstream's v3
   deliberately cut cross-device sync and dedup, leaving this seat
-  empty; their code is AGPL-3.0 and stays theirs). Source:
-  `cmd/filefabric/main.go`; build: `go build ./cmd/filefabric`.
+  empty; their code is AGPL-3.0 and stays theirs). And the seat it
+  fills in the founder's own architecture: Agent-Space (point of
+  reference: https://github.com/AGenNextHub/Agent-Space — the
+  workspace contract, which owns the space's boundaries but not its
+  file storage) names file scope and leaves the drive to another
+  party; FileFabric is that party — the space drive, the file store a
+  space references, served at the space's own door (agennext.space).
+  Source: `cmd/filefabric/main.go`; build:
+  `go build ./cmd/filefabric`; image: `Dockerfile.filefabric`,
+  published as `ghcr.io/unboxd-cloud/filefabric` per release.
 - **SourceGround** — working, as scripts to be fused into one
   binary. The tool of the founder's law that you define a term
   before using it and bind the meaning from the source, with source

@@ -194,7 +194,7 @@ do not edit; define terms in their source documents.
 | Skill | `docs/AGENT-PLATFORM.md:492` |
 | Soul | `docs/PRIMITIVES.md:93` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:767` |
-| SourceGround | `docs/TOOLS.md:468` |
+| SourceGround | `docs/TOOLS.md:476` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
@@ -246,7 +246,7 @@ do not edit; define terms in their source documents.
 | World | `docs/PRIMITIVES.md:107` |
 | World model (internal) | `docs/AGENT-PLATFORM.md:581` |
 | World-test | `docs/AGENT-PLATFORM.md:585` |
-| merge | `docs/TOOLS.md:544` |
-| push | `docs/TOOLS.md:540` |
-| release | `docs/TOOLS.md:547` |
+| merge | `docs/TOOLS.md:552` |
+| push | `docs/TOOLS.md:548` |
+| release | `docs/TOOLS.md:555` |
 | unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:700` |

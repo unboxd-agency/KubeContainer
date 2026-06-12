@@ -1,0 +1,12 @@
+# FileFabric as an image: the space drive, served as a kube.
+# The catalog lives on the kube's storage claim (/data).
+FROM golang:1.25.7 AS build
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN CGO_ENABLED=0 go build -o /filefabric ./cmd/filefabric
+
+FROM gcr.io/distroless/static:nonroot
+COPY --from=build /filefabric /filefabric
+ENTRYPOINT ["/filefabric", "serve", "-addr", ":8080", "-catalog", "/data/fabric.jsonld"]
