@@ -524,6 +524,18 @@ fabric — five lines, given in one breath:
    dream at the bench, prove at the gate. Vibe is the fuel of the
    journey and the poison of the commit — welcome at every surface
    where nothing yet executes, barred at every port where it does.
+   And the practice that keeps the line bright: code with commands.
+   Not prose pasted on faith and hoped into place, but commands —
+   named, declared, repeatable, each one a step a machine runs the
+   same way every time and anyone can re-run to check: `make build`,
+   `make test`, `make vocab-check`, the gauntlet, the pinned
+   toolchain. A command is the opposite of a vibe — it states
+   exactly what it does, leaves a verdict, and can be walked again;
+   to code with commands is to make the doing itself reproducible,
+   so that what shipped is not what someone felt like typing but
+   what a declared sequence produced and a verdict passed. Feel the
+   work; command the code — the journey vibed, the artifact driven
+   by steps that anyone, including a machine, can run and check.
 4. *External validation is not required to start work.* The
    founder needs no one's approval — the title is conferred by the
    building — so the work begins on the strength of the framework
