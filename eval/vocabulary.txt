@@ -1,6 +1,8 @@
+action
 actionable intelligence
 actor
 adapter
+agent
 agent (the standard definition)
 agent architecture
 agent drift
@@ -14,10 +16,14 @@ anti-drift protocols
 assertion
 assurance as a policy
 backward compatible
+balance
+base
 be conservative below, liberal above
 be stewarded like a foundation
 bear load silently
 best-in-class tools, from certified suppliers
+box
+breach
 browser as server
 build stage
 capable guard
@@ -30,10 +36,14 @@ context
 contract
 data as intelligence
 data is intelligence — and data is real, temporal, geospatial,
+declaration
 delegation
 deliver just-in-time, from everyone qualified
 delivery
 division of labor
+drift
+duty
+edge
 edge is ingress
 educated
 empowered
@@ -47,10 +57,15 @@ everything is contextual
 evidence
 excellent working tools
 external storage is in cloud
+fabric
+face
 federated by design
 federation is a framework of work
 five-dimension addressing
+founder
 free
+gap
+gate
 golden corpus
 governed by choice
 governed by design
@@ -69,8 +84,12 @@ intent
 internal memory holds the mental model of the real world
 interpretation: direction where certainty runs out
 just-in-time
+kube
 kube — the soul of any'thing'
+loop
+measurement
 memory
+message
 metal base
 minimal, pinned, upstream-only dependencies.
 model
@@ -93,6 +112,7 @@ open location code standard
 open standards only
 open-enterprise
 operational knowledge is an artifact
+operator
 orchestrator / subagent
 os-bound operation
 outcome
@@ -104,13 +124,19 @@ p5 — record supremacy (when model and record disagree)
 p6 — scheduled drift audit (entropy has a maintenance schedule)
 p7 — constitutional amendment (the rules change only by the rules)
 p8 — no self-building (the founder's prohibition)
+party
+path
 peer communication over existing standard protocols
+platform
 platform capabilities
 platform-bound orchestrator
 policy & authorization, out of the box
 policy-as-code surface
+port
 principal
+promise
 proto-first
+provenance
 provenance is the product
 provenance-native
 real-time
@@ -118,7 +144,9 @@ real-time, not instantaneous — acid, stable substance
 real-work rule
 real-world model (rwm)
 reality & drift vocabulary
+record
 registry
+repair
 reputation
 resolution
 runtime stage
@@ -127,13 +155,17 @@ session
 shipped policies
 signed building block
 single binary code
+skeleton
 skill
+soul
 soul (of a thing)
 sovereign
 sovereign & federated
 stable substance, stable state
 standard operating procedures
 status
+step
+surface
 tagging
 the agent economy
 the agent lexicon
@@ -153,12 +185,16 @@ through an open partner network
 tool
 trusted frontier intelligence, from all providers
 trusted insights
+truth
 unboxd cloud platform
+unit
 verdict
 wake on events, steer by outcomes, prioritize by value
 where code is configuration
 where the platform is the foundation
 why rebac here
 with native-language intelligence
+work
+world
 world model (internal)
 world-test
