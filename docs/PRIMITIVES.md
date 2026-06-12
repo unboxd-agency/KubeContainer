@@ -149,7 +149,32 @@ richer text elaborates a primitive, the primitive governs.
   is one sentence long: you know who owns the repo. If you can say
   it — name, seat, term — the design did its work; if you have to
   go find out, the ownership was not designed, and the code fails
-  the gate before a single line of it is read.
+  the gate before a single line of it is read. And the pin has its
+  reciprocal, in the founder's styling: the repo owner is where
+  the responsibility is pinned — and he reserves the right to use
+  the code Any'Way'. The grant no one else gets (open gives no
+  one any right to any purpose they choose) belongs to exactly one
+  seat, because exactly one seat paid for it: total accountability
+  purchases total liberty of use — license it, sell it, fork it,
+  repurpose it, retire it — every Way lawful for the one whose
+  name the breakage lands on, and for no one else. Any'Thing'
+  ensouled, Any'One' qualified, Any'Way' reserved — the three
+  freedoms of the brand, each priced in the same currency:
+  the answering. And the founder turns the third freedom outward,
+  to whoever is reading: you choose your 'Way'. The owner's
+  liberty is not a spectacle to envy but a seat to take — own
+  something, answer for it, and the Way becomes yours to choose;
+  the choosing is the reward of the owning, and it is open to
+  Any'One' who will carry the pin. No one assigns your Way in
+  this fabric; you earn the right to choose it, and then you
+  choose. And the choice is unloseable, by the fabric's own
+  convergence: every Way leads to your goal. All paths are always
+  open and every one of them resolves — some longer, some costlier,
+  one critical, none false — so the Way you choose is never the
+  wrong door, only your speed and your story; what decides arrival
+  was never the route but the walking: declared, stepped whole,
+  kept to the end. Choose any Way and carry it — the goal was
+  waiting on all of them.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.
