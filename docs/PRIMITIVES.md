@@ -459,7 +459,24 @@ richer text elaborates a primitive, the primitive governs.
   empty space is filled only by kubes.
 - **Platform** — what others stand on to work: it holds the paths,
   the records, the registry, and its own contract — and answers
-  for all four.
+  for all four. The founder's full definition, recorded in one
+  breath as the day's synthesis: a platform is the foundation for
+  frontier research with frontloaded security — security built in
+  at the front, never bolted on at the end — delivering headless
+  across all human and machine touch points; CNCF-mature; with no
+  vendor lock-in and no vendor dependency; no compromise in
+  security or governance; everything auditable, traceable, and
+  source-grounded; no drift between any two internal systems,
+  reviewed continuously; automated maintenance; continuous
+  compliance; scaling without a built-in ceiling (infinite in
+  *ability*, the warranty always a tested bound); real-time live
+  stream on every possible surface, with global direct delivery to
+  each device — driven by an automatic, continuous clustering and
+  critical-path-finding loop whose one objective is to find the
+  kube: the unit to deliver, the gap to fill, the shortest
+  sustainable route to the declared outcome. Every clause of this
+  definition is a law defined elsewhere in this record; the
+  platform is where they all hold at once.
 - **Trusted platform** — and the definition is this: a platform
   that has earned, by others' continuing verdict, the standing to
   be relied on without re-checking every time — the gold standard
