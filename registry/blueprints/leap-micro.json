@@ -1,0 +1,11 @@
+{
+  "skeleton": "host-declaration/v1",
+  "blueprint": "leap-micro",
+  "kind": "Host",
+  "office": "the kube host: immutable transactional base the runtime stands on - fixed release, the most boring layer in the stack",
+  "release": "${config: pinned at creation - currently 6.2; fixed releases only}",
+  "source": "https://get.opensuse.org/leapmicro/",
+  "traits": ["transactional-update", "read-only-root", "atomic-rollback", "selinux-enforcing", "container-host"],
+  "paths": ["selinux-layer-then-reboot", "one-command-deploy", "verdict-print"],
+  "bounds": "carries verdicts; never rolling; prepared by the walk in deploy/LEAPMICRO.md"
+}

@@ -22,6 +22,8 @@ func main() {
 		{"vet", []string{"go", "vet", "./..."}},
 		{"lint", []string{"make", "lint"}},
 		{"vocabulary", []string{"./hack/check-vocabulary.sh"}},
+		{"graph", []string{"go", "run", "./cmd/recordgraph"}},
+		{"schema", []string{"go", "run", "./cmd/schemakeeper"}},
 	}
 	failed := 0
 	for _, g := range gates {

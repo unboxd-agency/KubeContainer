@@ -48,6 +48,7 @@ declaration
 delegation
 deliver just-in-time, from everyone qualified
 delivery
+desk
 division of labor
 drift
 duty
@@ -169,12 +170,14 @@ real-world model (rwm)
 reality & drift vocabulary
 reason
 record
+recordgraph
 registry
 release
 repair
 reputation
 resolution
 runtime stage
+schemakeeper
 scope
 serverless, not stateless
 session

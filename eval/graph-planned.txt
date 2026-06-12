@@ -1,0 +1,4 @@
+# Declared-future paths: the roadmap names them before they exist.
+# Shrink-only — a planned path that lands leaves this file.
+config/policies
+config/prometheus/servicemonitor_tls_patch.yaml

@@ -1,0 +1,11 @@
+{
+  "skeleton": "host-declaration/v1",
+  "blueprint": "microos",
+  "kind": "Host",
+  "office": "the rolling twin of leap-micro: same transactional design on a Tumbleweed base - dev boxes only",
+  "release": "rolling - unpinnable by design, and therefore bounded",
+  "source": "https://get.opensuse.org/microos/",
+  "traits": ["transactional-update", "read-only-root", "atomic-rollback", "selinux-enforcing", "container-host", "rolling"],
+  "paths": ["selinux-layer-then-reboot", "one-command-deploy", "verdict-print"],
+  "bounds": "never carries a verdict; throwaway dev boxes only (deploy/LEAPMICRO.md)"
+}

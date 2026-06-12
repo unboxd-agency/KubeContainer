@@ -430,6 +430,28 @@ name their intent; nothing removed, nothing duplicated.
   `registry/blueprints/` (code-maintainer, issue-resolver — the two
   offices, language as config); submissions land in
   `registry/agents/`, one entry per agent, duplicates refused.
+- **RecordGraph** — built. One binary that extracts the corpus as a
+  graph, the DBpedia pattern applied to the record: the prose stays
+  canonical, the graph is generated from it, never hand-written.
+  Nodes are the corpus files, edges are the references between them;
+  it emits `eval/graph.txt` (the plain triples) and
+  `eval/graph.jsonld` (the same graph as schema.org JSON-LD,
+  CreativeWork and citation — standard linked data), and a reference
+  to a path that does not exist fails the gate. Declared-future paths
+  live in `eval/graph-planned.txt`, shrink-only. Source:
+  `cmd/recordgraph/main.go`; run: `make graph` (point of reference:
+  https://www.dbpedia.org/ — founder-supplied, the extracted-graph
+  pattern; https://schema.org/ — the vocabulary the JSON-LD face
+  speaks).
+- **SchemaKeeper** — built. The schema as a tool of the house, the
+  founder's order: one binary that keeps the record's machine face
+  true to its pinned schema. It validates `eval/graph.jsonld` against
+  schema.org (the pinned context), the pinned type set, and the rule
+  DBpedia tolerates breaking at scale and this record refuses at the
+  desk: every citation must resolve to a node present in the graph —
+  no dangling nodes. Source: `cmd/schemakeeper/main.go`; run:
+  `make schema-check` (point of reference: https://schema.org/ —
+  the pinned vocabulary).
 - **SourceGround** — working, as scripts to be fused into one
   binary. The tool of the founder's law that you define a term
   before using it and bind the meaning from the source, with source

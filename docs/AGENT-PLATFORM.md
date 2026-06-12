@@ -25,6 +25,13 @@ Supporting vocabulary:
   postconditions, invariants. (Here: the CRD schema and its CEL rules.)
 - **Assertion** — one executable claim that a condition holds at runtime; the
   enforcement instrument for contracts. (Here: the envtest suite.)
+- **Desk** — the maker's own workstation: where the work is made and the
+  first place it is judged. The desk gate is every check that runs there
+  before a push exists (CodeCompiler, the pre-push hook) — distinct from
+  the pipeline (CI, after the push) and from production (the field, after
+  the release). The graduation is strict: nothing reaches the pipeline
+  that failed the desk, nothing reaches the field that failed the
+  pipeline — caught at the desk, not in production.
 
 In one sentence: actors carry the messages, agents pursue the goals, contracts
 define what everyone owes each other, assertions catch the moment anyone breaks

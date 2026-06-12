@@ -7,6 +7,37 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.4] - 2026-06-12
+### Added
+- RecordGraph: the record extracted as a graph (146 nodes, internal
+  references gated — a broken reference fails the build; 133 external
+  anchors indexed), emitted as plain triples and schema.org JSON-LD.
+- SchemaKeeper: the schema kept as a tool — pinned context, pinned
+  types, no dangling nodes, host blueprints validated against the
+  skeleton's declared taxonomies.
+- The host skeleton (host-declaration/v1) and two blueprints:
+  leap-micro (the verdict host, fixed release) and microos (rolling,
+  dev boxes only); the Leap Micro decision record (`deploy/LEAPMICRO.md`).
+- The desk, defined in the lexicon (the question rule applied).
+### Fixed
+- deploy.sh fails loudly when the latest-release tag cannot be
+  resolved, and prepares transactional hosts (Leap Micro/MicroOS).
+
+## [0.2.3] - 2026-06-12
+### Added
+- The site as an image: ghcr.io/unboxd-cloud/kubecontainer-site.
+- deploy.sh self-resolves the newest release — one URL deploys on any
+  VPS forever; proven end-to-end on bare metal (READY True in under
+  two minutes).
+### Fixed
+- `.dockerignore` re-includes `site/` so the site image has a build
+  context (the v0.2.3 first attempt died here).
+
+## [0.2.2] - 2026-06-12
+### Fixed
+- HomeSetup field failures from the first VPS deploy: apt-lock race
+  and the gitlab-runsvdir wedge.
+
 ## [0.2.1] - 2026-06-12
 ### Added
 - HomeSetup binary (`-clean-slate`) shipped as a release asset — one

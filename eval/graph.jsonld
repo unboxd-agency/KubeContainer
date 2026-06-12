@@ -1,0 +1,2659 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": ".custom-gcl.yml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://golangci-lint.run/plugins/module-plugins/"
+        }
+      ],
+      "name": ".custom-gcl.yml"
+    },
+    {
+      "@id": ".devcontainer/devcontainer.json",
+      "@type": "CreativeWork",
+      "name": ".devcontainer/devcontainer.json"
+    },
+    {
+      "@id": ".devcontainer/post-install.sh",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl"
+        },
+        {
+          "@id": "https://dl.k8s.io/release/stable.txt"
+        },
+        {
+          "@id": "https://go.kubebuilder.io/dl/latest/linux/${ARCH}"
+        },
+        {
+          "@id": "https://kind.sigs.k8s.io/dl/latest/kind-linux-${ARCH}"
+        }
+      ],
+      "name": ".devcontainer/post-install.sh"
+    },
+    {
+      "@id": ".dockerignore",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://docs.docker.com/engine/reference/builder/#dockerignore-file"
+        }
+      ],
+      "name": ".dockerignore"
+    },
+    {
+      "@id": ".githooks/pre-push",
+      "@type": "CreativeWork",
+      "name": ".githooks/pre-push"
+    },
+    {
+      "@id": ".github/workflows/.",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/."
+    },
+    {
+      "@id": ".github/workflows/drift-audit.yml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        }
+      ],
+      "name": ".github/workflows/drift-audit.yml"
+    },
+    {
+      "@id": ".github/workflows/lint.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/lint.yml"
+    },
+    {
+      "@id": ".github/workflows/pages.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/pages.yml"
+    },
+    {
+      "@id": ".github/workflows/release.yml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "release/REQUEST"
+        }
+      ],
+      "name": ".github/workflows/release.yml"
+    },
+    {
+      "@id": ".github/workflows/test-e2e.yml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/kubernetes-sigs/kind/releases/download/${KIND_VERSION}/kind-linux-$(go"
+        }
+      ],
+      "name": ".github/workflows/test-e2e.yml"
+    },
+    {
+      "@id": ".github/workflows/test.yml",
+      "@type": "CreativeWork",
+      "name": ".github/workflows/test.yml"
+    },
+    {
+      "@id": ".gitignore",
+      "@type": "CreativeWork",
+      "name": ".gitignore"
+    },
+    {
+      "@id": ".gitlab-ci.yml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": ".github/workflows/."
+        }
+      ],
+      "name": ".gitlab-ci.yml"
+    },
+    {
+      "@id": ".golangci.yml",
+      "@type": "CreativeWork",
+      "name": ".golangci.yml"
+    },
+    {
+      "@id": "AGENTS.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/rbac/role.yaml"
+        },
+        {
+          "@id": "https://book.kubebuilder.io"
+        },
+        {
+          "@id": "https://book.kubebuilder.io/reference/good-practices.html"
+        },
+        {
+          "@id": "https://book.kubebuilder.io/reference/markers.html"
+        },
+        {
+          "@id": "https://github.com/kubernetes-sigs/controller-runtime"
+        },
+        {
+          "@id": "https://github.com/kubernetes-sigs/controller-runtime/blob/main/FAQ.md"
+        },
+        {
+          "@id": "https://github.com/kubernetes-sigs/controller-tools"
+        },
+        {
+          "@id": "https://github.com/kubernetes-sigs/kubebuilder"
+        },
+        {
+          "@id": "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md"
+        },
+        {
+          "@id": "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-instrumentation/logging.md#message-style-guidelines"
+        },
+        {
+          "@id": "https://kind.sigs.k8s.io/"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/\u003corg"
+        }
+      ],
+      "name": "AGENTS.md"
+    },
+    {
+      "@id": "CHANGELOG.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/GO-TO-MARKET.md"
+        },
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        },
+        {
+          "@id": "docs/SOLID-STATE-DATABASE.md"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "docs/assessments"
+        },
+        {
+          "@id": "https://keepachangelog.com/en/1.1.0/"
+        },
+        {
+          "@id": "internal/controller/testdata/compat"
+        },
+        {
+          "@id": "release/REQUEST"
+        }
+      ],
+      "name": "CHANGELOG.md"
+    },
+    {
+      "@id": "CLAUDE.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "api/v1alpha1"
+        },
+        {
+          "@id": "api/v1alpha1/kubecontainer_types.go"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "eval/corpus"
+        },
+        {
+          "@id": "eval/vocabulary-baseline.txt"
+        },
+        {
+          "@id": "eval/vocabulary.txt"
+        },
+        {
+          "@id": "internal/controller/kubecontainer_controller.go"
+        },
+        {
+          "@id": "internal/controller/testdata/compat"
+        }
+      ],
+      "name": "CLAUDE.md"
+    },
+    {
+      "@id": "Dockerfile",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "cmd/main.go"
+        },
+        {
+          "@id": "https://github.com/GoogleContainerTools/distroless"
+        }
+      ],
+      "name": "Dockerfile"
+    },
+    {
+      "@id": "Dockerfile.site",
+      "@type": "CreativeWork",
+      "name": "Dockerfile.site"
+    },
+    {
+      "@id": "LICENSE",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer"
+        }
+      ],
+      "name": "LICENSE"
+    },
+    {
+      "@id": "Makefile",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "cmd/main.go"
+        },
+        {
+          "@id": "config/crd"
+        },
+        {
+          "@id": "config/crd/bases"
+        },
+        {
+          "@id": "config/default"
+        },
+        {
+          "@id": "config/manager"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/graph.txt"
+        },
+        {
+          "@id": "hack/boilerplate.go.txt"
+        },
+        {
+          "@id": "http://linuxcommand.org/lc3_adv_awk.php"
+        },
+        {
+          "@id": "https://docs.docker.com/build/buildx/"
+        },
+        {
+          "@id": "https://docs.docker.com/develop/develop-images/build_enhancements/"
+        },
+        {
+          "@id": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters"
+        }
+      ],
+      "name": "Makefile"
+    },
+    {
+      "@id": "NOTICE",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        }
+      ],
+      "name": "NOTICE"
+    },
+    {
+      "@id": "PROJECT",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://book.kubebuilder.io/reference/project-config.html"
+        }
+      ],
+      "name": "PROJECT"
+    },
+    {
+      "@id": "README.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0"
+        }
+      ],
+      "name": "README.md"
+    },
+    {
+      "@id": "api/v1alpha1",
+      "@type": "CreativeWork",
+      "name": "api/v1alpha1"
+    },
+    {
+      "@id": "api/v1alpha1/groupversion_info.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "api/v1alpha1/groupversion_info.go"
+    },
+    {
+      "@id": "api/v1alpha1/kubecontainer_types.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "api/v1alpha1/kubecontainer_types.go"
+    },
+    {
+      "@id": "api/v1alpha1/zz_generated.deepcopy.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "api/v1alpha1/zz_generated.deepcopy.go"
+    },
+    {
+      "@id": "cmd/codecompiler",
+      "@type": "CreativeWork",
+      "name": "cmd/codecompiler"
+    },
+    {
+      "@id": "cmd/codecompiler/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/codecompiler/main.go"
+    },
+    {
+      "@id": "cmd/homesetup",
+      "@type": "CreativeWork",
+      "name": "cmd/homesetup"
+    },
+    {
+      "@id": "cmd/homesetup/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://get.k0s.sh"
+        },
+        {
+          "@id": "https://github.com/unboxd-cloud/KubeContainer/releases/download/v0.2.0/install.yaml"
+        },
+        {
+          "@id": "https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh"
+        }
+      ],
+      "name": "cmd/homesetup/main.go"
+    },
+    {
+      "@id": "cmd/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/default/kustomization.yaml"
+        },
+        {
+          "@id": "config/prometheus/kustomization.yaml"
+        },
+        {
+          "@id": "config/rbac/kustomization.yaml"
+        },
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "@id": "https://book.kubebuilder.io/reference/metrics.html"
+        },
+        {
+          "@id": "https://github.com/advisories/GHSA-4374-p667-p6c8"
+        },
+        {
+          "@id": "https://github.com/advisories/GHSA-qppj-fm5r-hxr3"
+        },
+        {
+          "@id": "https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/metrics/filters#WithAuthenticationAndAuthorization"
+        },
+        {
+          "@id": "https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/metrics/server"
+        }
+      ],
+      "name": "cmd/main.go"
+    },
+    {
+      "@id": "cmd/recordgraph",
+      "@type": "CreativeWork",
+      "name": "cmd/recordgraph"
+    },
+    {
+      "@id": "cmd/recordgraph/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/graph-planned.txt"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/graph.txt"
+        },
+        {
+          "@id": "https://schema.org"
+        }
+      ],
+      "name": "cmd/recordgraph/main.go"
+    },
+    {
+      "@id": "cmd/schemakeeper",
+      "@type": "CreativeWork",
+      "name": "cmd/schemakeeper"
+    },
+    {
+      "@id": "cmd/schemakeeper/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "https://schema.org"
+        },
+        {
+          "@id": "registry/SKELETON-HOST.json"
+        },
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "cmd/schemakeeper/main.go"
+    },
+    {
+      "@id": "cmd/structuredinstructions",
+      "@type": "CreativeWork",
+      "name": "cmd/structuredinstructions"
+    },
+    {
+      "@id": "cmd/structuredinstructions/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/SKELETON.json"
+        }
+      ],
+      "name": "cmd/structuredinstructions/main.go"
+    },
+    {
+      "@id": "config/crd",
+      "@type": "CreativeWork",
+      "name": "config/crd"
+    },
+    {
+      "@id": "config/crd/bases",
+      "@type": "CreativeWork",
+      "name": "config/crd/bases"
+    },
+    {
+      "@id": "config/crd/bases/kubecontainer.unboxd.cloud_kubecontainers.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources"
+        },
+        {
+          "@id": "https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+        }
+      ],
+      "name": "config/crd/bases/kubecontainer.unboxd.cloud_kubecontainers.yaml"
+    },
+    {
+      "@id": "config/crd/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/crd/kustomizeconfig.yaml"
+        },
+        {
+          "@id": "config/default"
+        }
+      ],
+      "name": "config/crd/kustomization.yaml"
+    },
+    {
+      "@id": "config/crd/kustomizeconfig.yaml",
+      "@type": "CreativeWork",
+      "name": "config/crd/kustomizeconfig.yaml"
+    },
+    {
+      "@id": "config/default",
+      "@type": "CreativeWork",
+      "name": "config/default"
+    },
+    {
+      "@id": "config/default/cert_metrics_manager_patch.yaml",
+      "@type": "CreativeWork",
+      "name": "config/default/cert_metrics_manager_patch.yaml"
+    },
+    {
+      "@id": "config/default/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/default/cert_metrics_manager_patch.yaml"
+        },
+        {
+          "@id": "config/default/manager_metrics_patch.yaml"
+        },
+        {
+          "@id": "config/default/metrics_service.yaml"
+        },
+        {
+          "@id": "https://book.kubebuilder.io/reference/metrics"
+        }
+      ],
+      "name": "config/default/kustomization.yaml"
+    },
+    {
+      "@id": "config/default/manager_metrics_patch.yaml",
+      "@type": "CreativeWork",
+      "name": "config/default/manager_metrics_patch.yaml"
+    },
+    {
+      "@id": "config/default/metrics_service.yaml",
+      "@type": "CreativeWork",
+      "name": "config/default/metrics_service.yaml"
+    },
+    {
+      "@id": "config/manager",
+      "@type": "CreativeWork",
+      "name": "config/manager"
+    },
+    {
+      "@id": "config/manager/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/manager/manager.yaml"
+        }
+      ],
+      "name": "config/manager/kustomization.yaml"
+    },
+    {
+      "@id": "config/manager/manager.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted"
+        }
+      ],
+      "name": "config/manager/manager.yaml"
+    },
+    {
+      "@id": "config/network-policy/allow-metrics-traffic.yaml",
+      "@type": "CreativeWork",
+      "name": "config/network-policy/allow-metrics-traffic.yaml"
+    },
+    {
+      "@id": "config/network-policy/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/network-policy/allow-metrics-traffic.yaml"
+        }
+      ],
+      "name": "config/network-policy/kustomization.yaml"
+    },
+    {
+      "@id": "config/prometheus/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/default/kustomization.yaml"
+        },
+        {
+          "@id": "config/prometheus/monitor.yaml"
+        },
+        {
+          "@id": "config/prometheus/monitor_tls_patch.yaml"
+        }
+      ],
+      "name": "config/prometheus/kustomization.yaml"
+    },
+    {
+      "@id": "config/prometheus/monitor.yaml",
+      "@type": "CreativeWork",
+      "name": "config/prometheus/monitor.yaml"
+    },
+    {
+      "@id": "config/prometheus/monitor_tls_patch.yaml",
+      "@type": "CreativeWork",
+      "name": "config/prometheus/monitor_tls_patch.yaml"
+    },
+    {
+      "@id": "config/rbac/kubecontainer_admin_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/kubecontainer_admin_role.yaml"
+    },
+    {
+      "@id": "config/rbac/kubecontainer_editor_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/kubecontainer_editor_role.yaml"
+    },
+    {
+      "@id": "config/rbac/kubecontainer_viewer_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/kubecontainer_viewer_role.yaml"
+    },
+    {
+      "@id": "config/rbac/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/rbac/kubecontainer_admin_role.yaml"
+        },
+        {
+          "@id": "config/rbac/kubecontainer_editor_role.yaml"
+        },
+        {
+          "@id": "config/rbac/kubecontainer_viewer_role.yaml"
+        },
+        {
+          "@id": "config/rbac/leader_election_role.yaml"
+        },
+        {
+          "@id": "config/rbac/leader_election_role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_auth_role.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_auth_role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/metrics_reader_role.yaml"
+        },
+        {
+          "@id": "config/rbac/role.yaml"
+        },
+        {
+          "@id": "config/rbac/role_binding.yaml"
+        },
+        {
+          "@id": "config/rbac/service_account.yaml"
+        },
+        {
+          "@id": "https://book.kubebuilder.io/reference/metrics.html"
+        }
+      ],
+      "name": "config/rbac/kustomization.yaml"
+    },
+    {
+      "@id": "config/rbac/leader_election_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/leader_election_role.yaml"
+    },
+    {
+      "@id": "config/rbac/leader_election_role_binding.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/leader_election_role_binding.yaml"
+    },
+    {
+      "@id": "config/rbac/metrics_auth_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/metrics_auth_role.yaml"
+    },
+    {
+      "@id": "config/rbac/metrics_auth_role_binding.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/metrics_auth_role_binding.yaml"
+    },
+    {
+      "@id": "config/rbac/metrics_reader_role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/metrics_reader_role.yaml"
+    },
+    {
+      "@id": "config/rbac/role.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/role.yaml"
+    },
+    {
+      "@id": "config/rbac/role_binding.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/role_binding.yaml"
+    },
+    {
+      "@id": "config/rbac/service_account.yaml",
+      "@type": "CreativeWork",
+      "name": "config/rbac/service_account.yaml"
+    },
+    {
+      "@id": "config/samples/kubecontainer_v1alpha1_kubecontainer.yaml",
+      "@type": "CreativeWork",
+      "name": "config/samples/kubecontainer_v1alpha1_kubecontainer.yaml"
+    },
+    {
+      "@id": "config/samples/kustomization.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/samples/kubecontainer_v1alpha1_kubecontainer.yaml"
+        }
+      ],
+      "name": "config/samples/kustomization.yaml"
+    },
+    {
+      "@id": "deploy/.",
+      "@type": "CreativeWork",
+      "name": "deploy/."
+    },
+    {
+      "@id": "deploy/AGENT-STACK.md",
+      "@type": "CreativeWork",
+      "name": "deploy/AGENT-STACK.md"
+    },
+    {
+      "@id": "deploy/GITLAB.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://docs.gitlab.com/install/"
+        },
+        {
+          "@id": "https://docs.gitlab.com/runner/install/"
+        },
+        {
+          "@id": "https://git.unboxd.cloud"
+        },
+        {
+          "@id": "https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh"
+        }
+      ],
+      "name": "deploy/GITLAB.md"
+    },
+    {
+      "@id": "deploy/KUBECONTAINER-HOME.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://fabricjs.com/"
+        },
+        {
+          "@id": "https://github.com/fabricjs/fabric.js"
+        }
+      ],
+      "name": "deploy/KUBECONTAINER-HOME.md"
+    },
+    {
+      "@id": "deploy/LEAPMICRO.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/deploy.sh"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/deploy.sh"
+        }
+      ],
+      "name": "deploy/LEAPMICRO.md"
+    },
+    {
+      "@id": "deploy/ORG-NAME.md",
+      "@type": "CreativeWork",
+      "name": "deploy/ORG-NAME.md"
+    },
+    {
+      "@id": "deploy/REFERENCES.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://cloudevents.io/"
+        },
+        {
+          "@id": "https://cloudinit.readthedocs.io/en/latest/"
+        },
+        {
+          "@id": "https://containerd.io/docs/"
+        },
+        {
+          "@id": "https://developer.arm.com/documentation/ddi0487"
+        },
+        {
+          "@id": "https://docs.ceph.com/en/latest/"
+        },
+        {
+          "@id": "https://docs.k3s.io/"
+        },
+        {
+          "@id": "https://docs.kernel.org/admin-guide/cgroup-v2.html"
+        },
+        {
+          "@id": "https://docs.kernel.org/virt/kvm/"
+        },
+        {
+          "@id": "https://docs.oasis-open.org/virtio/virtio/"
+        },
+        {
+          "@id": "https://docs.openstack.org/"
+        },
+        {
+          "@id": "https://docs.openstack.org/api-ref/"
+        },
+        {
+          "@id": "https://docs.openstack.org/cinder/latest/"
+        },
+        {
+          "@id": "https://docs.openstack.org/keystone/latest/"
+        },
+        {
+          "@id": "https://github.com/cloudevents/spec"
+        },
+        {
+          "@id": "https://github.com/cncf/k8s-conformance"
+        },
+        {
+          "@id": "https://github.com/container-storage-interface/spec"
+        },
+        {
+          "@id": "https://github.com/containerd/containerd"
+        },
+        {
+          "@id": "https://github.com/containernetworking/cni"
+        },
+        {
+          "@id": "https://github.com/google/cel-spec"
+        },
+        {
+          "@id": "https://github.com/kubernetes/cri-api"
+        },
+        {
+          "@id": "https://github.com/kubernetes/kubernetes"
+        },
+        {
+          "@id": "https://github.com/opencontainers/distribution-spec"
+        },
+        {
+          "@id": "https://github.com/opencontainers/image-spec"
+        },
+        {
+          "@id": "https://github.com/opencontainers/runtime-spec"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0"
+        },
+        {
+          "@id": "https://grpc.io/docs/"
+        },
+        {
+          "@id": "https://html.spec.whatwg.org/"
+        },
+        {
+          "@id": "https://insights.linuxfoundation.org/collection/details/top-open-source-projects"
+        },
+        {
+          "@id": "https://insights.linuxfoundation.org/project/k8s"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/reference/"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/"
+        },
+        {
+          "@id": "https://minikube.sigs.k8s.io/docs/"
+        },
+        {
+          "@id": "https://protobuf.dev/"
+        },
+        {
+          "@id": "https://releases.openstack.org/"
+        },
+        {
+          "@id": "https://releases.ubuntu.com/"
+        },
+        {
+          "@id": "https://riscv.org/technical/specifications/"
+        },
+        {
+          "@id": "https://rook.io/docs/rook/latest/"
+        },
+        {
+          "@id": "https://systemd.io/"
+        },
+        {
+          "@id": "https://tc39.es/ecma262/"
+        },
+        {
+          "@id": "https://ubuntu.com/about/release-cycle"
+        },
+        {
+          "@id": "https://www.iana.org/assignments/service-names-port-numbers/"
+        },
+        {
+          "@id": "https://www.intel.com/sdm"
+        },
+        {
+          "@id": "https://www.w3.org/TR/did-core/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/wot-thing-description11/"
+        }
+      ],
+      "name": "deploy/REFERENCES.md"
+    },
+    {
+      "@id": "deploy/STACK.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://www.gartner.com/en/information-technology/glossary/decision-intelligence"
+        }
+      ],
+      "name": "deploy/STACK.md"
+    },
+    {
+      "@id": "deploy/TOOLCHAIN.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://buildpacks.io/"
+        },
+        {
+          "@id": "https://github.com/buildpacks/pack"
+        },
+        {
+          "@id": "https://github.com/kubernetes-sigs/kubebuilder"
+        },
+        {
+          "@id": "https://github.com/opentofu/opentofu"
+        },
+        {
+          "@id": "https://kubebuilder.io/"
+        },
+        {
+          "@id": "https://opentofu.org/"
+        }
+      ],
+      "name": "deploy/TOOLCHAIN.md"
+    },
+    {
+      "@id": "deploy/VPS.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://arithmetic.default.svc"
+        },
+        {
+          "@id": "https://get.k3s.io"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/releases/download/v0.1.0/install.yaml"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/unboxd-agency/KubeContainer/main/deploy/arithmetic-kube.yaml"
+        }
+      ],
+      "name": "deploy/VPS.md"
+    },
+    {
+      "@id": "deploy/arithmetic-kube.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "site/arithmetic.html"
+        }
+      ],
+      "name": "deploy/arithmetic-kube.yaml"
+    },
+    {
+      "@id": "deploy/deploy.sh",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest"
+        },
+        {
+          "@id": "https://get.k3s.io"
+        },
+        {
+          "@id": "https://github.com/unboxd-cloud/KubeContainer/releases/download/$TAG/install.yaml"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/arithmetic-kube.yaml"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/deploy.sh"
+        }
+      ],
+      "name": "deploy/deploy.sh"
+    },
+    {
+      "@id": "deploy/site-kube.yaml",
+      "@type": "CreativeWork",
+      "name": "deploy/site-kube.yaml"
+    },
+    {
+      "@id": "deploy/tofu/main.tf",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/unboxd-cloud/KubeContainer/releases/download/v0.2.0/install.yaml"
+        }
+      ],
+      "name": "deploy/tofu/main.tf"
+    },
+    {
+      "@id": "deploy/zot.yaml",
+      "@type": "CreativeWork",
+      "name": "deploy/zot.yaml"
+    },
+    {
+      "@id": "dist/install.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources"
+        },
+        {
+          "@id": "https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+        }
+      ],
+      "name": "dist/install.yaml"
+    },
+    {
+      "@id": "docs/AGENT-PLATFORM.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/rbac/role.yaml"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md"
+        }
+      ],
+      "name": "docs/AGENT-PLATFORM.md"
+    },
+    {
+      "@id": "docs/BENCHMARKS.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": ".github/workflows/drift-audit.yml"
+        },
+        {
+          "@id": ".github/workflows/release.yml"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/actions/runs/27307931328"
+        }
+      ],
+      "name": "docs/BENCHMARKS.md"
+    },
+    {
+      "@id": "docs/CONTROL-PANEL.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://juju.is/"
+        },
+        {
+          "@id": "https://operatorframework.io/"
+        },
+        {
+          "@id": "https://ubuntu.com/landscape"
+        },
+        {
+          "@id": "https://www.cncf.io/projects/crossplane/"
+        }
+      ],
+      "name": "docs/CONTROL-PANEL.md"
+    },
+    {
+      "@id": "docs/DESIGN.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/manager"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "release/REQUEST"
+        }
+      ],
+      "name": "docs/DESIGN.md"
+    },
+    {
+      "@id": "docs/DOCTRINE-MAP.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "cmd/codecompiler"
+        },
+        {
+          "@id": "cmd/homesetup"
+        },
+        {
+          "@id": "cmd/recordgraph"
+        },
+        {
+          "@id": "cmd/schemakeeper"
+        },
+        {
+          "@id": "cmd/structuredinstructions"
+        },
+        {
+          "@id": "deploy/AGENT-STACK.md"
+        },
+        {
+          "@id": "deploy/GITLAB.md"
+        },
+        {
+          "@id": "deploy/KUBECONTAINER-HOME.md"
+        },
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
+          "@id": "deploy/ORG-NAME.md"
+        },
+        {
+          "@id": "deploy/TOOLCHAIN.md"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/BENCHMARKS.md"
+        },
+        {
+          "@id": "docs/CONTROL-PANEL.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/HEADLESS-DELIVERY.md"
+        },
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        },
+        {
+          "@id": "docs/LICENSING-DECISION.md"
+        },
+        {
+          "@id": "docs/MEASUREMENT-STANDARD.md"
+        },
+        {
+          "@id": "docs/PERSONAL.md"
+        },
+        {
+          "@id": "docs/PRIMITIVES.md"
+        },
+        {
+          "@id": "docs/TOOLS.md"
+        },
+        {
+          "@id": "docs/VENDOR-ELIGIBILITY.md"
+        },
+        {
+          "@id": "docs/manual/CONTRACTS.md"
+        },
+        {
+          "@id": "docs/manual/FAQ.md"
+        },
+        {
+          "@id": "docs/manual/HOW-TO-USE.md"
+        },
+        {
+          "@id": "docs/manual/LICENSES.md"
+        },
+        {
+          "@id": "eval/corpus"
+        },
+        {
+          "@id": "eval/graph-planned.txt"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/graph.txt"
+        },
+        {
+          "@id": "eval/harness.sh"
+        },
+        {
+          "@id": "hack/deployrehearsal"
+        },
+        {
+          "@id": "hack/operatorpoc"
+        },
+        {
+          "@id": "internal/controller/testdata/compat"
+        }
+      ],
+      "name": "docs/DOCTRINE-MAP.md"
+    },
+    {
+      "@id": "docs/FOUNDING-PRINCIPLES.md",
+      "@type": "CreativeWork",
+      "name": "docs/FOUNDING-PRINCIPLES.md"
+    },
+    {
+      "@id": "docs/GO-TO-MARKET.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        }
+      ],
+      "name": "docs/GO-TO-MARKET.md"
+    },
+    {
+      "@id": "docs/HEADLESS-DELIVERY.md",
+      "@type": "CreativeWork",
+      "name": "docs/HEADLESS-DELIVERY.md"
+    },
+    {
+      "@id": "docs/KUBE-SPEC.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/manual"
+        }
+      ],
+      "name": "docs/KUBE-SPEC.md"
+    },
+    {
+      "@id": "docs/LICENSING-DECISION.md",
+      "@type": "CreativeWork",
+      "name": "docs/LICENSING-DECISION.md"
+    },
+    {
+      "@id": "docs/MEASUREMENT-STANDARD.md",
+      "@type": "CreativeWork",
+      "name": "docs/MEASUREMENT-STANDARD.md"
+    },
+    {
+      "@id": "docs/PERSONAL.md",
+      "@type": "CreativeWork",
+      "name": "docs/PERSONAL.md"
+    },
+    {
+      "@id": "docs/PRIMITIVES.md",
+      "@type": "CreativeWork",
+      "name": "docs/PRIMITIVES.md"
+    },
+    {
+      "@id": "docs/RELEASE-SOP.md",
+      "@type": "CreativeWork",
+      "name": "docs/RELEASE-SOP.md"
+    },
+    {
+      "@id": "docs/SOLID-STATE-DATABASE.md",
+      "@type": "CreativeWork",
+      "name": "docs/SOLID-STATE-DATABASE.md"
+    },
+    {
+      "@id": "docs/TOOLS.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "cmd/codecompiler/main.go"
+        },
+        {
+          "@id": "cmd/recordgraph/main.go"
+        },
+        {
+          "@id": "cmd/schemakeeper/main.go"
+        },
+        {
+          "@id": "cmd/structuredinstructions/main.go"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "eval/graph-planned.txt"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/graph.txt"
+        },
+        {
+          "@id": "hack/build-vocabulary.sh"
+        },
+        {
+          "@id": "hack/check-vocabulary.sh"
+        },
+        {
+          "@id": "https://insights.linuxfoundation.org/collection/details/top-open-source-projects"
+        },
+        {
+          "@id": "https://insights.linuxfoundation.org/project/k8s"
+        },
+        {
+          "@id": "https://schema.org/"
+        },
+        {
+          "@id": "https://www.dbpedia.org/"
+        },
+        {
+          "@id": "registry/SKELETON.json"
+        },
+        {
+          "@id": "registry/agents"
+        },
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "docs/TOOLS.md"
+    },
+    {
+      "@id": "docs/VENDOR-ELIGIBILITY.md",
+      "@type": "CreativeWork",
+      "name": "docs/VENDOR-ELIGIBILITY.md"
+    },
+    {
+      "@id": "docs/VOCABULARY.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/DOCTRINE-MAP.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/HEADLESS-DELIVERY.md"
+        },
+        {
+          "@id": "docs/PRIMITIVES.md"
+        },
+        {
+          "@id": "docs/SOLID-STATE-DATABASE.md"
+        },
+        {
+          "@id": "docs/TOOLS.md"
+        },
+        {
+          "@id": "hack/build-vocabulary.sh"
+        }
+      ],
+      "name": "docs/VOCABULARY.md"
+    },
+    {
+      "@id": "docs/assessments",
+      "@type": "CreativeWork",
+      "name": "docs/assessments"
+    },
+    {
+      "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/assessments/XDM-ALIGNMENT.md"
+        }
+      ],
+      "name": "docs/assessments/SWEBENCH-ALIGNMENT.md"
+    },
+    {
+      "@id": "docs/assessments/XDM-ALIGNMENT.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/SOLID-STATE-DATABASE.md"
+        }
+      ],
+      "name": "docs/assessments/XDM-ALIGNMENT.md"
+    },
+    {
+      "@id": "docs/manual",
+      "@type": "CreativeWork",
+      "name": "docs/manual"
+    },
+    {
+      "@id": "docs/manual/CONTRACTS.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/issues"
+        }
+      ],
+      "name": "docs/manual/CONTRACTS.md"
+    },
+    {
+      "@id": "docs/manual/FAQ.md",
+      "@type": "CreativeWork",
+      "name": "docs/manual/FAQ.md"
+    },
+    {
+      "@id": "docs/manual/HOW-TO-USE.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://docs.k3s.io/quick-start"
+        },
+        {
+          "@id": "https://docs.openstack.org/install-guide/"
+        },
+        {
+          "@id": "https://get.k3s.io"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/releases/download/v0.1.0/install.yaml"
+        },
+        {
+          "@id": "https://kubernetes.io/docs/reference/kubectl/"
+        },
+        {
+          "@id": "https://minikube.sigs.k8s.io/docs/start/"
+        }
+      ],
+      "name": "docs/manual/HOW-TO-USE.md"
+    },
+    {
+      "@id": "docs/manual/LICENSES.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/kubernetes-sigs/controller-runtime/blob/main/LICENSE"
+        },
+        {
+          "@id": "https://github.com/kubernetes/kubernetes/blob/master/LICENSE"
+        },
+        {
+          "@id": "https://go.dev/LICENSE"
+        }
+      ],
+      "name": "docs/manual/LICENSES.md"
+    },
+    {
+      "@id": "docs/provenance/FOUNDER-PRIOR-ART.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://www.linkedin.com/posts/thefractionalpm_i-think-i-missed-by-exit-again-this-time-activity-7470562698074976256-b4T1"
+        }
+      ],
+      "name": "docs/provenance/FOUNDER-PRIOR-ART.md"
+    },
+    {
+      "@id": "docs/provenance/PROMPTS-2026-06-12-session2.md",
+      "@type": "CreativeWork",
+      "name": "docs/provenance/PROMPTS-2026-06-12-session2.md"
+    },
+    {
+      "@id": "eval/README.md",
+      "@type": "CreativeWork",
+      "name": "eval/README.md"
+    },
+    {
+      "@id": "eval/corpus",
+      "@type": "CreativeWork",
+      "name": "eval/corpus"
+    },
+    {
+      "@id": "eval/corpus/task-001-deprecated-recorder.yaml",
+      "@type": "CreativeWork",
+      "name": "eval/corpus/task-001-deprecated-recorder.yaml"
+    },
+    {
+      "@id": "eval/corpus/task-002-pin-kind-source.yaml",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": ".github/workflows/test-e2e.yml"
+        }
+      ],
+      "name": "eval/corpus/task-002-pin-kind-source.yaml"
+    },
+    {
+      "@id": "eval/corpus/task-003-backward-compat-gate.yaml",
+      "@type": "CreativeWork",
+      "name": "eval/corpus/task-003-backward-compat-gate.yaml"
+    },
+    {
+      "@id": "eval/graph-planned.txt",
+      "@type": "CreativeWork",
+      "name": "eval/graph-planned.txt"
+    },
+    {
+      "@id": "eval/graph.jsonld",
+      "@type": "CreativeWork",
+      "name": "eval/graph.jsonld"
+    },
+    {
+      "@id": "eval/graph.txt",
+      "@type": "CreativeWork",
+      "name": "eval/graph.txt"
+    },
+    {
+      "@id": "eval/harness.sh",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/corpus"
+        }
+      ],
+      "name": "eval/harness.sh"
+    },
+    {
+      "@id": "eval/vocabulary-baseline.txt",
+      "@type": "CreativeWork",
+      "name": "eval/vocabulary-baseline.txt"
+    },
+    {
+      "@id": "eval/vocabulary.txt",
+      "@type": "CreativeWork",
+      "name": "eval/vocabulary.txt"
+    },
+    {
+      "@id": "go.mod",
+      "@type": "CreativeWork",
+      "name": "go.mod"
+    },
+    {
+      "@id": "go.sum",
+      "@type": "CreativeWork",
+      "name": "go.sum"
+    },
+    {
+      "@id": "hack/boilerplate.go.txt",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "hack/boilerplate.go.txt"
+    },
+    {
+      "@id": "hack/build-vocabulary.sh",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "eval/vocabulary.txt"
+        }
+      ],
+      "name": "hack/build-vocabulary.sh"
+    },
+    {
+      "@id": "hack/check-promise.sh",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "release/PROMISE"
+        }
+      ],
+      "name": "hack/check-promise.sh"
+    },
+    {
+      "@id": "hack/check-vocabulary.sh",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/assessments"
+        },
+        {
+          "@id": "eval/vocabulary-baseline.txt"
+        },
+        {
+          "@id": "eval/vocabulary.txt"
+        }
+      ],
+      "name": "hack/check-vocabulary.sh"
+    },
+    {
+      "@id": "hack/deployrehearsal",
+      "@type": "CreativeWork",
+      "name": "hack/deployrehearsal"
+    },
+    {
+      "@id": "hack/deployrehearsal/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/crd/bases"
+        },
+        {
+          "@id": "deploy/."
+        },
+        {
+          "@id": "deploy/arithmetic-kube.yaml"
+        }
+      ],
+      "name": "hack/deployrehearsal/main.go"
+    },
+    {
+      "@id": "hack/operatorpoc",
+      "@type": "CreativeWork",
+      "name": "hack/operatorpoc"
+    },
+    {
+      "@id": "hack/operatorpoc/main.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/crd/bases"
+        }
+      ],
+      "name": "hack/operatorpoc/main.go"
+    },
+    {
+      "@id": "http://%s/",
+      "@type": "CreativeWork",
+      "name": "http://%s/"
+    },
+    {
+      "@id": "http://arithmetic.default.svc",
+      "@type": "CreativeWork",
+      "name": "http://arithmetic.default.svc"
+    },
+    {
+      "@id": "http://fabricjs.com/",
+      "@type": "CreativeWork",
+      "name": "http://fabricjs.com/"
+    },
+    {
+      "@id": "http://linuxcommand.org/lc3_adv_awk.php",
+      "@type": "CreativeWork",
+      "name": "http://linuxcommand.org/lc3_adv_awk.php"
+    },
+    {
+      "@id": "http://onsi.github.io/ginkgo/",
+      "@type": "CreativeWork",
+      "name": "http://onsi.github.io/ginkgo/"
+    },
+    {
+      "@id": "http://www.apache.org/licenses/LICENSE-2.0",
+      "@type": "CreativeWork",
+      "name": "http://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+      "@id": "https://%s.%s.svc.cluster.local:8443/metrics",
+      "@type": "CreativeWork",
+      "name": "https://%s.%s.svc.cluster.local:8443/metrics"
+    },
+    {
+      "@id": "https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest",
+      "@type": "CreativeWork",
+      "name": "https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest"
+    },
+    {
+      "@id": "https://book.kubebuilder.io",
+      "@type": "CreativeWork",
+      "name": "https://book.kubebuilder.io"
+    },
+    {
+      "@id": "https://book.kubebuilder.io/reference/good-practices.html",
+      "@type": "CreativeWork",
+      "name": "https://book.kubebuilder.io/reference/good-practices.html"
+    },
+    {
+      "@id": "https://book.kubebuilder.io/reference/markers.html",
+      "@type": "CreativeWork",
+      "name": "https://book.kubebuilder.io/reference/markers.html"
+    },
+    {
+      "@id": "https://book.kubebuilder.io/reference/metrics",
+      "@type": "CreativeWork",
+      "name": "https://book.kubebuilder.io/reference/metrics"
+    },
+    {
+      "@id": "https://book.kubebuilder.io/reference/metrics.html",
+      "@type": "CreativeWork",
+      "name": "https://book.kubebuilder.io/reference/metrics.html"
+    },
+    {
+      "@id": "https://book.kubebuilder.io/reference/project-config.html",
+      "@type": "CreativeWork",
+      "name": "https://book.kubebuilder.io/reference/project-config.html"
+    },
+    {
+      "@id": "https://buildpacks.io/",
+      "@type": "CreativeWork",
+      "name": "https://buildpacks.io/"
+    },
+    {
+      "@id": "https://cloudevents.io/",
+      "@type": "CreativeWork",
+      "name": "https://cloudevents.io/"
+    },
+    {
+      "@id": "https://cloudinit.readthedocs.io/en/latest/",
+      "@type": "CreativeWork",
+      "name": "https://cloudinit.readthedocs.io/en/latest/"
+    },
+    {
+      "@id": "https://containerd.io/docs/",
+      "@type": "CreativeWork",
+      "name": "https://containerd.io/docs/"
+    },
+    {
+      "@id": "https://developer.arm.com/documentation/ddi0487",
+      "@type": "CreativeWork",
+      "name": "https://developer.arm.com/documentation/ddi0487"
+    },
+    {
+      "@id": "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl",
+      "@type": "CreativeWork",
+      "name": "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl"
+    },
+    {
+      "@id": "https://dl.k8s.io/release/stable.txt",
+      "@type": "CreativeWork",
+      "name": "https://dl.k8s.io/release/stable.txt"
+    },
+    {
+      "@id": "https://docs.ceph.com/en/latest/",
+      "@type": "CreativeWork",
+      "name": "https://docs.ceph.com/en/latest/"
+    },
+    {
+      "@id": "https://docs.docker.com/build/buildx/",
+      "@type": "CreativeWork",
+      "name": "https://docs.docker.com/build/buildx/"
+    },
+    {
+      "@id": "https://docs.docker.com/develop/develop-images/build_enhancements/",
+      "@type": "CreativeWork",
+      "name": "https://docs.docker.com/develop/develop-images/build_enhancements/"
+    },
+    {
+      "@id": "https://docs.docker.com/engine/reference/builder/#dockerignore-file",
+      "@type": "CreativeWork",
+      "name": "https://docs.docker.com/engine/reference/builder/#dockerignore-file"
+    },
+    {
+      "@id": "https://docs.gitlab.com/install/",
+      "@type": "CreativeWork",
+      "name": "https://docs.gitlab.com/install/"
+    },
+    {
+      "@id": "https://docs.gitlab.com/runner/install/",
+      "@type": "CreativeWork",
+      "name": "https://docs.gitlab.com/runner/install/"
+    },
+    {
+      "@id": "https://docs.k3s.io/",
+      "@type": "CreativeWork",
+      "name": "https://docs.k3s.io/"
+    },
+    {
+      "@id": "https://docs.k3s.io/quick-start",
+      "@type": "CreativeWork",
+      "name": "https://docs.k3s.io/quick-start"
+    },
+    {
+      "@id": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "@type": "CreativeWork",
+      "name": "https://docs.kernel.org/admin-guide/cgroup-v2.html"
+    },
+    {
+      "@id": "https://docs.kernel.org/virt/kvm/",
+      "@type": "CreativeWork",
+      "name": "https://docs.kernel.org/virt/kvm/"
+    },
+    {
+      "@id": "https://docs.oasis-open.org/virtio/virtio/",
+      "@type": "CreativeWork",
+      "name": "https://docs.oasis-open.org/virtio/virtio/"
+    },
+    {
+      "@id": "https://docs.openstack.org/",
+      "@type": "CreativeWork",
+      "name": "https://docs.openstack.org/"
+    },
+    {
+      "@id": "https://docs.openstack.org/api-ref/",
+      "@type": "CreativeWork",
+      "name": "https://docs.openstack.org/api-ref/"
+    },
+    {
+      "@id": "https://docs.openstack.org/cinder/latest/",
+      "@type": "CreativeWork",
+      "name": "https://docs.openstack.org/cinder/latest/"
+    },
+    {
+      "@id": "https://docs.openstack.org/install-guide/",
+      "@type": "CreativeWork",
+      "name": "https://docs.openstack.org/install-guide/"
+    },
+    {
+      "@id": "https://docs.openstack.org/keystone/latest/",
+      "@type": "CreativeWork",
+      "name": "https://docs.openstack.org/keystone/latest/"
+    },
+    {
+      "@id": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters",
+      "@type": "CreativeWork",
+      "name": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters"
+    },
+    {
+      "@id": "https://get.k0s.sh",
+      "@type": "CreativeWork",
+      "name": "https://get.k0s.sh"
+    },
+    {
+      "@id": "https://get.k3s.io",
+      "@type": "CreativeWork",
+      "name": "https://get.k3s.io"
+    },
+    {
+      "@id": "https://get.opensuse.org/leapmicro/",
+      "@type": "CreativeWork",
+      "name": "https://get.opensuse.org/leapmicro/"
+    },
+    {
+      "@id": "https://get.opensuse.org/microos/",
+      "@type": "CreativeWork",
+      "name": "https://get.opensuse.org/microos/"
+    },
+    {
+      "@id": "https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources",
+      "@type": "CreativeWork",
+      "name": "https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources"
+    },
+    {
+      "@id": "https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds",
+      "@type": "CreativeWork",
+      "name": "https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+    },
+    {
+      "@id": "https://git.unboxd.cloud",
+      "@type": "CreativeWork",
+      "name": "https://git.unboxd.cloud"
+    },
+    {
+      "@id": "https://github.com/GoogleContainerTools/distroless",
+      "@type": "CreativeWork",
+      "name": "https://github.com/GoogleContainerTools/distroless"
+    },
+    {
+      "@id": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+      "@type": "CreativeWork",
+      "name": "https://github.com/advisories/GHSA-4374-p667-p6c8"
+    },
+    {
+      "@id": "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+      "@type": "CreativeWork",
+      "name": "https://github.com/advisories/GHSA-qppj-fm5r-hxr3"
+    },
+    {
+      "@id": "https://github.com/buildpacks/pack",
+      "@type": "CreativeWork",
+      "name": "https://github.com/buildpacks/pack"
+    },
+    {
+      "@id": "https://github.com/cert-manager/cert-manager/releases/download/%s/cert-manager.yaml",
+      "@type": "CreativeWork",
+      "name": "https://github.com/cert-manager/cert-manager/releases/download/%s/cert-manager.yaml"
+    },
+    {
+      "@id": "https://github.com/cloudevents/spec",
+      "@type": "CreativeWork",
+      "name": "https://github.com/cloudevents/spec"
+    },
+    {
+      "@id": "https://github.com/cncf/k8s-conformance",
+      "@type": "CreativeWork",
+      "name": "https://github.com/cncf/k8s-conformance"
+    },
+    {
+      "@id": "https://github.com/container-storage-interface/spec",
+      "@type": "CreativeWork",
+      "name": "https://github.com/container-storage-interface/spec"
+    },
+    {
+      "@id": "https://github.com/containerd/containerd",
+      "@type": "CreativeWork",
+      "name": "https://github.com/containerd/containerd"
+    },
+    {
+      "@id": "https://github.com/containernetworking/cni",
+      "@type": "CreativeWork",
+      "name": "https://github.com/containernetworking/cni"
+    },
+    {
+      "@id": "https://github.com/fabricjs/fabric.js",
+      "@type": "CreativeWork",
+      "name": "https://github.com/fabricjs/fabric.js"
+    },
+    {
+      "@id": "https://github.com/google/cel-spec",
+      "@type": "CreativeWork",
+      "name": "https://github.com/google/cel-spec"
+    },
+    {
+      "@id": "https://github.com/kubernetes-sigs/controller-runtime",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes-sigs/controller-runtime"
+    },
+    {
+      "@id": "https://github.com/kubernetes-sigs/controller-runtime/blob/main/FAQ.md",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes-sigs/controller-runtime/blob/main/FAQ.md"
+    },
+    {
+      "@id": "https://github.com/kubernetes-sigs/controller-runtime/blob/main/LICENSE",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes-sigs/controller-runtime/blob/main/LICENSE"
+    },
+    {
+      "@id": "https://github.com/kubernetes-sigs/controller-tools",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes-sigs/controller-tools"
+    },
+    {
+      "@id": "https://github.com/kubernetes-sigs/kind/releases/download/${KIND_VERSION}/kind-linux-$(go",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes-sigs/kind/releases/download/${KIND_VERSION}/kind-linux-$(go"
+    },
+    {
+      "@id": "https://github.com/kubernetes-sigs/kubebuilder",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes-sigs/kubebuilder"
+    },
+    {
+      "@id": "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md"
+    },
+    {
+      "@id": "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-instrumentation/logging.md#message-style-guidelines",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-instrumentation/logging.md#message-style-guidelines"
+    },
+    {
+      "@id": "https://github.com/kubernetes/cri-api",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes/cri-api"
+    },
+    {
+      "@id": "https://github.com/kubernetes/kubernetes",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes/kubernetes"
+    },
+    {
+      "@id": "https://github.com/kubernetes/kubernetes/blob/master/LICENSE",
+      "@type": "CreativeWork",
+      "name": "https://github.com/kubernetes/kubernetes/blob/master/LICENSE"
+    },
+    {
+      "@id": "https://github.com/opencontainers/distribution-spec",
+      "@type": "CreativeWork",
+      "name": "https://github.com/opencontainers/distribution-spec"
+    },
+    {
+      "@id": "https://github.com/opencontainers/image-spec",
+      "@type": "CreativeWork",
+      "name": "https://github.com/opencontainers/image-spec"
+    },
+    {
+      "@id": "https://github.com/opencontainers/runtime-spec",
+      "@type": "CreativeWork",
+      "name": "https://github.com/opencontainers/runtime-spec"
+    },
+    {
+      "@id": "https://github.com/opentofu/opentofu",
+      "@type": "CreativeWork",
+      "name": "https://github.com/opentofu/opentofu"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer/actions/runs/27307931328",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer/actions/runs/27307931328"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/AGENT-PLATFORM.md",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/AGENT-PLATFORM.md"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/BENCHMARKS.md",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/BENCHMARKS.md"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/KUBE-SPEC.md",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/KUBE-SPEC.md"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer/issues",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer/issues"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer/releases/download/v0.1.0/install.yaml",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer/releases/download/v0.1.0/install.yaml"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0"
+    },
+    {
+      "@id": "https://github.com/unboxd-agency/KubeContainer/tree/main/docs",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-agency/KubeContainer/tree/main/docs"
+    },
+    {
+      "@id": "https://github.com/unboxd-cloud/KubeContainer/releases/download/$TAG/install.yaml",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-cloud/KubeContainer/releases/download/$TAG/install.yaml"
+    },
+    {
+      "@id": "https://github.com/unboxd-cloud/KubeContainer/releases/download/v0.2.0/install.yaml",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-cloud/KubeContainer/releases/download/v0.2.0/install.yaml"
+    },
+    {
+      "@id": "https://go.dev/LICENSE",
+      "@type": "CreativeWork",
+      "name": "https://go.dev/LICENSE"
+    },
+    {
+      "@id": "https://go.kubebuilder.io/dl/latest/linux/${ARCH}",
+      "@type": "CreativeWork",
+      "name": "https://go.kubebuilder.io/dl/latest/linux/${ARCH}"
+    },
+    {
+      "@id": "https://golangci-lint.run/plugins/module-plugins/",
+      "@type": "CreativeWork",
+      "name": "https://golangci-lint.run/plugins/module-plugins/"
+    },
+    {
+      "@id": "https://grpc.io/docs/",
+      "@type": "CreativeWork",
+      "name": "https://grpc.io/docs/"
+    },
+    {
+      "@id": "https://html.spec.whatwg.org/",
+      "@type": "CreativeWork",
+      "name": "https://html.spec.whatwg.org/"
+    },
+    {
+      "@id": "https://insights.linuxfoundation.org/collection/details/top-open-source-projects",
+      "@type": "CreativeWork",
+      "name": "https://insights.linuxfoundation.org/collection/details/top-open-source-projects"
+    },
+    {
+      "@id": "https://insights.linuxfoundation.org/project/k8s",
+      "@type": "CreativeWork",
+      "name": "https://insights.linuxfoundation.org/project/k8s"
+    },
+    {
+      "@id": "https://juju.is/",
+      "@type": "CreativeWork",
+      "name": "https://juju.is/"
+    },
+    {
+      "@id": "https://keepachangelog.com/en/1.1.0/",
+      "@type": "CreativeWork",
+      "name": "https://keepachangelog.com/en/1.1.0/"
+    },
+    {
+      "@id": "https://kind.sigs.k8s.io/",
+      "@type": "CreativeWork",
+      "name": "https://kind.sigs.k8s.io/"
+    },
+    {
+      "@id": "https://kind.sigs.k8s.io/dl/latest/kind-linux-${ARCH}",
+      "@type": "CreativeWork",
+      "name": "https://kind.sigs.k8s.io/dl/latest/kind-linux-${ARCH}"
+    },
+    {
+      "@id": "https://kubebuilder.io/",
+      "@type": "CreativeWork",
+      "name": "https://kubebuilder.io/"
+    },
+    {
+      "@id": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+      "@type": "CreativeWork",
+      "name": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+    },
+    {
+      "@id": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/",
+      "@type": "CreativeWork",
+      "name": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/"
+    },
+    {
+      "@id": "https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+      "@type": "CreativeWork",
+      "name": "https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+    },
+    {
+      "@id": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted",
+      "@type": "CreativeWork",
+      "name": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted"
+    },
+    {
+      "@id": "https://kubernetes.io/docs/reference/",
+      "@type": "CreativeWork",
+      "name": "https://kubernetes.io/docs/reference/"
+    },
+    {
+      "@id": "https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/",
+      "@type": "CreativeWork",
+      "name": "https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/"
+    },
+    {
+      "@id": "https://kubernetes.io/docs/reference/kubectl/",
+      "@type": "CreativeWork",
+      "name": "https://kubernetes.io/docs/reference/kubectl/"
+    },
+    {
+      "@id": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/",
+      "@type": "CreativeWork",
+      "name": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/"
+    },
+    {
+      "@id": "https://minikube.sigs.k8s.io/docs/",
+      "@type": "CreativeWork",
+      "name": "https://minikube.sigs.k8s.io/docs/"
+    },
+    {
+      "@id": "https://minikube.sigs.k8s.io/docs/start/",
+      "@type": "CreativeWork",
+      "name": "https://minikube.sigs.k8s.io/docs/start/"
+    },
+    {
+      "@id": "https://opentofu.org/",
+      "@type": "CreativeWork",
+      "name": "https://opentofu.org/"
+    },
+    {
+      "@id": "https://operatorframework.io/",
+      "@type": "CreativeWork",
+      "name": "https://operatorframework.io/"
+    },
+    {
+      "@id": "https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh",
+      "@type": "CreativeWork",
+      "name": "https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh"
+    },
+    {
+      "@id": "https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/metrics/filters#WithAuthenticationAndAuthorization",
+      "@type": "CreativeWork",
+      "name": "https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/metrics/filters#WithAuthenticationAndAuthorization"
+    },
+    {
+      "@id": "https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/metrics/server",
+      "@type": "CreativeWork",
+      "name": "https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/metrics/server"
+    },
+    {
+      "@id": "https://protobuf.dev/",
+      "@type": "CreativeWork",
+      "name": "https://protobuf.dev/"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/\u003corg",
+      "@type": "CreativeWork",
+      "name": "https://raw.githubusercontent.com/\u003corg"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/unboxd-agency/KubeContainer/main/deploy/arithmetic-kube.yaml",
+      "@type": "CreativeWork",
+      "name": "https://raw.githubusercontent.com/unboxd-agency/KubeContainer/main/deploy/arithmetic-kube.yaml"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/arithmetic-kube.yaml",
+      "@type": "CreativeWork",
+      "name": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/arithmetic-kube.yaml"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/deploy.sh",
+      "@type": "CreativeWork",
+      "name": "https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/deploy.sh"
+    },
+    {
+      "@id": "https://releases.openstack.org/",
+      "@type": "CreativeWork",
+      "name": "https://releases.openstack.org/"
+    },
+    {
+      "@id": "https://releases.ubuntu.com/",
+      "@type": "CreativeWork",
+      "name": "https://releases.ubuntu.com/"
+    },
+    {
+      "@id": "https://riscv.org/technical/specifications/",
+      "@type": "CreativeWork",
+      "name": "https://riscv.org/technical/specifications/"
+    },
+    {
+      "@id": "https://rook.io/docs/rook/latest/",
+      "@type": "CreativeWork",
+      "name": "https://rook.io/docs/rook/latest/"
+    },
+    {
+      "@id": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "https://schema.org"
+    },
+    {
+      "@id": "https://schema.org/",
+      "@type": "CreativeWork",
+      "name": "https://schema.org/"
+    },
+    {
+      "@id": "https://systemd.io/",
+      "@type": "CreativeWork",
+      "name": "https://systemd.io/"
+    },
+    {
+      "@id": "https://tc39.es/ecma262/",
+      "@type": "CreativeWork",
+      "name": "https://tc39.es/ecma262/"
+    },
+    {
+      "@id": "https://ubuntu.com/about/release-cycle",
+      "@type": "CreativeWork",
+      "name": "https://ubuntu.com/about/release-cycle"
+    },
+    {
+      "@id": "https://ubuntu.com/landscape",
+      "@type": "CreativeWork",
+      "name": "https://ubuntu.com/landscape"
+    },
+    {
+      "@id": "https://www.cncf.io/projects/crossplane/",
+      "@type": "CreativeWork",
+      "name": "https://www.cncf.io/projects/crossplane/"
+    },
+    {
+      "@id": "https://www.dbpedia.org/",
+      "@type": "CreativeWork",
+      "name": "https://www.dbpedia.org/"
+    },
+    {
+      "@id": "https://www.gartner.com/en/information-technology/glossary/decision-intelligence",
+      "@type": "CreativeWork",
+      "name": "https://www.gartner.com/en/information-technology/glossary/decision-intelligence"
+    },
+    {
+      "@id": "https://www.iana.org/assignments/service-names-port-numbers/",
+      "@type": "CreativeWork",
+      "name": "https://www.iana.org/assignments/service-names-port-numbers/"
+    },
+    {
+      "@id": "https://www.intel.com/sdm",
+      "@type": "CreativeWork",
+      "name": "https://www.intel.com/sdm"
+    },
+    {
+      "@id": "https://www.linkedin.com/posts/thefractionalpm_i-think-i-missed-by-exit-again-this-time-activity-7470562698074976256-b4T1",
+      "@type": "CreativeWork",
+      "name": "https://www.linkedin.com/posts/thefractionalpm_i-think-i-missed-by-exit-again-this-time-activity-7470562698074976256-b4T1"
+    },
+    {
+      "@id": "https://www.w3.org/TR/did-core/",
+      "@type": "CreativeWork",
+      "name": "https://www.w3.org/TR/did-core/"
+    },
+    {
+      "@id": "https://www.w3.org/TR/wot-thing-description11/",
+      "@type": "CreativeWork",
+      "name": "https://www.w3.org/TR/wot-thing-description11/"
+    },
+    {
+      "@id": "internal/controller/backward_compat_test.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "internal/controller/backward_compat_test.go"
+    },
+    {
+      "@id": "internal/controller/kubecontainer_controller.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "internal/controller/kubecontainer_controller.go"
+    },
+    {
+      "@id": "internal/controller/kubecontainer_controller_test.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "internal/controller/kubecontainer_controller_test.go"
+    },
+    {
+      "@id": "internal/controller/suite_test.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://onsi.github.io/ginkgo/"
+        },
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "internal/controller/suite_test.go"
+    },
+    {
+      "@id": "internal/controller/testdata/compat",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_1_0_autoscale_ingress.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_1_0_autoscale_ingress.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_1_0_full.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_1_0_full.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_1_0_minimal.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_1_0_minimal.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_2_0_arithmetic.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_2_0_arithmetic.yaml"
+    },
+    {
+      "@id": "internal/controller/testdata/compat/v0_2_1_annotated_replicas.yaml",
+      "@type": "CreativeWork",
+      "name": "internal/controller/testdata/compat/v0_2_1_annotated_replicas.yaml"
+    },
+    {
+      "@id": "project.toml",
+      "@type": "CreativeWork",
+      "name": "project.toml"
+    },
+    {
+      "@id": "registry/SKELETON-HOST.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "registry/SKELETON-HOST.json"
+    },
+    {
+      "@id": "registry/SKELETON.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/agents"
+        }
+      ],
+      "name": "registry/SKELETON.json"
+    },
+    {
+      "@id": "registry/agents",
+      "@type": "CreativeWork",
+      "name": "registry/agents"
+    },
+    {
+      "@id": "registry/agents/first-code-maintainer.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "registry/agents/first-code-maintainer.json"
+    },
+    {
+      "@id": "registry/blueprints",
+      "@type": "CreativeWork",
+      "name": "registry/blueprints"
+    },
+    {
+      "@id": "registry/blueprints/code-maintainer.json",
+      "@type": "CreativeWork",
+      "name": "registry/blueprints/code-maintainer.json"
+    },
+    {
+      "@id": "registry/blueprints/issue-resolver.json",
+      "@type": "CreativeWork",
+      "name": "registry/blueprints/issue-resolver.json"
+    },
+    {
+      "@id": "registry/blueprints/leap-micro.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
+          "@id": "https://get.opensuse.org/leapmicro/"
+        }
+      ],
+      "name": "registry/blueprints/leap-micro.json"
+    },
+    {
+      "@id": "registry/blueprints/microos.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
+          "@id": "https://get.opensuse.org/microos/"
+        }
+      ],
+      "name": "registry/blueprints/microos.json"
+    },
+    {
+      "@id": "release/PROMISE",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "hack/check-promise.sh"
+        }
+      ],
+      "name": "release/PROMISE"
+    },
+    {
+      "@id": "release/REQUEST",
+      "@type": "CreativeWork",
+      "name": "release/REQUEST"
+    },
+    {
+      "@id": "site/CNAME.example",
+      "@type": "CreativeWork",
+      "name": "site/CNAME.example"
+    },
+    {
+      "@id": "site/arithmetic.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/arithmetic-kube.yaml"
+        }
+      ],
+      "name": "site/arithmetic.html"
+    },
+    {
+      "@id": "site/index.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/BENCHMARKS.md"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/BENCHMARKS.md"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/blob/main/docs/KUBE-SPEC.md"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/releases/download/v0.1.0/install.yaml"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0"
+        },
+        {
+          "@id": "https://github.com/unboxd-agency/KubeContainer/tree/main/docs"
+        },
+        {
+          "@id": "site/panel.html"
+        }
+      ],
+      "name": "site/index.html"
+    },
+    {
+      "@id": "site/panel.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "site/panel.html"
+    },
+    {
+      "@id": "test/e2e/e2e_suite_test.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "name": "test/e2e/e2e_suite_test.go"
+    },
+    {
+      "@id": "test/e2e/e2e_test.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://%s/"
+        },
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "@id": "https://%s.%s.svc.cluster.local:8443/metrics"
+        }
+      ],
+      "name": "test/e2e/e2e_test.go"
+    },
+    {
+      "@id": "test/utils/utils.go",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "@id": "https://github.com/cert-manager/cert-manager/releases/download/%s/cert-manager.yaml"
+        }
+      ],
+      "name": "test/utils/utils.go"
+    }
+  ]
+}
