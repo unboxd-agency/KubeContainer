@@ -80,6 +80,8 @@ jobs:
           docker push "ghcr.io/${{ github.repository_owner }}/agentregistry:$TAG"
           docker build -t "ghcr.io/${{ github.repository_owner }}/openautonomyx-site:$TAG" -f Dockerfile.autonomyx .
           docker push "ghcr.io/${{ github.repository_owner }}/openautonomyx-site:$TAG"
+          docker build -t "ghcr.io/${{ github.repository_owner }}/arithmetic-platform:$TAG" -f Dockerfile.arithmetic .
+          docker push "ghcr.io/${{ github.repository_owner }}/arithmetic-platform:$TAG"
 
       - name: Build install bundle pinned to the tag
         run: make build-installer IMG="$IMG"

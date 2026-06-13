@@ -7,6 +7,12 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.10] - 2026-06-13
+### Added
+- The arithmetic platform as its own image
+  (`ghcr.io/<owner>/arithmetic-platform`): the browser-runtime face
+  at the platform host's root.
+
 ## [0.2.9] - 2026-06-13
 ### Added
 - BookBinder converts any repository directly to a book (-repo:
