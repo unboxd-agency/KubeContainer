@@ -1,14 +1,20 @@
 // BookBinder — the record bound as a book, multi-page: each domain of
 // the estate is one chapter, each chapter binds its own topics, the
-// cover carries the table of contents. Generated from the corpus and
+// cover carries the table of contents. With -repo it is a direct
+// repo-to-book converter: any repository's markdown, bound as found,
+// content unaltered — the story is whatever the repo says. Generated,
 // never hand-written; the prose stays canonical where it lives. A
 // tool: it binds only when invoked.
 package main
 
 import (
+	"flag"
 	"fmt"
 	"html"
+	"io/fs"
 	"os"
+	"path/filepath"
+	"sort"
 	"strings"
 )
 
@@ -47,13 +53,92 @@ nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem
 `
 
 func main() {
-	if err := os.MkdirAll("site/book", 0o755); err != nil {
+	repo := flag.String("repo", "", "bind this repository directory instead of the estate book")
+	title := flag.String("title", "", "book title (repo mode; defaults to the directory name)")
+	out := flag.String("out", "site/book", "output directory")
+	flag.Parse()
+
+	pages := book
+	name := "The Book of Software"
+	sub := "each domain one chapter; the prose stays canonical where it lives"
+	if *repo != "" {
+		pages = repoChapters(*repo)
+		name = *title
+		if name == "" {
+			name = filepath.Base(*repo)
+		}
+		sub = "bound as found — content unaltered; the story is the repo's own"
+	}
+	if err := bind(pages, name, sub, *out); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}
+}
+
+// repoChapters reads a repository as a book: root markdown is the
+// first chapter, each top-level directory holding markdown is a
+// chapter of its own; README leads, the rest follow alphabetically.
+func repoChapters(root string) []chapter {
+	byDir := map[string][]string{}
+	_ = filepath.WalkDir(root, func(p string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return nil
+		}
+		if d.IsDir() {
+			n := d.Name()
+			if n == ".git" || n == "node_modules" || n == "vendor" || n == "bin" || n == "dist" {
+				return filepath.SkipDir
+			}
+			return nil
+		}
+		if !strings.HasSuffix(strings.ToLower(p), ".md") {
+			return nil
+		}
+		rel, _ := filepath.Rel(root, p)
+		dir := "."
+		if before, _, found := strings.Cut(rel, "/"); found {
+			dir = before
+		}
+		byDir[dir] = append(byDir[dir], p)
+		return nil
+	})
+	dirs := make([]string, 0, len(byDir))
+	for d := range byDir {
+		if d != "." {
+			dirs = append(dirs, d)
+		}
+	}
+	sort.Strings(dirs)
+	if _, ok := byDir["."]; ok {
+		dirs = append([]string{"."}, dirs...)
+	}
+	chapters := make([]chapter, 0, len(dirs))
+	for _, d := range dirs {
+		topics := byDir[d]
+		sort.Slice(topics, func(i, j int) bool {
+			ri := strings.HasPrefix(strings.ToUpper(filepath.Base(topics[i])), "README")
+			rj := strings.HasPrefix(strings.ToUpper(filepath.Base(topics[j])), "README")
+			if ri != rj {
+				return ri
+			}
+			return topics[i] < topics[j]
+		})
+		t := d
+		if d == "." {
+			t = "The Door"
+		}
+		chapters = append(chapters, chapter{domain: d, title: t, topics: topics})
+	}
+	return chapters
+}
+
+func bind(pages []chapter, name, sub, out string) error {
+	if err := os.MkdirAll(out, 0o755); err != nil {
+		return err
+	}
 	bound, missing := 0, 0
 	var toc strings.Builder
-	for i, ch := range book {
+	for i, ch := range pages {
 		var b strings.Builder
 		b.WriteString("<!doctype html><meta charset=\"utf-8\"><title>" +
 			html.EscapeString(ch.title) + "</title>\n" + style)
@@ -68,33 +153,32 @@ func main() {
 			b.WriteString("<hr>\n" + render(string(raw)))
 			bound++
 		}
-		b.WriteString(navFoot(i))
-		name := fmt.Sprintf("site/book/chapter-%d.html", i+1)
-		if err := os.WriteFile(name, []byte(b.String()), 0o644); err != nil {
-			fmt.Fprintln(os.Stderr, err)
-			os.Exit(1)
+		b.WriteString(navFootN(i, len(pages)))
+		file := fmt.Sprintf("%s/chapter-%d.html", out, i+1)
+		if err := os.WriteFile(file, []byte(b.String()), 0o644); err != nil {
+			return err
 		}
 		fmt.Fprintf(&toc, "<a href=\"chapter-%d.html\">%d. %s <span class=\"domain\">— %s</span></a>\n",
 			i+1, i+1, html.EscapeString(ch.title), html.EscapeString(ch.domain))
 	}
-	cover := "<!doctype html><meta charset=\"utf-8\"><title>The Book of Software</title>\n" + style +
-		"<div class=\"cover\"><h1>The Book of Software</h1>" +
-		"<p>each domain one chapter; the prose stays canonical where it lives</p></div>" +
+	cover := "<!doctype html><meta charset=\"utf-8\"><title>" + html.EscapeString(name) + "</title>\n" + style +
+		"<div class=\"cover\"><h1>" + html.EscapeString(name) + "</h1>" +
+		"<p>" + html.EscapeString(sub) + "</p></div>" +
 		"<nav class=\"toc\"><h2>Contents</h2>\n" + toc.String() + "</nav>\n"
-	if err := os.WriteFile("site/book/index.html", []byte(cover), 0o644); err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+	if err := os.WriteFile(out+"/index.html", []byte(cover), 0o644); err != nil {
+		return err
 	}
-	fmt.Printf("the book: %d chapter(s), %d topic(s) bound, %d missing -> site/book/\n",
-		len(book), bound, missing)
+	fmt.Printf("the book: %d chapter(s), %d topic(s) bound, %d missing -> %s/\n",
+		len(pages), bound, missing, out)
 	if missing > 0 {
 		fmt.Println("verdict: a topic is missing — the binding is incomplete")
 		os.Exit(1)
 	}
 	fmt.Println("verdict: the record is bound")
+	return nil
 }
 
-func navFoot(i int) string {
+func navFootN(i, n int) string {
 	var b strings.Builder
 	b.WriteString("<nav class=\"foot\">")
 	if i > 0 {
@@ -103,7 +187,7 @@ func navFoot(i int) string {
 		b.WriteString("<span></span>")
 	}
 	b.WriteString("<a href=\"index.html\">contents</a>")
-	if i+1 < len(book) {
+	if i+1 < n {
 		fmt.Fprintf(&b, "<a href=\"chapter-%d.html\">next &rarr;</a>", i+2)
 	} else {
 		b.WriteString("<span></span>")

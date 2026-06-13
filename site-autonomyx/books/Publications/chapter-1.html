@@ -1,0 +1,295 @@
+<!doctype html><meta charset="utf-8"><title>The Door</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">.</p><h1>1. The Door</h1>
+<hr>
+<h2>Publishing Platform</h2>
+<p></p>
+<strong>AI-native infrastructure for professional, authoritative, multilingual publishing.</strong>
+<p></p>
+Publishing Platform is a cloud-native, automation-native, feed-native, canvas-native, multimodal, multilingual, location-aware, time-aware, Schema.org-native, SEO-native, and composable publishing system for organizations that need to produce credible content at scale.
+<p></p>
+It is designed for research organizations, think tanks, universities, analysts, experts, institutions, and knowledge-driven teams that publish articles, reports, explainers, briefs, datasets, opinions, and structured knowledge.
+<p></p>
+<h3>Vision</h3>
+<p></p>
+Modern publishing should be more than a blog engine.
+<p></p>
+Publishing Platform gives organizations a unified system to:
+<p></p>
+<ul>
+<li>Launch a polished publication presence</li>
+<li>Manage tenants, teams, contributors, roles, and permissions</li>
+<li>Publish authoritative articles, reports, and editorial content</li>
+<li>Add multilingual, geographic, temporal, SEO, and structured data context</li>
+<li>Create reusable visual and canvas-based assets</li>
+<li>Syndicate content through RSS, Atom, and JSON Feed</li>
+<li>Connect workflows through OpenAPI, webhooks, triggers, and MCP tools</li>
+<li>Operate with a clean backend that is ready for AI-assisted publishing workflows</li>
+</ul>
+<p></p>
+The platform treats publishing as a structured knowledge workflow, not just page rendering.
+<p></p>
+<h3>Core Principles</h3>
+<p></p>
+<ul>
+<li><strong>Publishing-first</strong> — every feature should support credible, high-quality publishing.</li>
+<li><strong>AI-native</strong> — the system should be easy for agents and automations to read, write, and extend.</li>
+<li><strong>Tenant-aware</strong> — organizations, roles, permissions, and isolation are first-class concerns.</li>
+<li><strong>Schema-native</strong> — structured data and JSON-LD should be built into the content model.</li>
+<li><strong>Location-aware</strong> — location is modeled as a durable primitive, not a loose text field.</li>
+<li><strong>Time-aware</strong> — events, publication dates, updates, and timelines are explicit.</li>
+<li><strong>Feed-native</strong> — RSS, Atom, and JSON Feed are core outputs.</li>
+<li><strong>Automation-native</strong> — triggers, webhooks, OpenAPI, and MCP are part of the platform surface.</li>
+<li><strong>Canvas-native</strong> — visual assets and editorial graphics can be composed and exported.</li>
+<li><strong>Composable</strong> — teams should be able to replace, extend, or integrate major capabilities.</li>
+</ul>
+<p></p>
+<h3>Location Primitive</h3>
+<p></p>
+Location is a first-class primitive.
+<p></p>
+The platform uses <strong>Plus Codes</strong>, based on the open-source <strong>Open Location Code</strong> project, as canonical location identifiers. Plus Codes encode latitude and longitude into a text code, can be encoded and decoded offline, and are useful where street addresses are missing, inconsistent, or politically sensitive.
+<p></p>
+<pre>Plus Code         = canonical location identity
+GeoCoordinates    = actual latitude/longitude
+Schema.org Place  = public JSON-LD representation
+SurrealDB record  = internal graph/storage representation
+</pre>
+<p></p>
+This keeps public location identity independent from internal database IDs.
+<p></p>
+<h3>Technology Stack</h3>
+<p></p>
+<pre>| Layer | Technology |</pre>
+<pre>| --- | --- |</pre>
+<pre>| Frontend | Astro |</pre>
+<pre>| Interactive Islands | React |</pre>
+<pre>| Language | TypeScript |</pre>
+<pre>| Styling | Tailwind CSS |</pre>
+<pre>| Editor | Tiptap in React island |</pre>
+<pre>| Canvas | Fabric.js in React island |</pre>
+<pre>| Database | SurrealDB |</pre>
+<pre>| Auth | Auth.js / NextAuth |</pre>
+<pre>| Media Storage | Cloudflare R2 |</pre>
+<pre>| Analytics | PostHog |</pre>
+<pre>| Billing | Stripe |</pre>
+<pre>| Hosting | Vercel or Cloudflare Pages |</pre>
+<pre>| Automation | OpenAPI, MCP, triggers, webhooks |</pre>
+<pre>| Feeds | RSS, Atom, JSON Feed |</pre>
+<pre>| Schema | Schema.org / JSON-LD |</pre>
+<pre>| SEO | Metadata, sitemaps, canonical URLs, hreflang, feed discovery |</pre>
+<p></p>
+<h3>Core Data Model</h3>
+<p></p>
+The initial platform model includes:
+<p></p>
+<pre>| Entity | Purpose |</pre>
+<pre>| --- | --- |</pre>
+<pre>| `tenant` | Organization or publication workspace |</pre>
+<pre>| `user` | Authenticated person |</pre>
+<pre>| `session` | Authenticated session state |</pre>
+<pre>| `membership` | Connection between a user and tenant |</pre>
+<pre>| `role` | Permissions within a tenant |</pre>
+<pre>| `article` | Canonical publishable content owned by a tenant |</pre>
+<pre>| `article_translation` | Language-specific article version |</pre>
+<pre>| `feed` | RSS, Atom, or JSON Feed definition |</pre>
+<pre>| `location` | Geo object using Plus Code as canonical identity |</pre>
+<pre>| `timeline_event` | Temporal context for content, reports, and events |</pre>
+<pre>| `seo_metadata` | Search and social metadata |</pre>
+<pre>| `schema_entity` | Structured data for JSON-LD output |</pre>
+<pre>| `canvas_document` | Editable Fabric.js canvas source document |</pre>
+<pre>| `canvas_asset` | Exported image or reusable visual asset |</pre>
+<pre>| `automation_event` | Platform event emitted for automation |</pre>
+<pre>| `trigger` | Event definition that can start workflows |</pre>
+<pre>| `webhook_endpoint` | Tenant-owned automation destination |</pre>
+<pre>| `api_client` | Tenant API client credentials and scopes |</pre>
+<pre>| `mcp_tool` | AI-agent accessible platform capability |</pre>
+<pre>| `media_asset` | Uploaded images, PDFs, and files |</pre>
+<p></p>
+<h3>Current Implementation Status</h3>
+<p></p>
+The repository is moving from architecture planning into executable implementation.
+<p></p>
+Current state:
+<p></p>
+<ul>
+<li>Workspace package scaffold exists at the repository root.</li>
+<li><code>feat/astro-scaffold</code> has been created for the first runnable web application.</li>
+<li>The first Astro layout file has been committed on the scaffold branch.</li>
+<li>Existing auth, signup, webhook, and schema work will be wired into this repository after the Astro shell is runnable.</li>
+<li>The next implementation step is to finish committing the <code>apps/web</code> scaffold, then open a pull request into <code>main</code>.</li>
+</ul>
+<p></p>
+Pending application scaffold files:
+<p></p>
+<ul>
+<li><code>apps/web/package.json</code></li>
+<li><code>apps/web/astro.config.mjs</code></li>
+<li><code>apps/web/tsconfig.json</code></li>
+<li><code>apps/web/tailwind.config.mjs</code></li>
+<li><code>apps/web/src/pages/index.astro</code></li>
+<li><code>apps/web/src/styles/global.css</code></li>
+<li><code>apps/web/src/lib/db.ts</code></li>
+<li><code>apps/web/.env.example</code></li>
+</ul>
+<p></p>
+After the scaffold lands, the repository should support:
+<p></p>
+<pre>pnpm install
+pnpm dev
+pnpm build
+</pre>
+<p></p>
+<h3>Integration Plan</h3>
+<p></p>
+After the Astro shell is in place, the next work is to wire in existing platform capabilities rather than redesign them from scratch:
+<p></p>
+1. Signup and login flows
+2. Auth/session handling
+3. Tenant, user, membership, and role schema
+4. RBAC-protected admin/editor routes
+5. Signed webhooks and delivery logs
+6. Article CRUD and publishing workflow
+7. Schema.org JSON-LD and SEO metadata
+8. Feed generation
+<p></p>
+<h3>First Milestone</h3>
+<p></p>
+The first milestone is the complete publishing loop:
+<p></p>
+1. Create the Astro application
+2. Add React islands for interactive surfaces
+3. Connect SurrealDB
+4. Add Auth.js / NextAuth authentication
+5. Create tenant records
+6. Create membership records
+7. Create article records
+8. Add language, location, time, SEO, and schema metadata
+9. Generate RSS, Atom, and JSON Feed outputs
+10. Emit automation events and support webhook endpoints
+11. Add a basic Tiptap article editor
+12. Render public article pages with metadata and JSON-LD
+<p></p>
+<h3>Development Roadmap</h3>
+<p></p>
+<h4>Phase 1 — Core Publishing Loop</h4>
+<p></p>
+<ul>
+<li>Astro shell</li>
+<li>Public article pages</li>
+<li>Tenant model</li>
+<li>User authentication</li>
+<li>Article CRUD</li>
+<li>Metadata and JSON-LD</li>
+<li>Feed generation</li>
+</ul>
+<p></p>
+<h4>Phase 2 — Editorial System</h4>
+<p></p>
+<ul>
+<li>Tiptap editor</li>
+<li>Draft and publish workflow</li>
+<li>Contributor roles</li>
+<li>Editorial review states</li>
+<li>Version history</li>
+<li>Media asset management</li>
+</ul>
+<p></p>
+<h4>Phase 3 — Structured Context</h4>
+<p></p>
+<ul>
+<li>Multilingual articles</li>
+<li>Plus Code location model</li>
+<li>Timeline events</li>
+<li>Schema.org entity graph</li>
+<li>Canonical URLs and hreflang</li>
+</ul>
+<p></p>
+<h4>Phase 4 — Automation Surface</h4>
+<p></p>
+<ul>
+<li>Webhook endpoints</li>
+<li>Automation events</li>
+<li>Trigger definitions</li>
+<li>OpenAPI surface</li>
+<li>MCP tools for agent workflows</li>
+</ul>
+<p></p>
+<h4>Phase 5 — Visual Publishing</h4>
+<p></p>
+<ul>
+<li>Fabric.js canvas editor</li>
+<li>Reusable visual templates</li>
+<li>Exported social cards</li>
+<li>Article graphics and report assets</li>
+</ul>
+<p></p>
+<h3>Development Principles</h3>
+<p></p>
+<ul>
+<li>Build the core loop first</li>
+<li>Keep the backend unified</li>
+<li>Keep tenant isolation explicit</li>
+<li>Use Astro as the lightweight publishing-first frontend</li>
+<li>Use React islands only for interactive tools</li>
+<li>Store app user, session, membership, and RBAC data in SurrealDB</li>
+<li>Treat language, location, time, SEO, Schema.org, feeds, canvas, and automation as primitives</li>
+<li>Use Plus Codes as canonical location identities</li>
+<li>Expose RSS, Atom, JSON Feed, OpenAPI, MCP, triggers, and webhooks</li>
+<li>Let tenants connect their own automation tools</li>
+<li>Use Fabric.js for visual canvas composition</li>
+<li>Do not embed n8n as a tenant-facing builder</li>
+</ul>
+<p></p>
+<h3>Repository Status</h3>
+<p></p>
+This project is in the early build phase.
+<p></p>
+The current focus is finishing the first runnable Astro web application scaffold, then wiring in existing signup, auth, schema, webhook, and publishing workflow capabilities.
+<p></p>
+<h3>License</h3>
+<p></p>
+TBD
+<p></p>
+<hr>
+<h2>Security Policy</h2>
+<p></p>
+<h3>Supported Versions</h3>
+<p></p>
+This project is in active development. Security fixes are applied to the <code>main</code> branch.
+<p></p>
+<h3>Reporting a Vulnerability</h3>
+<p></p>
+Please report security issues privately to the maintainers. Do not open public issues for undisclosed vulnerabilities.
+<p></p>
+Include:
+<ul>
+<li>Description of the issue</li>
+<li>Steps to reproduce</li>
+<li>Potential impact</li>
+<li>Suggested remediation</li>
+</ul>
+<p></p>
+We will acknowledge receipt and work on a fix as quickly as possible.
+<p></p>
+<h3>Production Security Baseline</h3>
+<p></p>
+<ul>
+<li>HTTPS only</li>
+<li>Secure cookies (<code>HttpOnly</code>, <code>Secure</code>, <code>SameSite=Lax</code> or stricter)</li>
+<li>CSP, HSTS, and standard security headers</li>
+<li>Secrets stored in a dedicated secret manager</li>
+<li>Principle of least privilege for database and storage</li>
+<li>Audit logging for privileged actions</li>
+<li>Daily backups with restore testing</li>
+<li>Dependency and secret scanning in CI</li>
+</ul>
+<p></p>
+<hr>
+Helm chart scaffolding will include Chart.yaml, values.yaml, templates, ingress, service, deployment, and autoscaling manifests.
+<p></p>
+<nav class="foot"><span></span><a href="index.html">contents</a><a href="chapter-2.html">next &rarr;</a></nav>

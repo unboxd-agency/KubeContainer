@@ -40,9 +40,11 @@ func main() {
 	edges := map[string]bool{}
 	var broken []string
 	for _, n := range nodes {
-		// The generated graph artifacts cite every node by construction;
-		// as sources they would only re-state the whole edge set.
-		if n == "eval/graph.txt" || n == "eval/graph.jsonld" {
+		// Generated artifacts are not authored references: the graph
+		// files cite every node by construction, and the bound books
+		// only restate prose that lives canonically elsewhere.
+		if n == "eval/graph.txt" || n == "eval/graph.jsonld" ||
+			strings.HasPrefix(n, "site/book/") || strings.HasPrefix(n, "site-autonomyx/books/") {
 			continue
 		}
 		raw, err := os.ReadFile(n)

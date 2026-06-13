@@ -7,6 +7,15 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.9] - 2026-06-13
+### Added
+- BookBinder converts any repository directly to a book (-repo:
+  content unaltered, chapters from the tree, README leads).
+- The OpenAutonomyx front door (`site-autonomyx/`, image
+  `ghcr.io/<owner>/openautonomyx-site`): the platform face with the
+  library - eight org repos bound as books, the arithmetic platform
+  named.
+
 ## [0.2.8] - 2026-06-12
 ### Added
 - AgentRegistry: the registry's read-only internet face, shipped as

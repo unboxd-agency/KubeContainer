@@ -1,0 +1,47 @@
+<!doctype html><meta charset="utf-8"><title>deploy</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">deploy</p><h1>3. deploy</h1>
+<hr>
+<h2>k3s Deployment</h2>
+<p></p>
+Default deployment target: k3s.
+<p></p>
+<h3>Assets</h3>
+<p></p>
+<ul>
+<li><code>deployment.yaml</code></li>
+</ul>
+<p></p>
+<h3>Use</h3>
+<p></p>
+<ul>
+<li>Deployment</li>
+<li>Service</li>
+<li>Ingress</li>
+<li>ConfigMap</li>
+<li>Secret</li>
+</ul>
+<p></p>
+<h3>Avoid For Now</h3>
+<p></p>
+<ul>
+<li>Helm</li>
+<li>service mesh</li>
+<li>complex operators</li>
+<li>multi-cluster setup</li>
+<li>heavy observability stack</li>
+<li>GitOps requirements</li>
+</ul>
+<p></p>
+<h3>Principle</h3>
+<p></p>
+<pre>Default = k3s
+Compatible = standard Kubernetes
+Keep it lightweight
+</pre>
+<p></p>
+<nav class="foot"><a href="chapter-2.html">&larr; previous</a><a href="index.html">contents</a><a href="chapter-4.html">next &rarr;</a></nav>

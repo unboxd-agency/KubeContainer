@@ -1,0 +1,380 @@
+<!doctype html><meta charset="utf-8"><title>content</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">content</p><h1>2. content</h1>
+<hr>
+<h2>Posts</h2>
+<p></p>
+Write new article drafts in this folder using Markdown.
+<p></p>
+<h3>Suggested front matter</h3>
+<p></p>
+<pre>---
+title: &#34;Your Post Title&#34;
+date: &#34;2026-05-15&#34;
+author: &#34;OpenAutonomyX&#34;
+category: &#34;Product&#34;
+description: &#34;A short summary for SEO and social previews.&#34;
+slug: &#34;your-post-title&#34;
+---
+
+Your article content goes here.
+</pre>
+<p></p>
+<h3>Publishing workflow</h3>
+<p></p>
+This repository currently publishes static HTML through GitHub Pages. To publish a Markdown draft:
+<p></p>
+1. Copy <code>templates/post-template.html</code>.
+2. Save it as <code>posts/your-post-slug.html</code>.
+3. Replace the title, date, category, description, and article body.
+4. Add the article card to <code>posts/index.html</code>.
+5. Add the article URL to <code>sitemap.xml</code>.
+<p></p>
+A future enhancement can add an automated Markdown-to-HTML build step.
+<p></p>
+<hr>
+---
+title: &#34;Building a Blog Knowledge Graph in SurrealDB&#34;
+slug: &#34;building-a-blog-knowledge-graph-in-surrealdb&#34;
+description: &#34;Model a blog as a JSON-LD-inspired knowledge graph in SurrealDB using graph edges, schema paths, and database-native validation functions.&#34;
+author: &#34;Chinmay Panda&#34;
+date: &#34;2026-05-17&#34;
+tags:
+<ul>
+<li>SurrealDB</li>
+<li>JSON-LD</li>
+<li>Knowledge Graph</li>
+<li>Graph Database</li>
+<li>Schema.org</li>
+<li>Semantic Web</li>
+</ul>
+categories:
+<ul>
+<li>Databases</li>
+<li>Knowledge Graphs</li>
+</ul>
+published: true
+schemaType: &#34;BlogPosting&#34;
+---
+<p></p>
+<h2>Building a Blog Knowledge Graph in SurrealDB</h2>
+<p></p>
+If your blog is more than a collection of Markdown files, you already have a knowledge graph.
+<p></p>
+Posts reference authors, tags, categories, organizations, and external concepts. Comments connect people to content. Schema.org metadata describes it all as linked data.
+<p></p>
+In this article, we will model a blog knowledge graph in SurrealDB using a JSON-LD-inspired metamodel, with code patterns that scale from a simple blog to an enterprise semantic graph.
+<p></p>
+<h3>Why Use a Knowledge Graph for a Blog?</h3>
+<p></p>
+Traditional blog schemas often look like this:
+<p></p>
+<pre>posts
+authors
+tags
+post_tags
+comments
+</pre>
+<p></p>
+That works, but it does not capture semantics.
+<p></p>
+A knowledge graph lets you ask richer questions:
+<p></p>
+<ul>
+<li>Which posts mention OpenAI?</li>
+<li>Which authors write about both GraphQL and SurrealDB?</li>
+<li>Which concepts are related through Schema.org?</li>
+<li>What paths connect a comment to a company mentioned in an article?</li>
+</ul>
+<p></p>
+<h3>JSON-LD as the Mental Model</h3>
+<p></p>
+A blog post in JSON-LD might look like this:
+<p></p>
+<pre>{
+  &#34;@id&#34;: &#34;post:surrealdb-blog-graph&#34;,
+  &#34;@type&#34;: &#34;BlogPosting&#34;,
+  &#34;headline&#34;: &#34;Building a Blog Knowledge Graph&#34;,
+  &#34;author&#34;: { &#34;@id&#34;: &#34;person:chinmay&#34; },
+  &#34;about&#34;: [
+    { &#34;@id&#34;: &#34;concept:surrealdb&#34; },
+    { &#34;@id&#34;: &#34;concept:jsonld&#34; }
+  ]
+}
+</pre>
+<p></p>
+This maps naturally to graph records and edges.
+<p></p>
+<h3>Core Node Tables</h3>
+<p></p>
+<pre>DEFINE TABLE post SCHEMAFULL;
+DEFINE FIELD title ON post TYPE string;
+DEFINE FIELD slug ON post TYPE string ASSERT $value != NONE;
+DEFINE FIELD body ON post TYPE string;
+DEFINE FIELD published_at ON post TYPE datetime;
+
+DEFINE TABLE person SCHEMAFULL;
+DEFINE FIELD name ON person TYPE string;
+
+DEFINE TABLE concept SCHEMAFULL;
+DEFINE FIELD label ON concept TYPE string;
+
+DEFINE TABLE category SCHEMAFULL;
+DEFINE FIELD name ON category TYPE string;
+</pre>
+<p></p>
+<h3>Semantic Edge Tables</h3>
+<p></p>
+<pre>DEFINE TABLE authored_by TYPE RELATION
+    IN post
+    OUT person;
+
+DEFINE TABLE about TYPE RELATION
+    IN post
+    OUT concept;
+
+DEFINE TABLE categorized_as TYPE RELATION
+    IN post
+    OUT category;
+
+DEFINE TABLE mentions TYPE RELATION
+    IN post
+    OUT concept;
+
+DEFINE TABLE comments_on TYPE RELATION
+    IN comment
+    OUT post;
+</pre>
+<p></p>
+This gives your blog explicit semantic relationships instead of hiding everything behind join tables.
+<p></p>
+<h3>Seed Blog Data</h3>
+<p></p>
+<pre>CREATE person:chinmay SET
+    name = &#34;Chinmay Panda&#34;;
+
+CREATE concept:surrealdb SET
+    label = &#34;SurrealDB&#34;;
+
+CREATE concept:jsonld SET
+    label = &#34;JSON-LD&#34;;
+
+CREATE category:databases SET
+    name = &#34;Databases&#34;;
+
+CREATE post:blog_graph SET
+    title = &#34;Building a Blog Knowledge Graph in SurrealDB&#34;,
+    slug = &#34;blog-knowledge-graph&#34;,
+    published_at = time::now();
+
+RELATE post:blog_graph-&gt;authored_by-&gt;person:chinmay;
+RELATE post:blog_graph-&gt;about-&gt;concept:surrealdb;
+RELATE post:blog_graph-&gt;about-&gt;concept:jsonld;
+RELATE post:blog_graph-&gt;categorized_as-&gt;category:databases;
+</pre>
+<p></p>
+<h3>JSON-LD Context Table</h3>
+<p></p>
+<pre>DEFINE TABLE jsonld_context SCHEMAFULL;
+DEFINE FIELD iri ON jsonld_context TYPE string;
+DEFINE FIELD prefix ON jsonld_context TYPE string;
+</pre>
+<p></p>
+Seed example:
+<p></p>
+<pre>CREATE jsonld_context:schema SET
+    prefix = &#34;schema&#34;,
+    iri = &#34;https://schema.org/&#34;;
+</pre>
+<p></p>
+This lets your database maintain mappings between local edge names and global IRIs.
+<p></p>
+<h3>Generic Semantic Entity Table</h3>
+<p></p>
+For a more flexible graph, you can add a universal entity model.
+<p></p>
+<pre>DEFINE TABLE entity SCHEMAFULL;
+DEFINE FIELD label ON entity TYPE string;
+DEFINE FIELD kind ON entity TYPE string;
+DEFINE FIELD external_id ON entity TYPE option&lt;string&gt;;
+</pre>
+<p></p>
+Example:
+<p></p>
+<pre>CREATE entity:surrealdb SET
+    label = &#34;SurrealDB&#34;,
+    kind = &#34;SoftwareApplication&#34;,
+    external_id = &#34;https://surrealdb.com&#34;;
+</pre>
+<p></p>
+<h3>Record Links for Fast Access</h3>
+<p></p>
+SurrealDB lets you combine graph traversal with direct record links.
+<p></p>
+<pre>DEFINE FIELD author ON post TYPE record&lt;person&gt;;
+DEFINE FIELD primary_topic ON post TYPE record&lt;concept&gt;;
+</pre>
+<p></p>
+Seed example:
+<p></p>
+<pre>UPDATE post:blog_graph SET
+    author = person:chinmay,
+    primary_topic = concept:surrealdb;
+</pre>
+<p></p>
+This dual model gives you graph flexibility and document-style speed.
+<p></p>
+<h3>Schema Paths for Multi-Hop Traversal</h3>
+<p></p>
+For repeated graph traversal, you can materialize paths.
+<p></p>
+<pre>DEFINE TABLE graph_path SCHEMAFULL;
+
+DEFINE FIELD path_key ON graph_path TYPE string;
+DEFINE FIELD source_record ON graph_path TYPE record;
+DEFINE FIELD target_record ON graph_path TYPE record;
+DEFINE FIELD route ON graph_path TYPE array&lt;string&gt;;
+DEFINE FIELD path ON graph_path TYPE array&lt;record&gt;;
+DEFINE FIELD hop_count ON graph_path TYPE int;
+</pre>
+<p></p>
+Example:
+<p></p>
+<pre>CREATE graph_path:post_to_concept SET
+    path_key = &#34;post:blog_graph|about|concept:surrealdb&#34;,
+    source_record = post:blog_graph,
+    target_record = concept:surrealdb,
+    route = [&#34;about&#34;],
+    path = [post:blog_graph, concept:surrealdb],
+    hop_count = 1;
+</pre>
+<p></p>
+<h3>Database-Native Validation</h3>
+<p></p>
+A useful production pattern is to put graph validation directly in SurrealQL.
+<p></p>
+<pre>DEFINE FUNCTION OVERWRITE fn::validation::assert(
+    $condition: bool,
+    $message: string
+) -&gt; bool {
+    IF !$condition {
+        THROW $message;
+    };
+
+    RETURN true;
+};
+</pre>
+<p></p>
+You can validate blog invariants the same way.
+<p></p>
+<pre>DEFINE FUNCTION fn::validation::post($post_id: record&lt;post&gt;) -&gt; bool {
+    LET $post = SELECT * FROM $post_id;
+
+    IF $post.title = NONE {
+        THROW &#34;Post must have a title&#34;;
+    };
+
+    LET $author =
+        SELECT VALUE id
+        FROM authored_by
+        WHERE in = $post_id
+        LIMIT 1;
+
+    IF $author.len() = 0 {
+        THROW &#34;Post must have an author&#34;;
+    };
+
+    RETURN true;
+};
+</pre>
+<p></p>
+Run it with:
+<p></p>
+<pre>RETURN fn::validation::post(post:blog_graph);
+</pre>
+<p></p>
+<h3>Python Integration Test</h3>
+<p></p>
+Keep the validation logic in the database and let Python orchestrate the integration check.
+<p></p>
+<pre>def test_blog_post_validates(client):
+    sql = &#34;RETURN fn::validation::post(post:blog_graph);&#34;
+    result = client.query(sql)
+    assert result[0][&#34;result&#34;] is True
+</pre>
+<p></p>
+<h3>Query the Blog Knowledge Graph</h3>
+<p></p>
+Posts by author:
+<p></p>
+<pre>SELECT &lt;-authored_by&lt;-post.*
+FROM person:chinmay;
+</pre>
+<p></p>
+Posts about SurrealDB:
+<p></p>
+<pre>SELECT &lt;-about&lt;-post.*
+FROM concept:surrealdb;
+</pre>
+<p></p>
+Concepts mentioned by a post:
+<p></p>
+<pre>SELECT -&gt;about-&gt;concept AS concepts
+FROM post:blog_graph;
+</pre>
+<p></p>
+Materialized paths from a post:
+<p></p>
+<pre>SELECT *
+FROM graph_path
+WHERE source_record = post:blog_graph;
+</pre>
+<p></p>
+<h3>Mapping Blog Entities to Schema.org</h3>
+<p></p>
+<pre>| Blog Concept | Schema.org Type |</pre>
+<pre>| --- | --- |</pre>
+<pre>| Post | BlogPosting |</pre>
+<pre>| Author | Person |</pre>
+<pre>| Category | DefinedTermSet |</pre>
+<pre>| Tag | DefinedTerm |</pre>
+<pre>| Concept | Thing |</pre>
+<pre>| Comment | Comment |</pre>
+<pre>| Organization | Organization |</pre>
+<p></p>
+<h3>Why This Matters</h3>
+<p></p>
+Once your blog becomes a semantic graph, you can:
+<p></p>
+<ul>
+<li>Build topic maps</li>
+<li>Power semantic search</li>
+<li>Generate recommendations</li>
+<li>Answer graph queries with LLMs</li>
+<li>Export standards-compliant JSON-LD</li>
+<li>Track provenance and validation</li>
+</ul>
+<p></p>
+A blog is really a knowledge system.
+<p></p>
+Each post encodes relationships among people, concepts, tools, and ideas. By modeling those relationships explicitly in SurrealDB using a JSON-LD metamodel, you create a durable semantic foundation for search, analytics, and AI.
+<p></p>
+<hr>
+---
+title: &#34;Welcome to the Publishing Platform&#34;
+date: &#34;2026-05-15&#34;
+author: &#34;OpenAutonomyX&#34;
+category: &#34;Announcement&#34;
+description: &#34;An introduction to the Publishing Platform.&#34;
+slug: &#34;welcome-to-the-publishing-platform&#34;
+---
+<p></p>
+Welcome to the Publishing Platform.
+<p></p>
+This Markdown file shows the recommended format for drafting new articles before converting them to HTML for GitHub Pages.
+<p></p>
+<nav class="foot"><a href="chapter-1.html">&larr; previous</a><a href="index.html">contents</a><a href="chapter-3.html">next &rarr;</a></nav>

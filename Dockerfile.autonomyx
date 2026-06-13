@@ -1,0 +1,4 @@
+# The OpenAutonomyx front door as an image: the platform's face,
+# served as a kube at www.openautonomyx.com.
+FROM nginx:1.27
+COPY site-autonomyx/ /usr/share/nginx/html/

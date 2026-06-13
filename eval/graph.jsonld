@@ -424,6 +424,50 @@
     {
       "@id": "cmd/bookbinder/main.go",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/AGENT-STACK.md"
+        },
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/CONTROL-PANEL.md"
+        },
+        {
+          "@id": "docs/DOCTRINE-MAP.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/HEADLESS-DELIVERY.md"
+        },
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        },
+        {
+          "@id": "docs/MEASUREMENT-STANDARD.md"
+        },
+        {
+          "@id": "docs/PERSONAL.md"
+        },
+        {
+          "@id": "docs/PRIMITIVES.md"
+        },
+        {
+          "@id": "docs/TOOLS.md"
+        },
+        {
+          "@id": "docs/assessments/APACHE-ATTIC.md"
+        },
+        {
+          "@id": "site/book"
+        }
+      ],
       "name": "cmd/bookbinder/main.go"
     },
     {
@@ -526,6 +570,9 @@
         },
         {
           "@id": "https://schema.org"
+        },
+        {
+          "@id": "site/book"
         }
       ],
       "name": "cmd/recordgraph/main.go"
@@ -2822,6 +2869,36 @@
       "@id": "site/book",
       "@type": "CreativeWork",
       "name": "site/book"
+    },
+    {
+      "@id": "site/book/chapter-1.html",
+      "@type": "CreativeWork",
+      "name": "site/book/chapter-1.html"
+    },
+    {
+      "@id": "site/book/chapter-2.html",
+      "@type": "CreativeWork",
+      "name": "site/book/chapter-2.html"
+    },
+    {
+      "@id": "site/book/chapter-3.html",
+      "@type": "CreativeWork",
+      "name": "site/book/chapter-3.html"
+    },
+    {
+      "@id": "site/book/chapter-4.html",
+      "@type": "CreativeWork",
+      "name": "site/book/chapter-4.html"
+    },
+    {
+      "@id": "site/book/chapter-5.html",
+      "@type": "CreativeWork",
+      "name": "site/book/chapter-5.html"
+    },
+    {
+      "@id": "site/book/index.html",
+      "@type": "CreativeWork",
+      "name": "site/book/index.html"
     },
     {
       "@id": "site/index.html",

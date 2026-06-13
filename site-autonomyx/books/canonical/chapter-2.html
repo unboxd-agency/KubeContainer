@@ -1,0 +1,3002 @@
+<!doctype html><meta charset="utf-8"><title>architecture</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">architecture</p><h1>2. architecture</h1>
+<hr>
+<h2>AGen Sentinel</h2>
+<p></p>
+<h3>Core Concept</h3>
+<p></p>
+AGen Sentinel is the <strong>continuous governance and security guardian layer</strong> of the fabric.
+<p></p>
+It monitors, validates, and enforces that every agent action remains within:
+<p></p>
+<pre>Identity + Policy + Context + Tools + Time + Contract
+</pre>
+<p></p>
+---
+<p></p>
+<h3>1. Definition</h3>
+<p></p>
+<pre>AGen Sentinel = real-time trust, security, and compliance observer
+for all agent executions in the fabric.
+</pre>
+<p></p>
+It does NOT execute work.
+It ensures work is safe, scoped, and compliant.
+<p></p>
+---
+<p></p>
+<h3>2. Position in Architecture</h3>
+<p></p>
+<pre>User Intent
+   ↓
+JIT Agent (execution runtime)
+   ↓
+Fabric (context + state)
+   ↓
+Nodes (apps, services, tools)
+   ↓
+AGen Sentinel (observes everything)
+</pre>
+<p></p>
+Sentinel is <strong>always-on, out-of-band governance</strong>.
+<p></p>
+---
+<p></p>
+<h3>3. Responsibilities</h3>
+<p></p>
+<h4>3.1 Continuous Monitoring</h4>
+<p></p>
+<pre>Observe:
+  - all agent actions
+  - all tool calls
+  - all data access
+  - all policy evaluations
+  - all identity changes
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.2 Policy Validation</h4>
+<p></p>
+<pre>Validate:
+  OpenFGA relationships
+  OPA policy rules
+  PAM elevation requests
+  JIT access windows
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.3 Threat Detection (ITDR layer)</h4>
+<p></p>
+<pre>Detect:
+  - abnormal behavior
+  - cross-tenant access attempts
+  - privilege escalation misuse
+  - tool abuse patterns
+  - context leakage signals
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.4 Contract Enforcement</h4>
+<p></p>
+<pre>Ensure:
+  Right Action
+  Right Access
+  Right Time
+  Right Context
+  Right Tools
+  Right Skills
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.5 Runtime Intervention</h4>
+<p></p>
+If violation detected:
+<p></p>
+<pre>→ pause execution
+→ revoke JIT access
+→ downgrade privileges
+→ isolate agent session
+→ trigger escalation
+→ log audit event
+</pre>
+<p></p>
+---
+<p></p>
+<h3>4. Sentinel Modes</h3>
+<p></p>
+<pre>Passive Mode:
+  observe + log + analyze
+
+Active Mode:
+  enforce + block + throttle
+
+Emergency Mode:
+  kill-switch + isolate + rollback
+</pre>
+<p></p>
+---
+<p></p>
+<h3>5. Data Inputs</h3>
+<p></p>
+AGen Sentinel consumes:
+<p></p>
+<ul>
+<li>Agent execution traces</li>
+<li>OpenFGA authorization graph events</li>
+<li>OPA policy decisions</li>
+<li>PAM elevation logs</li>
+<li>Tool invocation logs</li>
+<li>Fabric state transitions</li>
+<li>Audit streams</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>6. Outputs</h3>
+<p></p>
+<pre>Security alerts
+Risk scores
+Policy violations
+Access revocations
+Compliance reports
+Audit evidence packs
+Trust score updates
+</pre>
+<p></p>
+---
+<p></p>
+<h3>7. Trust Scoring Model</h3>
+<p></p>
+<pre>Each agent has dynamic trust score:
+
+Trust = function(
+  behavior history,
+  policy adherence,
+  anomaly rate,
+  successful executions,
+  violation count
+)
+</pre>
+<p></p>
+Low trust → restricted execution
+<p></p>
+---
+<p></p>
+<h3>8. Integration with JIT + PAM + ITDR</h3>
+<p></p>
+<pre>JIT Agent → requests access
+PAM → grants elevation
+ITDR → detects anomalies
+Sentinel → governs all of them
+</pre>
+<p></p>
+Sentinel is the <strong>meta-control plane</strong>.
+<p></p>
+---
+<p></p>
+<h3>9. Key Principle</h3>
+<p></p>
+<pre>Execution is local.
+Governance is global.
+Sentinel is always watching.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>No agent action is outside Sentinel visibility.
+No privilege exists outside Sentinel validation.
+No execution bypasses Sentinel audit.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>One-line Statement</h3>
+<p></p>
+&gt; AGen Sentinel is the continuous governance and security intelligence layer of the fabric that observes, validates, and enforces every agent action in real time to ensure full compliance with identity, policy, context, and contract constraints.
+<hr>
+<h2>Agent Always in the Loop</h2>
+<p></p>
+<h3>Core Law</h3>
+<p></p>
+Agent is always in the loop.
+<p></p>
+<pre>Intent
+→ Context
+→ Agreement
+→ Commitment
+→ Action
+→ Evidence
+→ Conclusion
+→ Learning
+→ Next Loop
+</pre>
+<p></p>
+At every stage, an agent can help, but the agent remains bounded by identity, scope, policy, approval, and audit.
+<p></p>
+<h3>Why</h3>
+<p></p>
+People need to talk.
+Apps need to connect.
+Work needs to conclude.
+Value needs to be delivered.
+<p></p>
+The agent keeps the loop alive.
+<p></p>
+<h3>Agent Responsibilities in the Loop</h3>
+<p></p>
+<pre>Before Work
+  understand intent
+  resolve context
+  identify target
+  find required parties
+  prepare shared context
+
+During Work
+  track tasks
+  track milestones
+  coordinate handoffs
+  detect blockers
+  recommend next actions
+  call approved tools
+  update status
+
+Before Decision
+  collect evidence
+  compare options
+  explain tradeoffs
+  check policy
+  request approval
+
+After Action
+  verify outcome
+  collect proof
+  generate report
+  write audit event
+  update memory
+
+At Closure
+  determine conclusion state
+  summarize value delivered
+  identify next loop
+  recommend improvement
+</pre>
+<p></p>
+<h3>Loop States</h3>
+<p></p>
+<pre>Open
+In Progress
+Waiting Human
+Waiting Agent
+Waiting App
+Waiting Evidence
+Waiting Agreement
+Blocked
+Escalated
+Completed
+Cancelled
+Archived
+Improved
+</pre>
+<p></p>
+<h3>Agent Types in the Loop</h3>
+<p></p>
+<pre>Employee Twin Agent
+  helps the employee move work forward
+
+Team Agent
+  keeps team commitments visible
+
+Project Agent
+  keeps targets, milestones, blockers, and status alive
+
+Product Agent
+  keeps product roadmap and release loops alive
+
+Professional Agent
+  performs domain-specific work with evidence
+
+Performance Agent
+  measures whether targets improve
+
+Fabric Agent
+  builds bridges between apps, people, data, and flows
+
+Governance Agent
+  checks policy, approvals, evidence, and audit readiness
+</pre>
+<p></p>
+<h3>Critical Boundary</h3>
+<p></p>
+<pre>Agent can keep the loop alive.
+Agent cannot fake agreement.
+Agent cannot force human acceptance.
+Agent cannot bypass policy.
+Agent cannot expand its own scope.
+Agent cannot erase audit.
+</pre>
+<p></p>
+<h3>Human Dependency</h3>
+<p></p>
+If human involvement is required and no response is given:
+<p></p>
+<pre>Agent marks Waiting Human
+→ sends reminder
+→ escalates
+→ proposes conclusion path
+→ records audit
+</pre>
+<p></p>
+The transaction does not disappear.
+It becomes blocked, escalated, expired, reassigned, cancelled, or concluded with reason.
+<p></p>
+<h3>App Dependency</h3>
+<p></p>
+If an app or integration is required and does not respond:
+<p></p>
+<pre>Agent marks Waiting App
+→ retries if allowed
+→ opens incident
+→ escalates to owner
+→ records evidence
+</pre>
+<p></p>
+<h3>SurrealDB Schema</h3>
+<p></p>
+<pre>DEFINE TABLE work_loop SCHEMAFULL;
+DEFINE FIELD tenant ON work_loop TYPE record&lt;tenant&gt;;
+DEFINE FIELD workspace ON work_loop TYPE option&lt;record&lt;workspace&gt;&gt;;
+DEFINE FIELD loop_type ON work_loop TYPE string;
+DEFINE FIELD target ON work_loop TYPE option&lt;string&gt;;
+DEFINE FIELD subject_type ON work_loop TYPE string;
+DEFINE FIELD subject_id ON work_loop TYPE string;
+DEFINE FIELD owner ON work_loop TYPE option&lt;record&lt;person&gt; | record&lt;team&gt; | record&lt;agent&gt;&gt;;
+DEFINE FIELD agent ON work_loop TYPE option&lt;record&lt;agent&gt;&gt;;
+DEFINE FIELD status ON work_loop TYPE string DEFAULT &#34;open&#34;;
+DEFINE FIELD current_state ON work_loop TYPE option&lt;string&gt;;
+DEFINE FIELD blockers ON work_loop TYPE array&lt;object&gt; DEFAULT [];
+DEFINE FIELD next_actions ON work_loop TYPE array&lt;object&gt; DEFAULT [];
+DEFINE FIELD evidence_refs ON work_loop TYPE array&lt;record&lt;evidence&gt;&gt; DEFAULT [];
+DEFINE FIELD audit_refs ON work_loop TYPE array&lt;record&lt;audit_event&gt;&gt; DEFAULT [];
+DEFINE FIELD created_at ON work_loop TYPE datetime DEFAULT time::now();
+DEFINE FIELD updated_at ON work_loop TYPE datetime DEFAULT time::now();
+
+DEFINE TABLE loop_checkpoint SCHEMAFULL;
+DEFINE FIELD tenant ON loop_checkpoint TYPE record&lt;tenant&gt;;
+DEFINE FIELD work_loop ON loop_checkpoint TYPE record&lt;work_loop&gt;;
+DEFINE FIELD checkpoint_type ON loop_checkpoint TYPE string;
+DEFINE FIELD status ON loop_checkpoint TYPE string;
+DEFINE FIELD summary ON loop_checkpoint TYPE option&lt;string&gt;;
+DEFINE FIELD evidence_refs ON loop_checkpoint TYPE array&lt;record&lt;evidence&gt;&gt; DEFAULT [];
+DEFINE FIELD next_actions ON loop_checkpoint TYPE array&lt;object&gt; DEFAULT [];
+DEFINE FIELD created_by ON loop_checkpoint TYPE option&lt;record&lt;person&gt; | record&lt;agent&gt;&gt;;
+DEFINE FIELD created_at ON loop_checkpoint TYPE datetime DEFAULT time::now();
+</pre>
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>No open loop without owner.
+No owner without agent support.
+No action without evidence.
+No blocker without escalation.
+No conclusion without next step.
+No value without proof.
+</pre>
+<p></p>
+<h3>Product Statement</h3>
+<p></p>
+Canonical Work OS keeps agents always in the loop so every conversation, task, project, product, transaction, delivery, agreement, and workflow moves toward conclusion, value, evidence, and improvement.
+<p></p>
+<hr>
+<h2>Agent-Built Flow Approval and Publishing Model</h2>
+<p></p>
+<h3>Core Rule</h3>
+<p></p>
+Agents can build flows, but flows are published only after approval.
+<p></p>
+<pre>Agent drafts.
+Human reviews.
+Policy validates.
+Tests pass.
+Approver approves.
+Flow is published.
+Audit records everything.
+</pre>
+<p></p>
+<h3>Operating Model</h3>
+<p></p>
+<pre>Intent
+→ Agent drafts flow
+→ Business logic mapped
+→ Tools/connectors selected
+→ Data contracts defined
+→ Policy gates attached
+→ Test cases generated
+→ Simulation run
+→ Review requested
+→ Human / owner approval
+→ Security / compliance approval if required
+→ Publish as Flow Pack
+→ Activate in workspace
+→ Monitor running flows
+→ Optimize
+→ Audit
+</pre>
+<p></p>
+<h3>Flow States</h3>
+<p></p>
+<pre>Draft
+Generated by Agent
+Needs Configuration
+Needs Validation
+Simulation Ready
+Simulation Passed
+Review Requested
+Changes Requested
+Approved
+Published
+Activated
+Running
+Deprecated
+Archived
+</pre>
+<p></p>
+<h3>Agent Boundary</h3>
+<p></p>
+The agent may:
+<p></p>
+<pre>create flow drafts
+suggest business logic
+map lifecycle steps
+select tool connectors
+generate test cases
+generate documentation
+prepare approval request
+prepare audit evidence
+</pre>
+<p></p>
+The agent may not:
+<p></p>
+<pre>publish without approval
+activate high-risk flows without approval
+bypass policy
+self-approve
+remove audit evidence
+grant itself more access
+connect unauthorized tools
+use data outside the employee/workspace boundary
+</pre>
+<p></p>
+<h3>Approval Gates</h3>
+<p></p>
+<pre>Flow Owner Approval
+  confirms business logic and outcome
+
+Data Owner Approval
+  confirms data use, lineage, retention, and sensitivity
+
+Security Approval
+  confirms tool scope, secrets, identity, access, and risk
+
+Compliance Approval
+  confirms mandates, evidence, and retention
+
+Workspace Owner Approval
+  confirms activation in workspace
+</pre>
+<p></p>
+<h3>Publishing Rule</h3>
+<p></p>
+<pre>No flow is published unless:
+  owner exists
+  business logic is defined
+  expected outcome is defined
+  input and output contracts exist
+  tool scopes are declared
+  policy gates are attached
+  tests/simulation pass
+  approval is recorded
+  audit event is written
+</pre>
+<p></p>
+<h3>Flow Pack Object</h3>
+<p></p>
+<pre>flow_pack:
+  id: employee_onboarding
+  name: Employee Onboarding Flow
+  lifecycle: employee
+  status: review_requested
+  created_by: twin_agent_emp_123
+  owner: hr_manager
+
+  business_logic:
+    objective: employee_ready_to_work
+    rules:
+      - manager_required
+      - identity_required
+      - device_required
+      - access_approval_required
+      - audit_required
+
+  connectors:
+    - hrms
+    - sso_scim
+    - glpi
+    - saas_management
+    - nextcloud
+    - mattermost
+
+  policy_gates:
+    - access_policy_check
+    - separation_of_duties
+    - data_classification_check
+    - approval_required
+
+  tests:
+    simulation_required: true
+    test_cases:
+      - normal_joiner
+      - contractor_joiner
+      - privileged_role_joiner
+
+  approvals:
+    required:
+      - flow_owner
+      - security_admin
+      - data_owner
+    status: pending
+
+  audit:
+    required: true
+    retention: default_tenant_policy
+</pre>
+<p></p>
+<h3>UI Placement</h3>
+<p></p>
+<pre>Studio
+  Agent Drafts
+  Flow Drafts
+  Review Queue
+  Simulation Results
+  Approval Requests
+  Publish Queue
+
+Workspace
+  Available Flow Packs
+  Installed Flow Packs
+  Running Flows
+
+Admin
+  Approval Policies
+  Publishing Policies
+  Connector Policies
+  Audit Policies
+</pre>
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>Agent builds the flow.
+Business owner validates the logic.
+Policy validates the boundary.
+Security validates the tools.
+Data owner validates the data.
+Approver publishes the Flow Pack.
+Audit proves the approval path.
+</pre>
+<p></p>
+<h3>Product Statement</h3>
+<p></p>
+Canonical Work OS lets Employee Twin Agents and Fabric Agents build lifecycle flows, but every flow becomes usable only after governed review, simulation, approval, publishing, and audit.
+<p></p>
+<hr>
+<h2>Agent Security Model: JIT + PAM + ITDR + Secure Platform</h2>
+<p></p>
+<h3>Core Law</h3>
+<p></p>
+The platform is secure when every agent operates under:
+<p></p>
+<pre>JIT Access + PAM Control + ITDR Monitoring + Fabric Governance
+</pre>
+<p></p>
+No agent has permanent trust.
+No agent has unrestricted access.
+No action is outside policy.
+<p></p>
+---
+<p></p>
+<h3>1. JIT (Just-In-Time Access)</h3>
+<p></p>
+<pre>Access is not persistent.
+Access is granted per request.
+Access expires automatically.
+</pre>
+<p></p>
+Agent requests:
+<ul>
+<li>context</li>
+<li>tools</li>
+<li>data</li>
+<li>node access</li>
+</ul>
+<p></p>
+All are time-bound.
+<p></p>
+<pre>Agent → request → policy check → temporary grant → execution → revoke
+</pre>
+<p></p>
+---
+<p></p>
+<h3>2. PAM (Privileged Access Management)</h3>
+<p></p>
+<pre>Privileged actions require elevation.
+Elevation requires approval or policy match.
+Elevation is scoped and temporary.
+</pre>
+<p></p>
+Examples:
+<ul>
+<li>payment execution</li>
+<li>production deployment</li>
+<li>identity changes</li>
+<li>data export</li>
+</ul>
+<p></p>
+<pre>No standing privilege.
+All privilege is session-bound.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>3. ITDR (Identity Threat Detection &amp; Response)</h3>
+<p></p>
+<pre>All agent behavior is continuously monitored.
+</pre>
+<p></p>
+Signals:
+<ul>
+<li>abnormal access patterns</li>
+<li>policy violations</li>
+<li>unusual tool usage</li>
+<li>cross-tenant attempts</li>
+<li>escalation anomalies</li>
+</ul>
+<p></p>
+Actions:
+<ul>
+<li>alert</li>
+<li>throttle</li>
+<li>revoke session</li>
+<li>isolate agent</li>
+<li>require re-auth</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4. Platform Security Model</h3>
+<p></p>
+<pre>Identity → OpenFGA graph
+Policy → OPA rules
+Execution → Agent runtime
+Data → SurrealDB/Postgres
+Tools → Registry
+Audit → immutable log
+</pre>
+<p></p>
+Every action passes through all layers.
+<p></p>
+---
+<p></p>
+<h3>5. Agent Execution Security Flow</h3>
+<p></p>
+<pre>Intent received
+→ Identity verified
+→ OpenFGA authorization check
+→ Policy evaluation (OPA)
+→ JIT context assembly
+→ PAM elevation check (if needed)
+→ Tool selection
+→ Execution allowed
+→ ITDR monitoring active
+→ Evidence recorded
+→ Audit log written
+→ Access revoked
+</pre>
+<p></p>
+---
+<p></p>
+<h3>6. Threat Boundaries</h3>
+<p></p>
+<pre>Agent cannot:
+- persist privilege
+- bypass OpenFGA graph
+- access unauthorized tools
+- operate outside session scope
+- hide execution trace
+</pre>
+<p></p>
+---
+<p></p>
+<h3>7. Fabric Security Principle</h3>
+<p></p>
+<pre>Security is not a layer.
+Security is the fabric constraint system.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>The platform is secure only when:
+
+JIT limits access
+PAM controls privilege
+ITDR detects anomalies
+Fabric enforces policy
+Audit proves every action
+</pre>
+<p></p>
+---
+<p></p>
+<h3>One-line Statement</h3>
+<p></p>
+&gt; The Canonical Work OS enforces security by combining JIT access, PAM-controlled privilege elevation, and ITDR-driven continuous monitoring within a policy-governed fabric where every agent action is time-bound, scoped, and fully auditable.
+<hr>
+<h2>Conclusion Loops</h2>
+<p></p>
+<h3>Core Law</h3>
+<p></p>
+Every conversation, action, task, milestone, target, project, product, and flow must conclude into value.
+<p></p>
+<pre>Start
+→ Act
+→ Measure
+→ Conclude
+→ Learn
+→ Improve
+→ Loop
+</pre>
+<p></p>
+<h3>Why Conclusion Loops Matter</h3>
+<p></p>
+Without conclusion, work leaks.
+Without evidence, conclusion is opinion.
+Without learning, conclusion does not compound.
+<p></p>
+<pre>Open work must move to:
+  completed
+  blocked
+  escalated
+  deferred
+  cancelled
+  archived
+  improved
+</pre>
+<p></p>
+<h3>Universal Conclusion Loop</h3>
+<p></p>
+<pre>Intent
+→ Target
+→ Timeline
+→ Milestone
+→ Task
+→ Action
+→ Output
+→ Outcome
+→ Evidence
+→ Conclusion
+→ Status Update
+→ Next Loop
+</pre>
+<p></p>
+<h3>Conclusion Types</h3>
+<p></p>
+<pre>Completed
+  target achieved, evidence attached
+
+Partially Completed
+  some milestones done, gap remains
+
+Blocked
+  cannot proceed without dependency, decision, data, approval, or party
+
+Escalated
+  moved to authority because SLA, risk, cost, or mandate requires attention
+
+Deferred
+  intentionally moved later with reason and owner
+
+Cancelled
+  stopped with business reason and audit trail
+
+Failed
+  attempted and failed, with remediation path
+
+Archived
+  closed historically with evidence retained
+
+Improved
+  loop produced a better flow, artifact, policy, or agent behavior
+</pre>
+<p></p>
+<h3>Conclusion Object</h3>
+<p></p>
+<pre>conclusion:
+  id: conclusion_001
+  tenant: acme
+  workspace: product
+  subject_type: target
+  subject_id: launch_checkout_v2
+  status: partially_completed
+
+  summary: Release readiness reached 80%, security review still pending.
+
+  evidence:
+    - milestone_report
+    - test_result
+    - security_review_request
+
+  blockers:
+    - security_approval_pending
+
+  next_actions:
+    - escalate_security_review
+    - generate_daily_status
+    - revise_release_timeline
+
+  owner: product_manager
+  audit_required: true
+</pre>
+<p></p>
+<h3>Target Conclusion Loop</h3>
+<p></p>
+<pre>Target created
+→ milestones defined
+→ tasks created
+→ actions executed
+→ progress measured
+→ conclusion generated
+→ owner reviews
+→ next target or next loop starts
+</pre>
+<p></p>
+<h3>Project Conclusion Loop</h3>
+<p></p>
+<pre>Project plan
+→ milestone execution
+→ status review
+→ risk/issue review
+→ delivery review
+→ closure report
+→ benefits review
+→ archive evidence
+→ improvement backlog
+</pre>
+<p></p>
+<h3>Product Conclusion Loop</h3>
+<p></p>
+<pre>Roadmap target
+→ feature work
+→ release readiness
+→ launch
+→ adoption measurement
+→ feedback review
+→ product conclusion
+→ next roadmap loop
+</pre>
+<p></p>
+<h3>Agent Conclusion Loop</h3>
+<p></p>
+<pre>Agent receives target
+→ acts through approved tools
+→ collects evidence
+→ generates status
+→ identifies conclusion state
+→ asks for human approval if needed
+→ records audit
+→ updates memory map
+</pre>
+<p></p>
+<h3>Conversation Conclusion Loop</h3>
+<p></p>
+<pre>User intent
+→ useful output
+→ artifact / action / decision
+→ conclusion
+→ next step
+→ memory / repo update
+</pre>
+<p></p>
+A conversation is incomplete until one of these happens:
+<p></p>
+<pre>artifact created
+flow drafted
+decision recorded
+action triggered
+next step defined
+risk reduced
+ambiguity reduced
+</pre>
+<p></p>
+<h3>SurrealDB Schema Additions</h3>
+<p></p>
+<pre>DEFINE TABLE conclusion SCHEMAFULL;
+DEFINE FIELD tenant ON conclusion TYPE record&lt;tenant&gt;;
+DEFINE FIELD workspace ON conclusion TYPE option&lt;record&lt;workspace&gt;&gt;;
+DEFINE FIELD subject_type ON conclusion TYPE string;
+DEFINE FIELD subject_id ON conclusion TYPE string;
+DEFINE FIELD status ON conclusion TYPE string;
+DEFINE FIELD summary ON conclusion TYPE string;
+DEFINE FIELD evidence_refs ON conclusion TYPE array&lt;record&lt;evidence&gt;&gt; DEFAULT [];
+DEFINE FIELD blockers ON conclusion TYPE array&lt;object&gt; DEFAULT [];
+DEFINE FIELD next_actions ON conclusion TYPE array&lt;object&gt; DEFAULT [];
+DEFINE FIELD owner ON conclusion TYPE option&lt;record&lt;person&gt; | record&lt;agent&gt; | record&lt;team&gt;&gt;;
+DEFINE FIELD audit_required ON conclusion TYPE bool DEFAULT true;
+DEFINE FIELD created_at ON conclusion TYPE datetime DEFAULT time::now();
+
+DEFINE TABLE loop_event SCHEMAFULL;
+DEFINE FIELD tenant ON loop_event TYPE record&lt;tenant&gt;;
+DEFINE FIELD workspace ON loop_event TYPE option&lt;record&lt;workspace&gt;&gt;;
+DEFINE FIELD loop_type ON loop_event TYPE string;
+DEFINE FIELD subject_type ON loop_event TYPE string;
+DEFINE FIELD subject_id ON loop_event TYPE string;
+DEFINE FIELD from_state ON loop_event TYPE option&lt;string&gt;;
+DEFINE FIELD to_state ON loop_event TYPE string;
+DEFINE FIELD actor ON loop_event TYPE option&lt;record&lt;person&gt; | record&lt;agent&gt; | record&lt;service_account&gt;&gt;;
+DEFINE FIELD evidence_refs ON loop_event TYPE array&lt;record&lt;evidence&gt;&gt; DEFAULT [];
+DEFINE FIELD created_at ON loop_event TYPE datetime DEFAULT time::now();
+</pre>
+<p></p>
+<h3>UI Placement</h3>
+<p></p>
+<pre>Workspace
+├── Open Loops
+├── Closing Today
+├── Blocked Loops
+├── Escalated Loops
+├── Completed Loops
+├── Conclusions
+├── Next Actions
+└── Evidence
+</pre>
+<p></p>
+<h3>Conclusion Loop Score</h3>
+<p></p>
+<pre>open loops
+closed loops
+blocked loops
+escalated loops
+overdue loops
+average close time
+conclusion quality
+evidence completeness
+next-action clarity
+audit readiness
+</pre>
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>No target without conclusion.
+No milestone without status.
+No task without owner.
+No action without evidence.
+No conclusion without next step.
+No loop without learning.
+</pre>
+<p></p>
+<h3>Product Statement</h3>
+<p></p>
+Canonical Work OS uses Conclusion Loops to ensure every conversation, target, milestone, task, project, product, flow, and agent action ends in a clear state, evidence, next action, and learning loop toward excellence.
+<p></p>
+<hr>
+<h2>Fabric Platform Specification — Complete Bundle</h2>
+<p></p>
+This document consolidates the full Fabric Platform system definition into a single canonical reference.
+<p></p>
+---
+<p></p>
+<h2>1. System Overview</h2>
+<p></p>
+The Fabric Platform is a governed execution system that transforms intent into verified outcomes through identity-aware, policy-enforced, multi-agent execution.
+<p></p>
+<pre>Intent → Contract → Policy → Context → Execution → Sentinel → Audit
+</pre>
+<p></p>
+---
+<p></p>
+<h2>2. Core Principles</h2>
+<p></p>
+<ul>
+<li>No trusted domain exists</li>
+<li>All execution is JIT assembled</li>
+<li>All actions are policy enforced</li>
+<li>All identity is continuously validated</li>
+<li>All outcomes are auditable</li>
+<li>Everything is a node in the fabric</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h2>3. Platform Theory</h2>
+<p></p>
+All complex systems converge into governed execution fabrics where:
+<p></p>
+<ul>
+<li>identity</li>
+<li>context</li>
+<li>policy</li>
+<li>execution</li>
+<li>audit</li>
+</ul>
+<p></p>
+are unified into a single runtime system.
+<p></p>
+---
+<p></p>
+<h2>4. Fabric Platform Architecture</h2>
+<p></p>
+<h3>4.1 Execution Layer</h3>
+<p></p>
+<ul>
+<li>JIT Agents</li>
+<li>App-as-Agent runtime</li>
+<li>Multi-agent orchestration graph</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4.2 Context Layer (Fabric State)</h3>
+<p></p>
+<ul>
+<li>shared state graph</li>
+<li>kuberContext (runtime scope)</li>
+<li>event stream system</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4.3 Governance Layer</h3>
+<p></p>
+<ul>
+<li>OpenFGA → relationships</li>
+<li>OPA → policy evaluation</li>
+<li>PAM → privilege control</li>
+<li>ITDR → threat detection</li>
+<li>Sentinel → global enforcement</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4.4 Tool Layer</h3>
+<p></p>
+<ul>
+<li>dynamic tool registry</li>
+<li>SaaS connectors</li>
+<li>API orchestration graph</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4.5 Security Model</h3>
+<p></p>
+Security = JIT + PAM + ITDR + Sentinel
+<p></p>
+<ul>
+<li>no standing trust</li>
+<li>no persistent privilege</li>
+<li>all access time-bound</li>
+<li>all execution observed</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4.6 Contract System</h3>
+<p></p>
+Contracts define governed execution specifications:
+<p></p>
+<ul>
+<li>Identity Contracts</li>
+<li>Access Contracts</li>
+<li>Execution Contracts</li>
+<li>Context Contracts</li>
+<li>Tool Contracts</li>
+<li>Policy Contracts</li>
+<li>Time Contracts</li>
+<li>Security Contracts</li>
+<li>Commerce Contracts</li>
+<li>Communication Contracts</li>
+<li>Sentinel Contracts</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4.7 Policy System</h3>
+<p></p>
+Policies define runtime governance rules:
+<p></p>
+<ul>
+<li>Identity policies</li>
+<li>Access policies</li>
+<li>Execution policies</li>
+<li>Context policies</li>
+<li>Tool policies</li>
+<li>Time policies</li>
+<li>Security policies</li>
+<li>Compliance policies</li>
+<li>Sentinel meta-policies</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4.8 Sentinel Layer</h3>
+<p></p>
+AGen Sentinel provides:
+<p></p>
+<ul>
+<li>continuous monitoring</li>
+<li>anomaly detection</li>
+<li>trust scoring</li>
+<li>enforcement actions</li>
+<li>kill-switch control</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h2>5. Execution Lifecycle</h2>
+<p></p>
+1. Intent received
+2. Identity resolved
+3. Contract generated
+4. Policy evaluation (OpenFGA + OPA)
+5. Context assembly (kuberContext)
+6. Tool binding
+7. JIT agent execution
+8. Sentinel monitoring
+9. Audit logging
+10. State update
+11. Contract closure
+<p></p>
+---
+<p></p>
+<h2>6. Platform Definition</h2>
+<p></p>
+A Fabric Platform is:
+<p></p>
+<ul>
+<li>an execution runtime</li>
+<li>a policy enforcement system</li>
+<li>a context assembly system</li>
+<li>a contract execution engine</li>
+<li>a tool orchestration system</li>
+<li>a continuously monitored system</li>
+<li>an auditable state machine</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h2>7. Multi-Score Evaluation (MSPM)</h2>
+<p></p>
+<ul>
+<li>EXS → Execution capability</li>
+<li>GVS → Governance strength</li>
+<li>CTS → Context unification</li>
+<li>TLS → Tool ecosystem</li>
+<li>IDS → Identity graph maturity</li>
+<li>FCS → Fabric coherence</li>
+<li>EXT → Extensibility</li>
+<li>SEC → Security enforcement</li>
+<li>CNF → CNCF maturity alignment</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h2>8. Final Definition</h2>
+<p></p>
+The Fabric Platform is a multi-agent, policy-governed execution system where applications, agents, and services operate over a shared state graph under continuous enforcement (OpenFGA + OPA + PAM + ITDR + Sentinel), transforming intent into verified and auditable outcomes through just-in-time context assembly and controlled execution.
+<hr>
+<h2>Fabric Platform Specification (Canonical)</h2>
+<p></p>
+<h3>1. System Definition</h3>
+<p></p>
+A Fabric Platform is a governed execution system that transforms intent into verified outcomes through a multi-agent, policy-enforced runtime.
+<p></p>
+<pre>Intent → Context → Policy → Execution → Verification → Audit
+</pre>
+<p></p>
+---
+<p></p>
+<h3>2. Core Components</h3>
+<p></p>
+<h4>2.1 Execution Layer</h4>
+<p></p>
+<ul>
+<li>JIT Agents (Just-In-Time assembled execution units)</li>
+<li>App-as-Agent runtime nodes</li>
+<li>Multi-agent orchestration graph</li>
+</ul>
+<p></p>
+<pre>Agent = identity + context + tools + policy-bound execution
+</pre>
+<p></p>
+---
+<p></p>
+<h4>2.2 Context Layer (Fabric State)</h4>
+<p></p>
+<ul>
+<li>Shared graph-based state system</li>
+<li>kuberContext (runtime scoped projection)</li>
+<li>Event stream (system of record)</li>
+</ul>
+<p></p>
+<pre>Context = dynamic slice of fabric state per request
+</pre>
+<p></p>
+---
+<p></p>
+<h4>2.3 Governance Layer</h4>
+<p></p>
+<ul>
+<li>OpenFGA → relationship-based authorization</li>
+<li>OPA → policy evaluation engine</li>
+<li>PAM → privilege elevation system</li>
+<li>ITDR → threat detection &amp; response</li>
+<li>Sentinel → global enforcement &amp; trust control plane</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>2.4 Security Model</h4>
+<p></p>
+<pre>Security = JIT + PAM + ITDR + Sentinel
+</pre>
+<p></p>
+Rules:
+<ul>
+<li>No persistent trust</li>
+<li>No standing privilege</li>
+<li>All access time-bound</li>
+<li>All actions audited</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>2.5 Tooling Layer</h4>
+<p></p>
+<ul>
+<li>Dynamic tool registry</li>
+<li>Connector graph (SaaS / APIs / internal services)</li>
+<li>Capability-based tool binding</li>
+</ul>
+<p></p>
+<pre>Tools are resolved at runtime, not pre-attached
+</pre>
+<p></p>
+---
+<p></p>
+<h4>2.6 Contract Layer</h4>
+<p></p>
+Contracts define execution constraints:
+<p></p>
+<ul>
+<li>Right Action</li>
+<li>Right Access</li>
+<li>Right Time</li>
+<li>Right Context</li>
+<li>Right Tools</li>
+<li>Right Skills</li>
+</ul>
+<p></p>
+<pre>Contract = executable policy + lifecycle state machine
+</pre>
+<p></p>
+---
+<p></p>
+<h3>3. Execution Lifecycle</h3>
+<p></p>
+<pre>1. Intent received
+2. Identity resolved
+3. Contract generated
+4. Policy evaluation (OPA + OpenFGA)
+5. JIT context assembly (kuberContext)
+6. Tool &amp; skill binding
+7. PAM elevation (if required)
+8. Agent execution
+9. Sentinel monitoring
+10. Audit log creation
+11. State update
+12. Contract closure
+</pre>
+<p></p>
+---
+<p></p>
+<h3>4. Platform Types</h3>
+<p></p>
+<h4>Non-Platform</h4>
+<ul>
+<li>Static apps</li>
+<li>APIs without governance</li>
+</ul>
+<p></p>
+<h4>Workflow Platform</h4>
+<ul>
+<li>Orchestrated pipelines</li>
+<li>Limited adaptability</li>
+</ul>
+<p></p>
+<h4>Agent Platform</h4>
+<ul>
+<li>Multi-agent execution</li>
+<li>Dynamic tool usage</li>
+</ul>
+<p></p>
+<h4>Fabric Platform</h4>
+<ul>
+<li>Full JIT + governance + sentinel + contracts</li>
+<li>Everything is an agent or agent-capable node</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>5. Multi-Score Evaluation Model</h3>
+<p></p>
+<pre>MSPM = [EXS, GVS, CTS, TLS, IDS, FCS, EXT, SEC, CNF]
+</pre>
+<p></p>
+Where:
+<ul>
+<li>EXS: Execution capability</li>
+<li>GVS: Governance strength</li>
+<li>CTS: Context unification</li>
+<li>TLS: Tool ecosystem</li>
+<li>IDS: Identity graph maturity</li>
+<li>FCS: Fabric coherence</li>
+<li>EXT: Extensibility</li>
+<li>SEC: Security enforcement</li>
+<li>CNF: CNCF maturity alignment</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>6. Sentinel Role</h3>
+<p></p>
+AGen Sentinel is the continuous governance layer:
+<p></p>
+<ul>
+<li>Observes all execution</li>
+<li>Detects anomalies (ITDR)</li>
+<li>Enforces policy violations</li>
+<li>Computes trust score</li>
+<li>Can pause or revoke execution</li>
+</ul>
+<p></p>
+<pre>Execution is local. Governance is global.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>7. Core Principles</h3>
+<p></p>
+<ul>
+<li>No trusted domain exists</li>
+<li>Everything is verified at runtime</li>
+<li>All execution is JIT assembled</li>
+<li>All actions are policy-bound</li>
+<li>All outcomes are auditable</li>
+<li>Everything is a node in the fabric</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>8. Final Definition</h3>
+<p></p>
+A Fabric Platform is a multi-agent, policy-governed execution system where applications, agents, and services operate over a shared state graph under continuous enforcement (OpenFGA + OPA + PAM + ITDR + Sentinel), transforming intent into verified and auditable outcomes through just-in-time context assembly and controlled execution.
+<hr>
+<h2>Feature as Data</h2>
+<p></p>
+<h3>Core Law</h3>
+<p></p>
+A feature is data.
+<p></p>
+<pre>Feature = declared capability
+Feature Definition = data
+Feature Runtime = interpretation of data
+Feature Rollout = governed data state
+Feature Pricing = metered data rule
+Feature Audit = proof data
+</pre>
+<p></p>
+<h3>Why This Matters</h3>
+<p></p>
+Build time becomes negligible because the platform does not hardcode every feature.
+<p></p>
+<pre>Old model:
+  feature = code release
+
+Canonical model:
+  feature = governed data point interpreted by the platform runtime
+</pre>
+<p></p>
+<h3>Feature Data Model</h3>
+<p></p>
+<pre>feature:
+  id: daily_status_updates
+  name: Daily Status Updates
+  feature_type: workspace_feature
+  lifecycle:
+    - workspace
+    - project
+    - team
+
+  target_outcome:
+    - reduce_status_reporting_time
+    - improve_visibility
+    - close_open_loops
+
+  required_fabrics:
+    - data_fabric
+    - automation_fabric
+    - agent_fabric
+    - audit_fabric
+
+  actions:
+    - generate_daily_status
+    - publish_status_update
+    - summarize_blockers
+    - recommend_next_actions
+
+  agents:
+    - employee_twin_agent
+    - team_agent
+    - project_agent
+
+  policies:
+    - workspace_visibility_policy
+    - audit_required_policy
+
+  meters:
+    - status_generated
+    - agent_runtime_minute
+    - report_export
+
+  rollout:
+    default_state: disabled
+    requires_it_approval: true
+    requires_workspace_owner_approval: true
+
+  audit:
+    required: true
+    evidence:
+      - source_tasks
+      - running_flows
+      - blocker_list
+      - published_status
+</pre>
+<p></p>
+<h3>Feature Lifecycle</h3>
+<p></p>
+<pre>Proposed
+→ Defined
+→ Generated
+→ Validated
+→ Reviewed
+→ Approved
+→ Published
+→ Enabled
+→ Measured
+→ Improved
+→ Deprecated
+→ Archived
+</pre>
+<p></p>
+<h3>Feature Categories</h3>
+<p></p>
+<pre>Workspace Feature
+Lifecycle Feature
+Agent Feature
+Flow Feature
+Connector Feature
+Policy Feature
+Governance Feature
+Audit Feature
+Report Feature
+DXP Feature
+Developer Feature
+Marketplace Feature
+Pricing Feature
+</pre>
+<p></p>
+<h3>SurrealDB Schema</h3>
+<p></p>
+<pre>DEFINE TABLE feature SCHEMAFULL;
+DEFINE FIELD name ON feature TYPE string;
+DEFINE FIELD slug ON feature TYPE string;
+DEFINE FIELD feature_type ON feature TYPE string;
+DEFINE FIELD lifecycle ON feature TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD status ON feature TYPE string DEFAULT &#34;proposed&#34;;
+DEFINE FIELD target_outcome ON feature TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD required_fabrics ON feature TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD actions ON feature TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD agents ON feature TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD policies ON feature TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD meters ON feature TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD rollout ON feature TYPE object DEFAULT {};
+DEFINE FIELD audit ON feature TYPE object DEFAULT {};
+DEFINE FIELD manifest ON feature TYPE object DEFAULT {};
+DEFINE FIELD created_at ON feature TYPE datetime DEFAULT time::now();
+DEFINE INDEX feature_slug ON feature COLUMNS slug UNIQUE;
+
+DEFINE TABLE feature_rollout SCHEMAFULL;
+DEFINE FIELD tenant ON feature_rollout TYPE record&lt;tenant&gt;;
+DEFINE FIELD workspace ON feature_rollout TYPE option&lt;record&lt;workspace&gt;&gt;;
+DEFINE FIELD feature ON feature_rollout TYPE record&lt;feature&gt;;
+DEFINE FIELD plan ON feature_rollout TYPE option&lt;string&gt;;
+DEFINE FIELD enabled ON feature_rollout TYPE bool DEFAULT false;
+DEFINE FIELD rollout_stage ON feature_rollout TYPE string DEFAULT &#34;disabled&#34;;
+DEFINE FIELD config ON feature_rollout TYPE object DEFAULT {};
+DEFINE FIELD approvals ON feature_rollout TYPE object DEFAULT {};
+DEFINE FIELD enabled_at ON feature_rollout TYPE option&lt;datetime&gt;;
+DEFINE FIELD created_at ON feature_rollout TYPE datetime DEFAULT time::now();
+
+DEFINE TABLE feature_usage_event SCHEMAFULL;
+DEFINE FIELD tenant ON feature_usage_event TYPE record&lt;tenant&gt;;
+DEFINE FIELD workspace ON feature_usage_event TYPE option&lt;record&lt;workspace&gt;&gt;;
+DEFINE FIELD feature ON feature_usage_event TYPE record&lt;feature&gt;;
+DEFINE FIELD actor ON feature_usage_event TYPE option&lt;record&lt;person&gt; | record&lt;agent&gt; | record&lt;service_account&gt;&gt;;
+DEFINE FIELD event_type ON feature_usage_event TYPE string;
+DEFINE FIELD meter ON feature_usage_event TYPE option&lt;string&gt;;
+DEFINE FIELD quantity ON feature_usage_event TYPE number DEFAULT 1;
+DEFINE FIELD metadata ON feature_usage_event TYPE object DEFAULT {};
+DEFINE FIELD audit_ref ON feature_usage_event TYPE option&lt;record&lt;audit_event&gt;&gt;;
+DEFINE FIELD created_at ON feature_usage_event TYPE datetime DEFAULT time::now();
+</pre>
+<p></p>
+<h3>Pay-As-You-Go Pricing Connection</h3>
+<p></p>
+Feature usage emits metered events.
+<p></p>
+<pre>Feature enabled
+→ action performed
+→ usage event written
+→ meter increments
+→ value measured
+→ billing line produced
+→ audit retained
+</pre>
+<p></p>
+<h3>Product Law</h3>
+<p></p>
+<pre>No feature without definition.
+No definition without policy.
+No policy without audit.
+No rollout without approval.
+No usage without meter.
+No renewal without value.
+</pre>
+<p></p>
+<h3>Final Statement</h3>
+<p></p>
+Canonical Work OS treats every platform capability as a governed data point. Features are declared, approved, enabled, metered, audited, and improved as data, allowing new capabilities to be configured in negligible time without rebuilding the core platform.
+<p></p>
+<hr>
+<h2>Governance Lifecycle Model</h2>
+<p></p>
+<h3>Source</h3>
+<p></p>
+IBM governance lifecycle reference:
+<p></p>
+https://www.ibm.com/docs/en/wsr-and-r/8.5.6?topic=governance-lifecycles
+<p></p>
+<h3>Core Rule</h3>
+<p></p>
+Governance is not one approval step. Governance is a lifecycle.
+<p></p>
+<pre>Create
+→ Review
+→ Approve
+→ Publish
+→ Govern Runtime Use
+→ Monitor
+→ Version
+→ Deprecate
+→ Retire
+→ Archive
+→ Audit
+</pre>
+<p></p>
+<h3>Platform Interpretation</h3>
+<p></p>
+Canonical Work OS uses governance lifecycles for every operational artifact:
+<p></p>
+<pre>Flow Pack
+Agent Pack
+Connector Pack
+Policy Pack
+Data Model Pack
+Report Pack
+Prompt Pack
+Evaluation Pack
+Compliance Pack
+Integration Pack
+</pre>
+<p></p>
+<h3>Governance Lifecycle States</h3>
+<p></p>
+<pre>Draft
+Proposed
+In Review
+Changes Requested
+Validated
+Approved
+Published
+Active
+Monitored
+Versioned
+Deprecated
+Retired
+Archived
+Revoked
+</pre>
+<p></p>
+<h3>Governance Objects</h3>
+<p></p>
+<pre>Governed Artifact
+├── owner
+├── steward
+├── lifecycle state
+├── version
+├── policy gates
+├── approval chain
+├── runtime controls
+├── monitoring rules
+├── deprecation rules
+├── retirement rules
+├── evidence
+└── audit trail
+</pre>
+<p></p>
+<h3>Artifact Governance</h3>
+<p></p>
+<pre>governed_artifact:
+  id: vendor_onboarding_flow_pack
+  type: flow_pack
+  version: 1.0.0
+  lifecycle_state: in_review
+  owner: procurement_owner
+  steward: platform_governance
+
+  approvals_required:
+    - business_owner
+    - it_admin
+    - security_admin
+    - data_owner
+    - compliance_owner
+
+  controls:
+    policy_validation_required: true
+    simulation_required: true
+    security_review_required: true
+    data_scope_review_required: true
+    audit_required: true
+
+  runtime_governance:
+    monitor_usage: true
+    monitor_failures: true
+    monitor_policy_violations: true
+    evidence_required: true
+
+  retirement:
+    replacement_required: false
+    archive_evidence: true
+</pre>
+<p></p>
+<h3>Governance Lifecycle by Artifact Type</h3>
+<p></p>
+<h4>Flow Pack</h4>
+<p></p>
+<pre>Draft flow
+→ simulate
+→ validate business logic
+→ validate policy gates
+→ approve
+→ publish
+→ install
+→ monitor running flows
+→ improve version
+→ deprecate old version
+→ archive evidence
+</pre>
+<p></p>
+<h4>Agent Pack</h4>
+<p></p>
+<pre>Draft agent
+→ assign identity
+→ define delegation
+→ define tool scope
+→ test security
+→ approve
+→ publish
+→ monitor tool calls
+→ evaluate trust score
+→ revoke or upgrade
+</pre>
+<p></p>
+<h4>Connector Pack</h4>
+<p></p>
+<pre>Draft connector
+→ define scopes
+→ test connection
+→ security review
+→ data owner review
+→ approve
+→ publish
+→ monitor sync/tool calls
+→ rotate secrets
+→ retire connector
+</pre>
+<p></p>
+<h4>Policy Pack</h4>
+<p></p>
+<pre>Draft policy
+→ review mandate
+→ simulate impact
+→ approve
+→ publish
+→ enforce
+→ monitor exceptions
+→ version
+→ retire
+</pre>
+<p></p>
+<h3>Governance Gates</h3>
+<p></p>
+<pre>Business Gate
+  validates outcome and operating responsibility
+
+IT Gate
+  validates installability, supportability, ownership
+
+Security Gate
+  validates access, secrets, least privilege, agent/tool risk
+
+Data Gate
+  validates data class, lineage, retention, consent, privacy
+
+Compliance Gate
+  validates framework mandates, evidence, records, exportability
+
+Audit Gate
+  validates proof chain and retention
+</pre>
+<p></p>
+<h3>Runtime Governance</h3>
+<p></p>
+Governance continues after publishing.
+<p></p>
+<pre>Published artifact
+→ installed in workspace
+→ used by human / agent / system
+→ runtime events collected
+→ policy decisions recorded
+→ failures monitored
+→ evidence collected
+→ maturity measured
+→ improvement recommended
+</pre>
+<p></p>
+<h3>SurrealDB Additions</h3>
+<p></p>
+<pre>DEFINE TABLE governance_lifecycle SCHEMAFULL;
+DEFINE FIELD tenant ON governance_lifecycle TYPE option&lt;record&lt;tenant&gt;&gt;;
+DEFINE FIELD name ON governance_lifecycle TYPE string;
+DEFINE FIELD artifact_type ON governance_lifecycle TYPE string;
+DEFINE FIELD states ON governance_lifecycle TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD transitions ON governance_lifecycle TYPE array&lt;object&gt; DEFAULT [];
+DEFINE FIELD gates ON governance_lifecycle TYPE array&lt;object&gt; DEFAULT [];
+DEFINE FIELD status ON governance_lifecycle TYPE string DEFAULT &#34;active&#34;;
+
+DEFINE TABLE governed_artifact SCHEMAFULL;
+DEFINE FIELD tenant ON governed_artifact TYPE option&lt;record&lt;tenant&gt;&gt;;
+DEFINE FIELD artifact_type ON governed_artifact TYPE string;
+DEFINE FIELD artifact_id ON governed_artifact TYPE string;
+DEFINE FIELD version ON governed_artifact TYPE string;
+DEFINE FIELD lifecycle_state ON governed_artifact TYPE string DEFAULT &#34;draft&#34;;
+DEFINE FIELD owner ON governed_artifact TYPE option&lt;record&lt;person&gt; | record&lt;team&gt;&gt;;
+DEFINE FIELD steward ON governed_artifact TYPE option&lt;record&lt;person&gt; | record&lt;team&gt;&gt;;
+DEFINE FIELD approvals_required ON governed_artifact TYPE array&lt;string&gt; DEFAULT [];
+DEFINE FIELD controls ON governed_artifact TYPE object DEFAULT {};
+DEFINE FIELD runtime_governance ON governed_artifact TYPE object DEFAULT {};
+DEFINE FIELD evidence_refs ON governed_artifact TYPE array&lt;record&lt;evidence&gt;&gt; DEFAULT [];
+DEFINE FIELD audit_refs ON governed_artifact TYPE array&lt;record&lt;audit_event&gt;&gt; DEFAULT [];
+DEFINE FIELD created_at ON governed_artifact TYPE datetime DEFAULT time::now();
+
+DEFINE TABLE governance_transition SCHEMAFULL;
+DEFINE FIELD tenant ON governance_transition TYPE option&lt;record&lt;tenant&gt;&gt;;
+DEFINE FIELD governed_artifact ON governance_transition TYPE record&lt;governed_artifact&gt;;
+DEFINE FIELD from_state ON governance_transition TYPE string;
+DEFINE FIELD to_state ON governance_transition TYPE string;
+DEFINE FIELD actor ON governance_transition TYPE record&lt;person&gt; | record&lt;agent&gt; | record&lt;service_account&gt;;
+DEFINE FIELD reason ON governance_transition TYPE option&lt;string&gt;;
+DEFINE FIELD policy_result ON governance_transition TYPE object DEFAULT {};
+DEFINE FIELD evidence_refs ON governance_transition TYPE array&lt;record&lt;evidence&gt;&gt; DEFAULT [];
+DEFINE FIELD created_at ON governance_transition TYPE datetime DEFAULT time::now();
+</pre>
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>No artifact without owner.
+No publishing without review.
+No activation without approval.
+No runtime use without monitoring.
+No version change without evidence.
+No retirement without archive.
+No governance without audit.
+</pre>
+<p></p>
+<h3>Product Statement</h3>
+<p></p>
+Canonical Work OS treats every flow, agent, connector, policy, report, prompt, model, data object, and compliance pack as a governed artifact with a lifecycle from draft to publication, runtime monitoring, versioning, retirement, and audit.
+<p></p>
+<hr>
+<h2>Fabric Platform OS Specification</h2>
+<p></p>
+<h3>1. Core Definition</h3>
+<p></p>
+A Platform OS is a <strong>governed execution operating system for digital intent</strong>, where applications, agents, services, and humans operate over a unified execution fabric.
+<p></p>
+<pre>Intent → OS Kernel → Context → Policy → Execution → Sentinel → Audit → State
+</pre>
+<p></p>
+---
+<p></p>
+<h3>2. What makes it an OS</h3>
+<p></p>
+A Platform OS is not an application platform.
+It is a <strong>system-level runtime for all digital work</strong>.
+<p></p>
+It provides:
+<p></p>
+<ul>
+<li>Execution scheduling (like a kernel)</li>
+<li>Identity management (like login/session system)</li>
+<li>Resource allocation (like CPU/memory equivalent for agents/tools)</li>
+<li>Policy enforcement (like system security layer)</li>
+<li>State management (like filesystem + memory model)</li>
+<li>Observability (like system logs + telemetry)</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>3. Core Layers</h3>
+<p></p>
+<h4>3.1 Kernel Layer (Fabric Kernel)</h4>
+<p></p>
+Responsible for:
+<p></p>
+<ul>
+<li>scheduling agents</li>
+<li>resolving intent into execution graphs</li>
+<li>managing JIT execution lifecycle</li>
+</ul>
+<p></p>
+<pre>Kernel = Intent Scheduler + Execution Orchestrator
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.2 Execution Layer</h4>
+<p></p>
+<ul>
+<li>JIT Agents</li>
+<li>App-as-Agent runtime</li>
+<li>Workflow execution engine</li>
+</ul>
+<p></p>
+Everything executes as an ephemeral, governed process.
+<p></p>
+---
+<p></p>
+<h4>3.3 Context Layer (System Memory)</h4>
+<p></p>
+<ul>
+<li>kuberContext (runtime slice)</li>
+<li>Fabric state graph</li>
+<li>session + tenant context</li>
+</ul>
+<p></p>
+<pre>Context = OS memory model for agents
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.4 Policy Layer (System Governance)</h4>
+<p></p>
+<ul>
+<li>OpenFGA → relationship-based access</li>
+<li>OPA → policy engine</li>
+<li>PAM → privilege control</li>
+<li>ITDR → threat detection</li>
+<li>Sentinel → global enforcement brain</li>
+</ul>
+<p></p>
+<pre>No execution without policy approval
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.5 Tool Layer (Device/Driver Model)</h4>
+<p></p>
+Tools behave like OS drivers:
+<p></p>
+<ul>
+<li>APIs</li>
+<li>SaaS connectors</li>
+<li>internal services</li>
+<li>external systems</li>
+</ul>
+<p></p>
+<pre>Tools are dynamically mounted at runtime
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.6 Identity Layer</h4>
+<p></p>
+<ul>
+<li>Human identity</li>
+<li>Agent identity</li>
+<li>Service identity</li>
+<li>Cross-domain identity (DID/SSO/SCIM)</li>
+</ul>
+<p></p>
+<pre>Identity = primary execution primitive
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.7 Contract Layer</h4>
+<p></p>
+Contracts define execution guarantees:
+<p></p>
+<ul>
+<li>Right Action</li>
+<li>Right Access</li>
+<li>Right Time</li>
+<li>Right Context</li>
+<li>Right Tools</li>
+<li>Right Skills</li>
+</ul>
+<p></p>
+Contracts are executable state machines.
+<p></p>
+---
+<p></p>
+<h4>3.8 Sentinel Layer (System Supervisor)</h4>
+<p></p>
+<ul>
+<li>monitors all execution</li>
+<li>detects anomalies</li>
+<li>enforces trust scoring</li>
+<li>can halt or rollback execution</li>
+</ul>
+<p></p>
+<pre>Sentinel = OS supervisor process
+</pre>
+<p></p>
+---
+<p></p>
+<h3>4. Execution Lifecycle</h3>
+<p></p>
+<pre>1. Intent received
+2. Kernel schedules execution
+3. Identity resolved
+4. Contract generated
+5. Policy evaluation (OPA + OpenFGA)
+6. Context assembly (kuberContext)
+7. Tool binding
+8. JIT agent execution
+9. Sentinel monitoring
+10. Audit logging
+11. State persistence
+</pre>
+<p></p>
+---
+<p></p>
+<h3>5. OS Analogy Mapping</h3>
+<p></p>
+<pre>| Traditional OS | Platform OS |</pre>
+<pre>|------|------|</pre>
+<pre>| Process | Agent |</pre>
+<pre>| Kernel | Fabric Kernel |</pre>
+<pre>| Memory | Context Graph |</pre>
+<pre>| Drivers | Tools / Connectors |</pre>
+<pre>| System calls | Contracts |</pre>
+<pre>| Scheduler | Intent Engine |</pre>
+<pre>| Security module | Sentinel + OPA + PAM |</pre>
+<pre>| Logs | Fabric Audit Stream |</pre>
+<p></p>
+---
+<p></p>
+<h3>6. Key Property</h3>
+<p></p>
+<pre>Everything is an execution unit.
+Everything is governed.
+Everything is observable.
+Everything is ephemeral unless committed to state.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>7. Platform OS Definition</h3>
+<p></p>
+A Platform OS is a distributed, policy-governed execution kernel that transforms intent into controlled, auditable system actions by dynamically assembling identity, context, tools, and agents under continuous governance and monitoring.
+<p></p>
+---
+<p></p>
+<h3>8. One-Line Definition</h3>
+<p></p>
+A Platform OS is a fabric-native operating system where agents, applications, and services execute as governed processes over a unified context, policy, and identity layer under continuous Sentinel supervision.
+<hr>
+<h2>Platform Theory</h2>
+<p></p>
+<h3>Core Statement</h3>
+<p></p>
+Platform Theory states that all complex digital systems inevitably evolve into governed execution fabrics where intent, identity, context, policy, and action converge into a unified runtime system.
+<p></p>
+<pre>Intent → Context → Policy → Execution → Verification → Audit
+</pre>
+<p></p>
+---
+<p></p>
+<h3>1. Fundamental Claim</h3>
+<p></p>
+Software does not remain a collection of tools.
+<p></p>
+It converges into a platform when scale, coordination, and governance become mandatory.
+<p></p>
+<pre>A platform is not a product category.
+A platform is a coordination layer for execution.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>2. Why Systems Converge into Platforms</h3>
+<p></p>
+At scale, all systems must unify:
+<p></p>
+<ul>
+<li>Identity (who is acting)</li>
+<li>Context (what state exists)</li>
+<li>Policy (what is allowed)</li>
+<li>Execution (what is done)</li>
+<li>Audit (what happened)</li>
+</ul>
+<p></p>
+This convergence is not optional.
+It is structural.
+<p></p>
+---
+<p></p>
+<h3>3. The Convergence Law</h3>
+<p></p>
+<pre>All sufficiently complex systems collapse into a governed execution fabric.
+</pre>
+<p></p>
+This is the core theorem of Platform Theory.
+<p></p>
+---
+<p></p>
+<h3>4. System Evolution</h3>
+<p></p>
+<h4>Early Stage</h4>
+<ul>
+<li>Static applications</li>
+<li>Isolated tools</li>
+<li>Manual workflows</li>
+</ul>
+<p></p>
+<h4>Intermediate Stage</h4>
+<ul>
+<li>APIs and integrations</li>
+<li>Workflow engines</li>
+<li>Basic orchestration</li>
+</ul>
+<p></p>
+<h4>Platform Stage</h4>
+<ul>
+<li>Unified execution layer</li>
+<li>Policy-driven control</li>
+<li>Shared context system</li>
+</ul>
+<p></p>
+<h4>Fabric Stage</h4>
+<ul>
+<li>Multi-agent execution</li>
+<li>JIT context assembly</li>
+<li>Continuous governance</li>
+<li>Auditable outcomes</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>5. Fabric Interpretation of Platforms</h3>
+<p></p>
+In modern systems:
+<p></p>
+<ul>
+<li>Apps become agents</li>
+<li>Workflows become execution graphs</li>
+<li>Data becomes shared fabric state</li>
+<li>Security becomes runtime enforcement</li>
+<li>APIs become dynamic tool graphs</li>
+</ul>
+<p></p>
+<pre>Software becomes execution of intent, not usage of tools.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>6. Platform Definition (Strong Form)</h3>
+<p></p>
+A platform is:
+<p></p>
+<ul>
+<li>an execution system</li>
+<li>a policy enforcement system</li>
+<li>a context assembly system</li>
+<li>a tool orchestration system</li>
+<li>a contract execution environment</li>
+<li>an auditable runtime fabric</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>7. Key Distinction</h3>
+<p></p>
+<h4>Old Model</h4>
+<p></p>
+Software = features and interfaces
+<p></p>
+<h4>Platform Model</h4>
+<p></p>
+Software = governed execution of intent
+<p></p>
+---
+<p></p>
+<h3>8. Implication</h3>
+<p></p>
+Once systems reach sufficient scale:
+<p></p>
+<ul>
+<li>UI becomes secondary</li>
+<li>APIs become transient</li>
+<li>Workflows become dynamic</li>
+<li>Agents become primary actors</li>
+</ul>
+<p></p>
+The platform becomes the system of execution.
+<p></p>
+---
+<p></p>
+<h3>9. Final Law</h3>
+<p></p>
+<pre>Every sufficiently complex digital system evolves into a governed execution fabric where intent is dynamically resolved into policy-bound, auditable actions.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>One-Line Definition</h3>
+<p></p>
+Platform Theory is the idea that software systems inevitably evolve from tool-based architectures into governed execution fabrics that unify identity, context, policy, and action into a single runtime system for executing intent.
+<hr>
+<h2>Fabric Policy System Specification</h2>
+<p></p>
+<h3>1. Core Definition</h3>
+<p></p>
+A Policy in the Fabric Platform is a <strong>runtime governance rule-set</strong> that determines whether an action, agent, or contract is allowed to execute within a given context.
+<p></p>
+<pre>Intent → Context → Policy Evaluation → Decision → Execution Allow / Deny
+</pre>
+<p></p>
+---
+<p></p>
+<h3>2. Policy Role in the System</h3>
+<p></p>
+Policies are the <strong>governance layer of the execution fabric</strong>.
+<p></p>
+They ensure:
+<ul>
+<li>No unauthorized execution</li>
+<li>No unsafe tool usage</li>
+<li>No privilege escalation without control</li>
+<li>No context leakage across tenants</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>3. Policy Stack</h3>
+<p></p>
+Fabric policies operate as a layered system:
+<p></p>
+<h4>3.1 Identity Policies</h4>
+Define <em>who can act</em>
+<p></p>
+<ul>
+<li>User identity rules</li>
+<li>Agent identity rules</li>
+<li>Service identity rules</li>
+<li>Cross-domain identity constraints</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.2 Access Policies</h4>
+Define <em>what can be accessed</em>
+<p></p>
+<ul>
+<li>Data access rules</li>
+<li>API access rules</li>
+<li>Resource access rules</li>
+<li>Tool access rules</li>
+</ul>
+<p></p>
+Implemented via:
+<ul>
+<li>OpenFGA (relationship graph)</li>
+<li>RBAC / ABAC / ReBAC hybrid model</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.3 Execution Policies</h4>
+Define <em>what actions are allowed</em>
+<p></p>
+<ul>
+<li>Allowed operations per agent</li>
+<li>Workflow execution rules</li>
+<li>Contract execution constraints</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.4 Context Policies</h4>
+Define <em>where and under what state execution occurs</em>
+<p></p>
+<ul>
+<li>kuberContext boundaries</li>
+<li>Tenant isolation rules</li>
+<li>Session scope rules</li>
+<li>Data locality constraints</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.5 Tool Policies</h4>
+Define <em>which tools can be used</em>
+<p></p>
+<ul>
+<li>API invocation rules</li>
+<li>External SaaS access rules</li>
+<li>Internal service permissions</li>
+</ul>
+<p></p>
+Rules:
+<ul>
+<li>Tools are JIT-bound</li>
+<li>Tool access expires with contract</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.6 Time Policies</h4>
+Define <em>when execution is allowed</em>
+<p></p>
+<ul>
+<li>JIT execution windows</li>
+<li>Expiration policies</li>
+<li>Scheduled execution constraints</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.7 Security Policies</h4>
+Define <em>how execution is protected</em>
+<p></p>
+<ul>
+<li>PAM elevation rules</li>
+<li>ITDR monitoring triggers</li>
+<li>Sentinel enforcement rules</li>
+<li>Kill-switch conditions</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.8 Compliance Policies</h4>
+Define <em>regulatory constraints</em>
+<p></p>
+<ul>
+<li>SOC2</li>
+<li>GDPR</li>
+<li>ISO 27001</li>
+<li>Industry-specific constraints</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.9 Sentinel Policies (Meta Policies)</h4>
+Define <em>how governance itself behaves</em>
+<p></p>
+<ul>
+<li>Trust scoring rules</li>
+<li>Anomaly detection thresholds</li>
+<li>Auto-remediation rules</li>
+<li>Global enforcement logic</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4. Policy Evaluation Model</h3>
+<p></p>
+Policies are evaluated at runtime:
+<p></p>
+<pre>1. Request arrives
+2. Identity resolved
+3. Context assembled (kuberContext)
+4. Policies evaluated (OPA + OpenFGA)
+5. Decision computed
+   - ALLOW
+   - DENY
+   - REQUIRE_PAM
+   - REQUIRE_SENTINEL_APPROVAL
+6. Execution proceeds or is blocked
+</pre>
+<p></p>
+---
+<p></p>
+<h3>5. Policy Execution Principle</h3>
+<p></p>
+<pre>No action executes without policy evaluation.
+No exception.
+No bypass.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>6. Policy Types Summary</h3>
+<p></p>
+<pre>| Type | Controls |</pre>
+<pre>|------|--------|</pre>
+<pre>| Identity | Who can act |</pre>
+<pre>| Access | What can be accessed |</pre>
+<pre>| Execution | What can run |</pre>
+<pre>| Context | Where it runs |</pre>
+<pre>| Tool | Which tools can be used |</pre>
+<pre>| Time | When it runs |</pre>
+<pre>| Security | How it is protected |</pre>
+<pre>| Compliance | Legal/regulatory constraints |</pre>
+<pre>| Sentinel | System-level governance |</pre>
+<p></p>
+---
+<p></p>
+<h3>7. Key System Property</h3>
+<p></p>
+Policies are not configuration files.
+<p></p>
+They are <strong>runtime decision functions over the execution fabric</strong>.
+<p></p>
+---
+<p></p>
+<h3>8. Final Definition</h3>
+<p></p>
+A Fabric Policy is a structured, evaluable governance rule that determines whether identity-bound, context-scoped, tool-enabled actions within a contract are permitted, restricted, or escalated during runtime execution under continuous enforcement.
+<p></p>
+<hr>
+<h2>Security as a Service (SECaaS) in the Fabric</h2>
+<p></p>
+<h3>Core Law</h3>
+<p></p>
+Security is not a product.
+Security is a continuously enforced service inside the fabric.
+<p></p>
+<pre>Security = JIT + PAM + ITDR + Policy + Audit
+Delivered as a Service
+</pre>
+<p></p>
+---
+<p></p>
+<h3>1. Security as a Service Model</h3>
+<p></p>
+<pre>Identity → continuously verified
+Access → just-in-time granted
+Privilege → temporarily elevated
+Actions → policy checked
+Behavior → continuously monitored
+Evidence → continuously recorded
+</pre>
+<p></p>
+Security is always active, never static.
+<p></p>
+---
+<p></p>
+<h3>2. Service Layers</h3>
+<p></p>
+<h4>Identity Service</h4>
+<pre>DID / IAM / SSO / SCIM
+verifies who the agent or user is
+</pre>
+<p></p>
+<h4>Authorization Service (OpenFGA)</h4>
+<pre>relationship graph determines access
+can(subject, action, object)
+</pre>
+<p></p>
+<h4>Policy Service (OPA)</h4>
+<pre>defines rules for execution
+blocks unsafe actions
+</pre>
+<p></p>
+<h4>Privilege Service (PAM)</h4>
+<pre>controls elevated access
+session-bound privileges only
+</pre>
+<p></p>
+<h4>Threat Detection (ITDR)</h4>
+<pre>monitors behavior in real-time
+detects anomalies and drift
+</pre>
+<p></p>
+<h4>Audit Service</h4>
+<pre>immutable logs of all actions
+evidence generation per event
+</pre>
+<p></p>
+---
+<p></p>
+<h3>3. Security Execution Flow</h3>
+<p></p>
+<pre>Intent
+→ Identity verification
+→ OpenFGA authorization check
+→ Policy evaluation (OPA)
+→ JIT context assembly
+→ PAM elevation (if needed)
+→ Tool execution
+→ ITDR monitoring
+→ Evidence capture
+→ Audit log write
+→ Access revoke
+</pre>
+<p></p>
+---
+<p></p>
+<h3>4. Security Properties</h3>
+<p></p>
+<pre>No persistent trust
+No standing privilege
+No blind execution
+No unlogged action
+No out-of-policy behavior
+</pre>
+<p></p>
+---
+<p></p>
+<h3>5. Agent Security Role</h3>
+<p></p>
+<pre>Agent does NOT own security
+Agent executes within security constraints
+Agent requests access JIT
+Agent is continuously monitored
+Agent is revoked if anomaly detected
+</pre>
+<p></p>
+---
+<p></p>
+<h3>6. Fabric Security Principle</h3>
+<p></p>
+<pre>Security is not a perimeter.
+Security is a distributed enforcement graph.
+</pre>
+<p></p>
+Every node enforces security locally.
+Every decision is globally auditable.
+<p></p>
+---
+<p></p>
+<h3>7. Threat Containment Model</h3>
+<p></p>
+<pre>Anomaly detected
+→ session throttled
+→ privilege revoked
+→ execution paused
+→ escalation triggered
+→ audit snapshot created
+</pre>
+<p></p>
+---
+<p></p>
+<h3>8. Delivery Guarantee</h3>
+<p></p>
+Security as a Service ensures:
+<p></p>
+<pre>✔ every action is authorized
+✔ every privilege is time-bound
+✔ every execution is monitored
+✔ every event is logged
+✔ every anomaly is contained
+</pre>
+<p></p>
+---
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>Security is not added to the system.
+Security is the system.
+</pre>
+<p></p>
+---
+<p></p>
+<h3>One-line Statement</h3>
+<p></p>
+&gt; Security as a Service in the Canonical Fabric continuously enforces identity, authorization, policy, privilege, monitoring, and audit as a unified runtime layer ensuring every agent action is just-in-time, policy-bound, and fully observable.
+<hr>
+<h2>Useful Conversation Value Agent Law</h2>
+<p></p>
+<h3>Core Law</h3>
+<p></p>
+Every conversation must be useful.
+Every agent must add value.
+<p></p>
+<pre>Conversation
+→ understand intent
+→ resolve context
+→ identify target
+→ perform useful action
+→ produce artifact / decision / next step
+→ record evidence
+→ improve memory
+</pre>
+<p></p>
+<h3>Conversation Value Standard</h3>
+<p></p>
+A conversation is useful only if it produces at least one of:
+<p></p>
+<pre>clearer decision
+usable artifact
+running action
+reduced ambiguity
+next step
+saved time
+reduced risk
+better evidence
+better flow
+better configuration
+</pre>
+<p></p>
+<h3>Agent Value Standard</h3>
+<p></p>
+An agent adds value only if it:
+<p></p>
+<pre>moves a target forward
+reduces work for the user
+improves quality
+reduces cost
+reduces risk
+increases speed
+creates reusable knowledge
+creates evidence
+prepares an approved artifact
+improves a flow
+</pre>
+<p></p>
+<h3>Conversation Object Model</h3>
+<p></p>
+<pre>conversation_value_event:
+  id: conv_value_001
+  tenant: acme
+  workspace: product
+  actor: employee_or_agent
+  target: launch_checkout_v2
+  conversation_type: planning
+
+  intent:
+    detected: define_agent_model
+    confidence: high
+
+  value_delivered:
+    - architecture_rule
+    - data_model
+    - github_artifact
+    - next_step
+
+  output:
+    artifact_type: architecture_doc
+    artifact_path: architecture/target-oriented-agents.md
+
+  audit:
+    write_event: true
+</pre>
+<p></p>
+<h3>Agent Response Contract</h3>
+<p></p>
+Every professional agent response should try to include:
+<p></p>
+<pre>1. What this means
+2. Where it fits
+3. What action it enables
+4. What artifact or model is produced
+5. What the next build step is
+</pre>
+<p></p>
+<h3>No-Value Patterns to Avoid</h3>
+<p></p>
+<pre>long generic explanation
+unsupported claim
+tool list without action
+module list without outcome
+workflow without business logic
+agent without scope
+recommendation without evidence
+conversation without next step
+</pre>
+<p></p>
+<h3>Value Loop</h3>
+<p></p>
+<pre>User signal
+→ agent interprets target
+→ agent produces useful output
+→ output becomes artifact / flow / decision / issue
+→ user approves or corrects
+→ agent updates model
+→ next conversation starts stronger
+</pre>
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>No conversation without target.
+No target without movement.
+No movement without output.
+No output without value.
+No value without evidence.
+</pre>
+<p></p>
+<h3>Product Statement</h3>
+<p></p>
+Canonical Work OS treats conversation as an operating surface: every useful conversation should move a target, create or improve an artifact, trigger a governed action, or generate evidence that compounds into future value.
+<p></p>
+<hr>
+<h2>W3C + schema.org + Industry + Function + Policy Model</h2>
+<p></p>
+<h3>Core Rule</h3>
+<p></p>
+Use W3C standards and schema.org as the public semantic layer, but keep Canonical Work OS as the enterprise operating model.
+<p></p>
+<pre>W3C standards = web interoperability foundation
+schema.org = semantic vocabulary layer
+Industry = market and operating context
+Function = enterprise responsibility domain
+Policy = governance and permission layer
+Canonical Fabric Model = operational truth
+</pre>
+<p></p>
+<h3>Placement</h3>
+<p></p>
+<pre>Canonical Enterprise Data Core
+├── Canonical operational objects
+│   ├── tenant
+│   ├── workspace
+│   ├── person
+│   ├── agent
+│   ├── lifecycle
+│   ├── flow
+│   ├── action
+│   ├── outcome
+│   ├── evidence
+│   └── audit
+│
+├── Semantic projection
+│   ├── W3C standards
+│   ├── schema.org
+│   ├── JSON-LD
+│   ├── RDF-compatible identifiers
+│   └── linked data graph
+│
+└── Enterprise operating context
+    ├── industry
+    ├── function
+    ├── policy
+    ├── mandate
+    ├── role
+    ├── lifecycle
+    └── audit
+</pre>
+<p></p>
+<h3>W3C Standards Role</h3>
+<p></p>
+Use W3C standards for interoperability:
+<p></p>
+<pre>JSON-LD
+  linked data representation
+
+RDF / RDFS
+  graph semantics and relationships
+
+OWL
+  ontology constraints where needed
+
+SHACL
+  validation shapes for semantic data quality
+
+DID / VC
+  decentralized identity and verifiable credentials when needed
+
+ActivityPub / ActivityStreams
+  federated activity and action streams where useful
+
+WebAuthn
+  strong authentication support
+
+WCAG
+  accessibility requirements for DXP and portals
+</pre>
+<p></p>
+<h3>schema.org Role</h3>
+<p></p>
+Use schema.org as the public vocabulary for common objects:
+<p></p>
+<pre>Organization
+Person
+Role
+Action
+CreativeWork
+Dataset
+DataCatalog
+SoftwareApplication
+WebSite
+WebPage
+Product
+Offer
+Order
+Invoice
+PaymentStatusType
+Event
+Project
+Service
+ContactPoint
+Place
+Review
+Report
+GovernmentService
+MedicalOrganization
+EducationalOrganization
+</pre>
+<p></p>
+<h3>Canonical to schema.org Projection</h3>
+<p></p>
+<pre>tenant
+  → schema:Organization
+
+person
+  → schema:Person
+
+agent
+  → schema:SoftwareApplication + schema:Role
+
+workspace
+  → schema:Organization / schema:Project / schema:WebSite depending context
+
+flow_pack
+  → schema:SoftwareApplication / schema:Service
+
+action
+  → schema:Action
+
+report
+  → schema:Report / schema:CreativeWork
+
+data_asset
+  → schema:Dataset
+
+data_catalog
+  → schema:DataCatalog
+
+product
+  → schema:Product
+
+invoice
+  → schema:Invoice
+
+commerce_order
+  → schema:Order
+</pre>
+<p></p>
+<h3>Industry Model</h3>
+<p></p>
+Industry decides market, commerce, sales environment, mandates, and value chains.
+<p></p>
+<pre>industry:
+  id: technology_saas
+  name: Technology / SaaS
+  schema_org_type: SoftwareApplication
+  market_environment:
+    buyer_types:
+      - developer
+      - it_admin
+      - business_owner
+      - enterprise_procurement
+  commerce_models:
+    - subscription
+    - usage_based
+    - enterprise_contract
+    - marketplace
+  sales_environment:
+    - product_led_growth
+    - inside_sales
+    - enterprise_sales
+    - partner_sales
+  primary_lifecycles:
+    - product
+    - software
+    - customer
+    - sales
+    - marketing
+    - revops
+    - support
+    - security
+    - audit
+</pre>
+<p></p>
+<h3>Function Model</h3>
+<p></p>
+Function is the enterprise responsibility domain.
+<p></p>
+<pre>Function Examples
+├── HR
+├── IT
+├── Security
+├── Finance
+├── Legal
+├── Procurement
+├── Sales
+├── Marketing
+├── Customer Success
+├── Support
+├── Product
+├── Engineering
+├── Data
+├── Compliance
+├── Audit
+└── Operations
+</pre>
+<p></p>
+Function decides ownership:
+<p></p>
+<pre>function:
+  id: security
+  name: Security
+  owns:
+    - identity_security
+    - access_review
+    - incident_response
+    - privileged_access
+    - security_policy
+  approves:
+    - agent_tool_scope
+    - connector_secret_scope
+    - high_risk_actions
+    - release_security_gate
+  evidence_required:
+    - policy_decision
+    - access_review_record
+    - incident_record
+    - security_scan_result
+</pre>
+<p></p>
+<h3>Policy Model</h3>
+<p></p>
+Policy decides what is allowed.
+<p></p>
+<pre>policy:
+  id: approve_sensitive_data_export
+  applies_to:
+    lifecycle:
+      - data
+      - audit
+    action_type:
+      - export
+    data_classification:
+      - confidential
+      - restricted
+
+  rules:
+    requires_role:
+      - data_owner
+      - compliance_owner
+    requires_approval: true
+    requires_reason: true
+    requires_mfa: true
+    requires_evidence:
+      - export_scope
+      - business_justification
+      - retention_period
+    audit_required: true
+</pre>
+<p></p>
+<h3>Semantic Action Model</h3>
+<p></p>
+<pre>{
+  &#34;@context&#34;: &#34;https://schema.org&#34;,
+  &#34;@type&#34;: &#34;Action&#34;,
+  &#34;name&#34;: &#34;Approve vendor access&#34;,
+  &#34;agent&#34;: {
+    &#34;@type&#34;: &#34;Person&#34;,
+    &#34;identifier&#34;: &#34;person:security_admin_123&#34;
+  },
+  &#34;object&#34;: {
+    &#34;@type&#34;: &#34;SoftwareApplication&#34;,
+    &#34;name&#34;: &#34;Vendor Portal&#34;
+  },
+  &#34;result&#34;: {
+    &#34;@type&#34;: &#34;CreativeWork&#34;,
+    &#34;name&#34;: &#34;Vendor access approval record&#34;
+  }
+}
+</pre>
+<p></p>
+<h3>Canonical Action Model</h3>
+<p></p>
+<pre>action:
+  id: action_123
+  lifecycle: vendor
+  function: security
+  industry: manufacturing
+  action_type: approve_access
+  actor: person:security_admin_123
+  resource:
+    type: vendor_access_request
+    id: req_456
+  policy:
+    result: require_approval
+    mandates:
+      - mfa_required
+      - expiry_required
+      - audit_required
+  semantic_projection:
+    schema_org_type: Action
+  audit_required: true
+</pre>
+<p></p>
+<h3>Validation Model</h3>
+<p></p>
+Use SHACL-like validation for semantic data and platform policy validation for operational action.
+<p></p>
+<pre>Semantic validation
+  checks JSON-LD structure, schema.org type, required public fields
+
+Operational validation
+  checks tenant, workspace, role, policy, mandate, approval, evidence, audit
+</pre>
+<p></p>
+<h3>Final Law</h3>
+<p></p>
+<pre>W3C gives interoperability.
+schema.org gives shared meaning.
+Industry gives market context.
+Function gives ownership.
+Policy gives permission.
+Canonical Fabric gives operational truth.
+Audit gives proof.
+</pre>
+<p></p>
+<h3>Product Statement</h3>
+<p></p>
+Canonical Work OS uses W3C standards and schema.org as semantic projections over a canonical enterprise fabric model, where industry defines context, function defines ownership, policy defines allowed action, and audit proves every governed outcome.
+<p></p>
+<nav class="foot"><a href="chapter-1.html">&larr; previous</a><a href="index.html">contents</a><a href="chapter-3.html">next &rarr;</a></nav>

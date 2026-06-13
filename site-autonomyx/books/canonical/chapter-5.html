@@ -1,0 +1,204 @@
+<!doctype html><meta charset="utf-8"><title>runtime</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">runtime</p><h1>5. runtime</h1>
+<hr>
+<h2>Fabric Kernel MVP (Build Spec)</h2>
+<p></p>
+<h3>1. Purpose</h3>
+<p></p>
+The Fabric Kernel is the <strong>minimal executable runtime</strong> of the Platform OS.
+<p></p>
+It is responsible for converting:
+<p></p>
+<pre>Intent → Contract → Policy Check → JIT Context → Agent Execution → Audit
+</pre>
+<p></p>
+into a deterministic execution loop.
+<p></p>
+---
+<p></p>
+<h3>2. Kernel Definition</h3>
+<p></p>
+<pre>Kernel = Execution Scheduler + Context Resolver + Policy Gate + Agent Runtime
+</pre>
+<p></p>
+It is the core system that runs all Fabric operations.
+<p></p>
+---
+<p></p>
+<h3>3. Core Responsibilities</h3>
+<p></p>
+<h4>3.1 Intent Scheduling</h4>
+<p></p>
+<ul>
+<li>Receive user/system intent</li>
+<li>Normalize into execution request</li>
+<li>Assign execution priority</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.2 Contract Resolution</h4>
+<p></p>
+<ul>
+<li>Generate or load contract</li>
+<li>Validate contract schema</li>
+<li>Bind participants and actions</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.3 Policy Evaluation</h4>
+<p></p>
+<ul>
+<li>Evaluate OpenFGA relationships</li>
+<li>Evaluate OPA policies</li>
+<li>Determine execution decision:</li>
+</ul>
+<p></p>
+<pre>ALLOW | DENY | REQUIRE_PAM | REQUIRE_SENTINEL
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.4 Context Assembly (kuberContext)</h4>
+<p></p>
+<ul>
+<li>Build runtime execution slice</li>
+<li>Inject:</li>
+<li>identity</li>
+<li>tenant</li>
+<li>state graph view</li>
+<li>tool permissions</li>
+</ul>
+<p></p>
+<pre>Context = minimal safe execution surface
+</pre>
+<p></p>
+---
+<p></p>
+<h4>3.5 Tool Binding</h4>
+<p></p>
+<ul>
+<li>Dynamically attach tools</li>
+<li>Validate tool permissions</li>
+<li>Ensure JIT access expiration</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.6 Execution Engine</h4>
+<p></p>
+<ul>
+<li>Run JIT agents</li>
+<li>Execute workflows</li>
+<li>Coordinate multi-agent graphs</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.7 Sentinel Hook</h4>
+<p></p>
+<ul>
+<li>Observe execution in real time</li>
+<li>Detect anomalies</li>
+<li>Enforce runtime kill-switch if needed</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h4>3.8 Audit Layer</h4>
+<p></p>
+<ul>
+<li>Record full execution trace</li>
+<li>Persist:</li>
+<li>input intent</li>
+<li>contract</li>
+<li>policy decisions</li>
+<li>actions</li>
+<li>outcomes</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>4. Kernel Loop</h3>
+<p></p>
+<pre>while (intent_received):
+    request = normalize(intent)
+    contract = resolve_contract(request)
+    decision = evaluate_policy(contract)
+
+    if decision == DENY:
+        return rejected
+
+    context = assemble_kuberContext(contract)
+    tools = bind_tools(context)
+
+    result = execute_agents(context, tools)
+
+    sentinel.observe(result)
+
+    audit.log(contract, result)
+
+    return result
+</pre>
+<p></p>
+---
+<p></p>
+<h3>5. Kernel Invariants</h3>
+<p></p>
+<ul>
+<li>No execution without contract</li>
+<li>No contract without policy validation</li>
+<li>No tool without JIT binding</li>
+<li>No context without identity scope</li>
+<li>No action without audit trail</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>6. Execution Model</h3>
+<p></p>
+The kernel is:
+<p></p>
+<ul>
+<li>deterministic in governance</li>
+<li>dynamic in execution</li>
+<li>ephemeral in context</li>
+<li>persistent in audit</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>7. Minimal Components</h3>
+<p></p>
+To implement MVP:
+<p></p>
+<ul>
+<li>Contract Parser</li>
+<li>Policy Engine Adapter (OPA + OpenFGA)</li>
+<li>Context Builder (kuberContext)</li>
+<li>Agent Runtime Executor</li>
+<li>Sentinel Hook (observer)</li>
+<li>Audit Logger</li>
+</ul>
+<p></p>
+---
+<p></p>
+<h3>8. Kernel Role in Platform OS</h3>
+<p></p>
+<pre>Platform OS = Kernel + Policies + Contracts + Sentinel + Tools + Context
+</pre>
+<p></p>
+Kernel is the <strong>only execution entry point</strong>.
+<p></p>
+---
+<p></p>
+<h3>9. Final Definition</h3>
+<p></p>
+The Fabric Kernel is a minimal deterministic execution runtime that transforms intent into governed, policy-validated, context-aware, and fully auditable agent execution through a structured contract-driven lifecycle.
+<nav class="foot"><a href="chapter-4.html">&larr; previous</a><a href="index.html">contents</a><span></span></nav>

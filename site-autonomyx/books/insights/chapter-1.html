@@ -1,0 +1,48 @@
+<!doctype html><meta charset="utf-8"><title>The Door</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">.</p><h1>1. The Door</h1>
+<hr>
+<h2>Insights</h2>
+<p></p>
+Agentic analysis of web content. Extract insights, entities, and sentiment from any URL.
+<p></p>
+<h3>Features</h3>
+<p></p>
+<ul>
+<li><strong>Content Extraction</strong> - Parse any web page</li>
+<li><strong>Entity Recognition</strong> - Extract people, places, organizations</li>
+<li><strong>Sentiment Analysis</strong> - Analyze tone and emotion</li>
+<li><strong>Summary Generation</strong> - AI-powered summaries</li>
+</ul>
+<p></p>
+<h3>API</h3>
+<p></p>
+<pre>POST /api/v1/insights/analyze
+</pre>
+<p></p>
+<h3>Quick Start</h3>
+<p></p>
+<pre>curl -X POST https://api.openautonomyx.com/api/v1/insights/analyze \
+  -H &#34;Authorization: Bearer KEY&#34; \
+  -d &#39;{&#34;url&#34;: &#34;https://example.com&#34;}&#39;
+</pre>
+<p></p>
+<h3>Response</h3>
+<p></p>
+<pre>{
+  &#34;summary&#34;: &#34;Page summary...&#34;,
+  &#34;entities&#34;: [
+    { &#34;type&#34;: &#34;person&#34;, &#34;name&#34;: &#34;John&#34;, &#34;confidence&#34;: 0.9 }
+  ],
+  &#34;sentiment&#34;: { &#34;label&#34;: &#34;positive&#34;, &#34;score&#34;: 0.7 }
+}
+</pre>
+<p></p>
+---
+<p></p>
+<strong>Repository:</strong> [openautonomyx/insights](https://github.com/openautonomyx/insights)
+<nav class="foot"><span></span><a href="index.html">contents</a><span></span></nav>
