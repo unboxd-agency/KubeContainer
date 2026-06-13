@@ -7,6 +7,13 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.18] - 2026-06-13
+### Changed
+- The platform door's library becomes the clouds: each organisation a
+  cloud-solution category (OpenAutonomyx, AGenNextHub, unboxd-cloud),
+  each repository a chapter linked to its source, the org linked at
+  its head. Deep-bound per-repo books removed.
+
 ## [0.2.17] - 2026-06-13
 ### Added
 - AnyVerse (Any'Thing'/Where/Real-Time/Data/Scape/Surface), Next
