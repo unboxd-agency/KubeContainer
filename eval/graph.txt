@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=155 edges=353
+# nodes=158 edges=356
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -239,6 +239,7 @@ docs/DOCTRINE-MAP.md -> docs/PERSONAL.md
 docs/DOCTRINE-MAP.md -> docs/PRIMITIVES.md
 docs/DOCTRINE-MAP.md -> docs/TOOLS.md
 docs/DOCTRINE-MAP.md -> docs/VENDOR-ELIGIBILITY.md
+docs/DOCTRINE-MAP.md -> docs/assessments/APACHE-ATTIC.md
 docs/DOCTRINE-MAP.md -> docs/manual/CONTRACTS.md
 docs/DOCTRINE-MAP.md -> docs/manual/FAQ.md
 docs/DOCTRINE-MAP.md -> docs/manual/HOW-TO-USE.md
@@ -251,6 +252,7 @@ docs/DOCTRINE-MAP.md -> eval/harness.sh
 docs/DOCTRINE-MAP.md -> hack/deployrehearsal
 docs/DOCTRINE-MAP.md -> hack/operatorpoc
 docs/DOCTRINE-MAP.md -> internal/controller/testdata/compat
+docs/DOCTRINE-MAP.md -> registry/SKELETON-BACKEND.json
 docs/DOCTRINE-MAP.md -> registry/SKELETON-SPACE.json
 docs/DOCTRINE-MAP.md -> registry/spaces
 docs/GO-TO-MARKET.md -> docs/AGENT-PLATFORM.md
@@ -323,6 +325,7 @@ internal/controller/kubecontainer_controller.go -> http://www.apache.org/license
 internal/controller/kubecontainer_controller_test.go -> http://www.apache.org/licenses/LICENSE-2.0
 internal/controller/suite_test.go -> http://onsi.github.io/ginkgo/
 internal/controller/suite_test.go -> http://www.apache.org/licenses/LICENSE-2.0
+registry/SKELETON-BACKEND.json -> registry/blueprints
 registry/SKELETON-HOST.json -> registry/blueprints
 registry/SKELETON-SPACE.json -> https://github.com/AGenNextHub/Agent-Space
 registry/SKELETON-SPACE.json -> registry/spaces

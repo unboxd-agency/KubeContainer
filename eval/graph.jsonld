@@ -1322,6 +1322,9 @@
           "@id": "docs/VENDOR-ELIGIBILITY.md"
         },
         {
+          "@id": "docs/assessments/APACHE-ATTIC.md"
+        },
+        {
           "@id": "docs/manual/CONTRACTS.md"
         },
         {
@@ -1356,6 +1359,9 @@
         },
         {
           "@id": "internal/controller/testdata/compat"
+        },
+        {
+          "@id": "registry/SKELETON-BACKEND.json"
         },
         {
           "@id": "registry/SKELETON-SPACE.json"
@@ -1545,6 +1551,11 @@
       "@id": "docs/assessments",
       "@type": "CreativeWork",
       "name": "docs/assessments"
+    },
+    {
+      "@id": "docs/assessments/APACHE-ATTIC.md",
+      "@type": "CreativeWork",
+      "name": "docs/assessments/APACHE-ATTIC.md"
     },
     {
       "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md",
@@ -2626,6 +2637,16 @@
       "name": "project.toml"
     },
     {
+      "@id": "registry/SKELETON-BACKEND.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "registry/SKELETON-BACKEND.json"
+    },
+    {
       "@id": "registry/SKELETON-HOST.json",
       "@type": "CreativeWork",
       "citation": [
@@ -2702,6 +2723,11 @@
       "name": "registry/blueprints/leap-micro.json"
     },
     {
+      "@id": "registry/blueprints/liferay.json",
+      "@type": "CreativeWork",
+      "name": "registry/blueprints/liferay.json"
+    },
+    {
       "@id": "registry/blueprints/microos.json",
       "@type": "CreativeWork",
       "citation": [
@@ -2713,6 +2739,11 @@
         }
       ],
       "name": "registry/blueprints/microos.json"
+    },
+    {
+      "@id": "registry/blueprints/pocketbase.json",
+      "@type": "CreativeWork",
+      "name": "registry/blueprints/pocketbase.json"
     },
     {
       "@id": "registry/spaces",
