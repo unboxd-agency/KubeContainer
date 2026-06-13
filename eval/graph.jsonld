@@ -1555,6 +1555,14 @@
     {
       "@id": "docs/assessments/APACHE-ATTIC.md",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "https://attic.apache.org/"
+        }
+      ],
       "name": "docs/assessments/APACHE-ATTIC.md"
     },
     {

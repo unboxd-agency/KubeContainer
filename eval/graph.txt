@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=158 edges=356
+# nodes=159 edges=358
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -289,6 +289,8 @@ docs/VOCABULARY.md -> docs/PRIMITIVES.md
 docs/VOCABULARY.md -> docs/SOLID-STATE-DATABASE.md
 docs/VOCABULARY.md -> docs/TOOLS.md
 docs/VOCABULARY.md -> hack/build-vocabulary.sh
+docs/assessments/APACHE-ATTIC.md -> eval/graph.jsonld
+docs/assessments/APACHE-ATTIC.md -> https://attic.apache.org/
 docs/assessments/SWEBENCH-ALIGNMENT.md -> docs/AGENT-PLATFORM.md
 docs/assessments/SWEBENCH-ALIGNMENT.md -> docs/assessments/XDM-ALIGNMENT.md
 docs/assessments/XDM-ALIGNMENT.md -> docs/AGENT-PLATFORM.md
