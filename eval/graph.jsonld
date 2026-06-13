@@ -915,6 +915,9 @@
           "@id": "https://surrealdb.com/"
         },
         {
+          "@id": "https://www.gartner.com/en"
+        },
+        {
           "@id": "https://www.redhat.com/en"
         },
         {
@@ -2661,6 +2664,11 @@
       "@id": "https://www.dbpedia.org/",
       "@type": "CreativeWork",
       "name": "https://www.dbpedia.org/"
+    },
+    {
+      "@id": "https://www.gartner.com/en",
+      "@type": "CreativeWork",
+      "name": "https://www.gartner.com/en"
     },
     {
       "@id": "https://www.gartner.com/en/information-technology/glossary/decision-intelligence",

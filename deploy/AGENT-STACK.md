@@ -106,6 +106,7 @@ machinery is the principal's act alone):
 | DB candidate | https://surrealdb.com/ - SurrealDB | founder-supplied: multi-model, single binary, embedded mode (the one-engine law holds); Agent-Skills already speaks SurrealQL - the natural backend-contract DB blueprint, pinned when it enters |
 | Positioning reference | https://www.zluri.com/ - Zluri | founder-supplied: the SaaS-management category, the enterprise-work positioning the platform speaks to ("Next Generation Of Enterprise Work") |
 | Business-model reference | https://www.redhat.com/en - Red Hat | founder-supplied: the proof that open source plus enterprise trust is the product - subscription on free code, certification as the gate, a verified partner network; the model the platform's trust-center and partner network mirror |
+| Category reference | https://www.gartner.com/en - Gartner | founder-supplied: the analyst frame - decision intelligence is a Gartner-named category, and the platform's positioning picks it up as insight-driven everything |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house
