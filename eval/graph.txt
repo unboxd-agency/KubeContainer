@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=200 edges=391
+# nodes=206 edges=407
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -139,6 +139,7 @@ config/rbac/kustomization.yaml -> config/rbac/service_account.yaml
 config/rbac/kustomization.yaml -> https://book.kubebuilder.io/reference/metrics.html
 config/samples/kustomization.yaml -> config/samples/kubecontainer_v1alpha1_kubecontainer.yaml
 deploy/AGENT-STACK.md -> https://attic.apache.org/
+deploy/AGENT-STACK.md -> https://penpot.app/
 deploy/AGENT-STACK.md -> https://surrealdb.com/
 deploy/AGENT-STACK.md -> https://www.gartner.com/en
 deploy/AGENT-STACK.md -> https://www.gartner.com/peer-insights/home
@@ -365,9 +366,24 @@ registry/blueprints/leap-micro.json -> https://get.opensuse.org/leapmicro/
 registry/blueprints/microos.json -> deploy/LEAPMICRO.md
 registry/blueprints/microos.json -> https://get.opensuse.org/microos/
 release/PROMISE -> hack/check-promise.sh
+site-autonomyx/categories/agentic-ai.html -> https://github.com/AGenNextHub/Agent-Constitution
+site-autonomyx/categories/agentic-ai.html -> https://github.com/AGenNextHub/Agent-IDE
+site-autonomyx/categories/agentic-ai.html -> https://github.com/AGenNextHub/Agent-Space
+site-autonomyx/categories/agentic-ai.html -> https://registry.agennext.com
+site-autonomyx/categories/decision-intelligence.html -> https://github.com/AGenNextHub/Agent-Converter
+site-autonomyx/categories/knowledge-graphs.html -> https://kubecontainer.xyz
+site-autonomyx/categories/runtime.html -> https://agennext.space
+site-autonomyx/categories/runtime.html -> https://kubecontainer.xyz
+site-autonomyx/categories/runtime.html -> https://kubecontainer.xyz/book/index.html
+site-autonomyx/index.html -> https://agennext.space
 site-autonomyx/index.html -> https://github.com/AGenNextHub
+site-autonomyx/index.html -> https://github.com/AGenNextHub/Agent-Constitution
 site-autonomyx/index.html -> https://github.com/openautonomyx
+site-autonomyx/index.html -> https://kubecontainer.xyz
+site-autonomyx/index.html -> https://penpot.app/
 site-autonomyx/index.html -> https://platform.openautonomyx.com
+site-autonomyx/index.html -> https://registry.agennext.com
+site-autonomyx/index.html -> https://www.gartner.com/peer-insights/home
 site/arithmetic.html -> https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js
 site/arithmetic.html -> https://kubecontainer.xyz
 site/arithmetic.html -> https://registry.agennext.com

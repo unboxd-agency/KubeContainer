@@ -7,6 +7,15 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.17] - 2026-06-13
+### Added
+- AnyVerse (Any'Thing'/Where/Real-Time/Data/Scape/Surface), Next
+  Generation of Everything, the new work (browser server, 3D, the
+  design platform - Penpot + Storybook, documents that carry visible
+  data), the mysteries of the sci-fi world ("reality is the frontier"),
+  the decimals creed, the closing daily-work line. Penpot recorded as
+  the design-platform reference.
+
 ## [0.2.16] - 2026-06-13
 ### Added
 - The shifts: fifteen from-to transformations, software-as-a-service

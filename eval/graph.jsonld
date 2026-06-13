@@ -912,6 +912,9 @@
           "@id": "https://attic.apache.org/"
         },
         {
+          "@id": "https://penpot.app/"
+        },
+        {
           "@id": "https://surrealdb.com/"
         },
         {
@@ -1989,6 +1992,11 @@
       "name": "https://acme-v02.api.letsencrypt.org/directory"
     },
     {
+      "@id": "https://agennext.space",
+      "@type": "CreativeWork",
+      "name": "https://agennext.space"
+    },
+    {
       "@id": "https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest",
       "@type": "CreativeWork",
       "name": "https://api.github.com/repos/unboxd-cloud/KubeContainer/releases/latest"
@@ -2202,6 +2210,21 @@
       "@id": "https://github.com/AGenNextHub",
       "@type": "CreativeWork",
       "name": "https://github.com/AGenNextHub"
+    },
+    {
+      "@id": "https://github.com/AGenNextHub/Agent-Constitution",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Agent-Constitution"
+    },
+    {
+      "@id": "https://github.com/AGenNextHub/Agent-Converter",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Agent-Converter"
+    },
+    {
+      "@id": "https://github.com/AGenNextHub/Agent-IDE",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Agent-IDE"
     },
     {
       "@id": "https://github.com/AGenNextHub/Agent-Space",
@@ -2489,6 +2512,11 @@
       "name": "https://kubecontainer.xyz"
     },
     {
+      "@id": "https://kubecontainer.xyz/book/index.html",
+      "@type": "CreativeWork",
+      "name": "https://kubecontainer.xyz/book/index.html"
+    },
+    {
       "@id": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
       "@type": "CreativeWork",
       "name": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
@@ -2562,6 +2590,11 @@
       "@id": "https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh",
       "@type": "CreativeWork",
       "name": "https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh"
+    },
+    {
+      "@id": "https://penpot.app/",
+      "@type": "CreativeWork",
+      "name": "https://penpot.app/"
     },
     {
       "@id": "https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/metrics/filters#WithAuthenticationAndAuthorization",
@@ -3081,17 +3114,100 @@
       "name": "site-autonomyx/books/trust-center/index.html"
     },
     {
+      "@id": "site-autonomyx/categories/agentic-ai.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Constitution"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-IDE"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Space"
+        },
+        {
+          "@id": "https://registry.agennext.com"
+        }
+      ],
+      "name": "site-autonomyx/categories/agentic-ai.html"
+    },
+    {
+      "@id": "site-autonomyx/categories/decision-intelligence.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Converter"
+        }
+      ],
+      "name": "site-autonomyx/categories/decision-intelligence.html"
+    },
+    {
+      "@id": "site-autonomyx/categories/dxp.html",
+      "@type": "CreativeWork",
+      "name": "site-autonomyx/categories/dxp.html"
+    },
+    {
+      "@id": "site-autonomyx/categories/enterprise-search.html",
+      "@type": "CreativeWork",
+      "name": "site-autonomyx/categories/enterprise-search.html"
+    },
+    {
+      "@id": "site-autonomyx/categories/knowledge-graphs.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://kubecontainer.xyz"
+        }
+      ],
+      "name": "site-autonomyx/categories/knowledge-graphs.html"
+    },
+    {
+      "@id": "site-autonomyx/categories/runtime.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://agennext.space"
+        },
+        {
+          "@id": "https://kubecontainer.xyz"
+        },
+        {
+          "@id": "https://kubecontainer.xyz/book/index.html"
+        }
+      ],
+      "name": "site-autonomyx/categories/runtime.html"
+    },
+    {
       "@id": "site-autonomyx/index.html",
       "@type": "CreativeWork",
       "citation": [
         {
+          "@id": "https://agennext.space"
+        },
+        {
           "@id": "https://github.com/AGenNextHub"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Constitution"
         },
         {
           "@id": "https://github.com/openautonomyx"
         },
         {
+          "@id": "https://kubecontainer.xyz"
+        },
+        {
+          "@id": "https://penpot.app/"
+        },
+        {
           "@id": "https://platform.openautonomyx.com"
+        },
+        {
+          "@id": "https://registry.agennext.com"
+        },
+        {
+          "@id": "https://www.gartner.com/peer-insights/home"
         }
       ],
       "name": "site-autonomyx/index.html"
