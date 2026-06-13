@@ -1,0 +1,817 @@
+<!doctype html><meta charset="utf-8"><title>deploy</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">deploy</p><h1>2. deploy</h1>
+<hr>
+<h2>The Agent-Engineering Stack — Complete, but Lightweight</h2>
+<p></p>
+The founder&#39;s ruling: a complete stack for agent engineering, kept
+lightweight. Complete = every concern of agent engineering (the six
+of AGENT-PLATFORM.md §3) has a named seat; lightweight = each seat is
+the smallest leader that fills it, nothing runs that isn&#39;t earning,
+the whole thing standing on one VPS. Weight is the enemy of the edge;
+completeness is the enemy of the toy. Both held — balance, not
+maximization.
+<p></p>
+<pre>| Agent-engineering concern | The seat | The lightweight pick | Weight |</pre>
+<pre>|---|---|---|---|</pre>
+<pre>| Goal &amp; contract design | the CRD + CEL; StructuredInstructions | in-repo, already built | ~0 (a binary, a schema) |</pre>
+<pre>| Tool/actuator design | the operator framework (Kubebuilder) | the kube itself | the operator pod |</pre>
+<pre>| Loop &amp; orchestration | the reconciler; the platform-bound orchestrator | KubeContainer | one controller |</pre>
+<pre>| Memory &amp; context | the record — no additional DB; FabricDB when built | k0s etcd now (the kube carries its state) | none added |</pre>
+<pre>| Guardrails &amp; permissions | k0s RBAC; the agent contract terms 1–10 | k0s built-in | none added |</pre>
+<pre>| Evaluation &amp; observability | the eval registry; CodeCompiler; the gauntlet | in-repo scripts + binaries | run on demand |</pre>
+<pre>| Runtime | k0s (single binary, own containerd) | k0s | ~1 binary |</pre>
+<pre>| Registry | zot | zot (CNCF, minimal) | one pod |</pre>
+<pre>| Source + CI | GitLab CE + runner | GitLab (the one heavy guest) | the one big tenant |</pre>
+<pre>| Ground | OpenTofu-declared VPS | one VPS | the metal |</pre>
+<pre>| Build | Cloud Native Buildpacks | pack | on demand |</pre>
+<pre>| Surface | the browser; the site kube | nginx kube | one pod |</pre>
+<p></p>
+The lightweight discipline, stated so it cannot drift into bloat:
+<p></p>
+<ul>
+<li><strong>No additional database</strong> — the record is the store; k0s etcd holds</li>
+</ul>
+  cluster state, the kube carries its own; FabricDB is the only store
+  ever added, and only when built.
+<ul>
+<li><strong>One custodian per function</strong> — one runtime (k0s containerd, Docker</li>
+</ul>
+  struck), one registry (zot), one source host (GitLab), one image
+  builder (pack). No second of anything.
+<ul>
+<li><strong>On-demand, not always-on, for the desk tools</strong> — CodeCompiler,</li>
+</ul>
+  the eval harness, pack, the gauntlet run when invoked; they are not
+  resident daemons eating the box while idle.
+<ul>
+<li><strong>GitLab is the one heavy resident, and it earns it</strong> — source,</li>
+</ul>
+  CI, runner in one. If even that is too heavy for the chosen metal,
+  the lawful lighter swap is Forgejo (the candidate already named) —
+  recorded so the choice is the founder&#39;s, not a silent downgrade.
+<p></p>
+Completeness check: every concern has a seat, no seat is empty but
+FabricDB (declared, awaiting the build order), and nothing on the
+list is there for show. Lightweight check: one VPS carries it; the
+only always-on residents are k0s, the operator, zot, the site, and
+GitLab — five, each earning its memory. Complete and light is a
+balance, and this is where it resolves.
+<p></p>
+<h3>Consider the edge — the stack folds smaller</h3>
+<p></p>
+The founder&#39;s law: the same stack must fold to the edge, where weight
+is not a preference but a wall (a sensor, a card, a browser tab, a
+microcontroller cannot carry GitLab, cannot carry a VPS&#39;s worth of
+residents). So the stack has two readings, one declaration:
+<p></p>
+<ul>
+<li><strong>The home (estate/VPS)</strong> — the full table above: source, CI,</li>
+</ul>
+  registry, runtime, site, all resident, GitLab the heavy guest.
+<ul>
+<li><strong>The edge</strong> — only the kube at the core: The Metal Kube</li>
+</ul>
+  (KubeContainer Core) — loop, record, contract, one signed channel,
+  the surface-native runtime, and nothing else aboard. No GitLab, no
+  zot, no full control plane on the device: the edge pulls signed
+  declarations from the home through the one channel, runs the kube,
+  and serves its face. Source, CI, registry, build all live at the
+  home; the edge receives the product, never the toolchain.
+<p></p>
+The seam between them is the headless-delivery doctrine, exact: the
+home is where it is built, certified, registered (the cloud side, the
+capable guard); the edge is where it is delivered and run (the ports,
+the surface). What folds away at the edge is everything that builds;
+what remains is everything that keeps. The stack is complete at the
+home, minimal at the edge, and one declaration spans both — because
+the difference between home and edge is count and resident, not kind:
+the kube is the same kube; only its company changes.
+<p></p>
+The lightweight rule, edge-stated: at the edge, the only resident is
+the kube. Everything else is the home&#39;s, reached over the one
+channel, never installed on the device whose surface must stay
+headless. Consider the edge, and the stack does not grow a second
+architecture — it sheds, down to the one resident the edge was always
+for.
+<p></p>
+<p></p>
+<h3>The AGenNextHub estate</h3>
+<p></p>
+The founder&#39;s repositories, each holding one seat; this house records
+the map and builds only the non-agent seats (protocol P8: agent
+machinery is the principal&#39;s act alone):
+<p></p>
+<pre>| Seat | Repository | State on the record |</pre>
+<pre>|---|---|---|</pre>
+<pre>| Law | AGenNextHub/Agent-Constitution | binding; loaded by every session here |</pre>
+<pre>| Boundary contract | AGenNextHub/Agent-Space | spec; implemented as `registry/SKELETON-SPACE.json` |</pre>
+<pre>| Files (Agent-Drive) | this house: FileFabric | built; image ships per release (the space drive, agennext.space) |</pre>
+<pre>| The room | AGenNextHub/Agent-IDE | active code (Theia workbench, orchestrator, governance); no releases yet; agent machinery — the principal&#39;s |</pre>
+<pre>| Research office | AGenNextHub/Agent-Converter | active code (deep-agent research, confidence-tagged); pre-release; agent machinery — the principal&#39;s |</pre>
+<pre>| Canonical primitives | AGenNextHub/Agent-Fabric | spec draft v1.0 (Entity, Relationship, Assertion, Observation, Projection, Drift, Reconciliation) — the assertion-native model; KubeContainer is a running reconciliation of exactly this shape |</pre>
+<pre>| Capability catalog | AGenNextHub/Agent-Skills | spec/early code: skill contracts, permissions, risk class; the hierarchy Skills -&gt; Blueprint -&gt; Team -&gt; Runtime |</pre>
+<pre>| Channels (the chat) | AGenNextHub/Agent-Chat | working Go, v0.1.x loop spine (zero-dep, tested, headless daemon, content-addressed boxes); the native candidate for the space&#39;s channels seat, displacing the external Matrix pick when its operator ships; Apache-2.0 - a license divergence from this house&#39;s record, named for the principal |</pre>
+<pre>| Trust contracts | AGenNextHub/Agent-Trust | spec (provenance, evidence, audit: &#34;no trust without evidence&#34;); this house&#39;s promise machinery is that creed already running |</pre>
+<pre>| The agent internet | AGenNextHub/Internet-of-Agents | named placeholder; AgentRegistry (this house) is its first running piece |</pre>
+<pre>| The knowledge base | AGenNextHub/Agents-Wiki | named placeholder; the record&#39;s graph and vocabulary machinery is its natural feed |</pre>
+<pre>| Edge AI compiler | Eclipse Aidge (pinned) | the ModelCompiler seat: model in, surface-native artifact out; first walk owed on the founder&#39;s metal |</pre>
+<pre>| Platform backend | the backend contract (registry/SKELETON-BACKEND.json) | founder&#39;s ruling: the language is Java - the Apache ecosystem is the toolbox; liferay is the first Java blueprint, pocketbase the lightweight alternative on the same contract |</pre>
+<pre>| The Attic rule | https://attic.apache.org/ | retired Apache projects are a legitimate mine - explicitly forkable; one enters only pinned at its last release and with a keeper named (the ownership doctrine: an empty seat is taken, never squatted) |</pre>
+<pre>| The company | github.com/openautonomyx - OpenAutonomyx (OPC) Private Limited, &#34;The Canonical System for Federated Work&#34; | the platform&#39;s legal and product home: dxp (the digital experience platform), trust-center, canonical, search, findr, insights, Publications, campaigns, partners; the decision-intelligence-platform repo is its homepage seat (private or pending at review time) |</pre>
+<pre>| DB candidate | https://surrealdb.com/ - SurrealDB | founder-supplied: multi-model, single binary, embedded mode (the one-engine law holds); Agent-Skills already speaks SurrealQL - the natural backend-contract DB blueprint, pinned when it enters |</pre>
+<pre>| Positioning reference | https://www.zluri.com/ - Zluri | founder-supplied: the SaaS-management category, the enterprise-work positioning the platform speaks to (&#34;Next Generation Of Enterprise Work&#34;) |</pre>
+<pre>| Business-model reference | https://www.redhat.com/en - Red Hat | founder-supplied: the proof that open source plus enterprise trust is the product - subscription on free code, certification as the gate, a verified partner network; the model the platform&#39;s trust-center and partner network mirror |</pre>
+<pre>| Category reference | https://www.gartner.com/en - Gartner | founder-supplied: the analyst frame - decision intelligence is a Gartner-named category, and the platform&#39;s positioning picks it up as insight-driven everything |</pre>
+<pre>| Runtime | this house: KubeContainer on k3s | live on the founder&#39;s metal |</pre>
+<p></p>
+The division is the prohibition applied as architecture: this house
+supplies the ground every agent stands on — runtime, storage, space
+contract, record — and never the agents themselves.
+<p></p>
+<hr>
+<h2>Self-Hosting GitLab — the Individual&#39;s Host, Seated Honestly</h2>
+<p></p>
+The founder&#39;s order: let&#39;s self-host GitLab. The house&#39;s own law
+answers first, and it is obeyed, not waived:
+<p></p>
+<h3>The seating (the law applied to ourselves)</h3>
+<p></p>
+The record holds: *open source, self-hosted, is a vulnerability — of
+the seating, not the code: the layer runs with its contract seat
+vacant... open-source hosting needs an agency.* Self-hosting GitLab
+is lawful here for exactly one reason: the agency exists and takes
+the seat — unboxd holds the hosting contract for this layer, in its
+own name, with the answering priced and the exit real. The
+vulnerability the law names is not waived but staffed: breaches at
+this layer escalate to a named party (the agency, today resolving to
+the founder — the contacts table governs), and the layer is kept
+like every kept thing: pinned, patched on cadence, drift-audited.
+<p></p>
+One more honesty, recorded because honest words demand it: GitLab is
+the textbook open-core company — the model this house&#39;s own
+licensing decision critiques. The pick survives the critique because
+of what we take from it: the CE core (MIT) serving git — and git&#39;s
+own law is the exit: every clone whole, the canon never hostage to
+its host. We run GitLab as a serving layer, never a residence; the
+open-core risk is contained to a layer we can leave in an afternoon.
+<p></p>
+<h3>The picks, pinned</h3>
+<p></p>
+<ul>
+<li><strong>GitLab CE</strong>, self-hosted, pinned to an exact release at install</li>
+</ul>
+  (point of reference, official: https://docs.gitlab.com/install/ —
+  collated, not restyled; record the version you stand on the day
+  you stand on it).
+<ul>
+<li><strong>Ground:</strong> the declared stack — the VPS rung (deploy/VPS.md) or</li>
+</ul>
+  the estate (deploy/STACK.md); GitLab Omnibus on Ubuntu LTS for the
+  single machine, the official Helm chart on the cluster.
+<ul>
+<li><strong>The registry stays zot</strong> — one custodian per function: GitLab&#39;s</li>
+</ul>
+  bundled container registry is disabled; zot (already picked, CNCF)
+  holds the images. GitLab hosts the record; zot holds the artifacts.
+<ul>
+<li><strong>No additional DB — the DB stays in the kube.</strong> The founder&#39;s</li>
+</ul>
+  law, applied here exactly: the stack gains no new database seat.
+  GitLab requires PostgreSQL and Redis to exist — and they exist as
+  internal organs of GitLab&#39;s own kube (the Omnibus bundle keeps
+  them inside the box: not provisioned, not exposed, not on the
+  stack&#39;s deconstruction, no separate layer with a separate
+  contract). The deconstruction&#39;s storage seats do not grow by one;
+  a database that never leaves its kube is not a stack component
+  but an implementation detail behind a sealed face — keep the DB
+  in the kube, and the kube keeps the DB invisible.
+<ul>
+<li><strong>The fabric is the DB — the destination, declared.</strong> For the</li>
+</ul>
+  fabric&#39;s own products the rule is absolute from day one: no
+  additional database, ever; the record is the store, the kube
+  carries its own state (the way the cluster&#39;s record is etcd and
+  the box&#39;s record is its manifest), and FabricDB — the declared
+  seat, durable, indexed, replicated, meta-modeled — is the one
+  store the fabric builds when the founder gives the build order.
+  GitLab is a guest with its organs sealed inside it; the fabric&#39;s
+  own organs are the fabric&#39;s own, and there is exactly one of
+  them.
+<ul>
+<li><strong>CI:</strong> .gitlab-ci.yml at the repo root — the gauntlet ported:</li>
+</ul>
+  same make targets, same verdicts, test/security/eval reports as
+  artifacts, the promise check before anything ships. The portability
+  claim, no longer a claim.
+<p></p>
+<h3>The name</h3>
+<p></p>
+git.unboxd.cloud — the founder&#39;s ruling, and the seating says why:
+the agency holds the hosting contract, so the host wears the
+agency&#39;s name — a function subdomain under the org&#39;s domain (the
+domain is the org; the function is the prefix). The individuals keep
+their own homes (kubecontainer.xyz points at its repo within), but
+the serving layer is the agency&#39;s seat and carries the agency&#39;s
+name.
+<p></p>
+And the agency&#39;s faces multiply by function, each a subdomain under
+the one domain, the founder naming them as they are needed:
+<p></p>
+<ul>
+<li><strong>git.unboxd.cloud</strong> — the source host (GitLab CE, the record).</li>
+<li><strong>developers.unboxd.cloud</strong> — the developer portal: where Any&#39;One&#39;</li>
+</ul>
+  building on the fabric arrives — the docs collated, the blueprints
+  to copy, the SDK and the handed-over binaries (HomeSetup and its
+  kin) to download, the control panel (the edge-as-UI-ref), the
+  references and the FAQ. The face the field of study and the field
+  of work meet at: study the docs, take the blueprint, download the
+  pack, build your home. It is the agency&#39;s seat (the contract is
+  the agency&#39;s), served by its own kube, behind the same cert-manager
+  issuer as every face — one more function subdomain, the domain
+  still the org.
+<p></p>
+Each subdomain is a face of the one canonical identity (the resolution
+layers: the DID at unboxd.cloud, the subdomains its recorded
+projections), never a second org — git for the record, developers for
+the builders, more as functions are named, all resolving home.
+<p></p>
+<h3>The walk (the founder&#39;s hand, paste-ready)</h3>
+<p></p>
+    # on the declared Ubuntu ground, per the official docs:
+    sudo apt update &amp;&amp; sudo apt install -y curl ca-certificates
+    curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+    sudo EXTERNAL_URL=&#34;https://git.unboxd.cloud&#34; apt install gitlab-ce=&lt;PINNED-VERSION&gt;
+    # register a runner for the gauntlet (official: https://docs.gitlab.com/runner/install/)
+    # mirror the canon: GitLab is the home, GitHub remains a mirror —
+    # push both remotes; every clone is whole either way.
+<p></p>
+<h3>The exit (always)</h3>
+<p></p>
+<code>gitlab-ctl backup</code> + the git remotes themselves: the canon lives in
+every clone, the issues and CI history are the host&#39;s context (the
+NOTICE discipline: decision-bearing context is absorbed into the
+canon as it happens, so losing a host loses conversation, never
+canon). Uninstall is one package removal; the record walks out the
+door whole, as designed from the first principle.
+<p></p>
+<hr>
+<h2>KubeContainer&#39;s Own Home — the Individual&#39;s Stack</h2>
+<p></p>
+The founder&#39;s dictation, the individual-identity law enacted as a
+deployment: KubeContainer separate from its parent, every pick its
+own, each one declared:
+<p></p>
+<pre>| Slot | The pick | The reason on the record |</pre>
+<pre>|---|---|---|</pre>
+<pre>| Host of the record | **GitLab** (its own org there) | the host doctrine proven: GitHub is just hosting, the canon travels whole to any host — and the individual&#39;s home need not share its parent&#39;s landlord; held to **CNCF standard** (the supply-chain policy: graduated standards, conformance posture, version-pinned upstream) |</pre>
+<pre>| Website | **kubecontainer.xyz** | the individual&#39;s own door — the domain is the org, rendered per host; the domain already in the record as the pointer, the repo the residence |</pre>
+<pre>| Registry | **zot** — with its control panel | CNCF, OCI-native, on the house&#39;s reading list from its first day; the registry defines the contract, and zot is the registry that is *only* a registry — minimal footprint, the UI its control panel |</pre>
+<pre>| Runtime | **k0s on a VPS** | the single-binary sibling from the candidates table, promoted to pick for this ground: conformant, zero-dependency, the smallest honest Kubernetes for one machine |</pre>
+<pre>| Core | **the kube at core** | The Metal Kube doctrine applied: the device&#39;s immutable center is the kube — loop, record, contract, one signed channel; the surface around it headless |</pre>
+<pre>| UI reference | **the edge as the UI ref** — the browser surface is the reference implementation of every panel | the surface doctrine applied to operations: the control panel renders at the edge browser (surface-native, nothing installed, nothing executing but the surface&#39;s own presenter), the arithmetic page its precedent — one UI reference for the config panel, zot&#39;s panel, and every face the stack shows |</pre>
+<pre>| UI library | **Fabric.js** — the founder&#39;s pick for the panel&#39;s visual layer | point of reference, real and currently maintained: http://fabricjs.com/ · https://github.com/fabricjs/fabric.js (the leading open canvas library — follow the leaders); pinned to an exact release when it enters. The name lands as the pun it deserves: the fabric, rendered by Fabric — and within this scope the alias resolves to the library, the registry holding the mapping. The v0 panel (site/panel.html) ships dependency-free, surface-native; Fabric.js enters with the visual views — the fabric graph drawn, the estate seen, the canvas where the weave becomes a picture |</pre>
+<pre>| Operations | **everything configurable on UI, upon login** | the flow&#39;s own gate order (login first, then the faces); every variable the stack declares surfaces in the control panel — more config is more control to the end user, and the UI is where the user&#39;s ownership of all the faces becomes a set of switches |</pre>
+<p></p>
+The reading: this is the personal fabric&#39;s reference deployment —
+one individual (KubeContainer), one home (kubecontainer.xyz), one
+host (GitLab, CNCF-standard), one registry (zot with its panel), one
+runtime (k0s), the kube at the core, and every declared variable
+reachable through the UI after login. The parent (unboxd.cloud)
+remains a relation in the record; the home is the individual&#39;s own.
+The enactment is the founder&#39;s hand (org creation, domain binding,
+VPS); the declarations stand ready in this repository, and the
+session&#39;s honest note holds: this environment reaches GitHub&#39;s proxy
+only — the GitLab walk is paste-ready, not remotely executed.
+<p></p>
+And the user&#39;s walk through it, the founder&#39;s two closing lines.
+First: the user configures, and downloads the package — upon login,
+every declared variable surfaces on the UI; the user sets their
+picks (the language, the base, the faces, the bounds); the picks
+become the declaration (the dual-signed build spec, the form being
+the skeleton); and the package assembles sealed — BOM attached,
+signatures on, seal intact — and downloads to the user&#39;s own ground.
+Composition is shipping, at quantity one: configure, sign, download,
+unbox — the marketplace&#39;s whole mechanics served to a single person
+through a login and a form. Second: we will be the standard
+blueprint — this home stack is not one deployment among many but
+the reference walk, registered as a blueprint in the registry the
+way the agent offices are: Any&#39;One&#39; building an individual&#39;s home
+copies this declaration and re-pins their own picks, and the
+standard earns its name the only way standards earn anything here —
+demonstrated first (this stack, running), defined second (this
+file), copied third (the registry&#39;s blueprint, free to take). The
+house that wrote the laws ships the worked example, and the worked
+example is the product.
+<p></p>
+<h3>What this home is: the complete agent-engineering stack, lightweight</h3>
+<p></p>
+The founder names the composition. One 8GB VPS now carries every seat
+agent engineering needs — declare, gate, build, store, run, keep,
+record, evidence — and almost every resident is a single binary:
+<p></p>
+<pre>| Need | Resident | Weight |</pre>
+<pre>|---|---|---|</pre>
+<pre>| The record + the gauntlet | GitLab CE (git.unboxd.cloud) + runner | the one heavy tenant —</pre>
+<p></p>
+<hr>
+<h2>Leap Micro — the host the kube stands on</h2>
+<p></p>
+Status: decision record + walk. Founder&#39;s direction, 2026-06-12:
+&#34;lets build the kube with this&#34; — openSUSE Leap Micro
+(get.opensuse.org/leapmicro). This page records the verdict and the
+exact walk; <code>deploy/deploy.sh</code> already knows this host.
+<p></p>
+<h3>The verdict</h3>
+<p></p>
+The kube host is <strong>openSUSE Leap Micro</strong> (currently 6.2), not MicroOS.
+<p></p>
+<ul>
+<li>Both are transactional, immutable container hosts: read-only root,</li>
+</ul>
+  atomic updates with automatic rollback, SELinux enforcing, built
+  for exactly one job — running a container runtime at the edge.
+  That is the native fit the geography demands: core to runtime,
+  headless edge to edge, operator in env.
+<ul>
+<li>The difference: MicroOS is rolling (Tumbleweed base — the substrate</li>
+</ul>
+  moves daily); Leap Micro is fixed releases. The pinning policy that
+  governs every tool and image in this stack governs the host too:
+  the layer under the kube must be the most boring one. Fixed release
+  wins.
+<ul>
+<li>MicroOS remains the rolling option for throwaway dev boxes only,</li>
+</ul>
+  never for a host that carries a verdict.
+<p></p>
+<h3>The walk (three commands, one reboot)</h3>
+<p></p>
+Leap Micro&#39;s root filesystem is read-only; packages are layered with
+<code>transactional-update</code> and arrive on the next boot. So the SELinux
+policy for k3s goes in first, then the one-command deploy runs
+unchanged:
+<p></p>
+<pre>sudo transactional-update pkg install k3s-selinux
+sudo reboot
+curl -sfL https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/deploy.sh | sudo sh
+</pre>
+<p></p>
+<code>deploy.sh</code> detects a transactional host itself: if <code>k3s-selinux</code> is
+not yet layered it refuses with these exact instructions instead of
+half-installing; once the host is prepared it proceeds — k3s binary
+to <code>/usr/local</code> (a writable subvolume), operator from the latest
+release, arithmetic kube applied, verdict printed. The same one URL
+deploys on Ubuntu and on Leap Micro; the script, not the reader,
+carries the difference.
+<p></p>
+<hr>
+<h2>The Org Name — the Domain Is the Org</h2>
+<p></p>
+The founder&#39;s ruling: keep it simple — unboxd.cloud; the domain is
+the org. GitHub renders it unboxd-cloud (dots are not legal there);
+the domain stays the only name. The walk, in order, each step
+declared (the rename itself is the founder&#39;s hand — org settings):
+<p></p>
+1. Rename the GitHub org: unboxd-agency → unboxd-cloud.
+2. Park the vacated name at once: re-create unboxd-agency as an
+   empty placeholder org — redirects live only while the old name
+   is unsquatted; parking makes them effectively permanent.
+3. The Go module path heals itself: go.mod already reads
+   github.com/unboxd-cloud/kubecontainer — after this rename it is
+   exactly right again, and the deferred module-migration debt is
+   closed by the rename instead of caused by it.
+4. Images: the next release publishes to ghcr.io/unboxd-cloud/...
+   and its install bundle points there; prior releases stay valid
+   through the parked redirect.
+5. Docs: one pass replacing github.com/unboxd-agency/ with
+   github.com/unboxd-cloud/ (after the rename, not before).
+6. The site: bind the custom domain — the Pages URL stops
+   mattering the day unboxd.cloud serves it, which is the ruling&#39;s
+   whole point.
+<p></p>
+What never moves: the API group (kubecontainer.unboxd.cloud), the
+DID (did:web:unboxd.cloud), the canon in every clone. The domain
+was always the name; this walk just makes every pointer agree.
+<p></p>
+<h3>Kube as its own org — the individual&#39;s home, enacted</h3>
+<p></p>
+The founder enacts the individual-identity law: KubeContainer moves
+to a separate org — its own home, with unboxd.cloud as parent-by-
+relation, never by cage. The same law names the new org: the domain
+is the org, and KubeContainer&#39;s domain is kubecontainer.xyz — so the
+GitHub rendering is <code>kubecontainer</code> (simple, the individual&#39;s own
+name; the -xyz suffix only if the bare name is taken). The walk:
+<p></p>
+1. Create the org (the founder&#39;s hand) and transfer the repository
+   into it — GitHub carries issues, PRs, releases, and redirects
+   with a transfer.
+2. Park the vacated path as always: the old org keeps a placeholder
+   fork-redirect; no name left unsquatted.
+3. The module path follows the individual, once, deliberately:
+   go.mod becomes github.com/&lt;neworg&gt;/kubecontainer in a single
+   recorded migration (imports rewritten in the same commit, the
+   gauntlet proving it) — the last rename this module ever needs,
+   because the individual&#39;s home does not change when parents do.
+4. Images re-publish under the new org&#39;s namespace at the next
+   release; prior releases stay valid through redirects.
+5. The site binds kubecontainer.xyz — the individual&#39;s own door.
+6. Honest session note: this working session&#39;s writ is scoped to
+   the current repo path; after a transfer, redirects normally
+   carry it, and if the proxy refuses the new home, the session
+   ends at its boundary and the work continues from any clone —
+   exit real, for agents too.
+<p></p>
+Parent unboxd.cloud remains exactly what the law says parents are:
+a relation in the record — the agency answering commercially for
+the product — while the product&#39;s name, home, and record are its
+own. One family, every member named in their own right.
+<p></p>
+<hr>
+<h2>References — Every Component and Seam, With Its Source</h2>
+<p></p>
+The founder&#39;s order: source reference URLs to review, for every
+component&#39;s spec and every seam&#39;s contract. Per the law: define term
+with point of reference; the point of reference must be real and
+currently, actively maintained. Honesty note from the environment
+that wrote this: outbound fetches are restricted here, so these are
+the leaders&#39; canonical, stable homes, cited for review and verified
+on click — each one a living anchor by reputation and the scoreboard,
+to be re-pinned to exact versions at deploy time.
+<p></p>
+<h3>The layers</h3>
+<p></p>
+<pre>| # | Component | Source of record |</pre>
+<pre>|---|---|---|</pre>
+<pre>| 0 | Metal / ISA | the vendor&#39;s architecture manual (Intel SDM: https://www.intel.com/sdm · Arm ARM: https://developer.arm.com/documentation/ddi0487 · RISC-V: https://riscv.org/technical/specifications/) |</pre>
+<pre>| 1 | Kernel / KVM | https://docs.kernel.org/virt/kvm/ (kernel docs, kernel.org) |</pre>
+<pre>| 2 | OpenStack | https://docs.openstack.org/ · API refs: https://docs.openstack.org/api-ref/ · releases: https://releases.openstack.org/ |</pre>
+<pre>| 2 | Keystone (identity) | https://docs.openstack.org/keystone/latest/ |</pre>
+<pre>| 2 | Cinder (block API) | https://docs.openstack.org/cinder/latest/ |</pre>
+<pre>| 2 | Ceph (storage body) | https://docs.ceph.com/en/latest/ |</pre>
+<pre>| 2 | Rook (cluster-side keeper, CNCF) | https://rook.io/docs/rook/latest/ |</pre>
+<pre>| 3 | Ubuntu Server LTS | https://ubuntu.com/about/release-cycle · https://releases.ubuntu.com/ |</pre>
+<pre>| 3 | cloud-init | https://cloudinit.readthedocs.io/en/latest/ |</pre>
+<pre>| 4 | Kubernetes | https://kubernetes.io/docs/reference/ · source: https://github.com/kubernetes/kubernetes · conformance: https://github.com/cncf/k8s-conformance |</pre>
+<pre>| 4 | k3s (single VPS rung) | https://docs.k3s.io/ |</pre>
+<pre>| 4 | minikube (venv rung) | https://minikube.sigs.k8s.io/docs/ |</pre>
+<pre>| 5 | containerd | https://containerd.io/docs/ · https://github.com/containerd/containerd |</pre>
+<pre>| 6 | KubeContainer / The Metal Kube | this repository: the CRD at config/crd/bases/, the spec at docs/KUBE-SPEC.md, the release at https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0 |</pre>
+<pre>| 7 | The arithmetic kube | deploy/arithmetic-kube.yaml + site/arithmetic.html (in-repo; the formula&#39;s law at docs/MEASUREMENT-STANDARD.md) |</pre>
+<pre>| 8 | FabricDB (vacant seat) | the contract declared ahead: docs/SOLID-STATE-DATABASE.md + the four properties in docs/HEADLESS-DELIVERY.md |</pre>
+<pre>| 9–10 | Shared context, agents | docs/PERSONAL.md (terms + flow) · registry/SKELETON.json · docs/AGENT-PLATFORM.md (the ladder, the protocols) |</pre>
+<pre>| 11 | Browser surface | WHATWG HTML: https://html.spec.whatwg.org/ · ECMAScript: https://tc39.es/ecma262/ |</pre>
+<pre>| 12 | The human | no spec; the seat the rest exist to serve |</pre>
+<p></p>
+<h3>The seams</h3>
+<p></p>
+<pre>| Seam | Contract | Source of record |</pre>
+<pre>|---|---|---|</pre>
+<pre>| 1↔2 | virtio | https://docs.oasis-open.org/virtio/virtio/ (OASIS) |</pre>
+<pre>| 3↔4 | kubelet host contract | https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/ · cgroups: https://docs.kernel.org/admin-guide/cgroup-v2.html · systemd: https://systemd.io/ |</pre>
+<pre>| 4↔5 | CRI | https://github.com/kubernetes/cri-api |</pre>
+<pre>| 5↔6 | OCI image / runtime / distribution | https://github.com/opencontainers/image-spec · https://github.com/opencontainers/runtime-spec · https://github.com/opencontainers/distribution-spec |</pre>
+<pre>| storage | CSI | https://github.com/container-storage-interface/spec |</pre>
+<pre>| network | CNI | https://github.com/containernetworking/cni |</pre>
+<pre>| 6↔7 | CRD + CEL admission | https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/ · CEL: https://github.com/google/cel-spec |</pre>
+<pre>| 9↔10 | proto-first wire | https://protobuf.dev/ · gRPC: https://grpc.io/docs/ |</pre>
+<pre>| events | CloudEvents (CNCF) | https://cloudevents.io/ · https://github.com/cloudevents/spec |</pre>
+<pre>| identity | W3C DID | https://www.w3.org/TR/did-core/ |</pre>
+<pre>| things | W3C WoT Thing Description | https://www.w3.org/TR/wot-thing-description11/ |</pre>
+<pre>| ports | IANA service-name &amp; port registry | https://www.iana.org/assignments/service-names-port-numbers/ |</pre>
+<pre>| the scoreboard | LF Insights (founder-pinned) | https://insights.linuxfoundation.org/collection/details/top-open-source-projects · https://insights.linuxfoundation.org/project/k8s |</pre>
+<p></p>
+<h3>The review rule</h3>
+<p></p>
+Review forever means the anchors are re-checked, not re-trusted:
+each URL is a living point of reference — still edited, still kept,
+still answering — and at deploy time every &#34;latest&#34; above is pinned
+to the exact version stood upon, recorded beside the deployment.
+A reference that stops resolving is replaced through the registry,
+never left dangling — the alias law, applied to the library.
+<p></p>
+<hr>
+<h2>The Stack, Deconstructed</h2>
+<p></p>
+The founder&#39;s order, after the decision trail the record keeps with
+its reasons: a version is needed (a substrate unpinned is drifting);
+Ubuntu Core 26 was weighed (immutable, snap-sealed — a fine edge-device
+OS) and set aside; the ruling is OpenStack — the house&#39;s declared
+substrate default, the open IaaS the licensing decision already
+seated. Deconstruct is the gauntlet&#39;s own verb: every layer taken
+apart, named, pinned, owned, and exitable — then reconstructed and
+tested as one.
+<p></p>
+<pre>| # | Layer | The pick | The pin | Who holds the contract | The exit |</pre>
+<pre>|---|---|---|---|---|---|</pre>
+<pre>| 0 | Metal | pick your metal | the vendor&#39;s exact SKU, recorded | the hardware vendor (silicon contract) | replaceable under OpenStack — the layer above abstracts it |</pre>
+<pre>| 1 | IaaS substrate | **OpenStack** | the named series release, exact, recorded at deploy (releases are named and dated; pin the one you stand on) | the operating party (self-hosted: you; hosted: the provider) | open APIs; any OpenStack, or out to any conformant cloud |</pre>
+<pre>| 2 | Node OS | Ubuntu Server LTS | the exact point release + kernel, recorded | Canonical (the distribution contract) | any Linux the kubelet conforms on |</pre>
+<pre>| 3 | Kubernetes | conformant upstream | 1.35 (the same minor this house tests against — envtest 1.35.0) | CNCF (conformance); the operating party (the cluster) | any conformant cluster, hyperscaler to laptop |</pre>
+<pre>| 4 | Container runtime | containerd | the release Kubernetes 1.35 certifies, exact | CNCF (graduated) | any CRI runtime |</pre>
+<pre>| 5 | Operator | KubeContainer | v0.1.0 (released, evidence attached) | this house (unboxd — the answering) | delete the CRD; owner-reference GC removes children cleanly |</pre>
+<pre>| 6 | The kube | deploy/arithmetic-kube.yaml | the image pinned (nginx:1.27), the declaration in git | the principal (the declared intent) | delete the declaration; the record survives |</pre>
+<pre>| 7 | Memory runtime | FabricDB | — declared, not yet built; the SolidStateDatabase seat | (vacant — awaiting the founder&#39;s build order) | n/a until built; the seat is on the record |</pre>
+<pre>| 8 | Surface | edge browser | the engine the user already runs | the user (owns all the faces) | any browser; the function is surface-native |</pre>
+<p></p>
+<h3>The rules of the deconstruction</h3>
+<p></p>
+<ul>
+<li><strong>Every layer pinned or named vacant</strong> — a layer with no version is</li>
+</ul>
+  drifting; a layer honestly vacant (FabricDB) is declared, never
+  hidden.
+<ul>
+<li><strong>Every layer owned</strong> — one contract holder per layer; the stack of</li>
+</ul>
+  contracts, each party answering for its own floor.
+<ul>
+<li><strong>Every layer exitable</strong> — the exit column is not decoration; a</li>
+</ul>
+  layer whose exit is empty is a lock, and locks fail the charter.
+<ul>
+<li><strong>Reconstruct and test</strong> — deconstruction is half the gauntlet:</li>
+</ul>
+  the stack goes back together in order (0→8), each seam verified,
+  and the whole walked once end to end before it carries anything
+  real. The rehearsal (hack/deployrehearsal) proves layers 5–6;
+  the e2e gate proves 3–6 with real traffic; the OpenStack walk
+  proves the rest on the metal you picked.
+<p></p>
+One stack, nine layers, every seat named — and the only vacant seat
+is declared vacant, which is the difference between a gap in the
+record and a gap in the honesty.
+<p></p>
+<h3>The OpenStack deconstruction</h3>
+<p></p>
+The founder deconstructs the substrate itself, placing each piece —
+and the placements answer his questions on the record:
+<p></p>
+<ul>
+<li><strong>Fabric as substrate, written in Go</strong> — where the fabric itself</li>
+</ul>
+  is the substrate implementation, its language is picked by the
+  common-ground rule: Go — the tongue Kubernetes, containerd, and
+  this house&#39;s own operator already speak; one language down the
+  whole control plane, no translation seam between the fabric and
+  the ground it runs.
+<ul>
+<li><strong>Keystone (identity) — outside of core.</strong> That&#39;s Stack, not</li>
+</ul>
+  Core: identity is a platform service, never a device resident.
+  It seats at the flow&#39;s own gate — login, profile, *verify
+  identity* — serving the whole estate from the substrate layer
+  (layer 1), while the device core (KubeContainer Core) carries
+  only its own contract and channel, asking identity questions of
+  the platform and storing no identity authority itself. Identity
+  at the core would be the §12 wound by design: a face authority
+  riding inside every device. Outside of core — exactly where the
+  founder put it.
+<ul>
+<li><em></em>Block storage — Cinder is the contract, Ceph is the body, LXD</li>
+</ul>
+  is a different seat entirely.<em></em> The founder asks why Cinder and
+  not Ceph or LXD, and the answer is the seating: they are not
+  three candidates for one chair. Cinder is OpenStack&#39;s block
+  storage <em>API</em> — the declared seam, the contract the substrate
+  ruling already brought with it; it stores nothing, it answers for
+  volumes. Ceph is the storage <em>body</em> — the distributed store that
+  actually keeps the bytes — and it is the natural keeper <em>behind</em>
+  Cinder, not instead of it: Cinder the contract, Ceph the bytes,
+  the leaders&#39; pick for open distributed storage on both axes of
+  the scoreboard (and on the cluster side the same body arrives
+  through Rook, CNCF-graduated, over the same CSI seam). LXD sits
+  at a different seat altogether — a machine-and-container manager,
+  competing for layer 1&#39;s instance seat (where Nova already sits in
+  an OpenStack stack) and layer 4&#39;s runtime seat (where containerd
+  already sits, CNCF-graduated) — and its recent history is the
+  keeper-risk the follow-the-leaders rule screens for: relicensed
+  under one vendor&#39;s sole control, its community forked away to
+  Incus — a live lesson in what happens when a commons&#39; contract
+  seat is taken by a single party. So the stack reads: Cinder the
+  declared interface, Ceph the body behind it, CSI the seam upward,
+  Rook the cluster-side keeper — and the kube above names none of
+  them, only its claim, which is what keeps every one of them
+  swappable and the substrate exitable.
+<ul>
+<li><strong>Minikube — does it fit?</strong> Yes — in the venv seat, and only</li>
+</ul>
+  there. Minikube is conformant Kubernetes on a laptop: the
+  rehearsal ground (compile and simulate in the venv), the branch&#39;s
+  own cluster, the grade-1 classroom — it fits the desk perfectly
+  and the estate not at all. The ladder reads: minikube at the
+  desk, the rehearsal chamber in CI, k3s on the single VPS,
+  OpenStack under the estate — one conformant contract at every
+  rung, which is why the same declaration walks all four without
+  changing a line.
+<p></p>
+<h3>Candidates per slot</h3>
+<p></p>
+The founder&#39;s order: the pick is a choice only if the alternatives
+are on the record. Each slot, its pick, and the other candidates a
+builder may lawfully swap in — entry by conformance, never by this
+house&#39;s leave; candidates listed are the leaders of each slot&#39;s own
+scoreboard, and a swap is a re-pin, not a rebellion.
+<p></p>
+<pre>| Slot | Picked | Other candidates |</pre>
+<pre>|---|---|---|</pre>
+<pre>| Metal / ISA | builder&#39;s pick | x86-64 (Intel/AMD) · Arm64 (the edge&#39;s favorite) · RISC-V (the open ISA, rising) |</pre>
+<pre>| IaaS substrate | OpenStack | Apache CloudStack (the house once weighed it) · bare conformant cloud (any hyperscaler, by the exit law) · no IaaS at all (metal straight to K8s, for the small estate) |</pre>
+<pre>| Node OS | Ubuntu Server LTS | Debian (the upstream elder) · Flatcar (immutable, container-first) · Ubuntu Core (weighed for the edge, snap-sealed) · Talos (API-only, no shell — the K8s-native extreme) |</pre>
+<pre>| Kubernetes rung | upstream 1.35 / k3s / minikube | k0s (single-binary sibling) · kind (CI&#39;s own rung, already in the e2e gate) · any certified distribution (the conformance list is the menu) |</pre>
+<pre>| Container runtime | containerd | CRI-O (the Kubernetes-purist sibling) · Kata (VM-isolated containers, when the tenant boundary must be hardware) |</pre>
+<pre>| Storage body | Ceph (behind Cinder, via CSI/Rook) | Longhorn (CNCF, the lightweight estate) · OpenEBS (CNCF sandbox lineage) · the substrate&#39;s native volumes (small grounds) |</pre>
+<pre>| Identity | Keystone (in-OpenStack) | Dex (CNCF, OIDC federation) · Keycloak (the self-hosted elder) · any OIDC provider (the protocol is the seat, the product is swappable) |</pre>
+<pre>| Wire / skeleton | protobuf + gRPC | JSON Schema (the registry&#39;s current declarations speak it) · CBOR/CDDL (the constrained edge) · FlatBuffers (zero-copy, when parse cost is the path) |</pre>
+<pre>| Events | CloudEvents | — the seat is the standard itself; candidates compete beneath it as transports (HTTP, MQTT, NATS) |</pre>
+<pre>| Memory runtime (vacant) | FabricDB (declared) | until built, the candidates holding the floor: etcd (the cluster&#39;s own record) · PostgreSQL (the durable elder) · SQLite (the device-local floor) — each measured against the four properties: durable, indexed, replicated, meta-modeled |</pre>
+<pre>| Surface engine | the user&#39;s browser | every engine the user already runs is admissible — the face is theirs, not ours to pick |</pre>
+<p></p>
+The rule of the table: the pick column is what this house stands on
+and answers for; the candidates column is what any builder may pin
+instead without leaving the fabric — same declaration, different
+ground, the exit kept real at every slot. A candidate becomes a pick
+by being pinned and recorded; a pick becomes a candidate again the
+day its keeper stops keeping — the scoreboard, not sentiment,
+governs both directions.
+<p></p>
+<h3>The decision record — decision intelligence 101</h3>
+<p></p>
+The founder&#39;s law for this table: we are transparent about why we
+chose this stack, and a decision should justify itself based on the
+evidence — decision intelligence 101 (the discipline was on this
+house&#39;s reading list from its first day; point of reference:
+https://www.gartner.com/en/information-technology/glossary/decision-intelligence).
+The method: every pick is recorded with the evidence that produced
+it, such that anyone re-running the evidence reaches the same pick —
+and when the evidence changes, the decision re-opens by itself,
+because it was never an opinion, only a conclusion.
+<p></p>
+<ul>
+<li><strong>OpenStack</strong> — evidence: the licensing decision already seated it</li>
+</ul>
+  as substrate default (recorded, reasoned); it is the one IaaS that
+  is open by the triple test (inspectable, implementable, leavable)
+  and self-hostable without a hyperscaler counterparty; vendor
+  neutrality is policy in this house. Re-run the evidence: same pick.
+<ul>
+<li><strong>Ubuntu Server LTS</strong> — evidence: LTS cadence (dated, published</li>
+</ul>
+  support windows — a pinned dependency needs a pinned lifetime),
+  cloud-init first-class on OpenStack, and the leaders&#39; position
+  among server distributions. The dialect pin (American English /
+  K8s ecosystem) and this OS pick are the same rule: common ground.
+<ul>
+<li><strong>Kubernetes 1.35</strong> — evidence: the founder-supplied scoreboard</li>
+</ul>
+  (number one on the LF index, both axes) and this repository&#39;s own
+  record — envtest pins 1.35.0, the e2e gate runs it; we deploy the
+  minor we test, because a deploy target the tests never saw is a
+  claim, not a decision.
+<ul>
+<li><strong>containerd</strong> — evidence: CNCF-graduated, the default runtime of</li>
+</ul>
+  the certified distributions, CRI-native; the runtime the picked
+  layer above already certifies. The decision is inherited from the
+  Kubernetes pick — one piece of evidence serving two slots.
+<ul>
+<li><strong>Ceph (behind Cinder, via CSI/Rook)</strong> — evidence: the leader for</li>
+</ul>
+  open distributed storage on both scoreboard axes; Rook is
+  CNCF-graduated, so the cluster-side keeper is itself a kept
+  project; and the contract/body split (Cinder declares, Ceph keeps)
+  preserves the exit at the storage layer.
+<ul>
+<li><strong>Keystone</strong> — evidence: it ships with the substrate already</li>
+</ul>
+  picked (common ground — no second identity system where one is in
+  the box), and the doctrine&#39;s own rule placed identity outside of
+  core; the pick is the placement, the product came with the ground.
+<ul>
+<li><strong>protobuf + gRPC at the wire</strong> — evidence: the proto-first law</li>
+</ul>
+  was legislated before the tool was picked (the skeleton precedes
+  its filling); protobuf is the leaders&#39; schema-first wire with the
+  widest native-language reach — the multi-language single-meaning
+  law needs exactly that.
+<ul>
+<li><strong>Go for the fabric&#39;s own code</strong> — evidence: the entire picked</li>
+</ul>
+  control plane (Kubernetes, containerd, etcd, this operator) is
+  written in it; one language down the control plane means no
+  translation seam — the common-ground rule, applied to ourselves
+  first.
+<p></p>
+The rule of the record: a decision with its evidence attached cannot
+be relitigated by taste — only by new evidence; and each anchor
+above is living, so the evidence re-checks itself on the scoreboard
+this house already follows. Transparent because recorded; recorded
+because everyone has a right to reason; self-justifying because the
+reason travels with the choice — decision intelligence 101, kept the
+only way this house keeps anything: in the record, beside the thing
+it explains.
+<p></p>
+And the founder adds the property that makes the record safe to
+re-run: a decision should be idempotent. Decide twice on the same
+evidence and the second deciding changes nothing — no drift from
+repetition, no decision that mutates by being revisited; the
+decision is a pure function of its evidence, which is exactly what
+evidence-attachment buys. Re-open it with unchanged evidence and
+you get a no-op; re-open it with new evidence and it converges to
+the new conclusion — the level-triggered reconciler&#39;s own property,
+applied to governance: the loop can run the decision as often as it
+likes (the drift audit re-asking every pick on every pass) and the
+stack only ever moves when the world does. A decision that gives a
+different answer on a quiet Tuesday was never a decision; it was a
+mood with a date on it.
+<p></p>
+<hr>
+<h2>The Delivery Trinity — Operator Framework, OpenTofu, Buildpacks</h2>
+<p></p>
+The founder&#39;s ruling: everything must be operator framework, OpenTofu,
+and buildpack — buildpack native. Three seats, one per layer, each the
+leaders&#39; open standard, none a bespoke invention:
+<p></p>
+<pre>| Layer | The seat | Point of reference |</pre>
+<pre>|---|---|---|</pre>
+<pre>| The keeping (runtime) | **Operator framework** — the operator pattern, Kubebuilder; already this house&#39;s kernel | https://kubebuilder.io/ · https://github.com/kubernetes-sigs/kubebuilder |</pre>
+<pre>| The ground (infrastructure) | **OpenTofu** — infrastructure declared, planned, applied, idempotent; Linux Foundation, the open fork that kept the commons open | https://opentofu.org/ · https://github.com/opentofu/opentofu |</pre>
+<pre>| The image (build) | **Cloud Native Buildpacks** — buildpack native: no Dockerfile authored by hand; source in, OCI image out, BOM attached by the build itself; CNCF, on the founder&#39;s reading list from day one | https://buildpacks.io/ · https://github.com/buildpacks/pack |</pre>
+<p></p>
+The reading: the operator keeps what runs, OpenTofu declares what it
+runs on, buildpacks produce what is run — three declarative seats
+covering run, ground, and artifact, so that nothing anywhere is an
+imperative script pretending to be infrastructure. And the SDK seat,
+named as the founder named it: what the end user is handed is a
+binary or an SDK — HomeSetup remains the hand-over binary, and its
+imperative infra steps migrate into the OpenTofu module
+(deploy/tofu/) as the declared form: the binary becomes a thin walker
+of declarations (command as code invoking config as code), never the
+place where infrastructure lives.
+<p></p>
+Buildpack migration, declared: project.toml at the repo root pins the
+build; the pipeline&#39;s docker-build step is replaced by <code>pack build</code>
+(pinned pack, pinned builder) the first run after a runner with a
+Docker daemon verifies it — the swap is recorded here so it cannot
+drift in silently.
+<p></p>
+<hr>
+<h2>Deploying the kube on an Ubuntu VPS</h2>
+<p></p>
+The real ground, named by the founder. The rehearsal is green
+(hack/deployrehearsal); this is the same declaration walked on real
+metal — every step a command, every command checkable. Run as a user
+with sudo on Ubuntu 22.04/24.04.
+<p></p>
+<h3>1. The substrate — conformant Kubernetes on one VPS</h3>
+<p></p>
+k3s: CNCF-conformant, single-binary, built for exactly this ground.
+Pin the channel; the version you install is the version you record.
+<p></p>
+    curl -sfL https://get.k3s.io | INSTALL_K3S_CHANNEL=v1.35 sh -
+    sudo k3s kubectl get nodes   # expect: Ready
+<p></p>
+<h3>2. The operator — KubeContainer v0.1.0 (one bundle, one apply)</h3>
+<p></p>
+    sudo k3s kubectl apply -f \
+      https://github.com/unboxd-agency/KubeContainer/releases/download/v0.1.0/install.yaml
+    sudo k3s kubectl -n kubecontainer-system get pods   # expect: Running
+<p></p>
+<h3>3. The declaration — the arithmetic kube</h3>
+<p></p>
+    sudo k3s kubectl apply -f \
+      https://raw.githubusercontent.com/unboxd-agency/KubeContainer/main/deploy/arithmetic-kube.yaml
+    sudo k3s kubectl get kubecontainers   # watch READY become True
+<p></p>
+<h3>4. The verdict — real traffic at the face</h3>
+<p></p>
+    sudo k3s kubectl get kubecontainer arithmetic -o jsonpath=&#39;{.status.endpoint}&#39;
+    sudo k3s kubectl run probe --image=curlimages/curl:8.10.1 --rm -it --restart=Never \
+      -- curl -s -o /dev/null -w &#39;%{http_code}&#39; http://arithmetic.default.svc
+    # expect: 200 — the kube serving at its face
+<p></p>
+<h3>The honest seating</h3>
+<p></p>
+This session cannot reach the VPS (no SSH from the managed
+environment — recorded constraint). Two lawful hands can:
+<p></p>
+<ul>
+<li><strong>Yours</strong> — paste the four steps; the whole walk is ~3 minutes.</li>
+<li><strong>The platform&#39;s</strong> — add the VPS as a self-hosted GitHub Actions</li>
+</ul>
+  runner and the pipeline becomes the delivery channel: the same
+  gauntlet that gates the repo deploys to the metal, headless,
+  through the one recorded channel — which is the doctrine&#39;s own
+  preferred route (delivery at the ports, never by hand at the
+  surface).
+<p></p>
+Exit clause, as always: <code>k3s-uninstall.sh</code> removes the substrate
+whole; the declaration, the record, and the evidence stay in the
+repo — exit real.
+<p></p>
+<nav class="foot"><a href="chapter-1.html">&larr; previous</a><a href="index.html">contents</a><a href="chapter-3.html">next &rarr;</a></nav>
