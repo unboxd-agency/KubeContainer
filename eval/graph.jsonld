@@ -299,6 +299,16 @@
       "name": "Dockerfile.autonomyx"
     },
     {
+      "@id": "Dockerfile.fabric",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/graph.jsonld"
+        }
+      ],
+      "name": "Dockerfile.fabric"
+    },
+    {
       "@id": "Dockerfile.filefabric",
       "@type": "CreativeWork",
       "name": "Dockerfile.filefabric"
@@ -2053,6 +2063,11 @@
       "name": "https://buildpacks.io/"
     },
     {
+      "@id": "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm",
+      "@type": "CreativeWork",
+      "name": "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm"
+    },
+    {
       "@id": "https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js",
       "@type": "CreativeWork",
       "name": "https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"
@@ -3289,6 +3304,28 @@
       "@id": "site-autonomyx/whitepapers/index.html",
       "@type": "CreativeWork",
       "name": "site-autonomyx/whitepapers/index.html"
+    },
+    {
+      "@id": "site-fabric/index.html",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm"
+        },
+        {
+          "@id": "https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"
+        },
+        {
+          "@id": "https://kubecontainer.xyz"
+        },
+        {
+          "@id": "https://registry.agennext.com"
+        },
+        {
+          "@id": "https://www.openautonomyx.com"
+        }
+      ],
+      "name": "site-fabric/index.html"
     },
     {
       "@id": "site/CNAME.example",

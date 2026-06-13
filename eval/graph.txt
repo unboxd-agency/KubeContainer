@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=181 edges=433
+# nodes=183 edges=439
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -52,6 +52,7 @@ CLAUDE.md -> internal/controller/testdata/compat
 Dockerfile -> cmd/main.go
 Dockerfile -> https://github.com/GoogleContainerTools/distroless
 Dockerfile.arithmetic -> site/arithmetic.html
+Dockerfile.fabric -> eval/graph.jsonld
 LICENSE -> https://github.com/unboxd-agency/KubeContainer
 Makefile -> cmd/main.go
 Makefile -> config/crd
@@ -410,6 +411,11 @@ site-autonomyx/index.html -> https://penpot.app/
 site-autonomyx/index.html -> https://platform.openautonomyx.com
 site-autonomyx/index.html -> https://registry.agennext.com
 site-autonomyx/index.html -> https://www.gartner.com/peer-insights/home
+site-fabric/index.html -> https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm
+site-fabric/index.html -> https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js
+site-fabric/index.html -> https://kubecontainer.xyz
+site-fabric/index.html -> https://registry.agennext.com
+site-fabric/index.html -> https://www.openautonomyx.com
 site/arithmetic.html -> https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js
 site/arithmetic.html -> https://kubecontainer.xyz
 site/arithmetic.html -> https://registry.agennext.com

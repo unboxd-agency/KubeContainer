@@ -110,6 +110,7 @@ machinery is the principal's act alone):
 | Peer-trust reference | https://www.gartner.com/peer-insights/home - Gartner Peer Insights | founder-supplied: verified peer reviews as trust evidence - the no-trust-without-evidence law applied socially; the pattern for the trust-center's outward face (reviews as assertions, with provenance) |
 | Design platform | https://penpot.app/ - Penpot + Storybook | founder-supplied: Penpot the open design canvas (the Fabric.js doctrine's sibling at the design layer), Storybook the component-truth platform - design and code from one source; the new-work seats (browser server, 3D, documents that carry data) |
 | Graph visualisation | https://cosmograph.app/ - Cosmograph 2.3.2 (pinned) | founder-supplied: GPU graph rendering for the Fabric Browser - the record (eval/graph.jsonld) browsed in the browser; Fabric.js ring is the offline fallback |
+| Stack cross-validation | github.com/openautonomyx/Publications | the founder's real publishing app independently uses Fabric.js (canvas/) and SurrealDB/SurrealQL - the same UI pick and DB candidate this record pinned; an Astro + React app (its declared hosting Cloudflare/Vercel), containerizable as a kube once built |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house
