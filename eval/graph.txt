@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=183 edges=439
+# nodes=186 edges=441
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -141,7 +141,7 @@ config/rbac/kustomization.yaml -> config/rbac/service_account.yaml
 config/rbac/kustomization.yaml -> https://book.kubebuilder.io/reference/metrics.html
 config/samples/kustomization.yaml -> config/samples/kubecontainer_v1alpha1_kubecontainer.yaml
 deploy/AGENT-STACK.md -> https://attic.apache.org/
-deploy/AGENT-STACK.md -> https://cosmograph.app/
+deploy/AGENT-STACK.md -> https://github.com/cosmosgl/graph
 deploy/AGENT-STACK.md -> https://penpot.app/
 deploy/AGENT-STACK.md -> https://surrealdb.com/
 deploy/AGENT-STACK.md -> https://www.gartner.com/en
@@ -222,6 +222,8 @@ deploy/deploy.sh -> https://get.k3s.io
 deploy/deploy.sh -> https://github.com/unboxd-cloud/KubeContainer/releases/download/$TAG/install.yaml
 deploy/deploy.sh -> https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/arithmetic-kube.yaml
 deploy/deploy.sh -> https://raw.githubusercontent.com/unboxd-cloud/KubeContainer/main/deploy/deploy.sh
+deploy/publications/README.md -> deploy/publications/kube.yaml
+deploy/publications/README.md -> https://publications.openautonomyx.com
 deploy/tofu/main.tf -> https://github.com/unboxd-cloud/KubeContainer/releases/download/v0.2.0/install.yaml
 dist/install.yaml -> https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
 dist/install.yaml -> https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
@@ -411,8 +413,8 @@ site-autonomyx/index.html -> https://penpot.app/
 site-autonomyx/index.html -> https://platform.openautonomyx.com
 site-autonomyx/index.html -> https://registry.agennext.com
 site-autonomyx/index.html -> https://www.gartner.com/peer-insights/home
-site-fabric/index.html -> https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm
-site-fabric/index.html -> https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js
+site-fabric/index.html -> https://cdn.jsdelivr.net/npm/@cosmos.gl/graph@2.6.4/+esm
+site-fabric/index.html -> https://esm.sh/@cosmos.gl/graph@2.6.4
 site-fabric/index.html -> https://kubecontainer.xyz
 site-fabric/index.html -> https://registry.agennext.com
 site-fabric/index.html -> https://www.openautonomyx.com

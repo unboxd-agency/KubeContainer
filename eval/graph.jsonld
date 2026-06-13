@@ -925,7 +925,7 @@
           "@id": "https://attic.apache.org/"
         },
         {
-          "@id": "https://cosmograph.app/"
+          "@id": "https://github.com/cosmosgl/graph"
         },
         {
           "@id": "https://penpot.app/"
@@ -1244,6 +1244,29 @@
         }
       ],
       "name": "deploy/deploy.sh"
+    },
+    {
+      "@id": "deploy/publications/Dockerfile",
+      "@type": "CreativeWork",
+      "name": "deploy/publications/Dockerfile"
+    },
+    {
+      "@id": "deploy/publications/README.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/publications/kube.yaml"
+        },
+        {
+          "@id": "https://publications.openautonomyx.com"
+        }
+      ],
+      "name": "deploy/publications/README.md"
+    },
+    {
+      "@id": "deploy/publications/kube.yaml",
+      "@type": "CreativeWork",
+      "name": "deploy/publications/kube.yaml"
     },
     {
       "@id": "deploy/site-kube.yaml",
@@ -2063,9 +2086,9 @@
       "name": "https://buildpacks.io/"
     },
     {
-      "@id": "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm",
+      "@id": "https://cdn.jsdelivr.net/npm/@cosmos.gl/graph@2.6.4/+esm",
       "@type": "CreativeWork",
-      "name": "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm"
+      "name": "https://cdn.jsdelivr.net/npm/@cosmos.gl/graph@2.6.4/+esm"
     },
     {
       "@id": "https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js",
@@ -2086,11 +2109,6 @@
       "@id": "https://containerd.io/docs/",
       "@type": "CreativeWork",
       "name": "https://containerd.io/docs/"
-    },
-    {
-      "@id": "https://cosmograph.app/",
-      "@type": "CreativeWork",
-      "name": "https://cosmograph.app/"
     },
     {
       "@id": "https://developer.arm.com/documentation/ddi0487",
@@ -2196,6 +2214,11 @@
       "@id": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters",
       "@type": "CreativeWork",
       "name": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters"
+    },
+    {
+      "@id": "https://esm.sh/@cosmos.gl/graph@2.6.4",
+      "@type": "CreativeWork",
+      "name": "https://esm.sh/@cosmos.gl/graph@2.6.4"
     },
     {
       "@id": "https://fabric.openautonomyx.com",
@@ -2346,6 +2369,11 @@
       "@id": "https://github.com/containernetworking/cni",
       "@type": "CreativeWork",
       "name": "https://github.com/containernetworking/cni"
+    },
+    {
+      "@id": "https://github.com/cosmosgl/graph",
+      "@type": "CreativeWork",
+      "name": "https://github.com/cosmosgl/graph"
     },
     {
       "@id": "https://github.com/fabricjs/fabric.js",
@@ -2736,6 +2764,11 @@
       "@id": "https://protobuf.dev/",
       "@type": "CreativeWork",
       "name": "https://protobuf.dev/"
+    },
+    {
+      "@id": "https://publications.openautonomyx.com",
+      "@type": "CreativeWork",
+      "name": "https://publications.openautonomyx.com"
     },
     {
       "@id": "https://raw.githubusercontent.com/\u003corg",
@@ -3310,10 +3343,10 @@
       "@type": "CreativeWork",
       "citation": [
         {
-          "@id": "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm"
+          "@id": "https://cdn.jsdelivr.net/npm/@cosmos.gl/graph@2.6.4/+esm"
         },
         {
-          "@id": "https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"
+          "@id": "https://esm.sh/@cosmos.gl/graph@2.6.4"
         },
         {
           "@id": "https://kubecontainer.xyz"

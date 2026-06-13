@@ -3,27 +3,26 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Fabric Browser — OpenAutonomyx</title>
-<meta name="description" content="The record as a navigable graph, computed in the browser — Cosmograph over the fabric, data made visible." />
+<meta name="description" content="The record as a navigable graph, computed in the browser — cosmos.gl over the fabric, data made visible." />
 <style>
-:root{--blue:#0f62fe;--ink:#161616;--muted:#525252;--line:#e0e0e0;--soft:#f4f4f4;--green:#198038}
+:root{--blue:#4589ff}
 *{box-sizing:border-box}
-html,body{margin:0;height:100%;font-family:"IBM Plex Sans",Inter,system-ui,sans-serif;color:var(--ink);background:#0b0b10}
-.nav{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-bottom:1px solid #1e1e28;background:#0b0b10}
+html,body{margin:0;height:100%;font-family:"IBM Plex Sans",Inter,system-ui,sans-serif;color:#e6e6ee;background:#0b0b10}
+.nav{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-bottom:1px solid #1e1e28}
 .brand{display:flex;gap:10px;align-items:center;font-weight:700;text-decoration:none;color:#fff}
 .mark{width:28px;height:28px;background:var(--blue);display:grid;place-items:center;color:#fff;font-weight:800}
 .nav a.link{color:#9a9aa8;text-decoration:none;font-size:13px;margin-left:18px}
 .layout{display:grid;grid-template-columns:1fr 320px;height:calc(100% - 56px)}
-.stage{position:relative;background:#0b0b10;overflow:hidden}
-#cosmos{width:100%;height:100%}
-.panel{border-left:1px solid #1e1e28;padding:18px;overflow:auto;background:#101018;color:#e6e6ee}
+.stage{position:relative;overflow:hidden}
+#cosmos,#fab{position:absolute;inset:0;width:100%;height:100%}
+.panel{border-left:1px solid #1e1e28;padding:18px;overflow:auto;background:#101018}
 .panel h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#8a8a98;margin:0 0 8px}
 .panel .nid{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;word-break:break-all;color:#fff}
 .panel ul{padding-left:16px;margin:6px 0 16px}
 .panel li{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;margin:3px 0;cursor:pointer;color:#6fa8ff;word-break:break-all}
 .controls{position:absolute;top:12px;left:12px;display:flex;gap:8px;flex-wrap:wrap;z-index:5}
 .controls input,.controls button{font:13px "IBM Plex Sans",system-ui;padding:7px 10px;border:1px solid #2a2a36;background:#16161f;color:#e6e6ee}
-.controls button{cursor:pointer}
-.controls input{width:200px}
+.controls button{cursor:pointer}.controls input{width:200px}
 .hint{position:absolute;bottom:12px;left:12px;color:#7a7a88;font-size:12px;z-index:5}
 .count{color:#9a9aa8;font-size:12px;margin-top:-4px}
 </style>
@@ -58,136 +57,193 @@ html,body{margin:0;height:100%;font-family:"IBM Plex Sans",Inter,system-ui,sans-
   </aside>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"></script>
 <script type="module">
 "use strict";
 
-const COSMOGRAPH_URLS = [
-  "https://esm.sh/@cosmograph/cosmograph@2.3.2",
-  "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm",
-  "https://unpkg.com/@cosmograph/cosmograph@2.3.2/dist/index.js"
+const COSMOS_URLS = [
+  "https://esm.sh/@cosmos.gl/graph@2.6.4",
+  "https://cdn.jsdelivr.net/npm/@cosmos.gl/graph@2.6.4/+esm"
 ];
-const palette = ["#4589ff","#42be65","#be95ff","#ff7eb6","#d4bbff","#82cfff",
-                 "#ff8389","#3ddbd9","#ffb784","#bae6ff","#a7f0ba","#78a9ff"];
+const palette = [[69,137,255],[66,190,101],[190,149,255],[255,126,182],[212,187,255],
+                 [130,207,255],[255,131,137],[61,219,217],[255,183,132],[186,230,255],
+                 [167,240,186],[120,169,255]];
 
 const stage = document.querySelector(".stage");
 const summary = document.getElementById("summary");
 const detail = document.getElementById("detail");
 const hint = document.getElementById("hint");
 
-const node = {};   // id -> {group,type,cites:[],citedBy:[]}
-let order = [], groups = [], colorOf = {};
+const node = {};            // id -> {group,type,cites,citedBy}
+let order = [], groups = [], idIndex = {}, rgb = [];
 
-function groupOf(id){
-  if (/^https?:\/\//.test(id)) return "external";
-  const i = id.indexOf("/");
-  return i < 0 ? id : id.slice(0, i);
-}
-function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+const groupOf = id => /^https?:\/\//.test(id) ? "external" : (id.indexOf("/")<0 ? id : id.slice(0,id.indexOf("/")));
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const data = fetch("graph.jsonld").then(r => r.json()).then(parse).then(start)
-  .catch(err => { summary.textContent = "Could not load graph.jsonld: " + err; });
+fetch("graph.jsonld").then(r=>r.json()).then(parse).then(start)
+  .catch(e=>{ summary.textContent = "Could not load graph.jsonld: "+e; });
 
 function parse(doc){
   const g = (doc && doc["@graph"]) || [];
-  g.forEach(n => { node[n["@id"]] = { id:n["@id"], group:groupOf(n["@id"]), type:n["@type"]||"", cites:[], citedBy:[] }; });
-  g.forEach(n => (n.citation||[]).forEach(c => {
-    const s=n["@id"], t=c["@id"];
-    if (node[t]) { node[s].cites.push(t); node[t].citedBy.push(s); }
-  }));
+  g.forEach(n=>{ node[n["@id"]]={id:n["@id"],group:groupOf(n["@id"]),type:n["@type"]||"",cites:[],citedBy:[]}; });
+  g.forEach(n=>(n.citation||[]).forEach(c=>{ const s=n["@id"],t=c["@id"];
+    if(node[t]){ node[s].cites.push(t); node[t].citedBy.push(s); }}));
   order = Object.keys(node).sort((a,b)=>{
-    const A=groupOf(a),B=groupOf(b),ea=A==="external"?1:0,eb=B==="external"?1:0;
-    if(ea!==eb) return ea-eb; if(A!==B) return A<B?-1:1; return a<b?-1:1;
-  });
-  groups = [...new Set(order.map(groupOf))].sort();
-  order.forEach(id => { colorOf[id] = palette[groups.indexOf(groupOf(id))%palette.length]; });
-  const files = order.filter(id=>groupOf(id)!=="external").length;
+    const ea=groupOf(a)==="external"?1:0, eb=groupOf(b)==="external"?1:0;
+    if(ea!==eb)return ea-eb; const A=groupOf(a),B=groupOf(b);
+    if(A!==B)return A<B?-1:1; return a<b?-1:1; });
+  groups=[...new Set(order.map(groupOf))].sort();
+  order.forEach((id,i)=>{ idIndex[id]=i; rgb[i]=palette[groups.indexOf(groupOf(id))%palette.length]; });
+  const files=order.filter(id=>groupOf(id)!=="external").length;
   let edges=0; for(const id in node) edges+=node[id].cites.length;
-  summary.textContent = order.length+" nodes ("+files+" files, "+(order.length-files)+
-    " external) · "+edges+" references · "+groups.length+" clusters";
-  return null;
+  summary.textContent = `${order.length} nodes (${files} files, ${order.length-files} external) · ${edges} references · ${groups.length} clusters`;
 }
 
 async function start(){
-  let Cosmograph = null, lastErr = null;
-  for (const url of COSMOGRAPH_URLS) {
-    try { const m = await import(/* @vite-ignore */ url); Cosmograph = m.Cosmograph || (m.default && m.default.Cosmograph); if (Cosmograph) break; }
-    catch (e) { lastErr = e; }
+  let Graph=null;
+  for(const url of COSMOS_URLS){
+    try{ const m=await import(/* @vite-ignore */ url); Graph=m.Graph||(m.default&&m.default.Graph); if(Graph)break; }
+    catch(e){ /* try next */ }
   }
-  try {
-    if (!Cosmograph) throw lastErr || new Error("Cosmograph did not load from any CDN");
-    const nodes = order.map(id => ({ id, color: colorOf[id] }));
-    const links = [];
-    for (const id of order) for (const t of node[id].cites) links.push({ source:id, target:t });
-    const cosmos = document.getElementById("cosmos");
-    const cg = new Cosmograph(cosmos, {
-      nodeColor: n => n.color,
-      nodeSize: 4,
-      nodeGreyoutOpacity: 0.12,
-      linkColor: "#2a2a3a",
-      linkWidth: 1,
-      linkArrows: true,
-      backgroundColor: "#0b0b10",
-      fitViewOnInit: true,
-      simulationFriction: 0.9,
-      simulationLinkSpring: 0.4,
-      simulationRepulsion: 0.5,
-      onClick: (n) => { if (n && n.id) pick(n.id, cg); else cg.unselectNodes && cg.unselectNodes(); }
-    });
-    cg.setData(nodes, links);
-    document.getElementById("fit").onclick = () => cg.fitView && cg.fitView();
-    wireSearch(id => {
-      if (!id) { cg.unselectNodes && cg.unselectNodes(); return; }
-      const n = nodes.find(x => x.id === id);
-      if (n && cg.selectNode) cg.selectNode(n, true);
-    });
-    hint.textContent = "Cosmograph · GPU graph · drag to pan, scroll to zoom, click a node";
-  } catch (e) {
-    hint.textContent = "Cosmograph unavailable — the fabric is drawn as a ring (offline mode).";
-    renderRing();
+  if(Graph){
+    try{ await runCosmos(Graph); return; }
+    catch(e){ hint.textContent="cosmos.gl could not start ("+(e&&e.message||e)+") — force graph below."; }
+  } else {
+    hint.textContent="cosmos.gl unavailable from CDN — the force graph runs locally instead.";
   }
+  runForce();   // guaranteed renderer
 }
 
-// ---- shared side panel ----
-function pick(id){
-  const n = node[id]; if (!n) return;
-  const link = x => '<li data-id="'+encodeURIComponent(x)+'">'+escapeHtml(x)+'</li>';
-  detail.innerHTML =
-    '<h2 style="margin-top:0">Node</h2><p class="nid">'+escapeHtml(id)+'</p>'+
-    '<p class="count">'+escapeHtml(n.type||"node")+' · '+escapeHtml(n.group)+'</p>'+
-    (/^https?:/.test(id) ? '<p><a style="color:#6fa8ff" href="'+escapeHtml(id)+'" target="_blank" rel="noopener">open ↗</a></p>' : '')+
-    '<h2>Cites ('+n.cites.length+')</h2><ul>'+(n.cites.map(link).join("")||'<li style="color:#666;cursor:default">—</li>')+'</ul>'+
-    '<h2>Cited by ('+n.citedBy.length+')</h2><ul>'+(n.citedBy.map(link).join("")||'<li style="color:#666;cursor:default">—</li>')+'</ul>';
-  detail.querySelectorAll("li[data-id]").forEach(li =>
-    li.addEventListener("click", () => pick(decodeURIComponent(li.getAttribute("data-id")))));
-}
-
-function wireSearch(onPick){
-  const box = document.getElementById("search");
-  box.addEventListener("change", () => {
-    const q = box.value.trim().toLowerCase();
-    const hit = order.find(id => id.toLowerCase().includes(q));
-    if (hit) { pick(hit); onPick(hit); }
-  });
-}
-
-// ---- Fabric ring fallback (works with no network for Cosmograph) ----
-function renderRing(){
-  const cv = document.getElementById("fab");
-  cv.style.display = "block"; cv.width = stage.clientWidth; cv.height = stage.clientHeight;
-  if (typeof fabric === "undefined") { summary.textContent += " · (canvas library offline too)"; return; }
-  const canvas = new fabric.Canvas("fab", { selection:false, backgroundColor:"#0b0b10" });
-  const cx=cv.width/2, cy=cv.height/2, R=Math.min(cx,cy)-50, pos={};
-  order.forEach((id,i)=>{ const a=2*Math.PI*i/order.length-Math.PI/2; pos[id]={x:cx+R*Math.cos(a),y:cy+R*Math.sin(a)}; });
-  for(const id of order) for(const t of node[id].cites)
-    canvas.add(new fabric.Line([pos[id].x,pos[id].y,pos[t].x,pos[t].y],{stroke:"#1e1e2a",selectable:false,evented:false}));
-  for(const id of order){
-    const d=new fabric.Circle({left:pos[id].x,top:pos[id].y,radius:4,originX:"center",originY:"center",
-      fill:colorOf[id],selectable:false,hoverCursor:"pointer"}); d._id=id; canvas.add(d);
+function buildArrays(){
+  const N=order.length, S=4096;
+  const pos=new Float32Array(N*2), col=new Float32Array(N*4);
+  for(let i=0;i<N;i++){
+    const a=2*Math.PI*i/N; pos[i*2]=S/2+(S/3)*Math.cos(a); pos[i*2+1]=S/2+(S/3)*Math.sin(a);
+    col[i*4]=rgb[i][0]/255; col[i*4+1]=rgb[i][1]/255; col[i*4+2]=rgb[i][2]/255; col[i*4+3]=1;
   }
-  canvas.on("mouse:down",o=>{ if(o.target&&o.target._id) pick(o.target._id); });
-  canvas.requestRenderAll();
+  const linkPairs=[];
+  for(const id of order) for(const t of node[id].cites) linkPairs.push(idIndex[id],idIndex[t]);
+  return { pos, col, links:new Float32Array(linkPairs), N };
+}
+
+async function runCosmos(Graph){
+  document.getElementById("cosmos").style.display="block";
+  const { pos, col, links } = buildArrays();
+  const div=document.getElementById("cosmos");
+  const config={
+    backgroundColor:"#0b0b10", spaceSize:4096,
+    pointSize:5, linkColor:"#26263a", linkWidth:1, linkArrows:false,
+    simulationGravity:0.12, simulationRepulsion:0.6, simulationLinkSpring:0.6,
+    simulationFriction:0.9, fitViewOnInit:true,
+    onClick:(index)=>{ if(index!==undefined&&index!==null&&order[index]) pick(order[index]); }
+  };
+  const graph=new Graph(div, config);
+  graph.setPointPositions(pos);
+  if(graph.setPointColors) graph.setPointColors(col);
+  graph.setLinks(links);
+  graph.render();
+  if(graph.start) graph.start(); else if(graph.restart) graph.restart();
+  document.getElementById("fit").onclick=()=>{ graph.fitView&&graph.fitView(); };
   wireSearch(()=>{});
+  hint.textContent="cosmos.gl · GPU force graph · drag to pan, scroll to zoom, click a node";
+}
+
+// ---------- guaranteed JS force-directed renderer (raw canvas) ----------
+function runForce(){
+  const cv=document.getElementById("fab"); cv.style.display="block";
+  const ctx=cv.getContext("2d");
+  const dpr=window.devicePixelRatio||1;
+  function size(){ cv.width=stage.clientWidth*dpr; cv.height=stage.clientHeight*dpr; }
+  size();
+  const N=order.length;
+  const x=new Float32Array(N), y=new Float32Array(N), vx=new Float32Array(N), vy=new Float32Array(N);
+  for(let i=0;i<N;i++){ const a=2*Math.PI*i/N; x[i]=Math.cos(a)*300+(Math.random()-.5)*40; y[i]=Math.sin(a)*300+(Math.random()-.5)*40; }
+  const E=[]; for(const id of order) for(const t of node[id].cites) E.push([idIndex[id],idIndex[t]]);
+
+  for(let iter=0;iter<260;iter++){
+    const k=iter<120?1:0.3;
+    for(let i=0;i<N;i++){
+      let fx=-x[i]*0.01, fy=-y[i]*0.01;
+      for(let j=0;j<N;j++){ if(i===j)continue;
+        let dx=x[i]-x[j], dy=y[i]-y[j], d2=dx*dx+dy*dy+0.01;
+        const f=1200/d2; fx+=dx*f; fy+=dy*f; }
+      vx[i]=(vx[i]+fx*k)*0.85; vy[i]=(vy[i]+fy*k)*0.85;
+    }
+    for(const e of E){ const a=e[0],b=e[1];
+      let dx=x[b]-x[a], dy=y[b]-y[a], d=Math.sqrt(dx*dx+dy*dy)+0.01;
+      const f=(d-90)*0.02, ux=dx/d*f, uy=dy/d*f;
+      vx[a]+=ux*k; vy[a]+=uy*k; vx[b]-=ux*k; vy[b]-=uy*k;
+    }
+    for(let i=0;i<N;i++){ x[i]+=vx[i]; y[i]+=vy[i]; }
+  }
+
+  let scale=1, ox=0, oy=0;
+  function fit(){
+    let minX=1e9,minY=1e9,maxX=-1e9,maxY=-1e9;
+    for(let i=0;i<N;i++){ if(x[i]<minX)minX=x[i]; if(y[i]<minY)minY=y[i]; if(x[i]>maxX)maxX=x[i]; if(y[i]>maxY)maxY=y[i]; }
+    const w=maxX-minX||1, h=maxY-minY||1;
+    scale=Math.min(cv.width/w, cv.height/h)*0.82;
+    ox=cv.width/2-(minX+maxX)/2*scale; oy=cv.height/2-(minY+maxY)/2*scale;
+  }
+  fit();
+  const sx=i=>x[i]*scale+ox, sy=i=>y[i]*scale+oy;
+
+  let sel=null;
+  function draw(){
+    ctx.setTransform(1,0,0,1,0,0); ctx.clearRect(0,0,cv.width,cv.height);
+    ctx.fillStyle="#0b0b10"; ctx.fillRect(0,0,cv.width,cv.height);
+    const nbr={}; if(sel!=null){ nbr[sel]=1; node[order[sel]].cites.forEach(t=>nbr[idIndex[t]]=1); node[order[sel]].citedBy.forEach(s=>nbr[idIndex[s]]=1); }
+    ctx.lineWidth=1;
+    for(const e of E){ const a=e[0],b=e[1];
+      const on=sel!=null&&(a===sel||b===sel);
+      ctx.strokeStyle=on?"#4589ff":(sel!=null?"#191926":"#23233a");
+      ctx.beginPath(); ctx.moveTo(sx(a),sy(a)); ctx.lineTo(sx(b),sy(b)); ctx.stroke();
+    }
+    for(let i=0;i<N;i++){
+      const dim=sel!=null&&!nbr[i];
+      ctx.globalAlpha=dim?0.18:1;
+      ctx.beginPath(); ctx.arc(sx(i),sy(i),(i===sel?7:4.5)*dpr,0,6.2832);
+      ctx.fillStyle=`rgb(${rgb[i][0]},${rgb[i][1]},${rgb[i][2]})`; ctx.fill();
+    }
+    ctx.globalAlpha=1;
+  }
+  draw();
+
+  cv.addEventListener("wheel",e=>{ e.preventDefault();
+    const f=Math.pow(0.999,e.deltaY), mx=e.offsetX*dpr, my=e.offsetY*dpr;
+    ox=mx-(mx-ox)*f; oy=my-(my-oy)*f; scale*=f; draw();
+  },{passive:false});
+  let pan=false,lx=0,ly=0,moved=0;
+  cv.addEventListener("mousedown",e=>{ pan=true;moved=0;lx=e.clientX;ly=e.clientY; });
+  window.addEventListener("mousemove",e=>{ if(!pan)return; const dx=e.clientX-lx,dy=e.clientY-ly; moved+=Math.abs(dx)+Math.abs(dy); ox+=dx*dpr;oy+=dy*dpr;lx=e.clientX;ly=e.clientY;draw(); });
+  window.addEventListener("mouseup",e=>{
+    if(pan&&moved<4){
+      const mx=e.offsetX*dpr,my=e.offsetY*dpr; let best=-1,bd=144*dpr*dpr;
+      for(let i=0;i<N;i++){ const dx=sx(i)-mx,dy=sy(i)-my,d=dx*dx+dy*dy; if(d<bd){bd=d;best=i;} }
+      if(best>=0){ sel=best; pick(order[best]); draw(); }
+    }
+    pan=false;
+  });
+  document.getElementById("fit").onclick=()=>{ fit(); draw(); };
+  window.addEventListener("resize",()=>{ size(); fit(); draw(); });
+  wireSearch(id=>{ if(id!=null&&idIndex[id]!==undefined){ sel=idIndex[id]; draw(); } });
+}
+
+// ---------- shared side panel + search ----------
+function pick(id){
+  const n=node[id]; if(!n) return;
+  const link=x=>`<li data-id="${encodeURIComponent(x)}">${esc(x)}</li>`;
+  detail.innerHTML =
+    `<h2 style="margin-top:0">Node</h2><p class="nid">${esc(id)}</p>`+
+    `<p class="count">${esc(n.type||"node")} · ${esc(n.group)}</p>`+
+    (/^https?:/.test(id)?`<p><a style="color:#6fa8ff" href="${esc(id)}" target="_blank" rel="noopener">open ↗</a></p>`:"")+
+    `<h2>Cites (${n.cites.length})</h2><ul>${n.cites.map(link).join("")||'<li style="color:#666;cursor:default">—</li>'}</ul>`+
+    `<h2>Cited by (${n.citedBy.length})</h2><ul>${n.citedBy.map(link).join("")||'<li style="color:#666;cursor:default">—</li>'}</ul>`;
+  detail.querySelectorAll("li[data-id]").forEach(li=>li.addEventListener("click",()=>pick(decodeURIComponent(li.getAttribute("data-id")))));
+}
+function wireSearch(onPick){
+  const box=document.getElementById("search");
+  box.addEventListener("change",()=>{ const q=box.value.trim().toLowerCase();
+    const hit=order.find(id=>id.toLowerCase().includes(q)); if(hit){ pick(hit); onPick(hit); } });
 }
 </script>
 </body>
