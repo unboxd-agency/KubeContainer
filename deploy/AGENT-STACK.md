@@ -103,6 +103,8 @@ machinery is the principal's act alone):
 | Platform backend | the backend contract (registry/SKELETON-BACKEND.json) | founder's ruling: the language is Java - the Apache ecosystem is the toolbox; liferay is the first Java blueprint, pocketbase the lightweight alternative on the same contract |
 | The Attic rule | https://attic.apache.org/ | retired Apache projects are a legitimate mine - explicitly forkable; one enters only pinned at its last release and with a keeper named (the ownership doctrine: an empty seat is taken, never squatted) |
 | The company | github.com/openautonomyx - OpenAutonomyx (OPC) Private Limited, "The Canonical System for Federated Work" | the platform's legal and product home: dxp (the digital experience platform), trust-center, canonical, search, findr, insights, Publications, campaigns, partners; the decision-intelligence-platform repo is its homepage seat (private or pending at review time) |
+| DB candidate | https://surrealdb.com/ - SurrealDB | founder-supplied: multi-model, single binary, embedded mode (the one-engine law holds); Agent-Skills already speaks SurrealQL - the natural backend-contract DB blueprint, pinned when it enters |
+| Positioning reference | https://www.zluri.com/ - Zluri | founder-supplied: the SaaS-management category, the enterprise-work positioning the platform speaks to ("Next Generation Of Enterprise Work") |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house

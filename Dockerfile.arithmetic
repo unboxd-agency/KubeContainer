@@ -1,0 +1,4 @@
+# The arithmetic platform as an image: the browser-runtime face at
+# the platform's own root — the kube delivers, the browser computes.
+FROM nginx:1.27
+COPY site/arithmetic.html /usr/share/nginx/html/index.html

@@ -2,39 +2,147 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arithmetic — the formula as a function</title>
+<title>The Arithmetic Platform — OpenAutonomyx</title>
+<meta name="description" content="The canonical transaction formula, computed at the surface it is read on — browser-native, delivered headless." />
 <style>
-body{font-family:system-ui,sans-serif;max-width:560px;margin:48px auto;padding:0 16px;color:#161616;line-height:1.5}
-h1{font-size:28px}label{display:block;margin:14px 0 4px;font-size:14px;color:#525252}
-input{width:100%;padding:10px;font-size:16px;border:1px solid #c6c6c6;box-sizing:border-box}
-output{display:block;margin-top:24px;font-size:22px;font-weight:700}
-small{color:#8d8d8d}code{background:#f4f4f4;padding:2px 5px}
+:root{--blue:#0f62fe;--ink:#161616;--muted:#525252;--line:#e0e0e0;--soft:#f4f4f4;--green:#198038;--red:#da1e28}
+*{box-sizing:border-box}
+body{margin:0;font-family:"IBM Plex Sans",Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+.nav{position:sticky;top:0;z-index:9;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{height:64px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:12px;align-items:center;font-weight:700;text-decoration:none;color:var(--ink)}
+.mark{width:30px;height:30px;background:var(--blue);display:grid;place-items:center;color:#fff;font-weight:800}
+.nav a.link{color:var(--muted);text-decoration:none;font-size:14px;margin-left:22px}
+header{padding:72px 0 48px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff,#f8fbff)}
+.eyebrow{font-size:13px;font-weight:700;color:var(--blue);letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(34px,5vw,56px);letter-spacing:-.035em;line-height:1.02;margin:14px 0 12px}
+.lede{font-size:18px;color:var(--muted);max-width:620px;margin:0}
+.grid{display:grid;grid-template-columns:380px 1fr;gap:0;border:1px solid var(--line);margin:48px auto 72px;background:#fff}
+.panel{padding:28px;border-right:1px solid var(--line)}
+.panel h2{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+label{display:block;margin:16px 0 6px;font-size:13px;color:var(--muted)}
+input{width:100%;padding:12px;font-size:16px;font-family:"IBM Plex Mono",ui-monospace,monospace;border:none;border-bottom:1px solid #8d8d8d;background:var(--soft)}
+input:focus{outline:2px solid var(--blue);outline-offset:-2px}
+.result{margin-top:26px;padding:18px;background:var(--ink);color:#fff}
+.result .cap{font-size:12px;color:#a8a8a8;letter-spacing:.06em;text-transform:uppercase}
+.result output{display:block;font:600 30px/1.2 "IBM Plex Mono",ui-monospace,monospace;margin-top:6px}
+.result.bad{background:var(--red)}
+.canvas-side{padding:18px;display:grid;place-items:center;background:#fbfbfb;min-height:430px}
+.formula{font-family:"IBM Plex Mono",ui-monospace,monospace;background:var(--soft);border-left:4px solid var(--blue);padding:14px 16px;font-size:13.5px;margin:26px 0 0}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.panel{border-right:none;border-bottom:1px solid var(--line)}}
 </style>
 </head>
 <body>
-<h1>The transaction formula</h1>
-<p><code>value = qty × unit value + current platform service charge + current jurisdiction taxes</code></p>
-<label for="qty">Quantity (whole units, never parts)</label>
-<input id="qty" type="number" min="0" step="1" value="1">
-<label for="unit">Unit value</label>
-<input id="unit" type="number" min="0" step="0.01" value="1.00">
-<label for="svc">Current platform service charge</label>
-<input id="svc" type="number" min="0" step="0.01" value="0.00">
-<label for="tax">Current jurisdiction taxes</label>
-<input id="tax" type="number" min="0" step="0.01" value="0.00">
-<output id="out">value = 1.00</output>
-<small>The canonical formula, computed at the surface it is read on —
-browser-native, no wire, no code delivered: the function is the
-service (the kube: deploy/arithmetic-kube.yaml).</small>
+<nav class="nav"><div class="wrap nav-inner">
+  <a class="brand" href="https://www.openautonomyx.com"><span class="mark">A</span><span>OpenAutonomyx</span></a>
+  <div>
+    <a class="link" href="https://www.openautonomyx.com">Platform</a>
+    <a class="link" href="https://kubecontainer.xyz">Runtime</a>
+    <a class="link" href="https://registry.agennext.com">Registry</a>
+  </div>
+</div></nav>
+
+<header><div class="wrap">
+  <div class="eyebrow">The Arithmetic Platform</div>
+  <h1>One formula. Computed where you stand.</h1>
+  <p class="lede">The canonical transaction formula runs in your browser's own runtime —
+  delivered headless, nothing executed on the wire, the computation drawn live as it happens.</p>
+</div></header>
+
+<main class="wrap">
+  <div class="grid">
+    <section class="panel">
+      <h2>Declare the transaction</h2>
+      <label for="qty">Quantity — whole units, never parts</label>
+      <input id="qty" type="number" min="0" step="1" value="3">
+      <label for="unit">Unit value</label>
+      <input id="unit" type="number" min="0" step="0.01" value="24.00">
+      <label for="svc">Platform service charge</label>
+      <input id="svc" type="number" min="0" step="0.01" value="1.50">
+      <label for="tax">Jurisdiction taxes</label>
+      <input id="tax" type="number" min="0" step="0.01" value="6.30">
+      <div class="result" id="resultBox"><span class="cap">Value</span><output id="out">—</output></div>
+      <p class="formula">value = qty × unit + service + taxes</p>
+    </section>
+    <section class="canvas-side"><canvas id="flow" width="640" height="420" aria-label="The computation, drawn live"></canvas></section>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>Computed at the edge — the function is the service. Kept by KubeContainer.</span>
+  <span>Canvas: Fabric.js 7.4.0, pinned.</span>
+</div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"></script>
 <script>
 "use strict";
 // The canonical transaction formula — one function, the whole service.
 function value(qty, unit, svc, tax) { return qty * unit + svc + tax; }
-const ids = ["qty","unit","svc","tax"], out = document.getElementById("out");
+
+const ids = ["qty", "unit", "svc", "tax"];
+const out = document.getElementById("out");
+const box = document.getElementById("resultBox");
+
+function read() { return ids.map(i => Number(document.getElementById(i).value) || 0); }
+
+// ----- the fabric, rendered by Fabric (graceful without it) -----
+let draw = () => {};
+(function initCanvas() {
+  if (typeof fabric === "undefined") return; // the function never depends on the picture
+  const f = fabric;
+  const canvas = new f.Canvas("flow", { selection: false, renderOnAddRemove: false });
+  const ink = "#161616", blue = "#0f62fe", mut = "#525252", line = "#c6c6c6";
+  const mono = '"IBM Plex Mono", monospace';
+
+  function node(x, y, label, color) {
+    const r = new f.Rect({ left: x, top: y, width: 130, height: 46, rx: 2, ry: 2,
+      fill: "#fff", stroke: color, strokeWidth: 1.5, originX: "center", originY: "center" });
+    const t = new f.Textbox(label, { left: x, top: y, width: 126, fontSize: 13.5,
+      fontFamily: mono, fill: ink, textAlign: "center", originX: "center", originY: "center" });
+    const g = new f.Group([r, t], { left: x, top: y, originX: "center", originY: "center",
+      selectable: false, evented: false });
+    canvas.add(g);
+    return g;
+  }
+  function wire(a, b) {
+    const l = new f.Line([a.left + 65, a.top, b.left - 65, b.top],
+      { stroke: line, strokeWidth: 1.5, selectable: false, evented: false });
+    canvas.add(l); canvas.sendObjectToBack(l);
+  }
+  const nQty  = node(110,  60, "qty", mut);
+  const nUnit = node(110, 150, "unit", mut);
+  const nSvc  = node(110, 250, "service", mut);
+  const nTax  = node(110, 340, "taxes", mut);
+  const nMul  = node(320, 105, "×", blue);
+  const nSum  = node(450, 200, "+", blue);
+  const nVal  = node(560, 200, "value", "#198038");
+  wire(nQty, nMul); wire(nUnit, nMul); wire(nMul, nSum);
+  wire(nSvc, nSum); wire(nTax, nSum); wire(nSum, nVal);
+
+  function setText(group, s) { group.item(1).set("text", s); }
+  draw = function (q, u, s, t, v, ok) {
+    setText(nQty,  "qty " + q);
+    setText(nUnit, "unit " + u.toFixed(2));
+    setText(nSvc,  "svc " + s.toFixed(2));
+    setText(nTax,  "tax " + t.toFixed(2));
+    setText(nMul,  "× " + (q * u).toFixed(2));
+    setText(nSum,  "+ " + v.toFixed(2));
+    setText(nVal,  ok ? "value " + v.toFixed(2) : "refused");
+    nVal.item(0).set("stroke", ok ? "#198038" : "#da1e28");
+    canvas.requestRenderAll();
+  };
+})();
+
 function render() {
-  const [q,u,s,t] = ids.map(i => Number(document.getElementById(i).value) || 0);
-  if (!Number.isInteger(q) || q < 0) { out.textContent = "inadmissible: quantity is counted in whole units, never parts"; return; }
-  out.textContent = "value = " + value(q,u,s,t).toFixed(2);
+  const [q, u, s, t] = read();
+  const ok = Number.isInteger(q) && q >= 0;
+  const v = value(q, u, s, t);
+  if (ok) { out.textContent = v.toFixed(2); box.classList.remove("bad"); }
+  else { out.textContent = "inadmissible: whole units only"; box.classList.add("bad"); }
+  draw(q, u, s, t, ok ? v : 0, ok);
 }
 ids.forEach(i => document.getElementById(i).addEventListener("input", render));
 render();
