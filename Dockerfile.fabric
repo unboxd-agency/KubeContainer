@@ -1,0 +1,5 @@
+# The Fabric Browser as an image: the record graph, browsed in the
+# browser. The current graph.jsonld is baked in at build.
+FROM nginx:1.27
+COPY site-fabric/ /usr/share/nginx/html/
+COPY eval/graph.jsonld /usr/share/nginx/html/graph.jsonld

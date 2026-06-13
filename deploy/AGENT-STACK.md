@@ -109,6 +109,7 @@ machinery is the principal's act alone):
 | Category reference | https://www.gartner.com/en - Gartner | founder-supplied: the analyst frame - decision intelligence is a Gartner-named category, and the platform's positioning picks it up as insight-driven everything |
 | Peer-trust reference | https://www.gartner.com/peer-insights/home - Gartner Peer Insights | founder-supplied: verified peer reviews as trust evidence - the no-trust-without-evidence law applied socially; the pattern for the trust-center's outward face (reviews as assertions, with provenance) |
 | Design platform | https://penpot.app/ - Penpot + Storybook | founder-supplied: Penpot the open design canvas (the Fabric.js doctrine's sibling at the design layer), Storybook the component-truth platform - design and code from one source; the new-work seats (browser server, 3D, documents that carry data) |
+| Graph visualisation | https://cosmograph.app/ - Cosmograph 2.3.2 (pinned) | founder-supplied: GPU graph rendering for the Fabric Browser - the record (eval/graph.jsonld) browsed in the browser; Fabric.js ring is the offline fallback |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house

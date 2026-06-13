@@ -7,6 +7,14 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.19] - 2026-06-13
+### Added
+- The Fabric Browser (`site-fabric/`, image
+  `ghcr.io/<owner>/fabric-browser`): the record graph browsed in the
+  browser - Cosmograph 2.3.2 (pinned) over the fabric, the Fabric.js
+  ring as offline fallback; the graph baked into the image per
+  release. Linked from the platform door.
+
 ## [0.2.18] - 2026-06-13
 ### Changed
 - The platform door's library becomes the clouds: each organisation a

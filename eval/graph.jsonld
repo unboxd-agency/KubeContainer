@@ -40,6 +40,9 @@
       "@type": "CreativeWork",
       "citation": [
         {
+          "@id": "eval/graph.jsonld"
+        },
+        {
           "@id": "https://docs.docker.com/engine/reference/builder/#dockerignore-file"
         }
       ],
@@ -910,6 +913,9 @@
       "citation": [
         {
           "@id": "https://attic.apache.org/"
+        },
+        {
+          "@id": "https://cosmograph.app/"
         },
         {
           "@id": "https://penpot.app/"
@@ -2067,6 +2073,11 @@
       "name": "https://containerd.io/docs/"
     },
     {
+      "@id": "https://cosmograph.app/",
+      "@type": "CreativeWork",
+      "name": "https://cosmograph.app/"
+    },
+    {
       "@id": "https://developer.arm.com/documentation/ddi0487",
       "@type": "CreativeWork",
       "name": "https://developer.arm.com/documentation/ddi0487"
@@ -2170,6 +2181,11 @@
       "@id": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters",
       "@type": "CreativeWork",
       "name": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters"
+    },
+    {
+      "@id": "https://fabric.openautonomyx.com",
+      "@type": "CreativeWork",
+      "name": "https://fabric.openautonomyx.com"
     },
     {
       "@id": "https://get.k0s.sh",
@@ -3149,6 +3165,9 @@
       "citation": [
         {
           "@id": "https://agennext.space"
+        },
+        {
+          "@id": "https://fabric.openautonomyx.com"
         },
         {
           "@id": "https://github.com/AGenNextHub"

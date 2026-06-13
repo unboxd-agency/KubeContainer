@@ -109,6 +109,7 @@ Each body is named with its tier(s); the document stays where it is.
 | `cmd/recordgraph`, `eval/graph.txt`, `eval/graph.jsonld`, `eval/graph-planned.txt` | Harness | The record as a graph, extracted never hand-written; a broken reference fails the gate; the planned file is shrink-only. |
 | `cmd/schemakeeper` | Harness | The schema kept as a tool: the graph's JSON-LD validated against the pinned schema.org vocabulary; a dangling node fails the gate. |
 | `cmd/filefabric` | Harness + Theory | The VDFS seat built fresh (files known by content, one catalog across devices); v0 demonstrates, the full fabric is theory until grown. |
+| `site-fabric/` | Best practice | The Fabric Browser: the record graph browsed in the browser (Cosmograph, pinned; Fabric.js ring fallback) - a face, nothing here binds. |
 | `registry/SKELETON-SPACE.json`, `registry/spaces/` | Harness + Constraints | The space contract (Agent-Space implemented): members by reference, agents only by the principal's hand; append-only like the rest of the registry. |
 | `registry/SKELETON-BACKEND.json` | Harness + Constraints | The platform-backend contract: serve headless, declare collections, issue tokens; engines enter as blueprints. |
 | `docs/assessments/APACHE-ATTIC.md` | Theory + Constraints | The mining review and the AutonomyX naming; the adoption law (pinned, kept, tested, licensed) binds every Attic fork. |

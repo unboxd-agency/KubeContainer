@@ -41,3 +41,4 @@ dist/security-report.json
 /codecompiler
 /structuredinstructions
 /agentregistry
+site-fabric/graph.jsonld

@@ -18,3 +18,7 @@
 
 # Re-include the AutonomyX face (Dockerfile.autonomyx)
 !site-autonomyx/**
+
+# Re-include the Fabric Browser and the graph it browses
+!site-fabric/**
+!eval/graph.jsonld

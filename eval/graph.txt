@@ -1,10 +1,11 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=181 edges=430
+# nodes=181 edges=433
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
 .devcontainer/post-install.sh -> https://go.kubebuilder.io/dl/latest/linux/${ARCH}
 .devcontainer/post-install.sh -> https://kind.sigs.k8s.io/dl/latest/kind-linux-${ARCH}
+.dockerignore -> eval/graph.jsonld
 .dockerignore -> https://docs.docker.com/engine/reference/builder/#dockerignore-file
 .github/workflows/drift-audit.yml -> docs/AGENT-PLATFORM.md
 .github/workflows/mirror.yml -> https://oauth2:${TOKEN}@gitlab.com/kubecontainer/v1.git
@@ -139,6 +140,7 @@ config/rbac/kustomization.yaml -> config/rbac/service_account.yaml
 config/rbac/kustomization.yaml -> https://book.kubebuilder.io/reference/metrics.html
 config/samples/kustomization.yaml -> config/samples/kubecontainer_v1alpha1_kubecontainer.yaml
 deploy/AGENT-STACK.md -> https://attic.apache.org/
+deploy/AGENT-STACK.md -> https://cosmograph.app/
 deploy/AGENT-STACK.md -> https://penpot.app/
 deploy/AGENT-STACK.md -> https://surrealdb.com/
 deploy/AGENT-STACK.md -> https://www.gartner.com/en
@@ -376,6 +378,7 @@ site-autonomyx/categories/runtime.html -> https://agennext.space
 site-autonomyx/categories/runtime.html -> https://kubecontainer.xyz
 site-autonomyx/categories/runtime.html -> https://kubecontainer.xyz/book/index.html
 site-autonomyx/index.html -> https://agennext.space
+site-autonomyx/index.html -> https://fabric.openautonomyx.com
 site-autonomyx/index.html -> https://github.com/AGenNextHub
 site-autonomyx/index.html -> https://github.com/AGenNextHub/Agent-Chat
 site-autonomyx/index.html -> https://github.com/AGenNextHub/Agent-Constitution

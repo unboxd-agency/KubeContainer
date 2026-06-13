@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fabric Browser — OpenAutonomyx</title>
+<meta name="description" content="The record as a navigable graph, computed in the browser — Cosmograph over the fabric, data made visible." />
+<style>
+:root{--blue:#0f62fe;--ink:#161616;--muted:#525252;--line:#e0e0e0;--soft:#f4f4f4;--green:#198038}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font-family:"IBM Plex Sans",Inter,system-ui,sans-serif;color:var(--ink);background:#0b0b10}
+.nav{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-bottom:1px solid #1e1e28;background:#0b0b10}
+.brand{display:flex;gap:10px;align-items:center;font-weight:700;text-decoration:none;color:#fff}
+.mark{width:28px;height:28px;background:var(--blue);display:grid;place-items:center;color:#fff;font-weight:800}
+.nav a.link{color:#9a9aa8;text-decoration:none;font-size:13px;margin-left:18px}
+.layout{display:grid;grid-template-columns:1fr 320px;height:calc(100% - 56px)}
+.stage{position:relative;background:#0b0b10;overflow:hidden}
+#cosmos{width:100%;height:100%}
+.panel{border-left:1px solid #1e1e28;padding:18px;overflow:auto;background:#101018;color:#e6e6ee}
+.panel h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#8a8a98;margin:0 0 8px}
+.panel .nid{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;word-break:break-all;color:#fff}
+.panel ul{padding-left:16px;margin:6px 0 16px}
+.panel li{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;margin:3px 0;cursor:pointer;color:#6fa8ff;word-break:break-all}
+.controls{position:absolute;top:12px;left:12px;display:flex;gap:8px;flex-wrap:wrap;z-index:5}
+.controls input,.controls button{font:13px "IBM Plex Sans",system-ui;padding:7px 10px;border:1px solid #2a2a36;background:#16161f;color:#e6e6ee}
+.controls button{cursor:pointer}
+.controls input{width:200px}
+.hint{position:absolute;bottom:12px;left:12px;color:#7a7a88;font-size:12px;z-index:5}
+.count{color:#9a9aa8;font-size:12px;margin-top:-4px}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="https://www.openautonomyx.com"><span class="mark">F</span><span>The Fabric Browser</span></a>
+  <div>
+    <a class="link" href="https://www.openautonomyx.com">Platform</a>
+    <a class="link" href="https://kubecontainer.xyz">Runtime</a>
+    <a class="link" href="https://registry.agennext.com">Registry</a>
+  </div>
+</nav>
+<div class="layout">
+  <div class="stage">
+    <div class="controls">
+      <input id="search" placeholder="find a node by name…" autocomplete="off">
+      <button id="fit">fit</button>
+    </div>
+    <div id="cosmos"></div>
+    <canvas id="fab" style="display:none"></canvas>
+    <div class="hint" id="hint">drag to pan · scroll to zoom · click a node to walk its references</div>
+  </div>
+  <aside class="panel">
+    <h2>The fabric</h2>
+    <p class="count" id="summary">loading the record…</p>
+    <div id="detail">
+      <p style="color:#9a9aa8;font-size:13px">The record is the graph — every file a node, every
+      reference an edge — computed here in your browser, nothing fetched but the record itself.
+      Click a node to walk it.</p>
+    </div>
+  </aside>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"></script>
+<script type="module">
+"use strict";
+
+const COSMOGRAPH_URL = "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm";
+const palette = ["#4589ff","#42be65","#be95ff","#ff7eb6","#d4bbff","#82cfff",
+                 "#ff8389","#3ddbd9","#ffb784","#bae6ff","#a7f0ba","#78a9ff"];
+
+const stage = document.querySelector(".stage");
+const summary = document.getElementById("summary");
+const detail = document.getElementById("detail");
+const hint = document.getElementById("hint");
+
+const node = {};   // id -> {group,type,cites:[],citedBy:[]}
+let order = [], groups = [], colorOf = {};
+
+function groupOf(id){
+  if (/^https?:\/\//.test(id)) return "external";
+  const i = id.indexOf("/");
+  return i < 0 ? id : id.slice(0, i);
+}
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+const data = fetch("graph.jsonld").then(r => r.json()).then(parse).then(start)
+  .catch(err => { summary.textContent = "Could not load graph.jsonld: " + err; });
+
+function parse(doc){
+  const g = (doc && doc["@graph"]) || [];
+  g.forEach(n => { node[n["@id"]] = { id:n["@id"], group:groupOf(n["@id"]), type:n["@type"]||"", cites:[], citedBy:[] }; });
+  g.forEach(n => (n.citation||[]).forEach(c => {
+    const s=n["@id"], t=c["@id"];
+    if (node[t]) { node[s].cites.push(t); node[t].citedBy.push(s); }
+  }));
+  order = Object.keys(node).sort((a,b)=>{
+    const A=groupOf(a),B=groupOf(b),ea=A==="external"?1:0,eb=B==="external"?1:0;
+    if(ea!==eb) return ea-eb; if(A!==B) return A<B?-1:1; return a<b?-1:1;
+  });
+  groups = [...new Set(order.map(groupOf))].sort();
+  order.forEach(id => { colorOf[id] = palette[groups.indexOf(groupOf(id))%palette.length]; });
+  const files = order.filter(id=>groupOf(id)!=="external").length;
+  let edges=0; for(const id in node) edges+=node[id].cites.length;
+  summary.textContent = order.length+" nodes ("+files+" files, "+(order.length-files)+
+    " external) · "+edges+" references · "+groups.length+" clusters";
+  return null;
+}
+
+async function start(){
+  try {
+    const { Cosmograph } = await import(COSMOGRAPH_URL);
+    const nodes = order.map(id => ({ id, color: colorOf[id] }));
+    const links = [];
+    for (const id of order) for (const t of node[id].cites) links.push({ source:id, target:t });
+    const cosmos = document.getElementById("cosmos");
+    const cg = new Cosmograph(cosmos, {
+      nodeColor: n => n.color,
+      nodeSize: 4,
+      nodeGreyoutOpacity: 0.12,
+      linkColor: "#2a2a3a",
+      linkWidth: 1,
+      linkArrows: true,
+      backgroundColor: "#0b0b10",
+      fitViewOnInit: true,
+      simulationFriction: 0.9,
+      simulationLinkSpring: 0.4,
+      simulationRepulsion: 0.5,
+      onClick: (n) => { if (n && n.id) pick(n.id, cg); else cg.unselectNodes && cg.unselectNodes(); }
+    });
+    cg.setData(nodes, links);
+    document.getElementById("fit").onclick = () => cg.fitView && cg.fitView();
+    wireSearch(id => {
+      if (!id) { cg.unselectNodes && cg.unselectNodes(); return; }
+      const n = nodes.find(x => x.id === id);
+      if (n && cg.selectNode) cg.selectNode(n, true);
+    });
+    hint.textContent = "Cosmograph · GPU graph · drag to pan, scroll to zoom, click a node";
+  } catch (e) {
+    hint.textContent = "Cosmograph unavailable — the fabric is drawn as a ring (offline mode).";
+    renderRing();
+  }
+}
+
+// ---- shared side panel ----
+function pick(id){
+  const n = node[id]; if (!n) return;
+  const link = x => '<li data-id="'+encodeURIComponent(x)+'">'+escapeHtml(x)+'</li>';
+  detail.innerHTML =
+    '<h2 style="margin-top:0">Node</h2><p class="nid">'+escapeHtml(id)+'</p>'+
+    '<p class="count">'+escapeHtml(n.type||"node")+' · '+escapeHtml(n.group)+'</p>'+
+    (/^https?:/.test(id) ? '<p><a style="color:#6fa8ff" href="'+escapeHtml(id)+'" target="_blank" rel="noopener">open ↗</a></p>' : '')+
+    '<h2>Cites ('+n.cites.length+')</h2><ul>'+(n.cites.map(link).join("")||'<li style="color:#666;cursor:default">—</li>')+'</ul>'+
+    '<h2>Cited by ('+n.citedBy.length+')</h2><ul>'+(n.citedBy.map(link).join("")||'<li style="color:#666;cursor:default">—</li>')+'</ul>';
+  detail.querySelectorAll("li[data-id]").forEach(li =>
+    li.addEventListener("click", () => pick(decodeURIComponent(li.getAttribute("data-id")))));
+}
+
+function wireSearch(onPick){
+  const box = document.getElementById("search");
+  box.addEventListener("change", () => {
+    const q = box.value.trim().toLowerCase();
+    const hit = order.find(id => id.toLowerCase().includes(q));
+    if (hit) { pick(hit); onPick(hit); }
+  });
+}
+
+// ---- Fabric ring fallback (works with no network for Cosmograph) ----
+function renderRing(){
+  const cv = document.getElementById("fab");
+  cv.style.display = "block"; cv.width = stage.clientWidth; cv.height = stage.clientHeight;
+  if (typeof fabric === "undefined") { summary.textContent += " · (canvas library offline too)"; return; }
+  const canvas = new fabric.Canvas("fab", { selection:false, backgroundColor:"#0b0b10" });
+  const cx=cv.width/2, cy=cv.height/2, R=Math.min(cx,cy)-50, pos={};
+  order.forEach((id,i)=>{ const a=2*Math.PI*i/order.length-Math.PI/2; pos[id]={x:cx+R*Math.cos(a),y:cy+R*Math.sin(a)}; });
+  for(const id of order) for(const t of node[id].cites)
+    canvas.add(new fabric.Line([pos[id].x,pos[id].y,pos[t].x,pos[t].y],{stroke:"#1e1e2a",selectable:false,evented:false}));
+  for(const id of order){
+    const d=new fabric.Circle({left:pos[id].x,top:pos[id].y,radius:4,originX:"center",originY:"center",
+      fill:colorOf[id],selectable:false,hoverCursor:"pointer"}); d._id=id; canvas.add(d);
+  }
+  canvas.on("mouse:down",o=>{ if(o.target&&o.target._id) pick(o.target._id); });
+  canvas.requestRenderAll();
+  wireSearch(()=>{});
+}
+</script>
+</body>
+</html>
