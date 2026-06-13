@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=194 edges=387
+# nodes=194 edges=388
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -140,6 +140,7 @@ config/rbac/kustomization.yaml -> https://book.kubebuilder.io/reference/metrics.
 config/samples/kustomization.yaml -> config/samples/kubecontainer_v1alpha1_kubecontainer.yaml
 deploy/AGENT-STACK.md -> https://attic.apache.org/
 deploy/AGENT-STACK.md -> https://surrealdb.com/
+deploy/AGENT-STACK.md -> https://www.redhat.com/en
 deploy/AGENT-STACK.md -> https://www.zluri.com/
 deploy/AGENT-STACK.md -> registry/SKELETON-SPACE.json
 deploy/GITLAB.md -> https://docs.gitlab.com/install/

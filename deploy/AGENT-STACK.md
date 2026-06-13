@@ -105,6 +105,7 @@ machinery is the principal's act alone):
 | The company | github.com/openautonomyx - OpenAutonomyx (OPC) Private Limited, "The Canonical System for Federated Work" | the platform's legal and product home: dxp (the digital experience platform), trust-center, canonical, search, findr, insights, Publications, campaigns, partners; the decision-intelligence-platform repo is its homepage seat (private or pending at review time) |
 | DB candidate | https://surrealdb.com/ - SurrealDB | founder-supplied: multi-model, single binary, embedded mode (the one-engine law holds); Agent-Skills already speaks SurrealQL - the natural backend-contract DB blueprint, pinned when it enters |
 | Positioning reference | https://www.zluri.com/ - Zluri | founder-supplied: the SaaS-management category, the enterprise-work positioning the platform speaks to ("Next Generation Of Enterprise Work") |
+| Business-model reference | https://www.redhat.com/en - Red Hat | founder-supplied: the proof that open source plus enterprise trust is the product - subscription on free code, certification as the gate, a verified partner network; the model the platform's trust-center and partner network mirror |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house

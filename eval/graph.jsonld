@@ -915,6 +915,9 @@
           "@id": "https://surrealdb.com/"
         },
         {
+          "@id": "https://www.redhat.com/en"
+        },
+        {
           "@id": "https://www.zluri.com/"
         },
         {
@@ -2683,6 +2686,11 @@
       "@id": "https://www.openautonomyx.com",
       "@type": "CreativeWork",
       "name": "https://www.openautonomyx.com"
+    },
+    {
+      "@id": "https://www.redhat.com/en",
+      "@type": "CreativeWork",
+      "name": "https://www.redhat.com/en"
     },
     {
       "@id": "https://www.w3.org/TR/did-core/",
