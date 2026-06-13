@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=194 edges=387
+# nodes=200 edges=391
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -140,6 +140,9 @@ config/rbac/kustomization.yaml -> https://book.kubebuilder.io/reference/metrics.
 config/samples/kustomization.yaml -> config/samples/kubecontainer_v1alpha1_kubecontainer.yaml
 deploy/AGENT-STACK.md -> https://attic.apache.org/
 deploy/AGENT-STACK.md -> https://surrealdb.com/
+deploy/AGENT-STACK.md -> https://www.gartner.com/en
+deploy/AGENT-STACK.md -> https://www.gartner.com/peer-insights/home
+deploy/AGENT-STACK.md -> https://www.redhat.com/en
 deploy/AGENT-STACK.md -> https://www.zluri.com/
 deploy/AGENT-STACK.md -> registry/SKELETON-SPACE.json
 deploy/GITLAB.md -> https://docs.gitlab.com/install/
@@ -332,6 +335,7 @@ docs/manual/LICENSES.md -> https://go.dev/LICENSE
 docs/provenance/FOUNDER-PRIOR-ART.md -> https://www.linkedin.com/posts/thefractionalpm_i-think-i-missed-by-exit-again-this-time-activity-7470562698074976256-b4T1
 eval/corpus/task-002-pin-kind-source.yaml -> .github/workflows/test-e2e.yml
 eval/harness.sh -> eval/corpus
+hack/bind-repo.sh -> https://github.com/org/repo
 hack/boilerplate.go.txt -> http://www.apache.org/licenses/LICENSE-2.0
 hack/build-vocabulary.sh -> docs/AGENT-PLATFORM.md
 hack/build-vocabulary.sh -> docs/FOUNDING-PRINCIPLES.md

@@ -1,0 +1,75 @@
+<!doctype html><meta charset="utf-8"><title>eval</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">eval</p><h1>4. eval</h1>
+<hr>
+<h2>Evaluation Registry</h2>
+<p></p>
+This is the platform&#39;s own registry of evaluated work — not a public
+leaderboard. Each task in <code>corpus/</code> is a frozen provenance record of a
+real issue: what was asked, against which commit, resolved by which
+commit, proven by which <strong>world-test</strong> (the command whose pass/fail the
+real world owns). The directory is append-only: tasks are never edited,
+new eras add new tasks.
+<p></p>
+Run <code>make eval</code> to execute every task&#39;s world-test at HEAD and emit an
+evidence record (<code>dist/eval-report.json</code>): commit, timestamp, per-task
+results, resolution rate. Reports are provenance — the chain of custody
+that lets the work be sold as confirmed, not claimed (see &#34;Assurance as
+a policy&#34; and &#34;Platform the provenance&#34; in
+<code>../docs/FOUNDING-PRINCIPLES.md</code>).
+<p></p>
+Roadmap: agent-execution mode (run an agent against <code>base_commit</code>,
+apply its patch, run the world-test — a per-agent resolution rate over
+the registry), per the gap analysis in
+<code>../docs/assessments/SWEBENCH-ALIGNMENT.md</code>.
+<p></p>
+The registry is also the <strong>discovery surface</strong>: each task doubles as a
+capability advertisement with evidence attached — what the system has
+demonstrably done, queryable by id, era, and world-test. Buyers, partners,
+and agents discover capability here the same way they verify it: by the
+record (unique and independently identifiable, per the charter — you can
+not sell what cannot be found, nor trust what cannot be checked).
+<p></p>
+<h3>LLM usage in provenance</h3>
+<p></p>
+Where an LLM performed or assisted the work, the task&#39;s <code>provenance</code>
+block must record the intelligence consumed — required for the cost
+pillar (metering per agent per outcome), for reproducibility, and for
+multi-model comparability:
+<p></p>
+<pre>provenance:
+  performed_by: &lt;agent runtime / session id&gt;
+  llm:
+    model: &lt;provider&gt;/&lt;model&gt;@&lt;version&gt;   # the configured model id
+    role: author | assistant | none       # who did the work vs. judged it
+    usage: {tokens_in: N, tokens_out: N, cost_usd: X}  # when metered
+  evidence: &lt;world-test receipts: CI run ids, report refs&gt;
+</pre>
+<p></p>
+Rules: the LLM appears in provenance as worker, never as judge (verdicts
+stay world-owned); <code>role: none</code> is valid and meaningful (human-only or
+deterministic work); unmetered usage is recorded as <code>usage: unmetered</code>
+rather than omitted — an absent field is ambiguity, a recorded absence
+is a fact. Existing era-frozen tasks are not backfilled (append-only);
+the schema binds new tasks from era v0.2.0 onward.
+<p></p>
+<h3>The registry defines the contract</h3>
+<p></p>
+A contract on the fabric is not prose in a drawer; it is a registry
+entry: the declared outcome, the world-test named in advance, the
+provenance schema, the price — recorded, identified, and resolvable.
+What the registry can record and verdict is what can be contracted;
+what it cannot, cannot — the registry&#39;s schema is therefore the legal
+language of the fabric, and registering is how a promise becomes
+binding. This cuts both ways: a seller cannot offer what the registry
+cannot check (no unverdictable promises), and a buyer cannot claim what
+was never registered (no retroactive expectations). Discovery and
+definition are the same act — to be findable in the registry is to be
+offered on exact terms, and the entry that advertises the capability is
+the same entry that defines what keeping it means.
+<p></p>
+<nav class="foot"><a href="chapter-3.html">&larr; previous</a><a href="index.html">contents</a><span></span></nav>

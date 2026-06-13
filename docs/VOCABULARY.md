@@ -10,30 +10,30 @@ do not edit; define terms in their source documents.
 | Action | `docs/PRIMITIVES.md:36` |
 | Actionable intelligence | `docs/FOUNDING-PRINCIPLES.md:1149` |
 | Actor | `docs/AGENT-PLATFORM.md:20` |
-| Adapter | `docs/AGENT-PLATFORM.md:538` |
+| Adapter | `docs/AGENT-PLATFORM.md:547` |
 | Agent | `docs/PRIMITIVES.md:86` |
 | Agent (the standard definition) | `docs/AGENT-PLATFORM.md:10` |
-| Agent Architecture | `docs/AGENT-PLATFORM.md:40` |
-| Agent Engineering | `docs/AGENT-PLATFORM.md:55` |
-| Agent Excellence | `docs/AGENT-PLATFORM.md:82` |
-| Agent Governance | `docs/AGENT-PLATFORM.md:70` |
-| Agent drift | `docs/AGENT-PLATFORM.md:603` |
+| Agent Architecture | `docs/AGENT-PLATFORM.md:49` |
+| Agent Engineering | `docs/AGENT-PLATFORM.md:64` |
+| Agent Excellence | `docs/AGENT-PLATFORM.md:91` |
+| Agent Governance | `docs/AGENT-PLATFORM.md:79` |
+| Agent drift | `docs/AGENT-PLATFORM.md:612` |
 | AgentRegistry | `docs/TOOLS.md:478` |
 | AgentVerse | `docs/PRIMITIVES.md:169` |
-| All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:289` |
-| Always on | `docs/AGENT-PLATFORM.md:156` |
+| All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:298` |
+| Always on | `docs/AGENT-PLATFORM.md:165` |
 | An agent acts for a principal, where the principal isn't, or after the | `docs/FOUNDING-PRINCIPLES.md:67` |
-| Anti-drift protocols | `docs/AGENT-PLATFORM.md:1038` |
+| Anti-drift protocols | `docs/AGENT-PLATFORM.md:1047` |
 | Assertion | `docs/AGENT-PLATFORM.md:26` |
 | Assurance as a policy | `docs/FOUNDING-PRINCIPLES.md:127` |
-| Backward compatible | `docs/AGENT-PLATFORM.md:171` |
+| Backward compatible | `docs/AGENT-PLATFORM.md:180` |
 | Balance | `docs/PRIMITIVES.md:141` |
 | Base | `docs/PRIMITIVES.md:109` |
-| Be conservative below, liberal above | `docs/AGENT-PLATFORM.md:462` |
-| Be stewarded like a foundation | `docs/AGENT-PLATFORM.md:466` |
-| Bear load silently | `docs/AGENT-PLATFORM.md:458` |
+| Be conservative below, liberal above | `docs/AGENT-PLATFORM.md:471` |
+| Be stewarded like a foundation | `docs/AGENT-PLATFORM.md:475` |
+| Bear load silently | `docs/AGENT-PLATFORM.md:467` |
 | Best practice | `docs/DOCTRINE-MAP.md:65` |
-| Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:139` |
+| Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:148` |
 | BookBinder | `docs/TOOLS.md:489` |
 | Box | `docs/PRIMITIVES.md:84` |
 | Breach | `docs/PRIMITIVES.md:55` |
@@ -42,20 +42,20 @@ do not edit; define terms in their source documents.
 | Builder | `docs/PRIMITIVES.md:21` |
 | CNCF-graduated standards only | `docs/DESIGN.md:146` |
 | Capable guard | `docs/HEADLESS-DELIVERY.md:2108` |
-| Claim | `docs/AGENT-PLATFORM.md:590` |
+| Claim | `docs/AGENT-PLATFORM.md:599` |
 | Claims become evidence | `docs/FOUNDING-PRINCIPLES.md:70` |
 | Code | `docs/PRIMITIVES.md:77` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
 | CodeCompiler | `docs/TOOLS.md:414` |
-| Compliance by the path | `docs/AGENT-PLATFORM.md:944` |
+| Compliance by the path | `docs/AGENT-PLATFORM.md:953` |
 | Constitution | `docs/DOCTRINE-MAP.md:50` |
 | Constraints | `docs/DOCTRINE-MAP.md:60` |
-| Context | `docs/AGENT-PLATFORM.md:495` |
+| Context | `docs/AGENT-PLATFORM.md:504` |
 | Contract | `docs/AGENT-PLATFORM.md:24` |
-| Data as intelligence | `docs/AGENT-PLATFORM.md:376` |
+| Data as intelligence | `docs/AGENT-PLATFORM.md:385` |
 | Data is intelligence — and data is real, temporal, geospatial, | `docs/FOUNDING-PRINCIPLES.md:79` |
 | Declaration | `docs/PRIMITIVES.md:34` |
-| Delegation | `docs/AGENT-PLATFORM.md:503` |
+| Delegation | `docs/AGENT-PLATFORM.md:512` |
 | Deliver just-in-time, from everyone qualified | `docs/FOUNDING-PRINCIPLES.md:111` |
 | Delivery | `docs/PRIMITIVES.md:127` |
 | Desk | `docs/AGENT-PLATFORM.md:28` |
@@ -68,12 +68,12 @@ do not edit; define terms in their source documents.
 | Empowered | `docs/FOUNDING-PRINCIPLES.md:356` |
 | Enabled | `docs/FOUNDING-PRINCIPLES.md:354` |
 | Enforcement point | `docs/DESIGN.md:187` |
-| Era | `docs/AGENT-PLATFORM.md:614` |
-| Eval | `docs/AGENT-PLATFORM.md:516` |
-| Event-triggered, outcome-focused, value-driven | `docs/AGENT-PLATFORM.md:320` |
+| Era | `docs/AGENT-PLATFORM.md:623` |
+| Eval | `docs/AGENT-PLATFORM.md:525` |
+| Event-triggered, outcome-focused, value-driven | `docs/AGENT-PLATFORM.md:329` |
 | Every boundary speaks a published contract | `docs/FOUNDING-PRINCIPLES.md:83` |
-| Everything is contextual | `docs/AGENT-PLATFORM.md:685` |
-| Evidence | `docs/AGENT-PLATFORM.md:593` |
+| Everything is contextual | `docs/AGENT-PLATFORM.md:694` |
+| Evidence | `docs/AGENT-PLATFORM.md:602` |
 | Excellent working tools | `docs/FOUNDING-PRINCIPLES.md:1154` |
 | External storage is in cloud | `docs/FOUNDING-PRINCIPLES.md:226` |
 | Fabric | `docs/PRIMITIVES.md:161` |
@@ -84,138 +84,139 @@ do not edit; define terms in their source documents.
 | FileFabric | `docs/TOOLS.md:455` |
 | Five-dimension addressing | `docs/SOLID-STATE-DATABASE.md:72` |
 | Founder | `docs/PRIMITIVES.md:12` |
-| Free | `docs/AGENT-PLATFORM.md:659` |
+| Free | `docs/AGENT-PLATFORM.md:668` |
 | Gap | `docs/PRIMITIVES.md:111` |
 | Gate | `docs/PRIMITIVES.md:67` |
 | Gold standard | `docs/PRIMITIVES.md:153` |
-| Golden corpus | `docs/AGENT-PLATFORM.md:611` |
+| Golden corpus | `docs/AGENT-PLATFORM.md:620` |
 | Governed by choice | `docs/FOUNDING-PRINCIPLES.md:137` |
 | Governed by design | `docs/FOUNDING-PRINCIPLES.md:169` |
-| Graceful exit | `docs/AGENT-PLATFORM.md:559` |
-| Grounding | `docs/AGENT-PLATFORM.md:596` |
-| Guardrail | `docs/AGENT-PLATFORM.md:513` |
-| Hallucination | `docs/AGENT-PLATFORM.md:599` |
-| Handoff | `docs/AGENT-PLATFORM.md:509` |
+| Graceful exit | `docs/AGENT-PLATFORM.md:568` |
+| Grounding | `docs/AGENT-PLATFORM.md:605` |
+| Guardrail | `docs/AGENT-PLATFORM.md:522` |
+| Hallucination | `docs/AGENT-PLATFORM.md:608` |
+| Handoff | `docs/AGENT-PLATFORM.md:518` |
 | Hardening roadmap: | `docs/DESIGN.md:162` |
 | Harness | `docs/DOCTRINE-MAP.md:70` |
 | Headless delivery | `docs/HEADLESS-DELIVERY.md:24` |
-| Here | `docs/AGENT-PLATFORM.md:987` |
+| Here | `docs/AGENT-PLATFORM.md:996` |
 | Honest words | `docs/PRIMITIVES.md:148` |
-| Human-in-the-loop | `docs/AGENT-PLATFORM.md:524` |
-| Individual identity (a fundamental right) | `docs/AGENT-PLATFORM.md:815` |
-| Intelligence is not fabricated | `docs/AGENT-PLATFORM.md:965` |
-| Intelligence is provenance-gated | `docs/AGENT-PLATFORM.md:975` |
-| Intent | `docs/AGENT-PLATFORM.md:484` |
+| Human-in-the-loop | `docs/AGENT-PLATFORM.md:533` |
+| Individual identity (a fundamental right) | `docs/AGENT-PLATFORM.md:824` |
+| Intelligence is not fabricated | `docs/AGENT-PLATFORM.md:974` |
+| Intelligence is provenance-gated | `docs/AGENT-PLATFORM.md:984` |
+| Intent | `docs/AGENT-PLATFORM.md:493` |
 | Internal memory holds the mental model of the real world | `docs/FOUNDING-PRINCIPLES.md:238` |
-| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:1159` |
-| Just-in-time | `docs/AGENT-PLATFORM.md:133` |
+| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:1168` |
+| Just-in-time | `docs/AGENT-PLATFORM.md:142` |
 | Kube | `docs/PRIMITIVES.md:89` |
-| Kube — the soul of Any'Thing' | `docs/AGENT-PLATFORM.md:777` |
-| KubeContainer Core | `docs/AGENT-PLATFORM.md:784` |
+| Kube — the soul of Any'Thing' | `docs/AGENT-PLATFORM.md:786` |
+| KubeContainer Core | `docs/AGENT-PLATFORM.md:793` |
 | Loop | `docs/PRIMITIVES.md:61` |
 | Maintainer | `docs/PRIMITIVES.md:27` |
 | Maturity | `docs/PRIMITIVES.md:150` |
 | Measurement | `docs/PRIMITIVES.md:137` |
-| Memory | `docs/AGENT-PLATFORM.md:499` |
+| Memory | `docs/AGENT-PLATFORM.md:508` |
 | Message | `docs/PRIMITIVES.md:125` |
 | Metal base | `docs/HEADLESS-DELIVERY.md:49` |
 | Minimal, pinned, upstream-only dependencies. | `docs/DESIGN.md:157` |
 | Model | `docs/DESIGN.md:183` |
 | ModelCompiler | `docs/TOOLS.md:498` |
-| Multi-agent system | `docs/AGENT-PLATFORM.md:534` |
+| Multi-agent system | `docs/AGENT-PLATFORM.md:543` |
 | Multi-arch | `docs/DESIGN.md:131` |
 | Multi-base | `docs/HEADLESS-DELIVERY.md:499` |
-| Multi-fabric (multi-thread, scaled out) | `docs/AGENT-PLATFORM.md:249` |
+| Multi-fabric (multi-thread, scaled out) | `docs/AGENT-PLATFORM.md:258` |
 | Multi-face machine | `docs/HEADLESS-DELIVERY.md:2248` |
-| Multi-tenant | `docs/AGENT-PLATFORM.md:223` |
-| Multiple operators | `docs/AGENT-PLATFORM.md:228` |
+| Multi-tenant | `docs/AGENT-PLATFORM.md:232` |
+| Multiple operators | `docs/AGENT-PLATFORM.md:237` |
 | No ecosystem coupling for installation. | `docs/DESIGN.md:152` |
 | No lock-in, no supply-chain risk | `docs/FOUNDING-PRINCIPLES.md:107` |
-| No substreams, subgraphs, or sidecars | `docs/AGENT-PLATFORM.md:266` |
+| No substreams, subgraphs, or sidecars | `docs/AGENT-PLATFORM.md:275` |
 | Nothing moves. | `docs/DOCTRINE-MAP.md:15` |
 | Nothing rides alongside the declared path | `docs/FOUNDING-PRINCIPLES.md:87` |
 | OS-bound operation | `docs/HEADLESS-DELIVERY.md:694` |
 | On time, every time | `docs/FOUNDING-PRINCIPLES.md:363` |
 | One field, one writer | `docs/SOLID-STATE-DATABASE.md:75` |
-| Open | `docs/AGENT-PLATFORM.md:622` |
-| Open Location Code (OLC) | `docs/AGENT-PLATFORM.md:1014` |
-| Open Location Code standard | `docs/AGENT-PLATFORM.md:1023` |
+| Open | `docs/AGENT-PLATFORM.md:631` |
+| Open Location Code (OLC) | `docs/AGENT-PLATFORM.md:1023` |
+| Open Location Code standard | `docs/AGENT-PLATFORM.md:1032` |
 | Open standards only | `docs/SOLID-STATE-DATABASE.md:82` |
-| Open-enterprise | `docs/AGENT-PLATFORM.md:728` |
+| Open-enterprise | `docs/AGENT-PLATFORM.md:737` |
 | Operational knowledge is an artifact | `docs/FOUNDING-PRINCIPLES.md:103` |
 | Operator | `docs/PRIMITIVES.md:19` |
-| Orchestrator / Subagent | `docs/AGENT-PLATFORM.md:506` |
-| Outcome | `docs/AGENT-PLATFORM.md:487` |
+| Orchestrator / Subagent | `docs/AGENT-PLATFORM.md:515` |
+| Outcome | `docs/AGENT-PLATFORM.md:496` |
 | Owner | `docs/PRIMITIVES.md:23` |
-| P1 — Re-grounding (state the world before touching it) | `docs/AGENT-PLATFORM.md:1070` |
-| P2 — Term resolution (no private vocabulary) | `docs/AGENT-PLATFORM.md:1078` |
-| P3 — Verdict before done (no unverdicted completion) | `docs/AGENT-PLATFORM.md:1087` |
-| P4 — Intent re-confirmation (the goal cannot be quietly reinterpreted) | `docs/AGENT-PLATFORM.md:1095` |
-| P5 — Record supremacy (when model and record disagree) | `docs/AGENT-PLATFORM.md:1106` |
-| P6 — Scheduled drift audit (entropy has a maintenance schedule) | `docs/AGENT-PLATFORM.md:1116` |
-| P7 — Constitutional amendment (the rules change only by the rules) | `docs/AGENT-PLATFORM.md:1125` |
-| P8 — No self-building (the founder's prohibition) | `docs/AGENT-PLATFORM.md:1134` |
+| P1 — Re-grounding (state the world before touching it) | `docs/AGENT-PLATFORM.md:1079` |
+| P2 — Term resolution (no private vocabulary) | `docs/AGENT-PLATFORM.md:1087` |
+| P3 — Verdict before done (no unverdicted completion) | `docs/AGENT-PLATFORM.md:1096` |
+| P4 — Intent re-confirmation (the goal cannot be quietly reinterpreted) | `docs/AGENT-PLATFORM.md:1104` |
+| P5 — Record supremacy (when model and record disagree) | `docs/AGENT-PLATFORM.md:1115` |
+| P6 — Scheduled drift audit (entropy has a maintenance schedule) | `docs/AGENT-PLATFORM.md:1125` |
+| P7 — Constitutional amendment (the rules change only by the rules) | `docs/AGENT-PLATFORM.md:1134` |
+| P8 — No self-building (the founder's prohibition) | `docs/AGENT-PLATFORM.md:1143` |
 | Party | `docs/PRIMITIVES.md:17` |
 | Path | `docs/PRIMITIVES.md:65` |
-| Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:308` |
+| Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:317` |
 | Platform | `docs/PRIMITIVES.md:163` |
-| Platform Capabilities | `docs/AGENT-PLATFORM.md:151` |
+| Platform Capabilities | `docs/AGENT-PLATFORM.md:160` |
 | Platform-bound orchestrator | `docs/HEADLESS-DELIVERY.md:685` |
-| Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:244` |
+| Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:253` |
 | Policy-as-code surface | `docs/DESIGN.md:206` |
 | Port | `docs/PRIMITIVES.md:105` |
 | Primitives and lexicon terms | `docs/TOOLS.md:44` |
-| Principal | `docs/AGENT-PLATFORM.md:480` |
+| Principal | `docs/AGENT-PLATFORM.md:489` |
 | Principles | `docs/TOOLS.md:46` |
 | Promise | `docs/PRIMITIVES.md:51` |
 | Proto-first | `docs/HEADLESS-DELIVERY.md:2293` |
 | Provenance | `docs/PRIMITIVES.md:132` |
-| Provenance is the product | `docs/AGENT-PLATFORM.md:746` |
+| Provenance is the product | `docs/AGENT-PLATFORM.md:755` |
 | Provenance-native | `docs/SOLID-STATE-DATABASE.md:69` |
 | Real time | `docs/PRIMITIVES.md:145` |
-| Real-time | `docs/AGENT-PLATFORM.md:166` |
-| Real-time, not instantaneous — ACID, stable substance | `docs/AGENT-PLATFORM.md:188` |
-| Real-work rule | `docs/AGENT-PLATFORM.md:956` |
-| Real-world model (RWM) | `docs/AGENT-PLATFORM.md:577` |
-| Reality & drift vocabulary | `docs/AGENT-PLATFORM.md:571` |
+| Real-time | `docs/AGENT-PLATFORM.md:175` |
+| Real-time, not instantaneous — ACID, stable substance | `docs/AGENT-PLATFORM.md:197` |
+| Real-work rule | `docs/AGENT-PLATFORM.md:965` |
+| Real-world model (RWM) | `docs/AGENT-PLATFORM.md:586` |
+| Reality & drift vocabulary | `docs/AGENT-PLATFORM.md:580` |
 | Reason | `docs/PRIMITIVES.md:46` |
 | Record | `docs/PRIMITIVES.md:37` |
 | RecordGraph | `docs/TOOLS.md:433` |
-| Registry | `docs/AGENT-PLATFORM.md:619` |
+| Registry | `docs/AGENT-PLATFORM.md:628` |
 | Repair | `docs/PRIMITIVES.md:70` |
-| Reputation | `docs/AGENT-PLATFORM.md:531` |
-| Resolution | `docs/AGENT-PLATFORM.md:616` |
+| Reputation | `docs/AGENT-PLATFORM.md:540` |
+| Resolution | `docs/AGENT-PLATFORM.md:625` |
 | Runtime stage | `docs/DESIGN.md:129` |
 | SchemaKeeper | `docs/TOOLS.md:446` |
 | Scope | `docs/PRIMITIVES.md:113` |
+| Server | `docs/AGENT-PLATFORM.md:35` |
 | Serverless, not stateless | `docs/SOLID-STATE-DATABASE.md:79` |
-| Session | `docs/AGENT-PLATFORM.md:528` |
+| Session | `docs/AGENT-PLATFORM.md:537` |
 | Shipped policies | `docs/DESIGN.md:210` |
 | Signed building block | `docs/HEADLESS-DELIVERY.md:2299` |
 | Single Binary Code | `docs/HEADLESS-DELIVERY.md:29` |
 | Skeleton | `docs/PRIMITIVES.md:82` |
-| Skill | `docs/AGENT-PLATFORM.md:492` |
+| Skill | `docs/AGENT-PLATFORM.md:501` |
 | Soul | `docs/PRIMITIVES.md:93` |
-| Soul (of a Thing) | `docs/AGENT-PLATFORM.md:767` |
+| Soul (of a Thing) | `docs/AGENT-PLATFORM.md:776` |
 | SourceGround | `docs/TOOLS.md:508` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
-| Standard operating procedures | `docs/AGENT-PLATFORM.md:344` |
+| Standard operating procedures | `docs/AGENT-PLATFORM.md:353` |
 | Status | `docs/DESIGN.md:197` |
 | Step | `docs/PRIMITIVES.md:63` |
 | StructuredInstructions | `docs/TOOLS.md:421` |
 | Surface | `docs/PRIMITIVES.md:99` |
 | Tagging | `docs/DESIGN.md:133` |
-| The Agent Economy | `docs/AGENT-PLATFORM.md:115` |
-| The Agent Lexicon | `docs/AGENT-PLATFORM.md:475` |
+| The Agent Economy | `docs/AGENT-PLATFORM.md:124` |
+| The Agent Lexicon | `docs/AGENT-PLATFORM.md:484` |
 | The Any' family | `docs/TOOLS.md:23` |
-| The Edge (definition) | `docs/AGENT-PLATFORM.md:857` |
-| The Metal Kube | `docs/AGENT-PLATFORM.md:834` |
-| The Mission Statement | `docs/AGENT-PLATFORM.md:436` |
-| The Platform | `docs/AGENT-PLATFORM.md:98` |
-| The Seat Theorem | `docs/AGENT-PLATFORM.md:922` |
-| The domain is the org | `docs/AGENT-PLATFORM.md:804` |
+| The Edge (definition) | `docs/AGENT-PLATFORM.md:866` |
+| The Metal Kube | `docs/AGENT-PLATFORM.md:843` |
+| The Mission Statement | `docs/AGENT-PLATFORM.md:445` |
+| The Platform | `docs/AGENT-PLATFORM.md:107` |
+| The Seat Theorem | `docs/AGENT-PLATFORM.md:931` |
+| The domain is the org | `docs/AGENT-PLATFORM.md:813` |
 | The fabric is the intelligent operating system of work | `docs/FOUNDING-PRINCIPLES.md:207` |
 | The founder's styled coinages | `docs/TOOLS.md:48` |
 | The framework is the fabric | `docs/FOUNDING-PRINCIPLES.md:194` |
@@ -225,31 +226,31 @@ do not edit; define terms in their source documents.
 | The solution is the service contract | `docs/FOUNDING-PRINCIPLES.md:120` |
 | The tool equation | `docs/TOOLS.md:18` |
 | Theory | `docs/DOCTRINE-MAP.md:55` |
-| Thing | `docs/AGENT-PLATFORM.md:759` |
-| This moment (now) | `docs/AGENT-PLATFORM.md:1027` |
+| Thing | `docs/AGENT-PLATFORM.md:768` |
+| This moment (now) | `docs/AGENT-PLATFORM.md:1036` |
 | Through an Internet of Agents | `docs/FOUNDING-PRINCIPLES.md:366` |
-| Through an open partner network | `docs/AGENT-PLATFORM.md:145` |
+| Through an open partner network | `docs/AGENT-PLATFORM.md:154` |
 | Tier | `docs/DOCTRINE-MAP.md:34` |
-| Tool | `docs/AGENT-PLATFORM.md:489` |
+| Tool | `docs/AGENT-PLATFORM.md:498` |
 | Tools | `docs/TOOLS.md:38` |
-| Trusted frontier intelligence, from all providers | `docs/AGENT-PLATFORM.md:136` |
+| Trusted frontier intelligence, from all providers | `docs/AGENT-PLATFORM.md:145` |
 | Trusted insights | `docs/FOUNDING-PRINCIPLES.md:1144` |
 | Trusted platform | `docs/PRIMITIVES.md:166` |
 | Truth | `docs/PRIMITIVES.md:44` |
 | Two-word composite, one binary | `docs/TOOLS.md:10` |
 | Unit | `docs/PRIMITIVES.md:139` |
-| Verdict | `docs/AGENT-PLATFORM.md:588` |
+| Verdict | `docs/AGENT-PLATFORM.md:597` |
 | Verse | `docs/PRIMITIVES.md:172` |
 | Wake on events, steer by outcomes, prioritize by value | `docs/FOUNDING-PRINCIPLES.md:91` |
-| Where code is configuration | `docs/AGENT-PLATFORM.md:361` |
-| Where the Platform Is the Foundation | `docs/AGENT-PLATFORM.md:449` |
+| Where code is configuration | `docs/AGENT-PLATFORM.md:370` |
+| Where the Platform Is the Foundation | `docs/AGENT-PLATFORM.md:458` |
 | Why ReBAC here | `docs/DESIGN.md:192` |
 | With native-language intelligence | `docs/FOUNDING-PRINCIPLES.md:360` |
 | Work | `docs/PRIMITIVES.md:60` |
 | World | `docs/PRIMITIVES.md:107` |
-| World model (internal) | `docs/AGENT-PLATFORM.md:581` |
-| World-test | `docs/AGENT-PLATFORM.md:585` |
+| World model (internal) | `docs/AGENT-PLATFORM.md:590` |
+| World-test | `docs/AGENT-PLATFORM.md:594` |
 | merge | `docs/TOOLS.md:584` |
 | push | `docs/TOOLS.md:580` |
 | release | `docs/TOOLS.md:587` |
-| unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:700` |
+| unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:709` |

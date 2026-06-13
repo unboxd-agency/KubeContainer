@@ -44,7 +44,8 @@ func main() {
 		// files cite every node by construction, and the bound books
 		// only restate prose that lives canonically elsewhere.
 		if n == "eval/graph.txt" || n == "eval/graph.jsonld" ||
-			strings.HasPrefix(n, "site/book/") || strings.HasPrefix(n, "site-autonomyx/books/") {
+			strings.HasPrefix(n, "site/book/") || strings.HasPrefix(n, "site-autonomyx/books/") ||
+			strings.HasPrefix(n, "site-autonomyx/whitepapers/") {
 			continue
 		}
 		raw, err := os.ReadFile(n)

@@ -32,6 +32,15 @@ Supporting vocabulary:
   the release). The graduation is strict: nothing reaches the pipeline
   that failed the desk, nothing reaches the field that failed the
   pipeline — caught at the desk, not in production.
+- **Server** — a program that waits on a declared port and answers what
+  arrives; by extension, the machine kept on so it can. The server is the
+  middle seat of the three workers of this house: the tool acts once,
+  when invoked, then stops; the agent acts unprompted, for a principal;
+  the server acts only when asked, for whoever asks — always on, never
+  self-directed, answering everyone and working for no one. (Here: nginx
+  in the kubes, the cluster's API server, `filefabric serve`,
+  AgentRegistry — each a tool that becomes a server the moment it is
+  asked to wait.)
 
 In one sentence: actors carry the messages, agents pursue the goals, contracts
 define what everyone owes each other, assertions catch the moment anyone breaks

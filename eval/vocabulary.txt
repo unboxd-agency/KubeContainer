@@ -183,6 +183,7 @@ resolution
 runtime stage
 schemakeeper
 scope
+server
 serverless, not stateless
 session
 shipped policies

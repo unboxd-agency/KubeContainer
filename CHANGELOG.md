@@ -7,6 +7,15 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.12] - 2026-06-13
+### Changed
+- The platform door's full copy: Agentic Enterprises, Experience What
+  Trust Can Do To Work, the Introduction, insight-driven everything.
+### Added
+- Lexicon: server defined. References recorded: Red Hat (the
+  enterprise-open-source business model), Gartner (the
+  decision-intelligence category frame).
+
 ## [0.2.11] - 2026-06-13
 ### Changed
 - The arithmetic platform redesigned: enterprise-classic IBM Plex
