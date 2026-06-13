@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=166 edges=378
+# nodes=194 edges=387
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -50,6 +50,7 @@ CLAUDE.md -> internal/controller/kubecontainer_controller.go
 CLAUDE.md -> internal/controller/testdata/compat
 Dockerfile -> cmd/main.go
 Dockerfile -> https://github.com/GoogleContainerTools/distroless
+Dockerfile.arithmetic -> site/arithmetic.html
 LICENSE -> https://github.com/unboxd-agency/KubeContainer
 Makefile -> cmd/main.go
 Makefile -> config/crd
@@ -138,6 +139,8 @@ config/rbac/kustomization.yaml -> config/rbac/service_account.yaml
 config/rbac/kustomization.yaml -> https://book.kubebuilder.io/reference/metrics.html
 config/samples/kustomization.yaml -> config/samples/kubecontainer_v1alpha1_kubecontainer.yaml
 deploy/AGENT-STACK.md -> https://attic.apache.org/
+deploy/AGENT-STACK.md -> https://surrealdb.com/
+deploy/AGENT-STACK.md -> https://www.zluri.com/
 deploy/AGENT-STACK.md -> registry/SKELETON-SPACE.json
 deploy/GITLAB.md -> https://docs.gitlab.com/install/
 deploy/GITLAB.md -> https://docs.gitlab.com/runner/install/
@@ -358,7 +361,13 @@ registry/blueprints/leap-micro.json -> https://get.opensuse.org/leapmicro/
 registry/blueprints/microos.json -> deploy/LEAPMICRO.md
 registry/blueprints/microos.json -> https://get.opensuse.org/microos/
 release/PROMISE -> hack/check-promise.sh
-site/arithmetic.html -> deploy/arithmetic-kube.yaml
+site-autonomyx/index.html -> https://github.com/AGenNextHub
+site-autonomyx/index.html -> https://github.com/openautonomyx
+site-autonomyx/index.html -> https://platform.openautonomyx.com
+site/arithmetic.html -> https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js
+site/arithmetic.html -> https://kubecontainer.xyz
+site/arithmetic.html -> https://registry.agennext.com
+site/arithmetic.html -> https://www.openautonomyx.com
 site/index.html -> docs/BENCHMARKS.md
 site/index.html -> https://arithmetic.agennext.com
 site/index.html -> https://github.com/unboxd-agency/KubeContainer
