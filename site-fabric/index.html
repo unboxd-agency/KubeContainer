@@ -62,7 +62,11 @@ html,body{margin:0;height:100%;font-family:"IBM Plex Sans",Inter,system-ui,sans-
 <script type="module">
 "use strict";
 
-const COSMOGRAPH_URL = "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm";
+const COSMOGRAPH_URLS = [
+  "https://esm.sh/@cosmograph/cosmograph@2.3.2",
+  "https://cdn.jsdelivr.net/npm/@cosmograph/cosmograph@2.3.2/+esm",
+  "https://unpkg.com/@cosmograph/cosmograph@2.3.2/dist/index.js"
+];
 const palette = ["#4589ff","#42be65","#be95ff","#ff7eb6","#d4bbff","#82cfff",
                  "#ff8389","#3ddbd9","#ffb784","#bae6ff","#a7f0ba","#78a9ff"];
 
@@ -105,8 +109,13 @@ function parse(doc){
 }
 
 async function start(){
+  let Cosmograph = null, lastErr = null;
+  for (const url of COSMOGRAPH_URLS) {
+    try { const m = await import(/* @vite-ignore */ url); Cosmograph = m.Cosmograph || (m.default && m.default.Cosmograph); if (Cosmograph) break; }
+    catch (e) { lastErr = e; }
+  }
   try {
-    const { Cosmograph } = await import(COSMOGRAPH_URL);
+    if (!Cosmograph) throw lastErr || new Error("Cosmograph did not load from any CDN");
     const nodes = order.map(id => ({ id, color: colorOf[id] }));
     const links = [];
     for (const id of order) for (const t of node[id].cites) links.push({ source:id, target:t });
