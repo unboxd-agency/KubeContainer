@@ -34,6 +34,7 @@ do not edit; define terms in their source documents.
 | Bear load silently | `docs/AGENT-PLATFORM.md:458` |
 | Best practice | `docs/DOCTRINE-MAP.md:65` |
 | Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:139` |
+| BookBinder | `docs/TOOLS.md:489` |
 | Box | `docs/PRIMITIVES.md:84` |
 | Breach | `docs/PRIMITIVES.md:55` |
 | Browser as server | `docs/HEADLESS-DELIVERY.md:2229` |
@@ -120,7 +121,7 @@ do not edit; define terms in their source documents.
 | Metal base | `docs/HEADLESS-DELIVERY.md:49` |
 | Minimal, pinned, upstream-only dependencies. | `docs/DESIGN.md:157` |
 | Model | `docs/DESIGN.md:183` |
-| ModelCompiler | `docs/TOOLS.md:489` |
+| ModelCompiler | `docs/TOOLS.md:498` |
 | Multi-agent system | `docs/AGENT-PLATFORM.md:534` |
 | Multi-arch | `docs/DESIGN.md:131` |
 | Multi-base | `docs/HEADLESS-DELIVERY.md:499` |
@@ -196,7 +197,7 @@ do not edit; define terms in their source documents.
 | Skill | `docs/AGENT-PLATFORM.md:492` |
 | Soul | `docs/PRIMITIVES.md:93` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:767` |
-| SourceGround | `docs/TOOLS.md:499` |
+| SourceGround | `docs/TOOLS.md:508` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
@@ -248,7 +249,7 @@ do not edit; define terms in their source documents.
 | World | `docs/PRIMITIVES.md:107` |
 | World model (internal) | `docs/AGENT-PLATFORM.md:581` |
 | World-test | `docs/AGENT-PLATFORM.md:585` |
-| merge | `docs/TOOLS.md:575` |
-| push | `docs/TOOLS.md:571` |
-| release | `docs/TOOLS.md:578` |
+| merge | `docs/TOOLS.md:584` |
+| push | `docs/TOOLS.md:580` |
+| release | `docs/TOOLS.md:587` |
 | unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:700` |

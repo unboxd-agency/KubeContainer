@@ -1,0 +1,132 @@
+<!doctype html><meta charset="utf-8"><title>The Space</title>
+<style>body{font-family:Georgia,serif;max-width:46rem;margin:3rem auto;line-height:1.6;padding:0 1rem}
+h1,h2,h3,h4{font-family:system-ui;line-height:1.2}pre{background:#f4f4f4;padding:.8rem;overflow-x:auto}
+code{background:#f4f4f4;padding:0 .2rem}.cover{text-align:center;margin:5rem 0}
+.toc a{display:block;padding:.25rem 0;text-decoration:none}.domain{color:#666;font-size:.9rem}
+nav.foot{margin:4rem 0;display:flex;justify-content:space-between}hr{margin:3rem 0}</style>
+<p class="domain">agennext.space</p><h1>4. The Space</h1>
+<hr>
+<h2>The Agent-Engineering Stack — Complete, but Lightweight</h2>
+<p></p>
+The founder&#39;s ruling: a complete stack for agent engineering, kept
+lightweight. Complete = every concern of agent engineering (the six
+of AGENT-PLATFORM.md §3) has a named seat; lightweight = each seat is
+the smallest leader that fills it, nothing runs that isn&#39;t earning,
+the whole thing standing on one VPS. Weight is the enemy of the edge;
+completeness is the enemy of the toy. Both held — balance, not
+maximization.
+<p></p>
+<pre>| Agent-engineering concern | The seat | The lightweight pick | Weight |</pre>
+<pre>|---|---|---|---|</pre>
+<pre>| Goal &amp; contract design | the CRD + CEL; StructuredInstructions | in-repo, already built | ~0 (a binary, a schema) |</pre>
+<pre>| Tool/actuator design | the operator framework (Kubebuilder) | the kube itself | the operator pod |</pre>
+<pre>| Loop &amp; orchestration | the reconciler; the platform-bound orchestrator | KubeContainer | one controller |</pre>
+<pre>| Memory &amp; context | the record — no additional DB; FabricDB when built | k0s etcd now (the kube carries its state) | none added |</pre>
+<pre>| Guardrails &amp; permissions | k0s RBAC; the agent contract terms 1–10 | k0s built-in | none added |</pre>
+<pre>| Evaluation &amp; observability | the eval registry; CodeCompiler; the gauntlet | in-repo scripts + binaries | run on demand |</pre>
+<pre>| Runtime | k0s (single binary, own containerd) | k0s | ~1 binary |</pre>
+<pre>| Registry | zot | zot (CNCF, minimal) | one pod |</pre>
+<pre>| Source + CI | GitLab CE + runner | GitLab (the one heavy guest) | the one big tenant |</pre>
+<pre>| Ground | OpenTofu-declared VPS | one VPS | the metal |</pre>
+<pre>| Build | Cloud Native Buildpacks | pack | on demand |</pre>
+<pre>| Surface | the browser; the site kube | nginx kube | one pod |</pre>
+<p></p>
+The lightweight discipline, stated so it cannot drift into bloat:
+<p></p>
+<ul>
+<li><strong>No additional database</strong> — the record is the store; k0s etcd holds</li>
+</ul>
+  cluster state, the kube carries its own; FabricDB is the only store
+  ever added, and only when built.
+<ul>
+<li><strong>One custodian per function</strong> — one runtime (k0s containerd, Docker</li>
+</ul>
+  struck), one registry (zot), one source host (GitLab), one image
+  builder (pack). No second of anything.
+<ul>
+<li><strong>On-demand, not always-on, for the desk tools</strong> — CodeCompiler,</li>
+</ul>
+  the eval harness, pack, the gauntlet run when invoked; they are not
+  resident daemons eating the box while idle.
+<ul>
+<li><strong>GitLab is the one heavy resident, and it earns it</strong> — source,</li>
+</ul>
+  CI, runner in one. If even that is too heavy for the chosen metal,
+  the lawful lighter swap is Forgejo (the candidate already named) —
+  recorded so the choice is the founder&#39;s, not a silent downgrade.
+<p></p>
+Completeness check: every concern has a seat, no seat is empty but
+FabricDB (declared, awaiting the build order), and nothing on the
+list is there for show. Lightweight check: one VPS carries it; the
+only always-on residents are k0s, the operator, zot, the site, and
+GitLab — five, each earning its memory. Complete and light is a
+balance, and this is where it resolves.
+<p></p>
+<h3>Consider the edge — the stack folds smaller</h3>
+<p></p>
+The founder&#39;s law: the same stack must fold to the edge, where weight
+is not a preference but a wall (a sensor, a card, a browser tab, a
+microcontroller cannot carry GitLab, cannot carry a VPS&#39;s worth of
+residents). So the stack has two readings, one declaration:
+<p></p>
+<ul>
+<li><strong>The home (estate/VPS)</strong> — the full table above: source, CI,</li>
+</ul>
+  registry, runtime, site, all resident, GitLab the heavy guest.
+<ul>
+<li><strong>The edge</strong> — only the kube at the core: The Metal Kube</li>
+</ul>
+  (KubeContainer Core) — loop, record, contract, one signed channel,
+  the surface-native runtime, and nothing else aboard. No GitLab, no
+  zot, no full control plane on the device: the edge pulls signed
+  declarations from the home through the one channel, runs the kube,
+  and serves its face. Source, CI, registry, build all live at the
+  home; the edge receives the product, never the toolchain.
+<p></p>
+The seam between them is the headless-delivery doctrine, exact: the
+home is where it is built, certified, registered (the cloud side, the
+capable guard); the edge is where it is delivered and run (the ports,
+the surface). What folds away at the edge is everything that builds;
+what remains is everything that keeps. The stack is complete at the
+home, minimal at the edge, and one declaration spans both — because
+the difference between home and edge is count and resident, not kind:
+the kube is the same kube; only its company changes.
+<p></p>
+The lightweight rule, edge-stated: at the edge, the only resident is
+the kube. Everything else is the home&#39;s, reached over the one
+channel, never installed on the device whose surface must stay
+headless. Consider the edge, and the stack does not grow a second
+architecture — it sheds, down to the one resident the edge was always
+for.
+<p></p>
+<p></p>
+<h3>The AGenNextHub estate</h3>
+<p></p>
+The founder&#39;s repositories, each holding one seat; this house records
+the map and builds only the non-agent seats (protocol P8: agent
+machinery is the principal&#39;s act alone):
+<p></p>
+<pre>| Seat | Repository | State on the record |</pre>
+<pre>|---|---|---|</pre>
+<pre>| Law | AGenNextHub/Agent-Constitution | binding; loaded by every session here |</pre>
+<pre>| Boundary contract | AGenNextHub/Agent-Space | spec; implemented as `registry/SKELETON-SPACE.json` |</pre>
+<pre>| Files (Agent-Drive) | this house: FileFabric | built; image ships per release (the space drive, agennext.space) |</pre>
+<pre>| The room | AGenNextHub/Agent-IDE | active code (Theia workbench, orchestrator, governance); no releases yet; agent machinery — the principal&#39;s |</pre>
+<pre>| Research office | AGenNextHub/Agent-Converter | active code (deep-agent research, confidence-tagged); pre-release; agent machinery — the principal&#39;s |</pre>
+<pre>| Canonical primitives | AGenNextHub/Agent-Fabric | spec draft v1.0 (Entity, Relationship, Assertion, Observation, Projection, Drift, Reconciliation) — the assertion-native model; KubeContainer is a running reconciliation of exactly this shape |</pre>
+<pre>| Capability catalog | AGenNextHub/Agent-Skills | spec/early code: skill contracts, permissions, risk class; the hierarchy Skills -&gt; Blueprint -&gt; Team -&gt; Runtime |</pre>
+<pre>| Channels (the chat) | AGenNextHub/Agent-Chat | working Go, v0.1.x loop spine (zero-dep, tested, headless daemon, content-addressed boxes); the native candidate for the space&#39;s channels seat, displacing the external Matrix pick when its operator ships; Apache-2.0 - a license divergence from this house&#39;s record, named for the principal |</pre>
+<pre>| Trust contracts | AGenNextHub/Agent-Trust | spec (provenance, evidence, audit: &#34;no trust without evidence&#34;); this house&#39;s promise machinery is that creed already running |</pre>
+<pre>| The agent internet | AGenNextHub/Internet-of-Agents | named placeholder; AgentRegistry (this house) is its first running piece |</pre>
+<pre>| The knowledge base | AGenNextHub/Agents-Wiki | named placeholder; the record&#39;s graph and vocabulary machinery is its natural feed |</pre>
+<pre>| Edge AI compiler | Eclipse Aidge (pinned) | the ModelCompiler seat: model in, surface-native artifact out; first walk owed on the founder&#39;s metal |</pre>
+<pre>| Platform backend | the backend contract (registry/SKELETON-BACKEND.json) | founder&#39;s ruling: the language is Java - the Apache ecosystem is the toolbox; liferay is the first Java blueprint, pocketbase the lightweight alternative on the same contract |</pre>
+<pre>| The Attic rule | https://attic.apache.org/ | retired Apache projects are a legitimate mine - explicitly forkable; one enters only pinned at its last release and with a keeper named (the ownership doctrine: an empty seat is taken, never squatted) |</pre>
+<pre>| The company | github.com/openautonomyx - OpenAutonomyx (OPC) Private Limited, &#34;The Canonical System for Federated Work&#34; | the platform&#39;s legal and product home: dxp (the digital experience platform), trust-center, canonical, search, findr, insights, Publications, campaigns, partners; the decision-intelligence-platform repo is its homepage seat (private or pending at review time) |</pre>
+<pre>| Runtime | this house: KubeContainer on k3s | live on the founder&#39;s metal |</pre>
+<p></p>
+The division is the prohibition applied as architecture: this house
+supplies the ground every agent stands on — runtime, storage, space
+contract, record — and never the agents themselves.
+<p></p>
+<nav class="foot"><a href="chapter-3.html">&larr; previous</a><a href="index.html">contents</a><a href="chapter-5.html">next &rarr;</a></nav>

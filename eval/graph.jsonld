@@ -339,6 +339,9 @@
         },
         {
           "@id": "https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters"
+        },
+        {
+          "@id": "site/book"
         }
       ],
       "name": "Makefile"
@@ -412,6 +415,16 @@
       "@id": "cmd/agentregistry/main.go",
       "@type": "CreativeWork",
       "name": "cmd/agentregistry/main.go"
+    },
+    {
+      "@id": "cmd/bookbinder",
+      "@type": "CreativeWork",
+      "name": "cmd/bookbinder"
+    },
+    {
+      "@id": "cmd/bookbinder/main.go",
+      "@type": "CreativeWork",
+      "name": "cmd/bookbinder/main.go"
     },
     {
       "@id": "cmd/codecompiler",
@@ -1250,6 +1263,9 @@
       "@type": "CreativeWork",
       "citation": [
         {
+          "@id": "cmd/bookbinder"
+        },
+        {
           "@id": "cmd/codecompiler"
         },
         {
@@ -1368,6 +1384,9 @@
         },
         {
           "@id": "registry/spaces"
+        },
+        {
+          "@id": "site/book"
         }
       ],
       "name": "docs/DOCTRINE-MAP.md"
@@ -1440,6 +1459,9 @@
           "@id": "cmd/agentregistry/main.go"
         },
         {
+          "@id": "cmd/bookbinder/main.go"
+        },
+        {
           "@id": "cmd/codecompiler/main.go"
         },
         {
@@ -1504,6 +1526,9 @@
         },
         {
           "@id": "registry/blueprints"
+        },
+        {
+          "@id": "site/book"
         }
       ],
       "name": "docs/TOOLS.md"
@@ -1555,6 +1580,14 @@
     {
       "@id": "docs/assessments/APACHE-ATTIC.md",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "https://attic.apache.org/"
+        }
+      ],
       "name": "docs/assessments/APACHE-ATTIC.md"
     },
     {
@@ -2784,6 +2817,11 @@
         }
       ],
       "name": "site/arithmetic.html"
+    },
+    {
+      "@id": "site/book",
+      "@type": "CreativeWork",
+      "name": "site/book"
     },
     {
       "@id": "site/index.html",

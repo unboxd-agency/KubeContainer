@@ -112,6 +112,7 @@ Each body is named with its tier(s); the document stays where it is.
 | `registry/SKELETON-SPACE.json`, `registry/spaces/` | Harness + Constraints | The space contract (Agent-Space implemented): members by reference, agents only by the principal's hand; append-only like the rest of the registry. |
 | `registry/SKELETON-BACKEND.json` | Harness + Constraints | The platform-backend contract: serve headless, declare collections, issue tokens; engines enter as blueprints. |
 | `docs/assessments/APACHE-ATTIC.md` | Theory + Constraints | The mining review and the AutonomyX naming; the adoption law (pinned, kept, tested, licensed) binds every Attic fork. |
+| `cmd/bookbinder`, `site/book/` | Harness + Best practice | The Book of Software: generated binding of the corpus, each domain one chapter; a missing topic fails the binding; nothing here is canonical - the prose stays where it lives. |
 
 Where a row carries two tiers, the stricter binds the passage in
 question: a Theory paragraph inside a Constitution document is still

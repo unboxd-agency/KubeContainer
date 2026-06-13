@@ -486,6 +486,15 @@ name their intent; nothing removed, nothing duplicated.
   the published registry is exactly the release's. Source:
   `cmd/agentregistry/main.go`; image: `Dockerfile.agentregistry`,
   published as `ghcr.io/unboxd-cloud/agentregistry` per release.
+- **BookBinder** — built. The record bound as a book — the founder's
+  order, the Book of Software: multi-page, each domain of the estate
+  one chapter (the house, the kube, the agents, the space, the
+  platform), each chapter binding its topics in reading order, the
+  cover carrying the contents. Generated from the corpus, never
+  hand-written; a missing topic fails the binding. Source:
+  `cmd/bookbinder/main.go`; run: `make book`; output: `site/book/`
+  (ships inside the site image, so the book is served wherever the
+  site is).
 - **ModelCompiler** — declared. The edge-AI seat, the founder's order:
   a trained model enters, a surface-native artifact leaves — the
   go-native law applied to neural networks (quantize, prune,

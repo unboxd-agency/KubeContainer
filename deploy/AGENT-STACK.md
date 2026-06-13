@@ -102,6 +102,7 @@ machinery is the principal's act alone):
 | Edge AI compiler | Eclipse Aidge (pinned) | the ModelCompiler seat: model in, surface-native artifact out; first walk owed on the founder's metal |
 | Platform backend | the backend contract (registry/SKELETON-BACKEND.json) | founder's ruling: the language is Java - the Apache ecosystem is the toolbox; liferay is the first Java blueprint, pocketbase the lightweight alternative on the same contract |
 | The Attic rule | https://attic.apache.org/ | retired Apache projects are a legitimate mine - explicitly forkable; one enters only pinned at its last release and with a keeper named (the ownership doctrine: an empty seat is taken, never squatted) |
+| The company | github.com/openautonomyx - OpenAutonomyx (OPC) Private Limited, "The Canonical System for Federated Work" | the platform's legal and product home: dxp (the digital experience platform), trust-center, canonical, search, findr, insights, Publications, campaigns, partners; the decision-intelligence-platform repo is its homepage seat (private or pending at review time) |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house

@@ -122,6 +122,10 @@ graph: ## Rebuild the record graph (eval/graph.txt, eval/graph.jsonld); fail on 
 schema-check: ## Verify the record graph keeps its pinned schema (schema.org JSON-LD).
 	go run ./cmd/schemakeeper
 
+.PHONY: book
+book: ## Bind the Book of Software (site/book/) from the corpus; fail if a topic is missing.
+	go run ./cmd/bookbinder
+
 .PHONY: eval
 eval: ## Run the evaluation registry harness and emit an evidence report.
 	./eval/harness.sh
