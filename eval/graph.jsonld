@@ -2212,6 +2212,11 @@
       "name": "https://github.com/AGenNextHub"
     },
     {
+      "@id": "https://github.com/AGenNextHub/Agent-Chat",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Agent-Chat"
+    },
+    {
       "@id": "https://github.com/AGenNextHub/Agent-Constitution",
       "@type": "CreativeWork",
       "name": "https://github.com/AGenNextHub/Agent-Constitution"
@@ -2222,14 +2227,34 @@
       "name": "https://github.com/AGenNextHub/Agent-Converter"
     },
     {
+      "@id": "https://github.com/AGenNextHub/Agent-Fabric",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Agent-Fabric"
+    },
+    {
       "@id": "https://github.com/AGenNextHub/Agent-IDE",
       "@type": "CreativeWork",
       "name": "https://github.com/AGenNextHub/Agent-IDE"
     },
     {
+      "@id": "https://github.com/AGenNextHub/Agent-Skills",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Agent-Skills"
+    },
+    {
       "@id": "https://github.com/AGenNextHub/Agent-Space",
       "@type": "CreativeWork",
       "name": "https://github.com/AGenNextHub/Agent-Space"
+    },
+    {
+      "@id": "https://github.com/AGenNextHub/Agent-Trust",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Agent-Trust"
+    },
+    {
+      "@id": "https://github.com/AGenNextHub/Agents-Wiki",
+      "@type": "CreativeWork",
+      "name": "https://github.com/AGenNextHub/Agents-Wiki"
     },
     {
       "@id": "https://github.com/AGenNextHub/Internet-of-Agents",
@@ -2362,6 +2387,66 @@
       "name": "https://github.com/openautonomyx"
     },
     {
+      "@id": "https://github.com/openautonomyx/Campaigns",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/Campaigns"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/Publications",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/Publications"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/brandassets",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/brandassets"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/canonical",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/canonical"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/decision-inteligence-platform",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/decision-inteligence-platform"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/dxp",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/dxp"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/findr",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/findr"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/insights",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/insights"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/open-trust-agreements",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/open-trust-agreements"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/partners",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/partners"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/search",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/search"
+    },
+    {
+      "@id": "https://github.com/openautonomyx/trust-center",
+      "@type": "CreativeWork",
+      "name": "https://github.com/openautonomyx/trust-center"
+    },
+    {
       "@id": "https://github.com/opencontainers/distribution-spec",
       "@type": "CreativeWork",
       "name": "https://github.com/opencontainers/distribution-spec"
@@ -2430,6 +2515,11 @@
       "@id": "https://github.com/unboxd-agency/KubeContainer/tree/main/docs",
       "@type": "CreativeWork",
       "name": "https://github.com/unboxd-agency/KubeContainer/tree/main/docs"
+    },
+    {
+      "@id": "https://github.com/unboxd-cloud/KubeContainer",
+      "@type": "CreativeWork",
+      "name": "https://github.com/unboxd-cloud/KubeContainer"
     },
     {
       "@id": "https://github.com/unboxd-cloud/KubeContainer/releases",
@@ -2989,131 +3079,6 @@
       "name": "release/REQUEST"
     },
     {
-      "@id": "site-autonomyx/books/Publications/chapter-1.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/Publications/chapter-1.html"
-    },
-    {
-      "@id": "site-autonomyx/books/Publications/chapter-2.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/Publications/chapter-2.html"
-    },
-    {
-      "@id": "site-autonomyx/books/Publications/chapter-3.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/Publications/chapter-3.html"
-    },
-    {
-      "@id": "site-autonomyx/books/Publications/chapter-4.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/Publications/chapter-4.html"
-    },
-    {
-      "@id": "site-autonomyx/books/Publications/chapter-5.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/Publications/chapter-5.html"
-    },
-    {
-      "@id": "site-autonomyx/books/Publications/index.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/Publications/index.html"
-    },
-    {
-      "@id": "site-autonomyx/books/brandassets/chapter-1.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/brandassets/chapter-1.html"
-    },
-    {
-      "@id": "site-autonomyx/books/brandassets/index.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/brandassets/index.html"
-    },
-    {
-      "@id": "site-autonomyx/books/canonical/chapter-1.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/canonical/chapter-1.html"
-    },
-    {
-      "@id": "site-autonomyx/books/canonical/chapter-2.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/canonical/chapter-2.html"
-    },
-    {
-      "@id": "site-autonomyx/books/canonical/chapter-3.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/canonical/chapter-3.html"
-    },
-    {
-      "@id": "site-autonomyx/books/canonical/chapter-4.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/canonical/chapter-4.html"
-    },
-    {
-      "@id": "site-autonomyx/books/canonical/chapter-5.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/canonical/chapter-5.html"
-    },
-    {
-      "@id": "site-autonomyx/books/canonical/index.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/canonical/index.html"
-    },
-    {
-      "@id": "site-autonomyx/books/findr/chapter-1.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/findr/chapter-1.html"
-    },
-    {
-      "@id": "site-autonomyx/books/findr/index.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/findr/index.html"
-    },
-    {
-      "@id": "site-autonomyx/books/insights/chapter-1.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/insights/chapter-1.html"
-    },
-    {
-      "@id": "site-autonomyx/books/insights/index.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/insights/index.html"
-    },
-    {
-      "@id": "site-autonomyx/books/partners/chapter-1.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/partners/chapter-1.html"
-    },
-    {
-      "@id": "site-autonomyx/books/partners/chapter-2.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/partners/chapter-2.html"
-    },
-    {
-      "@id": "site-autonomyx/books/partners/index.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/partners/index.html"
-    },
-    {
-      "@id": "site-autonomyx/books/search/chapter-1.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/search/chapter-1.html"
-    },
-    {
-      "@id": "site-autonomyx/books/search/index.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/search/index.html"
-    },
-    {
-      "@id": "site-autonomyx/books/trust-center/chapter-1.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/trust-center/chapter-1.html"
-    },
-    {
-      "@id": "site-autonomyx/books/trust-center/index.html",
-      "@type": "CreativeWork",
-      "name": "site-autonomyx/books/trust-center/index.html"
-    },
-    {
       "@id": "site-autonomyx/categories/agentic-ai.html",
       "@type": "CreativeWork",
       "citation": [
@@ -3189,13 +3154,82 @@
           "@id": "https://github.com/AGenNextHub"
         },
         {
+          "@id": "https://github.com/AGenNextHub/Agent-Chat"
+        },
+        {
           "@id": "https://github.com/AGenNextHub/Agent-Constitution"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Converter"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Fabric"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-IDE"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Skills"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Space"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Trust"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Agents-Wiki"
+        },
+        {
+          "@id": "https://github.com/AGenNextHub/Internet-of-Agents"
         },
         {
           "@id": "https://github.com/openautonomyx"
         },
         {
+          "@id": "https://github.com/openautonomyx/Campaigns"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/Publications"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/brandassets"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/canonical"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/decision-inteligence-platform"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/dxp"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/findr"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/insights"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/open-trust-agreements"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/partners"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/search"
+        },
+        {
+          "@id": "https://github.com/openautonomyx/trust-center"
+        },
+        {
+          "@id": "https://github.com/unboxd-cloud/KubeContainer"
+        },
+        {
           "@id": "https://kubecontainer.xyz"
+        },
+        {
+          "@id": "https://kubecontainer.xyz/book/index.html"
         },
         {
           "@id": "https://penpot.app/"
