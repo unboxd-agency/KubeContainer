@@ -7,6 +7,10 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.13] - 2026-06-13
+### Changed
+- The platform door dressed (category anchor, copy, white papers).
+
 ## [0.2.12] - 2026-06-13
 ### Changed
 - The platform door's full copy: Agentic Enterprises, Experience What
