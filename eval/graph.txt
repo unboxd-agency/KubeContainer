@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=159 edges=358
+# nodes=159 edges=363
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -63,6 +63,7 @@ Makefile -> http://linuxcommand.org/lc3_adv_awk.php
 Makefile -> https://docs.docker.com/build/buildx/
 Makefile -> https://docs.docker.com/develop/develop-images/build_enhancements/
 Makefile -> https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters
+Makefile -> site/book
 NOTICE -> docs/KUBE-SPEC.md
 PROJECT -> https://book.kubebuilder.io/reference/project-config.html
 README.md -> https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0
@@ -215,6 +216,7 @@ docs/CONTROL-PANEL.md -> https://www.cncf.io/projects/crossplane/
 docs/DESIGN.md -> config/manager
 docs/DESIGN.md -> docs/AGENT-PLATFORM.md
 docs/DESIGN.md -> release/REQUEST
+docs/DOCTRINE-MAP.md -> cmd/bookbinder
 docs/DOCTRINE-MAP.md -> cmd/codecompiler
 docs/DOCTRINE-MAP.md -> cmd/filefabric
 docs/DOCTRINE-MAP.md -> cmd/homesetup
@@ -255,9 +257,11 @@ docs/DOCTRINE-MAP.md -> internal/controller/testdata/compat
 docs/DOCTRINE-MAP.md -> registry/SKELETON-BACKEND.json
 docs/DOCTRINE-MAP.md -> registry/SKELETON-SPACE.json
 docs/DOCTRINE-MAP.md -> registry/spaces
+docs/DOCTRINE-MAP.md -> site/book
 docs/GO-TO-MARKET.md -> docs/AGENT-PLATFORM.md
 docs/KUBE-SPEC.md -> docs/manual
 docs/TOOLS.md -> cmd/agentregistry/main.go
+docs/TOOLS.md -> cmd/bookbinder/main.go
 docs/TOOLS.md -> cmd/codecompiler/main.go
 docs/TOOLS.md -> cmd/filefabric/main.go
 docs/TOOLS.md -> cmd/recordgraph/main.go
@@ -280,6 +284,7 @@ docs/TOOLS.md -> https://www.dbpedia.org/
 docs/TOOLS.md -> registry/SKELETON.json
 docs/TOOLS.md -> registry/agents
 docs/TOOLS.md -> registry/blueprints
+docs/TOOLS.md -> site/book
 docs/VOCABULARY.md -> docs/AGENT-PLATFORM.md
 docs/VOCABULARY.md -> docs/DESIGN.md
 docs/VOCABULARY.md -> docs/DOCTRINE-MAP.md
